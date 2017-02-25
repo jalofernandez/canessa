@@ -81,7 +81,7 @@ gulp.task('sitemap', function () {
             read: false
         })
         .pipe(sitemap({
-            siteUrl: 'http://www.jalofernandez.com',
+            siteUrl: 'http://www.peluqueriacanessa.com',
             changefreq: 'weekly',
             priority: '1.0'
         }))

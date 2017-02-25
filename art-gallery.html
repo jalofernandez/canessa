@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Arts Club Madrid :: Art Gallery</title>
+  <meta name="description" content="Arts Club Madrid :: Restaurant, Art Gallery, Cocktail Bar & Terrace"/>
+  <meta name="keywords" content=""/>
+  <meta name="author" content="ART.ed para Arts Club Madrid"/> 
+    
+<!-- FAVICON -->
+        <link rel="shortcut icon" href="icon/favicon"/>    
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png"/>
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-192x192.png" sizes="192x192"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-160x160.png" sizes="160x160"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32"/>
+        <!-- windows / metro -->
+        <meta name="msapplication-TileColor" content="#2d89ef"/>
+        <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png"/>
+    
+<!-- SiteMap -->
+  <link rel="sitemap" href="sitemap.xml" title="Mapa general del website"/>
+
+<!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" type="text/css" href="font/font-awesome-4.3.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/icomoon.css"/>
+  <link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen,projection"/>
+    
+<!-- Script de ANGULAR -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    
+</head>
+<body class="bg-paper">
+    
+<!-- GRADIENT TOP 
+      <div class="gradient-top"></div>
+
+      <div class="gradient-bottom"></div>
+-->
+
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                00. TOP NAV BAR "Sections & Contact"
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+<div class="navbar-top">
+  <nav>
+    <div class="nav-top">
+        <div class="row">
+<!-- "Navigation Page" :: LEFT NAV -->
+    <div class="col m5">
+      <ul class="right navSubSections hide-on-med-and-down">
+          <li><a class="drinks dropdown-button" href="#" data-activates='dropdown1' title="Drinks submenu of Arts Club Madrid">Our Expos <i class="fa fa-caret-down"></i></a></li>
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#expos">Concept</a></li>
+                <li><a href="#past">Past Exhibitions</a></li>
+                <li><a href="#future">Future Exhibitions</a></li>
+              </ul>
+          <li><a class="bottle" href="#expos"   title="Go to Expositions section of Arts Club Madrid">Our Expos</a></li>
+          <li><a class="wineh"  href="#past"    title="Go to Past Exhibitions section of Arts Club Madrid">Past Exhibitions</a></li>
+          <li><a class="cockt"  href="#future"  title="Go to Future Exhibitions section of Arts Club Madrid">Future Exhibitions</a></li>
+          <li><a class="gastro" href="#commiss" title="Go to Art Commissioner section of Arts Club Madrid">Art Commissioner</a></li>
+      </ul>
+    </div>
+<!-- "Logo" :: CENTER LOGO -->
+    <div class="brand-logo center" id="acm-navLogo">
+        <img class="fixed" src="img/logos/acm_logo_topnav.png" title="Arts Club Madrid Logotype"/>
+    </div>
+<!-- "Contact" :: RIGHT NAV -->
+    <div class="col m5 offset-m2">
+      <ul class="left navContact hide-on-med-and-down">
+            <li><a class="address" href="" title="Arts Club Madrid reservations">&nbsp;RESERVATIONS:</a></li>
+            <li><a class="phone" href="tel:912770365" title="Call to Arts Club Madrid"><i class="fa fa-phone"></i>&nbsp;912 770 365</a></li>
+            <li><a href="https://module.lafourchette.com/es_ES/module/62151-6082e" target="_blank" title="Online Reservations with ElTenedor in Arts Club Madrid"><i class="fa fa-cutlery"></i>&nbsp; Online Reservations</a></li>
+            <li><a class="schedule modal-trigger" href="#modal_contact" title="Online Reservations with ElTenedor in Arts Club Madrid"><i class="fa fa-clock-o"></i>&nbsp; 13:00 - 02:00 Su-We / 03:00 Th-Sa</a></li>
+      </ul>
+    </div>
+    </div>
+        </div>
+  </nav>
+</div>
+
+<div class="margTopForNav"></div>
+      
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                01. OUR EXPOS "Section" :: Art Gallery
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <div class="row scrollspy" id="expos">
+        <div class="col s12 headerSection">
+            <h3 class="center-align"><span>Art</span> Gallery</h3>
+            <h5 class="center-align">beauty is <span>around</span> you</h5>
+            <p class="introIcon"><i class="fa fa-paint-brush"></i></p>
+        </div>
+    </div>
+    
+<!-- PHOTO GALLERY -->
+    <div class="container">
+        <div class="section">
+          <div class="row">
+              
+          <!-- TEXT block LEFT side -->
+            <div class="col s12 m4 textLeftSide">
+                
+                <h5>Exposiciones itinerantes</h5>
+                <p class="light">Artistas reconocidos internacionalmente, como <span>Ange García Dalmer</span>, <span>Antonio de Felipe</span> y <span>Almudena Abbad</span>, unen sinergias con uno de los mejores grafiteros del mundo, <span>Inkie</span>, <em>“all the way from London”</em>, que deja su huella en uno de los muros más importantes de este espacio, convirtiéndolo en una vibrante y original Galería de Arte.</p>       
+            </div>
+          <!-- PICS block RIGHT side -->
+            <div class="col s12 m8 collageImg">
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_gallery_01.jpg" data-caption="Arts Gallery of Arts Club Madrid"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_gallery_02.jpg" data-caption="Arts Gallery of Arts Club Madrid"/>
+                </div>
+            </div><!-- /.collageImg (right side) -->
+              
+          </div><!-- /.row -->
+        </div> <!-- /.section -->
+      </div> <!-- /.container -->
+    
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                02. PAST EXHIBITIONS "Section" :: Art Gallery
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+<!-- INKIE -->
+    <div class="row scrollspy" id="past">
+        <div class="col s12 headerSection">
+            <h3 class="center-align"><span>Past</span> Exhibitions</h3>
+            <h5 class="center-align"><span class="author">Inkie</span></h5>
+            <div class="centerPicHeader">
+                <img src="img/authors/acm-Inkie.jpg"/>
+            <!--<p><em>"Frase gancho de Inkie..."</em></p>-->
+                <p class="links">
+                    <a href="https://www.youtube.com/watch?v=4WTohR2d2Ko" target="_blank" title="Inkies Video"><i class="fa fa-video-camera"></i> Watch Video</a>
+                    <a href="http://www.inkie.co.uk" target="_blank" title="Inkies Website"><i class="fa fa-globe"></i> Website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Photo Gallery -->
+    <div class="container topMarg350">
+        <div class="section">
+          <div class="row">
+              
+          <!-- TEXT block LEFT side -->
+            <div class="col s12 m4 textLeftSide">
+                <h5>All the way from London</h5>
+                <p class="light">Considerado el padre del Europe´s Street Art Event, se ha convertido en uno de los Tops creativos del mundo. Forma parte del Courvoisier Future 500. Sus poryectos han marcado pauta mundial y ahora está presente en Arts Club Madrid.</p>             
+            </div>
+          <!-- PICS block RIGHT side -->
+            <div class="col s12 m8 collageImg">
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_inkie_01.jpg" data-caption="Inkie main Graffiti"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_inkie_02.jpg" data-caption="Inkie main Graffiti"/>
+                </div>
+            </div><!-- /.collageImg (right side) -->
+              
+          </div><!-- /.row -->
+        </div> <!-- /.section -->
+      </div> <!-- /.container -->
+    
+    
+<!-- ANGE GARCÍA DALMER -->
+    <div class="row scrollspy topMarg50" id="angedg">
+        <div class="col s12 headerSection">
+            <h5 class="center-align"><span class="author">Ange García Dalmer</span></h5>
+            <div class="centerPicHeader">
+                <img src="img/authors/acm-AngeGarciaDalmer.jpg"/>
+                <p><em>"Frase gancho de Ange..."</em></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Photo Gallery -->
+    <div class="container topMarg350">
+        <div class="section">
+          <div class="row">
+              
+          <!-- TEXT block LEFT side -->
+            <div class="col s12 m4 textLeftSide">
+                <h5>Variaciones sobre Velázquez</h5>
+                <p class="light">Ange García Dalmer trae su última exposición creativa. Mediante una técnica expontánea, construye sus cuadros de un modo escultórico, ofreciendo una tercera dimensión a las obras, que las hace elevarse por encima del plano mismo de su pintura.</p>             
+            </div>
+          <!-- PICS block RIGHT side -->
+            <div class="col s12 m8 collageImg">
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_angegd_01.jpg" data-caption="Ange García Dalmer Exhibition"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_angegd_02.jpg" data-caption="Ange García Dalmer Exhibition"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_angegd_03.jpg" data-caption="Ange García Dalmer Exhibition"/>
+                </div>
+            </div><!-- /.collageImg (right side) -->
+              
+          </div><!-- /.row -->
+        </div> <!-- /.section -->
+      </div> <!-- /.container -->
+    
+    
+<!-- ANTONIO DE FELIPE -->
+    <div class="row scrollspy topMarg50" id="antoniof">
+        <div class="col s12 headerSection">
+            <h5 class="center-align"><span class="author">Antonio de Felipe</span></h5>
+            <div class="centerPicHeader">
+                <img src="img/authors/acm-AntonioF.jpg"/>
+            <!--<p><em>"Frase gancho de Inkie..."</em></p>-->
+                <p class="links">
+                    <a href="http://antoniodefelipe.es/" target="_blank" title="Antonio de Felipe Website"><i class="fa fa-globe"></i> Website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Photo Gallery -->
+    <div class="container topMarg350">
+        <div class="section">
+            
+          <div class="row">
+          <!-- TEXT block LEFT side -->
+            <div class="col s12 m4 textLeftSide">
+                <h5>Graffitti Pop Chairman</h5>
+                <p class="light">El graffiti forma parte de la ciudad y, por desgracia, a menudo para afear sus calles. En este sentido, Antonio de Felipe ha realizado un gran esfuerzo por entender su valor creativo, su rebeldía innata, su belleza radical, y lo ha fusionado con algunos de sus referentes artísticos, animados, publicitarios o cinematográficos preferidos. El resultado es sorprendente… y muy honesto.</p>
+                <p class="light">Es el testimonio directo de un artista que se niega a elegir el camino fácil, que no quiere repetirse hasta la saciedad, que rechaza acomodarse y que siempre mira hacia delante, no hacia atrás.</p>
+                <p class="light">GRAFFITI POP es el grito de guerra de un Antonio de Felipe consagrado a la creatividad y a la experimentación más absoluta.</p>
+                <p class="light">Sin prejuicios, sin límites. Todo un reto teniendo en cuenta que lleva más de 25 años trabajando como artista.</p>
+                <p class="light">Sus nuevas obras, como siempre, invitan al espectador a entrar en un juego de dobles o triples significados que, en esta ocasión, provoca más que nunca. ¿Llega a escandalizar? Es posible y no resulta extraño. Antonio se ha propuesto plantarle cara a una sociedad plagada de tabúes y ha decidido comprometerse y escapar del plano artístico más lúdico. La calle ha sido el lugar perfecto para encontrar un nuevo universo que reinterpretar, llevándolo a su terreno para, en él, disputar una auténtica batalla creativa que ha dado lugar a su obra más subversiva. El esfuerzo ha valido la pena.</p>
+                <p class="light">Antonio de Felipe muestra su cara más urbana y agitadora para dejar claro que su estado artístico actual es el de work in progress y está muy lejos de relajarse creativamente hablando, muy lejos.</p>
+            </div>
+          <!-- PICS block RIGHT side -->
+            <div class="col s12 m8 collageImg">
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_05.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_01.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_02.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m8">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_03.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_04.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_06.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_09.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_07.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_adFelipe_08.jpg" data-caption="Antonio de Felipe Graffiti"/>
+                </div>
+            </div>
+          </div><!-- /.row -->
+            
+        </div> <!-- /.section -->
+      </div> <!-- /.container -->
+    
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                03. FUTURE EXHIBITIONS "Section" :: Art Gallery
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <div class="row scrollspy" id="future">
+        <div class="col s12 headerSection">
+            <h3 class="center-align"><span>Future</span> Exhibitions</h3>
+            <h5 class="center-align"><span class="author">Almudena Abad Ortega</span></h5>
+            <div class="centerPicHeader">
+                <img src="img/authors/acm-Aabad.jpg"/>
+            <!--<p><em>"Frase gancho de Inkie..."</em></p>-->
+                <p class="links">
+                    <a href="http://abadarte.es/" target="_blank" title="Almudena Abad Website"><i class="fa fa-globe"></i> Website</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Photo Gallery -->
+    <div class="container topMarg350">
+        <div class="section">
+          <div class="row">
+              
+          <!-- TEXT block LEFT side -->
+            <div class="col s12 m4 textLeftSide">
+                <h5>Insidiosas Interferencias</h5>
+                <p class="light">El realismo y la figuración de Almudena Abad, se muestran de manera contundente en esta exposición que nos acerca al trabajo de esta artista, bajo el epígrafe tan atractivo de <em>“Insidiosas Interferencias”</em>.</p>             
+            </div>
+          <!-- PICS block RIGHT side -->
+            <div class="col s12 m8 collageImg">
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_Aabbad_01.jpg" data-caption="Primavera 11 de Almudena Abad"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_Aabbad_02.jpg" data-caption="Interludio 4 de Almudena Abad"/>
+                </div>
+                <div class="col s12 m4">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_Aabbad_03.jpg" data-caption="Caracolas 4 de Almudena Abad"/>
+                </div>
+            </div><!-- /.collageImg (right side) -->
+              
+          </div><!-- /.row -->
+        </div> <!-- /.section -->
+      </div> <!-- /.container -->
+    
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                04. BE OUR ART COMMISIONER "Section" :: Art Gallery
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <div class="row scrollspy" id="commiss">
+        <div class="col s12 headerSection">
+            <h3 class="center-align">Be Our <span>Art Commissioner</span></h3>
+            <h5 class="center-align">We want <span>co-working</span> with you</h5>
+            <p class="introIcon"><i class="icon-photo"></i></p>
+        </div>
+    </div>
+    
+<!-- PHOTO GALLERY -->
+    <div class="container">
+        <div class="section">
+          <div class="row">
+              
+          <!-- TEXT block LEFT side -->
+            <div class="col s12 m4 textLeftSide">
+                <h5>¿Quieres exponer?</h5>
+                <p class="light">Ponte en contacto con nosotros para exponer a través de <span>Alex Carrasco</span>:</p>
+                <a class="data" href="tel:918274948" title=""><i class="fa fa-phone"></i> 918 274 948</a>
+                <a class="data" href="mailto:alex@theapartment.es" title=""><i class="fa fa-envelope-o"></i> alex@theapartment.es</a>
+            </div>
+          <!-- PICS block RIGHT side 
+            <div class="col s12 m8 collageImg">
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_gallery_01.jpg" data-caption="Arts Gallery of Arts Club Madrid"/>
+                </div>
+                <div class="col s12 m6">
+                  <img class="materialboxed fixed hover1" src="img/fotos/artsClubMadrid_gallery_02.jpg" data-caption="Arts Gallery of Arts Club Madrid"/>
+                </div>
+            -->
+              <div class="col s12 m8 collageImg">
+                <div class="col s12">
+                  <img class="materialboxed fixed hover1" src="img/bg/acm_bg_Inkie.jpg" data-caption="Inkie in Arts Club Madrid"/>
+                </div>
+              </div>
+            </div><!-- /.collageImg (right side) -->
+              
+          </div><!-- /.row -->
+        </div> <!-- /.section -->
+      </div> <!-- /.container -->
+    
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                05. PARALLAX Bottom "Section" :: Art Gallery
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <div class="parallax-container row">
+        <div class="col s6 m4 offset-custom parallaxTextTab">
+            <h5 class="topMarg50"><span>Services:</span></h5>
+                <ul class="listOfItems">
+                    <li>
+                        <p>DJ Sets, Música en Vivo, Audiovisuales, Fotografía &amp; Video, PhotoCall, Fotomatón, Corners Gastronómicos, Cartas de Destilaods, Cursos de coctelería, Magos, Mimos, Performances, Aparcacoches, Servicio de Chófer.</p>
+                    </li>
+                </ul>
+        </div>
+      <div class="parallax"><img src="img/bg/acm_bg_artGallery.jpg"></div>
+    </div>
+    
+    
+    
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                00. MAIN NAV BAR
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      
+<div class="navbar-fixed">    
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" id="mobile-bars" data-activates="mobile-demo" class="button-collapse" title="mobile icon of Arts Club Madrid">
+          <i class="material-icons">menu</i>
+      </a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="index.html" class="navbar-link" title="Home Intro Section of Arts Club Madrid">Home</a></li>
+        <li><a href="restaurant.html" class="navbar-link" title="Restaurant Section of Arts Club Madrid">Restaurant</a></li>
+        <li><a href="" class="navbar-link activo" title="Art Gallery Section of Arts Club Madrid">Art Gallery</a></li>
+        <li><a href="events.html" class="navbar-link" title="Events Section of Arts Club Madrid">Events</a></li>
+        <li><a href="#modal_section" class="modal-trigger navbar-link" title="Membership Club Section of Arts Club Madrid">Membership Club</a></li>
+        <li><a href="#modal_section" class="modal-trigger navbar-link" title="Team Section of Arts Club Madrid">Team</a></li>
+        <li><a href="contact.html" class="navbar-link" title="Contact Section of Arts Club Madrid">Contact</a></li>
+        <li><a href="#modal_section" class="modal-trigger navbar-link" title="Press Section of Arts Club Madrid">Press</a></li>
+      </ul>
+  <!-- MOBILE -->
+      <ul class="side-nav" id="mobile-demo">
+        <li><img src="img/logos/acm_logo_low.png" alt="Logotipo de Arts Club Madrid"/></li>
+        <li><a href="index.html" class="navbar-link" title="Home Intro Section of Arts Club Madrid">Home</a></li>
+    <!--<li><a href="restaurant.html" class="navbar-link" title="Restaurant Section of Arts Club Madrid">Restaurant</a></li>-->
+        <li><a href="restaurant.html" class="modal-trigger" title="Restaurant Section of Arts Club Madrid">Restaurant</a></li>
+        <li><a href="" class="modal-trigger" title="Art Gallery Section of Arts Club Madrid">Art Gallery</a></li>
+        <li><a href="events.html" class="navbar-link" title="Events Section of Arts Club Madrid">Events</a></li>
+        <li><a href="#modal_buttons" class="modal-trigger" title="Membership Club Section of Arts Club Madrid">Membership Club</a></li>
+        <li><a href="#modal_buttons" class="modal-trigger" title="Team Section of Arts Club Madrid">Team</a></li>
+        <li><a href="contact.html" class="navbar-link" title="Contact Section of Arts Club Madrid">Contact</a></li>
+        <li><a href="#modal_buttons" class="modal-trigger" title="Press Section of Arts Club Madrid">Press</a></li>
+        <li class="socialMobile"><!-- "Social Media" : MOBILE -->
+            <a href="https://www.facebook.com/ArtsClubMadrid" target="_blank" class="modal-trigger" title="Facebook de Arts Club Madrid"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/ArtsClubMAD" target="_blank" class="modal-trigger" title="Twitter de Arts Club Madrid"><i class="fa fa-twitter"></i></a>
+            <a href="https://youtu.be/HwmU5GRbwDU" target="_blank" class="modal-trigger" title="Youtube account of Arts Club Madrid"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://instagram.com/artsclubMAD" target="_blank" class="modal-trigger"><i class="fa fa-instagram" title="Instagram de Arts Club Madrid"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- CONTACT SubNAV -->   
+    <div id="nav-contact">
+        <ul>
+          <li><a href="tel:912770365" title="Call to Arts Club Madrid"><i class="fa fa-phone"></i>&nbsp; 912 770 365</a></li>
+          <li><a href="https://goo.gl/maps/mdZpp" target="_blank" title="Arts Club Madrid address with Google Maps"><i class="fa fa-map-marker"></i>&nbsp; Vel&aacute;zquez, 96. <span>28006</span>, Madrid</a></li>
+        </ul>
+    </div>
+    <div id="nav-info">
+        <a href="#modal_contact" class="modal-trigger" title="Contact Section of Arts Club Madrid"><i class="fa fa-send"></i></a>
+    </div>
+<!-- SOCIAL MEDIA -->   
+    <div id="nav-social" class="fixed-action-btn">
+        <a class="btn-floating btn-large" title="Social Media Options of Arts Club Madrid">
+          <i class="icon-share"></i>
+        </a>
+        <ul>
+          <li><a href="https://www.facebook.com/ArtsClubMadrid" target="_blank" class="btn-floating modal-trigger" title="Facebook account of Arts Club Madrid"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ArtsClubMAD" target="_blank" class="btn-floating modal-trigger" title="Twitter account of Arts Club Madrid"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://youtu.be/HwmU5GRbwDU" target="_blank" class="btn-floating modal-trigger" title="Youtube account of Arts Club Madrid"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="https://instagram.com/artsclubMAD" target="_blank" class="btn-floating modal-trigger"><i class="fa fa-instagram" title="Instagram account of Arts Club Madrid"></i></a></li>
+      <!--<li><a href="#modal_social" target="_blank" class="btn-floating modal-trigger" title="LinkedIn de Arts Club Madrid"><i class="fa fa-linkedin"></i></a></li>
+        </ul>-->
+    </div>
+<!-- LANGUAGES --> 
+    <div id="nav-lang" class="fixed-action-btn">
+        <a class="btn-floating btn-large" href="home_es.html" title="Change to spanish languaje">
+          <i class="icon-globe"></i>
+        </a>
+        <!--
+        <ul class="ul-lang">
+          <li class="eng"><a href="#modal_buttons" class="btn-floating modal-trigger"><i class="fa fa-flag"></i></i></a></li>
+          <li class="esp"><a href="#modal_buttons" class="btn-floating modal-trigger"><i class="fa fa-flag-o"></i></a></li>
+        </ul>
+        -->
+    </div>
+       
+    <!-- Language TOOLTIP -->
+        <div id="languages" class="">
+            <p>Cambiar a <strong>Español</strong></p>
+        </div>  
+        
+        
+        
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+              ALL MODALS DIALOGS ...
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- MODALS MAIN NAV DESKTOP sections :: "COMING SOON!" -->
+        <div id="modal_section" class="modal bottom-sheet">
+            <div class="modal-content">
+              <h4>COMING SOON!</h4>
+              <p>Here will go an amazing section... See you in September!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat">Close <i class="fa fa-close"></i></a>
+            </div>
+        </div>
+
+    <!-- MODALS MAIN NAV MOBILE sections :: "COMING SOON!" -->
+        <div id="modal_buttons" class="modal">
+            <div class="modal-content">
+              <h4>COMING SOON!</h4>
+              <p>Here will go an amazing section... See you in September!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat">Close <i class="fa fa-close"></i></a>
+            </div>
+        </div>
+        
+    <!-- MODALS MAIN NAV MOBILE sections :: "CONTACT" -->
+        <div id="modal_contact" class="modal">
+            <div class="modal-content">
+                <h4>CONTACT:</h4>
+                <div class="row noMargBottom">
+                    <div class="col s12 m7 l6">
+                        <ul id="site-social">
+                            <li><a href="tel:912770365" title="Call to Arts Club Madrid"><i class="fa fa-phone"></i>&nbsp; 912 770 365</a></li>
+                            <li><a href="mailto:events@artsclubmadrid.com" title="Escribir email al Arts Club Madrid, Restaurante y Galería de Arte"><i class="fa fa-envelope"></i>&nbsp; events@artsclubmadrid.com</a></li>
+                            <li><a href="https://module.lafourchette.com/es_ES/module/62151-6082e" target="_blank" title="Online Reservations with ElTenedor in Arts Club Madrid"><i class="fa fa-cutlery"></i>&nbsp; Online Reservations</a></li>
+                            <li><a href="https://goo.gl/maps/mdZpp" target="_blank" title="Arts Club Madrid address with Google Maps"><i class="fa fa-map-marker"></i>&nbsp; Vel&aacute;zquez, 96. <span>28006</span>, Madrid</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m5 l6 row-dos">
+                        <ul id="site-social" class="right">
+                            <li><a href="" title="Call to Arts Club Madrid"><span><i class="fa fa-clock-o"></i> Su / Mo / Tu / We:</span> <span>from 13:00 till 02:00</span></a></li>
+                            <li><a href="" title="Call to Arts Club Madrid"><span class="clockDos"><i class="fa fa-clock-o"></i> Th / Fr / Sa:</span> <span>from 13:00 till 03:00</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat">Close <i class="fa fa-close"></i></a>
+            </div>
+        </div>
+    
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+              ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/acm.js"></script>
+
+  </body>
+</html>

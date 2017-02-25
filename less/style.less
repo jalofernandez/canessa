@@ -1,34 +1,35 @@
-// Custom icon Fonts
-@import "../font/font-awesome-4.3.0/css/font-awesome.min.css";
-// Materialize styles
-@import "../css/sources/materialize.css"
-    
-    /* ------------------------------------------------------------------- */
+/* ----- VARIABLES ---------------------------------------- */
+
+@main-color: #ff4081; // Fucsia
+@color-white: #fff;
+@color-black: #111;
+
+/* ------------------------------------------------------------------- */
 /* FONT FACE :: CUSTOM FONTS ---------------------------------------- */
 /* ----------------------------------------------------------------- */
 @font-face {
     font-family: 'champagne__limousinesregular';
-    src: url('../font/champagne__limousines-webfont.eot');
-    src: url('../font/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/champagne__limousines-webfont.woff2') format('woff2'),
-         url('../font/champagne__limousines-webfont.woff') format('woff'),
-         url('../font/champagne__limousines-webfont.ttf') format('truetype'),
-         url('../font/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    src: url('../../font/champagne__limousines-webfont.eot');
+    src: url('../../font/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../font/champagne__limousines-webfont.woff2') format('woff2'),
+         url('../../font/champagne__limousines-webfont.woff') format('woff'),
+         url('../../font/champagne__limousines-webfont.ttf') format('truetype'),
+         url('../../font/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'SnellRoundhand';
-  src: url('../font/SnellRoundhand.eot') format('embedded-opentype');
+  src: url('../../font/SnellRoundhand.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SnellRoundhand';
   src: url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'),
-       url('../font/SnellRoundhand.ttf')  format('truetype'),
-       url('../font/SnellRoundhand.svg#SnellRoundhand') format('svg');
+       url('../../font/SnellRoundhand.ttf')  format('truetype'),
+       url('../../font/SnellRoundhand.svg#SnellRoundhand') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -50,6 +51,7 @@ body.bg-black {
 body.bg-paper {
     background: url(../img/bg/acm-bg.png) center repeat;
 }
+
 
 @media only screen and (max-width: 1400px) {
     .container {
@@ -239,6 +241,11 @@ img:hover .hover1:after {
 /* --- Mobile Main SideNav --- */
 #mobile-demo {
     z-index: 1100;
+    
+    img {
+        max-width: 150px;
+        max-height: 46px;
+    }
 }
 
 .intro-icon {
@@ -359,17 +366,16 @@ img:hover .hover1:after {
 }
 
 /* ... LOGO principal ................................. */
-/*
-#acm-logo {
-    background-color: rgba(0,0,0,.3);
+
+// main logo
+.main-logotype {
     position: absolute;
-    padding: 10px;
-    top: 16%;
-    border-radius: 5px;
-    right: 35%;
-    z-index: 20;
+    top: 100px;
+    left: 100px;
+    z-index: 9999;
 }
-*/
+            
+
 #acm-logo {
         /* background-color: rgba(0,0,0,.3); */
         position: absolute;
@@ -451,31 +457,32 @@ img:hover .hover1:after {
     bottom: 0;
     height: 54px;
     z-index: 998;
-}
-
-.navbar-fixed nav {
-    color: #FFF;
-    background-color: rgba(0,0,0,.7); 
-    border-top: 2px solid black;
-}
-
-.navbar-fixed nav ul a {
-    font-family: "champagne__limousinesregular",sans-serif;
-    font-size: 1.2rem;
-    color: #FFF;
-    display: block;
-    padding: 0px 15px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-.navbar-fixed nav ul li a:hover {
-    background-color: black;
-    /*color: #448aff;*/
-    -webkit-transition: all 200ms ease-in; /* Añadimos la transición */
-       -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-         -o-transition: all 200ms ease-in;
-            transition: all 200ms ease-in;
+    
+    nav {
+        color: #FFF;
+        background-color: rgba(0,0,0,.7); 
+        border-top: 2px solid black;
+        
+        ul a {
+            font-family: "champagne__limousinesregular",sans-serif;
+            font-size: 1.2rem;
+            color: @color-white;
+            display: block;
+            padding: 0px 15px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            
+            &:hover {
+                background-color: @color-black;
+                color: @main-color;
+                -webkit-transition: all 200ms ease-in; /* Añadimos la transición */
+                   -moz-transition: all 200ms ease-in;
+                    -ms-transition: all 200ms ease-in;
+                     -o-transition: all 200ms ease-in;
+                        transition: all 200ms ease-in;
+            }
+        }
+    }
 }
 
 /*
@@ -526,10 +533,10 @@ img:hover .hover1:after {
 }
 
 #nav-contact ul li a {
-    color: #aaa;
+    color: @color-white;
 }
 #nav-contact ul li a:hover {
-    color: white;
+    color: @main-color;
     -webkit-transition: all 200ms ease-in;
        -moz-transition: all 200ms ease-in;
         -ms-transition: all 200ms ease-in;
@@ -1105,40 +1112,54 @@ p.links a:hover {
 
 /* ... SLIDER ................................. */
 
-/* ... Slider Captions ... */
-.slider .slides li .caption {
-        color: #fff;
-        position: absolute;
-        top: 56%;
-        left: 8%;
-        width: 100%;
-        opacity: 0; 
+.slider {
+    .slides {
+        li {
+            // background image
+            img {
+                background-position: right; 
+            }
+            
+            // Text animated
+            .caption {
+                color: @color-white;
+                position: absolute;
+                top: 56%;
+                left: 8%;
+                width: 100%;
+                opacity: 0;
+                
+                h1,
+                h3 {
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 2px black,
+                                 0 0 5px black,
+                                 0 0 5px black;
+                    
+                    span {
+                        padding: 0 20px;
+                    }
+                }
+                
+                h5 {
+                    font-family: 'SnellRoundhand';
+                    font-size: 30px;
+                    margin-top: 0;
+                    letter-spacing: 0.03em;
+                    text-shadow: 1px 1px 2px black,
+                                 0 0 5px black,
+                                 0 0 5px black;
+                    
+                    &.intro {color: @main-color;}
+                    &.rest  {color: #4fc3f7;}
+                    &.art   {color: #b2ff59;}
+                    &.cock  {color: #ffab00;}
+                    &.terr  {color: #9575cd;}
+                }
+            }
+        }
+    }
 }
-.slider .slides li .caption h3 {
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px black,
-                 0 0 5px black,
-                 0 0 5px black;
-}
-.slider .slides li .caption h3 span {
-    padding: 0 20px;
-}
-.slider .slides li .caption h5 {
-    font-family: 'SnellRoundhand';
-    font-size: 30px;
-    margin-top: 0;
-    letter-spacing: 0.03em;
-    text-shadow: 1px 1px 2px black,
-                 0 0 5px black,
-                 0 0 5px black;
-}
-.slider .slides li .caption h5.intro {color: #ffab00;}
-.slider .slides li .caption h5.rest  {color: #4fc3f7;}
-.slider .slides li .caption h5.art   {color: #b2ff59;}
-.slider .slides li .caption h5.cock  {color: #ff4081;}
-.slider .slides li .caption h5.terr  {color: #9575cd;}
-
-
 
 /* .................................................... */
 /* ... EVENTS       ................................. */
