@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
     "gulp-ignore": "^2.0.2",
     "gulp-install": "^0.6.0",
     "gulp-jade": "^1.1.0",
