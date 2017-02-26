@@ -1,4 +1,18 @@
-/* ----- VARIABLES ---------------------------------------- */
+/* ----- VARIABLES and MIXINS --------------------------------- */
+.anim-all-150 {
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+.border-radius {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
 /* ------------------------------------------------------------------- */
 /* FONT FACE :: CUSTOM FONTS ---------------------------------------- */
 /* ----------------------------------------------------------------- */
@@ -22,18 +36,17 @@
   font-style: normal;
 }
 /* ----- STYLES GENERIC ---------------------------------------- */
-body,
-body.bg-black {
+body {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.04em;
   font-family: "champagne__limousinesregular", sans-serif;
 }
 body.bg-black {
-  background-color: black;
+  background-color: #111;
 }
 body.bg-paper {
-  background: url(../img/bg/acm-bg.png) center repeat;
+  background: url(../../img/dist/bg/paper.png) center repeat;
 }
 @media only screen and (max-width: 1400px) {
   .container {
@@ -49,6 +62,9 @@ body.bg-paper {
   .container {
     width: 90% !important;
   }
+}
+.mar-bottom-100 {
+  margin-bottom: 100px;
 }
 nav ul a,
 nav .brand-logo {
@@ -222,15 +238,86 @@ img:hover .hover1:after {
 #modal_section,
 #modal_buttons,
 #modal_social,
-#modal_contact {
+#modal_contact,
+#modal_schedule {
   background-color: rgba(0, 0, 0, 0.7) !important;
   border-top: 3px solid black;
 }
 #modal_section h4,
 #modal_buttons h4,
 #modal_social h4,
-#modal_contact h4 {
+#modal_contact h4,
+#modal_schedule h4 {
   text-align: center;
+}
+#modal_section p,
+#modal_buttons p,
+#modal_social p,
+#modal_contact p,
+#modal_schedule p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  line-height: 2rem;
+}
+#modal_section ul li,
+#modal_buttons ul li,
+#modal_social ul li,
+#modal_contact ul li,
+#modal_schedule ul li {
+  line-height: 2.2rem;
+}
+#modal_section ul li a,
+#modal_buttons ul li a,
+#modal_social ul li a,
+#modal_contact ul li a,
+#modal_schedule ul li a {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+}
+#modal_section ul li a:hover,
+#modal_buttons ul li a:hover,
+#modal_social ul li a:hover,
+#modal_contact ul li a:hover,
+#modal_schedule ul li a:hover {
+  color: #ff4081;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+#modal_section ul li a:hover i,
+#modal_buttons ul li a:hover i,
+#modal_social ul li a:hover i,
+#modal_contact ul li a:hover i,
+#modal_schedule ul li a:hover i {
+  min-width: 20px;
+  opacity: .5;
+}
+#modal_section .modal-footer,
+#modal_buttons .modal-footer,
+#modal_social .modal-footer,
+#modal_contact .modal-footer,
+#modal_schedule .modal-footer {
+  background-color: #111;
+}
+#modal_section .modal-footer a,
+#modal_buttons .modal-footer a,
+#modal_social .modal-footer a,
+#modal_contact .modal-footer a,
+#modal_schedule .modal-footer a {
+  text-align: center;
+  color: #ccc;
+}
+#modal_section .modal-footer a:hover,
+#modal_buttons .modal-footer a:hover,
+#modal_social .modal-footer a:hover,
+#modal_contact .modal-footer a:hover,
+#modal_schedule .modal-footer a:hover {
+  color: #fff;
 }
 #modal_section h4 {
   color: #fdd835;
@@ -241,55 +328,22 @@ img:hover .hover1:after {
 #modal_social h4 {
   color: #80d8ff;
 }
-#modal_contact h4 {
+#modal_contact h4,
+#modal_schedule h4 {
   color: #ff4081;
 }
-#modal_section p,
-#modal_buttons p,
-#modal_social p {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 0.06em;
-  line-height: 2rem;
+#modal_schedule .col {
+  width: 100%;
+  display: block;
+  min-height: 100px;
 }
-#modal_contact ul li {
-  line-height: 2.2rem;
+#modal_schedule .col ul {
+  width: 260px;
+  margin: 0 auto;
+  float: inherit;
 }
-#modal_contact ul li a {
-  color: white;
-  font-size: 18px;
-  letter-spacing: 0.06em;
-}
-#modal_contact ul li a:hover {
-  color: #ff4081;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-}
-#modal_contact ul li a i {
-  opacity: .5;
-}
-#modal_section .modal-footer,
-#modal_buttons .modal-footer,
-#modal_social .modal-footer,
-#modal_contact .modal-footer {
-  background-color: black;
-}
-#modal_section .modal-footer a,
-#modal_buttons .modal-footer a,
-#modal_social .modal-footer a,
-#modal_contact .modal-footer a {
-  text-align: center;
-  color: #ccc;
-}
-#modal_section .modal-footer a:hover,
-#modal_buttons .modal-footer a:hover,
-#modal_social .modal-footer a:hover,
-#modal_contact .modal-footer a:hover {
-  color: white;
+#modal_schedule .col ul li {
+  text-align: right;
 }
 #site-social.right li {
   float: right;
@@ -389,12 +443,29 @@ img:hover .hover1:after {
   height: 54px;
   z-index: 998;
 }
+.navbar-fixed .button-collapse i {
+  position: relative;
+  bottom: 3px;
+}
 .navbar-fixed nav {
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.7);
   border-top: 2px solid black;
 }
-.navbar-fixed nav ul a {
+.navbar-fixed nav ul li {
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+.navbar-fixed nav ul li:hover {
+  background-color: #111;
+}
+.navbar-fixed nav ul li:first-child:hover {
+  background-color: inherit;
+}
+.navbar-fixed nav ul li a {
   font-family: "champagne__limousinesregular", sans-serif;
   font-size: 1.2rem;
   color: #fff;
@@ -402,16 +473,44 @@ img:hover .hover1:after {
   padding: 0px 15px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
 }
-.navbar-fixed nav ul a:hover {
-  background-color: #111;
+.navbar-fixed nav ul li a:not(.copyright):hover {
   color: #ff4081;
-  -webkit-transition: all 200ms ease-in;
-  /* Añadimos la transición */
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
+}
+.navbar-fixed nav ul.left a {
+  padding: 0px 10px;
+  font-size: 1rem;
+  text-transform: inherit;
+}
+.navbar-fixed nav ul.left a.copyright {
+  color: #ff4081;
+  cursor: default;
+  pointer-events: none;
+}
+.navbar-fixed nav ul.left a.terms::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+  background-color: #ccc;
+}
+.navbar-fixed nav ul.left a.terms:hover::before {
+  opacity: 0;
+  -webkit-transform: opacity all ease;
+  transform: opacity all ease;
 }
 @media all and (max-width: 600px) {
   .navbar-fixed ul.right li a i {
@@ -433,45 +532,47 @@ img:hover .hover1:after {
 .nav-wrapper .nav-padd-right {
   padding-right: 80px;
 }
-/* --- Contact subNAV --- */
+/* ------ Contact subNAV --------------------------------- */
 #nav-contact {
   position: fixed;
-  bottom: 0;
+  bottom: 12px;
   right: 110px;
   z-index: 1000;
 }
+#nav-contact ul {
+  margin: 0;
+}
+#nav-contact ul li {
+  display: inline;
+  margin: 0;
+  padding: 20px 10px;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+#nav-contact ul li a {
+  color: #fff;
+}
+#nav-contact ul li:hover {
+  background-color: #111;
+}
+#nav-contact ul li:hover a {
+  color: #ff4081;
+}
 #nav-info {
+  display: none;
   position: fixed;
   bottom: 10px;
   right: 115px;
   z-index: 1000;
 }
-#nav-info {
-  display: none;
-}
 #nav-info a {
-  color: white;
+  color: #fff;
   font-size: 20px;
 }
-#nav-contact ul {
-  margin-bottom: 13px;
-}
-#nav-contact ul li {
-  display: inline;
-  padding-right: 10px;
-}
-#nav-contact ul li a {
-  color: #fff;
-}
-#nav-contact ul li a:hover {
-  color: #ff4081;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-}
-@media (max-width: 1450px) {
+@media (max-width: 750px) {
   #nav-contact {
     display: none;
   }
@@ -479,7 +580,7 @@ img:hover .hover1:after {
     display: block;
   }
 }
-/* --- Language & Social Media subNAV --- */
+/* --- Language & Social Media subNAV --------------------------------- */
 #nav-lang.fixed-action-btn {
   right: 10px;
   bottom: 8px;
@@ -587,51 +688,36 @@ nav .button-collapse i {
   line-height: 56px;
   padding-left: 15px;
 }
-.side-nav#mobile-demo li:first-child {
-  /* ... to center the img ... */
-  padding-top: 20px;
-  position: absolute;
-  left: 50%;
-  white-space: nowrap;
-  display: inline-block;
-  text-align: center;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.side-nav#mobile-demo li:nth-child(2) {
-  margin-top: 85px;
-}
-.side-nav#mobile-demo li:hover {
-  background-color: transparent !important;
-}
-.side-nav#mobile-demo li a {
-  color: white !important;
-  height: 50px;
-  line-height: 50px;
-}
 /* --- Social Media Icons Mobile SideNav --- */
-.side-nav#mobile-demo li.socialMobile {
-  display: inline-block;
+.side-nav#mobile-demo li {
+  display: block;
   width: 100%;
   float: none;
   padding: 0 15px;
   text-align: center;
 }
-.side-nav#mobile-demo li.socialMobile a {
+.side-nav#mobile-demo li:first-child {
+  padding-top: 25px;
+}
+.side-nav#mobile-demo li a {
   display: inline-block;
-  color: white;
+  color: #fff;
   background-color: transparent !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
   border-radius: 0%;
   line-height: 0;
   padding: 20px;
+  text-align: center;
 }
-.side-nav#mobile-demo li.socialMobile a i {
-  display: block;
+.side-nav#mobile-demo li a i {
+  display: inline-block;
   font-size: 2em;
+}
+.side-nav#mobile-demo li.copyMobile a {
+  text-transform: inherit;
+  color: #ff4081;
+  cursor: default;
+  pointer-events: none;
 }
 /* ... TOP NAV BAR "SECTIONS & CONTACT" .......................... */
 .navbar-top {
@@ -669,18 +755,15 @@ nav .button-collapse i {
 .navbar-top nav ul li a:hover,
 .navbar-top nav ul.navSubSections li a:hover,
 .navbar-top nav ul.navContact li a:hover {
-  color: white;
-  background-color: none !important;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
+  color: #fff;
+  -webkit-transition: all 150ms ease-in;
+  -moz-transition: all 150ms ease-in;
+  -ms-transition: all 150ms ease-in;
+  -o-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
 }
 .navbar-top nav ul.navContact li:first-child a:hover {
   color: #aaa;
-  background-color: none !important;
-  cursor: default;
 }
 .navbar-top nav ul.navSubSections li a.drinks {
   display: none;
@@ -746,7 +829,7 @@ nav .button-collapse i {
 }
 .headerSection h3 {
   padding-top: 50px;
-  color: #146eb4 !important;
+  color: #039be5 !important;
   text-transform: uppercase;
 }
 .headerSection h5 {

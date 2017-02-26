@@ -5,7 +5,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     title Canessa peluquería canina
     meta(name='description', content='Canessa servicios de peluquería canina y felina. SPA canino.')
-    meta(name='keywords', content='peluquería canina, peluquería animal, peluquería perros, peluquería gatos')
+    meta(name='keywords', content='peluqueria canina valdemoro, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos')
     meta(name='author', content='jalofernandez para Vanessa Vizcaya, Canessa')
     // FAVICON
     link(rel="apple-touch-icon", sizes="180x180", href="img/dist/favicon/apple-touch-icon.png")
@@ -68,38 +68,55 @@ html(lang='en')
           // <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
             i.material-icons menu
+          // LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
             // li
-              a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería caninca Canessa') Servicios
+              a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+            li
+              a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa peluquería canina, 2017
+            li
+              a.navbar-link.terms(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') Legal
+          //
+            li
+              a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
+          // RIGHT SIDE FOOTER LINKS MENU       
           ul.right
             li
-                a.navbar-link(href='https://www.facebook.com/vanessa.vizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                a.navbar-link(href='https://www.facebook.com/vanessa.vizcaya', title='Facebook de la peluquería canina Canessa', target="_blank")
                     i.fa.fa-facebook
             li
-                a.navbar-link(href='https://www.instagram.com/vanessavizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                a.navbar-link(href='https://www.instagram.com/vanessavizcaya', title='Instagram de la peluquería canina Canessa', target="_blank")
                     i.fa.fa-instagram
           // MOBILE
           ul#mobile-demo.side-nav
             li
-              img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería caninca Canessa')
+              img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
             //
                 li
-                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería caninca Canessa') Servicios
+                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
                 li
-                  a.navbar-link(href='contact.html', title='Contacto de la peluquería caninca Canessa') Contacto
+                  a.navbar-link(href='contact.html', title='Contacto de la peluquería canina Canessa') Contacto
             
             li.socialMobile
-                a.navbar-link(href='https://www.facebook.com/vanessa.vizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                a.navbar-link(href='https://www.facebook.com/vanessa.vizcaya', title='Facebook de la peluquería canina Canessa', target="_blank")
                     i.fa.fa-facebook
-                a.navbar-link(href='https://www.instagram.com/vanessavizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                a.navbar-link(href='https://www.instagram.com/vanessavizcaya', title='Instagram de la peluquería canina Canessa', target="_blank")
                     i.fa.fa-instagram
+            li
+                a.navbar-link(href='tel:912480430', title='Llamar a la peluquería canina Canessa') 91 248 04 30
+            li
+                a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') Horario
+            li
+                a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Legal
+            li.copyMobile
+                a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa, 2017
     // CONTACT SubNAV
     #nav-contact
       ul
         li
           a(href='tel:912480430', title='Llamar a peluquería canina Canessa')
             i.fa.fa-phone
-            |   91 248 04 30
+            |   91 248 04 30
         li
           a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', title='Dirección de peluquería canina Canessa en Google Maps')
             i.fa.fa-map-marker
@@ -108,7 +125,7 @@ html(lang='en')
             | , Valdemoro, Madrid
     #nav-info
       a.modal-trigger(href='#modal_contact', title='Contacto de la peluquería canina Canessa')
-        i.fa.fa-send
+        |   CONTACTO
     //
       SOCIAL MEDIA
       <div id="nav-social" class="fixed-action-btn">
@@ -170,23 +187,48 @@ html(lang='en')
         p Here will go an amazing section... See you Soon!
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Close 
+          | Cerrar 
           i.fa.fa-close
-    // MODALS MAIN NAV MOBILE sections :: "COMING SOON!"
-    #modal_buttons.modal
+    // MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+    #modal_schedule.modal
       .modal-content
-        h4 COMING SOON!
-        p Here will go an amazing section... See you Soon!
+        h4 HORARIO
+        .col.s12
+            ul#site-social
+              li
+                a(href='', title='Horario establecimiento')
+                  span
+                    i.fa.fa-clock-o
+                    |  Mañanas:&nbsp;
+                  span de 10:00 a 14:00
+              li
+                a(href='', title='Horario establecimiento')
+                  span
+                    i.fa.fa-clock-o
+                    |  Tardes:&nbsp;
+                  span de 16:00 a 20:00
+              li
+                a(href='', title='Horario establecimiento')
+                  span.clockDos
+                    i.fa.fa-clock-o
+                    |  Martes:&nbsp;
+                  span cerrado
+              li
+                a(href='', title='Horario establecimiento')
+                  span.clockDos
+                    i.fa.fa-clock-o
+                    |  Sábado tarde:&nbsp;
+                  span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Close 
+          | Cerrar 
           i.fa.fa-close
     // MODALS MAIN NAV MOBILE sections :: "CONTACT"
     #modal_contact.modal
       .modal-content
         h4 CONTACTO:
         .row.noMargBottom
-          .col.s12.m7.l6
+          .col.s12.m6.l6
             ul#site-social
               li
                 a(href='tel:912480430', title='Llamar a peluquería canina Canessa')
@@ -202,7 +244,7 @@ html(lang='en')
                   |   Vicente Aleixandre, 5. 
                   span 28341
                   | , Valdemoro, Madrid
-          .col.s12.m5.l6.row-dos
+          .col.s12.m6.l6.row-dos
             ul#site-social.right
               li
                 a(href='', title='Horario establecimiento')
@@ -230,7 +272,7 @@ html(lang='en')
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Close 
+          | Cerrar 
           i.fa.fa-close
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
