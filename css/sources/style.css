@@ -413,6 +413,12 @@ img:hover .hover1:after {
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
+@media all and (max-width: 600px) {
+  .navbar-fixed ul.right li a i {
+    position: relative;
+    top: 12px;
+  }
+}
 /*
 .navbar-fixed nav ul a.active {
     font-family: 'SnellRoundhand';
@@ -607,24 +613,25 @@ nav .button-collapse i {
   line-height: 50px;
 }
 /* --- Social Media Icons Mobile SideNav --- */
+.side-nav#mobile-demo li.socialMobile {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  padding: 0 15px;
+  text-align: center;
+}
 .side-nav#mobile-demo li.socialMobile a {
   display: inline-block;
   color: white;
   background-color: transparent !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
-  width: 30px !important;
-  height: 30px !important;
   border-radius: 0%;
   line-height: 0;
-  padding-top: 15px;
+  padding: 20px;
 }
 .side-nav#mobile-demo li.socialMobile a i {
   display: block;
-  font-size: 20px;
-}
-.side-nav#mobile-demo li.socialMobile a:nth-child(3) {
-  padding-left: 20px;
-  padding-right: 25px;
+  font-size: 2em;
 }
 /* ... TOP NAV BAR "SECTIONS & CONTACT" .......................... */
 .navbar-top {

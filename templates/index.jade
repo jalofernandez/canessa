@@ -69,17 +69,15 @@ html(lang='en')
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
             i.material-icons menu
           ul.left.hide-on-med-and-down
-          //
-            li
+            // li
               a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería caninca Canessa') Servicios
+          ul.right
             li
-              a.navbar-link(href='contact.html', title='Contacto de la peluquería caninca Canessa') Contacto
-          //
-            <ul class="right">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
+                a.navbar-link(href='https://www.facebook.com/vanessa.vizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                    i.fa.fa-facebook
+            li
+                a.navbar-link(href='https://www.instagram.com/vanessavizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                    i.fa.fa-instagram
           // MOBILE
           ul#mobile-demo.side-nav
             li
@@ -89,13 +87,12 @@ html(lang='en')
                   a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería caninca Canessa') Servicios
                 li
                   a.navbar-link(href='contact.html', title='Contacto de la peluquería caninca Canessa') Contacto
-            //
-              <li class="socialMobile"> "Social Media" : MOBILE
-              <a href="https://www.facebook.com/ArtsClubMadrid" target="_blank" class="modal-trigger" title="Facebook de Arts Club Madrid"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/ArtsClubMAD" target="_blank" class="modal-trigger" title="Twitter de Arts Club Madrid"><i class="fa fa-twitter"></i></a>
-              <a href="https://youtu.be/HwmU5GRbwDU" target="_blank" class="modal-trigger" title="Youtube account of Arts Club Madrid"><i class="fa fa-youtube-play"></i></a>
-              <a href="https://instagram.com/artsclubMAD" target="_blank" class="modal-trigger"><i class="fa fa-instagram" title="Instagram de Arts Club Madrid"></i></a>
-              </li>
+            
+            li.socialMobile
+                a.navbar-link(href='https://www.facebook.com/vanessa.vizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                    i.fa.fa-facebook
+                a.navbar-link(href='https://www.instagram.com/vanessavizcaya', title='Facebook de la peluquería caninca Canessa', target="_blank")
+                    i.fa.fa-instagram
     // CONTACT SubNAV
     #nav-contact
       ul
