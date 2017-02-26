@@ -314,7 +314,7 @@ img:hover .hover1:after {
   position: absolute;
   top: 100px;
   left: 100px;
-  z-index: 9999;
+  z-index: 3;
 }
 #acm-logo {
   /* background-color: rgba(0,0,0,.3); */
