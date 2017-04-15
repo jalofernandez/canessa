@@ -261,6 +261,8 @@ html(lang='en')
               a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa peluquería canina, 2017
             li
               a.navbar-link.terms(href='index.html', title='Condiciones de uso del website de la peluquería canina Canessa') Inicio
+            li
+              a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') Horario
           //
             li
               a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
@@ -331,28 +333,40 @@ html(lang='en')
         .col.s12
             ul#site-social
               li
+                b Lunes, Miercoles, Jueves y Viernes:
+              li
                 a(href='', title='Horario de mañana de la peluquería canina Canessa')
-                  span
+                  em
                     i.fa.fa-clock-o
                     |  Mañanas:&nbsp;
-                  span de 10:00 a 14:00
+                  span de 10:00 a 13:30
               li
                 a(href='', title='Horario de tarde de la peluquería canina Canessa')
-                  span
+                  em
                     i.fa.fa-clock-o
                     |  Tardes:&nbsp;
                   span de 16:00 a 20:00
               li
-                a(href='', title='Horario establecimiento')
-                  span.clockDos
+                b Sábados:
+              li
+                a(href='', title='Horario de mañana de la peluquería canina Canessa')
+                  em.clockDos
                     i.fa.fa-clock-o
-                    |  Martes:&nbsp;
+                    |  Mañanas:&nbsp;
+                  span de 10:30 a 13:30
+              li
+                a(href='', title='Establecimiento cerrado los sábados por la tarde')
+                  em
+                    i.fa.fa-clock-o
+                    |  Tardes:&nbsp;
                   span cerrado
               li
-                a(href='', title='Horario establecimiento')
-                  span.clockDos
+                b Martes y Domingos:
+              li
+                a(href='', title='Establecimiento cerrado los martes')
+                  em.clockDos
                     i.fa.fa-clock-o
-                    |  Sábado tarde:&nbsp;
+                    |  Mañanas y tardes:&nbsp;
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
@@ -382,28 +396,40 @@ html(lang='en')
           .col.s12.m6.l6.row-dos
             ul#site-social.right
               li
+                b Lunes, Miercoles, Jueves y Viernes:
+              li
                 a(href='', title='Horario de mañana de la peluquería canina Canessa')
-                  span
+                  em
                     i.fa.fa-clock-o
                     |  Mañanas:&nbsp;
-                  span de 10:00 a 14:00
+                  span de 10:00 a 13:30
               li
                 a(href='', title='Horario de tarde de la peluquería canina Canessa')
-                  span
+                  em
                     i.fa.fa-clock-o
                     |  Tardes:&nbsp;
                   span de 16:00 a 20:00
               li
-                a(href='', title='Establecimiento cerrado los martes')
-                  span.clockDos
+                b Sábados:
+              li
+                a(href='', title='Horario de mañana de la peluquería canina Canessa')
+                  em.clockDos
                     i.fa.fa-clock-o
-                    |  Martes:&nbsp;
-                  span cerrado
+                    |  Mañanas:&nbsp;
+                  span de 10:30 a 13:30
               li
                 a(href='', title='Establecimiento cerrado los sábados por la tarde')
-                  span.clockDos
+                  em
                     i.fa.fa-clock-o
-                    |  Sábado tarde:&nbsp;
+                    |  Tardes:&nbsp;
+                  span cerrado
+              li
+                b Martes y Domingos:
+              li
+                a(href='', title='Establecimiento cerrado los martes')
+                  em.clockDos
+                    i.fa.fa-clock-o
+                    |  Mañanas y tardes:&nbsp;
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')

@@ -1,4 +1,4 @@
-/* ----- VARIABLES and MIXINS --------------------------------- */
+/* ----- VARIABLES --------------------------------- */
 
 @main-color: #ff4081; // Fucsia
 @color-header: #039be5; // Sky Blue
@@ -6,20 +6,28 @@
 @color-black: #111;
 @grey-c: #ccc;
 
-.anim-all-150 {
-    -webkit-transition: all 150ms ease-in;
-    -moz-transition: all 150ms ease-in;
-    -ms-transition: all 150ms ease-in;
-    -o-transition: all 150ms ease-in;
-    transition: all 150ms ease-in;
+/* ----- MIXINS --------------------------------- */
+
+.anim(@type, @time, @long) {
+    -webkit-transition: @type @time @long;
+    -moz-transition: @type @time @long;
+    -ms-transition: @type @time @long;
+    -o-transition: @type @time @long;
+    transition: @type @time @long;
 }
 
-.border-radius {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.main-text(@size, @weight, @space) {
+    font-size: @size;
+    font-weight: @weight;
+    letter-spacing: @space;
 }
 
 /* ------------------------------------------------------------------- */
@@ -56,9 +64,7 @@
 /* ----- STYLES GENERIC ---------------------------------------- */
 
 body {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
+    .main-text(16px, 600, 0.04em);
     font-family: "champagne__limousinesregular",sans-serif;
     
     &.bg-black {
@@ -304,8 +310,7 @@ img:hover .hover1:after {
     p {
         color: @color-white;
         text-align: center;
-        font-size: 20px;
-        letter-spacing: 0.06em;
+        .main-text(20px, 400, 0.04em);
         line-height: 2rem;
     }
     
@@ -315,12 +320,11 @@ img:hover .hover1:after {
           
           a {
               color: @color-white;
-              font-size: 18px;
-              letter-spacing: 0.06em;
+              .main-text(18px, 400, 0.04em);
               
               &:hover {
                   color: @main-color;
-                  .anim-all-150;
+                  .anim(all, 150ms, ease-in);
                   
                   i {
                         min-width: 20px;
@@ -328,6 +332,22 @@ img:hover .hover1:after {
                     }
                 }
             }
+          
+          b {
+              color: @color-header;
+              .main-text(18px, 400, 0.04em);
+          }
+          
+          em {
+              color:lighten(@color-white, 10%);
+              .main-text(16px, 400, 0.04em);
+          }
+          
+          &:first-child,
+          &:nth-child(4),
+          &:nth-child(7) {
+              margin-top: 10px;
+          }
         }  
     }
     
@@ -379,15 +399,19 @@ img:hover .hover1:after {
 }
 
 
-#site-social.right li {
-    float: right;
-}
-#site-social.right li a {
-    color: #ccc;
-    cursor: text;
-}
-#site-social.right li a:hover {
-    color: #ccc;
+#site-social.right {
+    li {
+        float: right;
+        
+        a {
+            color: #ccc;
+            cursor: text;
+            
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width : 350px) {
@@ -514,7 +538,7 @@ img:hover .hover1:after {
         
         ul {
             li {
-                .anim-all-150;
+                .anim(all, 150ms, ease-in);
                 
                 &:hover {
                     background-color: @color-black;
@@ -528,13 +552,12 @@ img:hover .hover1:after {
                 
                 a {
                     font-family: "champagne__limousinesregular",sans-serif;
-                    font-size: 1.2rem;
+                    .main-text(1.2rem, 400, 0.06em);
                     color: @color-white;
+                    text-transform: uppercase;
                     display: block;
                     padding: 0px 15px;
-                    letter-spacing: 0.06em;
-                    text-transform: uppercase;
-                    .anim-all-150;
+                    .anim(all, 150ms, ease-in);
 
                     &:not(.copyright) {
                         &:hover {
@@ -557,13 +580,14 @@ img:hover .hover1:after {
                     pointer-events: none;
                 }
                 
-                &.terms {
+                &.terms,
+                &.schedule {
                     &::before {
                         content: "";
                         display: inline-block;
                         width: 5px;
                         height: 5px;
-                        .border-radius;
+                        .border-radius(50%);
                         position: relative;
                         right: 10px;
                         bottom: 2px;
@@ -628,7 +652,7 @@ img:hover .hover1:after {
             display: inline;
             margin: 0;
             padding: 20px 10px;
-            .anim-all-150;
+            .anim(all, 150ms, ease-in);
             
             a {
                 color: @color-white;
@@ -876,7 +900,7 @@ nav .button-collapse i {
 .navbar-top nav ul.navSubSections li a:hover,
 .navbar-top nav ul.navContact li a:hover {
     color: @color-white;
-    .anim-all-150;
+    .anim(all, 150ms, ease-in);
 }
 .navbar-top nav ul.navContact li:first-child a:hover {
     color: #aaa;

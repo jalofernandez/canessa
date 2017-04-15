@@ -1,18 +1,5 @@
-/* ----- VARIABLES and MIXINS --------------------------------- */
-.anim-all-150 {
-  -webkit-transition: all 150ms ease-in;
-  -moz-transition: all 150ms ease-in;
-  -ms-transition: all 150ms ease-in;
-  -o-transition: all 150ms ease-in;
-  transition: all 150ms ease-in;
-}
-.border-radius {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
+/* ----- VARIABLES --------------------------------- */
+/* ----- MIXINS --------------------------------- */
 /* ------------------------------------------------------------------- */
 /* FONT FACE :: CUSTOM FONTS ---------------------------------------- */
 /* ----------------------------------------------------------------- */
@@ -258,7 +245,8 @@ img:hover .hover1:after {
   color: #fff;
   text-align: center;
   font-size: 20px;
-  letter-spacing: 0.06em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   line-height: 2rem;
 }
 #modal_section ul li,
@@ -275,7 +263,8 @@ img:hover .hover1:after {
 #modal_schedule ul li a {
   color: #fff;
   font-size: 18px;
-  letter-spacing: 0.06em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
 #modal_section ul li a:hover,
 #modal_buttons ul li a:hover,
@@ -296,6 +285,43 @@ img:hover .hover1:after {
 #modal_schedule ul li a:hover i {
   min-width: 20px;
   opacity: .5;
+}
+#modal_section ul li b,
+#modal_buttons ul li b,
+#modal_social ul li b,
+#modal_contact ul li b,
+#modal_schedule ul li b {
+  color: #039be5;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+#modal_section ul li em,
+#modal_buttons ul li em,
+#modal_social ul li em,
+#modal_contact ul li em,
+#modal_schedule ul li em {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+#modal_section ul li:first-child,
+#modal_buttons ul li:first-child,
+#modal_social ul li:first-child,
+#modal_contact ul li:first-child,
+#modal_schedule ul li:first-child,
+#modal_section ul li:nth-child(4),
+#modal_buttons ul li:nth-child(4),
+#modal_social ul li:nth-child(4),
+#modal_contact ul li:nth-child(4),
+#modal_schedule ul li:nth-child(4),
+#modal_section ul li:nth-child(7),
+#modal_buttons ul li:nth-child(7),
+#modal_social ul li:nth-child(7),
+#modal_contact ul li:nth-child(7),
+#modal_schedule ul li:nth-child(7) {
+  margin-top: 10px;
 }
 #modal_section .modal-footer,
 #modal_buttons .modal-footer,
@@ -473,11 +499,12 @@ img:hover .hover1:after {
 .navbar-fixed nav ul li a {
   font-family: "champagne__limousinesregular", sans-serif;
   font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   color: #fff;
+  text-transform: uppercase;
   display: block;
   padding: 0px 15px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   -webkit-transition: all 150ms ease-in;
   -moz-transition: all 150ms ease-in;
   -ms-transition: all 150ms ease-in;
@@ -497,7 +524,8 @@ img:hover .hover1:after {
   cursor: default;
   pointer-events: none;
 }
-.navbar-fixed nav ul.left a.terms::before {
+.navbar-fixed nav ul.left a.terms::before,
+.navbar-fixed nav ul.left a.schedule::before {
   content: "";
   display: inline-block;
   width: 5px;
@@ -512,7 +540,8 @@ img:hover .hover1:after {
   bottom: 2px;
   background-color: #ccc;
 }
-.navbar-fixed nav ul.left a.terms:hover::before {
+.navbar-fixed nav ul.left a.terms:hover::before,
+.navbar-fixed nav ul.left a.schedule:hover::before {
   opacity: 0;
   -webkit-transform: opacity all ease;
   transform: opacity all ease;
