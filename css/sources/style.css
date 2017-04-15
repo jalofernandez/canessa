@@ -866,6 +866,9 @@ nav .button-collapse i {
   color: #039be5 !important;
   text-transform: uppercase;
 }
+.headerSection h3 .capital {
+  text-transform: capitalize;
+}
 .headerSection h5 {
   color: #666 !important;
 }
@@ -887,6 +890,10 @@ nav .button-collapse i {
 }
 .headerSection .centerPicHeader img {
   border: 5px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   width: 250px;
   height: 250px;
