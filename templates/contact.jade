@@ -4,9 +4,12 @@ html(lang='en')
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
     title Canessa: Contacto
-    meta(name='description', content='Canessa servicios de peluquería canina y felina. SPA canino.')
-    meta(name='keywords', content='peluqueria canina valdemoro, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos')
+    meta(name='description', content='Canessa ofrece servicios de peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición. También se realizan arreglos y lavados. Tenemos tarifa especial para autolavados además de un completo SPA canino.')
+    meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
     meta(name='author', content='jalofernandez para Vanessa Vizcaya, Canessa')
+    meta(name='robots', content='index, follow, archive')
+    meta(name='generator', content='html5, css3, nodejs, less, pug')
+    meta(name='google', content='nositelinkssearchbox')
     // FAVICON
     link(rel="apple-touch-icon", sizes="180x180", href="img/dist/favicon/apple-touch-icon.png")
     link(rel="icon", type="image/png", href="img/dist/favicon/favicon-32x32.png", sizes="32x32")
@@ -14,8 +17,8 @@ html(lang='en')
     link(rel="manifest", href="img/dist/favicon/manifest.json")
     // Browsers Tabs
     link(rel="mask-icon", href="img/dist/favicon/safari-pinned-tab.svg", color="#5bbad5")
-    // windows (metro)
-    meta(name="theme-color", content="#ffffff")
+    // to customize browsers top navbar
+    meta(name="theme-color", content="#ff4081")
     // SiteMap
     link(rel='sitemap', href='sitemap.xml', title='Mapa general del website')
     // CSS
@@ -292,22 +295,28 @@ html(lang='en')
           .col.s12.m5.l6.row-dos
             ul#site-social.right
               li
-                a(href='', title='Horario establecimiento')
+                a(href='', title='Horario de mañana de la peluquería canina Canessa')
                   span
                     i.fa.fa-clock-o
                     |  Mañanas:
                   span de 10:00 a 14:00
               li
-                a(href='', title='Horario establecimiento')
+                a(href='', title='Horario de tarde de la peluquería canina Canessa')
                   span
                     i.fa.fa-clock-o
                     |  Tardes:
                   span de 16:00 a 20:00
               li
-                a(href='', title='Horario establecimiento')
+                a(href='', title='Establecimiento cerrado los martes')
                   span.clockDos
                     i.fa.fa-clock-o
                     |  Martes:
+                  span cerrado
+              li
+                a(href='', title='Establecimiento cerrado los sábados por la tarde')
+                  span.clockDos
+                    i.fa.fa-clock-o
+                    |  Sábado tarde:&nbsp;
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
