@@ -10,7 +10,7 @@ html(lang='en')
         meta(name='robots', content='index, follow, archive')
         meta(name='generator', content='html5, css3, nodejs, less, pug')
         meta(name='google', content='nositelinkssearchbox')
-        meta(name='google-site-verification', content='l-GFAFescssYvH7D8P2CXnP4tjx7qvU5zIqSu4hSePY')
+        meta(name='google-site-verification',content='l-GFAFescssYvH7D8P2CXnP4tjx7qvU5zIqSu4hSePY')
         // FAVICON
         link(rel="apple-touch-icon", sizes="180x180", href="img/dist/favicon/apple-touch-icon.png")
         link(rel="icon", type="image/png", href="img/dist/favicon/favicon-32x32.png", sizes="32x32")
@@ -23,11 +23,9 @@ html(lang='en')
         // SiteMap
         link(rel='sitemap', href='sitemap.xml', title='Mapa general del website')
         // CSS
-        link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
         link(rel='stylesheet', type='text/css', href='font/font-awesome-4.3.0/css/font-awesome.min.css')
-        link(rel='stylesheet', type='text/css', href='css/dist/materialize.css', media='screen,projection')
-        link(rel='stylesheet', type='text/css', href='css/dist/style.css', media='screen,projection')
-    body
+        link(rel='stylesheet', type='text/css', href='css/dist/main.css', media='screen,projection')
+  body
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       01. SIDER Full Page
@@ -40,16 +38,19 @@ html(lang='en')
           .caption.left-align
             h1 Peluquería canina
             h5.intro Tu centro de belleza animal en Valdemoro
+            a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Nuestros servicios
         li
           img(src='img/dist/slider/golden-under-water.jpg', title='Servicio de autolavado de la peluquería canina Canessa', alt='Servicio de autolavado de la peluquería canina Canessa')
           .caption.left-align
             h3 Servicio de Autolavado
             h5.intro Nosotros ponemos la bañera, el champú, las toallas y el secador y tú las manos
+            a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Nuestros servicios
         li
           img(src='img/dist/slider/entrada.jpg', title='Entrada y recibidor de la Canessa peluquería canina', alt='Entrada y recibidor de la Canessa peluquería canina')
           .caption.left-align.mycaption
             h3 Piensos y Complementos
             h5.intro Tenemos piensos, juguetes, correas, arneses, camas...
+            a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Nuestros servicios
         li
           img(src='img/dist/slider/peluqueria.jpg', title='Zona de corte y baño de la Canessa peluquería canina', alt='Zona de corte y baño de la Canessa peluquería canina')
           .caption.left-align
@@ -62,6 +63,7 @@ html(lang='en')
               span
               |  SPA y Autolavado
             h5.intro Valdemoro
+            a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Nuestros servicios
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       00. MAIN NAV BAR
@@ -71,7 +73,7 @@ html(lang='en')
         .nav-wrapper
           // <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
-            i.material-icons menu
+            i.fa.fa-bars
           // LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
             // li
@@ -97,12 +99,6 @@ html(lang='en')
           ul#mobile-demo.side-nav
             li
               img(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa', alt='Logotipo de la peluquería canina Canessa')
-            //
-                li
-                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
-                li
-                  a.navbar-link(href='contact.html', title='Contacto de la peluquería canina Canessa') Contacto
-            
             li.socialMobile
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
                     i.fa.fa-facebook
@@ -112,6 +108,10 @@ html(lang='en')
                 a.navbar-link(href='tel:912480430', title='Llamar a la peluquería canina Canessa') 91 248 04 30
             li
                 a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') Horario
+            li
+                a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+            li
+                a.navbar-link(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') Mascotactiva
             li
                 a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Legal
             li.copyMobile
@@ -310,4 +310,4 @@ html(lang='en')
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     script(src='js/dist/jquery.min.js')
     script(src='js/dist/materialize.min.js')
-    script(src='js/dist/acm.js')
+    script(src='js/dist/scripts-min.js')

@@ -763,41 +763,33 @@ nav .button-collapse i {
   background-color: white;
 }
 .navbar-top nav {
-  height: 75px;
   width: 100%;
-  /*background-color: white;*/
   background-color: black;
-  /*border-bottom: 1px solid black;*/
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }
 .navbar-top nav ul.right {
   padding-right: 15px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .navbar-top nav ul.left {
   padding-left: 15px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .navbar-top nav ul li a {
   text-transform: none;
-  color: #aaa;
+  color: #fff;
   font-size: 14px;
   letter-spacing: .05em;
   padding-right: 10px;
   padding-left: 10px;
 }
-.navbar-top nav ul li a:hover,
-.navbar-top nav ul.navSubSections li a:hover,
-.navbar-top nav ul.navContact li a:hover {
-  color: #fff;
+.navbar-top nav ul li:hover a {
+  color: #ff4081;
   -webkit-transition: all 150ms ease-in;
   -moz-transition: all 150ms ease-in;
   -ms-transition: all 150ms ease-in;
   -o-transition: all 150ms ease-in;
   transition: all 150ms ease-in;
-}
-.navbar-top nav ul.navContact li:first-child a:hover {
-  color: #aaa;
 }
 .navbar-top nav ul.navSubSections li a.drinks {
   display: none;
@@ -821,26 +813,17 @@ nav .button-collapse i {
   }
 }
 /* --- 1. "Logotipo" Top Main Nav --- */
-/*
-#acm-navLogo {
-    width: 14%;
-    position: fixed;
-    top: 10px;
-    z-index: 1001;
-    padding: 8px 10px 0 10px;
-    margin-left: 11px;
-    background-color: black;
-}
-*/
 #acm-navLogo {
   padding: 6px 6px 0 6px;
-  background-color: black;
-  height: 75px;
-  border-radius: 40px;
 }
 #acm-navLogo .small-one {
-  width: 180px;
+  width: 160px;
   height: auto;
+}
+@media (max-width: 601px) {
+  #acm-navLogo .small-one {
+    width: 150px;
+  }
 }
 /* --- 2. "Left Navigation Menu" Top Main Nav --- */
 .navbar-top nav ul.navSubSections li a {
@@ -866,11 +849,15 @@ nav .button-collapse i {
   color: #039be5 !important;
   text-transform: uppercase;
 }
-.headerSection h3 .capital {
+.headerSection h3 span.capital {
   text-transform: capitalize;
+}
+.headerSection h3 span:not(.capital) {
+  text-transform: initial;
 }
 .headerSection h5 {
   color: #666 !important;
+  line-height: 30px;
 }
 .headerSection h5 span {
   font-family: 'SnellRoundhand' !important;
@@ -1101,6 +1088,12 @@ p.links a:hover {
 #red p span,
 #rose p span {
   display: block;
+}
+/* ... BUTTONS ................................. */
+.btn,
+.btn-large {
+  background-color: #ff4081;
+  color: #fff;
 }
 /* ... SLIDER ................................. */
 .slider .slides li img {

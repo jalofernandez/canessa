@@ -4,7 +4,7 @@ html(lang='en')
         meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
         title Canessa: error
-        meta(name='description', content='Canessa ofrece servicios de peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición. También se realizan arreglos y lavados. Tenemos tarifa especial para autolavados además de un completo SPA canino.')
+        meta(name='description', content='Página de error del website Peluquería canina Canessa. Pruebe otra URL o vaya a la página de inicio para encontrar la descripción de nuestros servicios y contacto.')
         meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
         meta(name='author', content='@jalofernandez para Vanessa Vizcaya, Canessa')
         meta(name='robots', content='index, follow, archive')
@@ -22,13 +22,8 @@ html(lang='en')
         // SiteMap
         link(rel='sitemap', href='sitemap.xml', title='Mapa general del website')
         // CSS
-        link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
         link(rel='stylesheet', type='text/css', href='font/font-awesome-4.3.0/css/font-awesome.min.css')
-        link(rel='stylesheet', type='text/css', href='css/dist/icomoon.css')
-        link(rel='stylesheet', type='text/css', href='css/dist/materialize.css', media='screen,projection')
-        link(rel='stylesheet', type='text/css', href='css/dist/style.css', media='screen,projection')
-        // Script de ANGULAR
-        script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js')
+        link(rel='stylesheet', type='text/css', href='css/dist/main.css', media='screen,projection')
     body.bg-paper
     //
       GRADIENT TOP
@@ -120,7 +115,7 @@ html(lang='en')
         .nav-wrapper
           // <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
-            i.material-icons menu
+            i.fa.fa-bars
           // LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
             // li
@@ -146,12 +141,6 @@ html(lang='en')
           ul#mobile-demo.side-nav
             li
               img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
-            //
-                li
-                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
-                li
-                  a.navbar-link(href='contact.html', title='Contacto de la peluquería canina Canessa') Contacto
-            
             li.socialMobile
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
                     i.fa.fa-facebook
@@ -163,6 +152,12 @@ html(lang='en')
                 a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') Horario
             li
                 a.navbar-link(href='index.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Inicio
+            li
+                a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+            li
+                a.navbar-link(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') Mascotactiva
+            li
+                a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Legal
             li.copyMobile
                 a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa, 2017
     // CONTACT SubNAV
@@ -303,11 +298,10 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-    //
-      //////////////////////////////////////////////////////////////////////////////////////////////////////////
-      ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
-      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    script(src='js/dist/jquery.min.js')
-    script(src='js/materialize.js')
-    script(src='js/init.js')
-    script(src='js/acm.js')
+        //
+          //////////////////////////////////////////////////////////////////////////////////////////////////////////
+          ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      script(src='js/dist/jquery.min.js')
+      script(src='js/dist/materialize.min.js')
+      script(src='js/dist/scripts-min.js')

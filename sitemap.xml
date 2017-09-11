@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://www.peluqueriacanessa.com/art-gallery.html</loc>
-        <lastmod>2015-09-04T15:45:05.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>http://www.peluqueriacanessa.com/contact.html</loc>
-        <lastmod>2017-09-08T15:21:56.000Z</lastmod>
+        <loc>http://www.peluqueriacanessa.com/gallery.html</loc>
+        <lastmod>2017-09-11T18:11:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>http://www.peluqueriacanessa.com/</loc>
-        <lastmod>2017-09-08T15:21:56.000Z</lastmod>
+        <lastmod>2017-09-11T18:11:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>http://www.peluqueriacanessa.com/legal.html</loc>
-        <lastmod>2017-09-08T15:21:56.000Z</lastmod>
+        <lastmod>2017-09-11T18:11:13.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://www.peluqueriacanessa.com/mascotactiva.html</loc>
+        <lastmod>2017-09-11T18:11:14.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>

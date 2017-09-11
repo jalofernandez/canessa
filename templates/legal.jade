@@ -59,27 +59,18 @@ html(lang='en')
                       a.cockt(href='#future', title='Go to Future Exhibitions section of Arts Club Madrid') Future Exhibitions
                     li
                       a.gastro(href='#commiss', title='Go to Art Commissioner section of Arts Club Madrid') Art Commissioner
-            // "Logo" :: CENTER LOGO
-            #acm-navLogo.brand-logo.center
-              img.fixed.small-one(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+            // "Logo" :: LEFT LOGO
+            #acm-navLogo.col.m3.brand-logo
+                img.fixed.small-one(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
             // "Contact" :: RIGHT NAV
-            .col.m5.offset-m2
-                  ul.left.navContact.hide-on-med-and-down
+            .col.m9.offset-m3
+                ul.right.navContact.hide-on-med-and-down
                     li
                       a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa')  INICIO
-                    //
-                        li
-                          a.phone(href='tel:912770365', title='Call to Arts Club Madrid')
-                            i.fa.fa-phone
-                            |  912 770 365
-                        li
-                          a(href='https://module.lafourchette.com/es_ES/module/62151-6082e', target='_blank', title='Online Reservations with ElTenedor in Arts Club Madrid')
-                            i.fa.fa-cutlery
-                            |   Online Reservations
-                        li
-                          a.schedule.modal-trigger(href='#modal_contact', title='Online Reservations with ElTenedor in Arts Club Madrid')
-                            i.fa.fa-clock-o
-                            |   13:00 - 02:00 Su-We / 03:00 Th-Sa    
+                    li
+                      a.address(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') SERVICIOS
+                    li
+                      a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') MASCOTACTIVA  
     .margTopForNav
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -247,7 +238,7 @@ html(lang='en')
         .nav-wrapper
           // <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
-            i.material-icons menu
+            i.fa.fa-bars
           // LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
             // li
@@ -273,11 +264,6 @@ html(lang='en')
           ul#mobile-demo.side-nav
             li
               img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
-            //
-                li
-                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
-                li
-                  a.navbar-link(href='contact.html', title='Contacto de la peluquería canina Canessa') Contacto
             
             li.socialMobile
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
@@ -290,6 +276,10 @@ html(lang='en')
                 a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') Horario
             li
                 a.navbar-link(href='index.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Inicio
+            li
+                a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+            li
+                a.navbar-link(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') Mascotactiva
             li.copyMobile
                 a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa, 2017
     // CONTACT SubNAV
