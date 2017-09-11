@@ -1,5 +1,6 @@
 sources
 node_modules
+do_not_publish
 .tmp
 .DS_Store
 .AppleDouble

@@ -23,10 +23,8 @@ html(lang='en')
         // SiteMap
         link(rel='sitemap', href='sitemap.xml', title='Mapa general del website')
         // CSS
-        link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
         link(rel='stylesheet', type='text/css', href='font/font-awesome-4.3.0/css/font-awesome.min.css')
-        link(rel='stylesheet', type='text/css', href='css/dist/materialize.css', media='screen,projection')
-        link(rel='stylesheet', type='text/css', href='css/dist/style.css', media='screen,projection')
+        link(rel='stylesheet', type='text/css', href='css/dist/main.css', media='screen,projection')
   body
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -71,7 +69,8 @@ html(lang='en')
         .nav-wrapper
           // <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
-            i.material-icons menu
+            //i.material-icons menu
+            i.fa.fa-bars
           // LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
             // li
@@ -310,4 +309,4 @@ html(lang='en')
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     script(src='js/dist/jquery.min.js')
     script(src='js/dist/materialize.min.js')
-    script(src='js/dist/acm.js')
+    script(src='js/dist/scripts-min.js')

@@ -4,6 +4,7 @@
    var gulp = require('gulp'),
      concat = require('gulp-concat'),
      uglify = require('gulp-uglify'),
+  minifycss = require('gulp-minify-css');
    cleanCSS = require('gulp-clean-css'),
    imagemin = require('gulp-imagemin'),
 gulpIgnore  = require('gulp-ignore'),
@@ -33,12 +34,34 @@ gulp.task('js', function () {
 });
 
 /*
+* Configuración de la tarea 'less' --> gulp-less (gulp less)
+*/
+gulp.task('less', function () {
+    return gulp.src('./less/**/[^_]*.less')
+        .pipe(less({
+        paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+        .pipe(gulp.dest('./css/sources'));
+});
+
+/*
 * Configuración de la tarea 'css' --> gulp-clean-css (gulp css)
 */
 gulp.task('css', function() {
   return gulp.src('css/sources/style.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('css/dist'));
+});
+
+// Tarea 2 llamada minify-css
+/*
+* Configuración de la tarea 'minify-css' --> mincss (gulp css)
+*/
+gulp.task('mincss', function () {
+    gulp.src('css/sources/*.css')
+        .pipe(concat('main.css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('css/dist'))
 });
 
 /*
@@ -48,17 +71,6 @@ gulp.task('img', function () {
     return gulp.src(['img/sources/**/*.*'])
         .pipe(imagemin())
         .pipe(gulp.dest('img/dist'));
-});
-
-/*
-* Configuración de la tarea 'less' --> gulp-less (gulp less)
-*/
-gulp.task('less', function () {
-  return gulp.src('./less/**/[^_]*.less')
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(gulp.dest('./css/sources'));
 });
 
 /*
