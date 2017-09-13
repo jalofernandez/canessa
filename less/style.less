@@ -76,7 +76,14 @@ body {
     }
 }
 
+.stronger {
+    font-weight: bold;
+    color: black;
+}
 
+.container-gallery {
+    margin-bottom: 50px;
+}
 
 @media only screen and (max-width: 1400px) {
     .container {
@@ -822,6 +829,7 @@ nav .button-collapse i {
         float: none;
         padding: 0 15px;
         text-align: center;
+        line-height: 15px;
         
         &:first-child {
             padding-top: 25px;
@@ -1020,6 +1028,17 @@ nav .button-collapse i {
             color: #666;
             text-align: center;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .headerSection {
+        width: 90% !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        padding: 0 !important;
     }
 }
 
@@ -1242,6 +1261,27 @@ p.links a:hover {
     color: @color-white;
     &:hover {
         
+    }
+}
+
+.btn-mascotactiva {
+    margin-top: 20px;
+    
+    &:last-child {
+        float: right;
+        text-transform: lowercase;
+        font-size: 18px;
+        letter-spacing: 0.08em;
+    }
+    
+    i {
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 601px) {
+    .btn-mascotactiva {
+        width: 100%;
     }
 }
 
@@ -1506,15 +1546,24 @@ blockquote p span {
   #index-banner .section {
     top: 0;
   }
-  .slider .slides .caption {
+  .slider .slides li .caption{
+      top: 45%;
+  }
+  .slider .slides li .caption h1,
+  .slider .slides li .caption h3 {
+      font-size: 1.5em;
+  }
+  .slider .slides li .caption h1,
+  .slider .slides li .caption h3,
+  .slider .slides li .caption h5 {
+      max-width: 300px;
+  }
+  #site-social.right {
       display: none;
   }
-    #site-social.right {
-        display: none;
-    }
-    #contactArea {
-        width: 300px;
-    }
+  #contactArea {
+      width: 300px;
+  }
 }
 
 
