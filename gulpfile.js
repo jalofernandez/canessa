@@ -11,7 +11,6 @@ gulpIgnore  = require('gulp-ignore'),
        less = require('gulp-less'),
        path = require('path'),
        jade = require('gulp-jade'),
-        pug = require('pug'),
         pug = require('gulp-pug'),
        data = require('gulp-data'),
          fs = require('fs'),
@@ -99,7 +98,9 @@ gulp.task('pug', function() {
         return JSON.parse(fs.readFileSync('/data/data.json'))
       }))
       */
-      .pipe(pug())
+      .pipe(pug({
+        pretty: true
+      }))
       .pipe(gulp.dest('./templates/'));
 });
 
