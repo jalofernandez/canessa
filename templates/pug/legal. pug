@@ -1,3 +1,4 @@
+//output:../../legal.html
 doctype html
 html(lang='en')
     head
@@ -42,7 +43,7 @@ html(lang='en')
                   ul.right.navSubSections.hide-on-med-and-down
                     li
                       a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
-                        | Our Expos 
+                        | Our Expos
                         i.fa.fa-caret-down
                     ul#dropdown1.dropdown-content
                       li
@@ -70,7 +71,7 @@ html(lang='en')
                     li
                       a.address(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') SERVICIOS
                     li
-                      a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') MASCOTACTIVA  
+                      a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') MASCOTACTIVA
     .margTopForNav
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -79,11 +80,11 @@ html(lang='en')
     #past.row.scrollspy
       .col.s12.headerSection
         h3.center-align
-          span Términos
-          |  legales
+          span Términos 
+          | legales
         //
             h5.center-align
-              | beauty is 
+              | beauty is
               span around
               |  you
             p.introIcon
@@ -106,7 +107,7 @@ html(lang='en')
           span protección de datos
           //
             h5.center-align
-              | beauty is 
+              | beauty is
               span around
               |  you
             p.introIcon
@@ -130,7 +131,7 @@ html(lang='en')
           span cookies
           //
             h5.center-align
-              | beauty is 
+              | beauty is
               span around
               |  you
             p.introIcon
@@ -172,7 +173,7 @@ html(lang='en')
           span Responsabilidad
         //
             h5.center-align
-              | We want 
+              | We want
               span co-working
               |  with you
             p.introIcon
@@ -198,7 +199,7 @@ html(lang='en')
           span intelectual
         //
             h5.center-align
-              | We want 
+              | We want
               span co-working
               |  with you
             p.introIcon
@@ -252,7 +253,7 @@ html(lang='en')
           //
             li
               a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
-          // RIGHT SIDE FOOTER LINKS MENU       
+          // RIGHT SIDE FOOTER LINKS MENU
           ul.right
             li
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
@@ -264,7 +265,7 @@ html(lang='en')
           ul#mobile-demo.side-nav
             li
               img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
-            
+
             li.socialMobile
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
                     i.fa.fa-facebook
@@ -292,7 +293,7 @@ html(lang='en')
         li
           a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', title='Dirección de peluquería canina Canessa en Google Maps', rel="noopener noreferrer")
             i.fa.fa-map-marker
-            |   Vicente Aleixandre, 5. 
+            |   Vicente Aleixandre, 5.
             span 28341
             | , Valdemoro, Madrid
     #nav-info
@@ -309,7 +310,7 @@ html(lang='en')
         p Here will go an amazing section... See you Soon!
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Cerrar 
+          | Cerrar
           i.fa.fa-close
     // MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
     #modal_schedule.modal
@@ -355,7 +356,7 @@ html(lang='en')
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Cerrar 
+          | Cerrar
           i.fa.fa-close
     // MODALS MAIN NAV MOBILE sections :: "CONTACT"
     #modal_contact.modal
@@ -375,7 +376,7 @@ html(lang='en')
               li
                 a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', rel="noopener noreferrer", title='Dirección de a peluquería canina Canessa en Google maps')
                   i.fa.fa-map-marker
-                  |   Vicente Aleixandre, 5. 
+                  |   Vicente Aleixandre, 5.
                   span 28341
                   | , Valdemoro, Madrid
           .col.s12.m6.l6.row-dos
@@ -418,7 +419,7 @@ html(lang='en')
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Cerrar 
+          | Cerrar
           i.fa.fa-close
         //
           //////////////////////////////////////////////////////////////////////////////////////////////////////////

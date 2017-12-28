@@ -1,3 +1,4 @@
+//output:../../gallery.html
 doctype html
 html(lang='en')
     head
@@ -42,7 +43,7 @@ html(lang='en')
                   ul.right.navSubSections.hide-on-med-and-down
                     li
                       a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
-                        | Our Expos 
+                        | Our Expos
                         i.fa.fa-caret-down
                     ul#dropdown1.dropdown-content
                       li
@@ -70,7 +71,7 @@ html(lang='en')
                     li
                         a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') MASCOTACTIVA
                     li
-                        a.address(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') LEGAL   
+                        a.address(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') LEGAL
     .margTopForNav
     //
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -82,12 +83,12 @@ html(lang='en')
                 span.capital  Nuestros 
                 b servicios
             p.introIcon
-                i.fa.fa-scissors    
+                i.fa.fa-scissors
             h5.center-align
                 | La peluquería canina, no es solo una cuestion de estética, sino también de higiene, de salud, y lo más importante, BIENESTAR del animal.
-              
-    .container
-        .section      
+
+     .container.container-gallery
+        .section
             .row
                 .col.s12.m6.l6.xl4
                     .card
@@ -114,7 +115,7 @@ html(lang='en')
                             img(src='img/dist/gallery/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
                             span.card-title Bichón maltés.
                         .card-content
-                            p Corte de raza de Bichón Maltés. 
+                            p Corte de raza de Bichón Maltés.
                 .col.s12.m6.l6.xl4
                     .card
                         .card-image
@@ -129,7 +130,7 @@ html(lang='en')
                             img(src='img/dist/gallery/sitshu-previo-corte.jpg', title='Shih Tzu a punto de recibir un señor corte', alt='Shih Tzu a punto de recibir un señor corte')
                             span.card-title Shih Tzu.
                          .card-content
-                            p Shih Tzu a punto de recibir un señor corte. 
+                            p Shih Tzu a punto de recibir un señor corte.
                  .col.s12.m6.l6.xl4
                      .card
                         .card-image
@@ -144,7 +145,7 @@ html(lang='en')
                             img(src='img/dist/gallery/mestizo.jpg', title='Proceso de corte a tijera de un mestizo muy peludo', alt='Proceso de corte a tijera de un mestizo muy peludo')
                             span.card-title Mestizo.
                         .card-content
-                            p Proceso de corte a tijera de un mestizo muy peludo. 
+                            p Proceso de corte a tijera de un mestizo muy peludo.
                 .col.s12.m6.l6.xl4
                     .card
                         .card-image
@@ -159,7 +160,7 @@ html(lang='en')
                             img(src='img/dist/gallery/caniche-a-tijera.jpg', title='Caniche tras un corte a tijera', alt='Caniche tras un corte a tijera')
                             span.card-title Caniche.
                         .card-content
-                            p Caniche tras un corte a tijera. 
+                            p Caniche tras un corte a tijera.
                  .col.s12.m6.l6.xl4
                      .card
                         .card-image
@@ -189,7 +190,7 @@ html(lang='en')
           //
             li
               a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
-          // RIGHT SIDE FOOTER LINKS MENU       
+          // RIGHT SIDE FOOTER LINKS MENU
           ul.right
             li
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
@@ -228,7 +229,7 @@ html(lang='en')
         li
           a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', rel="noopener noreferrer", title='Dirección de peluquería canina Canessa en Google Maps')
             i.fa.fa-map-marker
-            |   Vicente Aleixandre, 5. 
+            |   Vicente Aleixandre, 5.
             span 28341
             | , Valdemoro, Madrid
     #nav-info
@@ -245,7 +246,7 @@ html(lang='en')
         p Here will go an amazing section... See you Soon!
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Cerrar 
+          | Cerrar
           i.fa.fa-close
     // MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
     #modal_schedule.modal
@@ -291,7 +292,7 @@ html(lang='en')
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Cerrar 
+          | Cerrar
           i.fa.fa-close
     // MODALS MAIN NAV MOBILE sections :: "CONTACT"
     #modal_contact.modal
@@ -311,7 +312,7 @@ html(lang='en')
               li
                 a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', rel="noopener noreferrer", title='Dirección de a peluquería canina Canessa en Google maps')
                   i.fa.fa-map-marker
-                  |   Vicente Aleixandre, 5. 
+                  |   Vicente Aleixandre, 5.
                   span 28341
                   | , Valdemoro, Madrid
           .col.s12.m6.l6.row-dos
@@ -354,7 +355,7 @@ html(lang='en')
                   span cerrado
       .modal-footer
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
-          | Cerrar 
+          | Cerrar
           i.fa.fa-close
         //
           //////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -13,6 +13,8 @@ gulpIgnore  = require('gulp-ignore'),
        jade = require('gulp-jade'),
     sitemap = require('gulp-sitemap');
 
+const pug = require('pug');
+
 /*
 * Configuración de la tarea 'default' (gulp) last step to publish
 */
