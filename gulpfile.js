@@ -11,9 +11,11 @@ gulpIgnore  = require('gulp-ignore'),
        less = require('gulp-less'),
        path = require('path'),
        jade = require('gulp-jade'),
+        pug = require('pug'),
+        pug = require('gulp-pug'),
+       data = require('gulp-data'),
+         fs = require('fs'),
     sitemap = require('gulp-sitemap');
-
-const pug = require('pug');
 
 /*
 * Configuración de la tarea 'default' (gulp) last step to publish
@@ -80,11 +82,25 @@ gulp.task('img', function () {
 */
 gulp.task('jade', function () {
   var YOUR_LOCALS = {};
-  gulp.src('./templates/*.jade')
+  gulp.src('./templates/jade/*.jade')
     .pipe(jade({
       locals: YOUR_LOCALS
     }))
     .pipe(gulp.dest('./'));
+});
+
+/*
+* Configuración de la tarea 'pug' --> gulp-pug (gulp pug)
+*/
+gulp.task('pug', function() {
+  return gulp.src('./templates/pug/*.pug')
+      /*
+      .pipe(data(function(file) {
+        return JSON.parse(fs.readFileSync('/data/data.json'))
+      }))
+      */
+      .pipe(pug())
+      .pipe(gulp.dest('./templates/'));
 });
 
 /*

@@ -12,22 +12,22 @@ html(lang='en')
         meta(name='generator', content='html5, css3, nodejs, less, pug')
         meta(name='google', content='nositelinkssearchbox')
         meta(name='google-site-verification',content='l-GFAFescssYvH7D8P2CXnP4tjx7qvU5zIqSu4hSePY')
-        // FAVICON
+        //- FAVICON
         link(rel="apple-touch-icon", sizes="180x180", href="img/dist/favicon/apple-touch-icon.png")
         link(rel="icon", type="image/png", href="img/dist/favicon/favicon-32x32.png", sizes="32x32")
         link(rel="icon", type="image/png", href="img/dist/favicon/favicon-16x16.png", sizes="16x16")
         link(rel="manifest", href="manifest.json")
-        // Browsers Tabs
+        //- Browsers Tabs
         link(rel="mask-icon", href="img/dist/favicon/safari-pinned-tab.svg", color="#5bbad5")
-        // to customize browsers top navbar
+        //- to customize browsers top navbar
         meta(name="theme-color", content="#ff4081")
-        // SiteMap
+        //- SiteMap
         link(rel='sitemap', href='sitemap.xml', title='Mapa general del website')
-        // CSS
+        //- CSS
         link(rel='stylesheet', type='text/css', href='font/font-awesome-4.3.0/css/font-awesome.min.css')
         link(rel='stylesheet', type='text/css', href='css/dist/main.css', media='screen,projection')
   body
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       01. SIDER Full Page
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,19 +65,19 @@ html(lang='en')
               |  SPA y Autolavado
             h5.intro Valdemoro
             a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Nuestros servicios
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       00. MAIN NAV BAR
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     .navbar-fixed
       nav
         .nav-wrapper
-          // <a href="#!" class="brand-logo">Logo</a>
+          //- <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
             i.fa.fa-bars
-          // LEFT SIDE FOOTER LINKS MENU
+          //- LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
-            // li
+            //- li
               a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
             li
               a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa peluquería canina, 2017
@@ -85,10 +85,10 @@ html(lang='en')
               a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') Horario
             li
               a.navbar-link.terms(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') Legal
-          //
+          //-
             li
               a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
-          // RIGHT SIDE FOOTER LINKS MENU       
+          //- RIGHT SIDE FOOTER LINKS MENU       
           ul.right
             li
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
@@ -96,7 +96,7 @@ html(lang='en')
             li
                 a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
                     i.fa.fa-instagram
-          // MOBILE
+          //- MOBILE
           ul#mobile-demo.side-nav
             li
               img(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa', alt='Logotipo de la peluquería canina Canessa')
@@ -117,7 +117,7 @@ html(lang='en')
                 a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Legal
             li.copyMobile
                 a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa, 2017
-    // CONTACT SubNAV
+    //- CONTACT SubNAV
     #nav-contact
       ul
         li
@@ -133,8 +133,7 @@ html(lang='en')
     #nav-info
       a.modal-trigger(href='#modal_contact', title='Contacto de la peluquería canina Canessa')
         |   CONTACTO
-    //
-      SOCIAL MEDIA
+    //- SOCIAL MEDIA
       <div id="nav-social" class="fixed-action-btn">
       <a class="btn-floating btn-large" title="Social Media Options of Arts Club Madrid">
       <i class="icon-share"></i>
@@ -147,8 +146,7 @@ html(lang='en')
       <li><a href="#modal_social" target="_blank" class="btn-floating modal-trigger" title="LinkedIn de Arts Club Madrid"><i class="fa fa-linkedin"></i></a></li>
       </ul>
       </div>
-    //
-      LANGUAGES
+    //- LANGUAGES
       <div id="nav-lang" class="fixed-action-btn">
       <a class="btn-floating btn-large" href="home_es.html" title="Change to spanish languaje">
       <i class="icon-globe"></i>
@@ -158,23 +156,19 @@ html(lang='en')
       <li class="esp"><a href="#modal_buttons" class="btn-floating modal-trigger"><i class="fa fa-flag-o"></i></a></li>
       </ul>
       </div>
-    //
-      Contact TOOLTIP
+    //- Contact TOOLTIP
       <div id="info" class="">
       <p><strong>Contact</strong> info</p>
       </div>
-    //
-      Language TOOLTIP
+    //- Language TOOLTIP
       <div id="languages" class="">
       <p>Cambiar a <strong>Español</strong></p>
       </div>
-    //
-      MAIN LOGO
+    //- MAIN LOGO
       <div id="acm-logo">
       <img src="img/dist/logos/canessa-logo-big.png" title="Arts Club Madrid Logotype"/>
       </div>
-    //
-      OLD CONTACT TOP BOX
+    //- OLD CONTACT TOP BOX
       <div class="row acm-data">
       <ul id="site-social">
       <li><a href="tel:912770365" title="Call to Arts Club Madrid"><i class="fa fa-phone"></i>&nbsp; 912 770 365</a></li>
@@ -183,11 +177,11 @@ html(lang='en')
       <li><a href="https://goo.gl/maps/mdZpp" target="_blank" title="Arts Club Madrid address with Google Maps"><i class="fa fa-map-marker"></i>&nbsp; Vel&aacute;zquez, 96. <span>28006</span>, Madrid</a></li>
       </ul>
       </div>
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       ALL MODALS DIALOGS ...
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // MODALS MAIN NAV DESKTOP sections :: "COMING SOON!"
+    //- MODALS MAIN NAV DESKTOP sections :: "COMING SOON!"
     #modal_section.modal.bottom-sheet
       .modal-content
         h4 COMING SOON!
@@ -196,7 +190,7 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-    // MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+    //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
     #modal_schedule.modal
       .modal-content
         h4 HORARIO
@@ -242,7 +236,7 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-    // MODALS MAIN NAV MOBILE sections :: "CONTACT"
+    //- MODALS MAIN NAV MOBILE sections :: "CONTACT"
     #modal_contact.modal
       .modal-content
         h4 CONTACTO:
@@ -305,7 +299,7 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////

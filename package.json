@@ -1,21 +1,23 @@
 {
   "name": "canessa",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "Vanessa Vizcaya pet saloon main website for pets health and beauty",
   "main": "gulpfile.js",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "fs": "0.0.1-security",
     "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
     "gulp-ignore": "^2.0.2",
     "gulp-install": "^0.6.0",
     "gulp-jade": "^1.1.0",
     "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.3.0",
     "gulp-sitemap": "^4.2.0",
     "jquery": "^3.1.1",
     "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.1.1",

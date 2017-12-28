@@ -11,26 +11,26 @@ html(lang='en')
         meta(name='robots', content='index, follow, archive')
         meta(name='generator', content='html5, css3, nodejs, less, pug')
         meta(name='google', content='nositelinkssearchbox')
-        // FAVICON
+        //- FAVICON
         link(rel="apple-touch-icon", sizes="180x180", href="img/dist/favicon/apple-touch-icon.png")
         link(rel="icon", type="image/png", href="img/dist/favicon/favicon-32x32.png", sizes="32x32")
         link(rel="icon", type="image/png", href="img/dist/favicon/favicon-16x16.png", sizes="16x16")
         link(rel="manifest", href="manifest.json")
-        // Browsers Tabs
+        //- Browsers Tabs
         link(rel="mask-icon", href="img/dist/favicon/safari-pinned-tab.svg", color="#5bbad5")
-        // to customize browsers top navbar
+        //- to customize browsers top navbar
         meta(name="theme-color", content="#ff4081")
-        // SiteMap
+        //- SiteMap
         link(rel='sitemap', href='sitemap.xml', title='Mapa general del website')
-        // CSS
+        //- CSS
         link(rel='stylesheet', type='text/css', href='font/font-awesome-4.3.0/css/font-awesome.min.css')
         link(rel='stylesheet', type='text/css', href='css/dist/main.css', media='screen,projection')
     body.bg-paper
-    //
+    //-
       GRADIENT TOP
       <div class="gradient-top"></div>
       <div class="gradient-bottom"></div>
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       00. TOP NAV BAR "Sections & Contact"
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,7 +38,7 @@ html(lang='en')
       nav
         .nav-top
           .row
-            // "Navigation Page" :: LEFT NAV
+            //- "Navigation Page" :: LEFT NAV
                 .col.m5
                   ul.right.navSubSections.hide-on-med-and-down
                     li
@@ -60,15 +60,15 @@ html(lang='en')
                       a.cockt(href='#future', title='Go to Future Exhibitions section of Arts Club Madrid') Future Exhibitions
                     li
                       a.gastro(href='#commiss', title='Go to Art Commissioner section of Arts Club Madrid') Art Commissioner
-            // "Logo" :: CENTER LOGO
+            //- "Logo" :: CENTER LOGO
             #acm-navLogo.brand-logo.center
               img.fixed.small-one(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
-            // "Contact" :: RIGHT NAV
+            //- "Contact" :: RIGHT NAV
             .col.m5.offset-m2
                   ul.left.navContact.hide-on-med-and-down
                     li
                       a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa')  INICIO
-                    //
+                    //-
                         li
                           a.phone(href='tel:912770365', title='Call to Arts Club Madrid')
                             i.fa.fa-phone
@@ -82,7 +82,7 @@ html(lang='en')
                             i.fa.fa-clock-o
                             |   13:00 - 02:00 Su-We / 03:00 Th-Sa    
     .margTopForNav
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       01. TÉRMINOS LEGALES
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -91,7 +91,7 @@ html(lang='en')
         h3.center-align
           b Error 404:
           span.capital  Página no encontrada
-        //
+        //-
             h5.center-align
               | beauty is 
               span around
@@ -107,19 +107,19 @@ html(lang='en')
             p.light ...Que haya perdido su conexión a internet.
             p.light ...Que la página esté obsoleta y haya sido eliminada.
             p.light ...Que la página no exista en el idioma que solicita.
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       00. MAIN NAV BAR
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     .navbar-fixed
       nav
         .nav-wrapper
-          // <a href="#!" class="brand-logo">Logo</a>
+          //- <a href="#!" class="brand-logo">Logo</a>
           a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
             i.fa.fa-bars
           // LEFT SIDE FOOTER LINKS MENU
           ul.left.hide-on-med-and-down
-            // li
+            //- li
               a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
             li
               a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa peluquería canina, 2017
@@ -127,10 +127,10 @@ html(lang='en')
               a.navbar-link.terms(href='index.html', title='Condiciones de uso del website de la peluquería canina Canessa') Inicio
             li
               a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') Horario
-          //
+          //-
             li
               a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
-          // RIGHT SIDE FOOTER LINKS MENU       
+          //- RIGHT SIDE FOOTER LINKS MENU       
           ul.right
             li
                 a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
@@ -138,7 +138,7 @@ html(lang='en')
             li
                 a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
                     i.fa.fa-instagram
-          // MOBILE
+          //- MOBILE
           ul#mobile-demo.side-nav
             li
               img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
@@ -161,7 +161,7 @@ html(lang='en')
                 a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') Legal
             li.copyMobile
                 a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; Canessa, 2017
-    // CONTACT SubNAV
+    //- CONTACT SubNAV
     #nav-contact
       ul
         li
@@ -177,11 +177,11 @@ html(lang='en')
     #nav-info
       a.modal-trigger(href='#modal_contact', title='Contacto de la peluquería canina Canessa')
         |   CONTACTO
-    //
+    //-
       //////////////////////////////////////////////////////////////////////////////////////////////////////////
       ALL MODALS DIALOGS ...
       ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // MODALS MAIN NAV DESKTOP sections :: "COMING SOON!"
+    //- MODALS MAIN NAV DESKTOP sections :: "COMING SOON!"
     #modal_section.modal.bottom-sheet
       .modal-content
         h4 COMING SOON!
@@ -190,7 +190,7 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-    // MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+    //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
     #modal_schedule.modal
       .modal-content
         h4 HORARIO
@@ -236,7 +236,7 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-    // MODALS MAIN NAV MOBILE sections :: "CONTACT"
+    //- MODALS MAIN NAV MOBILE sections :: "CONTACT"
     #modal_contact.modal
       .modal-content
         h4 CONTACTO:
@@ -299,7 +299,7 @@ html(lang='en')
         a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
           | Cerrar 
           i.fa.fa-close
-        //
+        //-
           //////////////////////////////////////////////////////////////////////////////////////////////////////////
           ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
           ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
