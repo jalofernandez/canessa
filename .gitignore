@@ -66,3 +66,9 @@ sources
 node_modules
 do_not_publish
 .tmp
+no_ftp
+
+#weird ones!
+_gitignore
+_htaccess
+_DS_Store

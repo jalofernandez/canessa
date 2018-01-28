@@ -1,16 +1,15 @@
-// for SLIDER initiation:
+//- for SLIDER initiation:
     $(document).ready(function(){
       $('.slider').slider({
           full_width: true,
           indicators: false
       });
       $('.modal-trigger').leanModal();  // Modals Dialog Initiation.
-    
 
-// for COLLAPSE MOBILE NAV initiation:
+//- for COLLAPSE MOBILE NAV initiation:
       $(".button-collapse").sideNav();
  
-// for DROPDOWNS:
+//- for DROPDOWNS:
       $('.dropdown-button').dropdown({
           inDuration: 300,
           outDuration: 225,
@@ -20,17 +19,24 @@
           belowOrigin: false // Displays dropdown below the button
         }
       );
+
+// (custom js) script to set current Year in (common) Footer
+      $(function () {
+          $(".js-current-year").html(new Date().getFullYear());
+      });
   
-// Remove "contact data" top black box when main nav mobile is open:      
+// Remove "contact data" top black box when main nav mobile is open:
 //    $('#mobile-bars').click(function(){$(".acm-data").addClass("none-mob");});
       
-// Show "change Lenguage" popup (tooltip):  
+/*
+// Show "change Lenguage" popup (tooltip):
       $("#nav-lang").hover(function(){
         $("#languages").css("display", "block");
         }, function(){
         $("#languages").css("display", "none");
       });
-// Show "Contact" popup (tooltip):   
+*/
+// Show "Contact" popup (tooltip):
       $("#nav-info").hover(function(){
         $("#info").css("display", "block");
         }, function(){
@@ -41,7 +47,7 @@
 });
 
 
-// Load the Main Nav (external HTML): 
+// Load the Main Nav (external HTML):
 $(window).load(function() {
     // alert("Esta cargada la web, sí");
     $("#navbar").load("navbar.html");

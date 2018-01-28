@@ -1,0 +1,153 @@
+//output:../../index.html
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        title Canessa peluquería canina Valdemoro
+        meta(name='description', content='Canessa ofrece servicios de peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición. También se realizan arreglos y lavados. Tenemos tarifa especial para autolavados además de un SPA canino. 91 248 04 30')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body
+        //- ----------------------------------------------------------------
+        //- 01. SLIDER Full Page
+        //- ----------------------------------------------------------------
+        img.main-logotype(src='img/dist/logos/canessa-logo.svg', title='#{index.logo.alt}', alt='#{index.logo.alt}')
+        .slider.fullscreen
+          ul.slides
+            li
+              img(src='img/dist/slider/afgano.jpg', title='Afgano: Canessa peluquería canina', alt='Afgano: Canessa peluquería canina')
+              .caption.left-align
+                h1 #{index.slides.slide_01.title}
+                h5.intro #{index.slides.slide_01.subtitles}
+                a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_01.btn}
+            li
+              img(src='img/dist/slider/golden-under-water.jpg', title='Servicio de autolavado de la peluquería canina Canessa', alt='Servicio de autolavado de la peluquería canina Canessa')
+              .caption.left-align
+                h1 #{index.slides.slide_02.title}
+                h5.intro #{index.slides.slide_02.subtitles}
+                a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_02.btn}
+            li
+              img(src='img/dist/slider/entrada.jpg', title='Entrada y recibidor de la Canessa peluquería canina', alt='Entrada y recibidor de la Canessa peluquería canina')
+              .caption.left-align.mycaption
+                h1 #{index.slides.slide_03.title}
+                h5.intro #{index.slides.slide_03.subtitles}
+                a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_03.btn}
+            li
+              img(src='img/dist/slider/peluqueria.jpg', title='Zona de corte y baño de la Canessa peluquería canina', alt='Zona de corte y baño de la Canessa peluquería canina')
+              .caption.left-align
+                h1 !{index.slides.slide_04.title}
+                h5.intro #{index.slides.slide_04.subtitles}
+                a.waves-effect.waves-light.btn.pink.lighten-1(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_04.btn}
+
+        //- ----------------------------------------------------------------
+        //- 00. MAIN (Footer) NAV BAR
+        //- ----------------------------------------------------------------
+        .navbar-fixed
+          nav
+            .nav-wrapper
+              //- <a href="#!" class="brand-logo">Logo</a>
+              a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
+                i.fa.fa-bars
+              //- LEFT SIDE FOOTER LINKS MENU
+              ul.left.hide-on-med-and-down
+                //- li
+                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+                li
+                  a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copyright},
+                    span.js-current-year
+                li
+                  a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+                li
+                  a.navbar-link.terms(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+              //-
+                li
+                  a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
+              //- RIGHT SIDE FOOTER LINKS MENU
+              ul.right
+                li
+                    a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-facebook
+                li
+                    a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-instagram
+              //- MOBILE
+              ul#mobile-demo.side-nav
+                li
+                  img(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa', alt='Logotipo de la peluquería canina Canessa')
+                li.socialMobile
+                    a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-facebook
+                    a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-instagram
+                li
+                    a.navbar-link(href='tel:912480430', title='Llamar a la peluquería canina Canessa') #{common.phone}
+                li
+                    a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') #{common.titles.schedule}
+                li
+                    a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
+                li
+                    a.navbar-link(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+                li
+                    a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                li.copyMobile
+                    a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copy},
+                        span.js-current-year
+        //- CONTACT SubNAV in (common) Footer
+        include includes/nav-contact
+        //- SOCIAL MEDIA
+          <div id="nav-social" class="fixed-action-btn">
+          <a class="btn-floating btn-large" title="Social Media Options of Arts Club Madrid">
+          <i class="icon-share"></i>
+          </a>
+          <ul>
+          <li><a href="https://www.facebook.com/ArtsClubMadrid" target="_blank" class="btn-floating modal-trigger" title="Facebook account of Arts Club Madrid"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ArtsClubMAD" target="_blank" class="btn-floating modal-trigger" title="Twitter account of Arts Club Madrid"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://youtu.be/HwmU5GRbwDU" target="_blank" class="btn-floating modal-trigger" title="Youtube account of Arts Club Madrid"><i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="https://instagram.com/artsclubMAD" target="_blank" class="btn-floating modal-trigger"><i class="fa fa-instagram" title="Instagram account of Arts Club Madrid"></i></a></li>
+          <li><a href="#modal_social" target="_blank" class="btn-floating modal-trigger" title="LinkedIn de Arts Club Madrid"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+          </div>
+        //- LANGUAGES
+          <div id="nav-lang" class="fixed-action-btn">
+          <a class="btn-floating btn-large" href="home_es.html" title="Change to spanish languaje">
+          <i class="icon-globe"></i>
+          </a>
+          <ul class="ul-lang">
+          <li class="eng"><a href="#modal_buttons" class="btn-floating modal-trigger"><i class="fa fa-flag"></i></a></li>
+          <li class="esp"><a href="#modal_buttons" class="btn-floating modal-trigger"><i class="fa fa-flag-o"></i></a></li>
+          </ul>
+          </div>
+        //- Contact TOOLTIP
+          <div id="info" class="">
+          <p><strong>Contact</strong> info</p>
+          </div>
+        //- Language TOOLTIP
+          <div id="languages" class="">
+          <p>Cambiar a <strong>Español</strong></p>
+          </div>
+        //- MAIN LOGO
+          <div id="acm-logo">
+          <img src="img/dist/logos/canessa-logo-big.png" title="Arts Club Madrid Logotype"/>
+          </div>
+        //- OLD CONTACT TOP BOX
+          <div class="row acm-data">
+          <ul id="site-social">
+          <li><a href="tel:912770365" title="Call to Arts Club Madrid"><i class="fa fa-phone"></i>&nbsp; 912 770 365</a></li>
+          <li><a href="mailto:events@artsclubmadrid.com" title="Escribir email al Arts Club Madrid, Restaurante y Galería de Arte"><i class="fa fa-envelope"></i>&nbsp; events@artsclubmadrid.com</a></li>
+          <li><a href="https://module.lafourchette.com/es_ES/module/62151-6082e" target="_blank" title="Online Reservations with ElTenedor in Arts Club Madrid"><i class="fa fa-cutlery"></i>&nbsp; Online Reservations</a></li>
+          <li><a href="https://goo.gl/maps/mdZpp" target="_blank" title="Arts Club Madrid address with Google Maps"><i class="fa fa-map-marker"></i>&nbsp; Vel&aacute;zquez, 96. <span>28006</span>, Madrid</a></li>
+          </ul>
+          </div>
+
+        //- MODAL dialog in DESKTOP devices :: "COMING SOON!"
+        include includes/modal_coming-soon
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts

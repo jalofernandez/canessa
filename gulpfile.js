@@ -10,21 +10,20 @@
 gulpIgnore  = require('gulp-ignore'),
        less = require('gulp-less'),
        path = require('path'),
-       jade = require('gulp-jade'),
         pug = require('gulp-pug'),
        data = require('gulp-data'),
          fs = require('fs'),
     sitemap = require('gulp-sitemap');
 
 /*
-* Configuración de la tarea 'default' (gulp) last step to publish
+* Task 'deploy' configuration: last step just before publish (compile all files & prepare to push it all!)
 */
-gulp.task('default', ['sitemap', 'css']);
+gulp.task('deploy', ['js', 'img', 'less', 'css', 'mincss', 'pug', 'sitemap']); // task order is not random
 
 /*
-* Configuración de la tarea 'deploy' (gulp) first step: compile
-*/
-gulp.task('deploy', ['js', 'jade', 'less', 'img']);
+ * Task 'dev' configuration: developer mode
+ */
+gulp.task('dev', ['less', 'css', 'js', 'mincss', 'pug']); // task order is not random
 
 /*
 * Configuración de la tarea 'js' --> gulp-concat + gulp-uglify (gulp js)
@@ -58,7 +57,7 @@ gulp.task('css', function() {
 
 // Tarea 2 llamada minify-css
 /*
-* Configuración de la tarea 'minify-css' --> mincss (gulp css)
+* Configuración de la tarea 'minify-css' --> mincss (gulp mincss)
 */
 gulp.task('mincss', function () {
     gulp.src('css/sources/*.css')
@@ -77,31 +76,17 @@ gulp.task('img', function () {
 });
 
 /*
-* Configuración de la tarea 'jade' --> gulp-jade (gulp jade)
-*/
-gulp.task('jade', function () {
-  var YOUR_LOCALS = {};
-  gulp.src('./templates/jade/*.jade')
-    .pipe(jade({
-      locals: YOUR_LOCALS
-    }))
-    .pipe(gulp.dest('./'));
-});
-
-/*
 * Configuración de la tarea 'pug' --> gulp-pug (gulp pug)
 */
 gulp.task('pug', function() {
-  return gulp.src('./templates/pug/*.pug')
-      /*
+  return gulp.src('./templates/*.pug')
       .pipe(data(function(file) {
-        return JSON.parse(fs.readFileSync('/data/data.json'))
+        return JSON.parse(fs.readFileSync('./locales/lang_es.json'))
       }))
-      */
       .pipe(pug({
         pretty: true
       }))
-      .pipe(gulp.dest('./templates/'));
+      .pipe(gulp.dest('./'));
 });
 
 /*

@@ -1,0 +1,46 @@
+//- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+#modal_schedule.modal
+    .modal-content
+        h4 #{common.titles.schedule}
+        .col.s12
+            ul#site-social
+                li
+                    b #{common.schedule.days.week}:
+                li
+                    a(href='', title='Horario de mañana de la peluquería canina Canessa')
+                        em
+                            i.fa.fa-clock-o
+                            | #{common.schedule.workday.morning}:&nbsp;
+                        span #{common.schedule.hours.morning}
+                li
+                    a(href='', title='Horario de tarde de la peluquería canina Canessa')
+                        em
+                            i.fa.fa-clock-o
+                            | #{common.schedule.workday.evening}:&nbsp;
+                        span #{common.schedule.hours.evening}
+                li
+                    b #{common.schedule.days.weekend}:
+                li
+                    a(href='', title='Horario de mañana de la peluquería canina Canessa')
+                        em.clockDos
+                            i.fa.fa-clock-o
+                            | #{common.schedule.workday.morning}:&nbsp;
+                        span #{common.schedule.hours.morning}
+                li
+                    a(href='', title='Establecimiento cerrado los sábados por la tarde')
+                        em
+                            i.fa.fa-clock-o
+                            | #{common.schedule.workday.evening}:&nbsp;
+                        span #{common.schedule.hours.closed}
+                li
+                    b #{common.schedule.days.closed}:
+                li
+                    a(href='', title='Establecimiento cerrado los martes')
+                        em.clockDos
+                            i.fa.fa-clock-o
+                            | #{common.schedule.workday.both}:&nbsp;
+                        span #{common.schedule.hours.closed}
+    .modal-footer
+        a.modal-action.modal-close.waves-effect.waves-grey.btn-flat(href='#!')
+            | #{common.close}&nbsp;
+            i.fa.fa-close

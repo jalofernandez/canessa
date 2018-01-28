@@ -101,10 +101,6 @@ body {
     }
 }
 
-.mar-bottom-100 {
-    margin-bottom: 100px;
-}
-
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -167,28 +163,29 @@ a.activo {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
-}
 
-.parallax-container .section {
-    width: 100%;
-}
+  .section {
+      width: 100%;
+  }
+  .row {
+      margin-bottom: 0;
+  }
 
-.parallax-container.row {
-    margin-bottom: 0;
 }
 
 .parallaxTextTab {
     background-color: rgba(0,0,0,.50);
     min-height: 380px;
-}
-.parallaxTextTab h5 span {
-    text-transform: uppercase;
-    padding-left: 15px;
-}
-.parallaxTextTab ul {
-    padding-left: 15px;
-}
 
+    h5 span {
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}
 /* ... Strong Text ... */
 .light span {
     color: #111;
@@ -240,9 +237,10 @@ img:hover .hover1:after {
 .dropdown-content {
     background-color: black;
     top: 75px !important;
-}
-.dropdown-content li:hover {
-    background-color: black;
+
+    li:hover {
+        background-color: black;
+    }
 }
 
 /* ... GRADIENTS ................................. */
@@ -288,16 +286,17 @@ img:hover .hover1:after {
     top: 150px;
     right: 47%;
     text-align: center;
-}
-.intro-icon i {
-    text-align: center;
-    color: black;
-    font-size: 78px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+
+    i {
+        text-align: center;
+        color: black;
+        font-size: 78px;
+        padding: 30px;
+        background-color: white;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /* ... MODALS ................................. */
@@ -309,6 +308,10 @@ img:hover .hover1:after {
 #modal_schedule {
     background-color: rgba(0,0,0,0.7) !important;
     border-top: 3px solid black;
+
+    * > i {
+      padding-right: 5px;
+    }
     
     h4 {
         text-align: center;
@@ -384,6 +387,7 @@ img:hover .hover1:after {
 #modal_contact h4,
 #modal_schedule h4 {
     color: @main-color;
+    text-transform: uppercase;
 }
 
 // Schedule Modal dialog
@@ -406,16 +410,22 @@ img:hover .hover1:after {
 }
 
 
-#site-social.right {
-    li {
-        float: right;
-        
-        a {
-            color: #ccc;
-            cursor: text;
-            
-            &:hover {
+#site-social {
+    & > i {
+        padding-right: 5px;
+    }
+
+    .right {
+        li {
+            float: right;
+
+            a {
                 color: #ccc;
+                cursor: text;
+
+                &:hover {
+                    color: #ccc;
+                }
             }
         }
     }
@@ -439,29 +449,28 @@ img:hover .hover1:after {
     top: 100px;
     left: 100px;
     z-index: 3;
-}
 
-@media all and (max-width: 480px) {
-    .main-logotype {
+    @media all and (max-width: 480px) {
         left: 40px;
     }
 }
             
 
 #acm-logo {
-        /* background-color: rgba(0,0,0,.3); */
-        position: absolute;
-        padding: 10px;
-        top: 16%;
-        border-radius: 5px;
-        z-index: 20;
-        left: 100px;
-        white-space: nowrap;
-        display: inline-block;
-}
-#acm-logo img {
- /* max-width: 450px; */
-    max-width: 350px;
+    /* background-color: rgba(0,0,0,.3); */
+    position: absolute;
+    padding: 10px;
+    top: 16%;
+    border-radius: 5px;
+    z-index: 20;
+    left: 100px;
+    white-space: nowrap;
+    display: inline-block;
+
+    img {
+        /* max-width: 450px; */
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -510,8 +519,6 @@ img:hover .hover1:after {
     }
 }
 */
-
-
 
 
 .button-collapse {
@@ -563,7 +570,7 @@ img:hover .hover1:after {
                     color: @color-white;
                     text-transform: uppercase;
                     display: block;
-                    padding: 0px 15px;
+                    padding: 0 15px;
                     .anim(all, 150ms, ease-in);
 
                     &:not(.copyright) {
@@ -651,7 +658,7 @@ img:hover .hover1:after {
     bottom: 12px;
     right: 110px;
     z-index: 1000;
-    
+
     ul {
         margin: 0;
         
@@ -662,7 +669,11 @@ img:hover .hover1:after {
             .anim(all, 150ms, ease-in);
             
             a {
-                color: @color-white;
+              color: @color-white;
+
+              i {
+                padding-right: 5px;
+              }
             }
             
             &:hover {
@@ -702,28 +713,29 @@ img:hover .hover1:after {
 
 /* --- Language & Social Media subNAV --------------------------------- */
 
-#nav-lang.fixed-action-btn {
-    right: 10px;
-    bottom: 8px;
+#nav-lang {
+    &.fixed-action-btn {
+        right: 10px;
+        bottom: 8px;
+    }
 }
-#nav-social.fixed-action-btn {
-    right: 60px;
-    bottom: 8px;
+
+.fixed-action-btn {
+    a {
+        height: 40px;
+        width: 40px;
+        background-color: transparent !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0),
+        0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    ul li a {
+        height: 40px;
+        width: 40px;
+        background-color: black !important;
+    }
 }
-#nav-social.fixed-action-btn a,
-#nav-lang.fixed-action-btn a {
-    height: 40px;
-    width: 40px;
-    background-color: transparent !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0),
-                0 0 0 0 rgba(0, 0, 0, 0);
-}
-#nav-social.fixed-action-btn ul li a,
-#nav-lang.fixed-action-btn ul li a {
-    height: 40px;
-    width: 40px;
-    background-color: black !important;
-}
+
 /*
 .ul-lang li.eng::before {
     content: "English";
@@ -735,35 +747,73 @@ img:hover .hover1:after {
 
 /* --- "Social Media" submenu in Main Nav Bottom Bar ----- */
 
-.btn-floating.btn-large i {
-    line-height: 55.5px;
-    position: relative;
-    bottom: 7px;
-}
-.btn-floating.btn-large i.icon-globe {
-    font-size: 26px;
-    left: 1px;
+.btn-floating {
+    &.btn-large {
+        i {
+            line-height: 55.5px;
+            position: relative;
+            bottom: 7px;
+
+            &.icon-globe {
+                font-size: 26px;
+                left: 1px;
+            }
+        }
+    }
 }
 
-#nav-social ul li a i {
-    position: relative;
-    bottom: -2px;
-}
+#nav-social {
+    &.fixed-action-btn {
+        right: 60px;
+        bottom: 8px;
+    }
 
-#nav-social ul li a i.fa.fa-facebook:hover {
-    background-color: #3b5998;
-}
-#nav-social ul li a i.fa.fa-twitter:hover {
-    background-color: #55acee;
-}
-#nav-social ul li a i.fa.fa-youtube-play:hover {
-    background-color: #cd201f;
-}
-#nav-social ul li a i.fa.fa-instagram:hover {
-    background-color: #3f729b;
+    ul li a i {
+        position: relative;
+        bottom: -2px;
+
+        &.fa-facebook:hover {
+            background-color: #3b5998;
+        }
+        &.fa-twitter:hover {
+            background-color: #55acee;
+        }
+        &.fa-youtube-play:hover {
+            background-color: #cd201f;
+        }
+        &.fa-instagram:hover {
+            background-color: #3f729b;
+        }
+    }
 }
 
 /* --- "Languages" Tooltip in Main Nav Bottom Bar ----- */
+
+#languages,
+#info {
+    &::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-top: 8px solid rgba(0,0,0,.8);
+        bottom: 8px;
+    }
+
+    p {
+        color: white;
+        padding: 5px 15px;
+        background-color: rgba(0,0,0,.8);
+
+        strong {
+            color: #f44336;
+            padding-left: 3px;
+        }
+    }
+}
 
 #languages {
     display: none;
@@ -771,34 +821,12 @@ img:hover .hover1:after {
     bottom: 50px;
     right: 15px;
     z-index: 100;
-}
-#languages p,
-#info p {
-    color: white;
-    padding: 5px 15px;
-    background-color: rgba(0,0,0,.8);
-}
-#languages p strong,
-#info p strong {
-    color: #f44336;
-    padding-left: 3px;
+
+    &::before {
+        right: 8px;
+    }
 }
 
-#languages:before,
-#info:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-right: 8px solid transparent;
-    border-left: 8px solid transparent;
-    border-top: 8px solid rgba(0,0,0,.8);
-    bottom: 8px;
-}
-#languages:before {
-    right: 8px;   
-}
 /* --- "Contact Info" Tooltip in Main Nav Bottom Bar ----- */
 #info {
     display: none;
@@ -806,9 +834,10 @@ img:hover .hover1:after {
     bottom: 50px;
     right: 68px;
     z-index: 100;
-}
-#info:before {
-    right: 47px;   
+
+    &::before {
+        right: 47px;
+    }
 }
 
 /* ... MAIN NAV :: MOBILE ................................. */
@@ -875,46 +904,60 @@ nav .button-collapse i {
     z-index: 998;
     width: 100%;
     background-color: white;
-}
 
-.navbar-top nav {
-    width: 100%;
-    background-color: black;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0),
-                0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
+    nav {
+        width: 100%;
+        background-color: black;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0),
+        0 0 0 0 rgba(0, 0, 0, 0) !important;
 
-.navbar-top nav ul.right {
-    padding-right: 15px;
-    padding-top: 10px;
-}
-.navbar-top nav ul.left {
-    padding-left: 15px;
-    padding-top: 10px;
-}
+        ul {
+            &.right {
+                padding-right: 15px;
+                padding-top: 10px;
+            }
+            &.left {
+                padding-left: 15px;
+                padding-top: 10px;
+            }
 
-.navbar-top nav ul li {
-    a {
-        text-transform: none;
-        color: @color-white;
-        font-size: 14px;
-        letter-spacing: .05em;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    &:hover {
-        a {
-            color: @main-color;
-            .anim(all, 150ms, ease-in);
+            li {
+                a {
+                    text-transform: none;
+                    color: @color-white;
+                    font-size: 14px;
+                    letter-spacing: .05em;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+                &:hover {
+                    a {
+                        color: @main-color;
+                        .anim(all, 150ms, ease-in);
+                    }
+                }
+            }
+
+            /* --- 2. "Left Navigation Menu" Top Main Nav --- */
+            &.navSubSections li a {
+                color: #aaa;
+                font-weight: bold;
+                letter-spacing: .04em;
+                font-size: 18px;
+                padding-right: 12px;
+                padding-left: 12px;
+
+                &.drinks {
+                    display: none;
+                }
+            }
+
+            &.navContact li a.address {
+                text-transform: uppercase;
+            }
         }
     }
 }
-
-.navbar-top nav ul.navSubSections li a.drinks {
-    display: none;
-}
-
-
 
 @media (max-width: 1740px) {
     .navbar-top nav ul.navContact li a.schedule {
@@ -922,47 +965,34 @@ nav .button-collapse i {
     }
 }
 @media (max-width: 1399px) {
-    .navbar-top nav ul.navSubSections li a.bottle,
-    .navbar-top nav ul.navSubSections li a.wineh,
-    .navbar-top nav ul.navSubSections li a.cockt {
-        display: none;
-    }
-    .navbar-top nav ul.navSubSections li a.drinks {
-        display: inline;
+    .navbar-top nav ul.navSubSections li a {
+        &.bottle,
+        &.wineh,
+        &.cockt {
+            display: none;
+        }
+        &drinks {
+            display: inline;
+        }
     }
     .navbar-top nav ul.navContact li a.email {
         display: none;
     }
 }
 
-
 /* --- 1. "Logotipo" Top Main Nav --- */
 
 #acm-navLogo {
     padding: 6px 6px 0 6px;
-}
 
-#acm-navLogo .small-one {
-    width: 160px;
-    height: auto;
-    
-    @media (max-width: 601px) {
-        width: 150px;
+    .small-one {
+        width: 160px;
+        height: auto;
+
+        @media (max-width: 601px) {
+            width: 150px;
+        }
     }
-}
-
-/* --- 2. "Left Navigation Menu" Top Main Nav --- */
-
-.navbar-top nav ul.navSubSections {
-}
-
-.navbar-top nav ul.navSubSections li a {
-    color: #aaa;
-    font-weight: bold;
-    letter-spacing: .04em;
-    font-size: 18px;
-    padding-right: 12px;
-    padding-left: 12px;
 }
 
 
@@ -979,11 +1009,12 @@ nav .button-collapse i {
 }
 
 .headerSection {
+    // main (view) Title
     h3 {
         padding-top: 50px;
         color: @color-header !important;
         text-transform: uppercase;
-        
+        // subtitles near to main (view) title
         span {
             &.capital {
                 text-transform: capitalize; 
@@ -1057,17 +1088,27 @@ nav .button-collapse i {
     font-weight: bold;
     color: #666;
 }
+
 .parallaxTextTab p {
     color: white;
 }
-.textLeftSide li p:first-child {
-    text-transform: uppercase;
-    font-size: 17px;
-    letter-spacing: .05em;
+
+.textLeftSide {
+    li {
+        p {
+            &:first-child {
+                text-transform: uppercase;
+                font-size: 17px;
+                letter-spacing: .05em;
+            }
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
-.textLeftSide li p:last-child {
-    margin-bottom: 20px;
-}
+
+
 .textLeftSide a.data,
 p.links a {
     font-family: "champagne__limousinesregular",sans-serif;
@@ -1078,10 +1119,12 @@ p.links a {
     display: block;
     padding-bottom: 10px;
 }
+
 p.links a {
     display: inline-block;
     padding: 0 5px;
 }
+
 .textLeftSide a.data:hover,
 p.links a:hover {
     color: #333;
@@ -1096,30 +1139,29 @@ p.links a:hover {
 
 .listOfItems li {
     line-height: 34px;
-}
-.listOfItems li a {
-    font-family: "champagne__limousinesregular",sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    font-weight: bold;
-    color: #666;
-}
-.listOfItems li a i {
-    display: none;
-    font-size: 14px;
-}
-.listOfItems li a:hover,
-.listOfItems li a:hover i {
-    color: #222;
-    -webkit-transition: all 200ms ease-in;
-       -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-         -o-transition: all 200ms ease-in;
-            transition: all 200ms ease-in;
-}
-.listOfItems li a:hover i {
-    display: inline;
-    color: #999;
+
+    a {
+        font-family: "champagne__limousinesregular",sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        font-weight: bold;
+        color: #666;
+
+        i {
+            display: none;
+            font-size: 14px;
+        }
+
+        &:hover,
+        &:hover i {
+            color: #222;
+            .anim(all, 200ms, ease-in);
+        }
+        &:hover i {
+            display: inline;
+            color: #999;
+        }
+    }
 }
 
 .collageImg > div {
@@ -1130,20 +1172,22 @@ p.links a:hover {
 
 
 
-#cont-rest h5 {
-    font-family: 'SnellRoundhand' !important;
-    font-size: 30px;
-    color: #333!important;
-    font-weight: bold;
-    text-align: left;
-}
-#cont-rest p {
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    font-family: "champagne__limousinesregular",sans-serif;
-    font-size: 20px;
-    color: #666;
-    font-weight: bold;
+#cont-rest {
+    h5 {
+        font-family: 'SnellRoundhand' !important;
+        font-size: 30px;
+        color: #333!important;
+        font-weight: bold;
+        text-align: left;
+    }
+    p {
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        font-family: "champagne__limousinesregular",sans-serif;
+        font-size: 20px;
+        color: #666;
+        font-weight: bold;
+    }
 }
 
 
@@ -1156,46 +1200,45 @@ p.links a:hover {
     top: 20px;
     left: 20px;
     width: 310px;
-}
-.acm-data.none-mob {
-    display: none;
-}
 
-.acm-data ul li {
-    padding-left: 20px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-}
-.acm-data ul li:first-child {
-    padding-left: 23px;
-}
-.acm-data ul li:nth-child(3) {
-    padding-left: 26px;
-}
-.acm-data ul li:last-child {
-    padding-left: 28px;
-}
+    &.none-mob {
+        display: none;
+    }
 
-.acm-data ul li a:not(i){
-    font-size: 18px;
-    color: white;
-    letter-spacing: 0.07em;
-}
+    ul {
+        li {
+            padding-left: 20px;
+            padding-right: 15px;
+            padding-bottom: 5px;
 
-.acm-data ul li a:hover {
-    color: #448aff;
-    -webkit-transition: all 300ms ease-in; /* Añadimos la transición */
-       -moz-transition: all 300ms ease-in;
-        -ms-transition: all 300ms ease-in;
-         -o-transition: all 300ms ease-in;
-            transition: all 300ms ease-in;
-}
+            &:first-child {
+                padding-left: 23px;
+            }
+            &:nth-child(3) {
+                padding-left: 26px;
+            }
+            &:last-child {
+                padding-left: 28px;
+            }
 
-.acm-data ul li a i {
-    font-size: 17px;
-    opacity: .5;
-}
+            a:not(i){
+                font-size: 18px;
+                color: white;
+                letter-spacing: 0.07em;
+            }
 
+            a i {
+                font-size: 17px;
+                opacity: .5;
+            }
+
+            a:hover {
+                color: #448aff;
+                .anim(all, 300ms, ease-in);
+            }
+        }
+    }
+}
 
 /* ... TABS ................................. */
 
@@ -1206,28 +1249,31 @@ p.links a:hover {
     margin: 0 auto;
     width: 100%;
     white-space: nowrap;
-}
 
-.tabs .tab a {
-    font-family: 'SnellRoundhand' !important;
-    text-transform: capitalize;
-    text-align: left;
-    font-size: 26px;
-    letter-spacing: .05em;
-    font-weight: 300;
-    color: #666;
-}
-.tabs .tab a:hover,
-.tabs .tab a:focus,
-.tabs .tab a:active {
-    color: #333;
-}
-.tabs .indicator {
-    background-color: #333;
-    opacity: .3;
+    .tab {
+        a {
+            font-family: 'SnellRoundhand' !important;
+            text-transform: capitalize;
+            text-align: left;
+            font-size: 26px;
+            letter-spacing: .05em;
+            font-weight: 300;
+            color: #666;
+
+            &:hover, &:focus, &:active {
+                color: #333;
+            }
+        }
+    }
+
+    .indicator {
+        background-color: #333;
+        opacity: .3;
+    }
 }
 
 /* --- Tabs Content --- */
+
 #white div, #red div, #rose div {
     padding-left: 5px !important;
 }
@@ -1277,14 +1323,11 @@ p.links a:hover {
     i {
         padding-right: 8px;
     }
-}
 
-@media (max-width: 601px) {
-    .btn-mascotactiva {
+    @media (max-width: 601px) {
         width: 100%;
     }
 }
-
 
 /* ... SLIDER ................................. */
 
@@ -1337,91 +1380,10 @@ p.links a:hover {
 }
 
 /* .................................................... */
-/* ... EVENTS       ................................. */
-/* .................................................. */
-
-.dossierDownload .center {
-    margin-top: 19px;
-    padding-top: 24px;
-    padding-bottom: 18px;
-}
-
-.typesEvents .dossierDownload div:hover {
-    background-color: rgba(0,0,0,.05);
-    border-radius: 5px;
-    -webkit-transition: all 200ms ease-in; /* Añadimos la transición */
-       -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-         -o-transition: all 200ms ease-in;
-            transition: all 200ms ease-in;
-}
-.typesEvents .dossierDownload div:hover i {
-    color: black;
-    -webkit-transition: all 300ms ease-in; /* Añadimos la transición */
-       -moz-transition: all 300ms ease-in;
-        -ms-transition: all 300ms ease-in;
-         -o-transition: all 300ms ease-in;
-            transition: all 300ms ease-in;
-}
-.typesEvents .dossierDownload div:hover p {
-    color: #146eb4;
-}
-
-blockquote {
-    margin: 20px 0;
-    padding-left: 1.5rem;
-    border-left: 5px solid #146eb4;
-}
-blockquote p {
-    text-align: left !important;
-}
-
-blockquote p span {
-    font-family: 'SnellRoundhand' !important;
-    font-size: 22px;
-    color: #333;
-}
-
-.typesEvents .dossierDownload p {
-    line-height: 12px;
-    text-align: center;
-}
-
-
-.typesEvents h4 {
-    color: #146eb4 !important;
-    text-transform: uppercase;
-    font-size: 30px; 
-}
-
-.typesEvents i {
-    font-size: 100px;
-    color: #aaa;
-    opacity: .2;
-    margin: 40px 0 20px 0;
-}
-.typesEvents p {
-    font-family: "champagne__limousinesregular",sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    font-weight: bold;
-    color: #666;
-    text-align: center;
-}
-
-@media only screen and (max-width : 992px) {
-    .typesEvents p {
-        text-align: center;
-    }
-    blockquote p {
-        text-align: left !important;
-    }
-}
-
-/* .................................................... */
 /* ... CONTACT       ................................. */
 /* .................................................. */
 
+/* TODO: remove this code if it´s neccessary (map with collapsible data box)
 #contactArea {
     background-color: rgba(0,0,0,.85);
     position: absolute;
@@ -1429,26 +1391,68 @@ blockquote p span {
     top: 85px;
     right: 20px;
     z-index: 20;
-}
-#contactArea.hidden {
-    width: 300px;
-}
 
-#contactArea .collapsible-header {
-    display: block;
-    cursor: pointer;
-    height: 3rem;
-    line-height: 3rem;
-    padding: 0 1rem;
-    background-color: transparent;
-    color: #aaa;
-    font-size: 16px;
-    letter-spacing: .05em;
-    border-bottom: 1px solid transparent !important;
-}
-#contactArea .collapsible-header.active {
-    border-bottom: 1px solid #aaa;
-    background-color: black;
+    &.hidden {
+        width: 300px;
+    }
+
+    .collapsible-header {
+        display: block;
+        cursor: pointer;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0 1rem;
+        background-color: transparent;
+        color: #aaa;
+        font-size: 16px;
+        letter-spacing: .05em;
+        border-bottom: 1px solid transparent !important;
+
+        &.active {
+            border-bottom: 1px solid #aaa;
+            background-color: black;
+        }
+    }
+
+    .collapsible-body {
+        border-top: 1px solid #aaa;
+        background-color: black;
+        border-bottom: 1px solid transparent !important;
+        margin-bottom: 0;
+
+        div:first-child {
+            padding-left: 24px;
+        }
+    }
+
+    ul {
+        margin-bottom: 30px;
+
+        li {
+            color: #aaa;
+            line-height: 2rem;
+
+            h4 {
+                color: white;
+                font-size: 16px;
+                letter-spacing: .05em;
+                text-transform: uppercase;
+            }
+
+            p {
+                padding: 0;
+            }
+
+            a {
+                color: #aaa;
+                padding-bottom: 5px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
 .collapsible.popout > li.active {
@@ -1456,45 +1460,7 @@ blockquote p span {
                 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     margin: 0;
 }
-
-#contactArea .collapsible-body {
-    border-top: 1px solid #aaa;
-    background-color: black;
-    border-bottom: 1px solid transparent !important;
-    margin-bottom: 0;
-}
-#contactArea .collapsible-body div:first-child {
-    padding-left: 24px;
-}
-
-#contactArea ul {
-    margin-bottom: 30px;
-}
-#contactArea ul li {
-    color: #aaa;
-    line-height: 2rem;
-}
-
-#contactArea ul li h4 {
-    color: white;
-    font-size: 16px;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-}
-#contactArea ul li p {
-    padding: 0;
-}
-#contactArea ul li a {
-    color: #aaa;
-    padding-bottom: 5px;
-}
-#contactArea ul li a:hover {
-    color: white;
-}
-
-
-
-
+*/
 
 /* .................................................... */
 /* ... MEDIA QUERIES ................................. */
@@ -1632,22 +1598,14 @@ blockquote p span {
     }
 }
 
-
-@media (max-width: 320px) {
-
-}
-
-
-
-
-
-
+/* -- Overwritten styles! -- */
 
 .icon-block {
   padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
+
+    .material-icons {
+        font-size: inherit;
+    }
 }
 
 footer.page-footer {

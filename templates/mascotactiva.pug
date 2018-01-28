@@ -1,0 +1,174 @@
+//output:../../mascotactiva.html
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        title Canessa: Mascotactiva
+        meta(name='description', content='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa. Ofrecemos servicios de guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional.')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado, guardería canina, paseos relajantes, entrenamiento físico, adiestramiento, gestión emocional')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- (todo: remove this useless code) GRADIENT TOP
+        include includes/gradient
+
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+          nav
+            .nav-top
+              .row
+                //- "Navigation Page" :: LEFT NAV
+                    .col.m5
+                      ul.right.navSubSections.hide-on-med-and-down
+                        li
+                          a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                            | Our Expos
+                            i.fa.fa-caret-down
+                        ul#dropdown1.dropdown-content
+                          li
+                            a(href='#expos') Concept
+                          li
+                            a(href='#past') Past Exhibitions
+                          li
+                            a(href='#future') Future Exhibitions
+                        li
+                          a.bottle(href='#expos', title='Go to Expositions section of Arts Club Madrid') Our Expos
+                        li
+                          a.wineh(href='#past', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        li
+                          a.cockt(href='#future', title='Go to Future Exhibitions section of Arts Club Madrid') Future Exhibitions
+                        li
+                          a.gastro(href='#commiss', title='Go to Art Commissioner section of Arts Club Madrid') Art Commissioner
+                //- "Logo" :: LEFT LOGO
+                #acm-navLogo.col.m3.brand-logo
+                  img.fixed.small-one(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                //- "Contact" :: RIGHT NAV
+                .col.m9.offset-m3
+                    ul.right.navContact.hide-on-med-and-down
+                        li
+                            a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                        li
+                            a.address(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro') #{common.titles.services}
+                        li
+                            a.address(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+        .margTopForNav
+
+        //- ----------------------------------------------------------------
+        //- 01. SERVICES & FULL IMG GALLERY
+        //- ----------------------------------------------------------------
+        #past.row.scrollspy
+            .col.s12.m8.offset-m2.headerSection
+                h3.center-align
+                    span !{mascotactiva.title}
+                p.introIcon
+                    i.fa.fa-paw
+                h5.center-align
+                    | !{mascotactiva.intro}
+                .row
+                    .col.s12.m12.l10.offset-l1.xl8.offset-xl2
+                        a.waves-effect.waves-light.btn.pink.lighten-1.btn-mascotactiva(href='tel:636515206', title='Teléfono de contacto de Mascotactiva')
+                            i.fa.fa-phone
+                            | #{mascotactiva.phone}
+                        a.waves-effect.waves-light.btn.pink.lighten-1.btn-mascotactiva(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                            i.fa.fa-envelope
+                            | #{mascotactiva.email}
+
+        .container.container-gallery
+            .section
+                .row
+                    .col.s12.m6.l6.xl4
+                        .card
+                            .card-image
+                                img(src='img/dist/mascotactiva/mascotactiva-logo_small.png', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
+                        //-
+                            .card-content
+                                p Mascotactiva, servicios integrales..
+                    .col.s12.m6.l6.xl8
+                        .cardgulp
+                            .video-container
+                                iframe(width='560', height='315', src='https://www.youtube.com/embed/pjydkOMAPdw', frameborder='0', allowfullscreen='')
+            //-
+                .row
+                    .col.s12.m6.l6.xl4
+                        .card
+                            .card-image
+                                img(src='img/dist/gallery/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                span.card-title Bichón maltés.
+                            .card-content
+                                p Corte de raza de Bichón Maltés.
+                    .col.s12.m6.l6.xl4
+                        .card
+                            .card-image
+                                img(src='img/dist/gallery/yorkshire-proceso-de-corte.jpg', title='Proceso de corte de raza de Yorkshire terrier', alt='Proceso de corte de raza de Yorkshire terrier')
+                                span.card-title Yorkshire terrier.
+                             .card-content
+                                p Proceso de corte de raza de Yorkshire terrier.
+
+        //- ----------------------------------------------------------------
+        //- 00. MAIN (Footer) NAV BAR
+        //- ----------------------------------------------------------------
+        .navbar-fixed
+          nav
+            .nav-wrapper
+              //- <a href="#!" class="brand-logo">Logo</a>
+              a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
+                i.fa.fa-bars
+              //- LEFT SIDE FOOTER LINKS MENU
+              ul.left.hide-on-med-and-down
+                li
+                  a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copyright},
+                    span.js-current-year
+                li
+                  a.navbar-link.terms(href='index.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.index}
+                li
+                  a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+              //-
+                li
+                  a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
+              //- RIGHT SIDE FOOTER LINKS MENU
+              ul.right
+                li
+                    a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-facebook
+                li
+                    a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-instagram
+              //- MOBILE
+              ul#mobile-demo.side-nav
+                li
+                  img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
+                li.socialMobile
+                    a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-facebook
+                    a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-instagram
+                li
+                    a.navbar-link(href='tel:912480430', title='Llamar a la peluquería canina Canessa') #{common.phone}
+                li
+                    a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') #{common.titles.schedule}
+                li
+                    a.navbar-link(href='index.html', title='Servicios de peluquería y estética canina en la peluquería canina Canessa de Valdemoro') #{common.titles.index}
+                li
+                    a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
+                li
+                    a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                li.copyMobile
+                    a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copy},
+                        span.js-current-year
+        //- CONTACT SubNAV in (common) Footer
+        include includes/nav-contact
+
+        //- MODAL dialog in DESKTOP devices :: "COMING SOON!"gulp dev
+
+        include includes/modal_coming-soon
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts

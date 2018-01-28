@@ -1,0 +1,151 @@
+//output:../../404.html
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        title Canessa: error
+        meta(name='description', content='Página de error del website Peluquería canina Canessa. Pruebe otra URL o vaya a la página de inicio para encontrar la descripción de nuestros servicios y contacto.')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- (todo: remove this useless code) GRADIENT TOP
+        include includes/gradient
+
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+          nav
+            .nav-top
+              .row
+                //- "Navigation Page" :: LEFT NAV
+                    .col.m5
+                      ul.right.navSubSections.hide-on-med-and-down
+                        li
+                          a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                            | Our Expos
+                            i.fa.fa-caret-down
+                        ul#dropdown1.dropdown-content
+                          li
+                            a(href='#expos') Concept
+                          li
+                            a(href='#past') Past Exhibitions
+                          li
+                            a(href='#future') Future Exhibitions
+                        li
+                          a.bottle(href='#expos', title='Go to Expositions section of Arts Club Madrid') Our Expos
+                        li
+                          a.wineh(href='#past', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        li
+                          a.cockt(href='#future', title='Go to Future Exhibitions section of Arts Club Madrid') Future Exhibitions
+                        li
+                          a.gastro(href='#commiss', title='Go to Art Commissioner section of Arts Club Madrid') Art Commissioner
+                //- "Logo" :: CENTER LOGO
+                #acm-navLogo.brand-logo.center
+                  img.fixed.small-one(src='img/dist/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                //- "Contact" :: RIGHT NAV
+                .col.m5.offset-m2
+                      ul.left.navContact.hide-on-med-and-down
+                        li
+                          a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                        //-
+                            li
+                              a.phone(href='tel:912770365', title='Call to Arts Club Madrid')
+                                i.fa.fa-phone
+                                |  912 770 365
+                            li
+                              a(href='https://module.lafourchette.com/es_ES/module/62151-6082e', target='_blank', title='Online Reservations with ElTenedor in Arts Club Madrid')
+                                i.fa.fa-cutlery
+                                |   Online Reservations
+                            li
+                              a.schedule.modal-trigger(href='#modal_contact', title='Online Reservations with ElTenedor in Arts Club Madrid')
+                                i.fa.fa-clock-o
+                                |   13:00 - 02:00 Su-We / 03:00 Th-Sa
+        .margTopForNav
+
+        //- ----------------------------------------------------------------
+        //- 01. 404 PAGE NOT FOUND :: 404 página no encontrada
+        //- ----------------------------------------------------------------
+        #past.row.scrollspy
+          .col.s12.headerSection
+            h3.center-align
+              b #{not_found.title}
+
+        .container
+          .section
+            .row
+              .col.s12.m6.offset-m3.textLeftSide
+                //- for each loop to load all copies in "locales" json file/s
+                each suggest, i in not_found.suggestions
+                    p.light #{suggest}
+
+        //- ----------------------------------------------------------------
+        //- 00. MAIN (Footer) NAV BAR
+        //- ----------------------------------------------------------------
+        .navbar-fixed
+          nav
+            .nav-wrapper
+              //- <a href="#!" class="brand-logo">Logo</a>
+              a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
+                i.fa.fa-bars
+              // LEFT SIDE FOOTER LINKS MENU
+              ul.left.hide-on-med-and-down
+                //- li
+                  a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+                li
+                  a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copyright},
+                    span.js-current-year
+                li
+                  a.navbar-link.terms(href='index.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.index}
+                li
+                  a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+              //-
+                li
+                  a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
+              //- RIGHT SIDE FOOTER LINKS MENU
+              ul.right
+                li
+                    a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-facebook
+                li
+                    a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-instagram
+              //- MOBILE
+              ul#mobile-demo.side-nav
+                li
+                  img(src='img/dist/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
+                li.socialMobile
+                    a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-facebook
+                    a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                        i.fa.fa-instagram
+                li
+                    a.navbar-link(href='tel:912480430', title='Llamar a la peluquería canina Canessa') #{common.phone}
+                li
+                    a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') #{common.titles.schedule}
+                li
+                    a.navbar-link(href='index.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') #{common.titles.index}
+                li
+                    a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
+                li
+                    a.navbar-link(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+                li
+                    a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                li.copyMobile
+                    a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copy},
+                        span.js-current-year
+        //- CONTACT SubNAV in (common) Footer
+        include includes/nav-contact
+
+        //- MODAL dialog in DESKTOP devices :: "COMING SOON!"
+        include includes/modal_coming-soon
+        //- MODAL dialog in MOBILE devices :: "SCHEDULE"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- All the SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts
