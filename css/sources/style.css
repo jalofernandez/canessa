@@ -1145,6 +1145,9 @@ p.links a:hover {
 }
 /* ... SLIDER ................................. */
 .slider .slides li img {
+  background-position: left;
+}
+.slider .slides li.first img {
   background-position: right;
 }
 .slider .slides li .caption {

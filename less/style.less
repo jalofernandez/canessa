@@ -1336,7 +1336,14 @@ p.links a:hover {
         li {
             // background image
             img {
-                background-position: right; 
+                background-position: left;
+            }
+
+            // very first Slide in Slider Caroussel
+            &.first {
+              img {
+                background-position: right;
+              }
             }
             
             // Text animated
@@ -1354,7 +1361,6 @@ p.links a:hover {
                     text-shadow: 1px 1px 2px black,
                                  0 0 5px black,
                                  0 0 5px black;
-                    
                     span {
                         padding: 0 20px;
                     }
