@@ -62,7 +62,7 @@
     }
   },
   "not_found": {
-    "title": "Error 404: <span class='capital'>Página no encontrada</span>",
+    "title": "Error 404: <b class='strong'>Página no encontrada</b>",
     "suggestions": [
       "Parece que la página que buscas no existe. Lo sentimos. Podría ser por alguna de estas causas como...",
       "...Que haya tecleado incorrectamente la dirección URL.",
