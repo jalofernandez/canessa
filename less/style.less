@@ -66,11 +66,11 @@
 body {
     .main-text(16px, 600, 0.04em);
     font-family: "champagne__limousinesregular",sans-serif;
-    
+
     &.bg-black {
         background-color: @color-black;
     }
-    
+
     &.bg-paper {
         background: url(../../img/dist/bg/paper.png) center repeat;
     }
@@ -221,7 +221,7 @@ img:hover .hover1:after {
     content: "This is a hover text";
     color: white;
     position: relative;
-    bottom: 10px;      
+    bottom: 10px;
 }
 
 /* ... Circle Images ... */
@@ -229,7 +229,7 @@ img:hover .hover1:after {
 .rounder-pic {
     z-index: 200;
     position: relative;
-    
+
 }
 
 /* ... DropDown Nav ... */
@@ -274,7 +274,7 @@ img:hover .hover1:after {
 /* --- Mobile Main SideNav --- */
 #mobile-demo {
     z-index: 1100;
-    
+
     img {
         max-width: 150px;
         max-height: 46px;
@@ -312,62 +312,62 @@ img:hover .hover1:after {
     * > i {
       padding-right: 5px;
     }
-    
+
     h4 {
         text-align: center;
     }
-    
+
     p {
         color: @color-white;
         text-align: center;
         .main-text(20px, 400, 0.04em);
         line-height: 2rem;
     }
-    
+
     ul {
       li {
         line-height: 2.2rem;
-          
+
           a {
               color: @color-white;
               .main-text(18px, 400, 0.04em);
-              
+
               &:hover {
                   color: @main-color;
                   .anim(all, 150ms, ease-in);
-                  
+
                   i {
                         min-width: 20px;
                         opacity: .5;
                     }
                 }
             }
-          
+
           b {
               color: @color-header;
               .main-text(18px, 400, 0.04em);
           }
-          
+
           em {
               color:lighten(@color-white, 10%);
               .main-text(16px, 400, 0.04em);
           }
-          
+
           &:first-child,
           &:nth-child(4),
           &:nth-child(7) {
               margin-top: 10px;
           }
-        }  
+        }
     }
-    
+
     .modal-footer {
         background-color: @color-black;
-        
+
         a {
             text-align: center;
             color: @grey-c;
-            
+
             &:hover {
                 color: @color-white;
             }
@@ -396,12 +396,12 @@ img:hover .hover1:after {
         width: 100%;
         display: block;
         min-height: 100px;
-        
+
         ul {
             width: 260px;
             margin: 0 auto;
             float: inherit;
-            
+
             li {
                     text-align: right;
             }
@@ -454,7 +454,7 @@ img:hover .hover1:after {
         left: 40px;
     }
 }
-            
+
 
 #acm-logo {
     /* background-color: rgba(0,0,0,.3); */
@@ -536,7 +536,7 @@ img:hover .hover1:after {
     bottom: 0;
     height: 54px;
     z-index: 998;
-    
+
     // to expand/collapse main navbar in mobile devices
     .button-collapse {
         i {
@@ -544,26 +544,26 @@ img:hover .hover1:after {
             bottom: 3px;
         }
     }
-    
+
     nav {
         color: #FFF;
-        background-color: rgba(0,0,0,.7); 
+        background-color: rgba(0,0,0,.7);
         border-top: 2px solid black;
-        
+
         ul {
             li {
                 .anim(all, 150ms, ease-in);
-                
+
                 &:hover {
                     background-color: @color-black;
                 }
-                
+
                 &:first-child {
                     &:hover {
                         background-color: inherit;
                     }
                 }
-                
+
                 a {
                     font-family: "champagne__limousinesregular",sans-serif;
                     .main-text(1.2rem, 400, 0.06em);
@@ -580,20 +580,20 @@ img:hover .hover1:after {
                     }
                 }
             }
-            
+
         // Left Side footer links (copyright, develop sign, legal terms...)
         &.left {
             a {
                 padding: 0px 10px;
                 font-size: 1rem;
                 text-transform: inherit;
-                
+
                 &.copyright {
                     color: @main-color;
                     cursor: default;
                     pointer-events: none;
                 }
-                
+
                 &.terms,
                 &.schedule {
                     &::before {
@@ -607,7 +607,7 @@ img:hover .hover1:after {
                         bottom: 2px;
                         background-color: @grey-c;
                     }
-                    
+
                     &:hover {
                         &::before {
                             opacity: 0;
@@ -617,7 +617,7 @@ img:hover .hover1:after {
                     }
                 }
             }
-        } 
+        }
     }
   }
 }
@@ -661,13 +661,13 @@ img:hover .hover1:after {
 
     ul {
         margin: 0;
-        
+
         li {
             display: inline;
             margin: 0;
             padding: 20px 10px;
             .anim(all, 150ms, ease-in);
-            
+
             a {
               color: @color-white;
 
@@ -675,12 +675,12 @@ img:hover .hover1:after {
                 padding-right: 5px;
               }
             }
-            
+
             &:hover {
                 background-color: @color-black;
-                
+
                 a {
-                  color: @main-color;  
+                  color: @main-color;
                 }
             }
         }
@@ -694,7 +694,7 @@ img:hover .hover1:after {
     bottom: 10px;
     right: 115px;
     z-index: 1000;
-    
+
     a {
         color: @color-white;
         font-size: 20px;
@@ -859,11 +859,11 @@ nav .button-collapse i {
         padding: 0 15px;
         text-align: center;
         line-height: 15px;
-        
+
         &:first-child {
             padding-top: 25px;
         }
-        
+
         a {
             display: inline-block;
             color: @color-white;
@@ -874,13 +874,13 @@ nav .button-collapse i {
             line-height: 0;
             padding: 20px;
             text-align: center;
-            
+
             i {
                 display: inline-block;
                 font-size: 2em;
             }
         }
-        
+
         // last row (copyright one)
         &.copyMobile {
             a {
@@ -1017,25 +1017,25 @@ nav .button-collapse i {
         // subtitles near to main (view) title
         span {
             &.capital {
-                text-transform: capitalize; 
+                text-transform: capitalize;
             }
             &:not(.capital) {
-                text-transform: initial; 
+                text-transform: initial;
             }
-        }        
+        }
     }
-    
+
     h5 {
         color: #666 !important;
         line-height: 30px;
-        
+
         span {
             font-family: 'SnellRoundhand' !important;
             font-size: 30px;
             color: #333;
         }
     }
-    
+
     .centerPicHeader {
         margin-top: 20px;
         position: absolute;
@@ -1046,14 +1046,14 @@ nav .button-collapse i {
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
-        
+
         img {
             border: 5px solid white;
             .border-radius(50%);
             width: 250px;
             height: 250px;
         }
-        
+
         p {
             line-height: 12px;
             color: #666;
@@ -1306,20 +1306,20 @@ p.links a:hover {
     background-color: @main-color;
     color: @color-white;
     &:hover {
-        
+
     }
 }
 
 .btn-mascotactiva {
     margin-top: 20px;
-    
+
     &:last-child {
         float: right;
         text-transform: lowercase;
         font-size: 18px;
         letter-spacing: 0.08em;
     }
-    
+
     i {
         padding-right: 8px;
     }
@@ -1345,7 +1345,7 @@ p.links a:hover {
                 background-position: right;
               }
             }
-            
+
             // Text animated
             .caption {
                 color: @color-white;
@@ -1354,7 +1354,7 @@ p.links a:hover {
                 left: 8%;
                 width: 100%;
                 opacity: 0;
-                
+
                 h1,
                 h3 {
                     text-transform: uppercase;
@@ -1365,7 +1365,7 @@ p.links a:hover {
                         padding: 0 20px;
                     }
                 }
-                
+
                 h5 {
                     font-size: 30px;
                     margin-top: 0;
@@ -1373,7 +1373,7 @@ p.links a:hover {
                     text-shadow: 1px 1px 2px black,
                                  0 0 5px black,
                                  0 0 5px black;
-                    
+
                     &.intro {color: @main-color;}
                     &.rest  {color: #4fc3f7;}
                     &.art   {color: #b2ff59;}
@@ -1578,7 +1578,7 @@ p.links a:hover {
     .slider .slides li .caption h3:first-child {
         font-size: 1.5rem ;
     }
-        
+
 }
 
 

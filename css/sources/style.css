@@ -282,7 +282,7 @@ img:hover .hover1:after {
 #modal_social ul li a:hover,
 #modal_contact ul li a:hover,
 #modal_schedule ul li a:hover {
-  color: #ff4081;
+  color: #000;
   -webkit-transition: all 150ms ease-in;
   -moz-transition: all 150ms ease-in;
   -ms-transition: all 150ms ease-in;
@@ -367,7 +367,7 @@ img:hover .hover1:after {
 }
 #modal_contact h4,
 #modal_schedule h4 {
-  color: #ff4081;
+  color: #000;
   text-transform: uppercase;
 }
 #modal_schedule .col {
@@ -527,7 +527,7 @@ img:hover .hover1:after {
   transition: all 150ms ease-in;
 }
 .navbar-fixed nav ul li a:not(.copyright):hover {
-  color: #ff4081;
+  color: #000;
 }
 .navbar-fixed nav ul.left a {
   padding: 0px 10px;
@@ -535,7 +535,7 @@ img:hover .hover1:after {
   text-transform: inherit;
 }
 .navbar-fixed nav ul.left a.copyright {
-  color: #ff4081;
+  color: #000;
   cursor: default;
   pointer-events: none;
 }
@@ -611,7 +611,7 @@ img:hover .hover1:after {
   background-color: #111;
 }
 #nav-contact ul li:hover a {
-  color: #ff4081;
+  color: #000;
 }
 #nav-info {
   display: none;
@@ -766,7 +766,7 @@ nav .button-collapse i {
 }
 .side-nav#mobile-demo li.copyMobile a {
   text-transform: inherit;
-  color: #ff4081;
+  color: #000;
   cursor: default;
   pointer-events: none;
 }
@@ -804,7 +804,7 @@ nav .button-collapse i {
   padding-left: 10px;
 }
 .navbar-top nav ul li:hover a {
-  color: #ff4081;
+  color: #000;
   -webkit-transition: all 150ms ease-in;
   -moz-transition: all 150ms ease-in;
   -ms-transition: all 150ms ease-in;
@@ -1123,7 +1123,7 @@ p.links a:hover {
 /* ... BUTTONS ................................. */
 .btn,
 .btn-large {
-  background-color: #ff4081;
+  background-color: #000;
   color: #fff;
 }
 .btn-mascotactiva {
@@ -1178,7 +1178,7 @@ p.links a:hover {
                                  0 0 5px black;
 }
 .slider .slides li .caption h5.intro {
-  color: #ff4081;
+  color: #000;
 }
 .slider .slides li .caption h5.rest {
   color: #4fc3f7;
