@@ -1,0 +1,54 @@
+//- main NAVBAR (common) in all views
+.navbar-fixed
+  nav
+    .nav-wrapper
+      //- <a href="#!" class="brand-logo">Logo</a>
+      a#mobile-bars.button-collapse(href='#', data-activates='mobile-demo', title='mobile icon')
+        i.fa.fa-bars
+      //- LEFT SIDE FOOTER LINKS MENU
+      ul.left.hide-on-med-and-down
+        //- li
+          a.navbar-link(href='art-gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') Servicios
+        li
+          a.navbar-link.copyright(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copyright},
+            span.js-current-year
+        li
+          a.navbar-link.terms(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+        li
+          a.navbar-link.schedule.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+      //-
+        li
+          a.navbar-link.jalofer(href='http://jalofernandez.com/', title='Website diseñado y desarrollado por jalofernandez.com', target="_blank") jalofernandez.com
+      //- RIGHT SIDE FOOTER LINKS MENU
+      ul.right
+        li
+            a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                i.fa.fa-facebook
+        li
+            a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                i.fa.fa-instagram
+      //- MOBILE
+      ul#mobile-demo.side-nav
+        li
+          img(src='img/logos/canessa-logo.svg', alt='Logotipo de la peluquería canina Canessa')
+
+        li.socialMobile
+            a.navbar-link(href='https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/', title='Facebook de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                i.fa.fa-facebook
+            a.navbar-link(href='https://www.instagram.com/peluqueriacanessa/', title='Instagram de la peluquería canina Canessa', target="_blank", rel="noopener noreferrer")
+                i.fa.fa-instagram
+        li
+            a.navbar-link(href='tel:912480430', title='Llamar a la peluquería canina Canessa') #{common.phone}
+        li
+            a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') #{common.titles.schedule}
+        li
+            a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
+        li
+            a.navbar-link(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+        li
+            a.navbar-link(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        li
+            a.navbar-link(href='legal.html', title='Términos y condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+        li.copyMobile
+            a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copy},
+              span.js-current-year

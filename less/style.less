@@ -1315,7 +1315,9 @@ p.links a:hover {
 }
 
 .btn-mascotactiva {
+    width: 100%;
     margin-top: 20px;
+    text-transform: inherit;
 
     &:last-child {
         float: right;
@@ -1327,9 +1329,15 @@ p.links a:hover {
     i {
         padding-right: 8px;
     }
+    // Laptop, desktop, tablets & big devices
+    @media (min-width: 768px) {
+      width: 33.3333%;
 
-    @media (max-width: 601px) {
-        width: 100%;
+      &:nth-child(2) {
+        width: ~"calc(33.3333% - 40px)";
+        margin-left: 20px;
+        margin-right: 20px;
+      }
     }
 }
 

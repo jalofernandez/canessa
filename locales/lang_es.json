@@ -26,7 +26,8 @@
       "schedule": "Horario",
       "services": "Servicios",
       "legal": "Legal",
-      "mascota": "Mascotactiva"
+      "mascota": "Mascotactiva",
+      "dogwash": "Autolavado"
     },
     "close": "Cerrar"
   },
@@ -47,7 +48,7 @@
       "slide_02": {
         "title": "Servicio de Autolavado",
         "subtitle": "Nosotros ponemos la bañera, el champú, las toallas y el secador y tú las manos",
-        "btn": "Nuestros servicios"
+        "btn": "Servicio de Autolavado"
       },
       "slide_03": {
         "title": "Piensos y Complementos",
@@ -87,11 +88,22 @@
       "- VACIADO DE SACOS ANALES"
     ]
   },
+  "autolavado": {
+    "title": "Servicio de <b>autolavado</b>",
+    "intro": "Nosotros ponemos las <b class='stronger'>instalaciones</b> y tú tu <b class='stronger'>mascota</b>.",
+    "tips": {
+      "bath": "No importa el tamaño de tu mascota porque tenemos una bañera hidráulica de altura regulable para facilitar tu trabajo y así evitar lesiones o dolores musculares.",
+      "tools": "A vuestra disposición tenéis champú, secadores y expulsadores de aire así como toallas.",
+      "advantages": "Bañas tú mismo a tu mascota evitándote las molestias derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores...",
+      "happyness": "Para cualquier consulta o duda durante el proceso tendrás a nuestros profesionales a tu servicio."
+    }
+  },
   "mascotactiva": {
     "title": "Paseamos y entrenamos a su <b>mascota</b>",
     "intro": "Servicio exclusivo de: guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional por <b class='stronger'>Rafa Cros</b>.",
     "phone": "636 515 206",
-    "email": "mascotactiva@hotmail.com"
+    "email": "mascotactiva@hotmail.com",
+    "youtube": "Canal de Youtube"
   },
   "legal": {
     "intro": {

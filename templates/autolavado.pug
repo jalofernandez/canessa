@@ -1,0 +1,134 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no')
+        title Canessa: Autolavado
+        meta(name='description', content='Ofrecemos un completo servicio de autolavado canino. Nosotros ponemos las instalaciones con bañera hidráulica, champú, expulsadores de aire y secadores así como toallas y asesoramiento profesional')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado, guardería canina, paseos relajantes, entrenamiento físico, adiestramiento, gestión emocional')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- (todo: remove this useless code) GRADIENT TOP
+        include includes/gradient
+
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+          nav
+            .nav-top
+              .row
+                //- "Navigation Page" :: LEFT NAV
+                    .col.m5
+                      ul.right.navSubSections.hide-on-med-and-down
+                        li
+                          a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                            | Our Expos
+                            i.fa.fa-caret-down
+                        ul#dropdown1.dropdown-content
+                          li
+                            a(href='#expos') Concept
+                          li
+                            a(href='#past') Past Exhibitions
+                          li
+                            a(href='#future') Future Exhibitions
+                        li
+                          a.bottle(href='#expos', title='Go to Expositions section of Arts Club Madrid') Our Expos
+                        li
+                          a.wineh(href='#past', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        li
+                          a.cockt(href='#future', title='Go to Future Exhibitions section of Arts Club Madrid') Future Exhibitions
+                        li
+                          a.gastro(href='#commiss', title='Go to Art Commissioner section of Arts Club Madrid') Art Commissioner
+                //- "Logo" :: LEFT LOGO
+                #acm-navLogo.col.m3.brand-logo
+                  img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                //- "Contact" :: RIGHT NAV
+                .col.m9.offset-m3
+                  ul.right.navContact.hide-on-med-and-down
+                    li
+                      a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                    li
+                      a.address(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro') #{common.titles.services}
+                    li                            
+                      a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        .margTopForNav
+
+        //- ----------------------------------------------------------------
+        //- 01. SERVICES & FULL IMG GALLERY
+        //- ----------------------------------------------------------------
+        #past.row.scrollspy
+            .col.s12.m8.offset-m2.headerSection
+                h3.center-align
+                    span !{autolavado.title}
+                p.introIcon
+                    i(aria-hidden="true").fa.fa-shower
+                h5.center-align
+                    | !{autolavado.intro}
+                //-
+                  .row
+                      .col.s12.m12.l10.offset-l1.xl8.offset-xl2
+                          a.waves-effect.waves-light.btn.pink.lighten-1.btn-mascotactiva(href='tel:636515206', title='Teléfono de contacto de Mascotactiva')
+                              i.fa.fa-phone
+                              | #{mascotactiva.phone}
+                          a.waves-effect.waves-light.btn.pink.lighten-1.btn-mascotactiva(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                              i.fa.fa-envelope
+                              | #{mascotactiva.email}
+
+        .container.container-gallery
+            .section
+                .row
+                    .col.s12.m6.l6.xl4
+                        .card
+                            //-
+                              .card-image
+                                  img(src='img/mascotactiva/mascotactiva-logo_small.png', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
+                            .card-content
+                                p !{autolavado.tips.bath}
+                    .col.s12.m6.l6.xl8
+                        .card
+                            .card-content
+                                p !{autolavado.tips.tools}
+                .row
+                    .col.s12.m6.l6.xl4
+                        .card
+                            .card-content
+                                p !{autolavado.tips.advantages}
+                    .col.s12.m6.l6.xl8
+                        .card
+                            .card-content
+                                p !{autolavado.tips.happyness}
+            //-
+                .row
+                    .col.s12.m6.l6.xl4
+                        .card
+                            .card-image
+                                img(src='img/gallery/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                span.card-title Bichón maltés.
+                            .card-content
+                                p Corte de raza de Bichón Maltés.
+                    .col.s12.m6.l6.xl4
+                        .card
+                            .card-image
+                                img(src='img/gallery/yorkshire-proceso-de-corte.jpg', title='Proceso de corte de raza de Yorkshire terrier', alt='Proceso de corte de raza de Yorkshire terrier')
+                                span.card-title Yorkshire terrier.
+                             .card-content
+                                p Proceso de corte de raza de Yorkshire terrier.
+
+        //- main NAVBAR (common) in all views
+        include includes/navbar
+        //- CONTACT SubNAV in (common) Footer
+        include includes/nav-contact
+
+        //- MODAL dialog in DESKTOP devices :: "COMING SOON!"gulp dev
+
+        include includes/modal_coming-soon
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts
