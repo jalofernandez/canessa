@@ -51,7 +51,7 @@ html(lang='es')
                     li
                       a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
                     li
-                      a.address(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro') #{common.titles.services}
+                      a.address(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro') #{common.titles.services}
                     li
                       a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
         .margTopForNav
@@ -62,10 +62,11 @@ html(lang='es')
             .col.s12.m8.offset-m2.headerSection
                 h3.center-align
                     span !{mascotactiva.title}
-                p.introIcon
-                    i.fa.fa-paw
                 h5.center-align
-                    | !{mascotactiva.intro}
+                    em.quotes
+                      i(aria-hidden='true').fa.fa-quote-left
+                      | !{mascotactiva.intro}
+                      i(aria-hidden='true').fa.fa-quote-right
         .container.container-gallery
             .section
                 .row
@@ -89,13 +90,10 @@ html(lang='es')
                             .video-container
                                 iframe(width='560', height='315', src='https://www.youtube.com/embed/pjydkOMAPdw', frameborder='0', allowfullscreen='')
                                     
-        //- main NAVBAR (common) in all views
-        include includes/navbar                            
-        //- CONTACT SubNAV in (common) Footer
-        include includes/nav-contact
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
 
         //- MODAL dialog in DESKTOP devices :: "COMING SOON!"gulp dev
-
         include includes/modal_coming-soon
         //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
         include includes/modal_schedule

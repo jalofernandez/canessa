@@ -1,0 +1,201 @@
+@import (reference) '_vars';
+@import (reference) '_mixins';
+
+/* ----- STYLES GENERIC ---------------------------------------- */
+
+body {
+    .main-text(16px, 600, 0.04em);
+    font-family: "champagne__limousinesregular",sans-serif;
+
+    h5 {
+      line-height: 30px;
+    }
+
+    &.bg-black {
+        background-color: @color-black;
+    }
+
+    &.bg-paper {
+        background: url(../../img/bg/paper.png) center repeat;
+    }
+
+    &.bg-fucsia {
+      background-color: @main-color;
+
+      > p, h3, h5, b, span:not(.js-current-year) {
+        color: @color-white !important;
+      }
+    }
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.stronger {
+    font-weight: bold;
+    color: black;
+}
+
+// for Quotes
+.quotes {
+  .fa {
+    position: relative;
+    bottom: 5px;
+    opacity: .5;
+    &.fa-quote-left {
+      right: 5px;
+    }
+    &.fa-quote-right {
+      left: 5px;
+    }
+  }
+}
+
+// to apply Fixed position (CSS property)
+.th-fixed {
+  background-color: @color-white;
+  position: fixed;
+  top: 62px;
+  z-index: 2;
+  // mobile portrit only
+  @media (max-width: 600px) {
+    top: 52px;
+  }
+}
+
+/* -- top man NAVBAR ------------------------------------------ */
+
+.navbar-fixed {
+  position: absolute;
+  bottom: 0;
+  height: 54px;
+  z-index: 998;
+
+  // to expand/collapse main navbar in mobile devices
+  .button-collapse {
+    i {
+      position: relative;
+      bottom: 3px;
+    }
+  }
+
+  nav {
+    color: @color-white;
+    background-color: rgba(0,0,0,.85);
+    border-top: 2px solid black;
+
+    ul {
+      li {
+        .anim(all, 150ms, ease-in);
+
+        &:hover {
+          background-color: @color-black;
+        }
+
+        &:first-child {
+          &:hover {
+            background-color: inherit;
+          }
+        }
+
+        a {
+          font-family: "champagne__limousinesregular",sans-serif;
+          .main-text(1.2rem, 400, 0.06em);
+          color: @color-white;
+          text-transform: uppercase;
+          display: block;
+          padding: 0 15px;
+          .anim(all, 150ms, ease-in);
+
+          &:not(.copyright) {
+              &:hover {
+                color: @main-color;
+              }
+            }
+          }
+        }
+
+        // Left Side footer links (copyright, develop sign, legal terms...)
+        &.left {
+          a {
+            padding: 0px 10px;
+            font-size: 1rem;
+            text-transform: inherit;
+
+            &.copyright {
+              color: @main-color;
+              cursor: default;
+              pointer-events: none;
+            }
+
+            &.terms,
+            &.schedule {
+              &::before {
+                content: "";
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                .border-radius(50%);
+                position: relative;
+                right: 10px;
+                bottom: 2px;
+                background-color: @grey-c;
+              }
+
+              &:hover {
+                &::before {
+                  opacity: 0;
+                  -webkit-transform: opacity all ease;
+                  transform: opacity all ease;
+                }
+              }
+            }
+          }
+      }
+    }
+  }
+
+  // responsive behaviour
+  @media all and (max-width: 600px) {
+    ul.right {
+      li a i {
+        position: relative;
+        top: 12px;
+      }
+    }
+  }
+}
+
+/* -- TABS ------------------------------------------ */
+
+.tabs {
+  position: relative;
+  height: 48px;
+  background-color: transparent !important;
+  margin: 0 auto;
+  width: 100%;
+  white-space: nowrap;
+
+  .tab {
+    a {
+      text-transform: capitalize;
+      .main-text(20px, 600, .05em);
+      color: @color-black;
+
+      &:hover, &:focus, &:active {
+        color: @main-color;
+      }
+
+      i {
+        padding-right: 10px;
+        color: lighten(@main-color, 10%);
+      }
+    }
+  }
+
+  .indicator {
+    background-color: @main-color;
+    opacity: .3;
+  }
+}

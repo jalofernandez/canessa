@@ -51,7 +51,7 @@ html(lang='es')
                     li
                       a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
                     li
-                      a.address(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
+                      a.address(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
                     li
                       a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
                     li
@@ -173,10 +173,8 @@ html(lang='es')
               .parallax
                 img(src='img/bg/acm_bg_artGallery.jpg')
 
-        //- main NAVBAR (common) in all views
+        //- main footer NAVBAR (common) in all views
         include includes/navbar
-        //- CONTACT SubNAV in (common) Footer
-        include includes/nav-contact
 
         //- MODAL dialog in DESKTOP devices :: "COMING SOON!"
         include includes/modal_coming-soon

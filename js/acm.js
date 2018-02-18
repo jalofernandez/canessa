@@ -8,8 +8,8 @@
 
 //- for COLLAPSE MOBILE NAV initiation:
       $(".button-collapse").sideNav();
- 
-//- for DROPDOWNS:
+
+//- for DROPDOWNS initiation:
       $('.dropdown-button').dropdown({
           inDuration: 300,
           outDuration: 225,
@@ -19,15 +19,17 @@
           belowOrigin: false // Displays dropdown below the button
         }
       );
+//- for TABS initiation:
+      $('ul.tabs').tabs();
 
-// (custom js) script to set current Year in (common) Footer
+//- (custom js) script to set current Year in (common) Footer
       $(function () {
           $(".js-current-year").html(new Date().getFullYear());
       });
-  
+
 // Remove "contact data" top black box when main nav mobile is open:
 //    $('#mobile-bars').click(function(){$(".acm-data").addClass("none-mob");});
-      
+
 /*
 // Show "change Lenguage" popup (tooltip):
       $("#nav-lang").hover(function(){
@@ -43,7 +45,7 @@
         $("#info").css("display", "none");
       });
 
-        
+
 });
 
 

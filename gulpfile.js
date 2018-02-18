@@ -41,18 +41,18 @@ gulp.task('js', function () {
 gulp.task('less', function () {
     return gulp.src('./less/**/[^_]*.less')
         .pipe(less({
-        paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-        .pipe(gulp.dest('./public/css/sources'));
+            paths: [ path.join(__dirname, 'less', 'includes') ]
+        }))
+        .pipe(gulp.dest('./css/sources'));
 });
 
 /*
 * Configuración de la tarea 'css' --> gulp-clean-css (gulp css)
 */
 gulp.task('css', function() {
-  return gulp.src('./public/css/sources/style.css')
+  return gulp.src('./css/sources/styles.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('./public/css/dist'));
+    .pipe(gulp.dest('./css/dist'));
 });
 
 // Tarea 2 llamada minify-css
@@ -60,10 +60,10 @@ gulp.task('css', function() {
 * Configuración de la tarea 'minify-css' --> mincss (gulp mincss)
 */
 gulp.task('mincss', function () {
-    gulp.src('./public/css/sources/*.css')
+    gulp.src('./css/dist/*.css')
         .pipe(concat('main.css'))
         .pipe(minifycss())
-        .pipe(gulp.dest('./public/css/dist'))
+        .pipe(gulp.dest('./public/css'))
 });
 
 /*

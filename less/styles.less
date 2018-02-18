@@ -1,34 +1,6 @@
-/* ----- VARIABLES --------------------------------- */
-
-@main-color: #ff4081; // Fucsia
-@color-header: #039be5; // Sky Blue
-@color-white: #fff;
-@color-black: #111;
-@grey-c: #ccc;
-
-/* ----- MIXINS --------------------------------- */
-
-.anim(@type, @time, @long) {
-    -webkit-transition: @type @time @long;
-    -moz-transition: @type @time @long;
-    -ms-transition: @type @time @long;
-    -o-transition: @type @time @long;
-    transition: @type @time @long;
-}
-
-.border-radius(@radius) {
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-    -ms-border-radius: @radius;
-    -o-border-radius: @radius;
-    border-radius: @radius;
-}
-
-.main-text(@size, @weight, @space) {
-    font-size: @size;
-    font-weight: @weight;
-    letter-spacing: @space;
-}
+@import '_vars';
+@import '_mixins';
+@import '_new';
 
 /* ------------------------------------------------------------------- */
 /* FONT FACE :: CUSTOM FONTS ---------------------------------------- */
@@ -62,28 +34,6 @@
 
 
 /* ----- STYLES GENERIC ---------------------------------------- */
-
-body {
-    .main-text(16px, 600, 0.04em);
-    font-family: "champagne__limousinesregular",sans-serif;
-
-    &.bg-black {
-        background-color: @color-black;
-    }
-
-    &.bg-paper {
-        background: url(../../img/dist/bg/paper.png) center repeat;
-    }
-}
-
-.strong {
-    font-weight: bold;
-}
-
-.stronger {
-    font-weight: bold;
-    color: black;
-}
 
 .container-gallery {
     margin-bottom: 50px;
@@ -155,7 +105,8 @@ a.activo {
 /* --- Margin Top for Sections Nav Menú --- */
 
 .margTopForNav {
-    margin-top: 76px;
+    //margin-top: 76px;
+    margin-top: 65px;
 }
 
 /* --- Parallax --- */
@@ -531,110 +482,6 @@ img:hover .hover1:after {
 
 .side-nav {
     background-color: black;
-}
-
-/* ... MAIN NAV ................................. */
-
-.navbar-fixed {
-    position: absolute;
-    bottom: 0;
-    height: 54px;
-    z-index: 998;
-
-    // to expand/collapse main navbar in mobile devices
-    .button-collapse {
-        i {
-            position: relative;
-            bottom: 3px;
-        }
-    }
-
-    nav {
-        color: #FFF;
-        background-color: rgba(0,0,0,.7);
-        border-top: 2px solid black;
-
-        ul {
-            li {
-                .anim(all, 150ms, ease-in);
-
-                &:hover {
-                    background-color: @color-black;
-                }
-
-                &:first-child {
-                    &:hover {
-                        background-color: inherit;
-                    }
-                }
-
-                a {
-                    font-family: "champagne__limousinesregular",sans-serif;
-                    .main-text(1.2rem, 400, 0.06em);
-                    color: @color-white;
-                    text-transform: uppercase;
-                    display: block;
-                    padding: 0 15px;
-                    .anim(all, 150ms, ease-in);
-
-                    &:not(.copyright) {
-                        &:hover {
-                            color: @main-color;
-                        }
-                    }
-                }
-            }
-
-        // Left Side footer links (copyright, develop sign, legal terms...)
-        &.left {
-            a {
-                padding: 0px 10px;
-                font-size: 1rem;
-                text-transform: inherit;
-
-                &.copyright {
-                    color: @main-color;
-                    cursor: default;
-                    pointer-events: none;
-                }
-
-                &.terms,
-                &.schedule {
-                    &::before {
-                        content: "";
-                        display: inline-block;
-                        width: 5px;
-                        height: 5px;
-                        .border-radius(50%);
-                        position: relative;
-                        right: 10px;
-                        bottom: 2px;
-                        background-color: @grey-c;
-                    }
-
-                    &:hover {
-                        &::before {
-                            opacity: 0;
-                            -webkit-transform: opacity all ease;
-                            transform: opacity all ease;
-                        }
-                    }
-                }
-            }
-        }
-    }
-  }
-}
-
-@media all and (max-width: 600px) {
-    .navbar-fixed {
-        ul.right {
-            li a i {
-                position: relative;
-                top: 12px;
-            }
-        }
-    }
 }
 
 /*
@@ -1031,7 +878,6 @@ nav .button-collapse i {
 
     h5 {
         color: #666 !important;
-        line-height: 30px;
 
         span {
             font-family: 'SnellRoundhand' !important;
@@ -1242,65 +1088,6 @@ p.links a:hover {
             }
         }
     }
-}
-
-/* ... TABS ................................. */
-
-.tabs {
-    position: relative;
-    height: 48px;
-    background-color: transparent !important;
-    margin: 0 auto;
-    width: 100%;
-    white-space: nowrap;
-
-    .tab {
-        a {
-            font-family: 'SnellRoundhand' !important;
-            text-transform: capitalize;
-            text-align: left;
-            font-size: 26px;
-            letter-spacing: .05em;
-            font-weight: 300;
-            color: #666;
-
-            &:hover, &:focus, &:active {
-                color: #333;
-            }
-        }
-    }
-
-    .indicator {
-        background-color: #333;
-        opacity: .3;
-    }
-}
-
-/* --- Tabs Content --- */
-
-#white div, #red div, #rose div {
-    padding-left: 5px !important;
-}
-#white h5, #red h5, #rose h5 {
-    color: #333;
-    font-size: 18px;
-    margin-top: 25px;
-}
-#white p, #red p, #rose p {
-    font-family: "champagne__limousinesregular",sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.04em;
-    font-weight: bold;
-    color: #666;
-    line-height: 25px;
-}
-#white p span, #red p span, #rose p span,
-#white h5 span {
-    font-size: 17px;
-    color: #999;
-}
-#white p span, #red p span, #rose p span {
-    display: block;
 }
 
 /* ... BUTTONS ................................. */
@@ -1629,3 +1416,21 @@ p.links a:hover {
 footer.page-footer {
   margin: 0;
 }
+
+/* -- NEW ONES (don´t remove) -- */
+
+/*
+.disable-scroll-vertical {
+  width: 100px;
+  height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+}
+
+.enable-scroll-vertical {
+  width: 100px;
+  height: 100px;
+  overflow-y: auto;
+  overflow-x: auto !important;
+}
+*/

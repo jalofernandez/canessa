@@ -42,7 +42,7 @@
         li
             a.navbar-link.modal-trigger(href='#modal_schedule', title='Horario de la peluquería canina Canessa') #{common.titles.schedule}
         li
-            a.navbar-link(href='gallery.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
+            a.navbar-link(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{common.titles.services}
         li
             a.navbar-link(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
         li
@@ -52,3 +52,17 @@
         li.copyMobile
             a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copy},
               span.js-current-year
+//- CONTACT SubNAV in (common) Footer
+#nav-contact
+    ul
+        li
+            a(href='tel:912480430', title='Llamar a peluquería canina Canessa')
+                i.fa.fa-phone
+                | #{common.phone}
+        li
+            a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', rel="noopener noreferrer", title='Dirección de peluquería canina Canessa en Google Maps')
+                i.fa.fa-map-marker
+                | !{common.address}
+#nav-info
+    a.modal-trigger(href='#modal_contact', title='Contacto de la peluquería canina Canessa')
+        | #{common.titles.contact}
