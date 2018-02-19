@@ -2,68 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b113d9b-4287-48c0-942f-08e7db5e7abd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon/android-chrome-192x192.png" afterPath="$PROJECT_DIR$/public/img/favicon/android-chrome-192x192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon/android-chrome-256x256.png" afterPath="$PROJECT_DIR$/public/img/favicon/android-chrome-256x256.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon/apple-touch-icon.png" afterPath="$PROJECT_DIR$/public/img/favicon/apple-touch-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon/favicon-16x16.png" afterPath="$PROJECT_DIR$/public/img/favicon/favicon-16x16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon/favicon-32x32.png" afterPath="$PROJECT_DIR$/public/img/favicon/favicon-32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/favicon/mstile-150x150.png" afterPath="$PROJECT_DIR$/public/img/favicon/mstile-150x150.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/food/affinity-libra-adult-chicken.png" afterPath="$PROJECT_DIR$/public/img/food/affinity-libra-adult-chicken.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-01.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-02.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-03.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-05.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-06.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-06.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-07.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-07.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-08.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-08.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-09.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-09.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-10.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-11.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/bichon-maltes-11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/caniche-a-tijera.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/caniche-a-tijera.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/caniche.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/caniche.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/mestizo-antes-y-despues.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/mestizo-antes-y-despues.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/mestizo.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/mestizo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-01.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-02.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-03.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-04.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/perro-de-aguas-04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/schnauzer-01.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/schnauzer-01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/schnauzer-02.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/schnauzer-02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/schnauzer-03.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/schnauzer-03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/shih-tzu-01.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/shih-tzu-01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/shih-tzu-02.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/shih-tzu-02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/shih-tzu-03.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/shih-tzu-03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/showing-time.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/showing-time.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/yorkshire-01.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/yorkshire-01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/yorkshire-02.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/yorkshire-02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/yorkshire-en-mesa-de-corte.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/yorkshire-en-mesa-de-corte.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/gallery/yorkshire-proceso-de-corte.jpg" afterPath="$PROJECT_DIR$/public/img/gallery/yorkshire-proceso-de-corte.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/mascotactiva/mascotactiva-logo_small.png" afterPath="$PROJECT_DIR$/public/img/mascotactiva/mascotactiva-logo_small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/slider/afgano.jpg" afterPath="$PROJECT_DIR$/public/img/slider/afgano.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/slider/doggies-in-da-sun.jpg" afterPath="$PROJECT_DIR$/public/img/slider/doggies-in-da-sun.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/slider/entrada.jpg" afterPath="$PROJECT_DIR$/public/img/slider/entrada.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/slider/golden-under-water.jpg" afterPath="$PROJECT_DIR$/public/img/slider/golden-under-water.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/slider/peluqueria.jpg" afterPath="$PROJECT_DIR$/public/img/slider/peluqueria.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dist/styles.css" afterPath="$PROJECT_DIR$/css/dist/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/acm.js" afterPath="$PROJECT_DIR$/js/acm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/_mixins.less" afterPath="$PROJECT_DIR$/less/_mixins.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/_new.less" afterPath="$PROJECT_DIR$/less/_new.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/styles.less" afterPath="$PROJECT_DIR$/less/styles.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/autolavado.html" afterPath="$PROJECT_DIR$/public/autolavado.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/scripts-min.js" afterPath="$PROJECT_DIR$/public/js/scripts-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/legal.html" afterPath="$PROJECT_DIR$/public/legal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/mascotactiva.html" afterPath="$PROJECT_DIR$/public/mascotactiva.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/servicios-y-productos.html" afterPath="$PROJECT_DIR$/public/servicios-y-productos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/404.pug" afterPath="$PROJECT_DIR$/templates/404.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/autolavado.pug" afterPath="$PROJECT_DIR$/templates/autolavado.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/legal.pug" afterPath="$PROJECT_DIR$/templates/legal.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mascotactiva.pug" afterPath="$PROJECT_DIR$/templates/mascotactiva.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/servicios-y-productos.pug" afterPath="$PROJECT_DIR$/templates/servicios-y-productos.pug" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autolavado.pug" pinned="false" current-in-tab="true">
+      <file leaf-file-name="autolavado.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/autolavado.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="96" column="67" selection-start-line="96" selection-start-column="67" selection-end-line="96" selection-end-column="67" />
+            <state relative-caret-position="298">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,21 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_new.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_new.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/_new.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_mixins.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/_mixins.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="10" />
+            <state relative-caret-position="424">
+              <caret line="434" column="18" selection-start-line="434" selection-start-column="18" selection-end-line="434" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -267,8 +197,8 @@
         <option value="$PROJECT_DIR$/templates/servicios-y-productos.pug" />
         <option value="$PROJECT_DIR$/less/styles.less" />
         <option value="$PROJECT_DIR$/less/_mixins.less" />
-        <option value="$PROJECT_DIR$/less/_new.less" />
         <option value="$PROJECT_DIR$/templates/autolavado.pug" />
+        <option value="$PROJECT_DIR$/less/_new.less" />
       </list>
     </option>
   </component>
@@ -828,12 +758,12 @@
       <workItem from="1517415063510" duration="3623000" />
       <workItem from="1517474802340" duration="3264000" />
       <workItem from="1517575070946" duration="3497000" />
-      <workItem from="1519043058850" duration="8056000" />
+      <workItem from="1519043058850" duration="8182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59311000" />
+    <option name="totallyTimeSpent" value="59437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,7 +776,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="979" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
@@ -858,7 +788,7 @@
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3160855" sideWeight="0.47870076" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3160855" sideWeight="0.47870076" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16187434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1163,14 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/_new.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/locales/lang_es.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1181,8 +1103,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/autolavado.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="96" column="67" selection-start-line="96" selection-start-column="67" selection-end-line="96" selection-end-column="67" />
+        <state relative-caret-position="298">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/_new.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="434" column="18" selection-start-line="434" selection-start-column="18" selection-end-line="434" selection-end-column="18" />
           <folding />
         </state>
       </provider>
