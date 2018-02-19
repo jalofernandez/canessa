@@ -19,6 +19,7 @@
           belowOrigin: false // Displays dropdown below the button
         }
       );
+
 //- for TABS initiation:
       $('ul.tabs').tabs();
 
@@ -26,6 +27,17 @@
       $(function () {
           $(".js-current-year").html(new Date().getFullYear());
       });
+
+//- (top) Header Shrink when user scrolls down
+      $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 100) {
+              $(".navbar-top").addClass("js-thinny-nav");
+          } else {
+              $(".navbar-top").removeClass("js-thinny-nav");
+          }
+      });
+
 
 // Remove "contact data" top black box when main nav mobile is open:
 //    $('#mobile-bars').click(function(){$(".acm-data").addClass("none-mob");});
@@ -44,8 +56,6 @@
         }, function(){
         $("#info").css("display", "none");
       });
-
-
 });
 
 

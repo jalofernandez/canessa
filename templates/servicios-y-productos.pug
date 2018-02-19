@@ -54,11 +54,10 @@ html(lang='es')
                             a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
                         li
                             a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
-        .margTopForNav
         //- ----------------------------------------------------------------
         //- 01. SERVICES & FULL IMG GALLERY
         //- ----------------------------------------------------------------
-        #past.scrollspy.disable-scroll-vertical
+        #past.scrollspy.body-container
               //- filterable TABS section 
               .row
                   .col.s12.th-fixed
@@ -77,8 +76,8 @@ html(lang='es')
                             li.tab.col.s3
                                 a(href='#products') Complementos
                   //- DOGS PICS (gallery)
-                  #doggies.col.s12.enable-scroll-vertical
-                    .container.container-gallery
+                  #doggies.col.s12
+                    .container.container-services
                         .row
                             .col.s12.m8.offset-m2.headerSection
                                 h3.center-align
@@ -215,8 +214,8 @@ html(lang='es')
                                         span.card-title Caniche
                                         
                   //- FOOD PICS (gallery)
-                  #food.col.s12.enable-scroll-vertical
-                    .container.container-gallery
+                  #food.col.s12
+                    .container.container-services
                         .row
                             .col.s12.m8.offset-m2.headerSection
                                 h3.center-align
@@ -252,11 +251,11 @@ html(lang='es')
                                         p #{services.food.libra.salmon}
                       
                   //- HEALTH & BEAUTY PICS (gallery)
-                    #beauty.col.s12.enable-scroll-vertical
+                    #beauty.col.s12
                         | Higiene y belleza
                         
                   //- PRODUCTS PICS (gallery)
-                    #products.col.s12.enable-scroll-vertical
+                    #products.col.s12
                         | Complementos                            
 
         //- main footer NAVBAR (common) in all views

@@ -54,8 +54,6 @@ html(lang='es')
                       a.address(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro') #{common.titles.services}
                     li                            
                       a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
-        .margTopForNav
-
         //- ----------------------------------------------------------------
         //- 01. AUTOLAVADO
         //- ----------------------------------------------------------------
@@ -68,34 +66,22 @@ html(lang='es')
                       i(aria-hidden='true').fa.fa-quote-left
                       | !{autolavado.intro}
                       i(aria-hidden='true').fa.fa-quote-right
-        .container.container-gallery
+        .container.container-autolavado
             .section
                 .row
                     .col.s12.m6.l6.xl4
+                        img.artwork(src='img/autolavado/dog-wash.svg', title='Bañera hidráulica de altura regulable', alt='Bañera hidráulica de altura regulable')
                         h5 !{autolavado.tips.bath}
                     .col.s12.m6.l6.xl8
+                        img.artwork(src='img/autolavado/dryer-shampoo.svg', title='Secadores y champú disponibles', alt='Secadores y champú disponibles')
                         h5 !{autolavado.tips.tools}
                 .row
                     .col.s12.m6.l6.xl4
+                        img.artwork(src='img/autolavado/lovely-home.svg', title='Evitar ensuciar tu hogar', alt='Evitar ensuciar tu hogar')
                         h5 !{autolavado.tips.advantages}
                     .col.s12.m6.l6.xl8
+                        img.artwork(src='img/autolavado/professional.svg', title='Ofrecemos ayuda profesional', alt='Ofrecemos ayuda profesional')
                         h5 !{autolavado.tips.happyness}
-            //-
-                .row
-                    .col.s12.m6.l6.xl4
-                        .card
-                            .card-image
-                                img(src='img/gallery/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
-                                span.card-title Bichón maltés.
-                            .card-content
-                                p Corte de raza de Bichón Maltés.
-                    .col.s12.m6.l6.xl4
-                        .card
-                            .card-image
-                                img(src='img/gallery/yorkshire-proceso-de-corte.jpg', title='Proceso de corte de raza de Yorkshire terrier', alt='Proceso de corte de raza de Yorkshire terrier')
-                                span.card-title Yorkshire terrier.
-                             .card-content
-                                p Proceso de corte de raza de Yorkshire terrier.
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

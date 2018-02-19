@@ -64,12 +64,169 @@ body {
   }
 }
 
-/* -- top man NAVBAR ------------------------------------------ */
+/* --- "Logotype" (top) logo HEADER --- */
+
+#acm-navLogo {
+  padding: 10px 5px;
+  .anim(all, 150ms, ease-in);
+
+  .small-one {
+    width: 150px;
+    height: 45px;
+    .anim(all, 150ms, ease-in);
+  }
+  // responsive behaviour
+  @media (max-width: 601px) {
+    padding: 7px 5px;
+
+    .small-one {
+      width: 140px;
+      height: 42px;
+    }
+  }
+}
+
+
+
+.navbar-top + .body-container {
+  .th-fixed {
+    .anim(all, 0.3s, ease);
+  }
+}
+
+/* -- (top) logo HEADER :: NAVBAR ------------------------------------------ */
+
+.navbar-top {
+  width: 100%;
+  //height: 45px;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+
+  nav {
+    width: 100%;
+    background-color: @color-black;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    .anim(height, 0.3s, ease);
+
+    ul {
+      .anim(padding, 0.3s, ease);
+      &.right {
+        padding-right: 15px;
+        padding-top: 10px;
+      }
+      &.left {
+        padding-left: 15px;
+        padding-top: 10px;
+      }
+
+      li {
+        a {
+          text-transform: none;
+          color: @color-white;
+          font-size: 14px;
+          letter-spacing: .05em;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+        &:hover {
+          a {
+            color: @main-color;
+            .anim(all, 150ms, ease-in);
+          }
+        }
+      }
+
+      /* --- 2. "Left Navigation Menu" Top Main Nav --- */
+      &.navSubSections li a {
+        color: #aaa;
+        .main-text(18px, bold, .04em);
+        padding-right: 12px;
+        padding-left: 12px;
+
+        &.drinks {
+          display: none;
+        }
+      }
+
+      &.navContact li a.address {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // (top) Header Shrink when user scrolls down
+  &.js-thinny-nav {
+    nav {
+      height: 40px;
+      line-height: 40px;
+
+      // corp. logo shrink too!
+      #acm-navLogo {
+        padding: 4px;
+
+        .small-one {
+          width: 95px;
+          height: 29px;
+        }
+        // responsive behaviour
+        @media (max-width: 601px) {
+          padding: 5px;
+
+          .small-one {
+            width: 90px;
+            height: 27px;
+          }
+        }
+      }
+
+      // (lsit) links to nav across pages
+      ul {
+        &.right,
+        &.left {
+          padding-top: 0;
+        }
+      }
+    }
+
+    // container with page info affected by thiny header
+    & + .body-container {
+      .th-fixed {
+        top: 40px;
+        .anim(all, 0.3s, ease);
+      }
+    }
+  }
+}
+
+@media (max-width: 1740px) {
+  .navbar-top nav ul.navContact li a.schedule {
+    display: none;
+  }
+}
+@media (max-width: 1399px) {
+  .navbar-top nav ul.navSubSections li a {
+    &.bottle,
+    &.wineh,
+    &.cockt {
+      display: none;
+    }
+    &.drinks {
+      display: inline;
+    }
+  }
+  .navbar-top nav ul.navContact li a.email {
+    display: none;
+  }
+}
+
+/* -- (bottom) main NAVBAR on FOOTER ------------------------------------------ */
 
 .navbar-fixed {
+  height: 54px;
   position: absolute;
   bottom: 0;
-  height: 54px;
   z-index: 998;
 
   // to expand/collapse main navbar in mobile devices
@@ -197,5 +354,84 @@ body {
   .indicator {
     background-color: @main-color;
     opacity: .3;
+  }
+}
+
+/* -- (common) in All PAGES ------------------------------------------ */
+
+.headerSection {
+  margin-top: 100px;
+  // responsive behaviour
+  @media (max-width: 768px) {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-bottom: auto !important;
+    padding: 0 !important;
+  }
+  @media all and (max-width: 600px) {
+    margin-top: 75px;
+  }
+
+  // main (view) Title
+  h3 {
+    padding-top: 50px;
+    color: @color-header !important;
+    text-transform: uppercase;
+    // subtitles near to main (view) title
+    span {
+      &.capital {
+        text-transform: capitalize;
+      }
+      &:not(.capital) {
+        text-transform: initial;
+      }
+    }
+  }
+
+  h5 {
+    color: #666 !important;
+
+    span {
+      font-family: 'SnellRoundhand' !important;
+      font-size: 30px;
+      color: #333;
+    }
+  }
+
+  .centerPicHeader {
+    margin-top: 20px;
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    img {
+      border: 5px solid white;
+      .border-radius(50%);
+      width: 250px;
+      height: 250px;
+    }
+
+    p {
+      line-height: 12px;
+      color: #666;
+      text-align: center;
+    }
+  }
+}
+
+/* -- (page) AUTOLAVADO ------------------------------------------ */
+
+.container-autolavado {
+  .artwork {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    .centered();
   }
 }

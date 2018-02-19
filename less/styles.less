@@ -102,13 +102,6 @@ a.activo {
     margin-bottom: 100px;
 }
 
-/* --- Margin Top for Sections Nav Menú --- */
-
-.margTopForNav {
-    //margin-top: 76px;
-    margin-top: 65px;
-}
-
 /* --- Parallax --- */
 
 .parallax-container {
@@ -746,106 +739,6 @@ nav .button-collapse i {
 
 
 
-/* ... TOP NAV BAR "SECTIONS & CONTACT" .......................... */
-
-.navbar-top {
-    position: fixed;
-    top: 0;
-    height: 45px;
-    z-index: 998;
-    width: 100%;
-    background-color: white;
-
-    nav {
-        width: 100%;
-        background-color: black;
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0),
-        0 0 0 0 rgba(0, 0, 0, 0) !important;
-
-        ul {
-            &.right {
-                padding-right: 15px;
-                padding-top: 10px;
-            }
-            &.left {
-                padding-left: 15px;
-                padding-top: 10px;
-            }
-
-            li {
-                a {
-                    text-transform: none;
-                    color: @color-white;
-                    font-size: 14px;
-                    letter-spacing: .05em;
-                    padding-right: 10px;
-                    padding-left: 10px;
-                }
-                &:hover {
-                    a {
-                        color: @main-color;
-                        .anim(all, 150ms, ease-in);
-                    }
-                }
-            }
-
-            /* --- 2. "Left Navigation Menu" Top Main Nav --- */
-            &.navSubSections li a {
-                color: #aaa;
-                font-weight: bold;
-                letter-spacing: .04em;
-                font-size: 18px;
-                padding-right: 12px;
-                padding-left: 12px;
-
-                &.drinks {
-                    display: none;
-                }
-            }
-
-            &.navContact li a.address {
-                text-transform: uppercase;
-            }
-        }
-    }
-}
-
-@media (max-width: 1740px) {
-    .navbar-top nav ul.navContact li a.schedule {
-        display: none;
-    }
-}
-@media (max-width: 1399px) {
-    .navbar-top nav ul.navSubSections li a {
-        &.bottle,
-        &.wineh,
-        &.cockt {
-            display: none;
-        }
-        &drinks {
-            display: inline;
-        }
-    }
-    .navbar-top nav ul.navContact li a.email {
-        display: none;
-    }
-}
-
-/* --- 1. "Logotipo" Top Main Nav --- */
-
-#acm-navLogo {
-    padding: 6px 6px 0 6px;
-
-    .small-one {
-        width: 160px;
-        height: auto;
-
-        @media (max-width: 601px) {
-            width: 150px;
-        }
-    }
-}
-
 
 /* ....................................................... */
 /* ... SECTIONS ......................................... */
@@ -857,70 +750,6 @@ nav .button-collapse i {
     color: #aaa;
     opacity: .2;
     margin: 40px 0 20px 0;
-}
-
-.headerSection {
-    // main (view) Title
-    h3 {
-        padding-top: 50px;
-        color: @color-header !important;
-        text-transform: uppercase;
-        // subtitles near to main (view) title
-        span {
-            &.capital {
-                text-transform: capitalize;
-            }
-            &:not(.capital) {
-                text-transform: initial;
-            }
-        }
-    }
-
-    h5 {
-        color: #666 !important;
-
-        span {
-            font-family: 'SnellRoundhand' !important;
-            font-size: 30px;
-            color: #333;
-        }
-    }
-
-    .centerPicHeader {
-        margin-top: 20px;
-        position: absolute;
-        width: 250px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
-
-        img {
-            border: 5px solid white;
-            .border-radius(50%);
-            width: 250px;
-            height: 250px;
-        }
-
-        p {
-            line-height: 12px;
-            color: #666;
-            text-align: center;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .headerSection {
-        width: 90% !important;
-        margin-left: 5% !important;
-        margin-right: 5% !important;
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-        padding: 0 !important;
-    }
 }
 
 /* --- Headers in TextLeftSide --- */
@@ -1416,21 +1245,3 @@ p.links a:hover {
 footer.page-footer {
   margin: 0;
 }
-
-/* -- NEW ONES (don´t remove) -- */
-
-/*
-.disable-scroll-vertical {
-  width: 100px;
-  height: 100px;
-  overflow-y: auto;
-  overflow-x: hidden !important;
-}
-
-.enable-scroll-vertical {
-  width: 100px;
-  height: 100px;
-  overflow-y: auto;
-  overflow-x: auto !important;
-}
-*/

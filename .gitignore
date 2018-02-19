@@ -15,6 +15,7 @@
 
 ### macOS ###
 *.DS_Store
+_DS_Store
 .AppleDouble
 .LSOverride
 
@@ -61,9 +62,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# GUI
+/target
+/.idea
+
 # specifics for this project
 sources
 node_modules
+**/node_modules/
 do_not_publish
 .tmp
 no_ftp
@@ -71,4 +77,3 @@ no_ftp
 #weird ones!
 _gitignore
 _htaccess
-_DS_Store
