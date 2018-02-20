@@ -33,7 +33,7 @@ body {
   }
 
   &.bg-fucsia {
-    background-color: @main-color;
+    background-color: @color-main;
 
     > p, h3, h5, b, span:not(.js-current-year) {
       color: @color-white !important;
@@ -54,10 +54,32 @@ body {
   }
 }
 
-/* -- Paragraph -- */
+/* -- Text & Paragraph -- */
 
 p {
   line-height: 2rem;
+}
+
+// used in "Legal" pages
+.light {
+  span {
+    font-weight: 600;
+    color: @color-main;
+  }
+
+  a {
+    font-weight: 600;
+    color: @color-header;
+    &:hover {
+      text-decoration: underline;
+      color: lighten(@color-header, 10%);
+    }
+  }
+  
+  b {
+    font-weight: 600;
+    color: #222222;
+  }
 }
 
 /* -- Strong Text -- */
@@ -70,14 +92,6 @@ p {
   font-weight: bold;
   color: black;
 }
-
-.light {
-  span {
-    color: #111;
-  }
-}
-
-
 
 /* ----- (common) CONTAINER, WRAPPER & SECTION ---------------------------- */
 
@@ -253,7 +267,7 @@ p {
         }
         &:hover {
           a {
-            color: @main-color;
+            color: @color-main;
             .anim(all, 150ms, ease-in);
           }
         }
@@ -414,7 +428,7 @@ p {
 
           &:not(.copyright) {
             &:hover {
-              color: @main-color;
+              color: @color-main;
             }
           }
         }
@@ -428,7 +442,7 @@ p {
           text-transform: inherit;
 
           &.copyright {
-            color: @main-color;
+            color: @color-main;
             cursor: default;
             pointer-events: none;
           }
@@ -499,7 +513,7 @@ p {
         background-color: @color-black;
 
         a {
-          color: @main-color;
+          color: @color-main;
         }
       }
     }
@@ -580,7 +594,7 @@ p {
       &.copyMobile {
         a {
           text-transform: inherit;
-          color: @main-color;
+          color: @color-main;
           cursor: default;
           pointer-events: none;
         }
@@ -619,7 +633,7 @@ p {
         .main-text(18px, 400, 0.04em);
 
         &:hover {
-          color: @main-color;
+          color: @color-main;
           .anim(all, 150ms, ease-in);
 
           i {
@@ -672,7 +686,7 @@ p {
   }
   &#modal_contact h4,
   &#modal_schedule h4 {
-    color: @main-color;
+    color: @color-main;
     text-transform: uppercase;
   }
 
@@ -783,18 +797,18 @@ p {
       color: @color-black;
 
       &:hover, &:focus, &:active {
-        color: @main-color;
+        color: @color-main;
       }
 
       i {
         padding-right: 10px;
-        color: lighten(@main-color, 10%);
+        color: lighten(@color-main, 10%);
       }
     }
   }
 
   .indicator {
-    background-color: @main-color;
+    background-color: @color-main;
     opacity: .3;
   }
 }
@@ -803,7 +817,7 @@ p {
 
 .btn,
 .btn-large {
-  background-color: @main-color;
+  background-color: @color-main;
   color: @color-white;
   &:hover {
 
@@ -841,6 +855,10 @@ p {
 
 .headerSection {
   margin-top: 100px;
+  // applied in "Legal" page
+  &.headerSectionLegal {
+    margin-top: 0;
+  }
   // responsive behaviour
   @media (max-width: 768px) {
     width: 90% !important;
@@ -870,24 +888,19 @@ p {
   }
 
   h5 {
-    color: #666 !important;
+    color: @color-text !important;
 
     span {
       font-size: 30px;
-      color: #333;
+      color: @grey-3;
     }
   }
 
   .centerPicHeader {
     margin-top: 20px;
+    .centered();
     position: absolute;
     width: 250px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
 
     img {
       border: 5px solid white;
@@ -898,7 +911,7 @@ p {
 
     p {
       line-height: 12px;
-      color: #666;
+      color: @color-text;
       text-align: center;
     }
   }
@@ -989,7 +1002,7 @@ p {
           0 0 5px black,
           0 0 5px black;
 
-          &.intro {color: @main-color;}
+          &.intro {color: @color-main;}
           &.rest  {color: #4fc3f7;}
           &.art   {color: #b2ff59;}
           &.cock  {color: #ffab00;}
@@ -1075,6 +1088,33 @@ p {
   padding: 0 !important;
   margin: 0 !important;
   margin-bottom: -8px !important;
+}
+
+.browsers-list {
+  a {
+    i {
+      padding-right: 10px;
+    }
+    &:hover,
+    &:hover i {
+      color: lighten(@color-header, 10%);
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#intro {
+  .artwork {
+    width: 200px;
+    height: 200px;
+    .centered();
+
+    & + h3 {
+      padding-top: 0;
+    }
+  }
 }
 
 
