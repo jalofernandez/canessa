@@ -2,61 +2,25 @@
 @import '_mixins';
 @import '_new';
 
-/* ------------------------------------------------------------------- */
-/* FONT FACE :: CUSTOM FONTS ---------------------------------------- */
-/* ----------------------------------------------------------------- */
-@font-face {
-    font-family: 'champagne__limousinesregular';
-    src: url('../../font/champagne__limousines-webfont.eot');
-    src: url('../../font/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../font/champagne__limousines-webfont.woff2') format('woff2'),
-         url('../../font/champagne__limousines-webfont.woff') format('woff'),
-         url('../../font/champagne__limousines-webfont.ttf') format('truetype'),
-         url('../../font/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'SnellRoundhand';
-  src: url('../../font/SnellRoundhand.eot') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SnellRoundhand';
-  src: url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'),
-       url('../../font/SnellRoundhand.ttf')  format('truetype'),
-       url('../../font/SnellRoundhand.svg#SnellRoundhand') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 /* ----- STYLES GENERIC ---------------------------------------- */
+
+.container {
+    @media only screen and (max-width: 1400px) {
+        width: 70% !important;
+    }
+    @media only screen and (max-width: 1399px) {
+        width: 85% !important;
+    }
+    @media only screen and (max-width: 1199px) {
+        width: 90% !important;
+    }
+}
 
 .container-gallery {
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 1400px) {
-    .container {
-        width: 70% !important;
-    }
-}
-@media only screen and (max-width: 1399px) {
-    .container {
-        width: 85% !important;
-    }
-}
-@media only screen and (max-width: 1199px) {
-    .container {
-        width: 90% !important;
-    }
-}
-
-nav ul a,
-nav .brand-logo {
+nav ul a {
   color: #444;
 }
 
@@ -479,7 +443,6 @@ img:hover .hover1:after {
 
 /*
 .navbar-fixed nav ul a.active {
-    font-family: 'SnellRoundhand';
     font-size: 1.2rem;
     color: #FFF;
     display: block;
@@ -761,7 +724,7 @@ nav .button-collapse i {
 .textLeftSide p,
 .textLeftSide li p,
 .parallaxTextTab p {
-    font-family: "champagne__limousinesregular",sans-serif;
+  font-family: 'champagne', sans-serif;
     font-size: 18px;
     letter-spacing: 0.04em;
     font-weight: bold;
@@ -790,7 +753,7 @@ nav .button-collapse i {
 
 .textLeftSide a.data,
 p.links a {
-    font-family: "champagne__limousinesregular",sans-serif;
+  font-family: 'champagne', sans-serif;
     font-size: 18px;
     letter-spacing: 0.04em;
     font-weight: bold;
@@ -820,7 +783,7 @@ p.links a:hover {
     line-height: 34px;
 
     a {
-        font-family: "champagne__limousinesregular",sans-serif;
+      font-family: 'champagne', sans-serif;
         font-size: 18px;
         letter-spacing: 0.04em;
         font-weight: bold;
@@ -853,7 +816,6 @@ p.links a:hover {
 
 #cont-rest {
     h5 {
-        font-family: 'SnellRoundhand' !important;
         font-size: 30px;
         color: #333!important;
         font-weight: bold;
@@ -862,7 +824,7 @@ p.links a:hover {
     p {
         font-weight: 600;
         letter-spacing: 0.04em;
-        font-family: "champagne__limousinesregular",sans-serif;
+      font-family: 'champagne', sans-serif;
         font-size: 20px;
         color: #666;
         font-weight: bold;
