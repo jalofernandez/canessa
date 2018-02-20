@@ -67,7 +67,7 @@ body {
 /* --- "Logotype" (top) logo HEADER --- */
 
 .brand-logo {
-  padding: 10px 5px;
+  padding: 10px 5px !important; /* overwrite "materialize" styles by default */
   .anim(all, 150ms, ease-in);
 
   .small-one {
@@ -77,7 +77,7 @@ body {
   }
   // responsive behaviour
   @media (max-width: 601px) {
-    padding: 7px 5px;
+    padding: 7px 5px !important; /* overwrite "materialize" styles by default */
 
     .small-one {
       width: 140px;
@@ -164,7 +164,7 @@ body {
 
       // corp. logo shrink too!
       .brand-logo {
-        padding: 4px;
+        padding: 4px !important; /* overwrite "materialize" styles by default */
 
         .small-one {
           width: 95px;
@@ -172,7 +172,7 @@ body {
         }
         // responsive behaviour
         @media (max-width: 601px) {
-          padding: 5px;
+          padding: 5px !important; /* overwrite "materialize" styles by default */
 
           .small-one {
             width: 90px;
