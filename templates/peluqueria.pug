@@ -1,0 +1,191 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        title Canessa: Peluquería
+        meta(name='description', content='Servicios de la Peluquería canina Canessa. Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tarifa especial para autolavados además de un completo SPA canino. Tenemos pienso, collares, arneses, juguetes y complementos.')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- (todo: remove this useless code) GRADIENT TOP
+        include includes/gradient
+
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#services') Past Exhibitions
+                                li
+                                  a.wineh(href='#services', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a.address(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
+                                li
+                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        //- ----------------------------------------------------------------
+        //- 01. SERVICES & FULL IMG GALLERY
+        //- ----------------------------------------------------------------
+        //- DOGS PICS (gallery)
+        #doggies.scrollspy.body-container
+            .container.container-services
+                .row
+                    .col.s12.m8.offset-m2.headerSection
+                        h3.center-align
+                            span !{services.doggies.title}
+                        h5.center-align
+                            em.quotes
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{services.doggies.intro}
+                                i(aria-hidden='true').fa.fa-quote-right
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
+                                span.card-title Yorkshire terrier.
+                    .col.s12.m6.l8.xl9
+                        //- for each loop to load all copies in "locales" json file/s
+                        each skill, i in services.doggies.skills
+                            p.light !{skill}
+                .row
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                span.card-title Bichón maltés
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/perro-de-aguas-04.jpg', title='Perro de aguas recién cortado', alt='Perro de aguas recién cortado')
+                                span.card-title Perro de aguas
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/perro-de-aguas-01.jpg', title='Perro de aguas en mesa de trabajo', alt='Perro de aguas en mesa de trabajo')
+                                span.card-title Perro de aguas
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/perro-de-aguas-02.jpg', title='Perro de aguas en mesa de trabajo', alt='Perro de aguas en mesa de trabajo')
+                                span.card-title Perro de aguas
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/shih-tzu-02.jpg', title='Shih Tzu a punto de recibir un señor corte', alt='Shih Tzu a punto de recibir un señor corte')
+                                span.card-title Shih Tzu
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/shih-tzu-01.jpg', title='Shih Tzu con corte a tijera', alt='Shih Tzu con corte a tijera')
+                                span.card-title Shih Tzu
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/yorkshire-01.jpg', title='Yorkshire y su corte de pelo de raza', alt='Yorkshire y su corte de pelo de raza')
+                                span.card-title Yorkshire Terrier
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/yorkshire-02.jpg', title='Yorkshire y su corte de pelo de raza', alt='Yorkshire y su corte de pelo de raza')
+                                span.card-title Yorkshire Terrier
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/mestizo.jpg', title='Proceso de corte a tijera de un mestizo muy peludo', alt='Proceso de corte a tijera de un mestizo muy peludo')
+                                span.card-title Mestizo
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/showing-time.jpg', title='El baño sienta taaan bien...', alt='El baño sienta taaan bien...')
+                                span.card-title Basset hound
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/bichon-maltes-09.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                span.card-title Bichón maltés
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/bichon-maltes-10.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                span.card-title Bichón maltés
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/bichon-habanero-01.jpg', title='Corte de raza de Bichón Habanero', alt='Corte de raza de Bichón Habanero')
+                                span.card-title Bichón habanero
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/bichon-maltes-01.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                span.card-title Bichón maltés
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/schnauzer-01.jpg', title='Corte de raza de Schnauzer', alt='Corte de raza de Schnauzer')
+                                span.card-title Schnauzer
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/schnauzer-02.jpg', title='Corte de raza de Schnauzer', alt='Corte de raza de Schnauzer')
+                                span.card-title Schnauzer
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/caniche-a-tijera.jpg', title='Caniche tras un corte a tijera', alt='Caniche tras un corte a tijera')
+                                span.card-title Caniche
+
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/caniche.jpg', title='Proceso de corte a tijera de un Caniche', alt='Proceso de corte a tijera de un Caniche')
+                                span.card-title Caniche
+
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODAL dialog in DESKTOP devices :: "COMING SOON!"
+        include includes/modal_coming-soon
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts

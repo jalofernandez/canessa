@@ -17,47 +17,43 @@ html(lang='es')
         //- 00. TOP NAV BAR "Sections & Contact"
         //- ----------------------------------------------------------------
         .navbar-top
-          nav
-            .nav-top
-              .row
-                //- "Navigation Page" :: LEFT NAV
-                    .col.m5
-                      ul.right.navSubSections.hide-on-med-and-down
-                        li
-                          a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
-                            | Our Expos
-                            i.fa.fa-caret-down
-                        ul#dropdown1.dropdown-content
-                          li
-                            a(href='#not-found') Past Exhibitions
-                        li
-                          a.wineh(href='#not-found', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
-                //- "Logo" :: CENTER LOGO
-                .brand-logo.center
-                  img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
-                //- "Contact" :: RIGHT NAV
-                .col.m5.offset-m2
-                      ul.left.navContact.hide-on-med-and-down
-                        li
-                          a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
-                        //-
-                            li
-                              a.phone(href='tel:912770365', title='Call to Arts Club Madrid')
-                                i.fa.fa-phone
-                                |  912 770 365
-                            li
-                              a(href='https://module.lafourchette.com/es_ES/module/62151-6082e', target='_blank', title='Online Reservations with ElTenedor in Arts Club Madrid')
-                                i.fa.fa-cutlery
-                                |   Online Reservations
-                            li
-                              a.schedule.modal-trigger(href='#modal_contact', title='Online Reservations with ElTenedor in Arts Club Madrid')
-                                i.fa.fa-clock-o
-                                |   13:00 - 02:00 Su-We / 03:00 Th-Sa
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#autolavado') Past Exhibitions
+                                li
+                                  a.wineh(href='#autolavado', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a.address(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                li
+                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a.address(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
+                                li
+                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
         //- ----------------------------------------------------------------
         //- 01. 404 PAGE NOT FOUND :: 404 página no encontrada
         //- ----------------------------------------------------------------
         #not-found.row.scrollspy
-          .col.s12.headerSection
+          .col.s12.headerSection.container-with-pic
+            img.artwork.bigger(src='img/404/404-dog.svg', title='Error 404: página no encontrada', alt='Error 404: página no encontrada')
             h3.center-align
               span !{not_found.title}
 

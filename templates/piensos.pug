@@ -1,0 +1,147 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        title Canessa: Piensos y alimentación
+        meta(name='description', content='Piensos y alimentación canina en la Peluquería canina Canessa. Nuestras marcas son Affinity y Advange tanto para perros mini, adultos, cachorros y en bolsas de distintos tamños.')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- (todo: remove this useless code) GRADIENT TOP
+        include includes/gradient
+
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#services') Past Exhibitions
+                                li
+                                  a.wineh(href='#services', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a.address(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                li
+                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        //- ----------------------------------------------------------------
+        //- 01. SERVICES & FULL IMG GALLERY
+        //- ----------------------------------------------------------------
+        #services.scrollspy.body-container
+            //- filterable TABS section
+            .row
+                .col.s12.th-fixed
+                    ul.tabs
+                        li.tab.col.s12.m6
+                            a.active(href='#advance')
+                                | Advance
+                        li.tab.col.s12.m6
+                            a(href='#affinity')
+                                | Affinity
+                //- FOOD (pics gallery) :: "ADVANCE"
+                #advance.col.s12
+                    .container.container-services
+                        .row
+                            .col.s12.m8.offset-m2.headerSection
+                                h3.center-align
+                                    span !{services.food.title}
+                                h5.center-align
+                                    em.quotes
+                                        i(aria-hidden='true').fa.fa-quote-left
+                                        | #{services.food.intro}
+                                        i(aria-hidden='true').fa.fa-quote-right
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/affinity-libra-adult-chicken.png', title='Bolsa de pienso French Bulldog Adult de Advance', alt='Bolsa de pienso French Bulldog Adult de Advance')
+                                    .card-content
+                                        p #{services.food.libra.chicken}
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/advange-yorkshire-terrier.png', title='Bolsa de pienso Yorkshire Terrier Adult de Advance', alt='Bolsa de pienso Yorkshire Terrier Adult de Advance')
+                                    .card-content
+                                        p #{services.food.libra.lamb}
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/advange-medium-7years.png', title='Bolsa de pienso Medium 7 años de pollo y salmón de Advance', alt='Bolsa de pienso Medium 7 años de pollo y salmón de Advance')
+                                    .card-content
+                                        p #{services.food.libra.rice}
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/advange-medium-adult.png', title='Bolsa de pienso medium Adult de pollo con arroz de Advance', alt='Bolsa de pienso medium Adult de pollo con arroz de Advance')
+                                    .card-content
+                                        p #{services.food.libra.salmon}
+                //- FOOD (pics gallery) :: "AFFINITY"
+                #affinity.col.s12
+                    .container.container-services
+                        .row
+                            .col.s12.m8.offset-m2.headerSection
+                                h3.center-align
+                                    span !{services.food.title}
+                                h5.center-align
+                                    em.quotes
+                                        i(aria-hidden='true').fa.fa-quote-left
+                                        | #{services.food.intro}
+                                        i(aria-hidden='true').fa.fa-quote-right
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/affinity-libra-adult-chicken.png', title='Libra de pollo para adultos de Affinity', alt='Libra de pollo para adultos de Affinity')
+                                    .card-content
+                                        p #{services.food.libra.chicken}
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/affinity-libra-adult-lamb.png', title='Libra de cordero para adultos de Affinity', alt='Libra de cordero para adultos de Affinity')
+                                    .card-content
+                                        p #{services.food.libra.lamb}
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/affinity-libra-puppy-pollo-arroz.png', title='Libra de pollo con arroz para cachorros de Affinity', alt='Libra de pollo con arroz para cachorros de Affinity')
+                                    .card-content
+                                        p #{services.food.libra.rice}
+                            .col.s12.m4.l4.xl3
+                                .card
+                                    .card-image
+                                        img(src='img/food/affinity-libra-puppy-salmon.png', title='Libra de salmón para cachorros de Affinity', alt='Libra de salmón para cachorros de Affinity')
+                                    .card-content
+                                        p #{services.food.libra.salmon}
+
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODAL dialog in DESKTOP devices :: "COMING SOON!"
+        include includes/modal_coming-soon
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts
