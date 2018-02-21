@@ -2,7 +2,7 @@ doctype html
 html(lang='es')
     head
         meta(name='encoding', charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
         title Canessa peluquería canina Valdemoro
         meta(name='description', content='Canessa ofrece servicios de peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición. También se realizan arreglos y lavados. Tenemos tarifa especial para autolavados además de un SPA canino. 91 248 04 30')
         meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, piensos, complementos, correas, lazos, collares, antiparasitarios, autolavado')
@@ -21,25 +21,25 @@ html(lang='es')
               .caption.left-align
                 h1 #{index.slides.slide_01.title}
                 h5.intro #{index.slides.slide_01.subtitles}
-                a.waves-effect.waves-light.btn.pink.lighten-1(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_01.btn}
+                a.btn.btn-anim(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_01.btn}
             li
               img(src='img/slider/golden-under-water.jpg', title='Servicio de autolavado de la peluquería canina Canessa', alt='Servicio de autolavado de la peluquería canina Canessa')
               .caption.left-align
                 h1 #{index.slides.slide_02.title}
                 h5.intro #{index.slides.slide_02.subtitles}
-                a.waves-effect.waves-light.btn.pink.lighten-1(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.slide_02.btn}
+                  a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.slide_02.btn}
             li
               img(src='img/slider/entrada.jpg', title='Entrada y recibidor de la Canessa peluquería canina', alt='Entrada y recibidor de la Canessa peluquería canina')
               .caption.left-align.mycaption
                 h1 #{index.slides.slide_03.title}
                 h5.intro #{index.slides.slide_03.subtitles}
-                a.waves-effect.waves-light.btn.pink.lighten-1(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_03.btn}
+                  a.btn.btn-anim(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_03.btn}
             li
               img(src='img/slider/peluqueria.jpg', title='Zona de corte y baño de la Canessa peluquería canina', alt='Zona de corte y baño de la Canessa peluquería canina')
               .caption.left-align
                 h1 !{index.slides.slide_04.title}
                 h5.intro #{index.slides.slide_04.subtitles}
-                a.waves-effect.waves-light.btn.pink.lighten-1(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_04.btn}
+                a.btn.btn-anim(href='servicios-y-productos.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_04.btn}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

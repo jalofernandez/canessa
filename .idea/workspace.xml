@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b113d9b-4287-48c0-942f-08e7db5e7abd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/slider/doggies-in-da-sun.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/slider/doggies-in-da-sun.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/font/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/champagne/champagne__limousines-webfont.eot" afterPath="$PROJECT_DIR$/public/fonts/champagne/champagne__limousines-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/champagne/champagne__limousines-webfont.svg" afterPath="$PROJECT_DIR$/public/fonts/champagne/champagne__limousines-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/champagne/champagne__limousines-webfont.ttf" afterPath="$PROJECT_DIR$/public/fonts/champagne/champagne__limousines-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/champagne/champagne__limousines-webfont.woff" afterPath="$PROJECT_DIR$/public/fonts/champagne/champagne__limousines-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/champagne/champagne__limousines-webfont.woff2" afterPath="$PROJECT_DIR$/public/fonts/champagne/champagne__limousines-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Bold.ttf" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Bold.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Bold.woff" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Bold.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Bold.woff2" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Bold.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Light.ttf" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Light.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Light.woff" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Light.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Light.woff2" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Light.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Medium.ttf" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Medium.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Medium.woff" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Medium.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Medium.woff2" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Medium.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Regular.woff" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Regular.woff2" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Thin.ttf" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Thin.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Thin.woff" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Thin.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/roboto/Roboto-Thin.woff2" afterPath="$PROJECT_DIR$/public/fonts/roboto/Roboto-Thin.woff2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dist/materialize.css" afterPath="$PROJECT_DIR$/css/dist/materialize.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/dist/styles.css" afterPath="$PROJECT_DIR$/css/dist/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/styles.less" afterPath="$PROJECT_DIR$/less/styles.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
@@ -17,8 +43,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/404.pug" afterPath="$PROJECT_DIR$/templates/404.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/autolavado.pug" afterPath="$PROJECT_DIR$/templates/autolavado.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/metatags.pug" afterPath="$PROJECT_DIR$/templates/includes/metatags.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/modal_coming-soon.pug" afterPath="$PROJECT_DIR$/templates/includes/modal_coming-soon.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/modal_contact.pug" afterPath="$PROJECT_DIR$/templates/includes/modal_contact.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/modal_schedule.pug" afterPath="$PROJECT_DIR$/templates/includes/modal_schedule.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/navbar.pug" afterPath="$PROJECT_DIR$/templates/includes/navbar.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/includes/scripts.pug" afterPath="$PROJECT_DIR$/templates/includes/scripts.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.pug" afterPath="$PROJECT_DIR$/templates/index.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/legal.pug" afterPath="$PROJECT_DIR$/templates/legal.pug" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mascotactiva.pug" afterPath="$PROJECT_DIR$/templates/mascotactiva.pug" />
@@ -41,41 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="404.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/404.pug">
+      <file leaf-file-name="lang_es.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/locales/lang_es.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal_contact.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/includes/modal_contact.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal_schedule.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/includes/modal_schedule.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+            <state relative-caret-position="345">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -85,7 +84,17 @@
         <entry file="file://$PROJECT_DIR$/templates/legal.pug">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+              <caret line="4" column="91" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -94,30 +103,38 @@
       <file leaf-file-name="mascotactiva.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mascotactiva.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+            <state relative-caret-position="285">
+              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="servicios-y-productos.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/servicios-y-productos.pug">
+      <file leaf-file-name="modal_coming-soon.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/includes/modal_coming-soon.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/styles.less">
+      <file leaf-file-name="modal_contact.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/includes/modal_contact.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="1018" column="7" selection-start-line="1018" selection-start-column="7" selection-end-line="1018" selection-end-column="7" />
+            <state relative-caret-position="550">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal_schedule.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/includes/modal_schedule.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -126,18 +143,28 @@
       <file leaf-file-name="metatags.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/includes/metatags.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="315">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mixins.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/_mixins.less">
+      <file leaf-file-name="styles.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/styles.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+            <state relative-caret-position="226">
+              <caret line="819" column="32" selection-start-line="819" selection-start-column="32" selection-end-line="819" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="materialize.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/dist/materialize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1245">
+              <caret line="1767" column="23" selection-start-line="1767" selection-start-column="23" selection-end-line="1767" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -209,7 +236,6 @@
         <option value="$PROJECT_DIR$/templates/pug/gallery.pug" />
         <option value="$PROJECT_DIR$/templates/pug/404.pug" />
         <option value="$PROJECT_DIR$/templates/pug/legal.pug" />
-        <option value="$PROJECT_DIR$/templates/includes/scripts.pug" />
         <option value="$PROJECT_DIR$/templates/gallery.pug" />
         <option value="$PROJECT_DIR$/js/sources/acm.js" />
         <option value="$PROJECT_DIR$/less/style.less" />
@@ -223,14 +249,19 @@
         <option value="$PROJECT_DIR$/locales/lang_es.json" />
         <option value="$PROJECT_DIR$/templates/404.pug" />
         <option value="$PROJECT_DIR$/templates/autolavado.pug" />
-        <option value="$PROJECT_DIR$/templates/index.pug" />
         <option value="$PROJECT_DIR$/templates/legal.pug" />
-        <option value="$PROJECT_DIR$/templates/mascotactiva.pug" />
         <option value="$PROJECT_DIR$/templates/servicios-y-productos.pug" />
+        <option value="$PROJECT_DIR$/templates/includes/metatags.pug" />
+        <option value="$PROJECT_DIR$/templates/includes/scripts.pug" />
+        <option value="$PROJECT_DIR$/css/dist/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/templates/includes/navbar.pug" />
+        <option value="$PROJECT_DIR$/less/styles.less" />
+        <option value="$PROJECT_DIR$/templates/index.pug" />
+        <option value="$PROJECT_DIR$/templates/mascotactiva.pug" />
+        <option value="$PROJECT_DIR$/templates/includes/modal_coming-soon.pug" />
         <option value="$PROJECT_DIR$/templates/includes/modal_contact.pug" />
         <option value="$PROJECT_DIR$/templates/includes/modal_schedule.pug" />
-        <option value="$PROJECT_DIR$/less/styles.less" />
-        <option value="$PROJECT_DIR$/templates/includes/metatags.pug" />
+        <option value="$PROJECT_DIR$/css/dist/materialize.css" />
       </list>
     </option>
   </component>
@@ -245,6 +276,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-6" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="979" />
@@ -337,6 +369,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="locales" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -366,6 +452,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="canessa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -867,12 +985,12 @@
       <workItem from="1519043058850" duration="8251000" />
       <workItem from="1519115794263" duration="16580000" />
       <workItem from="1519201698151" duration="4028000" />
-      <workItem from="1519209454746" duration="2667000" />
+      <workItem from="1519209454746" duration="9432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82781000" />
+    <option name="totallyTimeSpent" value="89546000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -884,7 +1002,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
+    <frame x="-6" y="23" width="1920" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -972,19 +1090,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/locales/lang_es.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pug/404.pug" />
-    <entry file="file://$PROJECT_DIR$/templates/pug/gallery.pug" />
-    <entry file="file://$PROJECT_DIR$/templates/pug/index.pug" />
-    <entry file="file://$PROJECT_DIR$/templates/pug/mascotactiva.pug" />
-    <entry file="file://$PROJECT_DIR$/templates/pug/legal.pug" />
     <entry file="file://$PROJECT_DIR$/templates/404.html" />
     <entry file="file://$PROJECT_DIR$/sitemap.xml" />
     <entry file="file://$PROJECT_DIR$/CNAME">
@@ -1012,24 +1117,10 @@
     <entry file="file://$PROJECT_DIR$/templates/pug/index.pug" />
     <entry file="file://$PROJECT_DIR$/templates/pug/404.pug" />
     <entry file="file://$PROJECT_DIR$/templates/pug/legal.pug" />
-    <entry file="file://$PROJECT_DIR$/templates/includes/scripts.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/dist/scripts-min.js" />
     <entry file="file://$PROJECT_DIR$/less/style.less" />
     <entry file="file://$PROJECT_DIR$/js/sources/acm.js" />
     <entry file="file://$PROJECT_DIR$/templates/gallery.pug" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/acm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1044,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/modal_coming-soon.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/_new.less" />
     <entry file="file://$PROJECT_DIR$/less/_vars.less">
       <provider selected="true" editor-type-id="text-editor">
@@ -1061,18 +1144,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locales/lang_es.json">
+    <entry file="file://$PROJECT_DIR$/less/_mixins.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+        <state relative-caret-position="435">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/templates/404.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        <state relative-caret-position="60">
+          <caret line="4" column="91" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
           <folding />
         </state>
       </provider>
@@ -1080,23 +1163,7 @@
     <entry file="file://$PROJECT_DIR$/templates/autolavado.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/legal.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mascotactiva.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+          <caret line="4" column="91" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
           <folding />
         </state>
       </provider>
@@ -1111,58 +1178,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/_mixins.less">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/404.pug">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        <state relative-caret-position="555">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/modal_contact.pug">
+    <entry file="file://$PROJECT_DIR$/templates/includes/scripts.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/modal_schedule.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="1018" column="7" selection-start-line="1018" selection-start-column="7" selection-end-line="1018" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/includes/metatags.pug">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sources/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dist/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="0" column="1597" selection-start-line="0" selection-start-column="1597" selection-end-line="0" selection-end-column="1597" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dist/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1969">
+          <caret line="3" column="133" selection-start-line="3" selection-start-column="133" selection-end-line="3" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="81" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locales/lang_es.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/legal.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="91" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/navbar.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="819" column="32" selection-start-line="819" selection-start-column="32" selection-end-line="819" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        <state relative-caret-position="474">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mascotactiva.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/modal_coming-soon.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/modal_contact.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/includes/modal_schedule.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dist/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1245">
+          <caret line="1767" column="23" selection-start-line="1767" selection-start-column="23" selection-end-line="1767" selection-end-column="23" />
           <folding />
         </state>
       </provider>
