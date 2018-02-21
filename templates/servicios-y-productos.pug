@@ -60,7 +60,7 @@ html(lang='es')
                               a(href='#food')
                                 i.fa.fa-cutlery(aria-hidden='true')
                                 | Piensos
-                          //-
+                          //- TODO: Do U really want to add more Tabs links?!
                             li.tab.col.s3
                                 a(href='#beauty') Higiene y belleza
                             li.tab.col.s3
@@ -77,130 +77,120 @@ html(lang='es')
                                     i(aria-hidden='true').fa.fa-quote-left
                                     | #{services.doggies.intro}
                                     i(aria-hidden='true').fa.fa-quote-right
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
+                                        img(src='img/doggies/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
                                         span.card-title Yorkshire terrier.
-                                    .card-content
-                                        p Corte de raza de Yorkshire terrier.
-                            .col.s12.m6.l6.xl8
+                            .col.s12.m6.l8.xl9
                                 //- for each loop to load all copies in "locales" json file/s
                                 each skill, i in services.doggies.skills
                                     p.light !{skill}
                         .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                        img(src='img/doggies/bichon-maltes.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
                                         span.card-title Bichón maltés
                                         
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/perro-de-aguas-04.jpg', title='Perro de aguas recién cortado', alt='Perro de aguas recién cortado')
+                                        img(src='img/doggies/perro-de-aguas-04.jpg', title='Perro de aguas recién cortado', alt='Perro de aguas recién cortado')
                                         span.card-title Perro de aguas
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/perro-de-aguas-01.jpg', title='Perro de aguas en mesa de trabajo', alt='Perro de aguas en mesa de trabajo')
+                                        img(src='img/doggies/perro-de-aguas-01.jpg', title='Perro de aguas en mesa de trabajo', alt='Perro de aguas en mesa de trabajo')
                                         span.card-title Perro de aguas
                                                         
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/perro-de-aguas-02.jpg', title='Perro de aguas en mesa de trabajo', alt='Perro de aguas en mesa de trabajo')
+                                        img(src='img/doggies/perro-de-aguas-02.jpg', title='Perro de aguas en mesa de trabajo', alt='Perro de aguas en mesa de trabajo')
                                         span.card-title Perro de aguas                
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/shih-tzu-02.jpg', title='Shih Tzu a punto de recibir un señor corte', alt='Shih Tzu a punto de recibir un señor corte')
+                                        img(src='img/doggies/shih-tzu-02.jpg', title='Shih Tzu a punto de recibir un señor corte', alt='Shih Tzu a punto de recibir un señor corte')
                                         span.card-title Shih Tzu
                                         
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                  .card
                                     .card-image
-                                        img(src='img/gallery/shih-tzu-01.jpg', title='Shih Tzu con corte a tijera', alt='Shih Tzu con corte a tijera')
+                                        img(src='img/doggies/shih-tzu-01.jpg', title='Shih Tzu con corte a tijera', alt='Shih Tzu con corte a tijera')
                                         span.card-title Shih Tzu
                                       
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                  .card
                                     .card-image
-                                        img(src='img/gallery/yorkshire-01.jpg', title='Yorkshire y su corte de pelo de raza', alt='Yorkshire y su corte de pelo de raza')
+                                        img(src='img/doggies/yorkshire-01.jpg', title='Yorkshire y su corte de pelo de raza', alt='Yorkshire y su corte de pelo de raza')
                                         span.card-title Yorkshire Terrier
                                                         
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                  .card
                                     .card-image
-                                        img(src='img/gallery/yorkshire-02.jpg', title='Yorkshire y su corte de pelo de raza', alt='Yorkshire y su corte de pelo de raza')
+                                        img(src='img/doggies/yorkshire-02.jpg', title='Yorkshire y su corte de pelo de raza', alt='Yorkshire y su corte de pelo de raza')
                                         span.card-title Yorkshire Terrier
                                                         
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/mestizo.jpg', title='Proceso de corte a tijera de un mestizo muy peludo', alt='Proceso de corte a tijera de un mestizo muy peludo')
+                                        img(src='img/doggies/mestizo.jpg', title='Proceso de corte a tijera de un mestizo muy peludo', alt='Proceso de corte a tijera de un mestizo muy peludo')
                                         span.card-title Mestizo
                                         
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/showing-time.jpg', title='El baño sienta taaan bien...', alt='El baño sienta taaan bien...')
+                                        img(src='img/doggies/showing-time.jpg', title='El baño sienta taaan bien...', alt='El baño sienta taaan bien...')
                                         span.card-title Basset hound
                                         
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/bichon-maltes-09.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                        img(src='img/doggies/bichon-maltes-09.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
                                         span.card-title Bichón maltés
-                                            
-                            .col.s12.m6.l6.xl4
+
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/bichon-maltes-10.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                        img(src='img/doggies/bichon-maltes-10.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
                                         span.card-title Bichón maltés
-                                        
-                        .row
-                            .col.s12.m6.l6.xl4
+
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/doggies/bichon-habanero-01.jpg', title='Corte de raza de Bichón Habanero', alt='Corte de raza de Bichón Habanero')
                                         span.card-title Bichón habanero
                             
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/bichon-maltes-01.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
+                                        img(src='img/doggies/bichon-maltes-01.jpg', title='Corte de raza de Bichón Maltés', alt='Corte de raza de Bichón Maltés')
                                         span.card-title Bichón maltés
                                         
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/schnauzer-01.jpg', title='Corte de raza de Schnauzer', alt='Corte de raza de Schnauzer')
+                                        img(src='img/doggies/schnauzer-01.jpg', title='Corte de raza de Schnauzer', alt='Corte de raza de Schnauzer')
                                         span.card-title Schnauzer
                                             
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/schnauzer-02.jpg', title='Corte de raza de Schnauzer', alt='Corte de raza de Schnauzer')
+                                        img(src='img/doggies/schnauzer-02.jpg', title='Corte de raza de Schnauzer', alt='Corte de raza de Schnauzer')
                                         span.card-title Schnauzer
                                                         
-                        .row
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/gallery/caniche-a-tijera.jpg', title='Caniche tras un corte a tijera', alt='Caniche tras un corte a tijera')
+                                        img(src='img/doggies/caniche-a-tijera.jpg', title='Caniche tras un corte a tijera', alt='Caniche tras un corte a tijera')
                                         span.card-title Caniche
                                         
-                            .col.s12.m6.l6.xl4
+                            .col.s12.m6.l4.xl3
                                  .card
                                     .card-image
-                                        img(src='img/gallery/caniche.jpg', title='Proceso de corte a tijera de un Caniche', alt='Proceso de corte a tijera de un Caniche')
+                                        img(src='img/doggies/caniche.jpg', title='Proceso de corte a tijera de un Caniche', alt='Proceso de corte a tijera de un Caniche')
                                         span.card-title Caniche
                                         
                   //- FOOD PICS (gallery)
@@ -224,19 +214,19 @@ html(lang='es')
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/affinity-libra-adult-lamb.jpg', title='Libra de cordero para adultos de Affinity', alt='Libra de cordero para adultos de Affinity')
+                                        img(src='img/food/affinity-libra-adult-lamb.png', title='Libra de cordero para adultos de Affinity', alt='Libra de cordero para adultos de Affinity')
                                     .card-content
                                         p #{services.food.libra.lamb}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/affinity-libra-puppy-pollo-arroz.jpg', title='Libra de pollo con arroz para cachorros de Affinity', alt='Libra de pollo con arroz para cachorros de Affinity')
+                                        img(src='img/food/affinity-libra-puppy-pollo-arroz.png', title='Libra de pollo con arroz para cachorros de Affinity', alt='Libra de pollo con arroz para cachorros de Affinity')
                                     .card-content
                                         p #{services.food.libra.rice}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/affinity-libra-puppy-salmon.jpg', title='Libra de salmón para cachorros de Affinity', alt='Libra de salmón para cachorros de Affinity')
+                                        img(src='img/food/affinity-libra-puppy-salmon.png', title='Libra de salmón para cachorros de Affinity', alt='Libra de salmón para cachorros de Affinity')
                                     .card-content
                                         p #{services.food.libra.salmon}
                       

@@ -74,6 +74,6 @@ do_not_publish
 .tmp
 no_ftp
 
-#weird ones!
+# weird ones!
 _gitignore
 _htaccess

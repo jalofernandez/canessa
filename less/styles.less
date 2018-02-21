@@ -1082,6 +1082,35 @@ p {
   }
 }
 
+/* -- (page) GALLERY (doggies + piensos) ------------------------- */
+
+.container-services {
+  .row:nth-child(2) {
+    > .col {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+    }
+  }
+}
+
+// overwrite "Materialize" styles by default
+.card {
+  margin: 0;
+  background-color: transparent;
+  box-shadow: none;
+
+  .card-image {
+    img {
+      .border-radius(2px);
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.1);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.1), 0 2px 10px 0 rgba(0,0,0,.1);
+    }
+    .card-title {
+      padding: 15px;
+    }
+  }
+}
+
 /* -- (page) LEGAL terms & conditions of Use --------------------- */
 
 .collageImg > div {
