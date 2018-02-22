@@ -73,33 +73,21 @@
       "...Que la página no exista en el idioma que solicita."
     ]
   },
-  "services": {
-    "doggies": {
-      "title": "Servicios de <b>peluquería canina</b>",
-      "intro": "La peluquería canina, no es solo una cuestion de estética, sino también de higiene, de salud, y lo más importante, BIENESTAR del animal.",
-      "skills": [
-        "<blockquote>Realizamos desde corte de raza a corte comercial, dependiendo del tipo de manto de cada uno, a vuestra disposición, los siguientes servicios (cortes según la raza o petición del cliente):</blockquote>",
-        "- TIJERA",
-        "- MÁQUINA",
-        "- STRIPPING",
-        "- TRIMMING",
-        "<blockquote>En todos mis trabajos y dentro de mi tarifa de precio entran:</blockquote>",
-        "- LIMPIEZA DE OIDOS",
-        "- VACIADO DE PLANTARES",
-        "- CORTE DE UÑAS",
-        "- VACIADO DE SACOS ANALES"
-      ]
-    },
-    "food": {
-      "title": "Nuestros <b>piensos</b>",
-      "intro": "Trabajamos con las mejores marcas para alimentar a tu mejor amigo",
-      "libra": {
-        "chicken": "Libra de pollo para adultos de Affinity.",
-        "lamb": "Libra de cordero para adultos de Affinity.",
-        "rice": "Libra de pollo con arroz para cachorros de Affinity",
-        "salmon": "Libra de salmón para cachorros de Affinity"
-      }
-    }
+  "doggies": {
+    "title": "Servicios de <b>peluquería canina</b>",
+    "intro": "La peluquería canina, no es solo una cuestion de estética, sino también de higiene, de salud, y lo más importante, BIENESTAR del animal.",
+    "skills": [
+      "<blockquote>Realizamos desde corte de raza a corte comercial, dependiendo del tipo de manto de cada uno, a vuestra disposición, los siguientes servicios (cortes según la raza o petición del cliente):</blockquote>",
+      "- TIJERA",
+      "- MÁQUINA",
+      "- STRIPPING",
+      "- TRIMMING",
+      "<blockquote>En todos mis trabajos y dentro de mi tarifa de precio entran:</blockquote>",
+      "- LIMPIEZA DE OIDOS",
+      "- VACIADO DE PLANTARES",
+      "- CORTE DE UÑAS",
+      "- VACIADO DE SACOS ANALES"
+    ]
   },
   "autolavado": {
     "title": "Servicio de <b>autolavado</b>",
@@ -109,6 +97,28 @@
       "tools": "A vuestra disposición tenéis <b class='stronger'>champú</b>, <b class='stronger'>secadores</b> y expulsadores de aire así como <b class='stronger'>toallas</b>.",
       "advantages": "Bañas tú mismo a tu mascota <b class='stronger'>evitándote las molestias</b> derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores...",
       "happyness": "Para cualquier consulta o duda durante el proceso tendrás a nuestros <b class='stronger'>profesionales a tu servicio</b>."
+    }
+  },
+  "food": {
+    "title": "Nuestros <b>piensos</b>",
+    "intro": "Trabajamos con las mejores marcas para alimentar a tu mejor amigo",
+    "advance": {
+      "bulldog": "Bolsa de pienso French Bulldog Adult de Advance",
+      "yorkshire": "Bolsa de pienso cachorro mini de hasta 10 meses de pollo y arroz de Advance",
+      "puppymini": "Bolsa de pienso cachorro mini de hasta 10 meses de pollo y arroz de Advance",
+      "puppysen": "Bolsa de pienso sensitive para cachorros de hasta 12 meses de pollo y salmón de Advance",
+      "seven": "Bolsa de pienso Medium 7 años de pollo y salmón de Advance",
+      "medadult": "Bolsa de pienso medium Adult de pollo con arroz de Advance",
+      "medlight": "Bolsa de pienso medium light de pollo y arroz de Advance",
+      "miniadult": "Bolsa de pienso mini Adult de pollo y arroz de Advance",
+      "minilight": "Bolsa de pienso mini light de pollo y arroz de Advance",
+      "minisen": "Bolsa de pienso mini sensitive de pollo y salmón de Advance"
+    },
+    "libra": {
+      "chicken": "Libra de pollo para adultos de Affinity.",
+      "lamb": "Libra de cordero para adultos de Affinity.",
+      "rice": "Libra de pollo con arroz para cachorros de Affinity",
+      "salmon": "Libra de salmón para cachorros de Affinity"
     }
   },
   "mascotactiva": {

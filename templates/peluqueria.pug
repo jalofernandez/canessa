@@ -55,11 +55,11 @@ html(lang='es')
                 .row
                     .col.s12.m8.offset-m2.headerSection
                         h3.center-align
-                            span !{services.doggies.title}
+                            span !{doggies.title}
                         h5.center-align
                             em.quotes
                                 i(aria-hidden='true').fa.fa-quote-left
-                                | #{services.doggies.intro}
+                                | #{doggies.intro}
                                 i(aria-hidden='true').fa.fa-quote-right
                     .col.s12.m6.l4.xl3
                         .card
@@ -68,7 +68,7 @@ html(lang='es')
                                 span.card-title Yorkshire terrier.
                     .col.s12.m6.l8.xl9
                         //- for each loop to load all copies in "locales" json file/s
-                        each skill, i in services.doggies.skills
+                        each skill, i in doggies.skills
                             p.light !{skill}
                 .row
                     .col.s12.m6.l4.xl3
