@@ -172,8 +172,8 @@ p {
   z-index: 1100;
 
   img {
-    max-width: 150px;
-    max-height: 46px;
+    max-width: 130px;
+    max-height: 39px;
   }
 }
 
@@ -433,6 +433,7 @@ p {
         }
 
         a {
+          height: 55px;
           font-family: 'champagne', sans-serif;
           .main-text(1.2rem, 400, 0.06em);
           color: @color-white;
@@ -447,12 +448,16 @@ p {
             }
           }
         }
+        /* to add margin between social media icons & phone number */
+        &.socialMobile {
+          padding-bottom: 20px !important;
+        }
       }
 
       // Left Side footer links (copyright, develop sign, legal terms...)
       &.left {
         a {
-          padding: 0px 10px;
+          padding: 0 10px;
           font-size: 1rem;
           text-transform: inherit;
 
