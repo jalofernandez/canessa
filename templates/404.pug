@@ -63,7 +63,7 @@ html(lang='es')
               .col.s12.m6.offset-m3.textLeftSide
                 //- for each loop to load all copies in "locales" json file/s
                 each suggest, i in not_found.suggestions
-                    p.light #{suggest}
+                    p.light !{suggest}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar
