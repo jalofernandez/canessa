@@ -94,7 +94,8 @@ html(lang='es')
             .row
               //- LEFT side
               .col.s12.m4.textLeftSide
-                p.light Como desactivar las cookies en:
+                p.light
+                  | !{legal.cookies.disable}
                   ul.browsers-list
                     li
                       a(href='http://windows.microsoft.com/es-es/windows7/how-to-manage-cookies-in-internet-explorer-9', target='_blank', rel="noopener noreferrer", title='Como desactivar cookies en Internet Explorer')

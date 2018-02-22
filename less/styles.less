@@ -62,6 +62,8 @@ p {
 
 // used in "Legal" pages
 .light {
+  .common-text(@weight: 400);
+
   span {
     font-weight: 600;
     color: @color-main;
@@ -69,16 +71,20 @@ p {
 
   a {
     font-weight: 600;
-    color: @color-header;
+    color: @color-blue;
     &:hover {
       text-decoration: underline;
-      color: lighten(@color-header, 10%);
+      color: lighten(@color-blue, 10%);
     }
   }
   
   b {
     font-weight: 600;
-    color: #222222;
+    color: black;
+  }
+  
+  em {
+    color: @grey-6;
   }
 }
 
@@ -874,7 +880,9 @@ p {
   // main (view) Title
   h3 {
     padding-top: 50px;
-    color: @color-header !important;
+    color: @color-main !important;
+    font-weight: bolder;
+    margin-bottom: 0;
     text-transform: uppercase;
     // subtitles near to main (view) title
     span {
@@ -884,6 +892,10 @@ p {
       &:not(.capital) {
         text-transform: initial;
       }
+    }
+    @media all and (max-width: 600px) {
+      padding-top: 0;
+      font-size: 30px;
     }
   }
 
@@ -931,7 +943,7 @@ p {
   }
 
   p {
-    .common-text();
+    .common-text(@weight: 400);
   }
 
   li {
@@ -1132,17 +1144,37 @@ p {
   margin-bottom: -8px !important;
 }
 
+/* "How to disable cookies in all browsers types" BTNS */
 .browsers-list {
-  a {
-    i {
-      padding-right: 10px;
+  li {
+    max-width: 250px;
+    margin: 8px 0;
+    padding: 5px 10px 5px 60px;
+    background-color: @color-white;
+    border: 1px solid @color-blue;
+    .border-radius(2px);
+    .anim(all, 150ms, ease);
+
+    a {
+      i {
+        padding-right: 10px;
+      }
     }
-    &:hover,
-    &:hover i {
-      color: lighten(@color-header, 10%);
-    }
+    // hover effect
     &:hover {
-      text-decoration: underline;
+      background-color: @color-blue;
+      a,
+      a i {
+        color: @color-white;
+      }
+    }
+    // to fit all BTNs
+    @media (min-width: 601px) and (max-width: 900px){
+      padding-left: 10px;
+    }
+    // to center all BTNs in small devices
+    @media (max-width: 600px) {
+      margin: 8px auto;
     }
   }
 }
@@ -1155,6 +1187,11 @@ p {
 
     & + h3 {
       padding-top: 0;
+    }
+    // to do the current pic smaller
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 150px;
     }
   }
 }

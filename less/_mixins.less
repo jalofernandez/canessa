@@ -22,9 +22,9 @@
   letter-spacing: @space;
 }
 
-.common-text(@color: #666, @hover: #333) {
+.common-text(@color: #666, @hover: #333, @weight: bold) {
   font-family: 'champagne', sans-serif;
-  .anim(18px, bold, 0.04em);
+  .main-text(18px, @weight, 0.04em);
   color: @color;
   .anim(all, 150ms, ease);
   &:hover {
