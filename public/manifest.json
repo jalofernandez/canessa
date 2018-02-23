@@ -1,24 +1,26 @@
 {
-  "short_name": "Canessa",
   "name": "Peluquería canina Canessa",
+  "description": "Peluquería canina Canessa en Valdemoro Madrid",
+  "short_name": "Canessa",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "img/dist/favicon/android-chrome-48x48.png",
+      "src": "img/favicon/android-chrome-48x48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "img/dist/favicon/android-chrome-96x96.png",
+      "src": "img/favicon/android-chrome-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "img/dist/favicon/android-chrome-192x192.png",
+      "src": "img/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "img/dist/favicon/android-chrome-512x512.png",
+      "src": "img/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
