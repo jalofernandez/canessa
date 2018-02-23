@@ -1,12 +1,12 @@
 # Pet saloon website template for pets health and beauty
 
-A website template with different pages layout based on Canessa pet saloon website ([Peluquería canina Canessa](http://peluqueriacanessa.com/)). A nodejs project with less & jade/pug template engine. full page slider, Error 404, Catalog Gallery & Legal Terms pages included.
+A website template with different pages layout based on Canessa pet saloon website ([Peluquería canina Canessa](http://peluqueriacanessa.com/)). A nodejs (yarn too) project with less + jade/pug template engine. Full page slider, Error 404, Catalog Gallery and Legal Terms pages included.
 
-## Credits & dependencies
+## Credits and Dependencies
 
-- Images by Vanessa Vizcaya García [@peluqueriacanessa](https://www.instagram.com/peluqueriacanessa/) & Javier Lorenzo Fernández aka [@jalofernadez](http://www.arted.es/)
+- Images by Vanessa Vizcaya García [@peluqueriacanessa](https://www.instagram.com/peluqueriacanessa/) and Javier Lorenzo Fernández aka [@jalofernadez](http://www.arted.es/)
 - [jquery.com](http://jquery.com/) by The jQuery Foundation
-- [materializecss.com](http://materializecss.com/) by Alvin Wang, Alan Chang, Alex Mark & 
+- [materializecss.com](http://materializecss.com/) by Alvin Wang, Alan Chang, Alex Mark and 
 Kevin Louie
 - [fontawesome.io](http://fontawesome.io/) by Dave Gandy
 
