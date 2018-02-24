@@ -58,13 +58,13 @@ html(lang='es')
                             a.active(href='#advance')
                                 | Advance
                         li.tab.col.s12.m6
-                            a(href='#affinity')
-                                | Affinity
+                            a(href='#libra')
+                                | Libra
                 //- FOOD (pics gallery) :: "ADVANCE"
                 #advance.col.s12
                     .container.container-services
                         .row
-                            .col.s12.m8.offset-m2.headerSection
+                            .col.s12.m10.offset-m1.headerSection
                                 h3.center-align
                                     span !{food.title}
                                 h5.center-align
@@ -78,36 +78,63 @@ html(lang='es')
                                         img(src='img/food/advange-french-bulldog.png', title='Bolsa de pienso French Bulldog Adult de Advance', alt='Bolsa de pienso French Bulldog Adult de Advance')
                                     .card-content
                                         p #{food.advance.bulldog}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.twenty}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/advange-yorkshire-terrier.png', title='Bolsa de pienso Yorkshire Terrier Adult de Advance', alt='Bolsa de pienso Yorkshire Terrier Adult de Advance')
                                     .card-content
                                         p #{food.advance.yorkshire}
+                                        p 
+                                          span.food-weight !{food.weight.onehalf}
+                                          span.badge.price #{food.price.thirteen}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/advange-puppy-mini.png', title='Bolsa de pienso cachorro mini de hasta 10 meses de pollo y arroz de Advance', alt='Bolsa de pienso cachorro mini de hasta 10 meses de pollo y arroz de Advance')
+                                        img(src='img/food/advange-puppy-mini.png', title='Bolsa de pienso cachorro Mini de hasta 10 meses de pollo y arroz de Advance', alt='Bolsa de pienso cachorro Mini de hasta 10 meses de pollo y arroz de Advance')
                                     .card-content
                                         p #{food.advance.puppymini}
+                                        p 
+                                          span.food-weight !{food.weight.almostone}
+                                          span.badge.price #{food.price.four}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.twenty}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/advange-puppy-sensitive-salmon-rice.png', title='Bolsa de pienso sensitive para cachorros de hasta 12 meses de pollo y salmón de Advance', alt='Bolsa de pienso sensitive para cachorros de hasta 12 meses de pollo y salmón de Advance')
                                     .card-content
                                         p #{food.advance.puppysen}
+                                        p 
+                                          span.food-weight !{food.weight.almostone}
+                                          span.badge.price #{food.price.five}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.twenty}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/advange-medium-7years.png', title='Bolsa de pienso Medium 7 años de pollo y salmón de Advance', alt='Bolsa de pienso Medium 7 años de pollo y salmón de Advance')
                                     .card-content
                                         p #{food.advance.seven}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.twenty}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/advange-medium-adult.png', title='Bolsa de pienso medium Adult de pollo con arroz de Advance', alt='Bolsa de pienso medium Adult de pollo con arroz de Advance')
                                     .card-content
                                         p #{food.advance.medadult}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.sixteen}
+                                        p 
+                                          span.food-weight !{food.weight.fifteen}
+                                          span.badge.price #{food.price.fifty}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
@@ -117,26 +144,41 @@ html(lang='es')
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/advange-mini-adult.png', title='Bolsa de pienso mini Adult de pollo y arroz de Advance', alt='Bolsa de pienso mini Adult de pollo y arroz de Advance')
+                                        img(src='img/food/advange-mini-adult.png', title='Bolsa de pienso Mini Adult de pollo y arroz de Advance', alt='Bolsa de pienso Mini Adult de pollo y arroz de Advance')
                                     .card-content
                                         p #{food.advance.miniadult}
+                                        p 
+                                          span.food-weight !{food.weight.almostone}
+                                          span.badge.price #{food.price.four}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.sixteen}
+                                        p 
+                                          span.food-weight !{food.weight.fifteen}
+                                          span.badge.price #{food.price.thirtytwo}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/advange-mini-light.png', title='Bolsa de pienso mini light de pollo y arroz de Advance', alt='Bolsa de pienso mini light de pollo y arroz de Advance')
+                                        img(src='img/food/advange-mini-light.png', title='Bolsa de pienso Mini light de pollo y arroz de Advance', alt='Bolsa de pienso Mini light de pollo y arroz de Advance')
                                     .card-content
                                         p #{food.advance.minilight}
+                                        p 
+                                          span.food-weight !{food.weight.almostone}
+                                          span.badge.price #{food.price.four}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.twenty}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
-                                        img(src='img/food/advange-mini-sensitive-salmon-rice.png', title='Bolsa de pienso mini sensitive de pollo y salmón de Advance', alt='Bolsa de pienso mini sensitive de pollo y salmón de Advance')
+                                        img(src='img/food/advange-mini-sensitive-salmon-rice.png', title='Bolsa de pienso Mini sensitive de pollo y salmón de Advance', alt='Bolsa de pienso Mini sensitive de pollo y salmón de Advance')
                                     .card-content
                                         p #{food.advance.minisen}
                 //- FOOD (pics gallery) :: "AFFINITY"
-                #affinity.col.s12
+                #libra.col.s12
                     .container.container-services
                         .row
-                            .col.s12.m8.offset-m2.headerSection
+                            .col.s12.m10.offset-m1.headerSection
                                 h3.center-align
                                     span !{food.title}
                                 h5.center-align
@@ -150,24 +192,39 @@ html(lang='es')
                                         img(src='img/food/affinity-libra-adult-chicken.png', title='Libra de pollo para adultos de Affinity', alt='Libra de pollo para adultos de Affinity')
                                     .card-content
                                         p #{food.libra.chicken}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.six}
+                                        p 
+                                          span.food-weight !{food.weight.fifteen}
+                                          span.badge.price #{food.price.twentyseven}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/affinity-libra-adult-lamb.png', title='Libra de cordero para adultos de Affinity', alt='Libra de cordero para adultos de Affinity')
                                     .card-content
                                         p #{food.libra.lamb}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.six}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/affinity-libra-puppy-pollo-arroz.png', title='Libra de pollo con arroz para cachorros de Affinity', alt='Libra de pollo con arroz para cachorros de Affinity')
                                     .card-content
                                         p #{food.libra.rice}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.seven}
                             .col.s12.m4.l4.xl3
                                 .card
                                     .card-image
                                         img(src='img/food/affinity-libra-puppy-salmon.png', title='Libra de salmón para cachorros de Affinity', alt='Libra de salmón para cachorros de Affinity')
                                     .card-content
                                         p #{food.libra.salmon}
+                                        p 
+                                          span.food-weight !{food.weight.three}
+                                          span.badge.price #{food.price.seven}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

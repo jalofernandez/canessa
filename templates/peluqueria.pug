@@ -51,9 +51,9 @@ html(lang='es')
         //- ----------------------------------------------------------------
         //- DOGS PICS (gallery)
         #doggies.scrollspy.body-container
-            .container.container-services
+            .container.container-services.container-doggies
                 .row
-                    .col.s12.m8.offset-m2.headerSection
+                    .col.s12.m10.offset-m1.headerSection
                         h3.center-align
                             span !{doggies.title}
                         h5.center-align
@@ -61,6 +61,7 @@ html(lang='es')
                                 i(aria-hidden='true').fa.fa-quote-left
                                 | #{doggies.intro}
                                 i(aria-hidden='true').fa.fa-quote-right
+                .row
                     .col.s12.m6.l4.xl3
                         .card
                             .card-image
@@ -71,6 +72,16 @@ html(lang='es')
                         each skill, i in doggies.skills
                             p.light !{skill}
                 .row
+                    .col.s12.m6.l8.xl9
+                      //- for each loop to load all copies in "locales" json file/s
+                      each treatment, i in doggies.treatments
+                          p.light !{treatment}
+                    .col.s12.m6.l4.xl3
+                        .card
+                            .card-image
+                                img(src='img/doggies/bichon-maltes-06.jpg', title='Bichón Maltés en pleno deslane', alt='Bichón Maltés en pleno deslane')
+                                span.card-title Yorkshire terrier.
+                .row.doggies-gallery
                     .col.s12.m6.l4.xl3
                         .card
                             .card-image

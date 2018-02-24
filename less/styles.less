@@ -77,12 +77,12 @@ p {
       color: lighten(@color-blue, 10%);
     }
   }
-  
+
   b {
     font-weight: 600;
     color: black;
   }
-  
+
   em {
     color: @grey-6;
   }
@@ -943,7 +943,6 @@ p {
   }
 }
 
-
 .textLeftSide {
 
   h5:first-child {
@@ -980,6 +979,23 @@ p {
       margin: 0;
     }
   }
+}
+
+// Price and Info badges:
+.badge {
+  &.price {
+    margin-left: 8px;
+    padding: 3px 5px;
+    .border-radius(3px);
+    background-color: @color-blue;
+    color: @color-white;
+  }
+}
+// for Food details
+.food-weight {
+  display: inline-block;
+  min-width: 115px;
+  color: @color-blue;
 }
 
 /* -- (page) INDEX ------------------------------------------ */
@@ -1145,6 +1161,58 @@ p {
     }
     .card-title {
       padding: 15px;
+    }
+  }
+
+  .card-content {
+    font-size: 18px;
+  }
+}
+
+// remove image container shadow
+.container-services:not(.container-doggies) {
+  .card {
+    .card-image {
+      img {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+#advance, #libra, #doggies {
+  .headerSection {
+    padding-bottom: 50px;
+  }
+}
+
+/* to set a minimun height in each ("Food" gallery) item */
+#advance, #libra {
+  .row > .col:not(.headerSection) {
+    min-height: 475px;
+  }
+}
+
+#doggies {
+  .row {
+    /* "Skills" & "treatments" description */
+    &:not(.doggies-gallery) {
+      > .col {
+        .light {
+          font-size: 22px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    /* to set same padding in each IMG */
+    &.doggies-gallery {
+      > .col {
+        padding: .75em;
+      }
     }
   }
 }

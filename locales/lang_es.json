@@ -77,12 +77,14 @@
     "title": "Servicios de <b>peluquería canina</b>",
     "intro": "La peluquería canina, no es solo una cuestion de estética, sino también de higiene, de salud, y lo más importante, BIENESTAR del animal.",
     "skills": [
-      "<blockquote>Realizamos desde corte de raza a corte comercial, dependiendo del tipo de manto de cada uno, a vuestra disposición, los siguientes servicios (cortes según la raza o petición del cliente):</blockquote>",
+      "Realizamos desde corte de raza a corte comercial dependiendo del tipo de manto de cada uno. A vuestra disposición los siguientes servicios (cortes según la raza o petición del cliente):",
       "- TIJERA",
       "- MÁQUINA",
       "- STRIPPING",
-      "- TRIMMING",
-      "<blockquote>En todos mis trabajos y dentro de mi tarifa de precio entran:</blockquote>",
+      "- TRIMMING"
+    ],
+    "treatments": [
+      "En todos nuestros trabajos y dentro de nuestra tarifa de precio incluimos:",
       "- LIMPIEZA DE OIDOS",
       "- VACIADO DE PLANTARES",
       "- CORTE DE UÑAS",
@@ -103,22 +105,40 @@
     "title": "Nuestros <b>piensos</b>",
     "intro": "Trabajamos con las mejores marcas para alimentar a tu mejor amigo",
     "advance": {
-      "bulldog": "Bolsa de pienso French Bulldog Adult de Advance",
-      "yorkshire": "Bolsa de pienso cachorro mini de hasta 10 meses de pollo y arroz de Advance",
-      "puppymini": "Bolsa de pienso cachorro mini de hasta 10 meses de pollo y arroz de Advance",
-      "puppysen": "Bolsa de pienso sensitive para cachorros de hasta 12 meses de pollo y salmón de Advance",
-      "seven": "Bolsa de pienso Medium 7 años de pollo y salmón de Advance",
-      "medadult": "Bolsa de pienso medium Adult de pollo con arroz de Advance",
-      "medlight": "Bolsa de pienso medium light de pollo y arroz de Advance",
-      "miniadult": "Bolsa de pienso mini Adult de pollo y arroz de Advance",
-      "minilight": "Bolsa de pienso mini light de pollo y arroz de Advance",
-      "minisen": "Bolsa de pienso mini sensitive de pollo y salmón de Advance"
+      "bulldog": "Advance French Bulldog Adult de Affinity.",
+      "yorkshire": "Advance cachorro Mini de hasta 10 meses de pollo y arroz de Affinity.",
+      "puppymini": "Advance cachorro Mini de hasta 10 meses de pollo y arroz de Affinity.",
+      "puppysen": "Advance Sensitive para cachorros de hasta 12 meses de pollo y salmón de Affinity.",
+      "seven": "Advance Medium 7 años de pollo y salmón de Affinity.",
+      "medadult": "Advance Medium Adult de pollo con arroz de Affinity.",
+      "medlight": "Advance Medium Light de pollo y arroz de Affinity.",
+      "miniadult": "Advance Mini Adult de pollo y arroz de Affinity.",
+      "minilight": "Advance Mini Light de pollo y arroz de Affinity.",
+      "minisen": "Advance Mini Sensitive de pollo y salmón de Affinity."
     },
     "libra": {
       "chicken": "Libra de pollo para adultos de Affinity.",
       "lamb": "Libra de cordero para adultos de Affinity.",
       "rice": "Libra de pollo con arroz para cachorros de Affinity",
       "salmon": "Libra de salmón para cachorros de Affinity"
+    },
+    "weight": {
+      "almostone": "Bolsa de <b>800 g</b>",
+      "onehalf": "Bolsa de <b>1,5 kg</b>",
+      "three": "Bolsa de <b>3 kg</b>",
+      "fifteen": "Saco de <b>15 kg</b>"
+    },
+    "price": {
+      "four": "4,99 €",
+      "five": "5,99 €",
+      "six": " 6,95 €",
+      "seven": " 7,95 €",
+      "thirteen": " 12,99 €",
+      "sixteen": "16,50 €",
+      "twenty": " 19,99 €",
+      "twentyseven": "26,99 €",
+      "thirtytwo": "31,95 €",
+      "fifty": "49,99 €"
     }
   },
   "mascotactiva": {
