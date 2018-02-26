@@ -24,6 +24,7 @@ body {
     line-height: 30px;
   }
 
+  /* -- (page) BG variations -- */
   &.bg-black {
     background-color: @color-black;
   }
@@ -38,6 +39,35 @@ body {
     > p, h3, h5, b, span:not(.js-current-year) {
       color: @color-white !important;
     }
+  }
+
+  /* -- to enable Animations -- */
+  // each "row" group
+  .row {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    // each "col" group
+    .col {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 }
 
