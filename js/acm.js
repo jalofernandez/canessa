@@ -96,9 +96,10 @@ var options = [
         Materialize.showStaggeredList($(el));
         $("#call-3").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
     } },
-    {selector: '#image-test', offset: 500, callback: function(el) {
-        Materialize.fadeInImage($(el));
-        $("#call-4").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
+    {selector: '#lopd', offset: 50, callback: function(el) {
+        console.log("Activated");
+        Materialize.toast("¡Bienvenidos a la peluquería canina Canessa!", 1500);
+        $("#toast-container").velocity({ backgroundColor: "#333", color: "#ef5350" }, {duration: 500});
     } }
 ];
 Materialize.scrollFire(options);
