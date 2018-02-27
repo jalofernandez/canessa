@@ -40,35 +40,6 @@ body {
       color: @color-white !important;
     }
   }
-
-  /* -- to enable Animations -- */
-  // each "row" group
-  .row {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: 800ms;
-    animation-duration: 800ms;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-
-    // each "col" group
-    .col {
-      -webkit-animation-name: fadeIn;
-      animation-name: fadeIn;
-      -webkit-animation-duration: 1.2s;
-      animation-duration: 1.2s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-    }
-  }
-  @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
 }
 
 @media only screen and (min-width: 601px) {
@@ -129,24 +100,63 @@ p {
   color: black;
 }
 
-/* ----- (common) CONTAINER, WRAPPER & SECTION ---------------------------- */
+/* ----- (common) to enable ANIMATIONS ---------------------------- */
 
-.container {
-  @media only screen and (max-width: 1400px) {
-    width: 70% !important;
-  }
-  @media only screen and (max-width: 1399px) {
-    width: 85% !important;
-  }
-  @media only screen and (max-width: 1199px) {
-    width: 90% !important;
-  }
+// each "row" group
+.row {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 
-  // "Mascotactiva" Page
-  &.container-mascotactiva {
-    margin-bottom: 50px;
+  // each "col" group
+  .col {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 }
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ----- (common) CONTAINER, WRAPPER & SECTION ---------------------------- */
+
+.container,
+.headerSection {
+  @media (min-width: 1400px) {
+    width: 70% !important;
+    margin-right: 15% !important;
+    margin-left:  15% !important;
+  }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    width: 85% !important;
+    margin-right: 7.5% !important;
+    margin-left:  7.5% !important;
+  }
+  @media (max-width: 1199px) {
+    width: 90% !important;
+    margin-right: 5% !important;
+    margin-left:  5% !important;
+  }
+}
+
+/*
+// to add "card" design (Material element)
+.container:not(.container-no-card) {
+  .card-section();
+}
+*/
 
 .section {
   padding-top: .7rem;
