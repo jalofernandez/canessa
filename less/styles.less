@@ -983,7 +983,7 @@ p {
   }
 }
 
-.textLeftSide {
+.paragraphs {
 
   h5:first-child {
     margin-top: 0;
@@ -997,6 +997,12 @@ p {
 
   p {
     .common-text(@weight: 400);
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   li {
@@ -1173,6 +1179,13 @@ p {
   }
   & + .container {
     margin-bottom: 50px;
+
+    .row .col {
+      @media (max-width: 920px) {
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+    }
   }
 }
 
@@ -1257,6 +1270,12 @@ p {
       }
     }
   }
+}
+
+/* -- (page) MASCOTACTIVA --------------------- */
+
+.container-mascotactiva {
+  margin-bottom: 50px;
 }
 
 /* -- (page) LEGAL terms & conditions of Use --------------------- */

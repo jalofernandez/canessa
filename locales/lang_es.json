@@ -65,12 +65,12 @@
   },
   "not_found": {
     "title": "<b class='strong'>Página no encontrada</b>",
+    "why": "Parece que <b class='strong'>la página que buscas no existe</b>. Lo sentimos. Podría ser por alguna de estas causas como...",
     "suggestions": [
-      "Parece que <b class='strong'>la página que buscas no existe</b>. Lo sentimos. Podría ser por alguna de estas causas como...",
-      "...Que haya tecleado incorrectamente la dirección URL.",
-      "...Que haya perdido su conexión a internet.",
-      "...Que la página esté obsoleta y haya sido eliminada.",
-      "...Que la página no exista en el idioma que solicita."
+      "<p class='light'>...Que haya tecleado incorrectamente la dirección URL.</p>",
+      "<p class='light'>...Que haya perdido su conexión a internet.</p>",
+      "<p class='light'>...Que la página esté obsoleta y haya sido eliminada.</p>",
+      "<p class='light'>...Que la página no exista en el idioma que solicita.</p>"
     ]
   },
   "doggies": {

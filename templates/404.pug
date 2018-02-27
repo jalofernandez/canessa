@@ -57,10 +57,12 @@ html(lang='es')
         .container
           .section
             .row
-              .col.s12.m6.offset-m3.textLeftSide
-                //- for each loop to load all copies in "locales" json file/s
-                each suggest, i in not_found.suggestions
-                    p.light !{suggest}
+              .col.s12.m10.offset-m1.paragraphs
+                p.light !{not_found.why}
+            .row
+              //- for each loop to load all copies in "locales" json file/s
+              each suggest, i in not_found.suggestions
+                .col.s12.m3 !{suggest}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

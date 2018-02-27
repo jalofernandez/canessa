@@ -57,7 +57,7 @@ html(lang='es')
         .container
           .section
             .row
-              .col.s12.textLeftSide
+              .col.s12.paragraphs
                   //- for each loop to load all copies in "locales" json file/s
                   each intro, i in legal.intro.copies
                     p.light !{intro}
@@ -73,7 +73,7 @@ html(lang='es')
         .container
           .section
             .row
-              .col.s12.textLeftSide
+              .col.s12.paragraphs
                   //- for each loop to load all copies in "locales" json file/s
                   each lopd, i in legal.lopd.copies
                     p.light !{lopd}
@@ -90,7 +90,7 @@ html(lang='es')
           .section
             .row
               //- LEFT side
-              .col.s12.m4.textLeftSide
+              .col.s12.m4.paragraphs
                 p.light
                   | !{legal.cookies.disable}
                   ul.browsers-list
@@ -131,7 +131,7 @@ html(lang='es')
         .container
           .section
             .row
-              .col.s12.textLeftSide
+              .col.s12.paragraphs
                   //- for each loop to load all copies in "locales" json file/s
                   each responsibility, i in legal.responsibility.copies
                     p.light !{responsibility}
@@ -147,7 +147,7 @@ html(lang='es')
         .container.botMarg100
           .section
             .row
-              .col.s12.textLeftSide
+              .col.s12.paragraphs
                   //- for each loop to load all copies in "locales" json file/s
                   each copyright, i in legal.copyright.copies
                     p.light !{copyright}
