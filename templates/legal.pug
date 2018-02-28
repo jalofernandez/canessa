@@ -46,7 +46,7 @@ html(lang='es')
                     li
                       a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
         //- ----------------------------------------------------------------
-        //- 01. LEGAL TERMS :: TÉRMINOS LEGALES
+        //- 01. LEGAL TERMS :: Términos legales
         //- ----------------------------------------------------------------
         #intro.row.scrollspy
           .col.s12.headerSection
@@ -63,7 +63,7 @@ html(lang='es')
                     p.light !{intro}
 
         //- ----------------------------------------------------------------
-        //- 02. LOPD :: LEY ORGÁNICA DE PROTECCIÓN DE DATOS
+        //- 02. LOPD :: Ley Orgánica de Protección de Datos
         //- ----------------------------------------------------------------
         #lopd.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -79,7 +79,7 @@ html(lang='es')
                     p.light !{lopd}
 
         //- ----------------------------------------------------------------
-        //- 03. COOKIES ADVISE :: USO DE COOKIES
+        //- 03. COOKIES ADVISE :: Uso de Cookies
         //- ----------------------------------------------------------------
         #cookies.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -121,7 +121,22 @@ html(lang='es')
                     p.light !{cookie}
 
         //- ----------------------------------------------------------------
-        //- 04. RESPONSABILITY :: RESPONSABILIDAD
+        //- 04. GOOGLE ANALYTICS :: Analítica de Google
+        //- ----------------------------------------------------------------
+        #analytics.row.scrollspy
+            .col.s12.headerSection.headerSectionLegal
+                h3.center-align
+                    span #{legal.analytics.title}
+
+        .container
+            .section
+                .row
+                    .col.s12.paragraphs
+                        //- for each loop to load all copies in "locales" json file/s
+                        each analytic, i in legal.analytics.copies
+                            p.light !{analytic}
+        //- ----------------------------------------------------------------
+        //- 05. RESPONSABILITY :: Responsabilidad
         //- ----------------------------------------------------------------
         #responsibility.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -137,7 +152,7 @@ html(lang='es')
                     p.light !{responsibility}
 
         //- ----------------------------------------------------------------
-        //- 05. COPYRIGHT :: PROPIEDAD INTELECTUAL
+        //- 06. COPYRIGHT :: Propiedad intelectual
         //- ----------------------------------------------------------------
         #copyright.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -153,7 +168,7 @@ html(lang='es')
                     p.light !{copyright}
 
         //- ----------------------------------------------------------------
-        //- 06. PARALLAX Bottom "Section"
+        //- 07. PARALLAX Bottom "Section"
         //- ----------------------------------------------------------------
         //-
             .parallax-container.row
