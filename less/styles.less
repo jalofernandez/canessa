@@ -932,12 +932,13 @@ p {
   }
 
   // main (view) Title
-  h3 {
+  h1, h3 {
     padding-top: 50px;
+    margin-bottom: 0;
+    font-size: 2.92rem;
     color: @color-main !important;
     font-weight: bolder;
-    margin-bottom: 0;
-    text-transform: uppercase;
+    text-transform: initial;
     // subtitles near to main (view) title
     span {
       &.capital {
@@ -983,6 +984,7 @@ p {
   }
 }
 
+// to apply big Text (copies) Blocks
 .paragraphs {
 
   h5:first-child {
@@ -1044,9 +1046,33 @@ p {
   color: @color-blue;
 }
 
-/* -- (page) INDEX ------------------------------------------ */
+/* -- (page) INDEX / HOME ------------------------------------------ */
 
-// Slider
+#intro {
+  .headerSection {
+    text-transform: uppercase;
+  }
+
+  .artwork {
+    width: 200px;
+    height: 200px;
+    .centered();
+
+    & + h1,
+    & + h3 {
+      padding-top: 0;
+    }
+    // to do the current pic smaller
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+// TODO: remove this code for SEO reasons asap!
+
+/* Slider (caroussel) */
 .slider {
   .slides {
     li {
@@ -1149,7 +1175,7 @@ p {
   }
 }
 
-/* -- (page) AUTOLAVADO ------------------------------------------ */
+/* -- (common) container with ARTWORKS ---------------------------- */
 
 .container-with-pic {
   margin-bottom: 50px;
@@ -1166,8 +1192,18 @@ p {
     }
   }
 
-  h3 {
+  h1, h3 {
     padding-top: 0 !important;
+  }
+}
+
+/* -- (page) AUTOLAVADO ------------------------------------------ */
+
+#autolavado {
+  .headerSection {
+    h1 {
+      color: @color-white !important; // overwrite
+    }
   }
 }
 
@@ -1200,7 +1236,7 @@ p {
   }
 }
 
-// overwrite "Materialize" styles by default
+/* overwrite "Materialize" styles by default
 .card {
   margin: 0;
   background-color: transparent;
@@ -1233,6 +1269,9 @@ p {
     }
   }
 }
+*/
+
+/* -- (pages) DOGS / FOOD (galleries) --------------------- */
 
 #advance, #libra, #doggies {
   .headerSection {
@@ -1321,27 +1360,9 @@ p {
   }
 }
 
-#intro {
-  .artwork {
-    width: 200px;
-    height: 200px;
-    .centered();
-
-    & + h3 {
-      padding-top: 0;
-    }
-    // to do the current pic smaller
-    @media (max-width: 600px) {
-      width: 150px;
-      height: 150px;
-    }
-  }
-}
-
-
 // TODO: useless CODE by the moment!!
 
-/* --- PARALLAX ------------------------------------------ */
+/* --- PARALLAX ------------------------------------------
 
 .parallax-container {
   min-height: 380px;
@@ -1404,3 +1425,4 @@ p {
     }
   }
 }
+*/

@@ -64,7 +64,7 @@
     }
   },
   "not_found": {
-    "title": "<b class='strong'>Página no encontrada</b>",
+    "title": "Page not found",
     "why": "Parece que <b class='strong'>la página que buscas no existe</b>. Lo sentimos. Podría ser por alguna de estas causas como...",
     "suggestions": [
       "<p class='light'>...Que haya tecleado incorrectamente la dirección URL.</p>",
@@ -74,7 +74,7 @@
     ]
   },
   "doggies": {
-    "title": "Servicios de <b>peluquería canina</b>",
+    "title": "Servicios de peluquería canina",
     "intro": "La peluquería canina, no es solo una cuestion de estética, sino también de higiene, de salud, y lo más importante, BIENESTAR del animal.",
     "skills": [
       "Realizamos desde corte de raza a corte comercial dependiendo del tipo de manto de cada uno. A vuestra disposición los siguientes servicios (cortes según la raza o petición del cliente):",
@@ -92,7 +92,7 @@
     ]
   },
   "autolavado": {
-    "title": "Servicio de <b>autolavado</b>",
+    "title": "Servicio de autolavado",
     "intro": "Nosotros ponemos las <b class='stronger'>instalaciones</b> y tú tu <b class='stronger'>mascota</b>.",
     "tips": {
       "bath": "No importa el tamaño de tu mascota porque tenemos una <b class='stronger'>bañera hidráulica</b> de altura regulable para <b class='stronger'>facilitar tu trabajo</b> y así <b class='stronger'>evitar lesiones o dolores musculares</b>.",
@@ -102,7 +102,7 @@
     }
   },
   "food": {
-    "title": "Nuestros <b>piensos</b>",
+    "title": "Pienso y alimentos caninos",
     "intro": "Trabajamos con las mejores marcas para alimentar a tu mejor amigo",
     "advance": {
       "bulldog": "Advance French Bulldog Adult de Affinity.",
@@ -142,7 +142,7 @@
     }
   },
   "mascotactiva": {
-    "title": "Paseamos y entrenamos a su <b>mascota</b>",
+    "title": "Paseamos y entrenamos a su mascota",
     "intro": "Servicio exclusivo de: guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional por <b class='stronger'>Rafa Cros</b>.",
     "phone": "636 515 206",
     "email": "mascotactiva@hotmail.com",
