@@ -6,11 +6,56 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "redirects": [ {
+      "source" : "https://peluqueriacanessa.com/index.html",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/index.html#!",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/#!",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://www.peluqueriacanessa.com/index.html",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://www.peluqueriacanessa.com/",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/servicios-y-productos.html",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/servicios-y-productos.html#!",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/autolavado.html#!",
+      "destination" : "https://peluqueriacanessa.com/autolavado.html",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/peluqueria.html#!",
+      "destination" : "https://peluqueriacanessa.com/peluqueria.html",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/mascotactiva.html#!",
+      "destination" : "https://peluqueriacanessa.com/mascotactiva.html",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/piensos.html#!",
+      "destination" : "https://peluqueriacanessa.com/piensos.html",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/legal.html#!",
+      "destination" : "https://peluqueriacanessa.com/legal.html",
+      "type" : 302
+    } ],
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }
