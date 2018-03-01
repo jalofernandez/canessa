@@ -39,7 +39,15 @@
       "destination" : "https://peluqueriacanessa.com/autolavado.html",
       "type" : 302
     },{
+      "source" : "https://peluqueriacanessa.com/autolavado#!",
+      "destination" : "https://peluqueriacanessa.com/autolavado.html",
+      "type" : 302
+    },{
       "source" : "https://peluqueriacanessa.com/peluqueria.html#!",
+      "destination" : "https://peluqueriacanessa.com/peluqueria.html",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/peluqueria#!",
       "destination" : "https://peluqueriacanessa.com/peluqueria.html",
       "type" : 302
     },{
@@ -47,11 +55,23 @@
       "destination" : "https://peluqueriacanessa.com/mascotactiva.html",
       "type" : 302
     },{
+      "source" : "https://peluqueriacanessa.com/mascotactiva#!",
+      "destination" : "https://peluqueriacanessa.com/mascotactiva.html",
+      "type" : 302
+    },{
       "source" : "https://peluqueriacanessa.com/piensos.html#!",
       "destination" : "https://peluqueriacanessa.com/piensos.html",
       "type" : 302
     },{
+      "source" : "https://peluqueriacanessa.com/piensos#!",
+      "destination" : "https://peluqueriacanessa.com/piensos.html",
+      "type" : 302
+    },{
       "source" : "https://peluqueriacanessa.com/legal.html#!",
+      "destination" : "https://peluqueriacanessa.com/legal.html",
+      "type" : 302
+    },{
+      "source" : "https://peluqueriacanessa.com/legal#!",
       "destination" : "https://peluqueriacanessa.com/legal.html",
       "type" : 302
     } ],
