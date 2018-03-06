@@ -1,0 +1,97 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        title Contacto peluquería canina Canessa Valdemoro
+        meta(name='description', content='Contacta con la Peluquería canina Canessa en la calle Vicente Aleixandre, 5 - 28341 - Valdemoro, Madrid. Tlf: 91 248 04 30')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, peluquería canina, peluquerías caninas, piensos, antiparasitarios, autolavado, mascotactiva')
+        link(rel='canonical', href='https://peluqueriacanessa.com/contacto/' hreflang='es')
+        link(rel='alternate', href='https://peluqueriacanessa.com/contacto#!' hreflang='es')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#autolavado') Past Exhibitions
+                                li
+                                  a.wineh(href='#autolavado', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a.address(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                li
+                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a.address(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
+                                li
+                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        //- ----------------------------------------------------------------
+        //- 01. CONTACT :: contacto (Google maps + email + teléfono...)
+        //- ----------------------------------------------------------------
+        //- Google Maps API (.js)
+        //- TODO: check why do not work the following code
+            #map
+            script.
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: -34.397, lng: 150.644},
+                        zoom: 8
+                    });
+                }
+            script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDMlW8moTM7oB0zzRGfzWGOLSwwEv64t3o&callback=initMa' async defer)
+
+        #contact.row.scrollspy
+            //- Google Maps API (iframe)
+            iframe(width='100%', height='350', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJiVU04useQg0RA4H40Qdl7jI&key=AIzaSyDMlW8moTM7oB0zzRGfzWGOLSwwEv64t3o', allowfullscreen='')
+            //- (common) main Title
+            .col.s12.headerSection
+                h1.center-align
+                    | #{contact.title}
+                h2.center-align.quotes
+                    i(aria-hidden='true').fa.fa-quote-left
+                    | !{contact.checkit}
+                    i(aria-hidden='true').fa.fa-quote-right
+        .container
+            .section
+                .row
+                    .col.s12.m12
+                        a.btn.btn-anim.btn-mascotactiva(href='tel:912480430', title='Teléfono de contacto de la peluquería canina Canessa')
+                            i.fa.fa-phone
+                            | #{common.phone}
+                        a.btn.btn-anim.btn-mascotactiva(href='mailto:van.vizcaya@gmail.com', title='Email de contacto de la peluquería canina Canessa')
+                            i.fa.fa-envelope
+                            | #{common.email}
+
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODAL dialog in MOBILE devices :: "SCHEDULE"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- All the SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts

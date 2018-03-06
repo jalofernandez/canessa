@@ -59,6 +59,7 @@
             a.navbar-link(href='#', title='Copyright de la peluquería canina Canessa') &copy; #{footer.copy},
               span.js-current-year
 //- CONTACT SubNAV in (common) Footer
+//- (hidden in Tablets, mobiles and small devices)
 #nav-contact
     ul
         li
@@ -69,6 +70,7 @@
             a(href='https://goo.gl/maps/Aegzf2qZF4x', target='_blank', rel="noopener noreferrer", title='Dirección de peluquería canina Canessa en Google Maps')
                 i.fa.fa-map-marker
                 | !{common.address}
+//- (hidden in Laptops, desktops and big devices)
 #nav-info
-    a.modal-trigger(href='#modal_contact', title='Contacto de la peluquería canina Canessa')
+    a(href='contacto.html', title='Contacto de la peluquería canina Canessa Valdemoro')
         | #{common.titles.contact}

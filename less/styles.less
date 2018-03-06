@@ -1348,10 +1348,40 @@ p {
   }
 }
 
-/* -- (page) MASCOTACTIVA --------------------- */
+/* -- (page) MASCOTACTIVA --------------------------------------- */
 
 .container-mascotactiva {
   margin-bottom: 50px;
+}
+
+/* -- (page) CONTACT --------------------------------------------- */
+/*
+// Always set the map height explicitly to define
+// the size of the div element that contains the map
+#map {
+  height: 100%;
+}
+*/
+
+#contact {
+  margin-bottom: 0;
+
+  iframe {
+    position: relative;
+    top: 65px;
+  }
+  .headerSection {
+    margin-top: 0;
+  }
+
+  @media (max-width: 600px) {
+    iframe {
+      top: 58px;
+    }
+    .headerSection h1 {
+      padding-top: 40px;
+    }
+  }
 }
 
 /* -- (page) LEGAL terms & conditions of Use --------------------- */

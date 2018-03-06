@@ -149,6 +149,10 @@
     "email": "mascotactiva@hotmail.com",
     "youtube": "Canal de Youtube"
   },
+  "contact": {
+    "title": "Contacta con nosotros",
+    "checkit": "Escríbenos, llámanos o visítanos para pedir cita o preguntar por nuestros servicios de peluquería canina, autolavado, spa, alimentación canina y piensos..."
+  },
   "sitemap": {
     "title": "Mapa del sitio web",
     "whatis": "Listado de todos los enlaces internos disponibles en este sitio web",
