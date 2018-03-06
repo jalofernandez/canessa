@@ -20,7 +20,7 @@ body {
   .main-text(16px, 600, 0.04em);
   font-family: 'champagne', sans-serif;
 
-  h5 {
+  h2 {
     line-height: 30px;
   }
 
@@ -36,7 +36,7 @@ body {
   &.bg-fucsia {
     background-color: @color-main;
 
-    > p, h3, h5, b, span:not(.js-current-year) {
+    > p, h1, h2, h3, h4, h5, b, span:not(.js-current-year) {
       color: @color-white !important;
     }
   }
@@ -955,11 +955,12 @@ p {
     }
   }
 
-  h5 {
+  // subtitles (just below main ones!)
+  h2 {
     color: @color-text !important;
+    font-size: 1.64rem;
 
     span {
-      font-size: 30px;
       color: @grey-3;
     }
   }
@@ -1060,7 +1061,7 @@ p {
     .centered();
 
     & + h1,
-    & + h3 {
+    & + h2 {
       padding-top: 0;
     }
     // to do the current pic smaller
