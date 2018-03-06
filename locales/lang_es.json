@@ -43,9 +43,9 @@
     },
     "slides": {
       "slide_01": {
-        "title": "Peluquería canina",
+        "title": "Peluquería canina Valdemoro",
         "subtitle": "Tu centro de belleza animal en Valdemoro",
-        "btn": "Nuestros servicios"
+        "btn": "Ver peluquería canina"
       },
       "slide_02": {
         "title": "Servicio de Autolavado",
@@ -56,11 +56,6 @@
         "title": "Piensos y Complementos",
         "subtitle": "Tenemos piensos, juguetes, correas, arneses, camas...",
         "btn": "Piensos y alimentación"
-      },
-      "slide_04": {
-        "title": "<span>Peluquería canina</span> <span>Piensos</span> <span>Complementos</span> <span>SPA y Autolavado</span>",
-        "subtitle": "Valdemoro",
-        "btn": "Nuestros servicios"
       }
     }
   },
