@@ -7,7 +7,8 @@ var urlsToCache = [
     '/js/materialize.min.js',
     '/js/scripts-min.js',
     '/img/logos/canessa-logo.svg',
-    '/img/slider/afgano.jpg'
+    '/img/slider/afgano.jpg',
+    '/contacto.html'
 ];
 
 self.addEventListener('install', function(event) {
