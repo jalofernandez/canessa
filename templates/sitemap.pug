@@ -1,0 +1,78 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        title Mapa del sitio web | Canessa
+        meta(name='description', content='Página de error del website Peluquería canina Canessa. Pruebe otra URL o vaya a la página de inicio para encontrar la descripción de nuestros servicios y contacto.')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria animal, peluqueria perros, peluqueria gatos, peluquería canina, peluquerías caninas, piensos, antiparasitarios, autolavado, mascotactiva')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body.bg-paper
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#autolavado') Past Exhibitions
+                                li
+                                  a.wineh(href='#autolavado', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería caninca Canessa', alt='Logotipo de la peluquería caninca Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a.address(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                li
+                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a.address(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
+                                li
+                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        //- ----------------------------------------------------------------
+        //- 01. SITEMAP :: Mapa del sitio web
+        //- ----------------------------------------------------------------
+        #sitemap.row.scrollspy
+            .col.s12.headerSection.container-with-pic
+                img.artwork.bigger(src='img/sitemap/sitemap-dog.svg', title='Sitemap - mapa del sitio web', alt='Sitemap - mapa del sitio web')
+                h1.center-align
+                    | #{sitemap.title}
+                h5.center-align
+                    em.quotes
+                        i(aria-hidden='true').fa.fa-quote-left
+                        | !{sitemap.whatis}
+                        i(aria-hidden='true').fa.fa-quote-right
+        .container
+            .section
+                .row
+                    //- for each loop to load all copies in "locales" json file/s
+                    each link, i in sitemap.links
+                        .col.s12.m6.offset-m3
+                            p.light !{link}
+
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODAL dialog in MOBILE devices :: "SCHEDULE"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- All the SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts
