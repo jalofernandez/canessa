@@ -53,12 +53,14 @@ html(lang='es')
             img.artwork.bigger(src='img/404/404-dog.svg', title='Error 404: página no encontrada', alt='Error 404: página no encontrada')
             h1.center-align
               | #{not_found.title}
+            h5.center-align
+                em.quotes
+                    i(aria-hidden='true').fa.fa-quote-left
+                    | !{not_found.why}
+                    i(aria-hidden='true').fa.fa-quote-right
 
         .container
           .section
-            .row
-              .col.s12.m10.offset-m1.paragraphs
-                p.light !{not_found.why}
             .row
               //- for each loop to load all copies in "locales" json file/s
               each suggest, i in not_found.suggestions
