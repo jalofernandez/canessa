@@ -1,6 +1,6 @@
 {
   "name": "canessa",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Vanessa Vizcaya pets saloon main website for pets health and beauty",
   "main": "gulpfile.js",
   "dependencies": {
