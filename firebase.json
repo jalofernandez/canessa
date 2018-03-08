@@ -6,6 +6,15 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [ {
+      "source" : "/index.html",
+      "destination" : "https://peluqueriacanessa.com/",
+      "type" : 302
+    }, {
+      "source" : "/contacto.html",
+      "destination" : "https://peluqueriacanessa.com/contacto",
+      "type" : 302
+    } ],
     "cleanUrls": true,
     "trailingSlash": false
   }
