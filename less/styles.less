@@ -26,7 +26,7 @@ body {
 
   /* -- (page) BG variations -- */
   &.bg-black {
-    background-color: @color-black;
+    background-color: @color-dark;
   }
 
   &.bg-paper {
@@ -295,7 +295,7 @@ p {
 
   nav {
     width: 100%;
-    background-color: @color-black;
+    background-color: @color-dark;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
     .anim(height, 0.3s, ease);
@@ -351,7 +351,7 @@ p {
     nav {
       height: 40px;
       line-height: 40px;
-      background-color: rgba(17,17,17,.85);
+      background-color: @dark-opacity;
 
       // corp. logo shrink too!
       .brand-logo {
@@ -435,7 +435,7 @@ p {
 
   nav {
     color: @color-white;
-    background-color: rgba(0,0,0,.85);
+    background-color: @dark-opacity;
     border-top: 2px solid black;
 
     // to expand/collapse main navbar in mobile devices
@@ -463,7 +463,7 @@ p {
         .anim(all, 150ms, ease-in);
 
         &:hover {
-          background-color: @color-black;
+          background-color: @color-dark;
         }
 
         &:first-child {
@@ -571,7 +571,7 @@ p {
       }
 
       &:hover {
-        background-color: @color-black;
+        background-color: @color-dark;
 
         a {
           color: @color-main;
@@ -619,7 +619,7 @@ p {
 /* -- (aside) main NAVBAR on MOBILE devices ------------------------------------------ */
 
 .side-nav {
-  background-color: @color-black;
+  background-color: @color-dark;
 
   &#mobile-demo {
     li {
@@ -667,8 +667,8 @@ p {
 /* -- MODALS (dialogs) ------------------------------------------ */
 
 .modal {
-  background-color: rgba(0,0,0,0.7) !important;
-  border-top: 3px solid black;
+  background-color: @dark-opacity !important;
+  border-top: 3px solid @color-black;
 
   * > i {
     padding-right: 5px;
@@ -723,7 +723,7 @@ p {
   }
 
   .modal-footer {
-    background-color: @color-black;
+    background-color: @color-dark;
 
     a {
       text-align: center;
@@ -855,7 +855,7 @@ p {
     a {
       text-transform: capitalize;
       .main-text(20px, 600, .05em);
-      color: @color-black;
+      color: @color-dark;
 
       &:hover, &:focus, &:active {
         color: @color-main;
@@ -1129,7 +1129,7 @@ p {
         a {
           font-family: Tahoma, Geneva, sans-serif;
           .main-text(18px, 400, .03em);
-          color: rgba(0,0,0,0.87);
+          color: @dark-opacity;
           text-transform: inherit;
         }
       }
