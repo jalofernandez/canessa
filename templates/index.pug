@@ -5,37 +5,52 @@ html(lang='es')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
         title Peluquería canina Canessa Valdemoro
         meta(name='description', content='Canessa ofrece servicios de peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición. También se realizan arreglos y lavados. Tenemos tarifa especial para autolavados además de un SPA canino. 91 248 04 30')
-        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, lavado perros, lavadero de perros, spa canino, Parla, piensos, complementos, correas, lazos, collares, antiparasitarios')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluquería para perros, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, lavado perros, lavadero de perros, spa canino, Parla, piensos, complementos, correas, lazos, collares, antiparasitarios')
         link(rel='canonical', href='https://peluqueriacanessa.com/' hreflang='es')
         link(rel='alternate', href='https://peluqueriacanessa.com/#!' hreflang='es')
+        link(rel='alternate', href='https://peluqueriacanessa.com#!' hreflang='es')
         //- All (common) METATAGS in head tag
         include includes/metatags
-
+        
     body
+        img.main-logotype(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa en Valdemoro', alt='Logotipo de la peluquería canina Canessa en Valdemoro')
+        //- VIDEO :: FullBackgroundVideo
+        video#bgvid(poster='img/slider/afgano.jpg', title='Servicios ofrecidos en la peluquería canina Canessa de Valdemoro', playsinline='', autoplay='', muted='', loop='')
+          //- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button
+          //- source(src='http://thenewcode.com/assets/videos/polina.webm', type='video/webm')
+          source(src='video/canessa-intro-web.mp4', type='video/mp4')
+        //- main Header + "call to action" BTNs
+        .caption
+          h1 #{index.slides.title}
+          //- h5.intro #{index.slides.subtitle}
+          a.btn.btn-anim(href='peluqueria.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.btn_pelu}
+          a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.btn_auto}
+          a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.btn_pienso}
+          
         //- ----------------------------------------------------------------
         //- 01. SLIDER Full Page
         //- ----------------------------------------------------------------
-        img.main-logotype(src='img/logos/canessa-logo.svg', title='#{index.logo.alt}', alt='#{index.logo.alt}')
-        .slider.fullscreen
-          ul.slides
-            li.first
-              img(src='img/slider/afgano.jpg', title='Afgano: Canessa peluquería canina', alt='Afgano: Canessa peluquería canina')
-              .caption.left-align
-                h1 #{index.slides.slide_01.title}
-                h5.intro #{index.slides.slide_01.subtitles}
-                a.btn.btn-anim(href='peluqueria.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_01.btn}
-            li
-              img(src='img/slider/golden-under-water.jpg', title='Servicio de autolavado de la peluquería canina Canessa', alt='Servicio de autolavado de la peluquería canina Canessa')
-              .caption.left-align
-                h2 #{index.slides.slide_02.title}
-                h5.intro #{index.slides.slide_02.subtitles}
-                a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.slide_02.btn}
-            li
-              img(src='img/slider/peluqueria.jpg', title='Entrada y recibidor de la Canessa peluquería canina', alt='Entrada y recibidor de la Canessa peluquería canina')
-              .caption.left-align.mycaption
-                h2 #{index.slides.slide_03.title}
-                h5.intro #{index.slides.slide_03.subtitles}
-                a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.slide_03.btn}
+          img.main-logotype(src='img/logos/canessa-logo.svg', title='#{index.logo.alt}', alt='#{index.logo.alt}')
+          .slider.fullscreen
+            ul.slides
+              li.first
+                img(src='img/slider/afgano.jpg', title='Afgano: Canessa peluquería canina', alt='Afgano: Canessa peluquería canina')
+                .caption.left-align
+                  h1 #{index.slides.slide_01.title}
+                  h5.intro #{index.slides.slide_01.subtitles}
+                  a.btn.btn-anim(href='peluqueria.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_01.btn}
+              li
+                img(src='img/slider/golden-under-water.jpg', title='Servicio de autolavado de la peluquería canina Canessa', alt='Servicio de autolavado de la peluquería canina Canessa')
+                .caption.left-align
+                  h2 #{index.slides.slide_02.title}
+                  h5.intro #{index.slides.slide_02.subtitles}
+                  a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.slide_02.btn}
+              li
+                img(src='img/slider/peluqueria.jpg', title='Entrada y recibidor de la Canessa peluquería canina', alt='Entrada y recibidor de la Canessa peluquería canina')
+                .caption.left-align.mycaption
+                  h2 #{index.slides.slide_03.title}
+                  h5.intro #{index.slides.slide_03.subtitles}
+                  a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.slide_03.btn}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar
@@ -47,3 +62,4 @@ html(lang='es')
 
         //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
         include includes/scripts
+          

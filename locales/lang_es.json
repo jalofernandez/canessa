@@ -42,21 +42,11 @@
       "alt": "Logotipo de la Canessa peluquería canina"
     },
     "slides": {
-      "slide_01": {
-        "title": "Peluquería canina Valdemoro",
-        "subtitle": "Tu centro de belleza animal en Valdemoro",
-        "btn": "Ver peluquería canina"
-      },
-      "slide_02": {
-        "title": "Servicio de Autolavado",
-        "subtitle": "Nosotros ponemos la bañera, el champú, las toallas y el secador y tú las manos",
-        "btn": "Ventajas del Autolavado"
-      },
-      "slide_03": {
-        "title": "Piensos y Complementos",
-        "subtitle": "Tenemos piensos, juguetes, correas, arneses, camas...",
-        "btn": "Piensos y alimentación"
-      }
+      "title": "Peluquería canina Valdemoro",
+      "subtitle": "Servicios de peluquería y autolavado. Venta de piensos, complementos...",
+      "btn_pelu": "Ver peluquería canina",
+      "btn_auto": "Ventajas del Autolavado",
+      "btn_pienso": "Piensos y alimentación"
     }
   },
   "not_found": {

@@ -7,12 +7,6 @@
 //- js initiation:
 $(document).ready(function(){
 
-    //- for a SLIDER:
-    $('.slider').slider({
-        full_width: true,
-        indicators: false
-    });
-
     //- for a MODAL (dialogs) triggers:
     $('.modal-trigger').leanModal();
 

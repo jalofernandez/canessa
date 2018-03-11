@@ -1072,107 +1072,114 @@ p {
   }
 }
 
-// TODO: remove this code for SEO reasons asap!
+// VIDEO full background
+video {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+   transform: translateX(-50%) translateY(-50%);
+   background: url(../../img/slider/afgano.png) no-repeat;
+   background-size: cover;
+   transition: 1s opacity;
+}
 
-/* Slider (caroussel) */
-.slider {
-  .slides {
-    li {
-      // background image
-      img {
-        background-position: left;
-      }
+// Text animated
+.caption {
+  width: 90%; /* 100% less margin */
+  color: @color-white;
+  position: absolute;
+  top: 60%;
+  left: 8%;
+  //opacity: 0;
 
-      // very first Slide in Slider Caroussel
-      &.first {
-        img {
-          background-position: right;
-        }
-      }
+  h1, h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black,
+    0 0 5px black,
+    0 0 5px black;
+    span {
+      padding: 0 20px;
+    }
+    // (intro) Animation
+    -webkit-animation-name: fadeInDelay;
+    animation-name: fadeInDelay;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
 
-      // Text animated
-      .caption {
-        color: @color-white;
-        position: absolute;
-        top: 56%;
-        left: 8%;
-        width: 100%;
-        opacity: 0;
+  h5 {
+    font-size: 30px;
+    margin-top: 0;
+    letter-spacing: 0.03em;
+    text-shadow: 1px 1px 2px black,
+    0 0 5px black,
+    0 0 5px black;
 
-        h1, h2 {
-          font-size: 3em;
-          text-transform: uppercase;
-          text-shadow: 1px 1px 2px black,
-          0 0 5px black,
-          0 0 5px black;
-          span {
-            padding: 0 20px;
-          }
-        }
+    &.intro {color: @color-main;}
+    &.rest  {color: #4fc3f7;}
+    &.art   {color: #b2ff59;}
+    &.cock  {color: #ffab00;}
+    &.terr  {color: #9575cd;}
+  }
 
-        h5 {
-          font-size: 30px;
-          margin-top: 0;
-          letter-spacing: 0.03em;
-          text-shadow: 1px 1px 2px black,
-          0 0 5px black,
-          0 0 5px black;
+  /* "Slider" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
+  a {
+    min-width: 275px;
+    margin: 5px;
+    font-family: Tahoma, Geneva, sans-serif;
+    .main-text(18px, 400, .03em);
+    color: @dark-opacity;
+    text-transform: inherit;
+    // (intro) Animation
+    -webkit-animation-name: fadeInDelay;
+    animation-name: fadeInDelay;
+    -webkit-animation-duration: 1200ms;
+    animation-duration: 1200ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 
-          &.intro {color: @color-main;}
-          &.rest  {color: #4fc3f7;}
-          &.art   {color: #b2ff59;}
-          &.cock  {color: #ffab00;}
-          &.terr  {color: #9575cd;}
-        }
+    &:first-child {
+      margin-left: 0
+    }
+  }
+  // (intro) Animation
+  @-webkit-keyframes fadeInDelay {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate(-1500px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate(000px);
+    }
+  }
+  @keyframes fadeInDelay {
+    0% {
+      opacity: 0;
+      transform: translate(-1500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(000px);
+    }
+  }
+  // (".caption") responsive behaviour
+  @media only screen and (max-width : 768px) {
+    top: 45%;
+  }
+  @media only screen and (max-width : 600px) {
+    top: 22%;
 
-        /* "Slider" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
-        a {
-          font-family: Tahoma, Geneva, sans-serif;
-          .main-text(18px, 400, .03em);
-          color: @dark-opacity;
-          text-transform: inherit;
-        }
-      }
-
-      // responsive behaviour
-      @media only screen and (max-width : 1200px) {
-        .caption {
-          top: 45%;
-
-          h1, h2 {
-            font-size: 1.5em;
-          }
-        }
-      }
-
-      @media only screen and (max-width : 600px) {
-        .caption {
-          top: 45%;
-
-          h1, h2 {
-            font-size: 1.5em;
-          }
-        }
-      }
-
-      /* to apply in small devices with landscape orientation */
-      @media (max-width: 680px) and (max-height : 500px) {
-        .caption {
-          top: 35%;
-
-          h1, h2 {
-            font-size: 1.5em;
-          }
-        }
-      }
-
-      @media only screen and (max-width : 320px) {
-        .caption {
-          h1, h2 {
-            font-size: 1.2em;
-          }
-        }
-      }
+    h1, h2 {
+      font-size: 2em;
     }
   }
 }
