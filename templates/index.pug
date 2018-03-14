@@ -13,44 +13,20 @@ html(lang='es')
         include includes/metatags
         
     body
-        img.main-logotype(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa en Valdemoro', alt='Logotipo de la peluquería canina Canessa en Valdemoro')
-        //- VIDEO :: FullBackgroundVideo
+        //- (1) VIDEO :: FullBackgroundVideo
         video#bgvid(poster='img/slider/afgano.jpg', title='Servicios ofrecidos en la peluquería canina Canessa de Valdemoro', playsinline='', autoplay='', muted='', loop='')
           //- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button
           //- source(src='http://thenewcode.com/assets/videos/polina.webm', type='video/webm')
           source(src='video/canessa-intro-web.mp4', type='video/mp4')
         //- main Header + "call to action" BTNs
         .caption
+          img.main-logotype(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa en Valdemoro', alt='Logotipo de la peluquería canina Canessa en Valdemoro')
           h1 #{index.slides.title}
           //- h5.intro #{index.slides.subtitle}
-          a.btn.btn-anim(href='peluqueria.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.btn_pelu}
-          a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.btn_auto}
-          a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.btn_pienso}
-          
-        //- ----------------------------------------------------------------
-        //- 01. SLIDER Full Page
-        //- ----------------------------------------------------------------
-          img.main-logotype(src='img/logos/canessa-logo.svg', title='#{index.logo.alt}', alt='#{index.logo.alt}')
-          .slider.fullscreen
-            ul.slides
-              li.first
-                img(src='img/slider/afgano.jpg', title='Afgano: Canessa peluquería canina', alt='Afgano: Canessa peluquería canina')
-                .caption.left-align
-                  h1 #{index.slides.slide_01.title}
-                  h5.intro #{index.slides.slide_01.subtitles}
-                  a.btn.btn-anim(href='peluqueria.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.slide_01.btn}
-              li
-                img(src='img/slider/golden-under-water.jpg', title='Servicio de autolavado de la peluquería canina Canessa', alt='Servicio de autolavado de la peluquería canina Canessa')
-                .caption.left-align
-                  h2 #{index.slides.slide_02.title}
-                  h5.intro #{index.slides.slide_02.subtitles}
-                  a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.slide_02.btn}
-              li
-                img(src='img/slider/peluqueria.jpg', title='Entrada y recibidor de la Canessa peluquería canina', alt='Entrada y recibidor de la Canessa peluquería canina')
-                .caption.left-align.mycaption
-                  h2 #{index.slides.slide_03.title}
-                  h5.intro #{index.slides.slide_03.subtitles}
-                  a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.slide_03.btn}
+          .call-to-action
+            a.btn.btn-anim(href='peluqueria.html', title='Servicios ofrecidos por la peluquería canina Canessa') #{index.slides.btn_pelu}
+            a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.btn_auto}
+            a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.btn_pienso}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

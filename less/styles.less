@@ -16,6 +16,25 @@
 
 /* ----- (common) HTML ELEMENTS ---------------------------------------- */
 
+/* -- TEXT SELECTED COLOR -- */
+
+::selection {
+  background: @color-fucsia;
+  color: @color-white;
+}
+
+::-moz-selection {
+  background: @color-fucsia;
+  color: @color-white;
+}
+
+::-webkit-selection {
+  background: @color-fucsia;
+  color: @color-white;
+}
+
+/* ----- (common) HTML ELEMENTS ---------------------------------------- */
+
 body {
   .main-text(16px, 600, 0.04em);
   font-family: 'champagne', sans-serif;
@@ -234,25 +253,13 @@ p {
 
 /* --- "Logotype" (top) logo HEADER --- */
 
-// INDEX page LOGO
+// (custom) INDEX page LOGO
 .main-logotype {
+  width: 200px;
+  height: 60px;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 20px;
   z-index: 3;
-
-  /* to apply in small devices with landscape orientation */
-  @media (max-width: 980px) {
-    top: 50px;
-    left: 50px;
-    width: 200px;
-    height: 60px;
-  }
-  /*
-  @media (max-width: 480px) {
-    left: 40px;
-  }
-  */
 }
 
 // (common) top navbar LOGO
@@ -1072,7 +1079,7 @@ p {
   }
 }
 
-// VIDEO full background
+/* -- VIDEO full background -- */
 video {
    position: fixed;
    top: 50%;
@@ -1088,21 +1095,61 @@ video {
    transition: 1s opacity;
 }
 
-// Text animated
-.caption {
-  width: 90%; /* 100% less margin */
-  color: @color-white;
-  position: absolute;
-  top: 60%;
-  left: 8%;
-  //opacity: 0;
+/* -- (caption) TEXT animated -- */
 
+.caption {
+  width: 100%;
+  height: ~"calc(100% - 75px)"; /* less Footer navbar + some padd */
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: @color-white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-around;
+
+  // BTNs block
+  .call-to-action {
+    width: 100%;
+    display: flex;
+    // (mixin) to apply changes in Flexbox (layout)
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-end;
+    }
+  }
+
+  /* IMP: ".main-logotype" goes here but in code is below */
+
+  // Caption (main) Title
   h1, h2 {
     font-size: 3em;
+    line-height: 60px;
+    // Responsive behaviour
+    @media (max-width: 600px) {
+      font-size: 2em;
+      line-height: 45px;
+    }
+    @media (max-height: 450px) {
+      font-size: 2em;
+      line-height: 45px;
+    }
+    text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px black,
-    0 0 5px black,
-    0 0 5px black;
+    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
+    //
     span {
       padding: 0 20px;
     }
@@ -1115,14 +1162,13 @@ video {
     animation-fill-mode: both;
   }
 
+  // Caption SubTitles
+  // (not available by the moment)
   h5 {
     font-size: 30px;
     margin-top: 0;
     letter-spacing: 0.03em;
-    text-shadow: 1px 1px 2px black,
-    0 0 5px black,
-    0 0 5px black;
-
+    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
     &.intro {color: @color-main;}
     &.rest  {color: #4fc3f7;}
     &.art   {color: #b2ff59;}
@@ -1130,13 +1176,14 @@ video {
     &.terr  {color: #9575cd;}
   }
 
-  /* "Slider" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
+  /* "caption" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
   a {
     min-width: 275px;
     margin: 5px;
+    background-color: @fucsia-opacity;
     font-family: Tahoma, Geneva, sans-serif;
     .main-text(18px, 400, .03em);
-    color: @dark-opacity;
+    color: @color-dark;
     text-transform: inherit;
     // (intro) Animation
     -webkit-animation-name: fadeInDelay;
@@ -1169,17 +1216,6 @@ video {
     100% {
       opacity: 1;
       transform: translate(000px);
-    }
-  }
-  // (".caption") responsive behaviour
-  @media only screen and (max-width : 768px) {
-    top: 45%;
-  }
-  @media only screen and (max-width : 600px) {
-    top: 22%;
-
-    h1, h2 {
-      font-size: 2em;
     }
   }
 }
