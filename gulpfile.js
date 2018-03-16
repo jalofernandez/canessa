@@ -97,7 +97,7 @@ gulp.task('sitemap', function () {
             read: false
         })
         .pipe(sitemap({
-            siteUrl: 'http://www.peluqueriacanessa.com',
+            siteUrl: 'https://peluqueriacanessa.com',
             changefreq: 'weekly',
             priority: '1.0'
         }))
