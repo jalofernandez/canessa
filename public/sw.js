@@ -8,7 +8,7 @@ var urlsToCache = [
     '/js/scripts-min.js',
     '/img/logos/canessa-logo.svg',
     '/img/slider/afgano.jpg',
-    '/video/canessa-intro-web.mp4',
+    '/video/canessa-intro-2018-march.mp4',
     '/contacto.html'
 ];
 
