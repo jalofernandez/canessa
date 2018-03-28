@@ -1470,6 +1470,35 @@ video {
   }
 }
 
+/* -- (common) to Set, Get and Check a Cookie to show or Hide a Modal dialog --------------------- */
+
+body {
+  background-color: #fbfbfb;
+
+  &.hide-overflow {
+    overflow: hidden;
+  }
+}
+
+.mhc-intro-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  //background-color: rgba(21, 21, 21, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 11;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+}
+
 // TODO: useless CODE by the moment!!
 
 /* --- PARALLAX ------------------------------------------
