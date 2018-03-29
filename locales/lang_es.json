@@ -204,5 +204,12 @@
         "Para realizar cualquier tipo de observación respecto a posibles incumplimientos de los derechos de propiedad intelectual o industrial, así como sobre cualquiera de los contenidos del sitio web, puede hacerlo a través del siguiente correo electrónico: <a href='mailto:van.vizcaya@gmail.com' title='Escribir a Peluquería Canessa'>van.vizcaya@gmail.com</a>"
       ]
     }
+  },
+  "advise": {
+    "title": "¡Cerrado por vacaciones!",
+    "paragraphs": [
+      "Permaneceremos cerrados los días <b>2, 3 y 4 de Abril</b>.",
+      "Seguiremos atendiendo el teléfono con normalidad para dar citas como de costumbre: <a href='tel:912480430'><i class='fa fa-phone'></i> <b>91 248 04 30</b></a>"
+    ]
   }
 }

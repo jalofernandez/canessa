@@ -2,7 +2,12 @@
 .mhc-modal.mhc-intro-modal(role='alert')
     .mhc-modal-inner
         .mhc-modal-info-container
-            a.mhc-intro-modal-close(href='#0') Close
-            .mhc-copy-container(style="background-image: url('your-image-path.jpg');")
-                h3.mhc-title The Title
-                p.mhc-description The description bla bla bla
+            .mhc-copy-container
+                h4.mhc-title #{advise.title}
+                //- for each loop to load all copies in "locales" json file/s
+                each paragraph, i in advise.paragraphs
+                  p.mhc-description !{paragraph}
+            .mhc-close-btn
+              a.mhc-intro-modal-close(href='#0')
+                | Cerrar:&nbsp;
+                i.fa.fa-close    

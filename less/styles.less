@@ -479,6 +479,10 @@ p {
           }
         }
 
+        &:last-child {
+          padding-right: 10px;
+        }
+
         a {
           height: 55px;
           font-family: 'champagne', sans-serif;
@@ -486,7 +490,7 @@ p {
           color: @color-white;
           text-transform: uppercase;
           display: block;
-          padding: 0 15px;
+          padding: 0 10px;
           .anim(all, 150ms, ease-in);
 
           &:not(.copyright) {
@@ -557,7 +561,7 @@ p {
 #nav-contact {
   position: fixed;
   bottom: 12px;
-  right: 110px;
+  right: 160px;
   z-index: 1000;
 
   ul {
@@ -604,17 +608,23 @@ p {
   display: none;
   position: fixed;
   bottom: 10px;
-  right: 115px;
+  right: 165px;
   z-index: 1000;
 
   a {
     color: @color-white;
     font-size: 20px;
   }
+
+  &:hover {
+    a {
+      color: @color-fucsia;
+    }
+  }
 }
 
 /* -- to switch between mobile and desktop "contact" footer links -- */
-@media (max-width: 1075px) {
+@media (max-width: 1120px) {
   #nav-contact {
     display: none;
   }
@@ -1496,6 +1506,61 @@ body {
     visibility: visible;
     z-index: 11;
     transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+
+  .mhc-modal-inner {
+    background-color: @dark-opacity !important;
+    border-top: 3px solid @color-black;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: 100px auto auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top,opacity;
+    // Responsive behaviour
+    @media (max-width: 600px) {
+      width: 90%;
+      max-height: 90%;
+    }
+
+    .mhc-copy-container {
+      padding: 15px 25px;
+    }
+
+    h4 {
+      color: @color-fucsia;
+      text-align: center;
+    }
+
+    p {
+      color: @color-white;
+      .main-text(20px, 400, 0.04em);
+      line-height: 2rem;
+
+      b {
+        color: @color-blue;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .mhc-close-btn {
+      text-align: right;
+      a {
+        padding: 10px;
+        .main-text(20px, 400, 0.04em);
+        color: @grey-c;
+
+        &:hover {
+          color: @color-white;
+        }
+      }
+    }
+
+
   }
 }
 
