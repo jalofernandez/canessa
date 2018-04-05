@@ -1,0 +1,659 @@
+/*
+ * (common) CSS stylesheet applied in all Views / pages (critical & not critical ones!)
+ */
+
+@import (reference) '_vars';
+@import (reference) '_mixins';
+
+/* ----- FONT FACE :: CUSTOM FONTS ---------------------------------------- */
+@font-face {
+  font-family: 'champagne';
+  src: url('../../fonts/champagne/champagne__limousines-webfont.eot');
+  src: url('../../fonts/champagne/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/champagne/champagne__limousines-webfont.woff2') format('woff2'),
+  url('../../fonts/champagne/champagne__limousines-webfont.woff') format('woff'),
+  url('../../fonts/champagne/champagne__limousines-webfont.ttf') format('truetype'),
+  url('../../fonts/champagne/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----- (common) HTML ELEMENTS ---------------------------------------- */
+
+/* -- (common) TEXT SELECTED COLOR -- */
+
+::selection {
+  background: @color-fucsia;
+  color: @color-white;
+}
+
+::-moz-selection {
+  background: @color-fucsia;
+  color: @color-white;
+}
+
+::-webkit-selection {
+  background: @color-fucsia;
+  color: @color-white;
+}
+
+/* -- (common) BODY -- */
+
+body {
+  .main-text(16px, 600, 0.04em);
+  font-family: 'champagne', sans-serif;
+
+  h2 {
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    line-height: 55px;
+    padding-left: 5px;
+  }
+  .row .col.offset-custom {
+    margin-left: 13.66667%;
+  }
+}
+
+/* --- (common) Margin & Paddings Reserts --- */
+
+// (used in "index.html")
+.noMargBottom {
+  margin-bottom: 0;
+}
+
+/* --- (common) Mobile Main SideNav --- */
+
+#mobile-demo {
+  z-index: 1100;
+
+  img {
+    max-width: 130px;
+    max-height: 39px;
+  }
+}
+
+/* ----- (common) special CLASSES ------------------------------------------ */
+
+/* -- (top) logo HEADER :: NAVBAR ------------------------------------------ */
+
+.navbar-top {
+  width: 100%;
+  //height: 45px;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+
+  nav {
+    width: 100%;
+    background-color: @color-dark;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    .anim(height, 0.3s, ease);
+
+    ul {
+      .anim(padding, 0.3s, ease);
+      &.right {
+        padding-right: 15px;
+        padding-top: 10px;
+      }
+      &.left {
+        padding-left: 15px;
+        padding-top: 10px;
+      }
+
+      li {
+        a {
+          text-transform: none;
+          color: @color-white;
+          font-size: 14px;
+          letter-spacing: .05em;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+        &:hover {
+          a {
+            color: @color-main;
+            .anim(all, 150ms, ease-in);
+          }
+        }
+      }
+
+      /* --- 2. "Left Navigation Menu" Top Main Nav --- */
+      &.navSubSections li a {
+        color: #aaa;
+        .main-text(18px, bold, .04em);
+        padding-right: 12px;
+        padding-left: 12px;
+
+        &.drinks {
+          display: none;
+        }
+      }
+
+      &.navContact li a.address {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // (top) Header Shrink when user scrolls down
+  &.js-thinny-nav {
+    nav {
+      height: 40px;
+      line-height: 40px;
+      background-color: @dark-opacity;
+
+      // corp. logo shrink too!
+      .brand-logo {
+        padding: 4px !important; /* overwrite "materialize" styles by default */
+
+        .small-one {
+          width: 95px;
+          height: 29px;
+        }
+        // responsive behaviour
+        @media (max-width: 601px) {
+          padding: 5px !important; /* overwrite "materialize" styles by default */
+
+          .small-one {
+            width: 90px;
+            height: 27px;
+          }
+        }
+      }
+
+      // (lsit) links to nav across pages
+      ul {
+        &.right,
+        &.left {
+          padding-top: 0;
+        }
+      }
+    }
+
+    // container with page info affected by thiny header
+    & + .body-container {
+      // used in TABS
+      .th-fixed {
+        background-color: rgba(255,255,255,.9);
+        top: 40px;
+        .anim(all, 0.3s, ease);
+
+        .tabs {
+          height: 40px;
+
+          .tab {
+            line-height: 40px;
+            height: 40px
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1740px) {
+  .navbar-top nav ul.navContact li a.schedule {
+    display: none;
+  }
+}
+@media (max-width: 1399px) {
+  .navbar-top nav ul.navSubSections li a {
+    &.wineh {
+      display: none;
+    }
+  }
+  .navbar-top nav ul.navContact li a.email {
+    display: none;
+  }
+}
+
+/* -- (bottom) main NAVBAR on FOOTER ------------------------------------------ */
+
+.navbar-fixed {
+  height: 54px;
+  position: absolute;
+  bottom: 0;
+  z-index: 998;
+
+  nav .button-collapse i {
+    font-size: 2.7rem;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 15px;
+  }
+
+  nav {
+    color: @color-white;
+    background-color: @dark-opacity;
+    border-top: 2px solid black;
+
+    // to expand/collapse main navbar in mobile devices
+    .button-collapse {
+      color: white;
+
+      i {
+        height: 56px;
+        line-height: 56px;
+        padding-left: 5px;
+        font-size: 2.7rem;
+        position: relative;
+        bottom: 3px;
+        // to Mobile devices
+        @media (max-width: 600px) {
+          padding-left: 15px;
+        }
+
+      }
+    }
+
+    // links (list)
+    ul {
+      li {
+        .anim(all, 150ms, ease-in);
+
+        &:hover {
+          background-color: @color-dark;
+        }
+
+        &:first-child {
+          &:hover {
+            background-color: inherit;
+          }
+        }
+
+        &:last-child {
+          padding-right: 10px;
+        }
+
+        a {
+          height: 55px;
+          font-family: 'champagne', sans-serif;
+          .main-text(1.2rem, 400, 0.06em);
+          color: @color-white;
+          text-transform: uppercase;
+          display: block;
+          padding: 0 10px;
+          .anim(all, 150ms, ease-in);
+
+          &:not(.copyright) {
+            &:hover {
+              color: @color-main;
+            }
+          }
+        }
+        /* to add margin between social media icons & phone number */
+        &.socialMobile {
+          padding-bottom: 20px !important;
+        }
+      }
+
+      // Left Side footer links (copyright, develop sign, legal terms...)
+      &.left {
+        a {
+          padding: 0 10px;
+          font-size: 1rem;
+          text-transform: inherit;
+
+          &.copyright {
+            color: @color-main;
+            cursor: default;
+            pointer-events: none;
+          }
+          // adding a "dot" separator
+          &.terms,
+          &.sitemap,
+          &.schedule {
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 5px;
+              height: 5px;
+              .border-radius(50%);
+              position: relative;
+              right: 10px;
+              bottom: 2px;
+              background-color: @grey-c;
+            }
+
+            &:hover {
+              &::before {
+                opacity: 0;
+                -webkit-transform: opacity all ease;
+                transform: opacity all ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // responsive behaviour
+  @media all and (max-width: 600px) {
+    ul.right {
+      li a i {
+        position: relative;
+        top: 12px;
+      }
+    }
+  }
+}
+
+/* TODO: check this code and remove it if is useless
+.navbar-fixed nav ul a.active {
+    font-size: 1.2rem;
+    color: #FFF;
+    display: block;
+    padding: 0px 15px;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+}
+*/
+
+/* -- (common) "Contact" Footer links for desktop and laptop devices -- */
+#nav-contact {
+  position: fixed;
+  bottom: 12px;
+  right: 160px;
+  z-index: 1000;
+
+  ul {
+    margin: 0;
+
+    li {
+      display: inline;
+      margin: 0;
+      padding: 20px 10px;
+      .anim(all, 150ms, ease-in);
+
+      a {
+        color: @color-white;
+
+        i {
+          padding-right: 5px;
+        }
+      }
+
+      &:hover {
+        background-color: @color-dark;
+
+        a {
+          color: @color-main;
+        }
+      }
+    }
+  }
+}
+
+/* -- (common) "Contact" Footer links for mobile and tablets devices -- */
+#nav-info {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 165px;
+  z-index: 1000;
+
+  a {
+    color: @color-white;
+    font-size: 20px;
+  }
+
+  &:hover {
+    a {
+      color: @color-fucsia;
+    }
+  }
+}
+
+/* -- (common) to switch between mobile and desktop "Contact" Footer links -- */
+@media (max-width: 1120px) {
+  #nav-contact {
+    display: none;
+  }
+  #nav-info {
+    display: block;
+  }
+}
+
+/* -- (common) ASIDE main NAVBAR on MOBILE devices ------------------------------------------ */
+
+.side-nav {
+  background-color: @color-dark;
+
+  &#mobile-demo {
+    li {
+      display: block;
+      width: 100%;
+      float: none;
+      padding: 0 15px;
+      text-align: center;
+      line-height: 15px;
+
+      &:first-child {
+        padding-top: 25px;
+      }
+
+      a {
+        display: inline-block;
+        color: @color-white;
+        background-color: transparent !important;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0),
+        0 0 0 0 rgba(0, 0, 0, 0.0) !important;
+        border-radius: 0%;
+        line-height: 0;
+        padding: 20px;
+        text-align: center;
+
+        i {
+          display: inline-block;
+          font-size: 2em;
+        }
+      }
+
+      // last row (copyright one)
+      &.copyMobile {
+        a {
+          text-transform: inherit;
+          color: @color-main;
+          cursor: default;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+/* -- (common) MODALS dialogs ------------------------------------------ */
+
+.modal {
+  background-color: @dark-opacity !important;
+  border-top: 3px solid @color-black;
+
+  * > i {
+    padding-right: 5px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    color: @color-white;
+    text-align: center;
+    .main-text(20px, 400, 0.04em);
+    line-height: 2rem;
+  }
+
+  ul {
+    li {
+      line-height: 2.2rem;
+
+      a {
+        color: @color-white;
+        .main-text(18px, 400, 0.04em);
+
+        &:hover {
+          color: @color-main;
+          .anim(all, 150ms, ease-in);
+
+          i {
+            min-width: 20px;
+            opacity: .5;
+          }
+        }
+      }
+
+      b {
+        color: @color-header;
+        .main-text(18px, 400, 0.04em);
+      }
+
+      em {
+        color:lighten(@color-white, 10%);
+        .main-text(16px, 400, 0.04em);
+      }
+
+      &:first-child,
+      &:nth-child(4),
+      &:nth-child(7) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .modal-footer {
+    background-color: @color-dark;
+
+    a {
+      text-align: center;
+      color: @grey-c;
+
+      &:hover {
+        color: @color-white;
+      }
+    }
+  }
+
+  // Header color overwrites
+  &#modal_section h4 {
+    color: #fdd835;
+  }
+  &#modal_buttons h4 {
+    color: #b2ff59;
+  }
+  &#modal_social h4 {
+    color: #80d8ff;
+  }
+  &#modal_contact h4,
+  &#modal_schedule h4 {
+    color: @color-main;
+    text-transform: uppercase;
+  }
+
+  // Schedule Modal (dialog)
+  &#modal_schedule {
+    .col {
+      width: 100%;
+      display: block;
+      min-height: 100px;
+
+      ul {
+        width: 260px;
+        margin: 0 auto;
+        float: inherit;
+
+        li {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  // responsive behaviour
+  @media only screen and (max-width: 992px) {
+    width: 85%;
+  }
+}
+
+/* Social media links inside each Modals (dialog) */
+.site-social {
+  & > i {
+    padding-right: 5px;
+  }
+
+  &.right {
+    li {
+      float: right;
+
+      a {
+        color: #ccc;
+        cursor: text;
+
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+    // hidden in Mobile devices
+    @media only screen and (max-width : 600px) {
+      display: none;
+    }
+  }
+}
+
+// in "modal-contact"
+@media (max-width: 667px) {
+  .row-dos .site-social {
+    padding-left: 30px;
+  }
+  .row-dos .site-social,
+  .row-dos .site-social li {
+    float: left !important;
+  }
+  .row-dos .site-social li a span {
+    display: block;
+  }
+  .clockDos i {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 667px) {
+  .modal .modal-content {
+    padding: 5px 5px 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal .modal-content {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width : 350px) {
+  #modal_contact ul li a {
+    font-size: 15px;
+  }
+}
+
+.clockDos i {
+  display: none;
+}
+
+/* -- (common) BUTTONS ------------------------------------------ */
+
+.btn {
+  background-color: @color-main;
+  color: @color-white;
+  &:hover, &:focus, &:active {
+    background-color: lighten(@color-main, 10%);
+  }
+}

@@ -1,0 +1,160 @@
+/*
+ * (custom) CSS stylesheet only applied in INDEX (critical one!)
+ */
+
+@import (reference) '_vars';
+@import (reference) '_mixins';
+// @import '_common';
+// @import '_cookie-modal';
+
+/* --- "Logotype" (top) logo HEADER --- */
+
+// (custom) INDEX page LOGO
+.main-logotype {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  z-index: 3;
+}
+
+/* -- VIDEO full background -- */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../../img/slider/afgano.jpg) no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+/* -- (caption) TEXT animated -- */
+
+.caption {
+  width: 100%;
+  height: ~"calc(100% - 75px)"; /* less Footer navbar + some padd */
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: @color-white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-around;
+
+  // BTNs block
+  .call-to-action {
+    width: 100%;
+    display: flex;
+    // (mixin) to apply changes in Flexbox (layout)
+    @media (max-width: 767px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-end;
+    }
+  }
+
+  /* IMP: ".main-logotype" goes here but in code is below */
+
+  // Caption (main) Title
+  h1, h2 {
+    font-size: 3em;
+    line-height: 60px;
+    // Responsive behaviour
+    @media (max-width: 600px) {
+      font-size: 2em;
+      line-height: 45px;
+    }
+    @media (max-height: 450px) {
+      font-size: 2em;
+      line-height: 45px;
+    }
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
+    //
+    span {
+      padding: 0 20px;
+    }
+    // (intro) Animation
+    -webkit-animation-name: fadeInDelay;
+    animation-name: fadeInDelay;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  // Caption SubTitles
+  // (not available by the moment)
+  h5 {
+    font-size: 30px;
+    margin-top: 0;
+    letter-spacing: 0.03em;
+    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
+    &.intro {color: @color-main;}
+    &.rest  {color: #4fc3f7;}
+    &.art   {color: #b2ff59;}
+    &.cock  {color: #ffab00;}
+    &.terr  {color: #9575cd;}
+  }
+
+  /* "caption" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
+  a {
+    min-width: 275px;
+    margin: 5px;
+    background-color: @fucsia-opacity;
+    font-family: Tahoma, Geneva, sans-serif;
+    .main-text(18px, 400, .03em);
+    color: @color-dark;
+    text-transform: inherit;
+    // (intro) Animation
+    -webkit-animation-name: fadeInDelay;
+    animation-name: fadeInDelay;
+    -webkit-animation-duration: 1200ms;
+    animation-duration: 1200ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    &:first-child {
+      margin-left: 0
+    }
+  }
+  // (intro) Animation
+  @-webkit-keyframes fadeInDelay {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate(-1500px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translate(000px);
+    }
+  }
+  @keyframes fadeInDelay {
+    0% {
+      opacity: 0;
+      transform: translate(-1500px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(000px);
+    }
+  }
+}

@@ -1,49 +1,16 @@
+/*
+ * (custom) CSS stylesheet applied in all Views / pages less INDEX (not critical one!)
+ */
+
 @import '_vars';
 @import '_mixins';
-// @import '_cookie-modal';
-
-/* ----- FONT FACE :: CUSTOM FONTS ---------------------------------------- */
-@font-face {
-  font-family: 'champagne';
-  src: url('../../fonts/champagne/champagne__limousines-webfont.eot');
-  src: url('../../fonts/champagne/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/champagne/champagne__limousines-webfont.woff2') format('woff2'),
-  url('../../fonts/champagne/champagne__limousines-webfont.woff') format('woff'),
-  url('../../fonts/champagne/champagne__limousines-webfont.ttf') format('truetype'),
-  url('../../fonts/champagne/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* ----- (common) HTML ELEMENTS ---------------------------------------- */
-
-/* -- TEXT SELECTED COLOR -- */
-
-::selection {
-  background: @color-fucsia;
-  color: @color-white;
-}
-
-::-moz-selection {
-  background: @color-fucsia;
-  color: @color-white;
-}
-
-::-webkit-selection {
-  background: @color-fucsia;
-  color: @color-white;
-}
+@import '_common';
+// only used in "index" view (critical one!)
+@import '_index';
 
 /* ----- (common) HTML ELEMENTS ---------------------------------------- */
 
 body {
-  .main-text(16px, 600, 0.04em);
-  font-family: 'champagne', sans-serif;
-
-  h2 {
-    line-height: 30px;
-  }
-
   /* -- (page) BG variations -- */
   &.bg-black {
     background-color: @color-dark;
@@ -59,19 +26,6 @@ body {
     > p, h1, h2, h3, h4, h5, b, span:not(.js-current-year) {
       color: @color-white !important;
     }
-  }
-}
-
-@media only screen and (min-width: 601px) {
-  nav,
-  nav .nav-wrapper i,
-  nav a.button-collapse,
-  nav a.button-collapse i {
-    line-height: 55px;
-    padding-left: 5px;
-  }
-  .row .col.offset-custom {
-    margin-left: 13.66667%;
   }
 }
 
@@ -187,10 +141,6 @@ p {
 
 /* --- Margin & Paddings Reserts --- */
 
-.noMargBottom {
-  margin-bottom: 0;
-}
-
 .topMarg50 {
   margin-top: 50px;
 }
@@ -226,42 +176,7 @@ p {
   }
 }
 
-/* --- Mobile Main SideNav --- */
-
-#mobile-demo {
-  z-index: 1100;
-
-  img {
-    max-width: 130px;
-    max-height: 39px;
-  }
-}
-
-/* TODO: remove it asap! ("position: fixed" works badly in iOS Safari browser) */
-// to apply Fixed position (CSS property)
-.th-fixed {
-  background-color: @color-white;
-  position: fixed;
-  top: 62px;
-  z-index: 2;
-  // mobile portrit only
-  @media (max-width: 600px) {
-    top: 52px;
-  }
-}
-
 /* ----- (custom) special CLASSES ---------------------------- */
-
-/* --- "Logotype" (top) logo HEADER --- */
-
-// (custom) INDEX page LOGO
-.main-logotype {
-  width: 200px;
-  height: 60px;
-  position: absolute;
-  top: 20px;
-  z-index: 3;
-}
 
 // (common) top navbar LOGO
 .brand-logo {
@@ -286,581 +201,28 @@ p {
 
 /* TODO: remove it asap! ("position: fixed" works badly in iOS Safari browser) */
 // to apply Fixed position (CSS property)
+.th-fixed {
+  background-color: @color-white;
+  position: fixed;
+  top: 62px;
+  z-index: 2;
+  // mobile portrit only
+  @media (max-width: 600px) {
+    top: 52px;
+  }
+}
+
+/* TODO: remove it asap! ("position: fixed" works badly in iOS Safari browser) */
+// to apply Fixed position (CSS property)
 .navbar-top + .body-container {
   .th-fixed {
     .anim(all, 0.3s, ease);
   }
 }
 
-/* -- (top) logo HEADER :: NAVBAR ------------------------------------------ */
+/* -- (common component) TABS ------------------------------------------ */
 
-.navbar-top {
-  width: 100%;
-  //height: 45px;
-  position: fixed;
-  top: 0;
-  z-index: 998;
-
-  nav {
-    width: 100%;
-    background-color: @color-dark;
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0) !important;
-    .anim(height, 0.3s, ease);
-
-    ul {
-      .anim(padding, 0.3s, ease);
-      &.right {
-        padding-right: 15px;
-        padding-top: 10px;
-      }
-      &.left {
-        padding-left: 15px;
-        padding-top: 10px;
-      }
-
-      li {
-        a {
-          text-transform: none;
-          color: @color-white;
-          font-size: 14px;
-          letter-spacing: .05em;
-          padding-right: 10px;
-          padding-left: 10px;
-        }
-        &:hover {
-          a {
-            color: @color-main;
-            .anim(all, 150ms, ease-in);
-          }
-        }
-      }
-
-      /* --- 2. "Left Navigation Menu" Top Main Nav --- */
-      &.navSubSections li a {
-        color: #aaa;
-        .main-text(18px, bold, .04em);
-        padding-right: 12px;
-        padding-left: 12px;
-
-        &.drinks {
-          display: none;
-        }
-      }
-
-      &.navContact li a.address {
-        text-transform: uppercase;
-      }
-    }
-  }
-
-  // (top) Header Shrink when user scrolls down
-  &.js-thinny-nav {
-    nav {
-      height: 40px;
-      line-height: 40px;
-      background-color: @dark-opacity;
-
-      // corp. logo shrink too!
-      .brand-logo {
-        padding: 4px !important; /* overwrite "materialize" styles by default */
-
-        .small-one {
-          width: 95px;
-          height: 29px;
-        }
-        // responsive behaviour
-        @media (max-width: 601px) {
-          padding: 5px !important; /* overwrite "materialize" styles by default */
-
-          .small-one {
-            width: 90px;
-            height: 27px;
-          }
-        }
-      }
-
-      // (lsit) links to nav across pages
-      ul {
-        &.right,
-        &.left {
-          padding-top: 0;
-        }
-      }
-    }
-
-    // container with page info affected by thiny header
-    & + .body-container {
-      // used in TABS
-      .th-fixed {
-        background-color: rgba(255,255,255,.9);
-        top: 40px;
-        .anim(all, 0.3s, ease);
-
-        .tabs {
-          height: 40px;
-
-          .tab {
-            line-height: 40px;
-            height: 40px
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1740px) {
-  .navbar-top nav ul.navContact li a.schedule {
-    display: none;
-  }
-}
-@media (max-width: 1399px) {
-  .navbar-top nav ul.navSubSections li a {
-    &.wineh {
-      display: none;
-    }
-  }
-  .navbar-top nav ul.navContact li a.email {
-    display: none;
-  }
-}
-
-/* -- (bottom) main NAVBAR on FOOTER ------------------------------------------ */
-
-.navbar-fixed {
-  height: 54px;
-  position: absolute;
-  bottom: 0;
-  z-index: 998;
-
-  nav .button-collapse i {
-    font-size: 2.7rem;
-    height: 56px;
-    line-height: 56px;
-    padding-left: 15px;
-  }
-
-  nav {
-    color: @color-white;
-    background-color: @dark-opacity;
-    border-top: 2px solid black;
-
-    // to expand/collapse main navbar in mobile devices
-    .button-collapse {
-      color: white;
-
-      i {
-        height: 56px;
-        line-height: 56px;
-        padding-left: 5px;
-        font-size: 2.7rem;
-        position: relative;
-        bottom: 3px;
-        // to Mobile devices
-        @media (max-width: 600px) {
-          padding-left: 15px;
-        }
-
-      }
-    }
-
-    // links (list)
-    ul {
-      li {
-        .anim(all, 150ms, ease-in);
-
-        &:hover {
-          background-color: @color-dark;
-        }
-
-        &:first-child {
-          &:hover {
-            background-color: inherit;
-          }
-        }
-
-        &:last-child {
-          padding-right: 10px;
-        }
-
-        a {
-          height: 55px;
-          font-family: 'champagne', sans-serif;
-          .main-text(1.2rem, 400, 0.06em);
-          color: @color-white;
-          text-transform: uppercase;
-          display: block;
-          padding: 0 10px;
-          .anim(all, 150ms, ease-in);
-
-          &:not(.copyright) {
-            &:hover {
-              color: @color-main;
-            }
-          }
-        }
-        /* to add margin between social media icons & phone number */
-        &.socialMobile {
-          padding-bottom: 20px !important;
-        }
-      }
-
-      // Left Side footer links (copyright, develop sign, legal terms...)
-      &.left {
-        a {
-          padding: 0 10px;
-          font-size: 1rem;
-          text-transform: inherit;
-
-          &.copyright {
-            color: @color-main;
-            cursor: default;
-            pointer-events: none;
-          }
-          // adding a "dot" separator
-          &.terms,
-          &.sitemap,
-          &.schedule {
-            &::before {
-              content: "";
-              display: inline-block;
-              width: 5px;
-              height: 5px;
-              .border-radius(50%);
-              position: relative;
-              right: 10px;
-              bottom: 2px;
-              background-color: @grey-c;
-            }
-
-            &:hover {
-              &::before {
-                opacity: 0;
-                -webkit-transform: opacity all ease;
-                transform: opacity all ease;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // responsive behaviour
-  @media all and (max-width: 600px) {
-    ul.right {
-      li a i {
-        position: relative;
-        top: 12px;
-      }
-    }
-  }
-}
-
-/* -- "contact" footer links for desktop and laptop devices -- */
-#nav-contact {
-  position: fixed;
-  bottom: 12px;
-  right: 160px;
-  z-index: 1000;
-
-  ul {
-    margin: 0;
-
-    li {
-      display: inline;
-      margin: 0;
-      padding: 20px 10px;
-      .anim(all, 150ms, ease-in);
-
-      a {
-        color: @color-white;
-
-        i {
-          padding-right: 5px;
-        }
-      }
-
-      &:hover {
-        background-color: @color-dark;
-
-        a {
-          color: @color-main;
-        }
-      }
-    }
-  }
-}
-
-/* TODO: check this code and remove it if is useless
-.navbar-fixed nav ul a.active {
-    font-size: 1.2rem;
-    color: #FFF;
-    display: block;
-    padding: 0px 15px;
-    letter-spacing: 0.06em;
-    text-transform: lowercase;
-}
-*/
-
-/* -- "contact" footer links for mobile and tablets devices -- */
-#nav-info {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 165px;
-  z-index: 1000;
-
-  a {
-    color: @color-white;
-    font-size: 20px;
-  }
-
-  &:hover {
-    a {
-      color: @color-fucsia;
-    }
-  }
-}
-
-/* -- to switch between mobile and desktop "contact" footer links -- */
-@media (max-width: 1120px) {
-  #nav-contact {
-    display: none;
-  }
-  #nav-info {
-    display: block;
-  }
-}
-
-/* -- (aside) main NAVBAR on MOBILE devices ------------------------------------------ */
-
-.side-nav {
-  background-color: @color-dark;
-
-  &#mobile-demo {
-    li {
-      display: block;
-      width: 100%;
-      float: none;
-      padding: 0 15px;
-      text-align: center;
-      line-height: 15px;
-
-      &:first-child {
-        padding-top: 25px;
-      }
-
-      a {
-        display: inline-block;
-        color: @color-white;
-        background-color: transparent !important;
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0),
-        0 0 0 0 rgba(0, 0, 0, 0.0) !important;
-        border-radius: 0%;
-        line-height: 0;
-        padding: 20px;
-        text-align: center;
-
-        i {
-          display: inline-block;
-          font-size: 2em;
-        }
-      }
-
-      // last row (copyright one)
-      &.copyMobile {
-        a {
-          text-transform: inherit;
-          color: @color-main;
-          cursor: default;
-          pointer-events: none;
-        }
-      }
-    }
-  }
-}
-
-/* -- MODALS (dialogs) ------------------------------------------ */
-
-.modal {
-  background-color: @dark-opacity !important;
-  border-top: 3px solid @color-black;
-
-  * > i {
-    padding-right: 5px;
-  }
-
-  h4 {
-    text-align: center;
-  }
-
-  p {
-    color: @color-white;
-    text-align: center;
-    .main-text(20px, 400, 0.04em);
-    line-height: 2rem;
-  }
-
-  ul {
-    li {
-      line-height: 2.2rem;
-
-      a {
-        color: @color-white;
-        .main-text(18px, 400, 0.04em);
-
-        &:hover {
-          color: @color-main;
-          .anim(all, 150ms, ease-in);
-
-          i {
-            min-width: 20px;
-            opacity: .5;
-          }
-        }
-      }
-
-      b {
-        color: @color-header;
-        .main-text(18px, 400, 0.04em);
-      }
-
-      em {
-        color:lighten(@color-white, 10%);
-        .main-text(16px, 400, 0.04em);
-      }
-
-      &:first-child,
-      &:nth-child(4),
-      &:nth-child(7) {
-        margin-top: 10px;
-      }
-    }
-  }
-
-  .modal-footer {
-    background-color: @color-dark;
-
-    a {
-      text-align: center;
-      color: @grey-c;
-
-      &:hover {
-        color: @color-white;
-      }
-    }
-  }
-
-  // Header color overwrites
-  &#modal_section h4 {
-    color: #fdd835;
-  }
-  &#modal_buttons h4 {
-    color: #b2ff59;
-  }
-  &#modal_social h4 {
-    color: #80d8ff;
-  }
-  &#modal_contact h4,
-  &#modal_schedule h4 {
-    color: @color-main;
-    text-transform: uppercase;
-  }
-
-  // Schedule Modal (dialog)
-  &#modal_schedule {
-    .col {
-      width: 100%;
-      display: block;
-      min-height: 100px;
-
-      ul {
-        width: 260px;
-        margin: 0 auto;
-        float: inherit;
-
-        li {
-          text-align: right;
-        }
-      }
-    }
-  }
-
-  // responsive behaviour
-  @media only screen and (max-width: 992px) {
-    width: 85%;
-  }
-}
-
-/* Social media links inside each Modals (dialog) */
-.site-social {
-  & > i {
-    padding-right: 5px;
-  }
-
-  &.right {
-    li {
-      float: right;
-
-      a {
-        color: #ccc;
-        cursor: text;
-
-        &:hover {
-          color: #ccc;
-        }
-      }
-    }
-    // hidden in Mobile devices
-    @media only screen and (max-width : 600px) {
-      display: none;
-    }
-  }
-}
-
-// in "modal-contact"
-@media (max-width: 667px) {
-  .row-dos .site-social {
-    padding-left: 30px;
-  }
-  .row-dos .site-social,
-  .row-dos .site-social li {
-    float: left !important;
-  }
-  .row-dos .site-social li a span {
-    display: block;
-  }
-  .clockDos i {
-    display: inline-block;
-  }
-}
-
-@media (max-width: 667px) {
-  .modal .modal-content {
-    padding: 5px 5px 5px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .modal .modal-content {
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width : 350px) {
-  #modal_contact ul li a {
-    font-size: 15px;
-  }
-}
-
-.clockDos i {
-  display: none;
-}
-
-/* -- (common) TABS ------------------------------------------ */
-
+// only used in "PIENSO" view by the moment
 .tabs {
   position: relative;
   height: 48px;
@@ -892,16 +254,7 @@ p {
   }
 }
 
-/* -- (common) BUTTONS ------------------------------------------ */
-
-.btn,
-.btn-large {
-  background-color: @color-main;
-  color: @color-white;
-  &:hover, &:focus, &:active {
-    background-color: lighten(@color-main, 10%);
-  }
-}
+/* -- (custom) BUTTONS ------------------------------------------ */
 
 .btn-mascotactiva {
   width: 100%;
@@ -1005,6 +358,7 @@ p {
 }
 
 // to apply big Text (copies) Blocks
+// only used in "LEGAL" view by the moment!
 .paragraphs {
 
   h5:first-child {
@@ -1050,6 +404,7 @@ p {
 }
 
 // Price and Info badges:
+// only used in "PIENSOS" view by the moment!
 .badge {
   &.price {
     margin-left: 8px;
@@ -1066,8 +421,7 @@ p {
   color: @color-blue;
 }
 
-/* -- (page) INDEX / HOME ------------------------------------------ */
-
+// only used in "LEGAL" view by the moment!
 #intro {
   .headerSection {
     text-transform: uppercase;
@@ -1086,147 +440,6 @@ p {
     @media (max-width: 600px) {
       width: 150px;
       height: 150px;
-    }
-  }
-}
-
-/* -- VIDEO full background -- */
-video {
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   min-width: 100%;
-   min-height: 100%;
-   width: auto;
-   height: auto;
-   z-index: -100;
-   transform: translateX(-50%) translateY(-50%);
-   background: url(../../img/slider/afgano.jpg) no-repeat;
-   background-size: cover;
-   transition: 1s opacity;
-}
-
-/* -- (caption) TEXT animated -- */
-
-.caption {
-  width: 100%;
-  height: ~"calc(100% - 75px)"; /* less Footer navbar + some padd */
-  top: 0;
-  left: 0;
-  position: absolute;
-  color: @color-white;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: space-around;
-
-  // BTNs block
-  .call-to-action {
-    width: 100%;
-    display: flex;
-    // (mixin) to apply changes in Flexbox (layout)
-    @media (max-width: 767px) {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-end;
-      align-items: center;
-      align-content: center;
-    }
-    @media (min-width: 768px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: flex-end;
-    }
-  }
-
-  /* IMP: ".main-logotype" goes here but in code is below */
-
-  // Caption (main) Title
-  h1, h2 {
-    font-size: 3em;
-    line-height: 60px;
-    // Responsive behaviour
-    @media (max-width: 600px) {
-      font-size: 2em;
-      line-height: 45px;
-    }
-    @media (max-height: 450px) {
-      font-size: 2em;
-      line-height: 45px;
-    }
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
-    //
-    span {
-      padding: 0 20px;
-    }
-    // (intro) Animation
-    -webkit-animation-name: fadeInDelay;
-    animation-name: fadeInDelay;
-    -webkit-animation-duration: 800ms;
-    animation-duration: 800ms;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-
-  // Caption SubTitles
-  // (not available by the moment)
-  h5 {
-    font-size: 30px;
-    margin-top: 0;
-    letter-spacing: 0.03em;
-    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
-    &.intro {color: @color-main;}
-    &.rest  {color: #4fc3f7;}
-    &.art   {color: #b2ff59;}
-    &.cock  {color: #ffab00;}
-    &.terr  {color: #9575cd;}
-  }
-
-  /* "caption" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
-  a {
-    min-width: 275px;
-    margin: 5px;
-    background-color: @fucsia-opacity;
-    font-family: Tahoma, Geneva, sans-serif;
-    .main-text(18px, 400, .03em);
-    color: @color-dark;
-    text-transform: inherit;
-    // (intro) Animation
-    -webkit-animation-name: fadeInDelay;
-    animation-name: fadeInDelay;
-    -webkit-animation-duration: 1200ms;
-    animation-duration: 1200ms;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-
-    &:first-child {
-      margin-left: 0
-    }
-  }
-  // (intro) Animation
-  @-webkit-keyframes fadeInDelay {
-    0% {
-      opacity: 0;
-      -webkit-transform: translate(-1500px);
-    }
-    100% {
-      opacity: 1;
-      -webkit-transform: translate(000px);
-    }
-  }
-  @keyframes fadeInDelay {
-    0% {
-      opacity: 0;
-      transform: translate(-1500px);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(000px);
     }
   }
 }
