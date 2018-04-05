@@ -99,6 +99,9 @@ var options = [
 Materialize.scrollFire(options);
 */
 
+/*
+ * (Useless code by the moment) MODAL (dialog) controled with a Cookie
+ *
 //- to Set, Get and Check a Cookie to show or Hide a Modal dialog:
 //  Set the Cookie
 function setCookie(cname, cvalue, exdays) {
@@ -156,3 +159,4 @@ $('.mhc-intro-modal').on('click', function(event) {
         $('body').removeClass('hide-overflow');
     }
 });
+*/
