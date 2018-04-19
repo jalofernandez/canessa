@@ -1,0 +1,338 @@
+/*
+ * (custom) GRID big 2x2 layout
+ */
+
+@import (reference) "_vars";
+@import (reference) "_mixins";
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+}
+
+.grid {
+  /* same as (top & buttom) nav Bars */
+  margin-top: 64px;
+  margin-bottom: 54px;
+  // responsive behaviour
+  @media (max-width: 601px) {
+    margin-top: 56px;
+  }
+}
+
+.grid__item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100vw;
+}
+
+.grid__item--bg {
+  background-color: var(--item-bg);
+  height: 100vw;
+}
+
+.grid__item-content {
+  width: 100%;
+  padding: 8vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--item-bg);
+}
+
+.grid__item--bg {
+  .grid__item-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.grid__item-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  img {
+    height: 100%;
+    display: block;
+  }
+}
+
+// (grid) top main Title in all Text blocks
+.grid__item-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 2rem 0 0 0;
+  color: var(--item-title);
+  position: relative;
+
+  .fa {
+    position: absolute;
+    bottom: 30px;
+    left: -30px;
+    opacity: .3;
+    z-index: 0;
+    // to apply when layout changed from columns to rows
+    @media screen and (max-width: 1050px) {
+      bottom: 20px;
+      left: -20px;
+    }
+    @media screen and (max-width: 567px) {
+      left: -12px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.grid__item-title--small {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+// (grid) top miniTitle in all BG image Blocks
+.grid__item-meta {
+  font-family: "Roboto", sans-serif;
+  .main-text(1rem, 400, .02rem);
+  color: var(--item-meta);
+}
+
+.grid__item-subtitle {
+  display: block;
+  margin: auto 0 0 0;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--item-subtitle);
+
+  span {
+    display: block;
+  }
+}
+
+// (grid) TEXT, Copies & Paragraphs
+.grid__item-text {
+  font-family: "Roboto", sans-serif;
+  .main-text(1.2rem, 400, .02rem);
+  line-height: 1.75;
+  margin: 2rem 0 0 0;
+  color: var(--item-text);
+
+  .fa {
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    opacity: .3;
+  }
+
+  + .grid__item-link {
+    white-space: nowrap;
+    align-self: flex-start;
+    line-height: 40px;
+    margin-top: auto;
+    // to apply when layout changed from columns to rows
+    @media screen and (max-width: 799px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+// (grid) BTNs & Nav Links
+.grid__item-link {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  .main-text(1.2rem, 400, .02rem);
+  color: var(--item-link);
+  position: relative;
+  pointer-events: auto;
+
+  .fa {
+    padding-left: 5px;
+    opacity: .5;
+    .anim(padding, .25s, ease);
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--item-link-hover);
+
+    .fa {
+      padding-left: 10px;
+      opacity: .7;
+    }
+  }
+
+  // this looks like common BTNs
+  &.btn {
+    //font-family: Tahoma, Geneva, sans-serif;
+    .main-text(18px, 400, .03em);
+    text-transform: inherit;
+  }
+
+  // (hover effect) nav link line animation
+  &:not(.btn) {
+    &::before {
+      content: '';
+      position: absolute;
+      background: currentColor;
+      width: 75%;
+      height: 1px;
+      bottom: 0;
+      transform-origin: 0% 50%;
+      transform: scale3d(0,1,1);
+      opacity: 0;
+      transition: all 0.25s;
+      transition-property: opacity, transform;
+    }
+    &:hover::before {
+      opacity: 1;
+      transform: scale3d(1,1,1);
+    }
+  }
+
+  + .grid__item-link {
+    margin: 0 0 0 3rem;
+  }
+}
+
+.grid__item-nav {
+  display: flex;
+}
+
+/* -- (grid) color THEMES -- */
+
+// to apply in IMG blocks
+.theme-bg {
+  --item-bg: rgba(0,0,0,0);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+// to apply in TEXT blocks
+.theme-transparent {
+  --item-bg: transparent;
+  --item-link: @color-blue;
+  --item-link-hover: darken(@color-blue, 10%);
+  --item-meta: @color-text;
+  --item-title: @color-fucsia;
+  --item-subtitle: @color-text;
+  --item-text: @color-text;
+}
+
+.theme-fucsia {
+  --item-bg: @color-fucsia;
+  --item-link: #ffc8db;
+  --item-link-hover: @color-white;
+  --item-meta: @color-white;
+  --item-title: @color-white;
+  --item-subtitle: @color-white;
+  --item-text: @color-white;
+}
+
+.theme-blue {
+  --item-bg: @color-blue;
+  --item-link: #d7f2fe;
+  --item-link-hover: @color-white;
+  --item-meta: @color-white;
+  --item-title: @color-white;
+  --item-subtitle: @color-white;
+  --item-text: @color-white;
+}
+
+.theme-mascotactiva {
+  --item-bg: @color-white;
+  --item-link: @grey-mascotactiva;
+  --item-link-hover: darken(@grey-mascotactiva, 15%);
+  --item-meta: @color-mascotactiva;
+  --item-title: @color-mascotactiva;
+  --item-subtitle: @color-mascotactiva;
+  --item-text: @color-text;
+  // to overwrite BTN common values by default
+  + .theme-bg {
+    .btn {
+      background-color: @color-mascotactiva;
+      color: @black-mascotactiva;
+      &:hover {
+        background-color: darken(@color-mascotactiva, 15%);
+      }
+    }
+  }
+}
+
+/* -- Media queries :: GRID responsive behaviour -- */
+
+@media screen and (min-width: 50em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,50vmax);
+  }
+
+  .grid__item {
+    height: 50vmax;
+    width: 100%;
+
+    &:hover {
+      .grid__item-subtitle * {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+      .grid__item-subtitle span {
+        transition-delay: 0.1s;
+      }
+      .grid__item-subtitle .grid__item-link {
+        transition-delay: 0s;
+      }
+    }
+  }
+
+  .grid__item-subtitle * {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.7, 1);
+    transition-property: transform, opacity;
+  }
+
+  .grid__item-title {
+    font-size: 6vw;
+  }
+
+  .grid__item-title--small {
+    font-size: 3vw;
+  }
+
+  .grid__item-text {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1050px) {
+  .grid__item-content {
+    padding: 4vw 6vw;
+  }
+  .grid__item-link,
+  .grid__item-text {
+    font-size: 1.05rem;
+  }
+}

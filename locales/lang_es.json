@@ -44,9 +44,48 @@
     "slides": {
       "title": "Peluquería canina Valdemoro",
       "subtitle": "Servicios de peluquería y autolavado. Venta de piensos, complementos...",
-      "btn_pelu": "Ver peluquería canina",
+      "btn_services": "Nuestros servicios",
+      "btn_pelu": "Peluquería canina",
       "btn_auto": "Ventajas del Autolavado",
       "btn_pienso": "Piensos y alimentación"
+    }
+  },
+  "services": {
+    "grooming": {
+      "title": "La peluquería canina ...",
+      "paragraph": "... No es solo una cuestión de estética, sino también de <b>higiene</b>, <b>salud</b>, y lo más importante, <b>bienestar</b> del animal porque sabemos lo importante que es para ti tu perro y lo mimaremos como se merece, con los mejores métodos y técnicas no invasivas garantizando un resultado final impecable y sin molestias para él. ¡Se merecen un trato especial!",
+      "link": "Nuestros servicios de peluquería canina",
+      "btn": "Más sobre peluquería"
+    },
+    "bath": {
+      "title": "Autolavado al mejor precio",
+      "paragraph": "Bañas tú mismo a tu mascota <b>evitándote las molestias</b> derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores pero con los mejores productos, sin dejarte la espalda gracias a nuestra <b>bañera hidráulica</b>, disponiendo de toallas y explusadores (secadores de alta potencia)... Además te asesoramos durante el proceso para tener un perro sano y feliz.",
+      "link": "Descubre más sobre el Autolavado",
+      "btn": "Más sobre Autolavado"
+    },
+    "food": {
+      "title": "Pienso y alimentos caninos",
+      "paragraph": "Sabemos muy bien que la alimentación de nuestro perro es la <b>base de su bienestar y su comportamiento</b>. Por ello, en la peluquería canina Canessa no hemos dudado a la hora de decidir qué productos vamos a vender y con qué marcas queremos trabajar.",
+      "link": "Ver piensos y otros alimentos",
+      "btn": "Todos nuestros piensos"
+    },
+    "props": {
+      "title": "Complementos para los peludos",
+      "paragraph": "Hay razas que requieren un mayor mantenimiento que otras pero todas necesitan baño para estar limpios y aseados además de cepillado para retirar pelo muerto y evitar los nudos. En la peluqería canina Canessa te ofrecemos <b>amplia variedad de productos</b> para estas tareas.",
+      "link": "Ver todos los productos",
+      "btn": "Todos nuestros productos"
+    },
+    "mascotactiva": {
+      "title": "Paseamos y entrenamos a su mascota",
+      "paragraph": "Servicio exclusivo de: guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional por <b>Rafa Cros</b>, nuestro especialista en </b>psicología y entrenamiento canino</b>.",
+      "link": "Saber más sobre Mascotactiva",
+      "btn": "Servicios de Mascotactiva"
+    },
+    "about": {
+      "title": "Vanessa Vizcaya: Canessa",
+      "paragraph": "Tras 12 años de experiencia y formación continuada, Canessa asume la dirección y gerencia de su propio salón de peluquería canina en la localidad madrileña de Valdemoro para poder seguir desarrollándose en su pasión por la belleza animal...",
+      "link": "Saber más sobre mi",
+      "btn": "Saber más sobre mi"
     }
   },
   "not_found": {
@@ -143,6 +182,7 @@
     "whatis": "Listado de todos los enlaces internos disponibles en este sitio web",
     "links": [
       "<a class='main-link' href='index.html' title='Volver a la página de Inicio de la peluquería canina Canessa'><i class='fa fa-home'></i> Inicio</a>",
+      "<a href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro'><i class='fa fa-info-circle'></i> Nuestros servicios</a>",
       "<a href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa'><i class='fa fa-scissors'></i> Peluquería</a>",
       "<a href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional'><i class='fa fa-bath'></i> Autolavado</a>",
       "<a href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa'><i class='fa fa-cutlery'></i> Pienso y alimentación canina</a>",
