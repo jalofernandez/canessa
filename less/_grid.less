@@ -130,10 +130,13 @@ main {
 
 // (grid) TEXT, Copies & Paragraphs
 .grid__item-text {
-  font-family: "Roboto", sans-serif;
-  .main-text(1.2rem, 400, .02rem);
-  line-height: 1.75;
   margin: 2rem 0 0 0;
+  .common-text();
+  /*
+  font-family: "Roboto", sans-serif;
+  .main-text(18px, 400, .02rem);
+  line-height: 2rem;
+  */
   color: var(--item-text);
 
   .fa {
@@ -187,8 +190,8 @@ main {
     text-transform: inherit;
   }
 
-  // (hover effect) nav link line animation
   &:not(.btn) {
+    // (hover effect) nav link line animation
     &::before {
       content: '';
       position: absolute;

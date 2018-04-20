@@ -1,3 +1,5 @@
+@import (reference) "_vars";
+
 /* ----- MIXINS --------------------------------- */
 
 .anim(@type, @time, @long) {
@@ -22,14 +24,12 @@
   letter-spacing: @space;
 }
 
-.common-text(@color: #666, @hover: #333, @weight: bold) {
-  font-family: 'champagne', sans-serif;
-  .main-text(18px, @weight, 0.04em);
+.common-text(@color: @color-text, @weight: 400) {
+  font-family: 'Roboto', sans-serif;
+  .main-text(18px, @weight, 0.02em);
   color: @color;
+  line-height: 2rem;
   .anim(all, 150ms, ease);
-  &:hover {
-    color:@hover;
-  }
 }
 
 .centered(@left: 50%) {

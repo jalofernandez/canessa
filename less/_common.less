@@ -40,8 +40,7 @@
 /* -- (common) BODY -- */
 
 body {
-  .main-text(16px, 600, 0.04em);
-  font-family: 'champagne', sans-serif;
+  .common-text();
 
   h2 {
     line-height: 30px;
@@ -55,6 +54,10 @@ body {
   nav a.button-collapse i {
     line-height: 55px;
     padding-left: 5px;
+    &.fa-youtube-play {
+      position: relative;
+      bottom: 3px;
+    }
   }
   .row .col.offset-custom {
     margin-left: 13.66667%;
@@ -128,7 +131,7 @@ body {
       /* --- 2. "Left Navigation Menu" Top Main Nav --- */
       &.navSubSections li a {
         color: #aaa;
-        .main-text(18px, bold, .04em);
+        .main-text(18px, 400, .02em);
         padding-right: 12px;
         padding-left: 12px;
 
@@ -275,8 +278,8 @@ body {
 
         a {
           height: 55px;
-          font-family: 'champagne', sans-serif;
-          .main-text(1.2rem, 400, 0.06em);
+          font-family: 'Roboto', sans-serif;
+          .main-text(1.1rem, 400, 0.02em);
           color: @color-white;
           text-transform: uppercase;
           display: block;
@@ -297,9 +300,11 @@ body {
 
       // Left Side footer links (copyright, develop sign, legal terms...)
       &.left {
+        position: relative;
+        bottom: 3px;
+
         a {
           padding: 0 10px;
-          font-size: 1rem;
           text-transform: inherit;
 
           &.copyright {
@@ -371,10 +376,13 @@ body {
     li {
       display: inline;
       margin: 0;
-      padding: 20px 10px;
+      padding: 15px 10px 20px;
       .anim(all, 150ms, ease-in);
 
       a {
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: .02em;
         color: @color-white;
 
         i {
@@ -397,7 +405,7 @@ body {
 #nav-info {
   display: none;
   position: fixed;
-  bottom: 10px;
+  bottom: 13px;
   right: 165px;
   z-index: 1000;
 
@@ -414,7 +422,7 @@ body {
 }
 
 /* -- (common) to switch between mobile and desktop "Contact" Footer links -- */
-@media (max-width: 1120px) {
+@media (max-width: 1249px) {
   #nav-contact {
     display: none;
   }
@@ -488,7 +496,7 @@ body {
   p {
     color: @color-white;
     text-align: center;
-    .main-text(20px, 400, 0.04em);
+    .main-text(20px, 400, 0.02em);
     line-height: 2rem;
   }
 
@@ -498,7 +506,7 @@ body {
 
       a {
         color: @color-white;
-        .main-text(18px, 400, 0.04em);
+        .main-text(18px, 400, 0.02em);
 
         &:hover {
           color: @color-main;
@@ -513,12 +521,12 @@ body {
 
       b {
         color: @color-header;
-        .main-text(18px, 400, 0.04em);
+        .main-text(18px, 400, 0.02em);
       }
 
       em {
         color:lighten(@color-white, 10%);
-        .main-text(16px, 400, 0.04em);
+        .main-text(16px, 400, 0.02em);
       }
 
       &:first-child,
@@ -554,6 +562,9 @@ body {
   }
   &#modal_contact h4,
   &#modal_schedule h4 {
+    font-family: 'champagne', sans-serif;
+    font-weight: 600;
+    letter-spacing: .06em;
     color: @color-main;
     text-transform: uppercase;
   }
