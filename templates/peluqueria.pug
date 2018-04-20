@@ -50,37 +50,157 @@ html(lang='es')
         //- ----------------------------------------------------------------
         //- 01. SERVICES & FULL IMG GALLERY
         //- ----------------------------------------------------------------
-        //- DOGS PICS (gallery)
         #doggies.scrollspy.body-container
+            //- ------------------------------------------------------
+            //- (Section 01) PELUQUERÍA services description
+            //- ------------------------------------------------------
+            main
+                .grid
+                    //- (row 01) INTRO
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/doggies/showing-time.jpg', title='El baño sienta taaan bien...', alt='El baño sienta taaan bien...')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional')
+                                    | #{services.bath.btn}
+
+                    .grid__item.theme-transparent
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{services.bath.title}
+                            p.grid__item-text
+                                | !{services.bath.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional')
+                                | #{services.bath.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    //- (row 03) PIENSOS
+                    //- ------------------------------------------------------
+                    .grid__item.theme-transparent
+                      .grid__item-content
+                        h2.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{services.food.title}
+                        p.grid__item-text
+                          | !{services.food.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                        a.grid__item-link(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa')
+                          | #{services.food.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                      .grid__item-img
+                        img(src='img/food/advange-medium-7years.png', title='Bolsa de pienso Medium 7 años de pollo y salmón de Advance', alt='Bolsa de pienso Medium 7 años de pollo y salmón de Advance')
+                      .grid__item-content
+                        h3.grid__item-subtitle
+                          a.grid__item-link.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa')
+                            | #{services.food.btn}
+
+                    //- (row 04) COMPLEMENTOS
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                      .grid__item-img
+                        img(src='img/complementos/bubbles_shampoo_peluqueria_canina_canessa.jpg', title='Champú Bubbles disponible en la peluquería canina canessa en Valdemoro', alt='Champú Bubbles disponible en la peluquería canina canessa en Valdemoro')
+                      .grid__item-content
+                        h3.grid__item-subtitle
+                          a.grid__item-link.btn.btn-anim(href='complementos.html', title='Collares, correas y otros complementos en la peluquería canina Canessa')
+                            | #{services.props.btn}
+
+                    .grid__item.theme-blue
+                      .grid__item-content
+                        h2.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{services.props.title}
+                        p.grid__item-text
+                          | !{services.props.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                        a.grid__item-link(href='complementos.html', title='Collares, correas y otros complementos en la peluquería canina Canessa')
+                          | #{services.props.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+                    //- (row 05) MASCOTACTIVA
+                    //- ------------------------------------------------------
+                    .grid__item.theme-mascotactiva
+                      .grid__item-content
+                        h2.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{services.mascotactiva.title}
+                        p.grid__item-text
+                          | !{services.mascotactiva.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                        a.grid__item-link(href='mascotactiva.html', title='Psicología y entrenamiento canino en la peluquería canina Canessa')
+                          | #{services.mascotactiva.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                      .grid__item-img
+                          img(src='img/mascotactiva/mascotactiva-pastor-aleman-rafa-cros.jpg', title='Mascotactiva por Rafa Cros y pastor alemán', alt='Logotipo de Mascotactiva por Rafa Crosy pastor alemán')
+                      .grid__item-content
+                        h3.grid__item-subtitle
+                          a.grid__item-link.btn.btn-anim(href='mascotactiva.html', title='Psicología y entrenamiento canino en la peluquería canina Canessa')
+                            | #{services.mascotactiva.btn}
+
+                    //- (row 06) SOBRE MI
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                      .grid__item-img
+                        img(src='img/aboutme/vanessa-vizcaya-peluqueria-canina-canessa.jpg', title='Vanessa Vizcaya en la peluquería canina canessa de Valdemoro', alt='Vanessa Vizcaya en la peluquería canina canessa de Valdemoro')
+                      .grid__item-content
+                        h3.grid__item-subtitle
+                          a.grid__item-link.btn.btn-anim(href='canessa.html', title='Más sobre Vanessa Vizcaya, peluquera canina en la peluquería Canessa en Valdemoro')
+                            | #{services.about.btn}
+
+                    .grid__item.theme-fucsia
+                      .grid__item-content
+                        h2.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{services.about.title}
+                        p.grid__item-text
+                          | !{services.about.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                        a.grid__item-link(href='canessa.html', title='Más sobre Vanessa Vizcaya, peluquera canina en la peluquería Canessa en Valdemoro')
+                          | #{services.about.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+            //- ------------------------------------------------------
+            //- (Section 02) DOGS PICS works samples gallery
+            //- ------------------------------------------------------
             .container.container-services.container-doggies
-                .row
-                    .col.s12.headerSection
-                        h1.center-align
-                            | #{doggies.title}
-                        h2.center-align.quotes
-                            i(aria-hidden='true').fa.fa-quote-left
-                            | #{doggies.intro}
-                            i(aria-hidden='true').fa.fa-quote-right
-                .row
-                    .col.s12.m6.l4.xl3
-                        .card
-                            .card-image
-                                img(src='img/doggies/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
-                                span.card-title Yorkshire terrier.
-                    .col.s12.m6.l8.xl9
-                        //- for each loop to load all copies in "locales" json file/s
-                        each skill, i in doggies.skills
-                            p.light !{skill}
-                .row
-                    .col.s12.m6.l8.xl9
-                      //- for each loop to load all copies in "locales" json file/s
-                      each treatment, i in doggies.treatments
-                          p.light !{treatment}
-                    .col.s12.m6.l4.xl3
-                        .card
-                            .card-image
-                                img(src='img/doggies/bichon-maltes-06.jpg', title='Bichón Maltés en pleno deslane', alt='Bichón Maltés en pleno deslane')
-                                span.card-title Yorkshire terrier.
+                //- TODO: remove the following old gallery
+                    .row
+                        .col.s12.headerSection
+                            h1.center-align
+                                | #{doggies.title}
+                            h2.center-align.quotes
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{doggies.intro}
+                                i(aria-hidden='true').fa.fa-quote-right
+                    .row
+                        .col.s12.m6.l4.xl3
+                            .card
+                                .card-image
+                                    img(src='img/doggies/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
+                                    span.card-title Yorkshire terrier.
+                        .col.s12.m6.l8.xl9
+                            //- for each loop to load all copies in "locales" json file/s
+                            each skill, i in doggies.skills
+                                p.light !{skill}
+                    .row
+                        .col.s12.m6.l8.xl9
+                          //- for each loop to load all copies in "locales" json file/s
+                          each treatment, i in doggies.treatments
+                              p.light !{treatment}
+                        .col.s12.m6.l4.xl3
+                            .card
+                                .card-image
+                                    img(src='img/doggies/bichon-maltes-06.jpg', title='Bichón Maltés en pleno deslane', alt='Bichón Maltés en pleno deslane')
+
+                                    span.card-title Yorkshire terrier.
+
                 .row.doggies-gallery
                     .col.s12.m6.l4.xl3
                         .card
