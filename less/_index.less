@@ -75,7 +75,7 @@ video {
   // Caption (main) Title
   h1, h2 {
     font-family: "champagne", sans-serif;
-    font-size: 3em;
+    .main-text(3em, 600, .06em);
     line-height: 60px;
     // Responsive behaviour
     @media (max-width: 600px) {
@@ -158,5 +158,38 @@ video {
       opacity: 1;
       transform: translate(000px);
     }
+  }
+}
+
+/* -- Info Panel box to enable Promotions -- */
+.info-box {
+  display: none;
+  max-width: 240px;
+  height: auto;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  // (intro) Animation
+  -webkit-animation-name: fadeInDelay;
+  animation-name: fadeInDelay;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  // Responsive behaviour
+  @media (min-height: 667px) {
+    display: block;
+  }
+
+  .info-box-text {
+    padding: 5px 5px 5px 10px;
+    font-family: "Roboto", sans-serif;
+    .main-text(18px, 400, .03em);
+  }
+  .info-box-link {
+    padding: 5px;
+    text-align: center;
   }
 }

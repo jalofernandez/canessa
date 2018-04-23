@@ -220,6 +220,7 @@ p {
 /* TODO: remove it asap! ("position: fixed" works badly in iOS Safari browser) */
 // to apply Fixed position (CSS property)
 .th-fixed {
+  padding: 0;
   background-color: @color-white;
   position: fixed;
   top: 62px;
@@ -323,12 +324,11 @@ p {
 
   // main (view) Title
   h1, h3 {
-    font-family: "champagne", sans-serif;
-    padding-top: 50px;
     margin-bottom: 0;
-    font-size: 2.92rem;
+    padding-top: 50px;
+    font-family: "champagne", sans-serif;
+    .main-text(2.92rem, 600, .06em);
     color: @color-main !important;
-    font-weight: bolder;
     text-transform: initial;
     // subtitles near to main (view) title
     span {
@@ -546,30 +546,11 @@ p {
         }
 
         i {
-          padding-right: 10px;
+          padding-right: 15px;
         }
         // Responsive behaviour
         @media (max-width: 420px) {
           font-size: 1em;
-        }
-
-        // (hover effect) nav link line animation
-        &::before {
-          content: '';
-          position: absolute;
-          background: currentColor;
-          width: 75%;
-          height: 1px;
-          bottom: 0;
-          transform-origin: 0% 50%;
-          transform: scale3d(0,1,1);
-          opacity: 0;
-          transition: all 0.25s;
-          transition-property: opacity, transform;
-        }
-        &:hover::before {
-          opacity: 1;
-          transform: scale3d(1,1,1);
         }
       }
     }

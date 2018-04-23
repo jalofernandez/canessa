@@ -1,0 +1,156 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        //- TODO: (SEO) check Title, keywords & Description Metatags to imrpove SEO
+        title Antiparasitarios en la peluquería canina Canessa Valdemoro
+        meta(name='description', content='Servicios de la Peluquería canina Canessa. Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tarifa especial para autolavados además de un completo SPA canino. Tenemos pienso, collares, arneses, juguetes y complementos.')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluquería para perros, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, Parla, mascotactiva')
+        link(rel='canonical', href='https://peluqueriacanessa.com/servicios/' hreflang='es')
+        link(rel='alternate', href='https://peluqueriacanessa.com/servicios#!' hreflang='es')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+        //- Structured Data (Schema)
+        include schema/schema-services
+
+    body.bg-paper
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#services') Past Exhibitions
+                                li
+                                  a.wineh(href='#services', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa', alt='Logotipo de la peluquería canina Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a.address(href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa de Valdemoro, Madrid') #{common.titles.services}
+                                li
+                                    a.address(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                li
+                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+        //- ----------------------------------------------------------------
+        //- 01. COLLARS, NECKLACES, PIPETTES... ANTIBUGS!! (text & images)
+        //- ----------------------------------------------------------------
+        #services.scrollspy.body-container
+            main
+                .grid
+                    //- (row 01) INTRO - "¡la peeeena!"
+                    //- ------------------------------------------------------
+                    .grid__item.theme-transparent
+                      .grid__item-content
+                        h1.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{antiparasitos.intro.title}
+                        p.grid__item-text
+                          | !{antiparasitos.intro.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                        a.grid__item-link(href='peluqueria.html', title='Servicios de peluquería canina ofrecidos por la peluquería Canessa')
+                          | #{antiparasitos.intro.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/antiparasitos/atiparasitarios_peluqueria-canina-canessa.jpg', title='Productos Antiparasitarios en la peluquería canina Canessa de Valdemoro', alt='Productos Antiparasitarios en la peluquería canina Canessa de Valdemoro')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                    | #{antiparasitos.intro.btn}
+
+                    //- (row 02) Collars SCALIBOR
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/antiparasitos/scalibor-collar-atiparasitos_peluqueria-canina-canessa.jpg', title='Scalibor collares antiparasitarios en la peluquería canina Canessa', alt='Scalibor collares antiparasitarios en la peluquería canina Canessa')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                    | #{antiparasitos.scalibor.btn}
+
+                    .grid__item.theme-transparent
+                        .grid__item-content
+                            h1.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{antiparasitos.scalibor.title}
+                            p.grid__item-text
+                                | !{antiparasitos.scalibor.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                | #{antiparasitos.scalibor.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    //- (row 03) Collars FLETCARE
+                    //- ------------------------------------------------------
+                    .grid__item.theme-blue
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{antiparasitos.fletcollars.title}
+                            p.grid__item-text
+                                | !{antiparasitos.fletcollars.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                | #{antiparasitos.fletcollars.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/antiparasitos/fletcare-collar-atiparasitos_peluqueria-canina-canessa.jpg', title='Fletcare collares antiparasitarios en la peluquería canina Canessa', alt='Fletcare collares antiparasitarios en la peluquería canina Canessa')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                    | #{antiparasitos.fletcollars.btn}
+
+                    //- (row 04) pipettes FLETCARE
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/antiparasitos/fletcare-pipetas-atiparasitos_peluqueria-canina-canessa.jpg', title='Fletcare pipetas antiparasitarias en la peluquería canina Canessa', alt='Fletcare pipetas antiparasitarias en la peluquería canina Canessa')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                    | #{antiparasitos.fletpipettes.btn}
+
+                    .grid__item.theme-fucsia
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{antiparasitos.fletpipettes.title}
+                            p.grid__item-text
+                                | !{antiparasitos.fletpipettes.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro')
+                                | #{antiparasitos.fletpipettes.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+        //- footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts

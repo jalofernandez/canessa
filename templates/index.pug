@@ -34,6 +34,14 @@ html(lang='es')
             a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.btn_auto}
             //- a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.btn_pienso}
 
+        //- (2) Info Panel box to enable Promotions
+        .info-box
+            .info-box-text
+                | !{antiparasitos.advise}
+            .info-box-link
+                a.btn.btn-anim(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa')
+                    | #{common.titles.antiparasitarios}
+
         //- main footer NAVBAR (common) in all views
         include includes/navbar
 

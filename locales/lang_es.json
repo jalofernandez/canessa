@@ -25,6 +25,8 @@
       "contact": "Contacto",
       "schedule": "Horario",
       "peluqueria": "Peluquería",
+      "services": "servicios",
+      "antiparasitarios": "Antiparasitarios",
       "food": "Piensos",
       "legal": "Legal",
       "mascota": "Mascotactiva",
@@ -86,6 +88,33 @@
       "paragraph": "Tras 12 años de experiencia y formación continuada, Canessa asume la dirección y gerencia de su propio salón de peluquería canina en la localidad madrileña de Valdemoro para poder seguir desarrollándose en su pasión por la belleza animal...",
       "link": "Saber más sobre mi",
       "btn": "Saber más sobre mi"
+    }
+  },
+  "antiparasitos": {
+    "advise": "¡Campaña de <b>antiparasitos</b> para mascotas!",
+    "intro": {
+      "title": "¿No me vas a proteger?",
+      "paragraph": "En las estaciones del año caludrosas proliferan los insectos y mosquitos que <b>transmiten enfermedades a nuestras mascotas</b>. No hace falta comentar que la salud de nuestros amigos peludos es lo principal así que... ¡<b>Protégelos</b>  de insectos voladores y parásitos externos con los <b>mejores productos del mercado</b>!",
+      "link": "¿Dónde comprar nuestros antiparasitarios?",
+      "btn": "¿Dónde encontrarnos?"
+    },
+    "scalibor": {
+      "title": "Collares antiparásitos de Scalibor",
+      "paragraph": "El collar Scalibor protege a tu perro de la <b>leishmaniasis</b> gracias a que funciona como un <b>potente repelente contra los mosquitos</b> flebotomos. Su innovador diseño libera la deltametrina de manerra constante que se expande por toda la superficie del cuerpo. También es efectivo <b>contra pulgas y garrapatas</b>.",
+      "link": "¿Dónde comprar nuestros collares Scalibor?",
+      "btn": "¿Dónde encontrarnos?"
+    },
+    "fletcollars": {
+      "title": "Collares antiparásitos de Fletcare",
+      "paragraph": "<b>Collar Natural sin insecticida</b> protector contra parásitos externos (mosquitos, pulgas, garrapatas, etc..). Puede <b>utilizarse en cachorros</b> a partir de 3 meses de edad. Producto nacional del laboratorio veterinario Farbiol de Salamanca.",
+      "link": "¿Dónde comprar nuestros collares Fletcare?",
+      "btn": "¿Dónde encontrarnos?"
+    },
+    "fletpipettes": {
+      "title": "Pipetas antiparásitos de Fletcare",
+      "paragraph": "<b>Repelente natural</b> ahuyentador de mosquitos, pulgas y garrapatas <b>para perros y gatos</b>. Para razas grandes o muy grandes, administrar el contenido completo de una pipeta pero para razas medianas y pequeñas, administrar sólo la mitad del contenido de una pipeta.",
+      "link": "¿Dónde comprar nuestros pipetas Fletcare?",
+      "btn": "¿Dónde encontrarnos?"
     }
   },
   "not_found": {
@@ -181,14 +210,15 @@
     "title": "Mapa del sitio web",
     "whatis": "Listado de todos los enlaces internos disponibles en este sitio web",
     "links": [
-      "<a class='main-link' href='index.html' title='Volver a la página de Inicio de la peluquería canina Canessa'><i class='fa fa-home'></i> Inicio</a>",
-      "<a href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro'><i class='fa fa-info-circle'></i> Nuestros servicios</a>",
-      "<a href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa'><i class='fa fa-scissors'></i> Peluquería</a>",
-      "<a href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional'><i class='fa fa-bath'></i> Autolavado</a>",
-      "<a href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa'><i class='fa fa-cutlery'></i> Pienso y alimentación canina</a>",
-      "<a href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa'><i class='fa fa-paw'></i> Mascotactiva</a>",
-      "<a href='contacto.html', title='Contacta con la peluquería canina Canessa'><i class='fa fa-address-card-o'></i> Contacto</a>",
-      "<a href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa'><i class='fa fa-gavel'></i> Términos legales</a>"
+      "<a class='main-link' href='index.html' title='Volver a la página de Inicio de la peluquería canina Canessa'><i class='fa fa-home'></i>Inicio</a>",
+      "<a href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro'><i class='fa fa-info-circle'></i>Nuestros servicios</a>",
+      "<a href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa'><i class='fa fa-scissors'></i>Peluquería</a>",
+      "<a href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional'><i class='fa fa-bath'></i>Autolavado</a>",
+      "<a href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa'><i class='fa fa-cutlery'></i>Pienso y alimentación canina</a>",
+      "<a href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa'><i class='fa fa-bug'></i>Antiparasitarios</a>",
+      "<a href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa'><i class='fa fa-paw'></i>Mascotactiva</a>",
+      "<a href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro'><i class='fa fa-address-card-o'></i>Contacto</a>",
+      "<a href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa'><i class='fa fa-gavel'></i>Términos legales</a>"
     ]
   },
   "legal": {

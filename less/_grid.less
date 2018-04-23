@@ -78,8 +78,8 @@ main {
 
 // (grid) top main Title in all Text blocks
 .grid__item-title {
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-family: "champagne", sans-serif;
+  .main-text(2.5rem, 600, .06em);
   line-height: 1;
   margin: 2rem 0 0 0;
   color: var(--item-title);
@@ -262,6 +262,15 @@ main {
   --item-title: @color-white;
   --item-subtitle: @color-white;
   --item-text: @color-white;
+  // to overwrite BTN common values by default
+  + .theme-bg {
+    .btn {
+      background-color: @color-blue;
+      &:hover {
+        background-color: darken(@color-blue, 15%);
+      }
+    }
+  }
 }
 
 .theme-mascotactiva {
