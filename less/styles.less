@@ -220,7 +220,6 @@ p {
 /* TODO: remove it asap! ("position: fixed" works badly in iOS Safari browser) */
 // to apply Fixed position (CSS property)
 .th-fixed {
-  padding: 0;
   background-color: @color-white;
   position: fixed;
   top: 62px;
@@ -324,7 +323,7 @@ p {
 
   // main (view) Title
   h1, h3 {
-    margin-bottom: 0;
+    argin-bottom: 0;
     padding-top: 50px;
     font-family: "champagne", sans-serif;
     .main-text(2.92rem, 600, .06em);
@@ -391,7 +390,7 @@ p {
   }
 
   p {
-    .common-text();
+    .common-text(@weight: 400);
     &:first-child {
       margin-top: 0;
     }
