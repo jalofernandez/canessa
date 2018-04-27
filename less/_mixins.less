@@ -42,6 +42,22 @@
   transform: translateX(-50%);
 }
 
+.flexbox(@flex-direction: row, @flex-wrap: nowrap, @justify-content: center, @align-items: flex-start) {
+  display: flex;
+  flex-direction: @flex-direction;
+  flex-wrap: @flex-wrap;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+.btn-call-to-action(@bg-color: @fucsia-opacity, @color: @color-dark) {
+  background-color: @bg-color;
+  font-family: "Roboto", sans-serif;
+  .main-text(18px, 400, .03em);
+  color: @color;
+  text-transform: inherit;
+}
+
 .card-section() {
   margin: 0 auto 80px;
   padding: 16px;

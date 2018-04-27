@@ -18,7 +18,7 @@ html(lang='es')
         include schema/schema-index
         
     body
-        //- (1) VIDEO :: FullBackgroundVideo
+        //- (01) VIDEO :: FullBackgroundVideo
         video#bgvid(poster='img/slider/afgano.jpg', title='Servicios ofrecidos en la peluquería canina Canessa de Valdemoro', playsinline='', autoplay='', muted='', loop='')
           //- WCAG general accessibility recommendation is that media such as background video play through only once.
           //- Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button
@@ -34,13 +34,15 @@ html(lang='es')
             a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.btn_auto}
             //- a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.btn_pienso}
 
-        //- (2) Info Panel box to enable Promotions
+        //- (02) Info Panel box to enable Promotions
         .info-box
             .info-box-text
-                | !{antiparasitos.advise}
+                .info-box-text-img
+                .info-box-text-copy
+                    | !{antiparasitarios.advise}
             .info-box-link
                 a.btn.btn-anim(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa')
-                    | #{common.titles.antiparasitarios}
+                    | #{antiparasitarios.cta}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

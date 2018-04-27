@@ -40,15 +40,33 @@ html(lang='es')
                         .col.m9.offset-m3
                             ul.right.navContact.hide-on-med-and-down
                                 li
-                                    a.address(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                    a(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
                                 li
-                                    a.address(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                    a(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
                                 li
-                                    a.address(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                    a(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
                                 li
-                                    a.address(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
+                                    a(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
                                 li
-                                    a.address(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+                                    a.dropdown-button(href='#', data-target='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
+                                    //- Dropdown Structure with more nav links
+                                    ul#more-services.dropdown-content
+                                        li
+                                            a(href='#!') one
+                                        li
+                                            a(href='#!') two
+                                        li.divider(tabindex='-1')
+                                        li
+                                            a(href='#!') three
+                                        li
+                                            a(href='#!')
+                                                i.material-icons view_module
+                                                | four
+                                        li
+                                            a(href='#!')
+                                                i.material-icons cloud
+                                                | five
+
         //- ----------------------------------------------------------------
         //- 01. SERVICES grid GALLERY (text & images)
         //- ----------------------------------------------------------------

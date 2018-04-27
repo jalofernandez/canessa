@@ -113,12 +113,11 @@ body {
 
       li {
         a {
-          text-transform: none;
-          color: @color-white;
-          font-size: 14px;
-          letter-spacing: .05em;
           padding-right: 10px;
           padding-left: 10px;
+          .main-text(1.1rem, 400, .02em);
+          color: @color-white;
+          text-transform: none;
         }
         &:hover {
           a {
@@ -138,10 +137,6 @@ body {
         &.drinks {
           display: none;
         }
-      }
-
-      &.navContact li a.address {
-        text-transform: uppercase;
       }
     }
   }
@@ -457,7 +452,7 @@ body {
         0 0 0 0 rgba(0, 0, 0, 0.0) !important;
         border-radius: 0%;
         line-height: 0;
-        padding: 20px;
+        padding: 15px;
         text-align: center;
 
         i {

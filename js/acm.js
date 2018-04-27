@@ -4,16 +4,16 @@
  * Replace these aliases with '.on()' to register listeners instead.
  */
 
-//- js initiation:
+//- (js - jQuery) initializations:
 $(document).ready(function(){
 
-    //- for a MODAL (dialogs) triggers:
+    //- MODAL (dialogs) triggers:
     $('.modal-trigger').leanModal();
 
-    //- for a COLLAPSE MOBILE NAV:
+    //- COLLAPSE MOBILE NAV initialization:
     $(".button-collapse").sideNav();
 
-    //- for a DROPDOWNS:
+    //- DROPDOWNS initialization:
     $('.dropdown-button').dropdown({
         inDuration: 300,
         outDuration: 225,
@@ -22,8 +22,9 @@ $(document).ready(function(){
         gutter: 200, // Spacing from edge
         belowOrigin: false // Displays dropdown below the button
     });
+    $('.dropdown-trigger').dropdown();
 
-    //- for TABS:
+    //- TABS initialization:
     $('ul.tabs').tabs();
 
     //- (custom js) script to set current Year in (common) Footer

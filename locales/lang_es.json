@@ -31,7 +31,8 @@
       "legal": "Legal",
       "mascota": "Mascotactiva",
       "dogwash": "Autolavado",
-      "sitemap": "Sitemap"
+      "sitemap": "Sitemap",
+      "more": "Más..."
     },
     "close": "Cerrar"
   },
@@ -90,8 +91,9 @@
       "btn": "Saber más sobre mi"
     }
   },
-  "antiparasitos": {
-    "advise": "¡Campaña de <b>antiparasitos</b> para mascotas!",
+  "antiparasitarios": {
+    "advise": "¡Campaña de <b>antiparasitarios</b> para mascotas!",
+    "cta": "Ver Antiparasitarios",
     "intro": {
       "title": "¿No me vas a proteger?",
       "paragraph": "En las estaciones del año caludrosas proliferan los insectos y mosquitos que <b>transmiten enfermedades a nuestras mascotas</b>. No hace falta comentar que la salud de nuestros amigos peludos es lo principal así que... ¡<b>Protégelos</b>  de insectos voladores y parásitos externos con los <b>mejores productos del mercado</b>!",
