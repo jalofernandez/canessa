@@ -45,44 +45,106 @@ html(lang='es')
                     li
                       a(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
                     li
+                      a(href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa de Valdemoro, Madrid') #{common.titles.services}
+                    li
                       a(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
                     li
                       a(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
                     li
                       a(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
         //- ----------------------------------------------------------------
-        //- 01. SERVICES & FULL IMG GALLERY
+        //- 01. MASCOTACTIVA por Rafa Cros
         //- ----------------------------------------------------------------
         #mascotactiva.row.scrollspy
-            .col.s12.headerSection
-                h1.center-align
-                    | #{mascotactiva.title}
-                h2.center-align.quotes
-                    i(aria-hidden='true').fa.fa-quote-left
-                    | !{mascotactiva.intro}
-                    i(aria-hidden='true').fa.fa-quote-right
-        .container.container-mascotactiva
-            .section
-                .row
-                  .col.s12.m12
-                      a.btn.btn-anim.btn-mascotactiva(href='tel:636515206', title='Teléfono de contacto de Mascotactiva')
-                          i.fa.fa-phone
-                          | #{mascotactiva.phone}
-                      a.btn.btn-anim.btn-mascotactiva(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
-                          i.fa.fa-envelope
-                          | #{mascotactiva.email}
-                      a.btn.btn-anim.btn-mascotactiva(href='https://www.youtube.com/channel/UC4LoDR63NJGdqS48_1FGReg/featured', title='Canal de Youtube de Mascotactiva', target='_blank')
-                          i.fa.fa-youtube
-                          | #{mascotactiva.youtube}
-                .row
-                    .col.s12.m6.l6.xl4
-                        .card
-                            .card-image
-                                img(src='img/mascotactiva/mascotactiva-logo_small.png', title='Logotipo de Mascotactiva por Rafa Cros', alt='Logotipo de Mascotactiva por Rafa Cros')
-                    .col.s12.m6.l6.xl8
-                        .card
-                            .video-container
-                                iframe(width='560', height='315', src='https://www.youtube.com/embed/pjydkOMAPdw', frameborder='0', allowfullscreen='')
+            main
+                .grid
+                    //- (row 01) INTRO
+                    //- ------------------------------------------------------
+                    .grid__item.theme-mascotactiva
+                      .grid__item-content
+                        h1.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{mascotactiva.intro.title}
+                        p.grid__item-text
+                          | !{mascotactiva.intro.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                        a.grid__item-link(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                          | #{mascotactiva.intro.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg.theme-mascotactiva
+                        .grid__item-img
+                            img(src='img/mascotactiva/mascotactiva-pastor-aleman-rafa-cros.jpg', title='Pastor alemán descansando tras un entrenamiento de Mascotactiva', alt='Pastor alemán descansando tras un entrenamiento de Mascotactiva')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                                    | #{mascotactiva.intro.btn}
+
+                    //- (row 02) PASEOS y ENTRENAMIENTOS
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg.theme-mascotactiva
+                        .grid__item-img
+                            img(src='img/mascotactiva/rafa-cros-mascotactiva-peluqueria-canina-canessa.jpg', title='Rafa Cros de Mascotactiva paseando perros', alt='Rafa Cros de Mascotactiva paseando perros')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                                    | #{mascotactiva.paseos.btn}
+
+                    .grid__item.theme-mascotactiva
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{mascotactiva.paseos.title}
+                            p.grid__item-text
+                                | !{mascotactiva.paseos.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                                | #{mascotactiva.paseos.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    //- (row 03) GESTIÓN EMOCIONAL
+                    //- ------------------------------------------------------
+                    .grid__item.theme-mascotactiva
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{mascotactiva.emocional.title}
+                            p.grid__item-text
+                                | !{mascotactiva.emocional.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='https://www.youtube.com/channel/UC4LoDR63NJGdqS48_1FGReg/featured', title='Canal de Youtube de Mascotactiva', target='_blank')
+                                | #{mascotactiva.emocional.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg.theme-mascotactiva
+                        .grid__item-img
+                            img(src='img/mascotactiva/gestion-emocional-mascotactiva-peluqueria-canina-canessa.jpg', title='Gestión emocional para mascotas en Mascotactiva', alt='Gestión emocional para mascotas en Mascotactiva')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='https://www.youtube.com/channel/UC4LoDR63NJGdqS48_1FGReg/featured', title='Canal de Youtube de Mascotactiva', target='_blank')
+                                    | #{mascotactiva.emocional.btn}
+
+                    //- (row 04) GUARDERÍA CANINA
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg.theme-mascotactiva
+                        .grid__item-img
+                            img(src='img/mascotactiva/guarderia-canina-mascotactiva-peluqueria-canina-canessa.jpg', title='Servicio de guardería canina por Rafa Cros de Mascotactiva', alt='Servicio de guardería canina por Rafa Cros de Mascotactiva')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                                    | #{mascotactiva.guarderia.btn}
+
+                    .grid__item.theme-mascotactiva
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{mascotactiva.guarderia.title}
+                            p.grid__item-text
+                                | !{mascotactiva.guarderia.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                                | #{mascotactiva.guarderia.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
                                     
         //- main footer NAVBAR (common) in all views
         include includes/navbar

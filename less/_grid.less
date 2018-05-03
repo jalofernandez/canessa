@@ -222,17 +222,6 @@ main {
 
 /* -- (grid) color THEMES -- */
 
-// to apply in IMG blocks
-.theme-bg {
-  --item-bg: rgba(0,0,0,0);
-  --item-link: #fff;
-  --item-link-hover: #fff;
-  --item-meta: #fff;
-  --item-title: #fff;
-  --item-subtitle: #fff;
-  --item-text: #fff;
-}
-
 // to apply in TEXT blocks
 .theme-transparent {
   --item-bg: transparent;
@@ -254,7 +243,7 @@ main {
   --item-text: @color-white;
 }
 
-.theme-blue {
+.theme-blue:not(.theme-bg) {
   --item-bg: @color-blue;
   --item-link: #d7f2fe;
   --item-link-hover: @color-white;
@@ -262,18 +251,9 @@ main {
   --item-title: @color-white;
   --item-subtitle: @color-white;
   --item-text: @color-white;
-  // to overwrite BTN common values by default
-  + .theme-bg {
-    .btn {
-      background-color: @color-blue;
-      &:hover {
-        background-color: darken(@color-blue, 15%);
-      }
-    }
-  }
 }
 
-.theme-mascotactiva {
+.theme-mascotactiva:not(.theme-bg) {
   --item-bg: @color-white;
   --item-link: @grey-mascotactiva;
   --item-link-hover: darken(@grey-mascotactiva, 15%);
@@ -281,8 +261,27 @@ main {
   --item-title: @color-mascotactiva;
   --item-subtitle: @color-mascotactiva;
   --item-text: @color-text;
+}
+
+// to apply in IMG blocks
+.theme-bg {
+  --item-bg: rgba(0,0,0,0);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
   // to overwrite BTN common values by default
-  + .theme-bg {
+  &.theme-blue {
+    .btn {
+      background-color: @color-blue;
+      &:hover {
+        background-color: darken(@color-blue, 15%);
+      }
+    }
+  }
+  &.theme-mascotactiva {
     .btn {
       background-color: @color-mascotactiva;
       color: @black-mascotactiva;

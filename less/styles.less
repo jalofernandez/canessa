@@ -85,6 +85,11 @@ p {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 
+  // to overwrite value by default
+  &.scrollspy {
+    margin-bottom: 0;
+  }
+
   // each "col" group (Materialize)
   .col {
     -webkit-animation-name: fadeIn;
@@ -274,7 +279,7 @@ p {
 
 /* -- (custom) BUTTONS ------------------------------------------ */
 
-.btn-mascotactiva {
+.btn-custom {
   width: 100%;
   margin-top: 20px;
   text-transform: inherit;
@@ -488,20 +493,6 @@ p {
   }
 }
 
-/* -- (page) AUTOLAVADO ------------------------------------------ */
-
-#autolavado {
-  .headerSection {
-    h1 {
-      color: @color-white !important; // overwrite
-    }
-  }
-
-  > h5 {
-    .common-text();
-  }
-}
-
 /* -- (page) ERROR (404) ------------------------------------------ */
 
 #not-found {
@@ -605,12 +596,6 @@ p {
       }
     }
   }
-}
-
-/* -- (page) MASCOTACTIVA --------------------------------------- */
-
-.container-mascotactiva {
-  margin-bottom: 50px;
 }
 
 /* -- (page) CONTACT --------------------------------------------- */

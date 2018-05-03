@@ -16,7 +16,7 @@ html(lang='es')
         //- (Schema)
         include schema/schema-autolavado
 
-    body.bg-fucsia
+    body.bg-paper
         //- ----------------------------------------------------------------
         //- 00. TOP NAV BAR "Sections & Contact"
         //- ----------------------------------------------------------------
@@ -45,6 +45,8 @@ html(lang='es')
                     li
                       a(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
                     li
+                      a(href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa de Valdemoro, Madrid') #{common.titles.services}
+                    li
                       a(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
                     li
                       a(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
@@ -54,29 +56,99 @@ html(lang='es')
         //- 01. AUTOLAVADO
         //- ----------------------------------------------------------------
         #autolavado.row.scrollspy
-            .col.s12.headerSection
-                h1.center-align
-                    | #{autolavado.title}
-                h2.center-align.quotes
-                    i(aria-hidden='true').fa.fa-quote-left
-                    | !{autolavado.intro}
-                    i(aria-hidden='true').fa.fa-quote-right
-        .container.container-with-pic
-            .section
-                .row
-                    .col.s12.m6.l6.xl4
-                        img.artwork(src='img/autolavado/dog-wash.svg', title='Bañera hidráulica de altura regulable', alt='Bañera hidráulica de altura regulable')
-                        h5 !{autolavado.tips.bath}
-                    .col.s12.m6.l6.xl8
-                        img.artwork(src='img/autolavado/dryer-shampoo.svg', title='Secadores y champú disponibles', alt='Secadores y champú disponibles')
-                        h5 !{autolavado.tips.tools}
-                .row
-                    .col.s12.m6.l6.xl4
-                        img.artwork(src='img/autolavado/lovely-home.svg', title='Evitar ensuciar tu hogar', alt='Evitar ensuciar tu hogar')
-                        h5 !{autolavado.tips.advantages}
-                    .col.s12.m6.l6.xl8
-                        img.artwork(src='img/autolavado/professional.svg', title='Ofrecemos ayuda profesional', alt='Ofrecemos ayuda profesional')
-                        h5 !{autolavado.tips.happyness}
+            main
+                .grid
+                    //- (row 01) INTRO
+                    //- ------------------------------------------------------
+                    .grid__item.theme-fucsia
+                      .grid__item-content
+                        h1.grid__item-title.grid__item-title--small
+                          i(aria-hidden='true').fa.fa-quote-left
+                          | #{autolavado.intro.title}
+                        p.grid__item-text
+                          | !{autolavado.intro.paragraph}
+                          i(aria-hidden='true').fa.fa-quote-right
+                      //-
+                        a.grid__item-link(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                          | #{autolavado.intro.link}
+                          i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/peluqueria/baño-precorte-peluqueria-canina-canessa.jpg', title='Proceso de Autolavado en la peluquería canina Canessa', alt='Proceso de Autolavado en la peluquería canina Canessa')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='tel:912480430', title='Teléfono de reserva de Autolavado en la peluquería canina Canessa')
+                                    | #{autolavado.intro.btn}
+
+                    //- (row 02) BAÑERA HIDRÁULICA
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/autolavado/vivog-hidraulico-autolavado-peluqueria-canina-canessa.jpg', title='Bañera hidráulica regulable en altura en la peluquería canina Canessa', alt='Bañera hidráulica regulable en altura en la peluquería canina Canessa')
+                    //-
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                                    | #{autolavado.bathpool.btn}
+
+                    .grid__item.theme-fucsia
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{autolavado.bathpool.title}
+                            p.grid__item-text
+                                | !{autolavado.bathpool.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                                | #{autolavado.bathpool.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    //- (row 03) SECADO
+                    //- ------------------------------------------------------
+                    .grid__item.theme-fucsia
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{autolavado.dry.title}
+                            p.grid__item-text
+                                | !{autolavado.dry.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                        //-
+                            a.grid__item-link(href='https://www.youtube.com/channel/UC4LoDR63NJGdqS48_1FGReg/featured', title='Canal de Youtube de Mascotactiva', target='_blank')
+                                | #{autolavado.dry.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/autolavado/secador-tornado-autolavado-peluqueria-canina-canessa.jpg', title='Expulsador de aire Tornado de la peluquería canina Canessa', alt='Expulsador de aire Tornado de la peluquería canina Canessa')
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='https://www.youtube.com/channel/UC4LoDR63NJGdqS48_1FGReg/featured', title='Canal de Youtube de Mascotactiva', target='_blank')
+                                    | #{autolavado.dry.btn}
+
+                    //- (row 04) ASISTENCIA PROFESIONAL
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/autolavado/asistencia-profesional-autolavado-peluqueria-canina-canessa.jpg', title='Asistencia profesional en el Autolavado de la peluquería canina Canessa', alt='Asistencia profesional en el Autolavado de la peluquería canina Canessa')
+                    //-
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                                    | #{autolavado.assistant.btn}
+
+                    .grid__item.theme-fucsia
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{autolavado.assistant.title}
+                            p.grid__item-text
+                                | !{autolavado.assistant.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                                | #{autolavado.assistant.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

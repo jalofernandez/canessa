@@ -25,7 +25,7 @@
       "contact": "Contacto",
       "schedule": "Horario",
       "peluqueria": "Peluquería",
-      "services": "servicios",
+      "services": "Servicios",
       "antiparasitarios": "Antiparasitarios",
       "food": "Piensos",
       "legal": "Legal",
@@ -119,42 +119,48 @@
       "btn": "¿Dónde encontrarnos?"
     }
   },
-  "not_found": {
-    "title": "Page not found",
-    "why": "Parece que <b class='strong'>la página que buscas no existe</b>. Lo sentimos. Podría ser por alguna de estas causas como...",
-    "suggestions": [
-      "<p class='light'>...Que haya tecleado incorrectamente la dirección URL.</p>",
-      "<p class='light'>...Que haya perdido su conexión a internet.</p>",
-      "<p class='light'>...Que la página esté obsoleta y haya sido eliminada.</p>",
-      "<p class='light'>...Que la página no exista en el idioma que solicita.</p>"
-    ]
-  },
-  "doggies": {
-    "title": "Servicios de peluquería canina",
-    "intro": "La peluquería canina, no es solo una cuestion de estética, sino también de higiene, de salud, y lo más importante, BIENESTAR del animal.",
-    "skills": [
-      "Realizamos desde corte de raza a corte comercial dependiendo del tipo de manto de cada uno. A vuestra disposición los siguientes servicios (cortes según la raza o petición del cliente):",
-      "- TIJERA",
-      "- MÁQUINA",
-      "- STRIPPING",
-      "- TRIMMING"
-    ],
-    "treatments": [
-      "En todos nuestros trabajos y dentro de nuestra tarifa de precio incluimos:",
-      "- LIMPIEZA DE OIDOS",
-      "- VACIADO DE PLANTARES",
-      "- CORTE DE UÑAS",
-      "- VACIADO DE SACOS ANALES"
-    ]
+  "peluqueria": {
+    "intro": {
+      "title": "En la peluquería canina Canessa ...",
+      "paragraph": "... Ponemos todo nuestro empeño y conocimientos en dejar precioso a tu fiel amigo con la <b>mejor atención y el mínimo estrés</b>, dedicándole el tiempo que merece y necesite <b>sin servicios express</b>. Además, siempre incluimos el corte de uñas, la limpieza de plantares, el vaciado de glándulas anales, la limpieza de oídos y la depilación del exceso de vello en el pabellón auditivo."
+    },
+    "tijera": {
+      "title": "Corte a tijera",
+      "paragraph": "Estamos especializados en la técnica de corte a tijera, y queremos demostrarte que siempre <b>se puede sacar más partido al arreglo de tu perro de un modo más artesanal y personalizado</b> como ofrece el uso de la tijera. Somos conocedores de la morfologia y anatomia del perro y siempre arreglamos cada perro de modo personal buscando sacar el máximo para que tu, su dueño, <b>quedes contento con nuestro servicio</b>."
+    },
+    "maquina": {
+      "title": "Corte a máquina",
+      "paragraph": "Cortar a máquina <b>no implica sólo rapar</b> o realizar un trabajo rápido y malo. Hay veces que hay que mantener a raya ciertas zonas problemáticas expendedoras de nudos y se hace necesario el uso de máquina. Queremos demostrarte que un servicio de corte a máquina es <b>también de calidad</b> y no está reñido con un <b>buen precio</b>."
+    },
+    "bath": {
+      "title": "Baño completo de precorte",
+      "paragraph": "El baño regular forma parte de <b>la higiene de nuestras mascotas</b> y su frecuencia depende de la raza pues algunas requieren un mayor mantenimiento que otras. El baño además de mantenerlos limpios y aseados <b>previene la formación de grandes nudos</b>, pues pueden dar lugar a la <b>aparición de hongos y enfermedades dérmicas</b>, además de ser molestos para nuestra mascota."
+    },
+    "stripping": {
+      "title": "Stripping",
+      "paragraph": "Los perros de pelo duro tienen varias capas de pelo y subpelo: una capa joven en maduración y una capa de cobertura o madurada. En su estado salvaje lo irían perdiendo con las ramas o zarzas, pero al no ser así se lo tenemos que renovar nosotros mismos. La técnica más común conocida como <b>trimming o stripping es arrancar la capa vieja o larga para dejar crecer la corta</b>, ya que salen todas de un mismo poro. Esta técnica de arrancado mantiene los colores en su tono natural y la textura de pelo duro."
+    }
   },
   "autolavado": {
-    "title": "Servicio de autolavado",
-    "intro": "Nosotros ponemos las <b class='stronger'>instalaciones</b> y tú tu <b class='stronger'>mascota</b>.",
-    "tips": {
-      "bath": "No importa el tamaño de tu mascota porque tenemos una <b class='stronger'>bañera hidráulica</b> de altura regulable para <b class='stronger'>facilitar tu trabajo</b> y así <b class='stronger'>evitar lesiones o dolores musculares</b>.",
-      "tools": "A vuestra disposición tenéis <b class='stronger'>champú</b>, <b class='stronger'>secadores</b> y expulsadores de aire así como <b class='stronger'>toallas</b>.",
-      "advantages": "Bañas tú mismo a tu mascota <b class='stronger'>evitándote las molestias</b> derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores...",
-      "happyness": "Para cualquier consulta o duda durante el proceso tendrás a nuestros <b class='stronger'>profesionales a tu servicio</b>."
+    "intro": {
+      "title": "Servicio de autolavado",
+      "paragraph": "Nosotros ponemos las <b>instalaciones</b> y tú tu <b>mascota</b>. Bañas tú mismo a tu mascota <b>evitándote las molestias</b> derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores... <b>¡Y al mejor precio: 1 hora completa por 10€!</b> (nada de express con monedas por minutos para trabajar con prisas y agobios).",
+      "btn": "Pide cita: 91 248 04 30"
+    },
+    "bathpool": {
+      "title": "Tenemos bañera hidráulica",
+      "paragraph": "No importa el tamaño de tu mascota porque tenemos una <b>bañera hidráulica</b> de altura regulable para <b>facilitar tu trabajo</b> y así <b>evitar lesiones o dolores musculares</b>. Además no es de aluminio porque <b>evitamos las supoerficies rígidas e incómodas</b> para tu amigo peludo.",
+      "link": "Reserva Autolavado en el 91 248 04 30"
+    },
+    "dry": {
+      "title": "Secado veloz pero eficaz",
+      "paragraph": "Es fundamental <b>dejar bien seca a tu mascota tras el baño</b> y antes de sacarle a la cale para evitar infecciones, dermatitis, o enfermedades respiratorias. Por eso en la peluquería canina Canessa tenéis a vuestra disposición <b>champú</b>, <b>secadores</b> y expulsadores de aire así como <b>toallas</b>. También disponemos de cabina de secado.",
+      "btn": "Reserva Autolavado: 91 248 04 30"
+    },
+    "assistant": {
+      "title": "Asistencia profesional",
+      "paragraph": "Para cualquier consulta o duda durante el proceso de Autolavado tendrás a nuestros <b>profesionales a tu servicio</b>. Ellos te aconsejarán y te asesorarán en caso de ser necesario para que tu mascota quede impecable y tú contento.",
+      "link": "Pide cita: 91 248 04 30"
     }
   },
   "food": {
@@ -198,11 +204,33 @@
     }
   },
   "mascotactiva": {
-    "title": "Paseamos y entrenamos a su mascota",
-    "intro": "Servicio exclusivo de: guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional por <b class='stronger'>Rafa Cros</b>.",
     "phone": "636 515 206",
     "email": "mascotactiva@hotmail.com",
-    "youtube": "Canal de Youtube"
+    "youtube": "Canal de Youtube",
+    "intro": {
+      "title": "Paseamos y entrenamos a su mascota",
+      "paragraph": "La relación que tenemos con nuestra mascota es muy importante. Desde Mascotactiva <b>enseñaremos a su compañero peludo</b> a utilizar sus capacidades cognitivas, a concentrarse, a auto-controlarse y, en general, a desarrollarse de manera que <b>haga mucho más grata la convivencia con nosotros</b> mediante una combinación de técnicas mixtas entre el adiestramiento tradicional y el adiestramiento en positivo de la mano de <b>Rafa Cros</b>.",
+      "link": "Llámanos al 636 515 206",
+      "btn": "Llámanos al 636 515 206"
+    },
+    "paseos": {
+      "title": "Paseos y entrenamientos",
+      "paragraph": "En <b>nuestros paseos tu mascota aprenderá</b> a caminar de una forma tranquila junto a su tutor, a no tirar de la correa, a acudir cuando se le llama y a permanecer quieto en la posición de sentado o tumbado cuando se le solicita. La programación de las sesiones puede variar en función de las necesidades de tu perro y las metas que quieras conseguir. También podemos incorporar elementos al adiestramiento que te puedan interesar o <b>tratar algún problema de conducta específico</b> (ladridos, ansiedad por separación, higiene, etc.)",
+      "link": "mascotactiva@hotmail.com",
+      "btn": "mascotactiva@hotmail.com"
+    },
+    "emocional": {
+      "title": "Gestión emocional",
+      "paragraph": "Existen perros con problemas de miedo, fobias, ansiedad, estrés, agresividad, reactividad, falta de empatía o carencia de habilidades sociales pero todos estos problemas tienen solución. En Mascotactiva usamos <b>técnicas y protocolos de trabajo para mejorar la conducta</b> a través de juegos de <b>estimulación mental y olfativos</b>, de la inteligencia y memoria olfativa de los perros <b>mejorando la conexión emocional</b> de los mismos con sus dueños y su entorno.",
+      "link": "Visita nuestro canal de Youtube",
+      "btn": "Canal de Youtube: Mascotactiva"
+    },
+    "guarderia": {
+      "title": "Guardería canina",
+      "paragraph": "¿Tienes que viajar y no puedes llevar a tu perro contigo? No te preocupes, Rafa Cros nuestro cuidador de Mascotactiva, se encargará de tu perro en su propia casa, ofreciendo así un <b>servicio más cálido y familiar</b> que las frías jaulas de una residencia canina donde cada animal recibe un <b>trato personalizado de un profesional</b>.",
+      "link": "Llámanos al 636 515 206",
+      "btn": "Llámanos al 636 515 206"
+    }
   },
   "contact": {
     "title": "Contacta con nosotros",
@@ -276,6 +304,16 @@
         "Para realizar cualquier tipo de observación respecto a posibles incumplimientos de los derechos de propiedad intelectual o industrial, así como sobre cualquiera de los contenidos del sitio web, puede hacerlo a través del siguiente correo electrónico: <a href='mailto:van.vizcaya@gmail.com' title='Escribir a Peluquería Canessa'>van.vizcaya@gmail.com</a>"
       ]
     }
+  },
+  "not_found": {
+    "title": "Page not found",
+    "why": "Parece que <b class='strong'>la página que buscas no existe</b>. Lo sentimos. Podría ser por alguna de estas causas como...",
+    "suggestions": [
+      "<p class='light'>...Que haya tecleado incorrectamente la dirección URL.</p>",
+      "<p class='light'>...Que haya perdido su conexión a internet.</p>",
+      "<p class='light'>...Que la página esté obsoleta y haya sido eliminada.</p>",
+      "<p class='light'>...Que la página no exista en el idioma que solicita.</p>"
+    ]
   },
   "advise": {
     "title": "¡Cerrado por vacaciones!",

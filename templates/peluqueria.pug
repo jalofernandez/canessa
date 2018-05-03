@@ -42,6 +42,8 @@ html(lang='es')
                                 li
                                     a(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
                                 li
+                                    a(href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa de Valdemoro, Madrid') #{common.titles.services}
+                                li
                                     a(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
                                 li
                                     a(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
@@ -60,7 +62,8 @@ html(lang='es')
                     //- ------------------------------------------------------
                     .grid__item.grid__item--bg.theme-bg
                         .grid__item-img
-                            img(src='img/doggies/showing-time.jpg', title='El baño sienta taaan bien...', alt='El baño sienta taaan bien...')
+                            img(src='img/peluqueria/yorkshire-en-mesa-de-corte.jpg', title='Yorkshire Terrier en la mesa de trabajo de la peluqería canina Canessa', alt='Yorkshire Terrier en la mesa de trabajo de la peluqería canina Canessa')
+                    //-
                         .grid__item-content
                             h3.grid__item-subtitle
                                 a.grid__item-link.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional')
@@ -70,98 +73,107 @@ html(lang='es')
                         .grid__item-content
                             h2.grid__item-title.grid__item-title--small
                                 i(aria-hidden='true').fa.fa-quote-left
-                                | #{services.bath.title}
+                                | #{peluqueria.intro.title}
                             p.grid__item-text
-                                | !{services.bath.paragraph}
+                                | !{peluqueria.intro.paragraph}
                                 i(aria-hidden='true').fa.fa-quote-right
+                        //-
                             a.grid__item-link(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional')
                                 | #{services.bath.link}
                                 i.fa.fa-arrow-right(aria-hidden="true")
 
-                    //- (row 03) PIENSOS
+                    //- (row 02) Corte a TIJERA
                     //- ------------------------------------------------------
-                    .grid__item.theme-transparent
+                    .grid__item.theme-blue
                       .grid__item-content
                         h2.grid__item-title.grid__item-title--small
                           i(aria-hidden='true').fa.fa-quote-left
-                          | #{services.food.title}
+                          | #{peluqueria.tijera.title}
                         p.grid__item-text
-                          | !{services.food.paragraph}
+                          | !{peluqueria.tijera.paragraph}
                           i(aria-hidden='true').fa.fa-quote-right
+                      //-
                         a.grid__item-link(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa')
                           | #{services.food.link}
                           i.fa.fa-arrow-right(aria-hidden="true")
 
-                    .grid__item.grid__item--bg.theme-bg
+                    .grid__item.grid__item--bg.theme-bg.theme-blue
                       .grid__item-img
-                        img(src='img/food/advange-medium-7years.png', title='Bolsa de pienso Medium 7 años de pollo y salmón de Advance', alt='Bolsa de pienso Medium 7 años de pollo y salmón de Advance')
+                        img(src='img/peluqueria/corte-a-tijera-peluqueria-canina-canessa.jpg', title='Corte a tijera de mestizo en la peluqería canina Canessa', alt='Corte a tijera de mestizo en la peluqería canina Canessa')
+                    //-
                       .grid__item-content
                         h3.grid__item-subtitle
                           a.grid__item-link.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa')
                             | #{services.food.btn}
 
-                    //- (row 04) COMPLEMENTOS
+                    //- (row 03) Corte a MÁQUINA
                     //- ------------------------------------------------------
                     .grid__item.grid__item--bg.theme-bg
                       .grid__item-img
-                        img(src='img/complementos/bubbles_shampoo_peluqueria_canina_canessa.jpg', title='Champú Bubbles disponible en la peluquería canina canessa en Valdemoro', alt='Champú Bubbles disponible en la peluquería canina canessa en Valdemoro')
+                        img(src='img/peluqueria/corte-a-maquina-peluqueria-canina-canessa.jpg', title='Corte a máquina de mestizo en la peluqería canina Canessa', alt='Corte a máquina de mestizo en la peluqería canina Canessa')
+                    //-
                       .grid__item-content
                         h3.grid__item-subtitle
                           a.grid__item-link.btn.btn-anim(href='complementos.html', title='Collares, correas y otros complementos en la peluquería canina Canessa')
                             | #{services.props.btn}
 
-                    .grid__item.theme-blue
+                    .grid__item.theme-fucsia
                       .grid__item-content
                         h2.grid__item-title.grid__item-title--small
                           i(aria-hidden='true').fa.fa-quote-left
-                          | #{services.props.title}
+                          | #{peluqueria.maquina.title}
                         p.grid__item-text
-                          | !{services.props.paragraph}
+                          | !{peluqueria.maquina.paragraph}
                           i(aria-hidden='true').fa.fa-quote-right
+                      //-
                         a.grid__item-link(href='complementos.html', title='Collares, correas y otros complementos en la peluquería canina Canessa')
                           | #{services.props.link}
                           i.fa.fa-arrow-right(aria-hidden="true")
 
-                    //- (row 05) MASCOTACTIVA
+                    //- (row 04) BAÑO precorte
                     //- ------------------------------------------------------
-                    .grid__item.theme-mascotactiva
+                    .grid__item.theme-blue
                       .grid__item-content
                         h2.grid__item-title.grid__item-title--small
                           i(aria-hidden='true').fa.fa-quote-left
-                          | #{services.mascotactiva.title}
+                          | #{peluqueria.bath.title}
                         p.grid__item-text
-                          | !{services.mascotactiva.paragraph}
+                          | !{peluqueria.bath.paragraph}
                           i(aria-hidden='true').fa.fa-quote-right
+                      //-
                         a.grid__item-link(href='mascotactiva.html', title='Psicología y entrenamiento canino en la peluquería canina Canessa')
                           | #{services.mascotactiva.link}
                           i.fa.fa-arrow-right(aria-hidden="true")
 
-                    .grid__item.grid__item--bg.theme-bg
+                    .grid__item.grid__item--bg.theme-bg.theme-blue
                       .grid__item-img
-                          img(src='img/mascotactiva/mascotactiva-pastor-aleman-rafa-cros.jpg', title='Mascotactiva por Rafa Cros y pastor alemán', alt='Logotipo de Mascotactiva por Rafa Crosy pastor alemán')
+                          img(src='img/peluqueria/baño-precorte-peluqueria-canina-canessa.jpg', title='Baño tras precorte en la peluqería canina Canessa', alt='Baño tras precorte en la peluqería canina Canessa')
+                    //-
                       .grid__item-content
                         h3.grid__item-subtitle
                           a.grid__item-link.btn.btn-anim(href='mascotactiva.html', title='Psicología y entrenamiento canino en la peluquería canina Canessa')
                             | #{services.mascotactiva.btn}
 
-                    //- (row 06) SOBRE MI
+                    //- (row 05) STRIPPING
                     //- ------------------------------------------------------
                     .grid__item.grid__item--bg.theme-bg
                       .grid__item-img
-                        img(src='img/aboutme/vanessa-vizcaya-peluqueria-canina-canessa.jpg', title='Vanessa Vizcaya en la peluquería canina canessa de Valdemoro', alt='Vanessa Vizcaya en la peluquería canina canessa de Valdemoro')
+                        img(src='img/peluqueria/stripping-peluqueria-canina-canessa.jpg', title='Stripping a mestizo en la peluquería canina Canessa de Valdemoro', alt='Stripping a mestizo en la peluquería canina Canessa de Valdemoro')
+                    //-
                       .grid__item-content
                         h3.grid__item-subtitle
                           a.grid__item-link.btn.btn-anim(href='canessa.html', title='Más sobre Vanessa Vizcaya, peluquera canina en la peluquería Canessa en Valdemoro')
                             | #{services.about.btn}
 
-                    .grid__item.theme-fucsia
+                    .grid__item.theme-transparent
                       .grid__item-content
                         h2.grid__item-title.grid__item-title--small
                           i(aria-hidden='true').fa.fa-quote-left
-                          | #{services.about.title}
+                          | #{peluqueria.stripping.title}
                         p.grid__item-text
-                          | !{services.about.paragraph}
+                          | !{peluqueria.stripping.paragraph}
                           i(aria-hidden='true').fa.fa-quote-right
+                      //-
                         a.grid__item-link(href='canessa.html', title='Más sobre Vanessa Vizcaya, peluquera canina en la peluquería Canessa en Valdemoro')
                           | #{services.about.link}
                           i.fa.fa-arrow-right(aria-hidden="true")

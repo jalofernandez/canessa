@@ -48,6 +48,9 @@ html(lang='es')
                                 li
                                     a(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
                                 li
+                                    a(href='piensos.html', title='Piensos y alimentación canina en la peluquería canina Canessa de Valdemoro') #{common.titles.food}
+                            //- TODO: add here a dropdown with the rest of navigation links
+                                li
                                     a.dropdown-button(href='#', data-target='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
                                     //- Dropdown Structure with more nav links
                                     ul#more-services.dropdown-content
@@ -94,7 +97,7 @@ html(lang='es')
 
                 .grid__item.grid__item--bg.theme-bg
                   .grid__item-img
-                    img(src='img/doggies/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
+                    img(src='img/peluqueria/yorkshire-en-mesa-de-corte.jpg', title='Corte de raza de Yorkshire', alt='Corte de raza de Yorkshire')
                   .grid__item-content
                     //- TODO: (sample) top Title & label block
                       span.grid__item-meta Yorkshire Terrier
@@ -107,15 +110,15 @@ html(lang='es')
 
                 //- (row 02) AUTOLAVADO
                 //- ------------------------------------------------------
-                .grid__item.grid__item--bg.theme-bg
+                .grid__item.grid__item--bg.theme-bg.theme-blue
                   .grid__item-img
-                    img(src='img/doggies/showing-time.jpg', title='El baño sienta taaan bien...', alt='El baño sienta taaan bien...')
+                    img(src='img/peluqueria/baño-precorte-peluqueria-canina-canessa.jpg', title='Baño tras precorte en la peluqería canina Canessa', alt='Baño tras precorte en la peluqería canina Canessa')
                   .grid__item-content
                     h3.grid__item-subtitle
                       a.grid__item-link.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional')
                         | #{services.bath.btn}
 
-                .grid__item.theme-fucsia
+                .grid__item.theme-blue
                   .grid__item-content
                     h2.grid__item-title.grid__item-title--small
                       i(aria-hidden='true').fa.fa-quote-left
@@ -159,7 +162,7 @@ html(lang='es')
                       a.grid__item-link.btn.btn-anim(href='complementos.html', title='Collares, correas y otros complementos en la peluquería canina Canessa')
                         | #{services.props.btn}
 
-                .grid__item.theme-blue
+                .grid__item.theme-fucsia
                   .grid__item-content
                     h2.grid__item-title.grid__item-title--small
                       i(aria-hidden='true').fa.fa-quote-left
@@ -185,7 +188,7 @@ html(lang='es')
                       | #{services.mascotactiva.link}
                       i.fa.fa-arrow-right(aria-hidden="true")
 
-                .grid__item.grid__item--bg.theme-bg
+                .grid__item.grid__item--bg.theme-bg.theme-mascotactiva
                   .grid__item-img
                       img(src='img/mascotactiva/mascotactiva-pastor-aleman-rafa-cros.jpg', title='Mascotactiva por Rafa Cros y pastor alemán', alt='Logotipo de Mascotactiva por Rafa Crosy pastor alemán')
                   .grid__item-content
@@ -203,7 +206,7 @@ html(lang='es')
                       a.grid__item-link.btn.btn-anim(href='canessa.html', title='Más sobre Vanessa Vizcaya, peluquera canina en la peluquería Canessa en Valdemoro')
                         | #{services.about.btn}
 
-                .grid__item.theme-fucsia
+                .grid__item.theme-transparent
                   .grid__item-content
                     h2.grid__item-title.grid__item-title--small
                       i(aria-hidden='true').fa.fa-quote-left
