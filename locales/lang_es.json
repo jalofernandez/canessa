@@ -31,6 +31,7 @@
       "legal": "Legal",
       "mascota": "Mascotactiva",
       "dogwash": "Autolavado",
+      "aboutme": "Sobre Vanessa",
       "sitemap": "Sitemap",
       "more": "Más..."
     },
@@ -230,6 +231,23 @@
       "paragraph": "¿Tienes que viajar y no puedes llevar a tu perro contigo? No te preocupes, Rafa Cros nuestro cuidador de Mascotactiva, se encargará de tu perro en su propia casa, ofreciendo así un <b>servicio más cálido y familiar</b> que las frías jaulas de una residencia canina donde cada animal recibe un <b>trato personalizado de un profesional</b>.",
       "link": "Llámanos al 636 515 206",
       "btn": "Llámanos al 636 515 206"
+    }
+  },
+  "aboutme": {
+    "intro": {
+      "title": "Vanessa Vizcaya...",
+      "paragraph": "... Es una amante incondicional de los animales desde su infancia. Empática como nadie con los sentimientos y las necesidades animales pronto descubrió que tenía que dedicarse profesionalmente a ellos.",
+      "link": "Prueba nuestros servicios: 91 248 04 30"
+    },
+    "about": {
+      "title": "10 años de experiencia...",
+      "paragraph": "... La avalan profesionalmente. En 2008 empieza a formarse en peluquería canina con.",
+      "link": "Pide cita conmigo: 91 248 04 30"
+    },
+    "outro": {
+      "title": "Peluquería Canessa...",
+      "paragraph": "... Comienza a funcionar como reemplazo de la antigua KTC de Joaquín.",
+      "link": "Reserva hora en: 91 248 04 30"
     }
   },
   "contact": {

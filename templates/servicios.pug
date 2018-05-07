@@ -49,27 +49,22 @@ html(lang='es')
                                     a(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
                                 li
                                     a(href='piensos.html', title='Piensos y alimentación canina en la peluquería canina Canessa de Valdemoro') #{common.titles.food}
-                            //- TODO: add here a dropdown with the rest of navigation links
                                 li
-                                    a.dropdown-button(href='#', data-target='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
+                                    a.dropdown-button(href='#', data-activates='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
                                     //- Dropdown Structure with more nav links
                                     ul#more-services.dropdown-content
                                         li
-                                            a(href='#!') one
+                                            a(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa') #{common.titles.antiparasitarios}
                                         li
-                                            a(href='#!') two
-                                        li.divider(tabindex='-1')
+                                            a(href='vanessavizcaya.html', title='Sobre la vida profesional de Vanessa Vizcaya en la peluquería canina Canessa') #{common.titles.aboutme}
                                         li
-                                            a(href='#!') three
+                                            a(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro') #{common.titles.contact}
                                         li
-                                            a(href='#!')
-                                                i.material-icons view_module
-                                                | four
+                                            a.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
                                         li
-                                            a(href='#!')
-                                                i.material-icons cloud
-                                                | five
-
+                                            a(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                                        li
+                                            a(href='sitemap.html', title='Mapa del sitio web de la peluquería canina Canessa') #{common.titles.sitemap}
         //- ----------------------------------------------------------------
         //- 01. SERVICES grid GALLERY (text & images)
         //- ----------------------------------------------------------------

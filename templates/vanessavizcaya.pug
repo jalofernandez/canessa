@@ -1,0 +1,155 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        title Vanessa Vizcaya peluquería canina Canessa Valdemoro &#128062; &#9989;
+        meta(name='description', content='Vanessa Vizcaya García, Canessa, es una peluquera canina profesional con más de 10 años de experiencia en el sector pero en continua formación. Además es una amante empedornida de los animales. 91 248 04 30')
+        meta(name='keywords', content='Vanessa Vizcaya García, Vanessa, Canessa, VAVA, VV, vv, peluqueria canina Valdemoro, autolavado, lavado perros, lavadero de perros, lavar perros, baño perro, spa canino, canessa, Valdemoro, Pinto, Ciempozuelos, Parla, peluqueria canina, estilista de perros, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, mascotactiva')
+        link(rel='canonical', href='https://peluqueriacanessa.com/vanessavizcaya/' hreflang='es')
+        link(rel='alternate', href='https://peluqueriacanessa.com/vanessavizcaya#!' hreflang='es')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+        //- Structured Data:
+        //- (Open Graph)
+        include open-graph/og-autolavado
+        //- (Schema)
+        include schema/schema-autolavado
+
+    body.bg-paper
+        //- ----------------------------------------------------------------
+        //- 00. TOP NAV BAR "Sections & Contact"
+        //- ----------------------------------------------------------------
+        .navbar-top
+            nav
+                .nav-top
+                    .row
+                        //- "Navigation Page" :: LEFT NAV
+                            .col.m5
+                              ul.right.navSubSections.hide-on-med-and-down
+                                li
+                                  a.drinks.dropdown-button(href='#', data-activates='dropdown1', title='Drinks submenu of Arts Club Madrid')
+                                    | Our Expos
+                                    i.fa.fa-caret-down
+                                ul#dropdown1.dropdown-content
+                                  li
+                                    a(href='#autolavado') Past Exhibitions
+                                li
+                                  a.wineh(href='#autolavado', title='Go to Past Exhibitions section of Arts Club Madrid') Past Exhibitions
+                        //- "Logo" :: LEFT LOGO
+                        .col.m3.brand-logo
+                            img.fixed.small-one(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa', alt='Logotipo de la peluquería canina Canessa')
+                        //- "Contact" :: RIGHT NAV
+                        .col.m9.offset-m3
+                            ul.right.navContact.hide-on-med-and-down
+                                li
+                                    a(href='index.html', title='Volver a la página de Inicio de la peluquería canina Canessa') #{common.titles.index}
+                                li
+                                    a(href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa de Valdemoro, Madrid') #{common.titles.services}
+                                li
+                                    a(href='peluqueria.html', title='Servicios de peluquería canina en la peluquería canina Canessa') #{common.titles.peluqueria}
+                                li
+                                    a(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
+                                li
+                                    a(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+                                li
+                                    a.dropdown-button(href='#', data-activates='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
+                                    //- Dropdown Structure with more nav links
+                                    ul#more-services.dropdown-content
+                                        li
+                                            a(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa') #{common.titles.antiparasitarios}
+                                        li
+                                            a(href='piensos.html', title='Piensos y alimentación canina en la peluquería canina Canessa de Valdemoro') #{common.titles.food}
+                                        li
+                                            a(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro') #{common.titles.contact}
+                                        li
+                                            a.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+                                        li
+                                            a(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                                        li
+                                            a(href='sitemap.html', title='Mapa del sitio web de la peluquería canina Canessa') #{common.titles.sitemap}
+        //- ----------------------------------------------------------------
+        //- 01. Sobre VANESSA VIZCAYA alias Canessa
+        //- ----------------------------------------------------------------
+        #canessa.row.scrollspy
+            main
+                .grid
+                    //- (row 01) VANESSA picture
+                    //- ------------------------------------------------------
+                    .grid__item.theme-transparent
+                        .grid__item-content
+                            h1.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{aboutme.intro.title}
+                            p.grid__item-text
+                                | !{aboutme.intro.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')
+                                | #{aboutme.intro.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/aboutme/vanessa-vizcaya-peluqueria-canina-canessa.jpg', title='Vanessa Vizcaya en la peluquería canina canessa de Valdemoro', alt='Vanessa Vizcaya en la peluquería canina canessa de Valdemoro')
+                    //-
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='tel:912480430', title='Teléfono de reserva de peluquería y autolavado en la peluquería canina Canessa')
+                                    | #{aboutme.intro.btn}
+
+                    //- (row 02) SCISSORS artwork
+                    //- ------------------------------------------------------
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/aboutme/vanessa-tijeras-peluqueria-canina-canessa.png', title='Ilustración tijeras en la peluquería canina Canessa de Valdemoro', alt='Ilustración tijeras en la peluquería canina Canessa de Valdemoro')
+                    //-
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='mailto:rafa@mascotactiva.com', title='Email de contacto de Mascotactiva')
+                                    | #{autolavado.bathpool.btn}
+
+                    .grid__item.theme-transparent
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{aboutme.about.title}
+                            p.grid__item-text
+                                | !{aboutme.about.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link.btn.btn-anim(href='tel:912480430', title='Teléfono de reserva de peluquería y autolavado en la peluquería canina Canessa')
+                                | #{aboutme.about.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    //- (row 03) BARBER artwork
+                    //- ------------------------------------------------------
+                    .grid__item.theme-transparent
+                        .grid__item-content
+                            h2.grid__item-title.grid__item-title--small
+                                i(aria-hidden='true').fa.fa-quote-left
+                                | #{aboutme.outro.title}
+                            p.grid__item-text
+                                | !{aboutme.outro.paragraph}
+                                i(aria-hidden='true').fa.fa-quote-right
+                            a.grid__item-link(href='https://www.youtube.com/channel/UC4LoDR63NJGdqS48_1FGReg/featured', title='Canal de Youtube de Mascotactiva', target='_blank')
+                                | #{aboutme.outro.link}
+                                i.fa.fa-arrow-right(aria-hidden="true")
+
+                    .grid__item.grid__item--bg.theme-bg
+                        .grid__item-img
+                            img(src='img/aboutme/vanessa-canessa-peluqueria-canina-canessa.png', title='Ilustración Canessa en la peluquería canina Canessa de Valdemoro', alt='Ilustración Canessa en la peluquería canina Canessa de Valdemoro')
+                    //-
+                        .grid__item-content
+                            h3.grid__item-subtitle
+                                a.grid__item-link.btn.btn-anim(href='tel:912480430', title='Teléfono de reserva de peluquería y autolavado en la peluquería canina Canessa')
+                                    | #{aboutme.outro.btn}
+
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts

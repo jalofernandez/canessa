@@ -52,6 +52,22 @@ html(lang='es')
                       a(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
                     li
                       a(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{common.titles.food}
+                        li
+                            a.dropdown-button(href='#', data-activates='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
+                            //- Dropdown Structure with more nav links
+                            ul#more-services.dropdown-content
+                                li
+                                    a(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa') #{common.titles.antiparasitarios}
+                                li
+                                    a(href='vanessavizcaya.html', title='Sobre la vida profesional de Vanessa Vizcaya en la peluquería canina Canessa') #{common.titles.aboutme}
+                                li
+                                    a(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro') #{common.titles.contact}
+                                li
+                                    a.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+                                li
+                                    a(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                                li
+                                    a(href='sitemap.html', title='Mapa del sitio web de la peluquería canina Canessa') #{common.titles.sitemap}
         //- ----------------------------------------------------------------
         //- 01. MASCOTACTIVA por Rafa Cros
         //- ----------------------------------------------------------------
@@ -128,7 +144,7 @@ html(lang='es')
                     //- ------------------------------------------------------
                     .grid__item.grid__item--bg.theme-bg.theme-mascotactiva
                         .grid__item-img
-                            img(src='img/mascotactiva/guarderia-canina-mascotactiva-peluqueria-canina-canessa.jpg', title='Servicio de guardería canina por Rafa Cros de Mascotactiva', alt='Servicio de guardería canina por Rafa Cros de Mascotactiva')
+                            img(src='img/mascotactiva/paseador-canino-mascotactiva-peluqueria-canina-canessa.jpg', title='Servicio de guardería canina por Rafa Cros de Mascotactiva', alt='Servicio de guardería canina por Rafa Cros de Mascotactiva')
                         .grid__item-content
                             h3.grid__item-subtitle
                                 a.grid__item-link.btn.btn-anim(href='tel:636515206', title='Teléfono de contacto de Mascotactiva en la peluquería canina Canessa')

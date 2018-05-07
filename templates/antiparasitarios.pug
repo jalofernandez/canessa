@@ -7,8 +7,8 @@ html(lang='es')
         title Antiparasitarios en la peluquería canina Canessa Valdemoro
         meta(name='description', content='Servicios de la Peluquería canina Canessa. Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tarifa especial para autolavados además de un completo SPA canino. Tenemos pienso, collares, arneses, juguetes y complementos.')
         meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluquería para perros, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, Parla, mascotactiva')
-        link(rel='canonical', href='https://peluqueriacanessa.com/servicios/' hreflang='es')
-        link(rel='alternate', href='https://peluqueriacanessa.com/servicios#!' hreflang='es')
+        link(rel='canonical', href='https://peluqueriacanessa.com/antiparasitarios/' hreflang='es')
+        link(rel='alternate', href='https://peluqueriacanessa.com/antiparasitarios#!' hreflang='es')
         //- All (common) METATAGS in head tag
         include includes/metatags
         //- Structured Data (Schema)
@@ -50,6 +50,22 @@ html(lang='es')
                                     a(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{common.titles.dogwash}
                                 li
                                     a(href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa') #{common.titles.mascota}
+                                li
+                                    a.dropdown-button(href='#', data-activates='more-services', title='Ver más servicios de la peluquería canina Canessa de Valdemoro') #{common.titles.more}
+                                    //- Dropdown Structure with more nav links
+                                    ul#more-services.dropdown-content
+                                        li
+                                            a(href='piensos.html', title='Piensos y alimentación canina en la peluquería canina Canessa de Valdemoro') #{common.titles.food}
+                                        li
+                                            a(href='vanessavizcaya.html', title='Sobre la vida profesional de Vanessa Vizcaya en la peluquería canina Canessa') #{common.titles.aboutme}
+                                        li
+                                            a(href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro') #{common.titles.contact}
+                                        li
+                                            a.modal-trigger(href='#modal_schedule', title='Horario comercial de la peluquería canina Canessa') #{common.titles.schedule}
+                                        li
+                                            a(href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa') #{common.titles.legal}
+                                        li
+                                            a(href='sitemap.html', title='Mapa del sitio web de la peluquería canina Canessa') #{common.titles.sitemap}
         //- ----------------------------------------------------------------
         //- 01. COLLARS, NECKLACES, PIPETTES... ANTIBUGS!! (text & images)
         //- ----------------------------------------------------------------
