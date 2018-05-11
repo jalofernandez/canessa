@@ -80,7 +80,7 @@
       "btn": "Todos nuestros productos"
     },
     "mascotactiva": {
-      "title": "Paseamos y entrenamos a su mascota",
+      "title": "Paseamos y entrenamos a tu mascota",
       "paragraph": "Servicio exclusivo de: guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional por <b>Rafa Cros</b>, nuestro especialista en </b>psicología y entrenamiento canino</b>.",
       "link": "Saber más sobre Mascotactiva",
       "btn": "Servicios de Mascotactiva"
@@ -122,7 +122,7 @@
   },
   "peluqueria": {
     "intro": {
-      "title": "En la peluquería canina Canessa ...",
+      "title": "En peluquería canina Canessa ...",
       "paragraph": "... Ponemos todo nuestro empeño y conocimientos en dejar precioso a tu fiel amigo con la <b>mejor atención y el mínimo estrés</b>, dedicándole el tiempo que merece y necesite <b>sin servicios express</b>. Además, siempre incluimos el corte de uñas, la limpieza de plantares, el vaciado de glándulas anales, la limpieza de oídos y la depilación del exceso de vello en el pabellón auditivo."
     },
     "tijera": {
@@ -209,14 +209,14 @@
     "email": "mascotactiva@hotmail.com",
     "youtube": "Canal de Youtube",
     "intro": {
-      "title": "Paseamos y entrenamos a su mascota",
-      "paragraph": "La relación que tenemos con nuestra mascota es muy importante. Desde Mascotactiva <b>enseñaremos a su compañero peludo</b> a utilizar sus capacidades cognitivas, a concentrarse, a auto-controlarse y, en general, a desarrollarse de manera que <b>haga mucho más grata la convivencia con nosotros</b> mediante una combinación de técnicas mixtas entre el adiestramiento tradicional y el adiestramiento en positivo de la mano de <b>Rafa Cros</b>.",
+      "title": "Paseamos y entrenamos a tu mascota",
+      "paragraph": "El vínculo afectivo que tenemos con nuestro mejor amigo lo define todo. Desde Mascotactiva ayudaremos tanto al dueño como al perro a tener <b>una relación sólida, sana y basada en la confianza mutua</b>, de modo que la convivencia tanto dentro como fuera de casa sea lo más positiva y completa posible. Enseñaremos a tu compañero peludo a utilizar y mejorar sus capacidades con el <b>adiestramiento cognitivo-emocional impartido por la escuela EDUCAN</b>.",
       "link": "Llámanos al 636 515 206",
       "btn": "Llámanos al 636 515 206"
     },
     "paseos": {
       "title": "Paseos y entrenamientos",
-      "paragraph": "En <b>nuestros paseos tu mascota aprenderá</b> a caminar de una forma tranquila junto a su tutor, a no tirar de la correa, a acudir cuando se le llama y a permanecer quieto en la posición de sentado o tumbado cuando se le solicita. La programación de las sesiones puede variar en función de las necesidades de tu perro y las metas que quieras conseguir. También podemos incorporar elementos al adiestramiento que te puedan interesar o <b>tratar algún problema de conducta específico</b> (ladridos, ansiedad por separación, higiene, etc.)",
+      "paragraph": "Todos los perros, independientemente de su edad y raza necesitan algún tipo de ejercicio. En nuestros paseos controlados <b>tu mascota aprenderá a pasear</b> tranquila, <b>sin tirar de la correa, haciendo caso a la llamada</b> y mejorando la permanencia en las posiciones de sentado y tumbado. Si, además, a tu perro le gusta correr le llevamos al trote con <b>paseos relajantes o al galope</b> con entrenamiento físico donde disfrutará en la Naturaleza de una actividad que rebajará su estrés y una vuelta al hogar más tranquila.",
       "link": "mascotactiva@hotmail.com",
       "btn": "mascotactiva@hotmail.com"
     },
@@ -228,7 +228,7 @@
     },
     "guarderia": {
       "title": "Guardería canina",
-      "paragraph": "¿Tienes que viajar y no puedes llevar a tu perro contigo? No te preocupes, Rafa Cros nuestro cuidador de Mascotactiva, se encargará de tu perro en su propia casa, ofreciendo así un <b>servicio más cálido y familiar</b> que las frías jaulas de una residencia canina donde cada animal recibe un <b>trato personalizado de un profesional</b>.",
+      "paragraph": "¿Tienes que viajar y no puedes llevar a tu perro contigo? ¿No tienes tiempo para pasear a tu perro? No te preocupes porque <b>Rafa Cros</b>, nuestro cuidador de Mascotactiva, <b>se encargará de tu compañero peludo</b> en su propia casa con un <b>servicio más cálido y familiar</b> que el de las frias jaulas de una residencia canina. Tu perro recibirá un trato preferente y profesional respetándose en todo momento sus rutinas de paseos y alimentación.",
       "link": "Llámanos al 636 515 206",
       "btn": "Llámanos al 636 515 206"
     }
