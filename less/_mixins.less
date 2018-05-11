@@ -58,20 +58,26 @@
   text-transform: inherit;
 }
 
-.card-section() {
-  margin: 0 auto 80px;
-  padding: 16px;
-  .border-radius(2px);
-  background-color: @color-white;
-  //color: rgba(0, 0, 0, 0.87);
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+// to enable transition (Hover effect) between 2 images
+.img-hover-effect(@position: absolute) {
+  position: relative;
 
-  > .section {
-    padding: 0 !important;
+  img {
+    height: 100%;
+    display: block;
 
-    .row:last-child {
-      margin-bottom: 0 !important;
+    &.hover-effect {
+      position: @position;
+      top: 0;
+      left: 0;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+      // Hover effect
+      &:hover {
+        opacity: 0;
+      }
     }
   }
 }

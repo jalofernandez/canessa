@@ -69,25 +69,8 @@ main {
   display: block;
   height: 100%;
   width: 100%;
-  display: relative;
-
-  img {
-    height: 100%;
-    display: block;
-    // to enable transition (Hover effect) between 2 images
-    &.hover-effect {
-      position:absolute;
-      left:0;
-      -webkit-transition: opacity 1s ease-in-out;
-      -moz-transition: opacity 1s ease-in-out;
-      -o-transition: opacity 1s ease-in-out;
-      transition: opacity 1s ease-in-out;
-      // Hover effect
-      &:hover {
-        opacity:0;
-      }
-    }
-  }
+  // to enable transition (Hover effect) between 2 images
+  .img-hover-effect();
 }
 
 // (grid) top main Title in all Text blocks
