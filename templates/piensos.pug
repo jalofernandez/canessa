@@ -194,6 +194,7 @@ html(lang='es')
                                         img(src='img/food/advange-mini-sensitive-salmon-rice.png', title='Bolsa de pienso Mini sensitive de pollo y salmón de Advance', alt='Bolsa de pienso Mini sensitive de pollo y salmón de Advance')
                                     .card-content
                                         p #{food.advance.minisen}
+
                 //- FOOD (pics gallery) :: "AFFINITY"
                 #libra.col.s12
                     .container.container-services
@@ -244,6 +245,9 @@ html(lang='es')
                                         p 
                                           span.food-weight !{food.weight.three}
                                           span.badge.price #{food.price.seven}
+
+        //- "created by" signature in all pages ending
+        include includes/created_by
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

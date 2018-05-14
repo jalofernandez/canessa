@@ -36,7 +36,11 @@
       "sitemap": "Sitemap",
       "more": "Más..."
     },
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "createdby": {
+      "intro": "Website diseñado y desarrollado por:",
+      "creator": "jalofernandez.com"
+    }
   },
   "footer": {
     "copyright": "Canessa peluquería canina",
@@ -273,7 +277,8 @@
       "<a href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa'><i class='fa fa-paw'></i>Mascotactiva</a>",
       "<a href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro'><i class='fa fa-address-card-o'></i>Contacto</a>",
       "<a href='instalaciones.html', title='Nuestras instalaciones de la peluquería canina Canessa de Valdemoro'><i class='fa fa-building-o'></i>Nuestras instalaciones</a>",
-      "<a href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa'><i class='fa fa-gavel'></i>Términos legales</a>"
+      "<a href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa'><i class='fa fa-gavel'></i>Términos legales</a>",
+      "<a class='main-link' href='https://jalofernandez.com' title='Ir al website de Jalofernandez, diseño gráfico y desarrollo web' target='_blank' rel='noopener noreferrer'><i class='fa fa-object-group'></i>Diseño y desarrollo web</a>"
     ]
   },
   "legal": {
