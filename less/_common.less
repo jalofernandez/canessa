@@ -148,6 +148,9 @@ body {
             }
           }
         }
+        &.active {
+          top: 64px !important;
+        }
       }
 
       // TODO: only used in disabled menu
@@ -192,11 +195,16 @@ body {
         }
       }
 
-      // (lsit) links to nav across pages
+      // (list) links to nav across pages
       ul {
         &.right,
         &.left {
           padding-top: 0;
+        }
+        &.dropdown-content {
+          &.active {
+            top: 40px !important;
+          }
         }
       }
     }
