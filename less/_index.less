@@ -73,7 +73,7 @@ video {
   /* IMP: ".main-logotype" goes here but in code is below */
 
   // Caption (main) Title
-  h1, h2 {
+  h1 {
     font-family: "champagne", sans-serif;
     .main-text(3em, 600, .06em);
     line-height: 60px;
@@ -103,17 +103,28 @@ video {
   }
 
   // Caption SubTitles
-  // (not available by the moment)
-  h5 {
-    font-size: 30px;
-    margin-top: 0;
-    letter-spacing: 0.03em;
+  h2 {
+    margin-top: -30px;
+    .main-text(2.65em, 600, 0.03em);
+    text-align: center;
     text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
+    // Responsive behaviour
+    @media (max-width: 768px) {
+      font-size: 1.5em;
+    }
+    // (custom) headers
     &.intro {color: @color-main;}
     &.rest  {color: #4fc3f7;}
     &.art   {color: #b2ff59;}
     &.cock  {color: #ffab00;}
     &.terr  {color: #9575cd;}
+    // (intro) Animation
+    -webkit-animation-name: fadeInDelay;
+    animation-name: fadeInDelay;
+    -webkit-animation-duration: 950ms;
+    animation-duration: 950ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 
   /* "caption" BTNs (weird fonts & colors added to pass "Google Lighthouse" test) */
@@ -131,6 +142,13 @@ video {
 
     &:first-child {
       margin-left: 0
+    }
+    // to apply Icons
+    .fa {
+      &.fa-arrow-left {
+        padding-right: 8px;
+        opacity: .6;
+      }
     }
   }
   // (intro) Animation

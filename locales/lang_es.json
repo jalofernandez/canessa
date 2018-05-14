@@ -32,6 +32,7 @@
       "mascota": "Mascotactiva",
       "dogwash": "Autolavado",
       "aboutme": "Sobre Vanessa",
+      "facilities": "Instalaciones",
       "sitemap": "Sitemap",
       "more": "Más..."
     },
@@ -51,7 +52,8 @@
       "btn_services": "Nuestros servicios",
       "btn_pelu": "Peluquería canina",
       "btn_auto": "Ventajas del Autolavado",
-      "btn_pienso": "Piensos y alimentación"
+      "btn_pienso": "Piensos y alimentación",
+      "btn_index": "Volver al Inicio"
     }
   },
   "services": {
@@ -254,6 +256,10 @@
     "title": "Contacta con nosotros",
     "checkit": "Escríbenos, llámanos o visítanos para pedir cita o preguntar por nuestros servicios de peluquería canina, autolavado, spa, alimentación canina y piensos..."
   },
+  "facilities": {
+    "title": "Nuestras instalaciones",
+    "subtitle": "En la peluquería canina Canessa"
+  },
   "sitemap": {
     "title": "Mapa del sitio web",
     "whatis": "Listado de todos los enlaces internos disponibles en este sitio web",
@@ -266,6 +272,7 @@
       "<a href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa'><i class='fa fa-bug'></i>Antiparasitarios</a>",
       "<a href='mascotactiva.html', title='Servicios de cuidado y entrenamiento canino en la peluquería canina Canessa'><i class='fa fa-paw'></i>Mascotactiva</a>",
       "<a href='contacto.html', title='Contacta con la peluquería canina Canessa de Valdemoro'><i class='fa fa-address-card-o'></i>Contacto</a>",
+      "<a href='instalaciones.html', title='Nuestras instalaciones de la peluquería canina Canessa de Valdemoro'><i class='fa fa-building-o'></i>Nuestras instalaciones</a>",
       "<a href='legal.html', title='Condiciones de uso del website de la peluquería canina Canessa'><i class='fa fa-gavel'></i>Términos legales</a>"
     ]
   },

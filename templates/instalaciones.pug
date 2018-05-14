@@ -1,0 +1,44 @@
+doctype html
+html(lang='es')
+    head
+        meta(name='encoding', charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
+        title Instalaciones Peluquería canina Canessa
+        meta(name='description', content='Las instalaciones de la Peluquería canina Canessa en Valdemoro están perfectamente acondicionadas para relaizar cualquier trabajo de peluquería canina maxificando la comodidad de su mascota y minificando el estrés que esta pueda sufrir durante el proceso de trabajo. 91 248 04 30')
+        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, pelu canina, estilista de perros, peluquería para perros, peluqueria perros, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, lavado perros, lavadero de perros, spa canino, Parla, piensos, complementos, correas, lazos, collares, antiparasitarios')
+        link(rel='canonical', href='https://peluqueriacanessa.com/instalaciones/' hreflang='es')
+        link(rel='alternate', href='https://peluqueriacanessa.com/instalaciones#!' hreflang='es')
+        //- All (common) METATAGS in head tag
+        include includes/metatags
+
+    body
+        //- (01) VIDEO :: FullBackgroundVideo
+        video#bgvid(poster='img/slider/afgano.jpg', title='Servicios ofrecidos en la peluquería canina Canessa de Valdemoro', playsinline='', autoplay='', muted='', loop='')
+            //- WCAG general accessibility recommendation is that media such as background video play through only once.
+            //- Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button
+            source(src='video/canessa-intro-2018-march.mp4', type='video/mp4')
+        //- main Header + "call to action" BTNs
+        .caption
+            img.main-logotype(src='img/logos/canessa-logo.svg', title='Logotipo de la peluquería canina Canessa en Valdemoro', alt='Logotipo de la peluquería canina Canessa en Valdemoro')
+            h1 #{facilities.title}
+            h2 #{facilities.subtitle}
+            .call-to-action
+                a.btn.btn-anim(href='index.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro')
+                    i.fa.fa-arrow-left(aria-hidden="true")
+                    | #{index.slides.btn_index}
+                a.btn.btn-anim(href='servicios.html', title='Servicios ofrecidos por la peluquería canina Canessa en Valdemoro')
+                    | #{index.slides.btn_services}
+
+        //- main footer NAVBAR (common) in all views
+        include includes/navbar
+
+        //- MODALS MAIN NAV MOBILE sections :: "SCHEDULE / HORARIO"
+        include includes/modal_schedule
+        //- MODAL dialog in MOBILE devices :: "CONTACT"
+        include includes/modal_contact
+        //- MODAL dialog :: "Cookies"
+            include includes/modal_cookies
+
+        //- ALL THE SCRIPTS :: jQuery, Font-Awesome, Materialize...
+        include includes/scripts
+

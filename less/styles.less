@@ -208,6 +208,10 @@ p {
     width: 150px;
     height: 45px;
     .anim(all, 150ms, ease-in);
+    // scale effect when cursor is hover logo img!
+    &:hover {
+      .scale(.95);
+    }
   }
   // responsive behaviour
   @media (max-width: 601px) {
@@ -575,9 +579,9 @@ p {
         &.main-link {
           padding-left: 0;
         }
-
+        // to apply vertical align in copies
         i {
-          padding-right: 15px;
+          min-width: 40px;
         }
         // Responsive behaviour
         @media (max-width: 420px) {
