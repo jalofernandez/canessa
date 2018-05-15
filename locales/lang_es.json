@@ -62,7 +62,7 @@
   },
   "services": {
     "grooming": {
-      "title": "La peluquería canina ...",
+      "title": "La peluquería canina<em>...</em>",
       "paragraph": "... No es solo una cuestión de estética, sino también de <b>higiene</b>, <b>salud</b>, y lo más importante, <b>bienestar</b> del animal porque sabemos lo importante que es para ti tu perro y lo mimaremos como se merece, con los mejores métodos y técnicas no invasivas garantizando un resultado final impecable y sin molestias para él. ¡Se merecen un trato especial!",
       "link": "Nuestros servicios de peluquería canina",
       "btn": "Más sobre peluquería"
@@ -128,7 +128,7 @@
   },
   "peluqueria": {
     "intro": {
-      "title": "En peluquería canina Canessa ...",
+      "title": "En peluquería canina Canessa<em>...</em>",
       "paragraph": "... Ponemos todo nuestro empeño y conocimientos en dejar precioso a tu fiel amigo con la <b>mejor atención y el mínimo estrés</b>, dedicándole el tiempo que merece y necesite <b>sin servicios express</b>. Además, siempre incluimos el corte de uñas, la limpieza de plantares, el vaciado de glándulas anales, la limpieza de oídos y la depilación del exceso de vello en el pabellón auditivo."
     },
     "tijera": {
@@ -241,18 +241,18 @@
   },
   "aboutme": {
     "intro": {
-      "title": "Vanessa Vizcaya...",
-      "paragraph": "... Es una amante incondicional de los animales desde su infancia. Empática como nadie con los sentimientos y las necesidades animales pronto descubrió que tenía que dedicarse profesionalmente a ellos.",
+      "title": "Vanessa Vizcaya<em>...</em>",
+      "paragraph": "... Es una amante incondicional de los animales desde su infancia. <b>Empática como nadie con los sentimientos y las necesidades animales</b> pronto descubrió que tenía que dedicarse profesionalmente a ellos. Además siempre ha tenido perros y gatos como compañeros de vida asi que <b>sabe entenderlos a la perfección</b>.",
       "link": "Prueba nuestros servicios: 91 248 04 30"
     },
     "about": {
-      "title": "10 años de experiencia...",
-      "paragraph": "... La avalan profesionalmente. En 2008 empieza a formarse en peluquería canina con.",
+      "title": "8 años de experiencia<em>...</em>",
+      "paragraph": "... Le avalan profesionalmente. En 2009 empieza a formarse como peluquera canina en la ISED. Tras este decidió completar <b>su formación con Mónica Calderón</b>, toda una institución en el sector de la peluquería canina. Los comienzos fueron servicios a domicilio pero pronto avanzó a centros veterinarios y peluquerías caninas.",
       "link": "Pide cita conmigo: 91 248 04 30"
     },
     "outro": {
-      "title": "Peluquería Canessa...",
-      "paragraph": "... Comienza a funcionar como reemplazo de la antigua KTC de Joaquín.",
+      "title": "Peluquería Canessa<em>...</em>",
+      "paragraph": "... Comienza a funcionar como reemplazo de la antigua KTC en Marzo de 2017 siendo la principal tarea como peluquera canina <b>cuidar el pelaje de los perros, mejorar su higiene y procurarles un fantástico corte de pelo</b>. Esta es una tarea manual y artesana realizada con el máximo cariño y respeto en la que lo más importante es el bienestar de los animales a los que cuida y que le resulta tan gratificante.",
       "link": "Reserva hora en: 91 248 04 30"
     }
   },
