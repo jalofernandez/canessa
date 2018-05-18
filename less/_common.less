@@ -546,9 +546,16 @@ body {
 .modal {
   background-color: @dark-opacity !important;
   border-top: 3px solid @color-black;
+  max-height: 75%;
 
   * > i {
     padding-right: 5px;
+    // applied in all Icons except "cross / close" one!
+    &:not(.fa-close) {
+      width: 30px;
+      text-align: center;
+      opacity: .5;
+    }
   }
 
   h4 {
@@ -564,6 +571,7 @@ body {
 
   ul {
     li {
+      margin: 10px 0;
       line-height: 2.2rem;
 
       a {
@@ -573,11 +581,6 @@ body {
         &:hover {
           color: @color-main;
           .anim(all, 150ms, ease-in);
-
-          i {
-            min-width: 20px;
-            opacity: .5;
-          }
         }
       }
 
@@ -587,8 +590,8 @@ body {
       }
 
       em {
-        color:lighten(@color-white, 10%);
         .main-text(16px, 400, 0.02em);
+        opacity: .8;
       }
 
       &:first-child,
@@ -631,7 +634,7 @@ body {
     text-transform: uppercase;
   }
 
-  // Schedule Modal (dialog)
+  // (01) "Schedule" Modal (dialog)
   &#modal_schedule {
     .col {
       width: 100%;
@@ -639,44 +642,47 @@ body {
       min-height: 100px;
 
       ul {
-        width: 260px;
+        width: 300px;
         margin: 0 auto;
         float: inherit;
 
-        li {
-          text-align: right;
+        li a {
+          cursor: copy;
+          pointer-events: none;
         }
       }
     }
   }
+  // (02) "Contact Us" Modal (dialog)
+  &#modal_contact {
+    @media only screen and (max-width: 1250px) {
+      width: 70%;
+    }
+  }
 
-  // responsive behaviour
+  // responsive behaviour in all Modal (dialogs)
   @media only screen and (max-width: 992px) {
-    width: 85%;
+    width: 90% !important;
   }
 }
 
-/* Social media links inside each Modals (dialog) */
+/* -- Social media links inside each Modals (dialog) -- */
 .site-social {
-  & > i {
-    padding-right: 5px;
-  }
-
   &.right {
     li {
+      display: block;
+      width: 100%;
       float: right;
-
-      a {
-        color: #ccc;
-        cursor: text;
-
-        &:hover {
-          color: #ccc;
-        }
-      }
+      margin: 5px 0;
+    }
+  }
+  // Responsive behaviour
+  @media only screen and (max-width : 600px) {
+    &:not(.right) li {
+      margin: 20px 0;
     }
     // hidden in Mobile devices
-    @media only screen and (max-width : 600px) {
+    &.right li {
       display: none;
     }
   }
@@ -693,9 +699,6 @@ body {
   }
   .row-dos .site-social li a span {
     display: block;
-  }
-  .clockDos i {
-    display: inline-block;
   }
 }
 
@@ -715,10 +718,6 @@ body {
   #modal_contact ul li a {
     font-size: 15px;
   }
-}
-
-.clockDos i {
-  display: none;
 }
 
 /* -- (common) BUTTONS ------------------------------------------ */

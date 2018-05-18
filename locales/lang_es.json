@@ -12,7 +12,7 @@
       "workday": {
         "morning": "Mañanas",
         "evening": "Tardes",
-        "both": "Martes y Domingos"
+        "both": "Mañanas y tardes"
       },
       "hours": {
         "morning": "de 10:30 a 13:30",
@@ -103,13 +103,13 @@
     "cta": "Ver Antiparasitarios",
     "intro": {
       "title": "¿No me vas a proteger?",
-      "paragraph": "En las estaciones del año caludrosas proliferan los insectos y mosquitos que <b>transmiten enfermedades a nuestras mascotas</b>. No hace falta comentar que la salud de nuestros amigos peludos es lo principal así que... ¡<b>Protégelos</b>  de insectos voladores y parásitos externos con los <b>mejores productos del mercado</b>!",
+      "paragraph": "En las estaciones del año calurosas proliferan los insectos y mosquitos que <b>transmiten enfermedades a nuestras mascotas</b>. No hace falta comentar que la salud de nuestros amigos peludos es lo principal así que... ¡<b>Protégelos</b>  de insectos voladores y parásitos externos con los <b>mejores productos del mercado</b>!",
       "link": "¿Dónde comprar nuestros antiparasitarios?",
       "btn": "¿Dónde encontrarnos?"
     },
     "scalibor": {
       "title": "Collares antiparásitos de Scalibor",
-      "paragraph": "El collar Scalibor protege a tu perro de la <b>leishmaniasis</b> gracias a que funciona como un <b>potente repelente contra los mosquitos</b> flebotomos. Su innovador diseño libera la deltametrina de manerra constante que se expande por toda la superficie del cuerpo. También es efectivo <b>contra pulgas y garrapatas</b>.",
+      "paragraph": "El collar Scalibor protege a tu perro de la <b>leishmaniasis</b> gracias a que funciona como un <b>potente repelente contra los mosquitos</b> flebotomos. Su innovador diseño libera la deltametrina de manera constante que se expande por toda la superficie del cuerpo. También es efectivo <b>contra pulgas y garrapatas</b>.",
       "link": "¿Dónde comprar nuestros collares Scalibor?",
       "btn": "¿Dónde encontrarnos?"
     },
