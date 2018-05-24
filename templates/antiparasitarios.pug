@@ -3,15 +3,20 @@ html(lang='es')
     head
         meta(name='encoding', charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=5.0')
-        //- TODO: (SEO) check Title, keywords & Description Metatags to imrpove SEO
+        //- TODO: (SEO) check Title, keywords & Description Metatags to improve SEO
         title Antiparasitarios en la peluquería canina Canessa Valdemoro
-        meta(name='description', content='Servicios de la Peluquería canina Canessa. Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tarifa especial para autolavados además de un completo SPA canino. Tenemos pienso, collares, arneses, juguetes y complementos.')
-        meta(name='keywords', content='peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluquería para perros, peluqueria canina servicios, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, Parla, mascotactiva')
+        meta(name='description', content='Collares, pipetas y antiparasitarios en la peluquería canina Canessa de Valdemoro para luchar contra los parásitos qeu transmiten enfermedades a nuestras mascotas. Además ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tlf: 91 248 04 30')
+        //- meta(name='keywords', content='antiparasitarios, antiparasitos, collares antiparasitarios, collares antiparasitos, pipetas, pipetas antiparasitarias, pipetas antiparásitos, fletcare, scalibor, leishmania, leishmaniosis, peluqueria canina Valdemoro, Pinto, Ciempozuelos, peluqueria canina, peluquería canina, peluquerías caninas, peluqueria animal, peluqueria perros, peluqueria gatos, canessa, autolavado, Parla, mascotactiva')
         link(rel='canonical', href='https://peluqueriacanessa.com/antiparasitarios/' hreflang='es')
         link(rel='alternate', href='https://peluqueriacanessa.com/antiparasitarios#!' hreflang='es')
         //- All (common) METATAGS in head tag
         include includes/metatags
-        //- Structured Data (Schema)
+        //- Structured Data
+        //- (Open Graph)
+        include open-graph/og-index
+        //- (Twitter cards)
+        include twitter/tw-antiparasitarios
+        //- (Schema)
         include schema/schema-services
 
     body.bg-paper

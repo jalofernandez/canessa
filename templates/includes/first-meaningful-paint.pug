@@ -1,84 +1,19 @@
-//- First meaningful paint (loader)
-style.
-    html, body {
-        height: 100%;
-    }
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .hello-world-text {
-        opacity: 0;
-    }
-    .loader-container {
-        position: relative;
-        height: 200px;
-        width: 200px;
-    }
-    .loader-container svg {
-        position: absolute;
-    }
-    .spinner {
-        animation: rotator 1.4s linear infinite;
-        -webkit-animation: rotator 1.4s linear infinite;
-    }
-    .loader-dog {
-        left: 10px;
-        bottom: 10px;
-        width: 186px;
-        height: auto;
-    }
-    @keyframes rotator {
-        0% {
-            transform: rotate(0deg);
+//- TODO: coming soon async CSS to load faster "index" page!
+//- async CSS to improve First meaningful paint
+    style.
+        .main-logotype {
+            width: 200px;
+            height: 60px;
+            position: absolute;
+            top: 20px;
+            z-index: 3;
         }
-        100% {
-            transform: rotate(270deg);
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            background-color: #0f121e;
         }
-    }
-    @-webkit-keyframes rotator {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(270deg);
-        }
-    }
-    .path {
-        stroke-dasharray: 622;
-        stroke-dashoffset: 0;
-        transform-origin: center;
-        stroke: #ff4081;
-        animation: dash 1.4s ease-in-out infinite;
-        -webkit-animation: dash 1.4s ease-in-out infinite;
-    }
-    @keyframes dash {
-        0% {
-            stroke-dashoffset: 622;
-        }
-        50% {
-            stroke-dashoffset: 155.5;
-            transform: rotate(135deg);
-        }
-        100% {
-            stroke-dashoffset: 622;
-            transform: rotate(450deg);
-        }
-    }
-    @-webkit-keyframes dash {
-        0% {
-            stroke-dashoffset: 622;
-        }
-        50% {
-            stroke-dashoffset: 155.5;
-            transform: rotate(135deg);
-        }
-        100% {
-            stroke-dashoffset: 622;
-            transform: rotate(450deg);
-        }
-    }
-    #bgvid, .caption, .info-box {
-        opacity: 0;
-    }
