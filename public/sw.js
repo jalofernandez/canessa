@@ -1,10 +1,6 @@
 var CACHE_NAME = 'canessa-cache-v1';
 var urlsToCache = [
     '/',
-    '/css/main.css',
-    '/js/jquery.min.js',
-    '/js/materialize.min.js',
-    '/js/scripts-min.js',
     '/img/logos/canessa-logo.svg',
     '/img/slider/afgano.jpg',
     '/video/canessa-intro-2018-march.mp4'
