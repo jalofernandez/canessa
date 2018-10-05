@@ -37,16 +37,22 @@ html(lang='es')
             a.btn.btn-anim(href='peluqueria.html', title='Servicios de peluquería canina ofrecidos por la peluquería Canessa') #{index.slides.btn_pelu}
             a.btn.btn-anim(href='autolavado.html', title='Servicio de autolavado canino con asesoramiento profesional') #{index.slides.btn_auto}
             //- a.btn.btn-anim(href='piensos.html', title='Piensos y alimento canino en la peluquería canina Canessa') #{index.slides.btn_pienso}
-
-        //- (02) Info Panel box to enable Promotions
-        .info-box
+        
+        //- (02.a) Info Panel box to enable Promotions
+          .info-box
+              .info-box-text
+                  .info-box-text-img
+                  .info-box-text-copy
+                      | !{antiparasitarios.advise}
+              .info-box-link
+                  a.btn.btn-anim(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa')
+                      | #{antiparasitarios.cta}
+                      
+        //- (02.b) Cookies Panel box to enable Cookies info
+        .info-box.cookies-advise
             .info-box-text
-                .info-box-text-img
                 .info-box-text-copy
-                    | !{antiparasitarios.advise}
-            .info-box-link
-                a.btn.btn-anim(href='antiparasitarios.html', title='Antiparasitarios y protección canina en la peluquería canina Canessa')
-                    | #{antiparasitarios.cta}
+                    | !{legal.cookies.advise}
 
         //- main footer NAVBAR (common) in all views
         include includes/navbar

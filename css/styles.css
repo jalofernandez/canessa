@@ -1371,6 +1371,20 @@ video {
   color: #0f121e;
   text-transform: inherit;
 }
+.info-box.cookies-advise {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.info-box.cookies-advise .info-box-text {
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.info-box.cookies-advise .info-box-text .info-box-text-copy {
+  width: 100%;
+}
+.info-box.cookies-advise .info-box-text .info-box-text-copy a:hover {
+  text-decoration: underline;
+}
 /* ----- (common) HTML ELEMENTS ---------------------------------------- */
 body {
   /* -- (page) BG variations -- */

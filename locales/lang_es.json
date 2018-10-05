@@ -323,7 +323,8 @@
         "<table class='responsive-table'> <thead> <tr> <th>Cookie</th> <th>Finalidad</th> <th>Propietario</th> </tr></thead> <tbody> <tr> <td>_ga</td><td>Se usa para distinguir usuarios.</td><td>Google analytics</td></tr><tr> <td>_gid</td><td>Google Analytics utiliza esta cookie para almacenar y actualizar un valor único para cada página visitada. La cookie se actualiza cada vez que envía los datos a Google Analytics.</td><td>Google analytics</td></tr></tbody></table>",
         "El usuario puede usted permitir, bloquear o eliminar las <b>cookies</b> instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador (ver enlaces mostrados).",
         "Las <b>cookies</b> serán tratadas por el titular de esta página web y, en su caso, por entidades a las que se les haya encomendado su tratamiento con finalidades legítimas."
-      ]
+      ],
+      "advise": "Sólo usamos cookies de analítica. Al usar nuestro sitio web, acepta que podamos usar cookies. <a href='legal.html#cookies' title='Ver los términos legales de peluquería canina Canessa'><b>Ver términos de uso</b></a>"
     },
     "analytics": {
       "title": "Google Analytics",
