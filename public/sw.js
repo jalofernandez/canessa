@@ -3,7 +3,7 @@ var urlsToCache = [
     '/',
     '/img/logos/canessa-logo.svg',
     '/img/slider/afgano.jpg',
-    '/video/canessa-intro-2018-march.mp4'
+    '/video/canessa_web-promo-video_2018-09-15.mp4'
 ];
 
 self.addEventListener('install', function(event) {
