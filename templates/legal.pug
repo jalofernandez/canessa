@@ -97,9 +97,25 @@ html(lang='es')
                   //- for each loop to load all copies in "locales" json file/s
                   each lopd, i in legal.lopd.copies
                     p.light !{lopd}
-
+                    
         //- ----------------------------------------------------------------
-        //- 03. COOKIES ADVISE :: Uso de Cookies
+        //- 03. PRIVACY POLICY :: Política de privacidad
+        //- ----------------------------------------------------------------
+        #privacy.row.scrollspy
+          .col.s12.headerSection.headerSectionLegal
+            h3.center-align
+              span #{legal.privacy.title}
+            
+        .container
+          .section
+            .row
+              .col.s12.paragraphs
+                //- for each loop to load all copies in "locales" json file/s
+                each privacy, i in legal.privacy.copies
+                  p.light !{privacy}
+                                
+        //- ----------------------------------------------------------------
+        //- 04. COOKIES ADVISE :: Uso de Cookies
         //- ----------------------------------------------------------------
         #cookies.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -141,7 +157,7 @@ html(lang='es')
                     p.light !{cookie}
 
         //- ----------------------------------------------------------------
-        //- 04. GOOGLE ANALYTICS :: Analítica de Google
+        //- 05. GOOGLE ANALYTICS :: Analítica de Google
         //- ----------------------------------------------------------------
         #analytics.row.scrollspy
             .col.s12.headerSection.headerSectionLegal
@@ -156,7 +172,7 @@ html(lang='es')
                         each analytic, i in legal.analytics.copies
                             p.light !{analytic}
         //- ----------------------------------------------------------------
-        //- 05. RESPONSABILITY :: Responsabilidad
+        //- 06. RESPONSABILITY :: Responsabilidad
         //- ----------------------------------------------------------------
         #responsibility.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -172,7 +188,7 @@ html(lang='es')
                     p.light !{responsibility}
 
         //- ----------------------------------------------------------------
-        //- 06. COPYRIGHT :: Propiedad intelectual
+        //- 07. COPYRIGHT :: Propiedad intelectual
         //- ----------------------------------------------------------------
         #copyright.row.scrollspy
           .col.s12.headerSection.headerSectionLegal
@@ -188,7 +204,7 @@ html(lang='es')
                     p.light !{copyright}
 
         //- ----------------------------------------------------------------
-        //- 07. PARALLAX Bottom "Section"
+        //- 08. PARALLAX Bottom "Section"
         //- ----------------------------------------------------------------
         //-
             .parallax-container.row

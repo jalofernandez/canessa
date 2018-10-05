@@ -1431,6 +1431,16 @@ p {
 .light b {
   font-weight: 600;
 }
+/* -- Table -- */
+table {
+  margin-bottom: 3rem;
+}
+td,
+th {
+  vertical-align: top;
+  font-size: 85%;
+  line-height: 22px;
+}
 /* -- Strong Text -- */
 .strong {
   font-weight: bold;
