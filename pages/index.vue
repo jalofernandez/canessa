@@ -46,6 +46,8 @@ export default {
         { hid: 'description', name: 'description', content: description },
         { hid: 'Classification', name: 'Classification', content: 'Business' },
         { hid: 'subject', name: 'subject', content: description },
+        // Facebook verification domain to allow Business Manager & Marketing platforms
+        { hid: 'facebook-domain-verification', name: 'facebook-domain-verification', content: 'ewx7qptinl041xcf1o9e1b7x6pj26t' },
       ],
       // Structured Data (Schema)
       __dangerouslyDisableSanitizers: ['script'],
