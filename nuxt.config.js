@@ -62,7 +62,15 @@ export default {
   modules: [
     // https://bulma.io
     '@nuxtjs/bulma',
+    // https://www.npmjs.com/package/@nuxtjs/robots
+    '@nuxtjs/robots',
   ],
+
+  robots: {
+    UserAgent: "*",
+    Allow: "/",
+    Sitemap: `https://peluqueriacanessa/sitemap.xml`,
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
