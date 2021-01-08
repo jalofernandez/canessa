@@ -29,6 +29,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      owner: this.$store.state.owner,
+    }
+  },
   head() {
     const title = ''
     const description =
@@ -41,6 +46,11 @@ export default {
         { hid: 'description', name: 'description', content: description },
         { hid: 'Classification', name: 'Classification', content: 'Business' },
         { hid: 'subject', name: 'subject', content: description },
+      ],
+      // Structured Data (Schema)
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        { innerHTML: JSON.stringify(this.owner.schema), type: 'application/ld+json' },
       ],
     }
   }
