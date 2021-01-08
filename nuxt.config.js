@@ -35,6 +35,7 @@ export default {
       { hid: 'msapplication-TileColor', name: 'msapplication-TileColor', content: '#232323' }
     ],
     link: [
+      { rel: 'author', type: 'text/plain', href: 'https://peluqueriacanessa.com/humans.txt' },
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       { rel: 'dns-prefetch', href: '//www.youtube.com/channel/UCqzf03PPcv5F3u0RAEtwqmw' },
       { rel: 'dns-prefetch', href: '//www.facebook.com/Peluqueria-Canina-Canessa-113194982084561' },

@@ -1,0 +1,13 @@
+# https://www.peluqueriacanessa.com/humans.txt
+
+/* TEAM */
+    Designer & Developer: Javier Lorenzo Fernández
+    Twitter: @jalofernandez
+    Instagram: jalofernandez
+    Site: https://jalofernandez.com
+    Location: Madrid, Comunidad Autónoma de Madrid, Spain
+
+/* SITE */
+    Standards: HTML5, CSS3, JS
+    Components: Nuxtjs, Sass
+    Software: Nodejs + Vuejs (javascript)
