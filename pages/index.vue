@@ -54,6 +54,11 @@ export default {
       script: [
         { innerHTML: JSON.stringify(this.owner.schema), type: 'application/ld+json' },
       ],
+      link: [
+        { rel: 'canonical', hid: 'canonical', href: canonical },
+        { rel: 'alternate', hid: 'alternate', href: canonical+'/#!' },
+        { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
+      ]
     }
   }
 }
