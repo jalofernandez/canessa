@@ -64,12 +64,26 @@ export default {
     '@nuxtjs/bulma',
     // https://www.npmjs.com/package/@nuxtjs/robots
     '@nuxtjs/robots',
+    // https://www.npmjs.com/package/@nuxtjs/sitemap
+    // IMP!: always declare the sitemap module at end of array
+    '@nuxtjs/sitemap', 
   ],
 
   robots: {
     UserAgent: "*",
     Allow: "/",
     Sitemap: `https://peluqueriacanessa/sitemap.xml`,
+  },
+  sitemap: {
+    hostname: `https://peluqueriacanessa.com`,
+    gzip: true,
+    // exclude: ['/perretes', '/blog', '/blog/', '/blog/**'],
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date(),
+      lastmodrealtime: true,
+    },
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
