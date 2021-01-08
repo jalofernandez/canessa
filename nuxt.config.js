@@ -33,6 +33,12 @@ export default {
       //- (metas) IE (windows phone) browsers
       // { hid: 'msapplication-TileImage', name: 'msapplication-TileImage', content: '/src/images/icons/app-icon-144x144.png' },
       { hid: 'msapplication-TileColor', name: 'msapplication-TileColor', content: '#232323' }
+    ],
+    link: [
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'dns-prefetch', href: '//www.youtube.com/channel/UCqzf03PPcv5F3u0RAEtwqmw' },
+      { rel: 'dns-prefetch', href: '//www.facebook.com/Peluqueria-Canina-Canessa-113194982084561' },
+      { rel: 'dns-prefetch', href: '//www.instagram.com/peluqueriacanessa' },
     ]
   },
 
