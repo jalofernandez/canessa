@@ -1,6 +1,7 @@
 {
   "name": "canessa",
   "version": "2.0.0",
+  "description": "Vanessa Vizcaya pets saloon main website for pets health and beauty",
   "private": true,
   "scripts": {
     "dev": "nuxt",
