@@ -64,6 +64,20 @@ export default {
     '@nuxtjs/bulma',
     // https://www.npmjs.com/package/nuxt-webfontloader
     'nuxt-webfontloader',
+    // https://www.npmjs.com/package/nuxt-social-meta
+    [
+      "nuxt-social-meta",
+      {
+        title: "Peluquería canina Canessa Valdemoro",
+        description:
+          "Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30",
+        url: "https://www.peluqueriacanessa.com",
+        // img: "/link_to_image_in_static_folder.jpg",
+        locale: "es-ES",
+        twitter: "@jalofernandez",
+        themeColor: "#ff4081"
+      }
+    ],
     // https://www.npmjs.com/package/@nuxtjs/robots
     '@nuxtjs/robots',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
