@@ -8,7 +8,7 @@ export default {
       lang: 'es',
     },
     bodyAttrs: {
-      class: [author],
+      class: ['canessa'],
     },
     title: process.env.npm_package_name || '',
     titleTemplate: "%s Peluquería canina Canessa Valdemoro 🐾  ✅",
