@@ -78,6 +78,8 @@ export default {
         themeColor: "#ff4081"
       }
     ],
+    // https://www.npmjs.com/package/nuxt-mq
+    ['nuxt-mq'],
     // https://www.npmjs.com/package/nuxt-purgecss
     "nuxt-purgecss",
     // https://www.npmjs.com/package/@nuxtjs/robots
@@ -91,6 +93,17 @@ export default {
     google: {
       families: ['Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap'],
     },
+  },
+  mq: {
+    defaultBreakpoint: "desktop",
+    breakpoints: {
+      mobile: 600,
+      smartphone: 768,
+      tablet: 1024,
+      desktop: 1400,
+      desktopWide: 2000,
+      desktopUltraWide: Infinity
+    }
   },
   purgeCSS: {
     // Overrides the default settings here

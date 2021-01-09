@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">
+      <h1 class="title" v-if="$mq !== 'mobile'">
         canessa
       </h1>
       <div class="links">
