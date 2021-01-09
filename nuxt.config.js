@@ -8,6 +8,7 @@ export default {
   head: {
     htmlAttrs: {
       lang: 'es',
+      class: ['has-navbar-fixed-bottom']
     },
     bodyAttrs: {
       class: ['canessa'],
@@ -86,7 +87,7 @@ export default {
     '@nuxtjs/robots',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
     // IMP!: always declare the sitemap module at end of array
-    '@nuxtjs/sitemap', 
+    '@nuxtjs/sitemap',
   ],
 
   webfontloader: {
