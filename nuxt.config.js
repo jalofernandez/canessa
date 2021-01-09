@@ -78,6 +78,8 @@ export default {
         themeColor: "#ff4081"
       }
     ],
+    // https://www.npmjs.com/package/nuxt-purgecss
+    "nuxt-purgecss",
     // https://www.npmjs.com/package/@nuxtjs/robots
     '@nuxtjs/robots',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
@@ -89,6 +91,9 @@ export default {
     google: {
       families: ['Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap'],
     },
+  },
+  purgeCSS: {
+    // Overrides the default settings here
   },
   robots: {
     UserAgent: "*",

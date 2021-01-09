@@ -19,6 +19,7 @@
     "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
+    "nuxt-purgecss": "^1.0.0",
     "sass": "^1.32.2",
     "sass-loader": "^10.1.0"
   }
