@@ -1,7 +1,9 @@
 const author = '@jalofernandez para Vanessa Vizcaya, Canessa'
 
 export default {
-  // mode: 'universal',
+  // Isomorphic app (server-side rendering + client-side navigation) not SPA one
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-mode
+  mode: 'universal',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     htmlAttrs: {
