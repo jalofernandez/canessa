@@ -228,37 +228,37 @@
       <div class="container">
         <div class="columns">
           <div class="column is-3 is-offset-2">
-            <h2><strong>Category</strong></h2>
+            <h2><strong>Páginas:</strong></h2>
             <ul>
-              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-              <li><a href="#">Vestibulum errato isse</a></li>
-              <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-              <li><a href="#">Aisia caisia</a></li>
-              <li><a href="#">Murphy's law</a></li>
-              <li><a href="#">Flimsy Lavenrock</a></li>
-              <li><a href="#">Maven Mousie Lavender</a></li>
+              <li v-for="(link, index) in pages.links" :key="index">
+                <nuxt-link
+                  :to="{ name: link.page }"
+                  class=""
+                  :title="`Ir a la página ${link.name} de ${owner.nickname}`"
+                  :data-text="`${link.name}`"
+                >
+                  {{ link.name }}
+                </nuxt-link>
+              </li>
             </ul>
           </div>
           <div class="column is-3">
-            <h2><strong>Category</strong></h2>
+            <h2><strong>Blog:</strong></h2>
             <ul>
-              <li><a href="#">Labore et dolore magna aliqua</a></li>
-              <li><a href="#">Kanban airis sum eschelor</a></li>
-              <li><a href="#">Modular modern free</a></li>
-              <li><a href="#">The king of clubs</a></li>
-              <li><a href="#">The Discovery Dissipation</a></li>
-              <li><a href="#">Course Correction</a></li>
-              <li><a href="#">Better Angels</a></li>
+              <li><a href="#">Blog post 01</a></li>
+              <li><a href="#">Blog post 02</a></li>
+              <li><a href="#">Blog post 03</a></li>
+              <li><a href="#">Blog post 04</a></li>
+              <li><a href="#">Ver todos los post...</a></li>
             </ul>
           </div>
           <div class="column is-4">
-            <h2><strong>Category</strong></h2>
+            <h2><strong>Términos legales:</strong></h2>
             <ul>
-              <li><a href="#">Objects in space</a></li>
-              <li><a href="#">Playing cards with coyote</a></li>
-              <li><a href="#">Goodbye Yellow Brick Road</a></li>
-              <li><a href="#">The Garden of Forking Paths</a></li>
-              <li><a href="#">Future Shock</a></li>
+              <li><a href="#">Responsable</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Condiciones de uso</a></li>
+              <li><a href="#">Política de cookies</a></li>
             </ul>
           </div>
         </div>
@@ -271,8 +271,8 @@
           <div class="control level-item">
             <a href="https://github.com/BulmaTemplates/bulma-templates">
               <div class="tags has-addons">
-                <span class="tag is-dark">Bulma Templates</span>
-                <span class="tag is-info">MIT license</span>
+                <span class="tag is-dark">© {{ owner.copyright }}</span>
+                <span class="tag is-info">{{ currentYear }}</span>
               </div>
             </a>
           </div>
