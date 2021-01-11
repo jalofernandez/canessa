@@ -65,6 +65,8 @@ export default {
     '@nuxtjs/bulma',
     // https://www.npmjs.com/package/nuxt-webfontloader
     'nuxt-webfontloader',
+    // https://www.npmjs.com/package/nuxtjs-mdi-font
+    'nuxtjs-mdi-font',
     // https://www.npmjs.com/package/nuxt-social-meta
     [
       "nuxt-social-meta",
