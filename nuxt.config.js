@@ -103,6 +103,7 @@ export default {
       mobile: 600,
       smartphone: 768,
       tablet: 1024,
+      laptop: 1280,
       desktop: 1400,
       desktopWide: 2000,
       desktopUltraWide: Infinity

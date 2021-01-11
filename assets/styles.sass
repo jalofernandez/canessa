@@ -4,7 +4,22 @@ body
   font-family: 'Roboto', sans-serif
 
 .navbar
-  border-top: 1px solid #000
-  background-color: rgba(15,18,30,.9)
+  border-top: 1px solid $black-bis
   backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
-  color: #fff
+
+.navbar-item
+  &.copyright
+    cursor: initial
+    pointer-events: none
+    color: $color-main
+  &.whatsapp
+    color: $whatsapp
+  &.instagram
+    color: $instagram
+  &.facebook
+    color: $facebook
+  &.youtube
+    color: $youtube
+  @media (hover: hover)
+    &:hover, &:focus
+      transition: all .15s ease-in-out
