@@ -83,6 +83,8 @@ export default {
     ],
     // https://www.npmjs.com/package/nuxt-mq
     ['nuxt-mq'],
+    // https://www.npmjs.com/package/vue-scrollto
+    'vue-scrollto/nuxt',
     // https://www.npmjs.com/package/nuxt-purgecss
     "nuxt-purgecss",
     // https://www.npmjs.com/package/@nuxtjs/robots
