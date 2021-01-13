@@ -255,8 +255,8 @@ export default {
   head() {
     const title = ''
     const description =
-      'Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30'
-    const canonical = 'https://peluqueriacanessa.com'
+      this.owner.copyright + ' realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30'
+    const canonical = 'https://' + this.owner.url
 
     return {
       title,
