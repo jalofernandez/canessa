@@ -18,7 +18,7 @@
           >
             © {{ owner.copyright }},&nbsp;<small><b>{{ owner.currentYear }}</b></small>
           </a>
-          <NuxtLink class="navbar-item terms" to="/" :title="`Condiciones de uso del website de ${owner.copyright}`">
+          <NuxtLink class="navbar-item terms" to="/legal" :title="`Condiciones de uso del website de ${owner.copyright}`">
             {{ pages.links[8].name }}
           </NuxtLink>
           <NuxtLink class="navbar-item sitemap" to="/" :title="`Mapa del sitio web de ${owner.copyright}`">
