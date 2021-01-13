@@ -8,6 +8,7 @@ export const state = () => ({
     { name: "Mascotactiva", page: "mascotactiva" },
     { name: "Instalaciones", page: "instalaciones" },
     { name: "Sobre Vanessa", page: "vanessavizcaya" },
+    { name: "Contacto", page: "contacto" },
     { name: "Legal", page: "legal" },
     { name: "Sitemap", page: "sitemap" }
   ]

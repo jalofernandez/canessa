@@ -19,12 +19,18 @@
             © {{ owner.copyright }},&nbsp;<small><b>{{ owner.currentYear }}</b></small>
           </a>
           <NuxtLink class="navbar-item terms" to="/legal" :title="`Condiciones de uso del website de ${owner.copyright}`">
-            {{ pages.links[8].name }}
-          </NuxtLink>
-          <NuxtLink class="navbar-item sitemap" to="/" :title="`Mapa del sitio web de ${owner.copyright}`">
             {{ pages.links[9].name }}
           </NuxtLink>
-          <a class="navbar-item schedule modal-trigger" href="#modal_schedule" :title="`Horario comercial de ${owner.copyright}`">
+          <NuxtLink class="navbar-item sitemap" to="/" :title="`Mapa del sitio web de ${owner.copyright}`">
+            {{ pages.links[10].name }}
+          </NuxtLink>
+          <a
+            class="navbar-item schedule modal-trigger"
+            href="#modal_schedule"
+            :title="`Horario comercial de ${owner.copyright}`"
+            @click="toggleShow()"
+            v-if="!isMenuShown"
+          >
             Horario
           </a>
         </div>
@@ -109,7 +115,24 @@
         </div>
       </div>
     </nav>
-    <Nuxt />
+    <transition name="fade" appear>
+      <Nuxt />
+    </transition>
+    <div :class="['modal', { 'is-active': isMenuShown }]">
+      <div class="modal-background" @click="toggleShow()"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete" aria-label="close" @click="toggleShow()"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" @click="toggleShow()">Cancel</button>
+        </footer>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -118,66 +141,15 @@ export default {
   data() {
     return {
       scrolling: true,
+      isMenuShown: false,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
+    }
+  },
+  methods: {
+    toggleShow() {
+      this.isMenuShown = !this.isMenuShown
     }
   }
 }
 </script>
-
-<style>
-html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
