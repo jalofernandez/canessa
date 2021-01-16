@@ -10,7 +10,6 @@
                 :to="{ name: link.page }"
                 class=""
                 :title="`Ir a la página ${link.name} de ${owner.nickname}`"
-                :data-text="`${link.name}`"
               >
                 {{ link.name }}
               </NuxtLink>
@@ -46,6 +45,18 @@
             </div>
           </NuxtLink>
         </div>
+        <div class="control level-item mt-3">
+          <a
+            class="author"
+            :href="`https://${owner.author}.com`"
+            :title="`${developBy} @${owner.author}: diseñador gráfico y desarrollador web / frontend`"
+            :alt="`Ir al website de ${owner.author}`"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <small>{{ developBy }}:</small> <span>{{ owner.author }}.com</span>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
@@ -57,6 +68,14 @@ export default {
     return {
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
+      developBy: 'Website diseñado y desarrollado por'
+    }
+  },
+  head() {
+    return {
+      link: [
+        { rel: 'dns-prefetch', href: '//jalofernandez.com' },
+      ]
     }
   }
 }

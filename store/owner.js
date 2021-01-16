@@ -10,6 +10,7 @@ export const state = () => ({
   email: email,
   copyright: business,
   phone: 34912480430,
+  author: 'jalofernandez',
   currentYear: new Date().getFullYear(),
   schema: {
     '@context': 'http://schema.org',

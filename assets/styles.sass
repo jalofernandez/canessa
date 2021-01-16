@@ -27,6 +27,9 @@ body
     &:hover, &:focus
       transition: all .15s ease-in-out
 
+.tag:not(body).is-dark
+  color: $color-main 
+
 @media (min-width: 980px)
   .reflected .columns .column:first-child
     order: 2
@@ -97,3 +100,12 @@ body
   &.th-quote,
   &.th-quote + em
     opacity: .3
+
+.author
+  span
+    color: $jalofernandez
+  @media (hover: hover)
+    &:hover, &:focus
+      span
+        color: darken($jalofernandez, 8%)
+        text-decoration: underline
