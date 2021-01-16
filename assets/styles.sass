@@ -2,6 +2,7 @@
   
 body
   font-family: 'Roboto', sans-serif
+  color: hsl(0, 0%, 40%)
 
 .canessa
   background: url(~assets/paper.png) center repeat
@@ -34,8 +35,21 @@ body
   .reflected .columns .column:first-child
     order: 2
 
+.container
+  .content figure img
+    border-radius: 5px
+  @media (min-width: 980px)
+    &:not(.reflected) .content figure
+      margin-right: 0
+    &.reflected .content figure
+      margin-left: 0
+  @media (max-width: 979px)
+    .content figure
+      margin-right: 0
+  @media (max-width: 768px)
+    .content figure
+      margin: 0
 
-// (grid) BTNs & Nav Links
 .th-link
   display: inline-block
   font-family: "Roboto", sans-serif
@@ -95,11 +109,15 @@ body
       bottom: 5px
       left: -20px
     z-index: 0
-    .mdi::before
-      color: $color-main
   &.th-quote,
   &.th-quote + em
     opacity: .3
+
+.has-text-primary .th-quote .mdi::before
+  color: $color-main
+
+.has-text-warning .th-quote .mdi::before
+  color: $mascotactiva
 
 .author
   span

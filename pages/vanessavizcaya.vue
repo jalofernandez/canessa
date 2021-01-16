@@ -17,7 +17,7 @@
               </span>
               {{ block.title }}<em class="ml-1">...</em>
             </h2>
-            <p v-html="block.description"></p>
+            <p class="is-size-6-mobile" v-html="block.description"></p>
             <a
               :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
               href="tel:912480430"
