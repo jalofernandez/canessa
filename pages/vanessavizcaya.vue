@@ -4,7 +4,14 @@
       <div :class="['container', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
         <div class="columns is-vcentered content is-medium">
           <div class="column is-6">
-            <h2 class="has-text-primary has-text-weight-medium is-relative">
+            <h2
+              :class="[
+                'is-size-4-mobile',
+                'has-text-primary',
+                'is-relative',
+                $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium'
+              ]"
+            >
               <span class="icon is-large th-quote th-is-open">
                 <i class="mdi mdi-48px mdi-format-quote-open"></i>
               </span>
@@ -12,7 +19,7 @@
             </h2>
             <p v-html="block.description"></p>
             <a
-              class="th-link"
+              :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
               href="tel:912480430"
               :title="`${block.link} en ${owner.copyright}`"
               :alt="`${block.link} en ${owner.copyright}`"
