@@ -21,7 +21,7 @@
           <NuxtLink class="navbar-item terms" to="/legal" :title="`Condiciones de uso del website de ${owner.copyright}`">
             {{ pages.links[9].name }}
           </NuxtLink>
-          <NuxtLink class="navbar-item sitemap" to="/" :title="`Mapa del sitio web de ${owner.copyright}`">
+          <NuxtLink class="navbar-item sitemap" to="/vanessavizcaya" :title="`Mapa del sitio web de ${owner.copyright}`">
             {{ pages.links[10].name }}
           </NuxtLink>
           <a

@@ -26,3 +26,71 @@ body
   @media (hover: hover)
     &:hover, &:focus
       transition: all .15s ease-in-out
+
+@media (min-width: 980px)
+  .reflected .columns .column:first-child
+    order: 2
+
+
+// (grid) BTNs & Nav Links
+.th-link
+  display: inline-block
+  font-family: "Roboto", sans-serif
+  color: #039be5
+  position: relative
+  pointer-events: auto
+
+  white-space: nowrap
+  align-self: flex-start
+  line-height: 40px
+  margin-top: auto
+  // to apply when layout changed from columns to rows
+  @media screen and (max-width: 799px)
+    margin-top: 20px
+  
+  .mdi
+    padding-left: 5px
+    opacity: .5
+    animation: padding .25s ease
+
+  &:focus, &:hover
+    color: darken(#039be5, 8%)
+    .mdi
+      padding-left: 10px
+      opacity: .7
+
+  &.btn
+    text-transform: inherit
+
+  &:not(.btn)
+    // (hover effect) nav link line animation
+    &::before
+      content: ''
+      position: absolute
+      background: currentColor
+      width: 75%
+      height: 1px
+      bottom: 0
+      transform-origin: 0% 50%
+      transform: scale3d(0,1,1)
+      opacity: 0
+      transition: all 0.25s
+      transition-property: opacity, transform
+    &:hover::before
+      opacity: 1
+      transform: scale3d(1,1,1)
+
+  + .th-link
+    margin: 0 0 0 3rem
+
+.icon
+  &.th-quote.th-is-open
+    position: absolute
+    bottom: 10px
+    left: -30px
+    z-index: 0
+    .mdi::before
+      color: $color-main
+  &.th-quote,
+  &.th-quote + em
+    opacity: .3

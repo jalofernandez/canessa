@@ -235,11 +235,11 @@
           </div>
         </div>
         <div class="content has-text-centered">
-          <p>
+          <!-- <p>
             <a class="icon" href="https://github.com/BulmaTemplates/bulma-templates">
               <i class="fa fa-github"></i>
             </a>
-          </p>
+          </p> -->
           <div class="control level-item">
             <a href="https://github.com/BulmaTemplates/bulma-templates">
               <div class="tags has-addons">

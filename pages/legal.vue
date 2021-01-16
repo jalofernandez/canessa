@@ -5,7 +5,7 @@
         <div class="container has-text-centered">
           <img
             class="artwork"
-            src="~assets/artworks/dog-judge.svg"
+            src="~assets/artworks/legal/dog-judge.svg"
             :title="`Aviso legal de ${owner.nickname}`"
             :alt="`Aviso legal de ${owner.nickname}`"
             width="200"
