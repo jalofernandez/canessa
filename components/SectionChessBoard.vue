@@ -14,7 +14,7 @@
             <span class="icon is-large th-quote th-is-open">
               <i class="mdi mdi-48px mdi-format-quote-open"></i>
             </span>
-            {{ block.title }}<em>...</em>
+            {{ block.title }}<em v-if="page == 'vanessavizcaya'">...</em>
           </h2>
           <p class="is-size-6-mobile" v-html="block.description"></p>
           <!-- (page) SERVICIOS -->
@@ -35,9 +35,9 @@
             href="tel:636515206"
             :title="`${block.link} en ${owner.copyright}`"
             rel="noopener noreferrer"
-            v-if="page == 'mascotactiva'"
+            v-if="page == 'vanessavizcaya' || page == 'mascotactiva'"
           >
-            {{ block.link }}: 636 515 206
+            {{ block.link }}: <span v-if="page == 'vanessavizcaya'">91 248 04 30</span><span v-if="page == 'mascotactiva'">636 515 206</span>
             <span class="icon">
               <i class="mdi mdi-arrow-right"></i>
             </span>
