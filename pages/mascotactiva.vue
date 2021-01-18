@@ -17,6 +17,7 @@ export default {
           title: 'Paseamos y entrenamos a tu mascota',
           description: 'El vínculo afectivo que tenemos con nuestro mejor amigo lo define todo. Desde Mascotactiva ayudaremos tanto al dueño como al perro a tener <b>una relación sólida, sana y basada en la confianza mutua</b>, de modo que la convivencia tanto dentro como fuera de casa sea lo más positiva y completa posible. Enseñaremos a tu compañero peludo a utilizar y mejorar sus capacidades con el <b>adiestramiento cognitivo-emocional impartido por la escuela EDUCAN</b>.' + closeQuote,
           link: 'Llámanos al',
+          href: 'tel:636515206',
           img: this.$route.name + '/mascotactiva-pastor-aleman-rafa-cros.jpg',
           alt: 'Pastor alemán descansando tras un entrenamiento de Mascotactiva',
           reflected: false
@@ -25,6 +26,7 @@ export default {
           title: 'Paseos y entrenamientos',
           description: 'Todos los perros, independientemente de su edad y raza necesitan algún tipo de ejercicio. En nuestros paseos controlados <b>tu mascota aprenderá a pasear</b> tranquila, <b>sin tirar de la correa, haciendo caso a la llamada</b> y mejorando la permanencia en las posiciones de sentado y tumbado. Si, además, a tu perro le gusta correr le llevamos al trote con <b>paseos relajantes o al galope</b> con entrenamiento físico donde disfrutará en la Naturaleza de una actividad que rebajará su estrés y una vuelta al hogar más tranquila.' + closeQuote,
           link: 'Píde cita en el',
+          href: 'tel:636515206',
           img: this.$route.name + '/rafa-cros-mascotactiva-peluqueria-canina-canessa.jpg',
           alt: 'Rafa Cros de Mascotactiva paseando perros',
           reflected: true
@@ -33,6 +35,7 @@ export default {
           title: 'Gestión emocional',
           description: 'Existen perros con problemas de miedo, fobias, ansiedad, estrés, agresividad, reactividad, falta de empatía o carencia de habilidades sociales pero todos estos problemas tienen solución. En Mascotactiva usamos <b>técnicas y protocolos de trabajo para mejorar la conducta</b> a través de juegos de <b>estimulación mental y olfativos</b>, de la inteligencia y memoria olfativa de los perros <b>mejorando la conexión emocional</b> de los mismos con sus dueños y su entorno.' + closeQuote,
           link: 'Te ayudamos en',
+          href: 'tel:636515206',
           img: this.$route.name + '/gestion-emocional-mascotactiva-peluqueria-canina-canessa.jpg',
           alt: 'Gestión emocional para mascotas en Mascotactiva',
           reflected: false
@@ -41,6 +44,7 @@ export default {
           title: 'Guardería canina',
           description: '¿Tienes que viajar y no puedes llevar a tu perro contigo? ¿No tienes tiempo para pasear a tu perro? No te preocupes porque <b>Rafa Cros</b>, nuestro cuidador de Mascotactiva, <b>se encargará de tu compañero peludo</b> en su propia casa con un <b>servicio más cálido y familiar</b> que el de las frias jaulas de una residencia canina. Tu perro recibirá un trato preferente y profesional respetándose en todo momento sus rutinas de paseos y alimentación.' + closeQuote,
           link: 'Llámanos al',
+          href: 'tel:636515206',
           img: this.$route.name + '/paseador-canino-mascotactiva-peluqueria-canina-canessa.jpg',
           alt: 'Servicio de guardería canina por Rafa Cros de Mascotactiva',
           reflected: true

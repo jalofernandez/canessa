@@ -32,7 +32,7 @@
           <!-- (pages) MASCOTACTIVA / VANESSA -->
           <a
             :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
-            href="tel:636515206"
+            :href="block.href"
             :title="`${block.link} en ${owner.copyright}`"
             rel="noopener noreferrer"
             v-if="page == 'vanessavizcaya' || page == 'mascotactiva'"
