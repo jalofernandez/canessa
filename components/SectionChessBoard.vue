@@ -17,19 +17,19 @@
             {{ block.title }}<em v-if="page == 'vanessavizcaya'">...</em>
           </h2>
           <p class="is-size-6-mobile" v-html="block.description"></p>
-          <!-- (page) SERVICIOS -->
+          <!-- (page) SERVICIOS / ANTIPARASITARIOS -->
           <NuxtLink
             :to="{ name: block.to }"
             :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
             :title="`${block.link} en ${owner.copyright}`"
-            v-if="page == 'servicios'"
+            v-if="page == 'servicios' || page == 'antiparasitarios'"
           >
             {{ block.link }}
             <span class="icon">
               <i class="mdi mdi-arrow-right"></i>
             </span>
           </NuxtLink>
-          <!-- (pages) MASCOTACTIVA / VANESSA / ANTIPARASITARIOS -->
+          <!-- (pages) MASCOTACTIVA / VANESSA -->
           <a
             :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
             href="tel:636515206"
