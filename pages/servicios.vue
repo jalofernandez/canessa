@@ -18,7 +18,7 @@ export default {
           description: '...No es solo una cuestión de estética, sino también de <b>higiene</b>, <b>salud</b>, y lo más importante, <b>bienestar</b> del animal porque sabemos lo importante que es para ti tu perro y lo mimaremos como se merece, con los mejores métodos y técnicas no invasivas garantizando un resultado final impecable y sin molestias para él. ¡Se merecen un trato especial!' + closeQuote,
           link: 'Más sobre peluquería',
           to: 'peluqueria',
-          img: this.$route.name + '/yorkshire-en-mesa-de-corte.jpg',
+          img: this.$route.name + '/corte-a-maquina-02-peluqueria-canina-canessa.jpg',
           alt: 'Corte a máquina de mestizo de yorkshire en' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },

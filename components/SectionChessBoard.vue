@@ -29,7 +29,7 @@
               <i class="mdi mdi-arrow-right"></i>
             </span>
           </NuxtLink>
-          <!-- (page) MASCOTACTIVA -->
+          <!-- (pages) MASCOTACTIVA / VANESSA / ANTIPARASITARIOS -->
           <a
             :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
             href="tel:636515206"
