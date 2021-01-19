@@ -140,15 +140,29 @@
 export default {
   data() {
     return {
-      scrolling: true,
+      scrolling: false,
       isMenuShown: false,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
     }
   },
+  created() {
+    if (process.client) {
+      window.addEventListener('scroll', this.handleScroll)
+    }
+  },
+  destroyed() {
+    if (process.client) {
+      window.removeEventListener('scroll', this.handleScroll)
+    }
+  },
   methods: {
     toggleShow() {
       this.isMenuShown = !this.isMenuShown
+    },
+    handleScroll() {
+      const top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+      this.scrolling = top > 150
     }
   }
 }
