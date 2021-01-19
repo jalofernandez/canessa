@@ -1,4 +1,9 @@
 @import "_bulma"
+
+html, body
+  &.has-navbar-fixed-top
+    @media (max-width: 1023px)
+      padding-top: 0!important
   
 body
   font-family: 'Roboto', sans-serif
@@ -8,10 +13,24 @@ body
   background: url(~assets/paper.png) center repeat
 
 .navbar
-  border-top: 1px solid $black-bis
-  backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
+  &:not(.is-transparent)
+    backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
+  &.top-bar
+    border-bottom: 1px solid $black-bis
+  &.bottom-bar
+    border-top: 1px solid $black-bis
 
 .navbar-item
+  &.nuxt-link-exact-active
+    font-weight: 600
+    opacity: .5
+    cursor: text
+    pointer-events: none
+  &.has-logo
+    padding-top: .25rem
+    padding-bottom: .25rem
+    img
+      max-height: 2.5rem
   &.copyright
     cursor: initial
     pointer-events: none
@@ -27,6 +46,10 @@ body
   @media (hover: hover)
     &:hover, &:focus
       transition: all .15s ease-in-out
+
+@media screen and (min-width: 1024px)
+  .navbar-dropdown
+    font-size: 1rem
 
 .tag:not(body).is-dark
   color: $color-main 

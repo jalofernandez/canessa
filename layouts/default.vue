@@ -1,10 +1,82 @@
 <template>
-  <div :class="{ 'is-scrolling': scrolling }">
-    <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+  <div :class="scrolling ? 'is-scrolling' : null">
+    <!-- top Navbar (desktop) or top Logo (mobile) -->
+    <nav
+      class="navbar is-fixed-top top-bar"
+      role="navigation"
+      aria-label="main navigation"
+      v-if="$mq !== 'mobile' && $mq !== 'smartphone' && $mq !== 'tablet'"
+    >
+      <div class="navbar-brand has-text-centered">
+        <NuxtLink
+          class="navbar-item has-logo"
+          to="/"
+          :title="`Ir a la página de inicio de ${owner.nickname}`"
+        >
+          <img
+            :src="require(`~/assets/artworks/logos/canessa-logo.svg`)"
+            :alt="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
+            :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
+            width="132"
+            height="40"
+          >
+        </NuxtLink>
+      </div>
+      <div class="navbar-end">
+        <NuxtLink
+          :class="['navbar-item', item.page]"
+          :to="item.page"
+          :title="`${item.name} de ${owner.copyright}`"
+          v-for="(item, index) in navLinks"
+          :key="index"
+        >
+          {{ item.name }}
+        </NuxtLink>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Más...
+          </a>
+          <div class="navbar-dropdown is-right">
+            <NuxtLink
+              :class="['navbar-item', item.page]"
+              :to="item.page"
+              :title="`${item.name} de ${owner.copyright}`"
+              v-for="(item, index) in dropdownLinks"
+              :key="index"
+            >
+              {{ item.name }}
+            </NuxtLink>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              <small>Version <b>2.0.0</b></small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- all Pages content -->
+    <transition name="fade" appear>
+      <Nuxt />
+    </transition>
+    <!-- Modal dialog -->
+    <div :class="['modal', { 'is-active': isMenuShown }]">
+      <div class="modal-background" @click="toggleShow()"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete" aria-label="close" @click="toggleShow()"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" @click="toggleShow()">Cancel</button>
+        </footer>
+      </div>
+    </div>
+    <!-- bottom main Navbar -->
+    <nav class="navbar is-fixed-bottom bottom-bar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <!-- <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
-        </a> -->
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true" v-for="item in 3"></span>
         </a>
@@ -21,7 +93,7 @@
           <NuxtLink class="navbar-item terms" to="/legal" :title="`Condiciones de uso del website de ${owner.copyright}`">
             {{ pages.links[9].name }}
           </NuxtLink>
-          <NuxtLink class="navbar-item sitemap" to="/vanessavizcaya" :title="`Mapa del sitio web de ${owner.copyright}`">
+          <NuxtLink class="navbar-item sitemap" to="/sitemap" :title="`Mapa del sitio web de ${owner.copyright}`">
             {{ pages.links[10].name }}
           </NuxtLink>
           <a
@@ -115,24 +187,6 @@
         </div>
       </div>
     </nav>
-    <transition name="fade" appear>
-      <Nuxt />
-    </transition>
-    <div :class="['modal', { 'is-active': isMenuShown }]">
-      <div class="modal-background" @click="toggleShow()"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Modal title</p>
-          <button class="delete" aria-label="close" @click="toggleShow()"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button" @click="toggleShow()">Cancel</button>
-        </footer>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -144,12 +198,18 @@ export default {
       isMenuShown: false,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
+      linksListBreak: 5,
+      navLinks: null,
+      dropdownLinks: null
     }
   },
   created() {
     if (process.client) {
       window.addEventListener('scroll', this.handleScroll)
     }
+    let navs = this.pages.links 
+    this.navLinks = navs.slice(0,this.linksListBreak)
+    this.dropdownLinks = navs.slice(this.linksListBreak,11)
   },
   destroyed() {
     if (process.client) {
@@ -163,7 +223,7 @@ export default {
     handleScroll() {
       const top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
       this.scrolling = top > 150
-    }
+    },
   }
 }
 </script>

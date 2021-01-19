@@ -8,7 +8,7 @@ export default {
   head: {
     htmlAttrs: {
       lang: 'es',
-      class: ['has-navbar-fixed-bottom']
+      class: ['has-navbar-fixed-top', 'has-navbar-fixed-bottom']
     },
     bodyAttrs: {
       class: ['canessa'],
