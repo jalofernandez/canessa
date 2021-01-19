@@ -48,7 +48,7 @@
             </NuxtLink>
             <hr class="navbar-divider">
             <a class="navbar-item">
-              <small>Version <b>2.0.0</b></small>
+              <small>Version <b>{{ owner.version }}</b></small>
             </a>
           </div>
         </div>
@@ -58,8 +58,50 @@
     <transition name="fade" appear>
       <Nuxt />
     </transition>
+    <!-- Aside main Menu (mobile) -->
+    <div :class="['aside-navbar-menu', { 'is-open': isMenuShown }]">
+      <NuxtLink
+        class="navbar-item has-logo"
+        to="/"
+        :title="`Ir a la página de inicio de ${owner.nickname}`"
+      >
+        <img
+          :src="require(`~/assets/artworks/logos/canessa-logo.svg`)"
+          :alt="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
+          :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
+          width="66"
+          height="20"
+        >
+      </NuxtLink>
+      <NuxtLink
+        :class="['navbar-item', item.page]"
+        :to="item.page"
+        :title="`${item.name} de ${owner.copyright}`"
+        v-for="(item, index) in pages.links"
+        :key="index"
+      >
+        <span class="icon-text">
+          <span class="icon has-text-black">
+            <i :class="`mdi mdi-${item.icon}`"></i>
+          </span>
+          <span class="pl-2">{{ item.name }}</span>
+        </span>
+      </NuxtLink>
+      <a
+        class="navbar-item phone" 
+        href="tel:912480430"
+        :title="`Llamar a ${owner.copyright}`"
+      >
+        <span class="icon-text">
+          <span class="icon has-text-black">
+            <i class="mdi mdi-phone"></i>
+          </span>
+          <span class="has-text-primary pl-2">91 248 04 30</span>
+        </span>
+      </a>
+    </div>
     <!-- Modal dialog -->
-    <div :class="['modal', { 'is-active': isMenuShown }]">
+    <div :class="['modal', { 'is-active': isModalShown }]">
       <div class="modal-background" @click="toggleShow()"></div>
       <div class="modal-card">
         <header class="modal-card-head">
@@ -77,7 +119,13 @@
     <!-- bottom main Navbar -->
     <nav class="navbar is-fixed-bottom bottom-bar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <a
+          role="button"
+          :class="['navbar-burger', 'burger', { 'is-active': isMenuShown }]"
+          aria-label="menu"
+          aria-expanded="false"
+          @click.prevent="isMenuShown = !isMenuShown"
+        >
           <span aria-hidden="true" v-for="item in 3"></span>
         </a>
       </div>
@@ -100,8 +148,8 @@
             class="navbar-item schedule modal-trigger"
             href="#modal_schedule"
             :title="`Horario comercial de ${owner.copyright}`"
-            @click="toggleShow()"
-            v-if="!isMenuShown"
+            @click.prevent="toggleShow(isModalShown)"
+            v-if="!isModalShown"
           >
             Horario
           </a>
@@ -195,6 +243,7 @@ export default {
   data() {
     return {
       scrolling: false,
+      isModalShown: false,
       isMenuShown: false,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
@@ -218,7 +267,7 @@ export default {
   },
   methods: {
     toggleShow() {
-      this.isMenuShown = !this.isMenuShown
+      this.isModalShown = !this.isModalShown
     },
     handleScroll() {
       const top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0

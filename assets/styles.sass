@@ -51,6 +51,55 @@ body
   .navbar-dropdown
     font-size: 1rem
 
+.navbar-burger
+  width: 4rem
+  &:hover
+    background-color: transparent
+  &:not(.is-active), &:not(.is-active):hover
+    color: transparent
+  span
+    height: 3px
+    border-radius: 3px
+    color: $fucsia
+    left: calc(50% - 15px)
+    &:nth-child(1)
+      width: 24px
+      top: calc(50% - 9px)
+    &:nth-child(2)
+      width: 28px
+    &:nth-child(3)
+      width: 20px
+      top: calc(50% + 7px)
+  &.is-active, &.is-active:hover
+    span
+      color: orange
+      &:nth-child(1), &:nth-child(3)
+        width: 26px
+      &:nth-child(1)
+        transform: translateY(7px) rotate(45deg)
+      &:nth-child(3)
+        transform: translateY(-9px) rotate(-45deg)
+
+.aside-navbar-menu
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  width: 260px
+  height: 100%
+  background-color: $color-dark-opacity
+  backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
+  transition: all 0.5s
+  visibility: hidden
+  transform: translate3d(-100%, 0, 0)
+  &.is-open
+    visibility: visible
+    transform: translate3d(0, 0, 0)
+  .navbar-item
+    font-size: 1.1rem
+  @media (min-width: 1024px)
+    display: none
+
 .tag:not(body).is-dark
   color: $color-main 
 
