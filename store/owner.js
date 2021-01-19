@@ -12,6 +12,7 @@ export const state = () => ({
   phone: 34912480430,
   author: 'jalofernandez',
   currentYear: new Date().getFullYear(),
+  version: '2.0.0',
   schema: {
     '@context': 'http://schema.org',
     '@type': 'LocalBusiness',

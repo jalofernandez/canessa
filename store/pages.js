@@ -1,15 +1,15 @@
 export const state = () => ({
   links: [
-    { name: "Inicio", page: "index" },
-    { name: "Servicios", page: "servicios" },
-    { name: "Peluquería", page: "peluqueria" },
-    { name: "Sobre Vanessa", page: "vanessavizcaya" },
-    { name: "Contacto", page: "contacto" },
-    { name: "Antiparasitarios", page: "antiparasitarios" },
-    { name: "Piensos", page: "piensos" },
-    { name: "Mascotactiva", page: "mascotactiva" },
-    { name: "Instalaciones", page: "instalaciones" },
-    { name: "Legal", page: "legal" },
-    { name: "Sitemap", page: "sitemap" }
+    { name: "Inicio", page: "index", icon: "folder-home"},
+    { name: "Servicios", page: "servicios", icon: "clipboard-list-outline"},
+    { name: "Peluquería", page: "peluqueria", icon: "content-cut"},
+    { name: "Sobre Vanessa", page: "vanessavizcaya", icon: "account-star"},
+    { name: "Contacto", page: "contacto", icon: "phone-classic"},
+    { name: "Antiparasitarios", page: "antiparasitarios", icon: "bug"},
+    { name: "Piensos", page: "piensos", icon: "silverware-fork-knife"},
+    { name: "Mascotactiva", page: "mascotactiva", icon: "paw"},
+    { name: "Instalaciones", page: "instalaciones", icon: "store"},
+    { name: "Legal", page: "legal", icon: "gavel"},
+    { name: "Sitemap", page: "sitemap", icon: "sitemap"},
   ]
 })
