@@ -55,7 +55,7 @@
       </div>
     </nav>
     <!-- all Pages content -->
-    <transition name="fade" appear>
+    <transition name="canessa-transition" appear>
       <Nuxt />
     </transition>
     <!-- Aside main Menu (mobile) -->

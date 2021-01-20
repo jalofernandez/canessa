@@ -52,6 +52,11 @@ export default {
     '@/assets/styles.sass'
   ],
 
+  transition: {
+    name: 'canessa-transition',
+    mode: 'out-in'
+  },
+
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
