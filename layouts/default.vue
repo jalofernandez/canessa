@@ -60,45 +60,91 @@
     </transition>
     <!-- Aside main Menu (mobile) -->
     <div :class="['aside-navbar-menu', { 'is-open': isMenuShown }]">
-      <NuxtLink
-        class="navbar-item has-logo"
-        to="/"
-        :title="`Ir a la página de inicio de ${owner.nickname}`"
-      >
+      <div class="aside-logo">
         <img
+          class="mr-3"
           :src="require(`~/assets/artworks/logos/canessa-logo.svg`)"
           :alt="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
           :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
-          width="66"
-          height="20"
+          width="99"
+          height="30"
         >
-      </NuxtLink>
-      <NuxtLink
-        :class="['navbar-item', item.page]"
-        :to="item.page"
-        :title="`${item.name} de ${owner.copyright}`"
-        v-for="(item, index) in pages.links"
-        :key="index"
-      >
-        <span class="icon-text">
-          <span class="icon has-text-black">
-            <i :class="`mdi mdi-${item.icon}`"></i>
+        <a
+          class="aside-rrss facebook"
+          href="https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/"
+          :title="`Facebook de ${owner.copyright}`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="icon is-medium">
+            <i class="mdi mdi-24px mdi-facebook"></i>
           </span>
-          <span class="pl-2">{{ item.name }}</span>
-        </span>
-      </NuxtLink>
-      <a
-        class="navbar-item phone" 
-        href="tel:912480430"
-        :title="`Llamar a ${owner.copyright}`"
-      >
-        <span class="icon-text">
-          <span class="icon has-text-black">
-            <i class="mdi mdi-phone"></i>
+        </a>
+        <a
+          class="aside-rrss youtube"
+          href="https://www.youtube.com/channel/UCqzf03PPcv5F3u0RAEtwqmw"
+          :title="`Canal de YouTube de ${owner.copyright}`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="icon is-medium">
+            <i class="mdi mdi-24px mdi-youtube"></i>
           </span>
-          <span class="has-text-primary pl-2">91 248 04 30</span>
-        </span>
-      </a>
+        </a>
+        <a
+          class="aside-rrss instagram"
+          href="https://www.instagram.com/peluqueriacanessa/"
+          :title="`Instagram de ${owner.copyright}`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="icon is-medium">
+            <i class="mdi mdi-24px mdi-instagram"></i>
+          </span>
+        </a>
+      </div>
+      <div class="aside-nav-list" @click="isMenuShown = false">
+        <NuxtLink
+          :class="['navbar-item', item.page]"
+          :to="item.page"
+          :title="`${item.name} de ${owner.copyright}`"
+          v-for="(item, index) in pages.links"
+          :key="index"
+        >
+          <span class="icon-text">
+            <span class="icon has-text-black">
+              <i :class="`mdi mdi-${item.icon}`"></i>
+            </span>
+            <span class="pl-2">{{ item.name }}</span>
+          </span>
+        </NuxtLink>
+        <a
+          class="navbar-item phone" 
+          href="tel:912480430"
+          :title="`Llamar a ${owner.copyright}`"
+        >
+          <span class="icon-text">
+            <span class="icon has-text-primary">
+              <i class="mdi mdi-phone"></i>
+            </span>
+            <span class="has-text-primary pl-2">91 248 04 30</span>
+          </span>
+        </a>
+        <a
+          class="navbar-item whatsapp"
+          :href="`https://wa.me/${owner.phone}`"
+          :title="`Llamar o escribir al WhatsApp ${owner.phone} de ${owner.copyright}`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="icon-text">
+            <span class="icon has-text-success">
+              <i class="mdi mdi-whatsapp"></i>
+            </span>
+            <span class="has-text-success pl-2">WhatsApp</span>
+          </span>
+        </a>
+      </div>
     </div>
     <!-- Modal dialog -->
     <div :class="['modal', { 'is-active': isModalShown }]">

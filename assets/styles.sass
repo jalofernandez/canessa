@@ -20,10 +20,11 @@ body
   &.bottom-bar
     border-top: 1px solid $black-bis
 
-.navbar-item
+.navbar-item,
+.aside-rrss
   &.nuxt-link-exact-active
     font-weight: 600
-    opacity: .5
+    opacity: .3
     cursor: text
     pointer-events: none
   &.has-logo
@@ -89,16 +90,29 @@ body
   height: 100%
   background-color: $color-dark-opacity
   backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
+  overflow-y: auto
+  will-change: left
+  opacity: 0
   transition: all 0.5s
   visibility: hidden
   transform: translate3d(-100%, 0, 0)
   &.is-open
+    opacity: 1
     visibility: visible
     transform: translate3d(0, 0, 0)
   .navbar-item
-    font-size: 1.1rem
+    font-size: 1.2rem
+    letter-spacing: .02rem
+  .navbar-item.nuxt-link-exact-active
+      display: none
   @media (min-width: 1024px)
     display: none
+
+.aside-logo
+  padding: .75rem .75rem .25rem
+  display: flex
+  justify-content: space-between
+  align-items: baseline
 
 .tag:not(body).is-dark
   color: $color-main 
