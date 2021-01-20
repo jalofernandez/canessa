@@ -164,7 +164,49 @@
     </div>
     <!-- bottom main Navbar -->
     <nav class="navbar is-fixed-bottom bottom-bar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
+      <div class="navbar-brand" v-if="$mq == 'mobile' || $mq == 'smartphone' || $mq == 'tablet'">
+        <transition name="canessa-transition" appear>
+          <figure class="image is-64x64" v-if="!isMenuShown">
+            <img
+              class="is-rounded"
+              :src="require(`~/assets/artworks/logos/canessa-circle-logo.svg`)"
+              :alt="`Icono de ${owner.nickname} en Valdemoro, Madrid`"
+              :title="`Icono de ${owner.nickname} en Valdemoro, Madrid`"
+              width="60"
+              height="60"
+            />
+          </figure>
+        </transition>
+        <transition name="canessa-transition" :duration="{ enter: 500, leave: 800 }" appear>
+          <div class="buttons" v-if="!isMenuShown">
+            <a
+              class="navbar-item schedule"
+              href="#modal_schedule"
+              :title="`Horario comercial de ${owner.copyright}`"
+              @click.prevent="toggleShow()"
+            >
+              Horario
+            </a>
+            <NuxtLink
+              :class="`navbar-item ${pages.links[4].page}`"
+              :to="pages.links[4].page"
+              :title="`Mapa del sitio web de ${owner.copyright}`"
+            >
+              {{ pages.links[4].name }}
+            </NuxtLink>
+            <a
+              class="navbar-item whatsapp"
+              :href="`https://wa.me/${owner.phone}`"
+              :title="`Llamar o escribir al WhatsApp ${owner.phone} de ${owner.copyright}`"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="icon">
+                <i class="mdi mdi-36px mdi-whatsapp"></i>
+              </span>
+            </a>
+          </div>
+        </transition>
         <a
           role="button"
           :class="['navbar-burger', 'burger', { 'is-active': isMenuShown }]"
@@ -194,7 +236,7 @@
             class="navbar-item schedule modal-trigger"
             href="#modal_schedule"
             :title="`Horario comercial de ${owner.copyright}`"
-            @click.prevent="toggleShow(isModalShown)"
+            @click.prevent="toggleShow()"
             v-if="!isModalShown"
           >
             Horario
