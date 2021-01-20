@@ -19,7 +19,7 @@ export default {
           link: 'Más sobre peluquería',
           to: 'peluqueria',
           img: this.$route.name + '/corte-a-maquina-02-peluqueria-canina-canessa.jpg',
-          alt: 'Corte a máquina de mestizo de yorkshire en' + this.$store.state.owner.copyright + ', Madrid',
+          alt: 'Corte a máquina de mestizo de yorkshire en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },
         {
@@ -28,7 +28,7 @@ export default {
           link: 'Más sobre baños y servicios',
           to: 'peluqueria',
           img: this.$route.name + '/bano-precorte-02-peluqueria-canina-canessa.jpg',
-          alt: 'Baño tras precorte en' + this.$store.state.owner.copyright + ', Madrid',
+          alt: 'Baño tras precorte en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
         {
@@ -37,7 +37,7 @@ export default {
           link: 'Todos nuestros piensos',
           to: 'piensos',
           img: this.$route.name + '/affinity-gama-piensos-peluqueria-canina-canessa.jpg',
-          alt: 'Piensos y alimento canino en' + this.$store.state.owner.copyright + ', Madrid',
+          alt: 'Piensos y alimento canino en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },
         {
@@ -46,7 +46,7 @@ export default {
           link: 'Todos nuestros productos',
           to: 'complementos',
           img: this.$route.name + '/bubbles-champu-perfume-peluqueria-canina-canessa.jpg',
-          alt: 'Champú y perfume Bubbles disponibles en' + this.$store.state.owner.copyright + ', Madrid',
+          alt: 'Champú y perfume Bubbles disponibles en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
         {
@@ -55,7 +55,7 @@ export default {
           link: 'Servicios de Mascotactiva',
           to: 'mascotactiva',
           img: this.$route.name + '/paseador-canino-mascotactiva-peluqueria-canina-canessa.jpg',
-          alt: 'Psicología y entrenamiento canino de Mascotactiva en' + this.$store.state.owner.copyright + ', Madrid',
+          alt: 'Psicología y entrenamiento canino de Mascotactiva en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },
         {
