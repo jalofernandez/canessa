@@ -104,6 +104,7 @@ export default {
       families: ['Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap'],
     },
   },
+
   mq: {
     defaultBreakpoint: "desktop",
     breakpoints: {
@@ -116,14 +117,17 @@ export default {
       desktopUltraWide: Infinity
     }
   },
+
   purgeCSS: {
     // Overrides the default settings here
   },
+
   robots: {
     UserAgent: "*",
     Allow: "/",
     Sitemap: `https://peluqueriacanessa/sitemap.xml`,
   },
+
   sitemap: {
     hostname: `https://peluqueriacanessa.com`,
     gzip: true,
