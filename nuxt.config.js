@@ -80,7 +80,7 @@ export default {
         description:
           "Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30",
         url: "https://www.peluqueriacanessa.com",
-        // img: "/link_to_image_in_static_folder.jpg",
+        img: "/peluqueria-canina-canessa-valdemoro-servicios.jpg",
         locale: "es-ES",
         twitter: "@jalofernandez",
         themeColor: "#ff4081"
