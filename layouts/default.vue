@@ -120,7 +120,7 @@
         </NuxtLink>
         <a
           class="navbar-item phone" 
-          href="tel:912480430"
+          :href="`tel:${owner.phone}`"
           :title="`Llamar a ${owner.copyright}`"
         >
           <span class="icon-text">
@@ -132,7 +132,7 @@
         </a>
         <a
           class="navbar-item whatsapp"
-          :href="`https://wa.me/${owner.phone}`"
+          :href="`https://wa.me/34${owner.phone}`"
           :title="`Llamar o escribir al WhatsApp ${owner.phone} de ${owner.copyright}`"
           target="_blank"
           rel="noopener noreferrer"
@@ -202,7 +202,7 @@
         <footer class="modal-card-foot is-justify-content-space-between">
           <a
             class="button is-success is-outlined"
-            href="tel:912480430"
+            :href="`tel:${owner.phone}`"
             :title="`Llamar a ${owner.copyright}`"
           >
             <span class="icon is-small">
@@ -253,7 +253,7 @@
             </NuxtLink>
             <a
               class="navbar-item whatsapp"
-              :href="`https://wa.me/${owner.phone}`"
+              :href="`https://wa.me/34${owner.phone}`"
               :title="`Llamar o escribir al WhatsApp ${owner.phone} de ${owner.copyright}`"
               target="_blank"
               rel="noopener noreferrer"
@@ -303,7 +303,7 @@
           <!-- to big screens -->
           <a
             class="navbar-item phone" 
-            href="tel:912480430"
+            :href="`tel:${owner.phone}`"
             :title="`Llamar a ${owner.copyright}`"
             v-if="$mq !== 'tablet'"
           >
@@ -335,7 +335,7 @@
           <!-- <a class="navbar-item" href="" title="" v-if="$mq == 'tablet'">Contacto</a> -->
           <a
             class="navbar-item whatsapp"
-            :href="`https://wa.me/${owner.phone}`"
+            :href="`https://wa.me/34${owner.phone}`"
             :title="`Llamar o escribir al WhatsApp ${owner.phone} de ${owner.copyright}`"
             target="_blank"
             rel="noopener noreferrer"

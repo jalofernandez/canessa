@@ -9,7 +9,7 @@ export const state = () => ({
   url: url,
   email: email,
   copyright: business,
-  phone: 34912480430,
+  phone: 912480430,
   author: 'jalofernandez',
   currentYear: new Date().getFullYear(),
   version: '2.0.0',
