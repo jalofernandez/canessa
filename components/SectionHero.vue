@@ -9,6 +9,7 @@
           :alt="`${hero.title} de ${owner.nickname}, Valdemoro, Madrid`"
           :width="hero.img.width"
           :height="hero.img.height"
+          v-if="hero.img"
         />
         <h1
           :class="[
@@ -19,6 +20,7 @@
             $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
             'is-spaced'
           ]"
+          v-if="hero.title"
         >
           {{ hero.title }}
         </h1>
