@@ -31,6 +31,7 @@ body
         @media (min-width: 1024px)
           display: none
 
+$brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook, "youtube": $youtube)
 .navbar-item,
 .aside-rrss
   &.nuxt-link-exact-active
@@ -47,14 +48,9 @@ body
     cursor: initial
     pointer-events: none
     color: $color-main
-  &.whatsapp
-    color: $whatsapp
-  &.instagram
-    color: $instagram
-  &.facebook
-    color: $facebook
-  &.youtube
-    color: $youtube
+  @each $brand, $color in $brands
+    &.#{$brand}
+      color: $color
   @media (hover: hover)
     &:hover, &:focus
       transition: all .15s ease-in-out
