@@ -1,26 +1,6 @@
 <template>
-  <main>
-    <section class="hero is-small">
-      <div class="hero-body pb-0">
-        <div class="container has-text-centered">
-          <img
-            class="artwork"
-            src="~assets/artworks/legal/dog-judge.svg"
-            :title="`Aviso legal de ${owner.nickname}`"
-            :alt="`Aviso legal de ${owner.nickname}`"
-            width="200"
-            height="200"
-          />
-          <h1 class="title text-shadow is-size-1 is-size-3-mobile">
-            Aviso legal
-          </h1>
-          <!-- <h4 class="subtitle is-size-5 is-size-6-mobile mb-0">
-            El siguiente aviso legal se aplica tanto <span class="has-text-weight-medium">a los usuarios que crean o solicitan el servicio como a aquellos que lo consumen</span>. Léelos detenidamente, por favor. Intentaremos ser breves y usar un lenguaje claro.
-          </h4> -->
-          <div class="card-bg-img is-agreement"></div>
-        </div>
-      </div>
-    </section>
+  <main :class="$route.name">
+    <SectionHero :hero="hero" :page="$route.name" />
     <section class="hero">
       <div class="hero-body pt-0">
         <div class="container">
@@ -1158,10 +1138,20 @@ export default {
     return {
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
+      hero: {
+        title: 'Aviso legal',
+        subtitle: 
+          'El siguiente aviso legal se aplica tanto <span class="has-text-weight-bold">a los usuarios que solicitan el servicio como a aquellos que lo consumen</span>. Léelos detenidamente, por favor. Intentaremos ser breves y usar un lenguaje claro.',
+        img: {
+          src: 'dog-judge.svg',
+          width: 200,
+          height: 200
+        }
+      }
     }
   },
   head() {
-    const title = 'Aviso legal de'
+    const title = this.hero.title + ' de'
     const description =
       'Términos legales de ' + this.owner.copyright + ', Valdemoro, Madrid'
     const canonical = 'https://' + this.owner.url + this.$route.path
