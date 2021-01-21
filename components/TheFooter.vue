@@ -74,15 +74,37 @@
         </div>
         <div class="control level-item mt-3">
           <a
-            class="author"
+            :class="`author ${owner.author}`"
             :href="`https://${owner.author}.com`"
             :title="`${developBy} @${owner.author}: diseñador gráfico y desarrollador web / frontend`"
             :alt="`Ir al website de ${owner.author}`"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <small class="has-text-grey-darker">{{ developBy }}:</small> <span>{{ owner.author }}.com</span>
+            <small class="has-text-grey-darker">{{ developBy }}:</small> <br v-if="$mq == 'mobile'"/><span>{{ owner.author }}.com</span>
           </a>
+        </div>
+        <div class="control level-item">
+          <a
+            :class="`author ${owner.partner}`"
+            :href="`https://${owner.partner}.com`"
+            :title="`${owner.partner}: únete a la transformación digital y aumenta las ventas con tu negocio en internet`"
+            :alt="`Ir al website de ${owner.partner}.com`"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <small class="has-text-grey-darker">
+              En colaboración con: <br v-if="$mq == 'mobile'"/><span>#<b>HazTuNegocioDigital</b></span>
+            </small>
+          </a>
+        </div>
+        <div class="control level-item mt-3 mb-1">
+          <small class="has-text-grey-dark">Tecnología utilizada:</small>
+        </div>
+        <div class="control level-item">
+          <span class="icon is-medium" v-for="(item, index) in tech" :key="index">
+            <i :class="`mdi mdi-24px mdi-${item}`"></i>
+          </span>
         </div>
       </div>
     </div>
@@ -108,13 +130,15 @@ export default {
         { name: "Política de privacidad", page: "legal"},
         { name: "Condiciones de uso", page: "legal"},
         { name: "Política de cookies", page: "legal"}
-      ]
+      ],
+      tech: [ 'nodejs', 'vuejs', 'nuxt', 'language-html5', 'language-css3' ]
     }
   },
   head() {
     return {
       link: [
-        { rel: 'dns-prefetch', href: '//jalofernandez.com' },
+        { rel: 'dns-prefetch', href: '//' + this.$store.state.owner.author + '.com' },
+        { rel: 'dns-prefetch', href: '//' + this.$store.state.owner.partner + '.com' },
       ]
     }
   }

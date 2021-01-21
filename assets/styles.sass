@@ -218,14 +218,18 @@ body
   h2.has-text-primary .th-quote .mdi::before
     color: $mascotactiva!important
 
-.author
-  span
-    color: $jalofernandez
-  @media (hover: hover)
-    &:hover, &:focus
-      span
-        color: darken($jalofernandez, 8%)
-        text-decoration: underline
+// "TheFooter" project info
+$authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociodigital)
+@each $name, $color in $authors
+  .author.#{$name}
+    span
+      transform: all .15s ease
+      color: $color
+    @media (hover: hover)
+      &:hover, &:focus
+        span
+          color: darken($color, 8%)
+          text-decoration: underline
 
 // Animations
 .canessa-transition-enter-active
