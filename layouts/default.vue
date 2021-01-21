@@ -147,18 +147,75 @@
       </div>
     </div>
     <!-- Modal dialog -->
-    <div :class="['modal', { 'is-active': isModalShown }]">
+    <!-- <div :class="['modal', { 'is-active': isModalShown }]"> -->
+      <div :class="['modal', isModalShown ? 'is-active' : 'not-active' ]">
       <div class="modal-background" @click="toggleShow()"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Modal title</p>
+          <p
+            :class="[
+              'modal-card-title',
+              'is-size-3',
+              'is-size-4-mobile',
+              'has-text-primary',
+              $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium'
+            ]"
+          >Horario</p>
           <button class="delete" aria-label="close" @click="toggleShow()"></button>
         </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
+        <section class="modal-card-body pt-0">
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="has-text-link mb-2">
+                De <b>lunes</b> a <b>viernes</b>:
+              </li>
+              <li>
+                <span class="icon-text">
+                  <span class="icon has-text-grey-light">
+                    <i class="mdi mdi-clock-outline"></i>
+                  </span>
+                  Manañas de <b>10:30</b> a <b>13:30</b> h.
+                </span>
+              </li>
+              <li>
+                <span class="icon-text">
+                  <span class="icon has-text-grey-light">
+                    <i class="mdi mdi-clock-outline"></i>
+                  </span>
+                  Tardes de <b>16:30</b> a <b>20:00</b> h.
+                </span>
+              </li>
+              <li class="has-text-link mt-3 mb-2">
+                <b>Sábados</b> y <b>domingos</b>:
+              </li>
+              <li>
+                <span class="icon-text">
+                  <span class="icon has-text-grey-light">
+                    <i class="mdi mdi-clock-outline"></i>
+                  </span>
+                  Mañanas y tardes <b>cerrado</b>.
+                </span>
+              </li>
+            </ul>
+          </div>
         </section>
-        <footer class="modal-card-foot">
-          <button class="button" @click="toggleShow()">Cancel</button>
+        <footer class="modal-card-foot is-justify-content-space-between">
+          <a
+            class="button is-success is-outlined"
+            href="tel:912480430"
+            :title="`Llamar a ${owner.copyright}`"
+          >
+            <span class="icon is-small">
+              <i class="mdi mdi-phone"></i>
+            </span>
+            <span><b>Pedir cita</b></span>
+          </a>
+          <button class="button is-danger is-outlined is-pulled-right" @click="toggleShow()">
+            <span>Cerrar</span>
+            <span class="icon is-small">
+              <i class="mdi mdi-close"></i>
+            </span>
+          </button>
         </footer>
       </div>
     </div>

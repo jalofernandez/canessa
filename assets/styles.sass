@@ -10,12 +10,12 @@ body
   color: hsl(0, 0%, 40%)
 
 .canessa
-  background: url(~assets/paper.png) center repeat
+  background: $paper
 
 // NAVBARS & item links
 .navbar
   &:not(.is-transparent)
-    backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
+    backdrop-filter: $backdrop
   &.top-bar
     border-bottom: 1px solid $black-bis
   &.bottom-bar
@@ -98,7 +98,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   width: 260px
   height: 100%
   background-color: $color-dark-opacity
-  backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
+  backdrop-filter: $backdrop
   overflow-y: auto
   will-change: left
   opacity: 0
@@ -231,6 +231,26 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
         span
           color: darken($color, 8%)
           text-decoration: underline
+
+// MODAL dialog to schedule & contact info
+.modal
+  will-change: scale
+  &.is-active
+    animation: bounce-in .5s
+  &:not(.is-active)
+    animation: bounce-in .5s reverse
+  .modal-background
+    backdrop-filter: $backdrop
+  .modal-card
+    background: $paper
+
+@keyframes bounce-in
+  0%
+    transform: scale(0)
+  50%
+    transform: scale(1.2)
+  100%
+    transform: scale(1)
 
 // Animations
 .canessa-transition-enter-active

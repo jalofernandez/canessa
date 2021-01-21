@@ -8,7 +8,10 @@ $fucsia: #ff4081 // Canessa brand main color
 $pink-light: #ffd9f0
 $color-main: $fucsia
 $color-secondary: #039be5
-$color-dark-opacity: rgba(15,18,30,.9)
+$color-dark: rgb(15,18,30)
+$color-dark-opacity: rgba($color-dark,.9)
+$backdrop: saturate(180%) blur(3px) // in modern browsers only
+$paper: url(~assets/paper.png) center repeat
 $mascotactiva: #f7e100
 $jalofernandez: #f4692a
 $haztunegociodigital: #24cf09
@@ -19,7 +22,8 @@ $instagram: #e1306c
 $facebook: #3b5998
 $youtube: #ff0000
 
-// TODO: Bulma colors (check to import them correctly)
+// Bulma UI vars overwrites
+// TODO: check to import them correctly!!
 $white-ter: hsl(0, 0%, 93%)
 $black-bis: hsl(0, 0%, 7%)
 $turquoise: $color-main
@@ -39,6 +43,13 @@ $navbar-dropdown-item-hover-color: $fucsia
 $navbar-dropdown-item-hover-background-color: $black-bis
 $navbar-divider-height: 1px
 $navbar-divider-background-color: $black-bis
+
+$modal-content-width: 350px
+$modal-background-background-color: $color-dark-opacity
+$modal-card-head-background-color: transparent
+$modal-card-body-background-color: transparent
+$modal-card-head-border-bottom: 1px solid transparent
+$modal-card-foot-border-top: 1px solid transparent
 
 $footer-background-color: transparent
 
