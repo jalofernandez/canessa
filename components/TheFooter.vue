@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="columns">
-        <div class="menu column is-3 is-offset-2">
+        <div class="menu column is-3 is-offset-2 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Páginas:</b>
           </p>
@@ -22,7 +22,7 @@
             </li>
           </ul>
         </div>
-        <div class="menu column is-3">
+        <div class="menu column is-3 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Blog:</b>
           </p>
@@ -42,7 +42,7 @@
             </li>
           </ul>
         </div>
-        <div class="menu column is-4">
+        <div class="menu column is-4 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Términos legales:</b>
           </p>
@@ -113,6 +113,7 @@
 
 <script>
 export default {
+  name: 'TheFooter',
   data() {
     return {
       owner: this.$store.state.owner,
