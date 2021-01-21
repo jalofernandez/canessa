@@ -39,10 +39,11 @@ export default {
     ],
     link: [
       { rel: 'author', type: 'text/plain', href: 'https://peluqueriacanessa.com/humans.txt' },
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'dns-prefetch', href: '//www.youtube.com/channel/UCqzf03PPcv5F3u0RAEtwqmw' },
       { rel: 'dns-prefetch', href: '//www.facebook.com/Peluqueria-Canina-Canessa-113194982084561' },
       { rel: 'dns-prefetch', href: '//www.instagram.com/peluqueriacanessa' },
+      { rel: 'dns-prefetch', href: '//goo.gl/maps/Aegzf2qZF4x' },
     ]
   },
 
