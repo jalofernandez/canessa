@@ -12,6 +12,7 @@ body
 .canessa
   background: url(~assets/paper.png) center repeat
 
+// NAVBARS & item links
 .navbar
   &:not(.is-transparent)
     backdrop-filter: saturate(180%) blur(3px) // in modern browsers only
@@ -59,6 +60,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   .navbar-dropdown
     font-size: 1rem
 
+// mobile´s ASIDE navigation Menu
 .navbar-burger
   width: 4rem
   &:hover
@@ -121,9 +123,8 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   justify-content: space-between
   align-items: baseline
 
-.tag:not(body).is-dark
-  color: $color-main 
-
+// Mosaic ("chessboard") layout in pages as:
+// Servicios, Peluquería, Vanessa, Mascotactiva...
 @media (min-width: 980px)
   .reflected .columns .column:first-child
     order: 2
@@ -206,6 +207,10 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   &.th-quote + em
     opacity: .3
 
+// Helpers, overwrites, special classes...
+.tag:not(body).is-dark
+  color: $color-main 
+
 .has-text-primary .th-quote .mdi::before
   color: $color-main
 
@@ -214,7 +219,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   h2.has-text-primary .th-quote .mdi::before
     color: $mascotactiva!important
 
-// "TheFooter" project info
+// common FOOTER last block with project info
 $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociodigital)
 @each $name, $color in $authors
   .author.#{$name}
