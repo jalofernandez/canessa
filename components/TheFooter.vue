@@ -10,7 +10,7 @@
             <li v-for="(link, index) in pages.links" :key="index">
               <NuxtLink
                 :to="{ name: link.page }"
-                :title="`Ir a la página ${link.name} de ${owner.nickname}`"
+                :title="`Ir a la página ${link.name} de ${owner.copyright}`"
               >
                 <span class="icon-text">
                   <span class="icon has-text-grey-light">
@@ -44,21 +44,23 @@
         </div>
         <div class="menu column is-4 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
-            <b>Términos legales:</b>
+            <b>Nuestros amigos:</b>
           </p>
           <ul class="menu-list">
-            <li v-for="(term, index) in terms" :key="index">
-              <NuxtLink
-                :to="{ name: term.page }"
-                :title="`Ir al post: ${term.name} de ${owner.nickname}`"
+            <li v-for="(partner, index) in partnership" :key="index">
+              <a
+                :href="partner.url"
+                :title="`${partner.name} colabora con ${owner.copyright}`"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span class="icon-text">
                   <span class="icon has-text-grey-light">
                     <i class="mdi mdi-subdirectory-arrow-right"></i>
                   </span>
-                  {{ term.name }}
+                  <small>{{ partner.name }}</small>
                 </span>
-              </NuxtLink>
+              </a>
             </li>
           </ul>
         </div>
@@ -120,17 +122,18 @@ export default {
       pages: this.$store.state.pages,
       developBy: 'Website diseñado y desarrollado por',
       blog: [
-        { name: "Blog post uno", page: "legal"},
-        { name: "Blog post dos", page: "legal"},
-        { name: "Blog post tres", page: "legal"},
-        { name: "Blog post cuatro", page: "legal"},
-        { name: "Ver todos los post...", page: "legal"}
+        { name: "Blog post uno", page: "legal" },
+        { name: "Blog post dos", page: "legal" },
+        { name: "Blog post tres", page: "legal" },
+        { name: "Blog post cuatro", page: "legal" },
+        { name: "Ver todos los post...", page: "legal" }
       ],
-      terms: [
-        { name: "Responsable", page: "legal"},
-        { name: "Política de privacidad", page: "legal"},
-        { name: "Condiciones de uso", page: "legal"},
-        { name: "Política de cookies", page: "legal"}
+      partnership: [
+        { name: "Protectora AiBa Madrid", url: "http://www.aibamadrid.com" },
+        { name: "Bar Galicia", url: "https://haztunegociodigital.com/horeca/bar-galicia" },
+        { name: "Restaurante La Antigua Bodeguita", url: "https://haztunegociodigital.com/horeca/la-antigua-bodeguita" },
+        { name: "Haz tu negocio digital", url: "https://haztunegociodigital.com" },
+        { name: "@jalofernandez: designer + coder", url: "https://jalofernandez.com" }
       ],
       tech: [ 'nodejs', 'vuejs', 'nuxt', 'language-html5', 'language-css3' ]
     }
@@ -140,6 +143,7 @@ export default {
       link: [
         { rel: 'dns-prefetch', href: '//' + this.$store.state.owner.author + '.com' },
         { rel: 'dns-prefetch', href: '//' + this.$store.state.owner.partner + '.com' },
+        { rel: 'dns-prefetch', href: '//www.aibamadrid.com' },
       ]
     }
   }
