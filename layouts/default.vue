@@ -332,7 +332,6 @@
             </span>
           </a>
           <!-- to small screens -->
-          <!-- <a class="navbar-item" href="" title="" v-if="$mq == 'tablet'">Contacto</a> -->
           <a
             class="navbar-item whatsapp"
             :href="`https://wa.me/34${owner.phone}`"

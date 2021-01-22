@@ -79,7 +79,6 @@
             :class="`author ${owner.author}`"
             :href="`https://${owner.author}.com`"
             :title="`${developBy} @${owner.author}: diseñador gráfico y desarrollador web / frontend`"
-            :alt="`Ir al website de ${owner.author}`"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +90,6 @@
             :class="`author ${owner.partner}`"
             :href="`https://${owner.partner}.com`"
             :title="`${owner.partner}: únete a la transformación digital y aumenta las ventas con tu negocio en internet`"
-            :alt="`Ir al website de ${owner.partner}.com`"
             target="_blank"
             rel="noopener noreferrer"
           >
