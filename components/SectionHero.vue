@@ -4,7 +4,7 @@
       <div class="container has-text-centered">
         <img
           class="artwork"
-          :src="require(`~/assets/artworks/${page}/${hero.img.src}`)"
+          :src="require(`~/assets/images/${page}/${hero.img.src}`)"
           :title="`Creatividad del ${hero.title} de ${owner.nickname}`"
           :alt="`${hero.title} de ${owner.nickname}, Valdemoro, Madrid`"
           :width="hero.img.width"

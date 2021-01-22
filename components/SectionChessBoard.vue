@@ -47,7 +47,7 @@
           <figure class="image">
             <img
               class="artwork"
-              :src="require(`~/assets/artworks/${block.img}`)"
+              :src="require(`~/assets/images/${block.img}`)"
               :title="block.alt"
               :alt="block.alt"
               width="200"

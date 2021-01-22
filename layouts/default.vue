@@ -14,7 +14,7 @@
           :title="`Ir a la página de inicio de ${owner.nickname}`"
         >
           <img
-            :src="require(`~/assets/artworks/logos/canessa-logo.svg`)"
+            :src="require(`~/assets/images/logos/canessa-logo.svg`)"
             :alt="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
             :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
             width="132"
@@ -63,7 +63,7 @@
       <div class="aside-logo">
         <img
           class="mr-3"
-          :src="require(`~/assets/artworks/logos/canessa-logo.svg`)"
+          :src="require(`~/assets/images/logos/canessa-logo.svg`)"
           :alt="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
           :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
           width="99"
@@ -226,7 +226,7 @@
           <figure class="image is-64x64" v-if="!isMenuShown">
             <img
               class="is-rounded"
-              :src="require(`~/assets/artworks/logos/canessa-circle-logo.svg`)"
+              :src="require(`~/assets/images/logos/canessa-circle-logo.svg`)"
               :alt="`Icono de ${owner.nickname} en Valdemoro, Madrid`"
               :title="`Icono de ${owner.nickname} en Valdemoro, Madrid`"
               width="60"
