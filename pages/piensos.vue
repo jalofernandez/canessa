@@ -1,6 +1,7 @@
 <template>
   <main :class="$route.name">
     <SectionHero :hero="hero" :page="$route.name" />
+    <!-- TABS -->
     <div class="tabs is-large is-centered">
       <ul>
         <li :class="{ 'is-active': !isLibra }">
@@ -36,16 +37,7 @@
 </template>
 
 <script>
-// import piensos from "~/data/piensos"
-
 export default {
-  // asyncData() {
-  //   return new Promise((resolve) => {
-  //     setTimeout(function () {
-  //       resolve({ piensos: piensos })
-  //     }, 1000)
-  //   })
-  // },
   data() {
     return {
       isLibra: false,
