@@ -102,7 +102,12 @@
           <small class="has-text-grey-dark">Tecnología utilizada:</small>
         </div>
         <div class="control level-item">
-          <span class="icon is-medium" v-for="(item, index) in tech" :key="index">
+          <span
+            class="icon is-medium"
+            :title="item"
+            v-for="(item, index) in tech"
+            :key="index"
+          >
             <i :class="`mdi mdi-24px mdi-${item}`"></i>
           </span>
         </div>
@@ -133,7 +138,7 @@ export default {
         { name: "Haz tu negocio digital", url: "https://haztunegociodigital.com" },
         { name: "@jalofernandez: designer + coder", url: "https://jalofernandez.com" }
       ],
-      tech: [ 'nodejs', 'vuejs', 'nuxt', 'language-html5', 'language-css3' ]
+      tech: [ 'nodejs', 'vuejs', 'nuxt', 'language-html5', 'sass', 'firebase' ]
     }
   },
   head() {
