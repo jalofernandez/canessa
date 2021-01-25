@@ -87,8 +87,10 @@ export default {
         themeColor: "#ff4081"
       }
     ],
+    // https://nuxtjs.org/blog/creating-blog-with-nuxt-content
+    '@nuxt/content',
     // https://www.npmjs.com/package/nuxt-mq
-    ['nuxt-mq'],
+    'nuxt-mq',
     // https://www.npmjs.com/package/vue-scrollto
     'vue-scrollto/nuxt',
     // https://www.npmjs.com/package/nuxt-purgecss
