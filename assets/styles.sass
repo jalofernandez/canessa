@@ -249,10 +249,25 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 .has-text-primary .th-quote .mdi::before
   color: $color-main
 
+// PAGES custom styles
 .mascotactiva
   h2.has-text-primary,
   h2.has-text-primary .th-quote .mdi::before
     color: $mascotactiva!important
+
+// Blog ones
+.blog-slug
+  .subtitle
+    line-height: 1.25
+
+.nuxt-content
+  .icon.icon-link
+    display: none
+  p
+    font-size: 1.1rem
+    line-height: 1.5
+    @media screen and (max-width: 600px)
+      font-size: 1rem
 
 // common FOOTER last block with project info
 $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociodigital)
