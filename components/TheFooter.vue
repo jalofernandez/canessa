@@ -9,7 +9,7 @@
           <ul class="menu-list">
             <li v-for="(link, index) in pages.links" :key="index">
               <NuxtLink
-                :to="{ name: link.page }"
+                :to="link.page"
                 :title="`Ir a la página ${link.name} de ${owner.copyright}`"
               >
                 <span class="icon-text">
