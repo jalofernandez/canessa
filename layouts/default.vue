@@ -284,10 +284,10 @@
             © {{ owner.copyright }},&nbsp;<small><b>{{ owner.currentYear }}</b></small>
           </a>
           <NuxtLink class="navbar-item terms" to="/legal" :title="`Condiciones de uso del website de ${owner.copyright}`">
-            {{ pages.links[9].name }}
+            {{ pages.links[10].name }}
           </NuxtLink>
           <NuxtLink class="navbar-item sitemap" to="/sitemap" :title="`Mapa del sitio web de ${owner.copyright}`">
-            {{ pages.links[10].name }}
+            {{ pages.links[11].name }}
           </NuxtLink>
           <a
             class="navbar-item schedule modal-trigger"
@@ -391,7 +391,7 @@ export default {
       isMenuShown: false,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
-      linksListBreak: 5,
+      linksListBreak: 6,
       navLinks: null,
       dropdownLinks: null
     }
