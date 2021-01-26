@@ -1,6 +1,6 @@
 <template>
   <div :class="scrolling ? 'is-scrolling' : null">
-    <!-- top Navbar (desktop) or top Logo (mobile) -->
+    <!-- top Navbar (desktop only) -->
     <nav
       class="navbar is-fixed-top top-bar"
       role="navigation"
@@ -58,7 +58,7 @@
     <transition name="canessa-transition" appear>
       <Nuxt />
     </transition>
-    <!-- Aside main Menu (mobile) -->
+    <!-- Aside main Menu (mobile only) -->
     <div :class="['aside-navbar-menu', { 'is-open': isMenuShown }]">
       <div class="aside-logo">
         <img
@@ -147,8 +147,7 @@
       </div>
     </div>
     <!-- Modal dialog -->
-    <!-- <div :class="['modal', { 'is-active': isModalShown }]"> -->
-      <div :class="['modal', isModalShown ? 'is-active' : 'not-active' ]">
+    <div :class="['modal', isModalShown ? 'is-active' : 'not-active' ]">
       <div class="modal-background" @click="toggleShow()"></div>
       <div class="modal-card">
         <header class="modal-card-head">
@@ -219,7 +218,7 @@
         </footer>
       </div>
     </div>
-    <!-- bottom main Navbar -->
+    <!-- bottom main Navbar (destop != mobile) -->
     <nav class="navbar is-fixed-bottom bottom-bar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" v-if="$mq == 'mobile' || $mq == 'smartphone' || $mq == 'tablet'">
         <transition name="canessa-transition" appear>
