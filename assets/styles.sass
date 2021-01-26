@@ -235,6 +235,20 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   @media screen and (max-width: 1024px)
     margin: 0 1.5rem
 
+.card-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: stretch
+
+.card:not(.is-shady)
+  margin: .5rem
+  width: calc(33.3333% - 1rem)
+  @media screen and (max-width: 899px)
+    width: calc(50% - 1rem)
+  @media screen and (max-width: 580px)
+    width: calc(100% - 1rem)
 
 // Helpers, overwrites, special classes...
 .tag:not(body).is-dark
