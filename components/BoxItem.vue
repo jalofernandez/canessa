@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="box-list">
     <div class="box" v-for="(item, index) in items" :key="index">
       <figure class="image block" v-if="item.img">
         <img
