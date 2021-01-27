@@ -1,6 +1,15 @@
 <template>
   <footer class="footer">
     <div class="container">
+      <div class="content has-text-centered">
+        <img
+          :src="require(`~/assets/images/logos/canessa-bone-logo.png`)"
+          :alt="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
+          :title="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
+          width="200"
+          height="67"
+        />
+      </div>
       <div class="columns">
         <div class="menu column is-3 is-offset-1 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
