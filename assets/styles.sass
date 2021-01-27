@@ -244,7 +244,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   align-items: stretch
 
 .card:not(.is-shady),
-.box
+.box:not(.cta)
   margin: .5rem
   width: calc(33.3333% - 1rem)
   @media screen and (max-width: 899px)
@@ -252,9 +252,16 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   @media screen and (max-width: 580px)
     width: calc(100% - 1rem)
 
-.box-list.has-tips .box
-  margin-bottom: .5rem
-  padding: 0.66rem 1rem
+.box-list.has-tips
+  .box:not(.cta)
+    margin-bottom: .5rem
+    padding: 0.66rem 1rem
+
+.card,
+.box
+  @media (hover: hover)
+    &:hover, &:focus
+      box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.2), 0 0px 0 1px rgba(10, 10, 10, 0.1)
 
 // Helpers, overwrites, special classes...
 .tag:not(body).is-dark
@@ -285,6 +292,17 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
     color: $mascotactiva!important
 
 // Blog ones
+.blog
+  .card-content .button
+    left: -12px
+    top: 2px
+    background-color: transparent
+  .card
+    @media (hover: hover)
+      &:hover, &:focus
+        .card-content .button
+          color: $color-main
+
 .blog-slug
   .subtitle
     line-height: 1.25

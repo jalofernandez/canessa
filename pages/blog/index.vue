@@ -14,10 +14,10 @@
               'is-spaced'
             ]"
           >
-            Blog posts
+            Blog
           </h1>
           <h4 class="subtitle is-size-6-mobile">
-            Para noticias ya están las redes sociales pero para <span class="has-text-weight-bold">artículos verdaderamente interesantes</span> tenemos nuestro propio blog. <span class="has-text-weight-bold">¡A disfrutar!</span>
+            Para noticias ya están las redes sociales pero <br/>para <span class="has-text-weight-bold">artículos verdaderamente interesantes</span> tenemos nuestro propio blog. <span class="has-text-weight-bold">¡A disfrutar!</span>
           </h4>
         </div>
       </div>
@@ -25,7 +25,10 @@
     <section class="section">
       <div class="card-list container">
         <div class="card" v-for="article of articles" :key="article.slug">
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+          <NuxtLink
+            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+            :title="`Leer artículo: ${article.title}`"
+          >
             <div class="card-image">
               <figure class="image is-4by3">
                 <img :src="require(`~/assets/images/blog/${article.img}`)" />
@@ -44,35 +47,32 @@
                     />
                   </figure>
                 </div>
-                <div class="media-content">
-                  <p class="title is-4">{{ article.author.name }}</p>
-                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                <div class="media-content has-text-dark">
+                  <p class="is-size-5 has-text-primary">
+                    <b>{{ article.title }}</b></p>
+                  <p>
+                    <small>
+                      <!-- por <span :class="['tag', 'is-light', article.author.name == 'jalofernandez' ? 'is-warning' : 'is-link']">{{ article.author.name }}</span> -->
+                      por <b>{{ article.author.name }}</b>
+                    </small>
+                  </p>
                 </div>
               </div>
-
-              <div class="content">
-                {{ article.description }}
-                <!-- <a href="#">#css</a> <a href="#">#responsive</a>
-                <br>
-                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+              <div class="content has-text-dark">
+                {{ article.description }}...
+                <br />
+                <div class="button is-small is-text">
+                  <span class="icon">
+                    <i class="mdi mdi-plus"></i>
+                  </span>
+                  <span>Seguir leyendo</span>
+                </div>
               </div>
             </div>
           </NuxtLink>
         </div>
       </div>
     </section>
-    <!-- <ul class="container">
-      <li v-for="article of articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          <img :src="article.img" />
-          <div>
-            <h2>{{ article.title }}</h2>
-            <p>by {{ article.author.name }}</p>
-            <p>{{ article.description }}</p>
-          </div>
-        </NuxtLink>
-      </li>
-    </ul> -->
     <TheFooter />
   </main>
 </template>
