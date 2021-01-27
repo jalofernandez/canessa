@@ -29,7 +29,7 @@ export default {
       hero: {
         title: '🔥 Internal Server Error 🔥',
         subtitle:
-          'Parece que ha sucedido un <span class="has-text-weight-bold">error al intentar acceder al servidor</span>. ¡Lo sentimos! <span class="is-hidden-mobile">Prueba alguna de estas formas para solucionar este error...</span>',
+          'Parece que ha sucedido un <span class="has-text-weight-bold">error al intentar acceder al servidor</span>. <br />¡Lo sentimos! <span class="is-hidden-mobile">Prueba alguna de estas formas para solucionar este error...</span>',
         img: null
       },
       tips: [
