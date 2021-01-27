@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="columns">
-        <div class="menu column is-3 is-offset-2 is-four-fifths-mobile is-offset-one-fifth-mobile">
+        <div class="menu column is-3 is-offset-1 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Páginas:</b>
           </p>
@@ -24,12 +24,12 @@
         </div>
         <div class="menu column is-3 is-four-fifths-mobile is-offset-one-fifth-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
-            <b>Blog:</b>
+            <b>Artículos:</b>
           </p>
           <ul class="menu-list">
             <li v-for="(post, index) in blog" :key="index">
               <NuxtLink
-                :to="{ name: post.page }"
+                :to="post.page"
                 :title="`Ir al post: ${post.name} de ${owner.nickname}`"
               >
                 <span class="icon-text">
@@ -125,18 +125,17 @@ export default {
       pages: this.$store.state.pages,
       developBy: 'Website diseñado y desarrollado por',
       blog: [
-        { name: "Blog post uno", page: "legal" },
-        { name: "Blog post dos", page: "legal" },
-        { name: "Blog post tres", page: "legal" },
-        { name: "Blog post cuatro", page: "legal" },
-        { name: "Ver todos los post...", page: "legal" }
+        { name: '"El gran reencuentro"', page: '/blog/el-gran-reencuentro' },
+        // { name: '"Blog post dos"', page: '/blog' }
+        // { name: '"Blog post tres"', page: '/blog' }
+        { name: 'Todos los artículos...', page: '/blog' }
       ],
       partnership: [
-        { name: "Protectora AiBa Madrid", url: "http://www.aibamadrid.com" },
-        { name: "Bar Galicia", url: "https://haztunegociodigital.com/horeca/bar-galicia" },
-        { name: "Restaurante La Antigua Bodeguita", url: "https://haztunegociodigital.com/horeca/la-antigua-bodeguita" },
-        { name: "Haz tu negocio digital", url: "https://haztunegociodigital.com" },
-        { name: "@jalofernandez: designer + coder", url: "https://jalofernandez.com" }
+        { name: 'Protectora AiBa Madrid', url: 'http://www.aibamadrid.com' },
+        { name: 'Haz tu negocio digital', url: 'https://haztunegociodigital.com' },
+        { name: 'Restaurante La Antigua Bodeguita', url: 'https://haztunegociodigital.com/horeca/la-antigua-bodeguita' },
+        { name: 'Bar Galicia', url: 'https://haztunegociodigital.com/horeca/bar-galicia' },
+        { name: '@jalofernandez: designer + coder', url: 'https://jalofernandez.com' }
       ],
       tech: [ 'nodejs', 'vuejs', 'nuxt', 'language-html5', 'sass', 'firebase' ]
     }
