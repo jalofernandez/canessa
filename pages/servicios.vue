@@ -44,7 +44,8 @@ export default {
           title: 'Complementos para los peludos',
           description: 'Hay razas que requieren un mayor mantenimiento que otras pero todas necesitan baño para estar limpios y aseados además de cepillado para retirar pelo muerto y evitar los nudos. En la peluquería canina Canessa te ofrecemos <b>amplia variedad de productos</b> para estas tareas.' + closeQuote,
           link: 'Todos nuestros productos',
-          to: 'complementos',
+          // TODO: change the following key to "to: 'Complementos'" when the page exist
+          to: 'piensos',
           img: this.$route.name + '/bubbles-champu-perfume-peluqueria-canina-canessa.jpg',
           alt: 'Champú y perfume Bubbles disponibles en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
