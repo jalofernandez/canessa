@@ -56,7 +56,7 @@ export default {
         },
         {
           title: 'Expulsadores de aire...',
-          description: '...Y <b>cabina de secado</b> de última generación con dos motores para secar a tu <em>mascota</em> animal de compañía <b>más rápidamente minificando el estrés</b> que este pueda sufrir durante el proceso de secado. Además no generan calor por resistencia, como los secadores de mano, que en largas exposiciones pueden provocar dermatitis y otras enfermedades cutáneas y no son recomendables para secar animales domésticos.' + closeQuote,
+          description: '...Y <b>cabina de secado</b> de última generación con dos motores para secar a tu <em class="has-line-through">mascota</em> animal de compañía <b>más rápidamente minificando el estrés</b> que este pueda sufrir durante el proceso de secado. Además no generan calor por resistencia, como los secadores de mano, que en largas exposiciones pueden provocar dermatitis y otras enfermedades cutáneas y no son recomendables para secar animales domésticos.' + closeQuote,
           img: this.$route.name + '/secador-tornado-autolavado-peluqueria-canina-canessa.jpg',
           alt: 'Expulsadores de aire de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: true
