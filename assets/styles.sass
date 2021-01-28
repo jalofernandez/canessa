@@ -140,7 +140,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
     order: 2
 
 .container
-  .content figure img
+  .content figure img:not(.is-rounded)
     border-radius: 5px
   @media (min-width: 980px)
     &:not(.reflected) .content figure
@@ -291,6 +291,10 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   color: $color-main
 
 // PAGES custom styles
+.index
+  .tile.is-child
+    padding: 0
+
 .mascotactiva
   h2.has-text-primary,
   h2.has-text-primary .th-quote .mdi::before
