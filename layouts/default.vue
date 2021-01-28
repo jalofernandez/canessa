@@ -282,12 +282,6 @@
           >
             © {{ owner.copyright }},&nbsp;<small><b>{{ owner.currentYear }}</b></small>
           </a>
-          <NuxtLink class="navbar-item terms" to="/legal" :title="`Condiciones de uso del website de ${owner.copyright}`">
-            {{ pages.links[10].name }}
-          </NuxtLink>
-          <NuxtLink class="navbar-item sitemap" to="/sitemap" :title="`Mapa del sitio web de ${owner.copyright}`">
-            {{ pages.links[11].name }}
-          </NuxtLink>
           <a
             class="navbar-item schedule modal-trigger"
             href="#modal_schedule"
@@ -295,7 +289,12 @@
             @click.prevent="toggleShow()"
             v-if="!isModalShown"
           >
-            Horario
+            <span class="icon-text">
+              <span class="icon">
+                <i class="mdi mdi-clock-outline"></i>
+              </span>
+              Horario
+            </span>
           </a>
         </div>
         <div class="navbar-end">
