@@ -19,13 +19,13 @@
     <!-- ADVANCE -->
     <transition name="canessa-transition" appear>
       <div :class="['container', { 'has-text-centered': $mq == 'mobile' }]" v-if="!isLibra">
-        <BoxItem :items="piensos.advance" />
+        <BoxItem :items="piensos.advance" :page="$route.name" />
       </div>
     </transition>
     <!-- LIBRA -->
     <transition name="canessa-transition" appear>
       <div :class="['container', { 'has-text-centered': $mq == 'mobile' }]" v-if="isLibra">
-        <BoxItem :items="piensos.libra" />
+        <BoxItem :items="piensos.libra" :page="$route.name" />
       </div>
     </transition>
     <TheFooter />

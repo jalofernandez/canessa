@@ -3,9 +3,9 @@
     <div class="box" v-for="(item, index) in items" :key="index">
       <figure class="image block" v-if="item.img">
         <img
-          :src="require(`~/assets/images/piensos/${item.img}`)"
+          :src="require(`~/assets/images/${page}/${item.img}`)"
           :alt="`Advance ${item.title} de Affinity`"
-          :title="`Advance ${item.title} de Affinity`"
+          :title="item.title"
           width="222"
           height="222"
         >
@@ -34,6 +34,10 @@ export default {
       type: Array,
       default: null,
       required: true,
+    },
+    page: {
+      type: Array,
+      default: null
     },
   }
 }

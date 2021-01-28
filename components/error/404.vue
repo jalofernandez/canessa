@@ -4,7 +4,7 @@
     <section class="hero is-small is-hidden-mobile">
       <div class="hero-body">
         <div class="container has-tips">
-          <BoxItem :items="tips" />
+          <BoxItem class="has-tips" :items="tips" />
         </div>
       </div>
     </section>

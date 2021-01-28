@@ -75,126 +75,147 @@
           </div>
         </div>
       </div>
-      <div class="intro column is-8 is-offset-2">
-        <h2 class="title">Perfect for developers or designers!</h2><br>
-        <p class="subtitle">Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a. Neque egestas congue quisque egestas diam in arcu cursus.</p>
-      </div>
-      <div class="sandbox">
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-shady">
-            <article class="tile is-child notification is-white">
-              <p class="title">Hello World</p>
-              <p class="subtitle">What is up?</p>
-            </article>
-          </div>
-          <div class="tile is-parent is-shady">
-            <article class="tile is-child notification is-white">
-              <p class="title">Foo</p>
-              <p class="subtitle">Bar</p>
-            </article>
-          </div>
-          <div class="tile is-parent is-shady">
-            <article class="tile is-child notification is-white">
-              <p class="title">Third column</p>
-              <p class="subtitle">With some content</p>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </section>
+
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h3
+            :class="[
+              'title',
+              'is-size-3',
+              'is-size-4-mobile',
+              'has-text-primary',
+              $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
+              'is-spaced',
+              'has-text-centered'
+            ]"
+          >
+            Nuestros clientes nos avalan por <br class="is-hidden-mobile" />cortes profesionales como estos:
+          </h3>
+          <!-- <p class="subtitle is-size-6-mobile">
+            Vel fringilla est ullamcorper eget nulla facilisi. Nulla facilisi nullam vehicula ipsum a. Neque egestas congue quisque egestas diam in arcu cursus.
+          </p> -->
+          <BoxItem class="is-small-grid" :items="doggies" :page="$route.name" />
+          <!-- <div class="sandbox">
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-shady">
+                <article class="tile is-child notification is-white">
+                  <figure class="image">
+                    <img src="~assets/images/perretes/canessa-perretes--index-01.jpg" alt="Description" width="" height=""/>
+                  </figure>
+                </article>
               </div>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
+              <div class="tile is-parent is-shady">
+                <article class="tile is-child notification is-white">
+                  <figure class="image">
+                    <img src="~assets/images/perretes/canessa-perretes--index-02.jpg" alt="Description" width="" height=""/>
+                  </figure>
+                </article>
+              </div>
+              <div class="tile is-parent is-shady">
+                <article class="tile is-child notification is-white">
+                  <figure class="image">
+                    <img src="~assets/images/perretes/canessa-perretes--index-03.jpg" alt="Description" width="" height=""/>
+                  </figure>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-8">
                 <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Vertical tiles</p>
-                            <p class="subtitle">Top box</p>
-                        </article>
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Vertical tiles</p>
-                            <p class="subtitle">Bottom box</p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-white">
-                            <p class="title">Middle box</p>
-                            <p class="subtitle">With an image</p>
-                            <figure class="image is-4by3">
-                                <img src="https://picsum.photos/640/480/?random" alt="Description">
-                            </figure>
-                        </article>
-                    </div>
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-white">
+                      <p class="title">Vertical tiles</p>
+                      <p class="subtitle">Top box</p>
+                    </article>
+                    <article class="tile is-child notification is-white">
+                      <p class="title">Vertical tiles</p>
+                      <p class="subtitle">Bottom box</p>
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                      <p class="title">Middle box</p>
+                      <p class="subtitle">With an image</p>
+                      <figure class="image">
+                        <img src="~assets/images/perretes/canessa-perretes--index-01.jpg" alt="Description" width="" height=""/>
+                      </figure>
+                    </article>
+                  </div>
                 </div>
                 <div class="tile is-parent is-shady">
-                    <article class="tile is-child notification is-white">
-                        <p class="title">Wide column</p>
-                        <p class="subtitle">Aligned with the right column</p>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                        </div>
-                    </article>
+                  <article class="tile is-child notification is-white">
+                    <p class="title">Wide column</p>
+                    <p class="subtitle">Aligned with the right column</p>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                    </div>
+                  </article>
                 </div>
+              </div>
+              <div class="tile is-parent is-shady">
+                  <article class="tile is-child notification is-white">
+                      <div class="content">
+                          <p class="title">Tall column</p>
+                          <p class="subtitle">With even more content</p>
+                          <div class="content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
+                              eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                              <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet
+                              felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+                              <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam
+                              ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+                          </div>
+                      </div>
+                  </article>
+              </div>
             </div>
-            <div class="tile is-parent is-shady">
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-shady">
                 <article class="tile is-child notification is-white">
-                    <div class="content">
-                        <p class="title">Tall column</p>
-                        <p class="subtitle">With even more content</p>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
-                            eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                            <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet
-                            felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                            <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam
-                            ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-                        </div>
-                    </div>
+                  <p class="title">Side column</p>
+                  <p class="subtitle">With some content</p>
+                  <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                  </div>
                 </article>
-            </div>
-        </div>
-        <div class="tile is-ancestor">
-            <div class="tile is-parent is-shady">
+              </div>
+              <div class="tile is-parent is-8 is-shady">
                 <article class="tile is-child notification is-white">
-                    <p class="title">Side column</p>
-                    <p class="subtitle">With some content</p>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                    </div>
+                  <p class="title">Main column</p>
+                  <p class="subtitle">With some content</p>
+                  <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                  </div>
                 </article>
+              </div>
             </div>
-            <div class="tile is-parent is-8 is-shady">
-                <article class="tile is-child notification is-white">
-                    <p class="title">Main column</p>
-                    <p class="subtitle">With some content</p>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                    </div>
-                </article>
+            <div class="tile is-ancestor">
+              <div class="tile is-parent is-8 is-shady">
+                  <article class="tile is-child notification is-white">
+                      <p class="title">Murphy's law</p>
+                      <p class="subtitle">Anything that can go wrong will go wrong</p>
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                      </div>
+                  </article>
+              </div>
+              <div class="tile is-parent is-shady">
+                  <article class="tile is-child notification is-white">
+                      <p class="title">Main column</p>
+                      <p class="subtitle">With some content</p>
+                      <div class="content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                      </div>
+                  </article>
+              </div>
             </div>
-        </div>
-        <div class="tile is-ancestor">
-            <div class="tile is-parent is-8 is-shady">
-                <article class="tile is-child notification is-white">
-                    <p class="title">Murphy's law</p>
-                    <p class="subtitle">Anything that can go wrong will go wrong</p>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="tile is-parent is-shady">
-                <article class="tile is-child notification is-white">
-                    <p class="title">Main column</p>
-                    <p class="subtitle">With some content</p>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                    </div>
-                </article>
-            </div>
+          </div> -->
         </div>
       </div>
     </section>
+
     <TheFooter />
   </main>
 </template>
@@ -205,6 +226,11 @@ export default {
     return {
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
+      doggies: [
+        { img: 'canessa-perretes--index-01.jpg', title: 'Bichón maltés con corte asiático' },
+        { img: 'canessa-perretes--index-02.jpg', title: 'Bichón maltés con corte asiático' },
+        { img: 'canessa-perretes--index-03.jpg', title: 'Bichón maltés con corte asiático' },
+      ]
     }
   },
   head() {

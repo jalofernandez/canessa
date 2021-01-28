@@ -3,8 +3,8 @@
     <SectionHero :hero="hero" :page="'error'" />
     <section class="hero is-small is-hidden-mobile">
       <div class="hero-body">
-        <div class="container has-tips">
-          <BoxItem :items="tips" />
+        <div class="container">
+          <BoxItem class="has-tips" :items="tips" />
         </div>
       </div>
     </section>

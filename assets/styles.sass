@@ -218,18 +218,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
     opacity: .3
 
 // GRID layout to show cards / box UI items
-.container .box-list
-  &.has-tips
-    .box:not(.cta)
-      margin-bottom: .5rem
-      padding: 0.66rem 1rem
-  &:not(.has-tips)
-    .image
-      @media screen and (max-width: 399px)
-        max-width: 200px
-        max-height: 200px
-        margin: 0 auto
-
+// (lists)
 .card-list,
 .box-list
   display: flex
@@ -238,6 +227,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   justify-content: flex-start
   align-items: stretch
 
+// (items)
 .card:not(.is-shady),
 .box:not(.cta)
   margin: .5rem
@@ -253,7 +243,29 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
     &:hover, &:focus
       box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.2), 0 0px 0 1px rgba(10, 10, 10, 0.1)
 
-// Helpers, overwrites, special classes...
+// (modifiers)
+.container .box-list
+  &.has-tips
+    .box:not(.cta)
+      margin-bottom: .5rem
+      padding: 0.66rem 1rem
+  &:not(.is-small-grid)
+    .image
+      @media screen and (max-width: 399px)
+        max-width: 200px
+        max-height: 200px
+        margin: 0 auto
+  &.is-small-grid
+    .image.block
+      margin-bottom: 0
+    p
+      padding: .5rem .75rem
+    .box:not(.cta)
+      padding: 0
+      @media screen and (max-width: 580px)
+        width: calc(50% - 1rem)
+
+// HELPERS, overwrites, special classes...
 .tag:not(body).is-dark
   color: $color-main 
 
