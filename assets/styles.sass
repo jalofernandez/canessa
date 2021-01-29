@@ -265,6 +265,18 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
       @media screen and (max-width: 580px)
         width: calc(50% - 1rem)
 
+// TABS layout & behaviour
+.tabs-wrapper
+  position: relative
+  .tabs
+    background-color: rgba(255,255,255,.75)
+    backdrop-filter: $backdrop
+    z-index: 10
+    position: sticky
+    top: 52px
+    @media screen and (max-width: 1023px)
+      top: 0
+
 // HELPERS, overwrites, special classes...
 .tag:not(body).is-dark
   color: $color-main 

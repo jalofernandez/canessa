@@ -1,33 +1,41 @@
 <template>
   <main :class="$route.name">
     <SectionHero :hero="hero" :page="$route.name" />
-    <!-- TABS -->
-    <div class="tabs is-large is-centered">
-      <ul>
-        <li :class="{ 'is-active': !isLibra }">
-          <a href="" @click.prevent="toggleTabs()">
-            <span>Advance</span>
-          </a>
-        </li>
-        <li :class="{ 'is-active': isLibra }">
-          <a href="" @click.prevent="toggleTabs()">
-            <span>Libra</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- ADVANCE -->
-    <transition name="canessa-transition" appear>
-      <div :class="['container', { 'has-text-centered': $mq == 'mobile' }]" v-if="!isLibra">
-        <BoxItem :items="piensos.advance" :page="$route.name" />
+    <section class="tabs-wrapper">
+      <!-- TABS sticky bar -->
+      <div
+        :class="[
+          'tabs',
+          'is-centered',
+          $mq !== 'mobile' ? 'is-large' : 'has-text-weight-bold'
+        ]"
+      >
+        <ul>
+          <li :class="{ 'is-active': !isLibra }">
+            <a href="" @click.prevent="toggleTabs()">
+              <span>Advance</span>
+            </a>
+          </li>
+          <li :class="{ 'is-active': isLibra }">
+            <a href="" @click.prevent="toggleTabs()">
+              <span>Libra</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </transition>
-    <!-- LIBRA -->
-    <transition name="canessa-transition" appear>
-      <div :class="['container', { 'has-text-centered': $mq == 'mobile' }]" v-if="isLibra">
-        <BoxItem :items="piensos.libra" :page="$route.name" />
-      </div>
-    </transition>
+      <!-- ADVANCE -->
+      <transition name="canessa-transition" appear>
+        <div :class="['container', { 'has-text-centered': $mq == 'mobile' }]" v-if="!isLibra">
+          <BoxItem :items="piensos.advance" :page="$route.name" />
+        </div>
+      </transition>
+      <!-- LIBRA -->
+      <transition name="canessa-transition" appear>
+        <div :class="['container', { 'has-text-centered': $mq == 'mobile' }]" v-if="isLibra">
+          <BoxItem :items="piensos.libra" :page="$route.name" />
+        </div>
+      </transition>
+    </section>
     <TheFooter />
   </main>
 </template>
