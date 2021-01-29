@@ -24,7 +24,7 @@ export default {
     }
   },
   head() {
-    const title = this.hero.title + ' de'
+    const title = 'Mapa sitio de'
     const description =
       'Mapa del sitio web de ' + this.owner.copyright + ' en la calle Vicente Aleixandre, 5. 28341. Valdemoro, Madrid. Citas por teléfono y WhatsApp: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path

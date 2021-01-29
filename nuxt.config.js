@@ -14,7 +14,7 @@ export default {
       class: ['canessa'],
     },
     title: process.env.npm_package_name || '',
-    titleTemplate: "%s Peluquería canina Canessa, Valdemoro 🐾  ✅",
+    titleTemplate: "%s Peluquería canina Canessa, Valdemoro 🐾 ✅",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

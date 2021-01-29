@@ -158,7 +158,7 @@ export default {
     }
   },
   head() {
-    const title = this.hero.title + ' en'
+    const title = 'Pienso en'
     const description =
       'Pienso, alimentación canina, recompensas y chuches de perros en ' + this.owner.copyright + ', Valdemoro, Madrid. Teléfono y WhatsApp: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
