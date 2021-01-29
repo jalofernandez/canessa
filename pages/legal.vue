@@ -1153,7 +1153,7 @@ export default {
   head() {
     const title = this.hero.title + ' de'
     const description =
-      'Términos legales de ' + this.owner.copyright + ', Valdemoro, Madrid'
+      'Aviso legal: condiciones de uso y términos legales del website de ' + this.owner.copyright + ', Valdemoro, Madrid. Cita por teléfono y Whatsapp: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

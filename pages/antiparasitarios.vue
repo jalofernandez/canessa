@@ -55,7 +55,7 @@ export default {
   head() {
     const title = 'Antiparasitarios en'
     const description =
-      'Collares, pipetas y antiparasitarios en ' + this.owner.copyright + ' de Valdemoro para luchar contra los parásitos qeu transmiten enfermedades a nuestras mascotas. Además ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tlf: 91 248 04 30'
+      'Collares, pipetas y antiparasitarios para perros y evitar enfermedades e infecciones caninas en ' + this.owner.copyright + ' de Valdemoro. Tlf: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

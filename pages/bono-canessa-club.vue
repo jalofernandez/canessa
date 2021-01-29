@@ -65,7 +65,7 @@ export default {
   head() {
     const title = this.hero.title + ' de'
     const description =
-      'Bono Canessa Club para obtener descuento en servicios de ' + this.owner.copyright + ' en la calle Vicente Aleixandre, 5 - 28341 - Valdemoro, Madrid. Tlf: 91 248 04 30'
+      'Bono Canessa Club para obtener descuento en servicios de ' + this.owner.copyright + ' en la calle Vicente Aleixandre, 5. Valdemoro, Madrid. Cita: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

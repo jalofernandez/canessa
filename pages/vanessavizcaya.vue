@@ -46,7 +46,7 @@ export default {
   head() {
     const title = this.owner.name + ' de'
     const description =
-      'Sobre ' + this.owner.name + ' de ' + this.owner.copyright + ', Valdemoro, Madrid'
+      'Sobre ' + this.owner.name + ', peluquera de perros profesional o dog groomer en ' + this.owner.copyright + ', Valdemoro. Teléfono y WhatsApp: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

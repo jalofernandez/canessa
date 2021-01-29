@@ -74,7 +74,7 @@ export default {
   head() {
     const title = 'Servicios de'
     const description =
-      'Servicios de ' + this.owner.copyright + '. Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados además de un completo SPA canino. Tenemos pienso, collares, arneses, juguetes y complementos.'
+      'Servicios de ' + this.owner.copyright + ' con cortes de pelo comerciales, de exposición, higiénicos, arreglos, stripping a tijera y máquina. Baños para perros'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

@@ -54,7 +54,7 @@ export default {
   head() {
     const title = ''
     const description =
-      'Servicios de ' + this.owner.copyright + '. Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y lavados. Tenemos pienso, collares, arneses, juguetes y complementos.'
+      'Ofrecemos peluquería y belleza canina y felina con cortes de pelo comerciales y de exposición así como arreglos y baños en ' + this.owner.copyright
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

@@ -78,7 +78,7 @@ export default {
   head() {
     const title = 'Contacto de'
     const description =
-      'Contacta con ' + this.owner.copyright + ' en la calle Vicente Aleixandre, 5 - 28341 - Valdemoro, Madrid. Tlf: 91 248 04 30'
+      'Contacta con ' + this.owner.copyright + ' para perros en la calle Vicente Aleixandre, 5. Valdemoro, Madrid. Cita previa por teléfono y WhatsApp: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

@@ -4,7 +4,7 @@ const url = 'peluqueriacanessa.com'
 const email = 'van.vizcaya@gmail.com'
 
 export const state = () => ({
-  name: 'Vanessa Vizcaya García',
+  name: 'Vanessa Vizcaya',
   nickname: nickname,
   url: url,
   email: email,

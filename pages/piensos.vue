@@ -160,7 +160,7 @@ export default {
   head() {
     const title = this.hero.title + ' en'
     const description =
-      'Página de error del sitio web ' + this.owner.copyright + '. Pruebe otra URL o vaya a la página de inicio para encontrar la descripción de nuestros servicios y contacto.'
+      'Pienso, alimentación canina, recompensas y chuches de perros en ' + this.owner.copyright + ', Valdemoro, Madrid. Teléfono y WhatsApp: 91 248 04 30'
     const canonical = 'https://' + this.owner.url + this.$route.path
 
     return {

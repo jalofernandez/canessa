@@ -336,7 +336,7 @@ export default {
   head() {
     const title = ''
     const description =
-      this.owner.copyright + ' realiza sus servicios profesionales con la máxima seguridad y el mínimo estrés para tu perro o gato. Cita previa: 91 248 04 30'
+      this.owner.copyright + ' realiza sus servicios profesionales con la mayor calidad, mejor atención y el mínimo estrés para tu perro en Madrid. 91 248 04 30'
     const canonical = 'https://' + this.owner.url
 
     return {

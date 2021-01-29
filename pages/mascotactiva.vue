@@ -55,7 +55,7 @@ export default {
   head() {
     const title = 'Mascotactiva en'
     const description =
-      'Servicios de cuidado y entrenamiento canino en ' + this.owner.copyright + '. Ofrecemos servicios de guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional. 636 515 206'
+      'Servicios de guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional de Mascotactiva. Teléfono: 636 515 206'
     const canonical = 'https://' + this.owner.url + this.$route.path
     const schema = {
       "@context": "http://schema.org",
