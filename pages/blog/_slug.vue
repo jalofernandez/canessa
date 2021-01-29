@@ -96,12 +96,13 @@
       return {
         owner: this.$store.state.owner,
         pages: this.$store.state.pages,
+        metaDesc: '',
       }
     },
     head() {
-      const title = this.article.title + ' | '
+      const title = this.article.title + ' |'
       const description =
-        this.article.description + ' en el blog de ' + this.owner.copyright + ' en Valdemoro, Madrid. Tlf: 91 248 04 30'
+        this.metaDesc + ' en el blog de ' + this.owner.copyright + ' en Valdemoro, Madrid. Teléfono: 91 248 04 30'
       const canonical = 'https://' + this.owner.url + this.$route.path
 
       return {
@@ -128,6 +129,10 @@
           { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
         ]
       }
+    },
+    created() {
+      let desc = this.article.description 
+      this.metaDesc = desc.slice(0,65) + '...'
     },
     methods: {
       formatDate(date) {
