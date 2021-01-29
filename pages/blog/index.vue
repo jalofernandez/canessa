@@ -14,7 +14,7 @@
               'is-spaced'
             ]"
           >
-            Blog
+            {{ blog }}
           </h1>
           <h4 class="subtitle is-size-6-mobile">
             Para noticias ya están las redes sociales pero <br/>para <span class="has-text-weight-bold">artículos verdaderamente interesantes</span> tenemos nuestro propio blog. <span class="has-text-weight-bold">¡A disfrutar!</span>
@@ -87,6 +87,43 @@
 
       return {
         articles
+      }
+    },
+    data() {
+      return {
+        owner: this.$store.state.owner,
+        blog: 'Blog'
+      }
+    },
+    head() {
+      const title = this.blog + ' de'
+      const description =
+        this.blog + ' de artículos de interés sobre perros, grooming, eventos caninos y el mundo animal de ' + this.owner.copyright + ' en Valdemoro, Madrid. Tlf: 91 248 04 30'
+      const canonical = 'https://' + this.owner.url + this.$route.path
+
+      return {
+        title,
+        meta: [
+          { hid: 'description', name: 'description', content: description },
+          { hid: 'Classification', name: 'Classification', content: 'Business' },
+          { hid: 'subject', name: 'subject', content: description },
+          // Open Graph
+          { hid: 'og:title', property: 'og:title', content: title },
+          { hid: 'og:description', property: 'og:description', content: description },
+          // Twitter Card
+          { hid: 'twitter:title', name: 'twitter:title', content: title },
+          { hid: 'twitter:description', name: 'twitter:description', content: description }
+        ],
+        // Structured Data (Schema)
+        __dangerouslyDisableSanitizers: ['script'],
+        script: [
+          { innerHTML: JSON.stringify(this.owner.schema), type: 'application/ld+json' },
+        ],
+        link: [
+          { rel: 'canonical', hid: 'canonical', href: canonical },
+          { rel: 'alternate', hid: 'alternate', href: canonical+'/#!' },
+          { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
+        ]
       }
     }
   }
