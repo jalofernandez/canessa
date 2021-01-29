@@ -36,7 +36,7 @@ export default {
       required: true,
     },
     page: {
-      type: Array,
+      type: String,
       default: null
     },
   }
