@@ -1,6 +1,10 @@
 const author = '@jalofernandez para Vanessa Vizcaya, Canessa'
 
 export default {
+  target: 'static',
+  router: {
+    base: '/canessa/'
+  },
   // Isomorphic app (server-side rendering + client-side navigation) not SPA one
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-mode
   mode: 'universal',
