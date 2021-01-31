@@ -1,13 +1,13 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <div class="content column is-8 is-offset-2">
+      <div class="content column is-8 is-offset-2" v-if="!isDisabledCurrentPage">
         <span class="icon th-quote"><i class="mdi mdi-format-quote-open"></i></span>
         Sabemos lo importante que es para ti tu perro, un miembro más de la familia, y lo mimaremos como se merece, no sólo garantizando su <b>higiene y salud</b>, 
         sino también ofreciéndole un <b>trato cariñoso para hacer que su experiencia sea gratificante y divertida</b> evitando los clásicos traumas de las sesiones de peluquería canina.
         <span class="icon th-quote"><i class="mdi mdi-format-quote-close"></i></span>
       </div>
-      <div class="content has-text-centered">
+      <div class="content has-text-centered" v-if="!isDisabledCurrentPage">
         <img
           :src="require(`~/assets/images/logos/canessa-bone-logo.png`)"
           :alt="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
@@ -134,6 +134,12 @@
 <script>
 export default {
   name: 'TheFooter',
+  props: {
+    isDisabledCurrentPage: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       owner: this.$store.state.owner,

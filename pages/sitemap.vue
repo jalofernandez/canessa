@@ -1,7 +1,7 @@
 <template>
   <main :class="$route.name">
     <SectionHero :hero="hero" :page="$route.name" />
-    <TheFooter />
+    <TheFooter :isDisabledCurrentPage="true" />
   </main>
 </template>
 
