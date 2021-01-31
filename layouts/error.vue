@@ -25,6 +25,9 @@ export default {
       // catch everything else
       return error500;
     },
+  },
+  mounted() {
+    window.scrollTo(0, 0)
   }
 }
 </script>

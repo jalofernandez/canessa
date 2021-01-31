@@ -47,6 +47,9 @@ export default {
         { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
       ]
     }
+  },
+  mounted() {
+    window.scrollTo(0, 0)
   }
 }
 </script>

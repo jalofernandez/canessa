@@ -96,6 +96,9 @@ export default {
       ]
     }
   },
+  mounted() {
+    window.scrollTo(0, 0)
+  },
   methods: {
     yearsOfExperience(since) {
       let currentYear = new Date().getFullYear()

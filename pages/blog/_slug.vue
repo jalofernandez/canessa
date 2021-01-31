@@ -134,6 +134,9 @@
       let desc = this.article.description 
       this.metaDesc = desc.slice(0,65) + '...'
     },
+    mounted() {
+      window.scrollTo(0, 0)
+    },
     methods: {
       formatDate(date) {
         const options = { year: 'numeric', month: 'long', day: 'numeric' }

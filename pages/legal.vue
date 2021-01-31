@@ -1135,6 +1135,9 @@ export default {
       ]
     }
   },
+  mounted() {
+    window.scrollTo(0, 0)
+  },
   methods: {
     toggleClick() {4
       this.isClicked = !this.isClicked
