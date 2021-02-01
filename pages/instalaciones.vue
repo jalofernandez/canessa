@@ -1,30 +1,26 @@
 <template>
   <main :class="$route.name">
-    <section class="hero is-fullheight video is-dark is-bold">
-      <div class="hero-video">
-        <video
-          id="bgvid"
-          :poster="require(`~/assets/videos/afgano.jpg`)"
-          :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
-          playsinline autoplay muted loop
-        >
-          <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4">
-        </video>
+    <header class="video-header">
+      <video
+        id="bgvid"
+        :poster="require(`~/assets/videos/afgano.jpg`)"
+        :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
+        playsinline autoplay muted loop
+      >
+        <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4" v-if="$mq !== 'mobile'">
+      </video>
+      <div class="viewport-header">
+        <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`">
+          <span>Nuestras instalaciones:</span>
+          <ScrollDownItem v-scroll-to="{ el: '#section-cta' }" />
+        </h1>
       </div>
-      <!-- <div class="hero-body">
-        <div class="container">
-          Text content goes here (h1 and call to action etc...)
-        </div>
-      </div>
-      <div class="hero-foot">
-        <div class="has-text-centered">
-          Scroll down arrow here?
-        </div>
-      </div> -->
-    </section>
-    <SectionBox class="box cta is-radiusless" :copy="ctaBox" />
-    <SectionChessBoard :blocks="blocks" :page="$route.name"/>
-    <TheFooter />
+    </header>
+    <div class="is-below-video">
+      <SectionBox id="section-cta" class="box cta is-radiusless" :copy="ctaBox" />
+      <SectionChessBoard :blocks="blocks" :page="$route.name"/>
+      <TheFooter />
+    </div>
   </main>
 </template>
 
@@ -33,6 +29,8 @@ export default {
   data() {
     const closeQuote = '<span class="icon th-quote"><i class="mdi mdi-format-quote-close"></i></span>'
     return {
+      headerScale: 1,
+      headerOpacity: 1,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
       blocks: [
@@ -114,8 +112,31 @@ export default {
       ]
     }
   },
+  created() {
+    if (process.client) {
+      window.addEventListener('scroll', this.headerTitleAnim)
+    }
+  },
+  destroyed() {
+    if (process.client) {
+      window.removeEventListener('scroll', this.headerTitleAnim)
+    }
+  },
   mounted() {
     window.scrollTo(0, 0)
+  },
+  methods: {
+    headerTitleAnim() {
+      let target, calcOpacity, calcScale, opacity, scale
+      target = document.documentElement
+      calcOpacity = target.scrollTop * 20
+      calcScale = target.scrollTop * 10
+      opacity = (target.offsetHeight - calcOpacity) / target.offsetHeight
+      scale = (target.offsetHeight - calcScale) / target.offsetHeight
+      // console.log(opacity +  ' : ' + scale) // to output values in console
+      this.headerOpacity = opacity
+      this.headerScale = scale
+    }
   }
 }
 </script>

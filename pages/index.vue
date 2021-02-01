@@ -1,6 +1,6 @@
 <template>
   <main :class="$route.name">
-    <section class="hero is-fullheight video is-dark is-bold">
+    <!-- <section class="hero is-fullheight is-dark is-bold video">
       <div class="hero-video">
         <video
           id="bgvid"
@@ -13,256 +13,279 @@
       </div>
       <div class="hero-body">
         <div class="container">
-          // Text content goes here (h1 and call to action etc...)
+          <h1 class="video-header-title">
+            Tu perro merece:
+            <span>{{ owner.copyright }}</span>
+          </h1>
         </div>
       </div>
       <div class="hero-foot">
         <div class="has-text-centered">
-          // Scroll down arrow here?
+          // Scroll down arrow here!!
         </div>
       </div>
-    </section>
-
-    <SectionBox class="box cta is-radiusless" :copy="ctaBox" />
-
-    <section class="container">
-      <div class="columns features">
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-paw"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Opinión 1</h4>
-                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-empire"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Opinión 2</h4>
-                <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                sed risus.</p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-apple"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Opinión 3</h4>
-                <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+    </section> -->
+    <header class="video-header">
+      <video
+        id="bgvid"
+        :poster="require(`~/assets/videos/afgano.jpg`)"
+        :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
+        playsinline autoplay muted loop
+      >
+        <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4" v-if="$mq !== 'mobile'">
+      </video>
+      <div class="viewport-header">
+        <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`">
+          Tu perro merece:
+          <span>{{ owner.copyright }}</span>
+          <ScrollDownItem v-scroll-to="{ el: '#section-cta' }" />
+        </h1>
       </div>
-    </section>
+    </header>
 
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h3
-            :class="[
-              'title',
-              'is-size-3',
-              'is-size-4-mobile',
-              'has-text-primary',
-              $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
-              'is-spaced',
-              'has-text-centered'
-            ]"
-          >
-            Nuestros clientes nos avalan por <br class="is-hidden-mobile" />cortes profesionales como estos:
-          </h3>
-          <BoxItem class="is-small-grid" :items="doggies" :page="$route.name" />
-        </div>
-      </div>
-    </section>
+    <div class="is-below-video">
 
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h3
-            :class="[
-              'title',
-              'is-size-2',
-              'is-size-4-mobile',
-              'has-text-primary',
-              $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
-              'is-spaced',
-              'has-text-centered',
-              'mb-5'
-            ]"
-          >
-            Nuestro compromiso
-          </h3>
-        </div>
-        <!-- TODO: code refactor asap because can use "SectionChessBoard" comp. -->
-        <div :class="['container', 'mb-6', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
-          <div class="columns is-vcentered content is-medium">
-            <div class="column is-8">
-              <p class="is-size-6-mobile" v-html="block.description"></p>
-              <NuxtLink
-                :to="{ name: block.to }"
-                :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
-                :title="`${block.link} en ${owner.copyright}`"
-              >
-                {{ block.link }}
-                <span class="icon">
-                  <i class="mdi mdi-arrow-right"></i>
-                </span>
-              </NuxtLink>
+      <SectionBox id="section-cta" class="box cta is-radiusless" :copy="ctaBox" />
+
+      <section class="container">
+        <div class="columns features">
+          <div class="column is-4">
+            <div class="card is-shady">
+              <div class="card-image has-text-centered">
+                <i class="fa fa-paw"></i>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h4>Opinión 1</h4>
+                  <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                  <p><a href="#">Learn more</a></p>
+                </div>
+              </div>
             </div>
-            <div class="column">
-              <figure class="image">
-                <img
-                  class="artwork"
-                  :src="require(`~/assets/images/index/${block.img}`)"
-                  :title="block.alt"
-                  :alt="block.alt"
-                  width="200"
-                  height="200"
-                />
-              </figure>
+          </div>
+          <div class="column is-4">
+            <div class="card is-shady">
+              <div class="card-image has-text-centered">
+                <i class="fa fa-empire"></i>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h4>Opinión 2</h4>
+                  <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+                  sed risus.</p>
+                  <p><a href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card is-shady">
+              <div class="card-image has-text-centered">
+                <i class="fa fa-apple"></i>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h4>Opinión 3</h4>
+                  <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  <p><a href="#">Learn more</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container has-text-centered">
-          <!-- <div class="sandbox">
-            <div class="tile is-ancestor">
-              <div class="tile is-parent is-shady">
-                <article class="tile is-child notification is-white">
-                  <figure class="image">
-                    <img src="~assets/images/index/canessa-perretes--index-01.jpg" alt="Description" width="" height=""/>
-                  </figure>
-                </article>
+      </section>
+
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h3
+              :class="[
+                'title',
+                'is-size-3',
+                'is-size-4-mobile',
+                'has-text-primary',
+                $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
+                'is-spaced',
+                'has-text-centered'
+              ]"
+            >
+              Nuestros clientes nos avalan por <br class="is-hidden-mobile" />cortes profesionales como estos:
+            </h3>
+            <BoxItem class="is-small-grid" :items="doggies" :page="$route.name" />
+          </div>
+        </div>
+      </section>
+
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h3
+              :class="[
+                'title',
+                'is-size-2',
+                'is-size-4-mobile',
+                'has-text-primary',
+                $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
+                'is-spaced',
+                'has-text-centered',
+                'mb-5'
+              ]"
+            >
+              Nuestro compromiso
+            </h3>
+          </div>
+          <!-- TODO: code refactor asap because can use "SectionChessBoard" comp. -->
+          <div :class="['container', 'mb-6', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
+            <div class="columns is-vcentered content is-medium">
+              <div class="column is-8">
+                <p class="is-size-6-mobile" v-html="block.description"></p>
+                <NuxtLink
+                  :to="{ name: block.to }"
+                  :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
+                  :title="`${block.link} en ${owner.copyright}`"
+                >
+                  {{ block.link }}
+                  <span class="icon">
+                    <i class="mdi mdi-arrow-right"></i>
+                  </span>
+                </NuxtLink>
               </div>
-              <div class="tile is-parent is-shady">
-                <article class="tile is-child notification is-white">
-                  <figure class="image">
-                    <img src="~assets/images/index/canessa-perretes--index-02.jpg" alt="Description" width="" height=""/>
-                  </figure>
-                </article>
-              </div>
-              <div class="tile is-parent is-shady">
-                <article class="tile is-child notification is-white">
-                  <figure class="image">
-                    <img src="~assets/images/index/canessa-perretes--index-03.jpg" alt="Description" width="" height=""/>
-                  </figure>
-                </article>
+              <div class="column">
+                <figure class="image">
+                  <img
+                    class="artwork"
+                    :src="require(`~/assets/images/index/${block.img}`)"
+                    :title="block.alt"
+                    :alt="block.alt"
+                    width="200"
+                    height="200"
+                  />
+                </figure>
               </div>
             </div>
-            <div class="tile is-ancestor">
-              <div class="tile is-vertical is-8">
-                <div class="tile">
-                  <div class="tile is-parent is-vertical">
-                    <article class="tile is-child notification is-white">
-                      <p class="title">Vertical tiles</p>
-                      <p class="subtitle">Top box</p>
-                    </article>
-                    <article class="tile is-child notification is-white">
-                      <p class="title">Vertical tiles</p>
-                      <p class="subtitle">Bottom box</p>
-                    </article>
+          </div>
+          <div class="container has-text-centered">
+            <!-- <div class="sandbox">
+              <div class="tile is-ancestor">
+                <div class="tile is-parent is-shady">
+                  <article class="tile is-child notification is-white">
+                    <figure class="image">
+                      <img src="~assets/images/index/canessa-perretes--index-01.jpg" alt="Description" width="" height=""/>
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent is-shady">
+                  <article class="tile is-child notification is-white">
+                    <figure class="image">
+                      <img src="~assets/images/index/canessa-perretes--index-02.jpg" alt="Description" width="" height=""/>
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent is-shady">
+                  <article class="tile is-child notification is-white">
+                    <figure class="image">
+                      <img src="~assets/images/index/canessa-perretes--index-03.jpg" alt="Description" width="" height=""/>
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                  <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                      <article class="tile is-child notification is-white">
+                        <p class="title">Vertical tiles</p>
+                        <p class="subtitle">Top box</p>
+                      </article>
+                      <article class="tile is-child notification is-white">
+                        <p class="title">Vertical tiles</p>
+                        <p class="subtitle">Bottom box</p>
+                      </article>
+                    </div>
+                    <div class="tile is-parent">
+                      <article class="tile is-child notification is-white">
+                        <p class="title">Middle box</p>
+                        <p class="subtitle">With an image</p>
+                        <figure class="image">
+                          <img src="~assets/images/index/canessa-perretes--index-01.jpg" alt="Description" width="" height=""/>
+                        </figure>
+                      </article>
+                    </div>
                   </div>
-                  <div class="tile is-parent">
+                  <div class="tile is-parent is-shady">
                     <article class="tile is-child notification is-white">
-                      <p class="title">Middle box</p>
-                      <p class="subtitle">With an image</p>
-                      <figure class="image">
-                        <img src="~assets/images/index/canessa-perretes--index-01.jpg" alt="Description" width="" height=""/>
-                      </figure>
+                      <p class="title">Wide column</p>
+                      <p class="subtitle">Aligned with the right column</p>
+                      <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                      </div>
                     </article>
                   </div>
                 </div>
                 <div class="tile is-parent is-shady">
+                    <article class="tile is-child notification is-white">
+                        <div class="content">
+                            <p class="title">Tall column</p>
+                            <p class="subtitle">With even more content</p>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
+                                eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
+                                <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet
+                                felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
+                                <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam
+                                ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+              </div>
+              <div class="tile is-ancestor">
+                <div class="tile is-parent is-shady">
                   <article class="tile is-child notification is-white">
-                    <p class="title">Wide column</p>
-                    <p class="subtitle">Aligned with the right column</p>
+                    <p class="title">Side column</p>
+                    <p class="subtitle">With some content</p>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent is-8 is-shady">
+                  <article class="tile is-child notification is-white">
+                    <p class="title">Main column</p>
+                    <p class="subtitle">With some content</p>
                     <div class="content">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
                     </div>
                   </article>
                 </div>
               </div>
-              <div class="tile is-parent is-shady">
-                  <article class="tile is-child notification is-white">
-                      <div class="content">
-                          <p class="title">Tall column</p>
-                          <p class="subtitle">With even more content</p>
-                          <div class="content">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
-                              eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                              <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit amet erat. Maecenas imperdiet
-                              felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                              <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper a nunc ac porta. Aliquam
-                              ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
-                          </div>
-                      </div>
-                  </article>
+              <div class="tile is-ancestor">
+                <div class="tile is-parent is-8 is-shady">
+                    <article class="tile is-child notification is-white">
+                        <p class="title">Murphy's law</p>
+                        <p class="subtitle">Anything that can go wrong will go wrong</p>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="tile is-parent is-shady">
+                    <article class="tile is-child notification is-white">
+                        <p class="title">Main column</p>
+                        <p class="subtitle">With some content</p>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                        </div>
+                    </article>
+                </div>
               </div>
-            </div>
-            <div class="tile is-ancestor">
-              <div class="tile is-parent is-shady">
-                <article class="tile is-child notification is-white">
-                  <p class="title">Side column</p>
-                  <p class="subtitle">With some content</p>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="tile is-parent is-8 is-shady">
-                <article class="tile is-child notification is-white">
-                  <p class="title">Main column</p>
-                  <p class="subtitle">With some content</p>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="tile is-ancestor">
-              <div class="tile is-parent is-8 is-shady">
-                  <article class="tile is-child notification is-white">
-                      <p class="title">Murphy's law</p>
-                      <p class="subtitle">Anything that can go wrong will go wrong</p>
-                      <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                      </div>
-                  </article>
-              </div>
-              <div class="tile is-parent is-shady">
-                  <article class="tile is-child notification is-white">
-                      <p class="title">Main column</p>
-                      <p class="subtitle">With some content</p>
-                      <div class="content">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                      </div>
-                  </article>
-              </div>
-            </div>
-          </div> -->
+            </div> -->
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <TheFooter />
+      <TheFooter />
+    </div>
   </main>
 </template>
 
@@ -270,6 +293,8 @@
 export default {
   data() {
     return {
+      headerScale: 1,
+      headerOpacity: 1,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
       doggies: [
@@ -313,7 +338,7 @@ export default {
         {
           description: 'Como nuestros fieles amigos caninos no merecen menos, las instalaciones de Peluquería canina Canessa están convenientemente adaptadas para garantizar la <b>mejor calidad de servicio</b> gracias a nuestros <b>productos y equipo de primeras marcas</b>: mesas y bañeras hidráulicas, tijeras de acero suizo, expulsadores de aire de última generación, ionizador de aire para desinfección ambiental...',
           link: 'Conocer nuestras instalaciones',
-          to: 'isntalaciones',
+          to: 'instalaciones',
           img: 'canessa-yorkie-tijeras.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
@@ -357,10 +382,31 @@ export default {
       ]
     }
   },
+  created() {
+    if (process.client) {
+      window.addEventListener('scroll', this.headerTitleAnim)
+    }
+  },
+  destroyed() {
+    if (process.client) {
+      window.removeEventListener('scroll', this.headerTitleAnim)
+    }
+  },
   mounted() {
     window.scrollTo(0, 0)
   },
   methods: {
+    headerTitleAnim() {
+      let target, calcOpacity, calcScale, opacity, scale
+      target = document.documentElement
+      calcOpacity = target.scrollTop * 20
+      calcScale = target.scrollTop * 10
+      opacity = (target.offsetHeight - calcOpacity) / target.offsetHeight
+      scale = (target.offsetHeight - calcScale) / target.offsetHeight
+      // console.log(opacity +  ' : ' + scale) // to output values in console
+      this.headerOpacity = opacity
+      this.headerScale = scale
+    },
     yearsOfExperience(since) {
       let currentYear = new Date().getFullYear()
       return currentYear - since
