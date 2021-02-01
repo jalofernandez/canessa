@@ -22,11 +22,7 @@
         </div>
       </div> -->
     </section>
-    <div class="box cta">
-      <p class="is-size-5 is-size-6-mobile has-text-centered">
-        Instalaciones y equipo profesional de primera para realizar nuestros servicios de peluquería y estética canina <br class="is-hidden-touch" /> con la <b>mayor eficacia</b>, <b>menor estrés</b> y <b>mejor comodidad</b> para tu amigo peludo.
-      </p>
-    </div>
+    <SectionBox class="box cta is-radiusless" :copy="ctaBox" />
     <SectionChessBoard :blocks="blocks" :page="$route.name"/>
     <TheFooter />
   </main>
@@ -89,7 +85,8 @@ export default {
         //   alt: 'Baño en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
         //   reflected: true
         // },
-      ]
+      ],
+      ctaBox: 'Instalaciones y equipo profesional de primera para realizar nuestros servicios de peluquería y estética canina <br class="is-hidden-touch" /> con la <b>mayor eficacia</b>, <b>menor estrés</b> y <b>mejor comodidad</b> para tu amigo peludo'
     }
   },
   head() {

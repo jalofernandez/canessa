@@ -23,11 +23,7 @@
       </div>
     </section>
 
-    <div class="box cta">
-      <h1 class="is-size-5 is-size-6-mobile has-text-centered">
-        Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. <br class="is-hidden-touch" />Así lo demuestran las <b>opiniones de nuestros clientes</b>:
-      </h1>
-    </div>
+    <SectionBox class="box cta is-radiusless" :copy="ctaBox" />
 
     <section class="container">
       <div class="columns features">
@@ -330,7 +326,8 @@ export default {
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
-      ]
+      ],
+      ctaBox: 'Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. <br class="is-hidden-touch" />Así lo demuestran las <b>opiniones de nuestros clientes</b>:'
     }
   },
   head() {
