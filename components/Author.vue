@@ -34,6 +34,7 @@
 
 <script>
   export default {
+    name: 'Author',
     props: {
       author: {
         type: Object,

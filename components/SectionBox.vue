@@ -4,6 +4,7 @@
 
 <script>
 export default {
+  name: 'sectionBox',
   props: {
     copy: {
       type: String,

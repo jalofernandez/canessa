@@ -68,6 +68,7 @@
 
 <script>
   export default {
+    name: 'PrevNext',
     props: {
       prev: {
         type: Object,
