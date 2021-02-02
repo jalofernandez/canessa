@@ -1,4 +1,6 @@
 const author = '@jalofernandez para Vanessa Vizcaya, Canessa'
+const description = 'Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu perro y amigo. Cita previa: 91 248 04 30'
+const url = 'peluqueriacanessa.com'
 
 export default {
   // to deploy static websites in GitHub Pages
@@ -19,7 +21,7 @@ export default {
       class: ['canessa'],
     },
     title: process.env.npm_package_name || '',
-    titleTemplate: "%s Peluquería canina Canessa, Valdemoro 🐾 ✅",
+    titleTemplate: '%s Peluquería canina Canessa, Valdemoro 🐾 ✅',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -43,7 +45,7 @@ export default {
       { hid: 'msapplication-TileColor', name: 'msapplication-TileColor', content: '#232323' }
     ],
     link: [
-      { rel: 'author', type: 'text/plain', href: 'https://peluqueriacanessa.com/humans.txt' },
+      { rel: 'author', type: 'text/plain', href: 'https://' + url + '/humans.txt' },
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'dns-prefetch', href: '//www.youtube.com/channel/UCqzf03PPcv5F3u0RAEtwqmw' },
       { rel: 'dns-prefetch', href: '//www.facebook.com/Peluqueria-Canina-Canessa-113194982084561' },
@@ -82,16 +84,15 @@ export default {
     'nuxtjs-mdi-font',
     // https://www.npmjs.com/package/nuxt-social-meta
     [
-      "nuxt-social-meta",
+      'nuxt-social-meta',
       {
-        title: "Peluquería canina Canessa Valdemoro",
-        description:
-          "Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30",
-        url: "https://www.peluqueriacanessa.com",
-        img: "/peluqueria-canina-canessa-valdemoro-servicios.jpg",
-        locale: "es-ES",
-        twitter: "@jalofernandez",
-        themeColor: "#ff4081"
+        title: 'Peluquería canina Canessa Valdemoro',
+        description: description,
+        url: 'https://www.' + url,
+        img: '/peluqueria-canina-canessa-valdemoro-servicios.jpg',
+        locale: 'es-ES',
+        twitter: '@jalofernandez',
+        themeColor: '#ff4081'
       }
     ],
     // https://nuxtjs.org/blog/creating-blog-with-nuxt-content
@@ -152,13 +153,13 @@ export default {
   },
 
   robots: {
-    UserAgent: "*",
-    Allow: "/",
-    Sitemap: `https://peluqueriacanessa/sitemap.xml`,
+    UserAgent: '*',
+    Allow: '/',
+    Sitemap: `https://` + url + `/sitemap.xml`,
   },
 
   sitemap: {
-    hostname: `https://peluqueriacanessa.com`,
+    hostname: `https://` + url,
     gzip: true,
     // exclude: ['/perretes', '/blog', '/blog/', '/blog/**'],
     defaults: {
