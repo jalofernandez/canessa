@@ -7,12 +7,13 @@
         :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
         playsinline autoplay muted loop
       >
-        <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4" v-if="$mq !== 'mobile'">
+        <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4">
       </video>
       <div class="viewport-header">
         <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`">
+          Paséate por
           <span>Nuestras instalaciones:</span>
-          <ScrollDownItem v-scroll-to="{ el: '#section-cta' }" />
+          <ScrollDownItem v-scroll-to="{ el: '#section-cta', offset: getOffset() }" />
         </h1>
       </div>
     </header>
@@ -136,6 +137,13 @@ export default {
       // console.log(opacity +  ' : ' + scale) // to output values in console
       this.headerOpacity = opacity
       this.headerScale = scale
+    },
+    getOffset() {
+      let mq = this.$mq
+      if (mq === 'mobile' || mq === 'smartphone' || mq === 'tablet') {
+        return 0 // layout without top navbar (small screens)
+      }
+      return -53 // layout with top navbar (big screens)
     }
   }
 }
