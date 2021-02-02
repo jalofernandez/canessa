@@ -68,6 +68,8 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    // https://pwa.nuxtjs.org
+    '@nuxtjs/pwa'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -124,6 +126,25 @@ export default {
       desktopWide: 2000,
       desktopUltraWide: Infinity
     }
+  },
+
+  pwa: {
+    manifest: {
+      name: 'peluquería canina canessa',
+      short_name: 'canessa',
+      description: description,
+      // start_url: 'index.html?launcher=true', // value by default ("/?standalone=true")
+      lang: 'es', 
+      // display: 'standalone', // value by default
+      background_color: '#111111',
+      theme_color: '#ff4081',
+      lang: 'es-ES',
+      // dir: 'ltr', // value by default
+      // useWebmanifestExtension: false, // value by default. With true the file extension will be ".webmanifest" instead ".json"
+    },
+    workbox: {
+      // enabled: true, // check it asap!
+    },
   },
 
   purgeCSS: {
