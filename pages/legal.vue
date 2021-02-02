@@ -5,24 +5,14 @@
       <!-- 00 :: scroll navigation sticky bar -->
       <div class="tabs is-centered">
         <ul>
-          <li :class="{ 'is-active': isClicked }" @click="toggleClick()">
-            <a v-scroll-to="{ el: '#section-responsability', offset: -120 }">
-              <b>Responsable</b>
-            </a>
-          </li>
-          <li :class="{ 'is-active': isClicked }" @click="toggleClick()">
-            <a v-scroll-to="{ el: '#section-privacy', offset: -120 }">
-              <b>Política de Privacidad</b>
-            </a>
-          </li>
-          <li :class="{ 'is-active': isClicked }" @click="toggleClick()">
-            <a v-scroll-to="{ el: '#section-terms', offset: -120 }">
-              <b>Condiciones de uso</b>
-            </a>
-          </li>
-          <li :class="{ 'is-active': isClicked }" @click="toggleClick()">
-            <a v-scroll-to="{ el: '#section-cookies', offset: -120 }">
-              <b>Política de Cookies</b>
+          <li
+            :class="{ 'is-active': showLink(index) }"
+            v-for="(section, index) in sections"
+            :key="index"
+            @click="toggleClick(index)"
+          >
+            <a href="" v-scroll-to="{ el: '#section-'+section.link, offset: -120 }">
+              <b>{{ section.name }}</b>
             </a>
           </li>
         </ul>
@@ -31,7 +21,7 @@
         <!-- 01 :: PRESTADOR Y RESPONSABILIDAD -->
         <article id="section-responsability" class="container responsability mb-6">
           <div class="content">
-            <TitleItem :title="sections.responsability" />
+            <TitleItem :title="sections[0].name" />
             <p class="block">
               <span class="has-text-primary">{{ owner.copyright }}</span> es una marca comercial propiedad de <em>{{ owner.name }} García</em> 
               que a su vez es responsable del sitio web, pone a disposición de los usuarios el presente documento con el que pretende:
@@ -47,10 +37,10 @@
                 rel="noopener noreferrer"
                 title="Reglamento 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas con esta plantilla de política de privacidad"
               >
-                <div>
+                <span>
                   <b>RGPD</b>
                   <p><small>www.boe.es</small></p>
-                </div>
+                </span>
               </a>
               <a
                 class="level-item has-text-centered has-text-link"
@@ -59,10 +49,10 @@
                 rel="noopener noreferrer"
                 title="Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales"
               >
-                <div>
+                <span>
                   <b>LOPDGDD</b>
                   <p><small>www.boe.es</small></p>
-                </div>
+                </span>
               </a>
               <a
                 class="level-item has-text-centered has-text-link"
@@ -71,10 +61,10 @@
                 rel="noopener noreferrer"
                 title="Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico en el blog"
               >
-                <div>
+                <span>
                   <b>LSSI</b>
                   <p><small>www.boe.es</small></p>
-                </div>
+                </span>
               </a>
             </nav>
             <p class="block">
@@ -119,7 +109,7 @@
         <!-- 02 :: POLÍTICA DE PRIVACIDAD -->
         <article id="section-privacy" class="container privacy mb-6">
           <div class="content">
-            <TitleItem :title="sections.privacy" />
+            <TitleItem :title="sections[1].name" />
             <p class="block">
               Cualquier dato que tú como "usuario" nos facilites a través de las vías de contacto actualmente existentes:
               WhatsApp, teléfono, correo electrónico o redes sociales, serán
@@ -360,7 +350,7 @@
         <!-- 03 :: CONDICIONES DE USO -->
         <article id="section-terms" class="container terms mb-6">
           <div class="content">
-            <TitleItem :title="sections.terms" />
+            <TitleItem :title="sections[2].name" />
             <p class="block">
               La utilización de este sitio web, <span class="has-text-primary">{{ owner.copyright }}</span>, te otorga la condición de
               "usuario" implicando la <b>aceptación completa de todas las cláusulas y condiciones de uso</b> incluidas en la esta página
@@ -586,7 +576,7 @@
         <!-- 04 :: POLÍTICA DE COOKIES -->
         <article id="section-cookies" class="container cookies mb-6">
           <div class="content">
-            <TitleItem :title="sections.cookies" />
+            <TitleItem :title="sections[3].name" />
             <h3 class="subtitle is-size-5 is-size-6-mobile mt-3">
               Es necesario informar sobre las cookies porque...
             </h3>
@@ -1089,7 +1079,7 @@
 export default {
   data() {
     return {
-      isClicked: false,
+      currentLink: 0,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
       hero: {
@@ -1102,12 +1092,12 @@ export default {
           height: 200
         }
       },
-      sections: {
-        responsability: 'Prestador y responsable',
-        privacy: 'Política de Privacidad',
-        terms: 'Condiciones de uso',
-        cookies: 'Política de Cookies'
-      }
+      sections: [
+        { name: 'Responsable', link: 'responsability' },
+        { name: 'Política de Privacidad', link: 'privacy' },
+        { name: 'Condiciones de uso', link: 'terms' },
+        { name: 'Política de Cookies', link: 'cookies' }
+      ]
     }
   },
   head() {
@@ -1139,8 +1129,15 @@ export default {
     window.scrollTo(0, 0)
   },
   methods: {
-    toggleClick() {4
-      this.isClicked = !this.isClicked
+    showLink(id) {
+      return this.currentLink === id
+    },
+    toggleClick(id) {
+      if(this.currentLink !== 0) {
+        this.currentLink = 0
+        return false
+      }
+      this.currentLink = id
     }
   }
 }
