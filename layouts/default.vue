@@ -1,5 +1,5 @@
 <template>
-  <div :class="scrolling ? 'is-scrolling' : null">
+  <div :class="[ 'main-wrapper', { 'is-scrolling' : scrolling }]">
     <!-- top Navbar (desktop only) -->
     <nav
       class="navbar is-fixed-top top-bar"
@@ -218,6 +218,7 @@
         </footer>
       </div>
     </div>
+    <TheCookiesBanner :scrolling="scrolling" />
     <!-- bottom main Navbar (destop != mobile) -->
     <nav class="navbar is-fixed-bottom bottom-bar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" v-if="$mq == 'mobile' || $mq == 'smartphone' || $mq == 'tablet'">
@@ -398,6 +399,7 @@ export default {
     if (process.client) {
       window.addEventListener('scroll', this.handleScroll)
     }
+    // to load navigation links in top navbar & his dropdown
     let navs = this.pages.links 
     this.navLinks = navs.slice(0,this.linksListBreak)
     this.dropdownLinks = navs.slice(this.linksListBreak,11)
@@ -413,8 +415,8 @@ export default {
     },
     handleScroll() {
       const top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-      this.scrolling = top > 150
-    },
+      this.scrolling = top > 100
+    }
   }
 }
 </script>

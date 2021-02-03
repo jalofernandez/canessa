@@ -467,7 +467,7 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
   animation: mouse-scroll 1s infinite
 .arrow-2, .arrow-3
   animation: mouse-scroll 1s infinite
-  
+
 .arrow-1
   animation-direction: alternate
   animation-delay: alternate
@@ -520,3 +520,30 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
     opacity: .5
   100%
     opacity: 1
+
+// COOKIES banner
+.main-wrapper
+  &:not(.is-scrolling) .is-cookies-banner
+    max-width: 285px
+  &.is-scrolling .is-cookies-banner
+    max-width: 235px
+
+.is-cookies-banner
+  z-index: 99 // highest one less Aside mobile´s menu
+  position: fixed
+  bottom: 60px
+  right: 8px
+  background-color: rgba(white, .65)
+  backdrop-filter: $backdrop
+  border-radius: 4px
+  // transition: all .3s ease-in-out
+  margin: 0!important // to overwrite "box" element one
+  padding: .5rem
+  line-height: 1.33
+  b
+    letter-spacing: 0.01rem
+  .tag
+    cursor: pointer
+    @media (hover: hover)
+      &:hover, &:focus
+        background-color: darken($color-main, 8%)
