@@ -101,6 +101,8 @@ export default {
     'nuxt-mq',
     // https://www.npmjs.com/package/vue-scrollto
     'vue-scrollto/nuxt',
+    // https://www.npmjs.com/package/@nuxtjs/gtm
+    '@nuxtjs/gtm',
     // https://www.npmjs.com/package/nuxt-purgecss
     "nuxt-purgecss",
     // https://www.npmjs.com/package/@nuxtjs/robots
@@ -146,6 +148,13 @@ export default {
     workbox: {
       // enabled: true, // check it asap!
     },
+  },
+
+  gtm: {
+    id: 'GTM-54RWXDW',
+    enabled: true,
+    scriptDefer: true,
+    pageTracking: true,
   },
 
   purgeCSS: {
