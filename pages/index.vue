@@ -45,10 +45,55 @@
 
     <div class="is-below-video">
 
-      <SectionBox id="section-cta" class="box cta is-radiusless" :copy="ctaBox" />
+      <div id="section-cta" class="box cta is-radiusless">
+        <p class="is-size-5 is-size-6-mobile has-text-centered">
+          Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. 
+          <br class="is-hidden-touch" />Así lo demuestran las <b class="has-text-primary">{{ reviews.totalReviewCount }}</b> <b>opiniones de nuestros clientes</b>:
+        </p>
+      </div>
 
-      <section class="container">
-        <div class="columns features">
+      <section class="container box-list">
+        <article class="media box" v-for="review in reviews.reviews" :key="review.name">
+          <figure class="media-left">
+            <p class="image is-32x32">
+              <img
+                class="is-rounded"
+                :src="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)"
+                :title="`Foto de usuario de Google de: ${review.name}`"
+                :alt="`Foto de usuario de Google de: ${review.name}`"
+                width="32"
+                height="32"
+              />
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <b>{{ review.name }}</b>
+                <br>
+                <span class="icon has-text-warning" v-for="item in review.starRating">
+                  <i class="mdi mdi-18px mdi-star"></i>
+                </span>
+                <br>
+                <small>{{ review.comment }}</small>
+              </p>
+            </div>
+            <!-- <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                </a>
+              </div>
+            </nav> -->
+          </div>
+        </article>
+        <!-- <div class="columns features">
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
@@ -56,7 +101,7 @@
               </div>
               <div class="card-content">
                 <div class="content">
-                  <h4>Opinión 1</h4>
+                  <h4>{{ reviews.reviews[0].name }}</h4>
                   <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
                   <p><a href="#">Learn more</a></p>
                 </div>
@@ -92,7 +137,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <section class="hero">
@@ -290,6 +335,8 @@
 </template>
 
 <script>
+import reviews from '~/data/reviews'
+
 export default {
   data() {
     return {
@@ -297,6 +344,7 @@ export default {
       headerOpacity: 1,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
+      reviews: reviews,
       doggies: [
         { img: 'canessa-perretes--index-01.jpg', title: 'Bichón maltés con corte asiático' },
         { img: 'canessa-perretes--index-02.jpg', title: 'Bichón maltés con corte asiático' },
@@ -351,8 +399,7 @@ export default {
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
-      ],
-      ctaBox: 'Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. <br class="is-hidden-touch" />Así lo demuestran las <b>opiniones de nuestros clientes</b>:'
+      ]
     }
   },
   head() {

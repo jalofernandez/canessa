@@ -113,13 +113,17 @@
             <p class="block">
               Cualquier dato que tú como "usuario" nos facilites a través de las vías de contacto actualmente existentes:
               WhatsApp, teléfono, correo electrónico o redes sociales, serán
-              <!-- incorporados a un fichero automatizado convenientemente registrado ante la
-              <em>Agencia Española de Protección de Datos (AGPD)</em> y sobre el que podrá ejercer sus derechos
-              reconocidos legalmente como son el acceso a estos datos, su rectificación, su cancelación y la oposición a los
-              mismos escribiendo un correo electrónico a:-->
               tratados anónimamente. Podrás ejercer tus derechos legales de: acceso a estos datos, su rectificación, su cancelación y 
               la oposición a los mismos tal y como te explicaremos un poco más adelante.
             </p>
+            <!-- <p class="block">
+              Cualquier dato que tú como "usuario" nos facilites a través de las vías de contacto actualmente existentes:
+              WhatsApp, teléfono, correo electrónico o redes sociales, serán incorporados a un fichero automatizado convenientemente registrado ante la
+              <em>Agencia Española de Protección de Datos (AGPD)</em> y sobre el que podrá ejercer sus derechos
+              reconocidos legalmente como son el acceso a estos datos, su rectificación, su cancelación y la oposición a los
+              mismos escribiendo un correo electrónico a: tratados anónimamente. Podrás ejercer tus derechos legales de: acceso a estos datos, su rectificación, su cancelación y 
+              la oposición a los mismos tal y como te explicaremos un poco más adelante.
+            </p> -->
             <p class="block">
               Estos datos son necesarios para:
             </p>
@@ -1079,6 +1083,7 @@
 export default {
   data() {
     return {
+      bannerShow: null,
       currentLink: 0,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
@@ -1127,6 +1132,7 @@ export default {
   },
   mounted() {
     window.scrollTo(0, 0)
+    console.log("bannerShow: " + this.bannerShow)
   },
   methods: {
     showLink(id) {

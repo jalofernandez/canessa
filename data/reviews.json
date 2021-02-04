@@ -1,0 +1,58 @@
+{
+  "reviews": [
+    {
+      "name": "Roberto Pantaleón",
+      "reviewId": "3434645647",
+      "reviewer": {
+        "profilePhotoUrl": "roberto-pantaleon",
+        "displayName": "Rober",
+        "isAnonymous": false
+      },
+      "starRating": 5,
+      "comment": "Estamos encantados del trato que ha recibido Bitter en su día de baño y corte de pelo, pese a que a Bitter no le gusta nada la pelu, Vanesa ha tenido una paciencia y cariño que nosotros agradecemos mucho.",
+      "createTime": "2021-01-04T15:01:23Z",
+      "updateTime": "2021-01-04T15:01:23Z",
+      "reviewReply": {
+        "comment": null,
+        "updateTime": null
+      }
+    },
+    {
+      "name": "Lorena Rodríguez Espejo",
+      "reviewId": "3434645647",
+      "reviewer": {
+        "profilePhotoUrl": "lorena-rodriguez",
+        "displayName": "Lore",
+        "isAnonymous": false
+      },
+      "starRating": 5,
+      "comment": "Hoy he llevado por primera vez a mi Bretty y he quedado encantada con el trato y con el resultado. Mi princesa ha quedado rrrreguapa. Son súper cariñosos y por mi parte desde luego totalmente recomendable. Volveremos seguro.",
+      "createTime": "2021-01-04T15:01:23Z",
+      "updateTime": "2021-01-04T15:01:23Z",
+      "reviewReply": {
+        "comment": null,
+        "updateTime": null
+      }
+    },
+    {
+      "name": "Fasu Manzano",
+      "reviewId": "3434645647",
+      "reviewer": {
+        "profilePhotoUrl": "fasu-manzano",
+        "displayName": "fasu",
+        "isAnonymous": false
+      },
+      "starRating": 5,
+      "comment": "No han podido dejar más bonita a mi niña LUNA😍 Os la recomiendo totalmente.. Son geniales, educados y muy profesionales.. Si estas en Valdemoro, no dudes en visitarlos!! Buen trabajo chuchos!!! ❤️👏👏👏",
+      "createTime": "2021-01-04T15:01:23Z",
+      "updateTime": "2021-01-04T15:01:23Z",
+      "reviewReply": {
+        "comment": null,
+        "updateTime": null
+      }
+    }
+  ],
+  "averageRating": 5,
+  "totalReviewCount": 690,
+  "nextPageToken": null
+}
