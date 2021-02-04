@@ -266,8 +266,12 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
       padding: .5rem .75rem
     .box:not(.cta)
       padding: 0
-      @media screen and (max-width: 580px)
-        width: calc(50% - 1rem)
+    @media screen and (max-width: 580px)
+      margin-right: -1rem
+      margin-left: -1rem
+      .box:not(.cta)
+        margin: .25rem
+        width: calc(50% - .5rem)
 
 // TABS layout & behaviour
 .tabs-wrapper
@@ -311,8 +315,9 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 
 // PAGES custom styles
 .index
-  .tile.is-child
-    padding: 0
+  .box-list .image img
+    border-top-left-radius: 6px
+    border-top-right-radius: 6px
 
 .mascotactiva
   h2.has-text-primary,
