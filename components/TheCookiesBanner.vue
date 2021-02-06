@@ -20,7 +20,7 @@
               <span v-else>🍪 &nbsp;Ver <b>cookies</b> </span>
               <NuxtLink
                 class="has-underline"
-                :to="{ name: 'legal' }"
+                :to="{ path: '/legal', hash:'#section-cookies'}"
                 :title="`Ver y gestionar cookies de ${owner.business}`"
               >
               <b>aquí.</b>

@@ -1083,7 +1083,6 @@
 export default {
   data() {
     return {
-      bannerShow: null,
       currentLink: 0,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
@@ -1130,10 +1129,11 @@ export default {
       ]
     }
   },
-  mounted() {
-    window.scrollTo(0, 0)
-    console.log("bannerShow: " + this.bannerShow)
-  },
+  // mounted() {
+  //   // to allow scrollToTop behaviour when page loads cause Nuxt bug...
+  //   // ...not necessary if U overwrites "router" in "nuxt.config" file
+  //   window.scrollTo(0, 0)
+  // },
   methods: {
     showLink(id) {
       return this.currentLink === id

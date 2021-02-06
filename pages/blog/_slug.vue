@@ -134,9 +134,11 @@
       let desc = this.article.description 
       this.metaDesc = desc.slice(0,65) + '...'
     },
-    mounted() {
-      window.scrollTo(0, 0)
-    },
+    // mounted() {
+    //   // to allow scrollToTop behaviour when page loads cause Nuxt bug...
+    //   // ...not necessary if U overwrites "router" in "nuxt.config" file
+    //   window.scrollTo(0, 0)
+    // },
     methods: {
       formatDate(date) {
         const options = { year: 'numeric', month: 'long', day: 'numeric' }

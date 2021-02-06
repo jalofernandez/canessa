@@ -53,6 +53,36 @@ export default {
       { rel: 'dns-prefetch', href: '//goo.gl/maps/Aegzf2qZF4x' },
     ]
   },
+  // to overwrite "router" by default to allow better scroll behaviour & fix some bugs.
+  // https://zachcardoza.com/post/nuxtjs-smooth-scrolling-with-hash-links/
+  router: {
+    scrollBehavior: async (to, from, savedPosition) => {
+      if (savedPosition) {
+        return savedPosition
+      }
+
+      const findEl = async (hash, x) => {
+        return document.querySelector(hash) ||
+          new Promise((resolve, reject) => {
+            if (x > 50) {
+              return resolve()
+            }
+            setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
+          })
+      }
+
+      if (to.hash) {
+        let el = await findEl(to.hash)
+        if ('scrollBehavior' in document.documentElement.style) {
+          return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+        } else {
+          return window.scrollTo(0, el.offsetTop)
+        }
+      }
+      // to go on top of the page if there is no hash anchor
+      return { x: 0, y: 0 }
+    }
+  },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   css: [
