@@ -5,14 +5,17 @@ A website template with different pages layout based on Canessa pet saloon websi
 - Inicio (*Home*)
 - Servicios (*Services*)
 - Peluquería (*Grooming*)
-- Antiparasitarios (*Antiparasitic*)
+- Antiparasitarios (*Antiparasitics*)
 - Piensos (*Feed*)
 - Mascotactiva (*Mascotactiva*)
 - Instalaciones (*Facilities*)
+- Contacto (*Contact*)
 - Sobre Vanessa (*About Vanessa*)
 - Legal (*Legal*)
+- Ofertas (*Discounts*)
+- Blog con algunos artículos (*Blog* with some Post)
 - Sitemap (*Sitemap*)
-- Error (*404*)
+- Error (*404*, *500* & *200*)
 
 ## Credits and Dependencies
 
@@ -22,7 +25,9 @@ A website template with different pages layout based on Canessa pet saloon websi
   - [Node.js](https://nodejs.org) by OpenJS Foundation.
   - [Webpack](https://webpack.js.org) by Tobias Koppers, Sean Larkin, Johannes Ewald, Juho Vepsäläinen, Kees Kluskens, and Webpack contributors.
   - [Babel.js](https://babeljs.io) by a lot of contributors.
-- [Bulma](https://bulma.io), open source CSS framework by Jeremy Thomas.
+- [Bulma](https://bulma.io), open source UI framework by Jeremy Thomas.
+- [SASS](https://sass-lang.com), CSS extension language by numerous contributors.
+- [Firebase](https://firebase.google.com/), to build and run apps by Google.
 
 ## License
 
