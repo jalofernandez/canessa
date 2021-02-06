@@ -77,7 +77,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://bulma.io
-    '@nuxtjs/bulma',
+    // '@nuxtjs/bulma', // commented in order to avoid loads Bulma twice
     // https://www.npmjs.com/package/nuxt-webfontloader
     'nuxt-webfontloader',
     // https://www.npmjs.com/package/nuxtjs-mdi-font
