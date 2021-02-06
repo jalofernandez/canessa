@@ -63,6 +63,14 @@ export default {
         { hid: 'description', name: 'description', content: description },
         { hid: 'Classification', name: 'Classification', content: 'Business' },
         { hid: 'subject', name: 'subject', content: description },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: title + ' ' + this.owner.copyright },
+        { hid: 'og:description', property: 'og:description', content: description },
+        { hid: 'og:url', property: 'og:url', content: canonical },
+        // Twitter Card
+        { hid: 'twitter:title', name: 'twitter:title', content: title + ' ' + this.owner.copyright },
+        { hid: 'twitter:description', name: 'twitter:description', content: description },
+        { hid: 'twitter:url', name: 'twitter:url', content: canonical }
       ],
       // Structured Data (Schema)
       __dangerouslyDisableSanitizers: ['script'],

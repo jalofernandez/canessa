@@ -42,7 +42,24 @@ export default {
       { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: author },
       //- (metas) IE (windows phone) browsers
       // { hid: 'msapplication-TileImage', name: 'msapplication-TileImage', content: '/src/images/icons/app-icon-144x144.png' },
-      { hid: 'msapplication-TileColor', name: 'msapplication-TileColor', content: '#232323' }
+      { hid: 'msapplication-TileColor', name: 'msapplication-TileColor', content: '#232323' },
+      //- (metas) Open Graph + TW Cards loads globally per page. Rest ones placed in each page
+      // Docs on: https://ogp.me
+      // Test on: https://developers.facebook.com/tools/debug/
+      { hid: 'og:locale', property: 'og:locale', content: 'es-ES' },
+      { hid: 'og:site_name', property: 'og:site_name', content: url },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image', property: 'og:image', content: 'https://' + url + '/peluqueria-canina-canessa-valdemoro-servicios.jpg' },
+      { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: 'https://' + url + '/peluqueria-canina-canessa-valdemoro-servicios.jpg' },
+      { hid: 'og:image:type', property: 'og:image:type', content: 'image/jpeg' },
+      { hid: 'og:image:width', property: 'og:image:width', content: '960' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '540' },
+      { hid: 'og:image:alt', property: 'og:image:alt', content: description },
+      // Docs on: https://nuxtjs.org/examples/seo-twitter-og
+      // Test on: https://cards-dev.twitter.com/validator 
+      { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:site', name: 'twitter:site', content: url },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://' + url + '/peluqueria-canina-canessa-valdemoro-servicios.jpg' }
     ],
     link: [
       { rel: 'author', type: 'text/plain', href: 'https://' + url + '/humans.txt' },
@@ -112,19 +129,6 @@ export default {
     'nuxt-webfontloader',
     // https://www.npmjs.com/package/nuxtjs-mdi-font
     'nuxtjs-mdi-font',
-    // https://www.npmjs.com/package/nuxt-social-meta
-    [
-      'nuxt-social-meta',
-      {
-        title: 'Peluquería canina Canessa Valdemoro',
-        description: description,
-        url: 'https://www.' + url,
-        img: '/peluqueria-canina-canessa-valdemoro-servicios.jpg',
-        locale: 'es-ES',
-        twitter: '@jalofernandez',
-        themeColor: '#ff4081'
-      }
-    ],
     // https://nuxtjs.org/blog/creating-blog-with-nuxt-content
     '@nuxt/content',
     // https://www.npmjs.com/package/nuxt-mq

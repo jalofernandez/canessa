@@ -112,11 +112,13 @@
           { hid: 'Classification', name: 'Classification', content: 'Business' },
           { hid: 'subject', name: 'subject', content: description },
           // Open Graph
-          { hid: 'og:title', property: 'og:title', content: title },
+          { hid: 'og:title', property: 'og:title', content: title + ' Canessa' },
           { hid: 'og:description', property: 'og:description', content: description },
+          { hid: 'og:url', property: 'og:url', content: canonical },
           // Twitter Card
-          { hid: 'twitter:title', name: 'twitter:title', content: title },
-          { hid: 'twitter:description', name: 'twitter:description', content: description }
+          { hid: 'twitter:title', name: 'twitter:title', content: title + ' Canessa' },
+          { hid: 'twitter:description', name: 'twitter:description', content: description },
+          { hid: 'twitter:url', name: 'twitter:url', content: canonical }
         ],
         // Structured Data (Schema)
         __dangerouslyDisableSanitizers: ['script'],

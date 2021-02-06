@@ -413,6 +413,14 @@ export default {
         { hid: 'subject', name: 'subject', content: description },
         // Facebook verification domain to allow Business Manager & Marketing platforms
         { hid: 'facebook-domain-verification', name: 'facebook-domain-verification', content: 'ewx7qptinl041xcf1o9e1b7x6pj26t' },
+        // Open Graph (carefully here: in Index page cannot use "title" constant cause is empty)
+        { hid: 'og:title', property: 'og:title', content: this.owner.copyright },
+        { hid: 'og:description', property: 'og:description', content: description },
+        { hid: 'og:url', property: 'og:url', content: canonical },
+        // Twitter Card (carefully here: in Index page cannot use "title" constant cause is empty)
+        { hid: 'twitter:title', name: 'twitter:title', content: this.owner.copyright },
+        { hid: 'twitter:description', name: 'twitter:description', content: description },
+        { hid: 'twitter:url', name: 'twitter:url', content: canonical }
       ],
       // Structured Data (Schema)
       __dangerouslyDisableSanitizers: ['script'],

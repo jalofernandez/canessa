@@ -19,7 +19,6 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "nuxt-mq": "^2.0.2",
-    "nuxt-social-meta": "0.0.5",
     "nuxt-webfontloader": "^1.1.0",
     "nuxtjs-mdi-font": "^1.0.2",
     "vue-scrollto": "^2.20.0"
