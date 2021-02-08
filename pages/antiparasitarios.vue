@@ -33,12 +33,21 @@ export default {
         },
         {
           title: 'Collares antiparásitos de Fletcare',
-          description: 'Collar Natural sin insecticida</b> protector contra parásitos externos (mosquitos, pulgas, garrapatas, etc..). Puede <b>utilizarse en cachorros</b> a partir de 3 meses de edad. Producto nacional del laboratorio veterinario Farbiol de Salamanca.' + closeQuote,
+          description: 'Collar <b>natural sin insecticida</b> protector contra parásitos externos (mosquitos, pulgas, garrapatas, etc..). Puede <b>utilizarse en cachorros</b> a partir de 3 meses de edad. Producto nacional del laboratorio veterinario Farbiol de Salamanca.' + closeQuote,
           link: '¿Dónde comprar nuestros collares Fletcare?',
           to: 'contacto',
           img: this.$route.name + '/fletcare-collar-antiparasitario-peluqueria-canina-canessa.jpg',
           alt: 'Fletcare collares naturales antiparasitarios en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: false
+        },
+        {
+          title: 'Collares antiparásitos de Francodex',
+          description: 'Collar <b>repelente natural</b> para deshacerte de parásitos de fácil colocación y ajuste. Contiene extracto de margosa que es un efectivo repelente natural que evita la proliferación de ácaros, pulgas y garrapatas. También <b>previene contra la picadura de mosquitos</b>.' + closeQuote,
+          link: '¿Dónde comprar nuestros collares Francodex?',
+          to: 'contacto',
+          img: this.$route.name + '/francodex-collar-antiparasitario-peluqueria-canina-canessa.jpg',
+          alt: 'Francodex collares con repelente natural en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
+          reflected: true
         },
         {
           title: 'Pipetas antiparásitos de Fletcare',
@@ -47,7 +56,7 @@ export default {
           to: 'contacto',
           img: this.$route.name + '/fletcare-pipetas-antiparasitarias-peluqueria-canina-canessa.jpg',
           alt: 'Fletcare pipetas antiparasitarias en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
-          reflected: true
+          reflected: false
         }
       ]
     }
