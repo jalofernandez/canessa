@@ -23,7 +23,7 @@ export default {
         {
           title: 'Corte a tijera',
           description: 'Estamos especializados en la técnica de corte a tijera, y queremos demostrarte que siempre <b>se puede sacar más partido al arreglo de tu perro de un modo más artesanal y personalizado</b> como ofrece el uso de la tijera. Somos conocedores de la morfologia y anatomia del perro y siempre arreglamos cada perro de modo personal buscando sacar el máximo para que tu, su dueño, <b>quedes contento con nuestro servicio</b>.' + closeQuote,
-          img: this.$route.name + '/corte-a-tijera-01-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/corte-a-tijera-yorkshire-peluqueria-canina-canessa.jpg',
           alt: 'Corte a tijera de mestizo en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: false
         },
@@ -35,16 +35,16 @@ export default {
           reflected: true
         },
         {
-          title: 'Baño completo de precorte',
+          title: 'Baño completo',
           description: 'El baño regular forma parte de <b>la higiene de nuestras mascotas</b> y su frecuencia depende de la raza pues algunas requieren un mayor mantenimiento que otras. El baño además de mantenerlos limpios y aseados <b>previene la formación de grandes nudos</b>, pues pueden dar lugar a la <b>aparición de hongos y enfermedades dérmicas</b>, además de ser molestos para nuestra mascota.' + closeQuote,
-          img: this.$route.name + '/bano-precorte-03-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/banera-hidraulica-vivoc-peluqueria-canina-canessa.jpg',
           alt: 'Baño tras precorte en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },
         {
           title: 'Stripping',
           description: 'Los perros de pelo duro tienen varias capas de pelo y subpelo: una capa joven en maduración y una capa de cobertura o madurada. En su estado salvaje lo irían perdiendo con las ramas o zarzas, pero al no ser así se lo tenemos que renovar nosotros mismos. La técnica más común conocida como <b>trimming o stripping es arrancar la capa vieja o larga para dejar crecer la corta</b>, ya que salen todas de un mismo poro. Esta técnica de arrancado mantiene los colores en su tono natural y la textura de pelo duro.' + closeQuote,
-          img: this.$route.name + '/stripping-01-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/stripping-retirada-de-muda-peluqueria-canina-canessa.jpg',
           alt: 'Stripping a mestizo en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: true
         }

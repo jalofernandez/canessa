@@ -23,11 +23,11 @@ export default {
           reflected: false
         },
         {
-          title: 'Baños al mejor precio',
+          title: 'Baños sin complicaciones',
           description: 'Nosotros bañamos a tu mascota <b>evitándote las molestias</b> derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores... Nosotros, gracias a nuestra <b>bañera hidráulica</b>, toallas gigantes y explusadores (secadores de alta potencia) bañaremos a tu amigo peludo por ti ofreciéndote un perro sano y feliz.' + closeQuote,
           link: 'Más sobre baños y servicios',
           to: 'peluqueria',
-          img: this.$route.name + '/bano-precorte-02-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/bano-higiene-peluqueria-canina-canessa.jpg',
           alt: 'Baño tras precorte en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
@@ -61,7 +61,7 @@ export default {
         },
         {
           title: 'Vanessa Vizcaya: Canessa',
-          description: 'Tras ' + this.yearsOfExperience(2009) + ' años de experiencia y formación continuada, Canessa asume la dirección y gerencia de su propio salón de peluquería canina en la localidad madrileña de Valdemoro para poder seguir desarrollándose en su pasión por la belleza animal...' + closeQuote,
+          description: 'Tras <b>' + this.yearsOfExperience(2009) + ' años de experiencia</b> y formación continuada, Canessa asume la dirección y gerencia de su propio salón de peluquería canina en la localidad madrileña de Valdemoro para poder seguir desarrollándose en su pasión por la belleza animal...' + closeQuote,
           link: 'Saber más sobre mi',
           to: 'vanessavizcaya',
           img: this.$route.name + '/vanessa-vizcaya-peluqueria-canina-canessa.jpg',

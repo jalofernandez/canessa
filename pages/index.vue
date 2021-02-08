@@ -352,7 +352,7 @@ export default {
           description: 'En Peluquería canina Canessa ponemos todo nuestro empeño y conocimientos en dejar precioso a tu fiel amigo con la mejor atención y el mínimo estrés, <b>dedicándole el tiempo que merece y necesite sin servicios express</b>. Además del baño y el corte de pelo, siempre incluimos el recorte de uñas, el vaciado de plantares y glándulas perianales, la limpieza de oídos y la retirada del exceso de vello en el pabellón auditivo.',
           link: 'Ir a servicios de peluquería',
           to: 'peluqueria',
-          img: 'canessa-perro--yorkie-tijeras.jpg',
+          img: 'secado-pastor-aleman-feliz-peluqueria-canina-canessa.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },
@@ -360,7 +360,7 @@ export default {
           description: 'También tenemos servicios de <b>baño</b> y <b>SPA canino</b> los cuales, además de mantener limpios y aseados a nuestros perros, <b>previenen la formación de grandes nudos</b>. Esto es fundamental para evitar la aparición de hongos, urticarias y enfermedades dérmicas, además de ser molestos para nuestros amigos caninos, claro.',
           link: 'Ver todos nuestros servicios',
           to: 'servicios',
-          img: 'canessa-perro--yorkie-tijeras.jpg',
+          img: 'bano-higiene-westie-peluqueria-canina-canessa.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
@@ -376,15 +376,15 @@ export default {
           description: 'Disponemos de <b>tienda</b> física dentro de nuestras instalaciones de peluquería canina donde adquirir <b>pienso</b> (trabajamos con <em>Affinity</em>, <em>Libra</em>, <em>Pedigree</em>...), chuches y recompensas, productos de higiene animal, <b>antiparasitarios</b>, arneses, correas, camas, juguetes, trajecitos y abrigos…',
           link: 'Ver alimentación y complementos',
           to: 'piensos',
-          img: 'canessa-perro--yorkie-tijeras.jpg',
+          img: 'affinity-piensos-peluqueria-canina-canessa.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
         {
-          description: 'Como nuestros fieles amigos caninos no merecen menos, las instalaciones de Peluquería canina Canessa están convenientemente adaptadas para garantizar la <b>mejor calidad de servicio</b> gracias a nuestros <b>productos y equipo de primeras marcas</b>: mesas y bañeras hidráulicas, tijeras de acero suizo, expulsadores de aire de última generación, ionizador de aire para desinfección ambiental...',
+          description: 'Como nuestros fieles amigos caninos no merecen menos, las <b>instalaciones</b> de Peluquería canina Canessa están convenientemente adaptadas para garantizar la <b>mejor calidad</b> de servicio gracias a nuestros <b>productos y equipo de primeras marcas</b>: mesas y bañeras hidráulicas, tijeras de acero suizo, expulsadores de aire de última generación, ionizador de aire para desinfección ambiental...',
           link: 'Conocer nuestras instalaciones',
           to: 'instalaciones',
-          img: 'canessa-perro--yorkie-tijeras.jpg',
+          img: 'equipo-profesional-peluqueria-canina-canessa.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: false
         },
@@ -392,8 +392,8 @@ export default {
           description: 'Vanessa tiene algo especial con todos los animales. Un vínculo emocional único con el que transmite paz y relax a todos sus clientes peludos. Gracias a juegos para positivizar <b>consigue que las sesiones de peluquería canina sean divertidas</b> para cualquier <em class=”has-line-through”>mascota</em> animal. Como profesional cuenta con ' + this.yearsOfExperience(2009) + ' años de experiencia en el sector.',
           link: 'Sobre Vanessa Vizacaya',
           to: 'vanessavizcaya',
-          img: 'canessa-perro--yorkie-tijeras.jpg',
-          alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
+          img: 'vanessa-vizcaya-dogs-lover-peluqueria-canina-canessa.jpg',
+          alt: 'Secado en ' + this.$store.state.owner.copyright + ', Madrid',
           reflected: true
         },
       ]

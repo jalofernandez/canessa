@@ -38,42 +38,42 @@ export default {
         {
           title: 'Instalaciones...',
           description: '...a pie de calle perfectamente acondicionadas para poder realizar nuestro trabajo en las condiciones óptimas para nosotros y para vuestros perros. Dividido en dos áreas: <b>tienda y peluquería canina</b>, ambos espacios se comunican entre sí facilitando la correcta ventilación. El local se desinfecta a diario incluyendo <b>limpieza ambiental por ionizador de ozono antibacteriana</b>. Contamos con amplia zona de <b>parking gratuito</b> para hacer más cómoda la entrega y recogida de clientes peludos.' + closeQuote,
-          img: this.$route.name + '/yorkshire-en-mesa-de-corte.jpg',
+          img: this.$route.name + '/instalaciones-de-corte-bano-secado-peluqueria-canina-canessa.jpg',
           alt: 'Instalaciones de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: true
         },
         {
           title: 'Bañeras hidráulicas...',
           description: '...Eléctricas activadas con pedal, permiten regular la altura inmediatamente <b>facilitando así que nuestros clientes caninos suban o bajen cómodamente y sin riesgo de lesiones</b> para ellos y para nuestros profesionales. Se trata de variar la altura según el tamaño de los perros y también en función de la parte del perro que se trabaje. Con suelo antideslizante y banqueta para las razas mini.' + closeQuote,
-          img: this.$route.name + '/asistencia-profesional-autolavado-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/banera-hidraulica-vivoc-peluqueria-canina-canessa.jpg',
           alt: 'Bañera hidráulica de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: false
         },
         {
           title: 'Expulsadores de aire...',
           description: '...Y <b>cabina de secado</b> de última generación con dos motores para secar a tu <em class="has-line-through">mascota</em> animal de compañía <b>más rápidamente minificando el estrés</b> que este pueda sufrir durante el proceso de secado. Además no generan calor por resistencia, como los secadores de mano, que en largas exposiciones pueden provocar dermatitis y otras enfermedades cutáneas y no son recomendables para secar animales domésticos.' + closeQuote,
-          img: this.$route.name + '/secador-tornado-autolavado-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/secador-expulsador-aire-tornado-peluqueria-canina-canessa.jpg',
           alt: 'Expulsadores de aire de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: true
         },
         {
           title: 'Mesas hidráulicas...',
           description: '...Eléctricas activadas con pedal, permiten regular la altura inmediatamente <b>facilitando así que nuestros clientes caninos suban y bajen cómodamente y sin riesgo de lesiones</b> para ellos y para nuestros profesionales. No solo se trata de variar la altura en función del tamaño de los perros sino también en función de la parte del perro que se trabaje.' + closeQuote,
-          img: this.$route.name + '/asistencia-profesional-autolavado-peluqueria-canina-canessa.jpg',
+          img: this.$route.name + '/mesa-hidraulica-peluqueria-canina-canessa.jpg',
           alt: 'Mesa hidráulica de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: false
         },
         {
           title: 'Tijeras profesionales...',
           description: '...Rectas de corte y curvas para esculpir todas ellas de aleación de acero suizo siempre de las mejores marcas asegurando la <b>precisión en el corte</b>. Perfectas para todo tipo de corte: higiénicos, comerciales, de exposición, de mantenimiento… Las cuidamos con un <b>afilado recurrente</b> así como una <b>limpieza y desinfección diaria</b> con aceite Oil fresh.' + closeQuote,
-          img: this.$route.name + '/yorkshire-en-mesa-de-corte.jpg',
+          img: this.$route.name + '/canessa-perro--yorkie-tijeras.jpg',
           alt: 'Tijeras de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: true
         },
         {
           title: 'Máquinas de corte...',
           description: '...Trabajamos con la <b>marca de mayor prestigio y más valorada</b> mundialmente en máquinas de baterías profesionales: Heiniger. De fabricación Suiza destacan por su máxima calidad, resistencia y potencia para peluquería de perros y gatos. Como con las tijeras, cuidamos las cuchillas de nuestras máquinas con un <b>afilado recurrente</b> así como una <b>limpieza y desinfección diaria</b> con aceite Oil fresh.' + closeQuote,
-          img: this.$route.name + '/yorkshire-en-mesa-de-corte.jpg',
+          img: this.$route.name + '/maquinas-de-corte-peluqueria-canina-canessa.jpg',
           alt: 'Máquinas de ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
           reflected: false
         },
