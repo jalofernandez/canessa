@@ -24,8 +24,8 @@
           </span> <small>{{ author.bio }}</small>
         </p>
         <p>
-          <small v-if="createdAt !== updatedAt">Actualizado: {{ updatedAt }}</small>
-          <small v-else><em>Creado:</em> {{ createdAt }}</small>
+          <small v-if="createdAt !== updatedAt"><em class="is-size-7">Actualizado:</em> {{ updatedAt }}</small>
+          <small v-else><em class="is-size-7">Creado:</em> {{ createdAt }}</small>
         </p>
       </div>
     </div>
@@ -46,13 +46,7 @@
       },
       updatedAt: {
         type: String,
-        required: true
-      },
-    },
-    methods: {
-      formatDate(date) {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' }
-        return new Date(date).toLocaleDateString('es-ES', options)
+        required: true,
       }
     }
   }

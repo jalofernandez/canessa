@@ -48,9 +48,9 @@
                   </figure>
                 </div>
                 <div class="media-content has-text-dark">
-                  <p class="is-size-5 has-text-primary">
+                  <h3 class="is-size-5 has-text-primary">
                     <b>{{ article.title }}</b></p>
-                  <p>
+                  </h3>
                     <small>
                       <!-- por <span :class="['tag', 'is-light', article.author.name == 'jalofernandez' ? 'is-warning' : 'is-link']">{{ article.author.name }}</span> -->
                       por <b>{{ article.author.name }}</b>
