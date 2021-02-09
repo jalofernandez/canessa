@@ -1091,9 +1091,9 @@ export default {
         subtitle: 
           'El siguiente aviso legal informa sobre <span class="has-text-weight-bold">las condiciones de uso del presente sitio web</span>. <br class="is-hidden-touch" />Léelos detenidamente, por favor. Intentaremos ser breves y usar un lenguaje claro.',
         img: {
-          src: 'dog-judge.svg',
+          src: 'canessa-slash-gafotas.png',
           width: 200,
-          height: 200
+          height: 257
         }
       },
       sections: [

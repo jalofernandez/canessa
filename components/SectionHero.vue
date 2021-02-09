@@ -2,6 +2,7 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container has-text-centered">
+        <!-- ARTWORK -->
         <img
           class="artwork"
           :src="require(`~/assets/images/${page}/${hero.img.src}`)"
@@ -11,6 +12,7 @@
           :height="hero.img.height"
           v-if="hero.img"
         />
+        <!-- (main) TITLE -->
         <h1
           :class="[
             'title',
@@ -20,10 +22,17 @@
             $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
             'is-spaced'
           ]"
-          v-if="hero.title"
+          v-if="hero.title && page != 'legal'"
         >
           {{ hero.title }}
         </h1>
+        <h1
+          class="title is-size-1 is-size-2-mobile has-text-primary has-text-weight-bold"
+          v-if="hero.title && page == 'legal'"
+        >
+          {{ hero.title }}
+        </h1>
+        <!-- Description or Subtitle -->
         <h4
           class="subtitle is-size-6-mobile"
           v-html="hero.subtitle"
