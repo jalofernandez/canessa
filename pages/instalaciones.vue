@@ -4,10 +4,10 @@
       <video
         id="bgvid"
         :poster="require(`~/assets/videos/afgano.jpg`)"
-        :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
+        :title="`Instalaciones de ${owner.copyright} en Valdemoro, Madrid`" 
         playsinline autoplay muted loop
       >
-        <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4">
+        <source src="~/assets/videos/canessa-web-video-instalaciones--2021-02-10.mp4" type="video/mp4">
       </video>
       <div class="viewport-header">
         <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`">
