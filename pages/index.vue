@@ -46,10 +46,10 @@
     <div class="is-below-video">
 
       <div id="section-cta" class="box cta is-radiusless">
-        <p class="is-size-5 is-size-6-mobile has-text-centered">
+        <h2 class="is-size-5 is-size-6-mobile has-text-centered">
           Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. 
           <br class="is-hidden-touch" />Así lo demuestran las <b class="has-text-primary">{{ reviews.totalReviewCount }}</b> <b>opiniones de nuestros clientes</b>:
-        </p>
+        </h2>
       </div>
 
       <section class="container box-list">
