@@ -31,7 +31,15 @@
           >
             <div class="card-image">
               <figure class="image is-4by3">
-                <img :src="require(`~/assets/images/blog/${article.img}`)" />
+                <picture>
+                  <source :srcset="require(`~/assets/images/blog/${article.img}?webp`)" type="image/webp" /> 
+                  <source :srcset="require(`~/assets/images/blog/${article.img}`)" type="image/jpg" />
+                  <img
+                    :src="require(`~/assets/images/blog/${article.img}`)"
+                    :title="article.title"
+                    :alt="article.title"
+                  >
+                </picture>
               </figure>
             </div>
             <div class="card-content">

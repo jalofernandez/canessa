@@ -169,7 +169,9 @@ export default {
   },
 
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: true,
+    optimizeImagesInDev: true,
+    defaultImageLoader: 'img-loader'
   },
 
   pwa: {

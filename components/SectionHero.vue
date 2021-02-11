@@ -3,15 +3,20 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <!-- ARTWORK -->
-        <img
-          class="artwork"
-          :src="require(`~/assets/images/${page}/${hero.img.src}`)"
-          :title="`Creatividad del ${hero.title} de ${owner.nickname}`"
-          :alt="`${hero.title} de ${owner.nickname}, Valdemoro, Madrid`"
-          :width="hero.img.width"
-          :height="hero.img.height"
-          v-if="hero.img"
-        />
+        <picture v-if="hero.img">
+          <source :srcset="require(`~/assets/images/${page}/${hero.img.src}?webp`)" type="image/webp" />
+          <source :srcset="require(`~/assets/images/${page}/${hero.img.src}`)" type="image/png" />
+          <source :srcset="require(`~/assets/images/${page}/${hero.img.src}`)" type="image/jpg" />
+          <source :srcset="require(`~/assets/images/${page}/${hero.img.src}`)" type="image/svg" />
+          <img
+            class="artwork"
+            :src="require(`~/assets/images/${page}/${hero.img.src}`)"
+            :title="`Creatividad del ${hero.title} de ${owner.nickname}`"
+            :alt="`${hero.title} de ${owner.nickname}, Valdemoro, Madrid`"
+            :width="hero.img.width"
+            :height="hero.img.height"
+          >
+        </picture>
         <!-- (main) TITLE -->
         <h1
           :class="[

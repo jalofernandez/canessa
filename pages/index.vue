@@ -56,14 +56,18 @@
         <article class="media box" v-for="review in reviews.reviews" :key="review.name">
           <figure class="media-left">
             <p class="image is-32x32">
-              <img
-                class="is-rounded"
-                :src="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)"
-                :title="`Foto de usuario de Google de: ${review.name}`"
-                :alt="`Foto de usuario de Google de: ${review.name}`"
-                width="32"
-                height="32"
-              />
+              <picture>
+                <source :srcset="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png?webp`)" type="image/webp" />
+                <source :srcset="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)" type="image/png" />
+                <img
+                  class="is-rounded"
+                  :src="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)"
+                  :title="`Foto de usuario de Google de: ${review.name}`"
+                  :alt="`Foto de usuario de Google de: ${review.name}`"
+                  width="32"
+                  height="32"
+                >
+              </picture>
             </p>
           </figure>
           <div class="media-content">
@@ -197,14 +201,18 @@
               </div>
               <div class="column">
                 <figure class="image">
-                  <img
-                    class="artwork"
-                    :src="require(`~/assets/images/index/${block.img}`)"
-                    :title="block.alt"
-                    :alt="block.alt"
-                    width="200"
-                    height="200"
-                  />
+                  <picture>
+                    <source :srcset="require(`~/assets/images/index/${block.img}?webp`)" type="image/webp" />
+                    <source :srcset="require(`~/assets/images/index/${block.img}`)" type="image/jpg" />
+                    <img
+                      class="artwork"
+                      :src="require(`~/assets/images/index/${block.img}`)"
+                      :title="block.alt"
+                      :alt="block.alt"
+                      width="200"
+                      height="200"
+                    >
+                  </picture>
                 </figure>
               </div>
             </div>

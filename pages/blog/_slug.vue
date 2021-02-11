@@ -32,13 +32,17 @@
           </div>
           <div class="column">
             <figure class="image">
-              <img
-                class="artwork"
-                :src="require(`~/assets/images/blog/${article.img}`)"
-                :title="article.alt"
-                :alt="article.alt"
-                v-if="article.img"
-              />
+              <picture>
+                <source :srcset="require(`~/assets/images/blog/${article.img}?webp`)" type="image/webp" />
+                <source :srcset="require(`~/assets/images/blog/${article.img}`)" type="image/jpg" />
+                <img
+                  class="artwork"
+                  :src="require(`~/assets/images/blog/${article.img}`)"
+                  :title="article.alt"
+                  :alt="article.alt"
+                  v-if="article.img"
+                >
+              </picture>
             </figure>
           </div>
         </div>

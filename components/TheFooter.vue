@@ -8,13 +8,17 @@
         <span class="icon th-quote"><i class="mdi mdi-format-quote-close"></i></span>
       </div>
       <div class="content has-text-centered" v-if="!isDisabledCurrentPage">
-        <img
-          :src="require(`~/assets/images/logos/canessa-bone-logo.png`)"
-          :alt="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
-          :title="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
-          width="200"
-          height="67"
-        />
+        <picture>
+          <source :srcset="require('~/assets/images/logos/canessa-bone-logo.png?webp')" type="image/webp" />
+          <source :srcset="require('~/assets/images/logos/canessa-bone-logo.png')" type="image/png" />
+          <img
+            :src="require(`~/assets/images/logos/canessa-bone-logo.png`)"
+            :alt="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
+            :title="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
+            width="200"
+            height="67"
+          >
+        </picture>
       </div>
       <div class="columns">
         <div class="menu column is-3 is-offset-1 is-four-fifths-mobile is-offset-one-fifth-mobile">

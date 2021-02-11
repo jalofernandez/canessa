@@ -45,14 +45,19 @@
         </div>
         <div class="column">
           <figure class="image">
-            <img
-              class="artwork"
-              :src="require(`~/assets/images/${block.img}`)"
-              :title="block.alt"
-              :alt="block.alt"
-              width="200"
-              height="200"
-            />
+            <picture>
+              <source :srcset="require(`~/assets/images/${block.img}?webp`)" type="image/webp" />
+              <source :srcset="require(`~/assets/images/${block.img}`)" type="image/png" />
+              <source :srcset="require(`~/assets/images/${block.img}`)" type="image/jpg" />
+              <img
+                class="artwork"
+                :src="require(`~/assets/images/${block.img}`)"
+                :title="block.alt"
+                :alt="block.alt"
+                width="200"
+                height="200"
+              >
+            </picture>
           </figure>
         </div>
       </div>
