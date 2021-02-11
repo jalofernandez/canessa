@@ -135,6 +135,9 @@ export default {
     'nuxt-mq',
     // https://www.npmjs.com/package/vue-scrollto
     'vue-scrollto/nuxt',
+    // https://marquez.co/es/docs/nuxt-optimized-images
+    // All image packages: "imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo webp-loader img-loader"
+    '@aceforth/nuxt-optimized-images',
     // https://www.npmjs.com/package/@nuxtjs/gtm
     '@nuxtjs/gtm',
     // https://www.npmjs.com/package/nuxt-purgecss
@@ -163,6 +166,10 @@ export default {
       desktopWide: 2000,
       desktopUltraWide: Infinity
     }
+  },
+
+  optimizedImages: {
+    optimizeImages: true
   },
 
   pwa: {

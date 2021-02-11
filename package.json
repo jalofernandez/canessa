@@ -24,10 +24,17 @@
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
+    "img-loader": "^3.0.2",
     "nuxt-purgecss": "^1.0.0",
     "push-dir": "^0.4.1",
     "sass": "^1.32.2",
-    "sass-loader": "^10.1.0"
+    "sass-loader": "^10.1.0",
+    "webp-loader": "^0.6.0"
   }
 }
