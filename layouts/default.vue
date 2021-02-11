@@ -398,6 +398,14 @@ export default {
   created() {
     if (process.client) {
       window.addEventListener('scroll', this.handleScroll)
+      // TODO: check the following code to add "lazy load" in image resources to improve SEO
+      // document.addEventListener('DOMContentLoaded', () => {
+      //   var observer = new IntersectionObserver(lazyload, { threshold: 0.5 })
+      //   var images = document.querySelectorAll('img')
+      //   for (var i=0; i<images.length; i++) {
+      //     observer.observe(images[i])
+      //   }
+      // })
     }
     // to load navigation links in top navbar & his dropdown
     let navs = this.pages.links 
