@@ -4,10 +4,7 @@ const url = 'peluqueriacanessa.com'
 
 export default {
   // to deploy static websites in GitHub Pages
-  // target: 'static',
-  // router: {
-  //   base: '/canessa/'
-  // },
+  target: 'static',
   // Isomorphic app (server-side rendering + client-side navigation) not SPA one
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-mode
   mode: 'universal',
@@ -73,6 +70,7 @@ export default {
   // to overwrite "router" by default to allow better scroll behaviour & fix some bugs.
   // https://zachcardoza.com/post/nuxtjs-smooth-scrolling-with-hash-links/
   router: {
+    // base: '/canessa/', // to change base URL
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition
