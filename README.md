@@ -52,6 +52,9 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# deploy static project into Firebase
+$ firebase deploy --project <alias_or_project_id>
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
