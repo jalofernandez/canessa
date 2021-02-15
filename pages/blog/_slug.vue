@@ -119,10 +119,12 @@
           { hid: 'og:title', property: 'og:title', content: title + ' Canessa' },
           { hid: 'og:description', property: 'og:description', content: description },
           { hid: 'og:url', property: 'og:url', content: canonical },
+          { hid: 'og:image', property: 'og:image', content: 'https://' + this.owner.url + '/blog/' + this.article.img },
           // Twitter Card
           { hid: 'twitter:title', name: 'twitter:title', content: title + ' Canessa' },
           { hid: 'twitter:description', name: 'twitter:description', content: description },
-          { hid: 'twitter:url', name: 'twitter:url', content: canonical }
+          { hid: 'twitter:url', name: 'twitter:url', content: canonical },
+          { hid: 'twitter:image', name: 'twitter:image', content: 'https://' + this.owner.url + '/blog/' + this.article.img }
         ],
         // Structured Data (Schema)
         __dangerouslyDisableSanitizers: ['script'],
