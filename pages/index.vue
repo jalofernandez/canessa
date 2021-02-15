@@ -35,7 +35,8 @@
         <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4">
       </video>
       <div class="viewport-header">
-        <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`">
+        <!-- <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`"> -->
+        <h1 class="video-header-title">
           Tu perro merece:
           <span>{{ owner.copyright }}</span>
           <ScrollDownItem v-scroll-to="{ el: '#section-cta', offset: getOffset() }" />
@@ -349,8 +350,8 @@ import doggies from '~/data/doggies'
 export default {
   data() {
     return {
-      headerScale: 1,
-      headerOpacity: 1,
+      // headerScale: 1,
+      // headerOpacity: 1,
       owner: this.$store.state.owner,
       pages: this.$store.state.pages,
       reviews: reviews,
@@ -442,33 +443,34 @@ export default {
       ]
     }
   },
-  created() {
-    if (process.client) {
-      window.addEventListener('scroll', this.headerTitleAnim)
-    }
-  },
-  destroyed() {
-    if (process.client) {
-      window.removeEventListener('scroll', this.headerTitleAnim)
-    }
-  },
+  // TODO: check the following code cause it have a weird scroll behaviour
+  // created() {
+  //   if (process.client) {
+  //     window.addEventListener('scroll', this.headerTitleAnim)
+  //   }
+  // },
+  // destroyed() {
+  //   if (process.client) {
+  //     window.removeEventListener('scroll', this.headerTitleAnim)
+  //   }
+  // },
   // mounted() {
   //   // to allow scrollToTop behaviour when page loads cause Nuxt bug...
   //   // ...not necessary if U overwrites "router" in "nuxt.config" file
   //   window.scrollTo(0, 0)
   // },
   methods: {
-    headerTitleAnim() {
-      let target, calcOpacity, calcScale, opacity, scale
-      target = document.documentElement
-      calcOpacity = target.scrollTop * 20
-      calcScale = target.scrollTop * 10
-      opacity = (target.offsetHeight - calcOpacity) / target.offsetHeight
-      scale = (target.offsetHeight - calcScale) / target.offsetHeight
-      // console.log(opacity +  ' : ' + scale) // to output values in console
-      this.headerOpacity = opacity
-      this.headerScale = scale
-    },
+    // headerTitleAnim() {
+    //   let target, calcOpacity, calcScale, opacity, scale
+    //   target = document.documentElement
+    //   calcOpacity = target.scrollTop * 20
+    //   calcScale = target.scrollTop * 10
+    //   opacity = (target.offsetHeight - calcOpacity) / target.offsetHeight
+    //   scale = (target.offsetHeight - calcScale) / target.offsetHeight
+    //   // console.log(opacity +  ' : ' + scale) // to output values in console
+    //   this.headerOpacity = opacity
+    //   this.headerScale = scale
+    // },
     getOffset() {
       let mq = this.$mq
       if (mq === 'mobile' || mq === 'smartphone' || mq === 'tablet') {
