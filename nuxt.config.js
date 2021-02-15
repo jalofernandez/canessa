@@ -212,6 +212,11 @@ export default {
     hostname: `https://` + url,
     gzip: true,
     // exclude: ['/perretes', '/blog', '/blog/', '/blog/**'],
+    routes: [
+      '/blog/el-gran-reencuentro',
+      '/blog/como-pixar-capta-la-personalidad-animal',
+      '/blog/como-publicar-post-aqui'
+    ],
     defaults: {
       changefreq: 'daily',
       priority: 1,
