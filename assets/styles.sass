@@ -24,6 +24,8 @@ body
     border-bottom: 1px solid $black-bis
   &.bottom-bar
     border-top: 1px solid $black-bis
+    @media (max-width: 1023px)
+      height: 65px // to add more bottom space in mobile devices
     .navbar-brand
       position: relative
       .buttons:not(:last-child)
@@ -546,6 +548,8 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
   z-index: 99 // highest one less Aside mobile´s menu
   position: fixed
   bottom: 60px
+  @media screen and (max-width: 1023px)
+    bottom: 72px // to place ir higher cause mobile´s bottom navbar height
   right: 8px
   background-color: rgba(white, .65)
   backdrop-filter: $backdrop
