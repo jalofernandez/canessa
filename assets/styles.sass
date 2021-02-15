@@ -100,7 +100,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 .aside-navbar-menu
   position: fixed
   top: 0
-  left: 0
+  left: -260px
   z-index: 100
   width: 260px
   height: 100%
@@ -111,11 +111,10 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   opacity: 0
   transition: all 0.5s
   visibility: hidden
-  transform: translate3d(-100%, 0, 0)
   &.is-open
     opacity: 1
     visibility: visible
-    transform: translate3d(0, 0, 0)
+    transform: translateX(260px)
   .navbar-item
     font-size: 1.2rem
     letter-spacing: .02rem
