@@ -16,7 +16,7 @@ export default {
         {
           title: '¿No me vas a proteger?',
           description: 'En las estaciones del año calurosas proliferan los insectos y mosquitos que <b>transmiten enfermedades a nuestras mascotas</b>. No hace falta comentar que la salud de nuestros amigos peludos es lo principal así que... ¡<b>Protégelos</b>  de insectos voladores y parásitos externos con los <b>mejores productos del mercado</b>!' + closeQuote,
-          link: '¿Dónde comprar nuestros antiparasitarios?',
+          link: '¿Dónde comprar antiparasitarios?',
           to: 'contacto',
           img: this.$route.name + '/antiparasitarios-peluqueria-canina-canessa.jpg',
           alt: 'Productos Antiparasitarios en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
@@ -25,7 +25,7 @@ export default {
         {
           title: 'Collares antiparásitos de Scalibor',
           description: 'El collar Scalibor protege a tu perro de la <b>leishmaniasis</b> gracias a que funciona como un <b>potente repelente contra los mosquitos</b> flebotomos. Su innovador diseño libera la deltametrina de manera constante que se expande por toda la superficie del cuerpo. También es efectivo <b>contra pulgas y garrapatas</b>.' + closeQuote,
-          link: '¿Dónde comprar nuestros collares Scalibor?',
+          link: '¿Dónde comprar collares Scalibor?',
           to: 'contacto',
           img: this.$route.name + '/scalibor-collar-antiparasitario-peluqueria-canina-canessa.jpg',
           alt: 'Scalibor collares antiparasitarios en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
@@ -34,7 +34,7 @@ export default {
         {
           title: 'Collares antiparásitos de Fletcare',
           description: 'Collar <b>natural sin insecticida</b> protector contra parásitos externos (mosquitos, pulgas, garrapatas, etc..). Puede <b>utilizarse en cachorros</b> a partir de 3 meses de edad. Producto nacional del laboratorio veterinario Farbiol de Salamanca.' + closeQuote,
-          link: '¿Dónde comprar nuestros collares Fletcare?',
+          link: '¿Dónde comprar collares Fletcare?',
           to: 'contacto',
           img: this.$route.name + '/fletcare-collar-antiparasitario-peluqueria-canina-canessa.jpg',
           alt: 'Fletcare collares naturales antiparasitarios en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
@@ -43,7 +43,7 @@ export default {
         {
           title: 'Collares antiparásitos de Francodex',
           description: 'Collar <b>repelente natural</b> para deshacerte de parásitos de fácil colocación y ajuste. Contiene extracto de margosa que es un efectivo repelente natural que evita la proliferación de ácaros, pulgas y garrapatas. También <b>previene contra la picadura de mosquitos</b>.' + closeQuote,
-          link: '¿Dónde comprar nuestros collares Francodex?',
+          link: '¿Dónde comprar collares Francodex?',
           to: 'contacto',
           img: this.$route.name + '/francodex-collar-antiparasitario-peluqueria-canina-canessa.jpg',
           alt: 'Francodex collares con repelente natural en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
@@ -52,7 +52,7 @@ export default {
         {
           title: 'Pipetas antiparásitos de Fletcare',
           description: '<b>Repelente natural</b> ahuyentador de mosquitos, pulgas y garrapatas <b>para perros y gatos</b>. Para razas grandes o muy grandes, administrar el contenido completo de una pipeta pero para razas medianas y pequeñas, administrar sólo la mitad del contenido de una pipeta.' + closeQuote,
-          link: '¿Dónde comprar nuestros pipetas Fletcare?',
+          link: '¿Dónde comprar pipetas Fletcare?',
           to: 'contacto',
           img: this.$route.name + '/fletcare-pipetas-antiparasitarias-peluqueria-canina-canessa.jpg',
           alt: 'Fletcare pipetas antiparasitarias en ' + this.$store.state.owner.copyright + ', Valdemoro, Madrid',
