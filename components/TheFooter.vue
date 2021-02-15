@@ -21,7 +21,7 @@
         </picture>
       </div>
       <div class="columns">
-        <div class="menu column is-3 is-offset-1 is-four-fifths-mobile is-offset-one-fifth-mobile">
+        <div class="menu column is-3 is-offset-1 is-10-mobile is-offset-2-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Páginas:</b>
           </p>
@@ -41,7 +41,7 @@
             </li>
           </ul>
         </div>
-        <div class="menu column is-3 is-four-fifths-mobile is-offset-one-fifth-mobile">
+        <div class="menu column is-3 is-10-mobile is-offset-2-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Artículos:</b>
           </p>
@@ -55,13 +55,13 @@
                   <span class="icon has-text-grey-light">
                     <i class="mdi mdi-subdirectory-arrow-right"></i>
                   </span>
-                  {{ post.name }}
+                  <small>{{ post.name }}</small>
                 </span>
               </NuxtLink>
             </li>
           </ul>
         </div>
-        <div class="menu column is-4 is-four-fifths-mobile is-offset-one-fifth-mobile">
+        <div class="menu column is-4 is-10-mobile is-offset-2-mobile">
           <p class="is-size-6 has-text-grey-darker mb-2">
             <b>Nuestros amigos:</b>
           </p>
@@ -151,9 +151,9 @@ export default {
       developBy: 'Website diseñado y desarrollado por',
       blog: [
         { name: '"El gran reencuentro"', page: '/blog/el-gran-reencuentro' },
-        // { name: '"Blog post dos"', page: '/blog' }
-        // { name: '"Blog post tres"', page: '/blog' }
-        { name: 'Todos los artículos...', page: '/blog' }
+        { name: '"Como Pixar capta la personalidad animal"', page: '/blog/como-pixar-capta-la-personalidad-animal' },
+        { name: '"¿Quieres publicar artículos en nuestro blog?"', page: '/blog/como-publicar-post-aqui' },
+        { name: 'Ver todos los artículos...', page: '/blog' }
       ],
       partnership: [
         { name: 'Protectora AiBa Madrid', url: 'http://www.aibamadrid.com' },
