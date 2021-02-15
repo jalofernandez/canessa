@@ -35,7 +35,7 @@
                   <span class="icon has-text-grey-light">
                     <i :class="`mdi mdi-${link.icon}`"></i>
                   </span>
-                  {{ link.name }}
+                  <span>{{ link.name }}</span>
                 </span>
               </NuxtLink>
             </li>
@@ -113,8 +113,10 @@
             rel="noopener noreferrer"
           >
             <small class="has-text-grey-darker">
-              En colaboración con: <br v-if="$mq == 'mobile'"/><span>#<b>HazTuNegocioDigital</b></span>
+              En colaboración con:
             </small>
+            <br v-if="$mq == 'mobile'"/>
+            <small>#<b>HazTuNegocioDigital</b></small>
           </a>
         </div>
         <div class="control level-item mt-3 mb-1">

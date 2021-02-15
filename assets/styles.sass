@@ -364,12 +364,12 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociodigital)
 @each $name, $color in $authors
   .author.#{$name}
-    span
-      transform: all .15s ease
+    span, small
+      transition: all .15s ease
       color: $color
     @media (hover: hover)
       &:hover, &:focus
-        span
+        span, small
           color: darken($color, 8%)
           text-decoration: underline
 
