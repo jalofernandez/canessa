@@ -459,11 +459,13 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
 
 // "ScrollDownItem" layout component
 .mouse-scroll
+  cursor: pointer
   display: block
   width: 24px
   height: 100px
   margin: 3rem auto 0
-  cursor: pointer
+  @media screen and (max-width: 380px)
+    margin-top: 1rem
 
 .scroll-arrow
   display: block
