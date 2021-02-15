@@ -105,7 +105,7 @@
       </div>
       <div class="aside-nav-list" @click="isMenuShown = false">
         <NuxtLink
-          :class="['navbar-item', item.page]"
+          :class="['navbar-item', item.page.substring(1)]"
           :to="item.page"
           :title="`${item.name} de ${owner.copyright}`"
           v-for="(item, index) in pages.links"
