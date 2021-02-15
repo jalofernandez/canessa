@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div :class="['container', 'mb-6', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
+    <div :class="['container', 'th-margin', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
       <div class="columns is-vcentered content is-medium">
         <div class="column is-6">
           <h2

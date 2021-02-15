@@ -185,7 +185,7 @@
             </h3>
           </div>
           <!-- TODO: code refactor asap because can use "SectionChessBoard" comp. -->
-          <div :class="['container', 'mb-6', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
+          <div :class="['container', 'th-margin', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
             <div class="columns is-vcentered content is-medium">
               <div class="column is-8">
                 <p class="is-size-6-mobile" v-html="block.description"></p>
