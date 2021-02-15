@@ -87,7 +87,7 @@
       <div class="content has-text-centered">
         <div class="control level-item">
           <NuxtLink to="/">
-            <div class="tags has-addons">
+            <div class="tags are-medium has-addons">
               <span class="tag is-dark">© {{ owner.copyright }}</span>
               <span class="tag is-link">{{ owner.version }}</span>
             </div>
