@@ -146,11 +146,6 @@ Icon
 # docs
 /docs
 
-# @nuxtjs/pwa
-sw.*
-
-.env
-
 # Optional eslint cache
 .eslintcache
 
