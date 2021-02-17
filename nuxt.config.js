@@ -1,6 +1,7 @@
 const author = '@jalofernandez para Vanessa Vizcaya, Canessa'
 const description = 'Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu perro y amigo. Cita previa: 91 248 04 30'
 const url = 'peluqueriacanessa.com'
+const dataImage = 'peluqueria-canina-canessa-valdemoro-servicios.jpg'
 
 export default {
   // to deploy static websites in GitHub Pages
@@ -46,8 +47,8 @@ export default {
       { hid: 'og:locale', property: 'og:locale', content: 'es-ES' },
       { hid: 'og:site_name', property: 'og:site_name', content: url },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:image', property: 'og:image', content: 'https://' + url + '/peluqueria-canina-canessa-valdemoro-servicios.jpg' },
-      { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: 'https://' + url + '/peluqueria-canina-canessa-valdemoro-servicios.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://' + url + '/' + dataImage },
+      { hid: 'og:image:secure_url', property: 'og:image:secure_url', content: 'https://' + url + '/' + dataImage },
       { hid: 'og:image:type', property: 'og:image:type', content: 'image/jpeg' },
       { hid: 'og:image:width', property: 'og:image:width', content: '960' },
       { hid: 'og:image:height', property: 'og:image:height', content: '540' },
@@ -56,7 +57,7 @@ export default {
       // Test on: https://cards-dev.twitter.com/validator 
       { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
       { hid: 'twitter:site', name: 'twitter:site', content: url },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://' + url + '/peluqueria-canina-canessa-valdemoro-servicios.jpg' }
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://' + url + '/' + dataImage },
     ],
     link: [
       { rel: 'author', type: 'text/plain', href: 'https://' + url + '/humans.txt' },
