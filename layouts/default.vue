@@ -247,7 +247,7 @@
             <NuxtLink
               :class="`navbar-item ${pages.links[4].page}`"
               :to="pages.links[4].page"
-              :title="`Mapa del sitio web de ${owner.copyright}`"
+              :title="`Contactar con ${owner.copyright}`"
             >
               {{ pages.links[4].name }}
             </NuxtLink>
