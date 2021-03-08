@@ -13,6 +13,12 @@ body
   font-family: 'Roboto', sans-serif
   color: $color-text
 
+ul, ol,
+.content ul, .content ol
+  margin: 0
+  padding: 0
+  list-style: none
+
 .canessa
   background: $paper
 
@@ -145,18 +151,23 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   .reflected .columns .column:first-child
     order: 2
 
+
 .container
-  .content figure img:not(.is-rounded)
-    border-radius: 5px
-  @media (min-width: 980px)
-    &:not(.reflected) .content figure
-      margin-right: 0
-    &.reflected .content figure
-      margin-left: 0
-  @media (max-width: 979px)
-    .content figure
-      margin-right: 0
-  @media (max-width: 768px)
+  &:not(.is-footer)
+    .content figure img:not(.is-rounded)
+      border-radius: 5px
+    @media (min-width: 980px)
+      &:not(.reflected) .content figure
+        margin-right: 0
+      &.reflected .content figure
+        margin-left: 0
+    @media (max-width: 979px)
+      .content figure
+        margin-right: 0
+    @media (max-width: 768px)
+      .content figure
+        margin: 0
+  &.is-footer
     .content figure
       margin: 0
 
@@ -313,7 +324,7 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   margin-bottom: 1rem
 
 @media screen and (max-width: 768px)
-  .level-item
+  .level-item:not(.control)
     &:not(:last-child)
       margin-bottom: 1.5rem
     .button
@@ -325,6 +336,17 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 .content table thead td,
 .content table thead th
   color: $color-text
+
+.footer
+  ul:not(.menu-list) li
+    margin: .25rem
+    opacity: .5
+
+.menu-list
+  a
+    color: $color-text
+  .blog-list-item small
+    line-height: 1.5
 
 // PAGES custom styles
 .index
@@ -370,18 +392,35 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
     @media screen and (max-width: 600px)
       font-size: 1rem
 
+.author
+  transition: all .15s ease
+  &.jalofernandez, .jalofernandez
+    color: $jalofernandez
+  &.haztunegociodigital, .haztunegociodigital
+    color: $haztunegociodigital
+  @media (hover: hover)
+    &:hover, &:focus
+      &.jalofernandez, .jalofernandez
+      color: darken($jalofernandez, 15%)
+      &.haztunegociodigital, .haztunegociodigital
+        color: darken($haztunegociodigital, 8%)
+      span:not(.has-text-grey-darker),
+      small:not(.has-text-grey-darker)
+        text-decoration: underline
+
+// IMP! The following code works in DEV (run dev) but not in PRO (run build)
 // common FOOTER last block with project info
-$authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociodigital)
-@each $name, $color in $authors
-  .author.#{$name}
-    span, small
-      transition: all .15s ease
-      color: $color
-    @media (hover: hover)
-      &:hover, &:focus
-        span, small
-          color: darken($color, 8%)
-          text-decoration: underline
+// $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociodigital)
+// @each $name, $color in $authors
+//   .author.#{$name}
+//     span, small
+//       transition: all .15s ease
+//       color: $color
+//     @media (hover: hover)
+//       &:hover, &:focus
+//         span, small
+//           color: darken($color, 8%)
+//           text-decoration: underline
 
 // MODAL dialog to schedule & contact info
 .modal

@@ -103,7 +103,8 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   css: [
     // https://sass-lang.com
-    '@/assets/styles.sass'
+    '@/assets/styles.sass',
+    '@mdi/font/css/materialdesignicons.min.css'
   ],
 
   transition: {

@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="container">
+    <div class="container is-footer">
       <div class="content column is-8 is-offset-2" v-if="!isDisabledCurrentPage">
         <span class="icon th-quote"><i class="mdi mdi-format-quote-open"></i></span>
         Sabemos lo importante que es para ti tu perro, un miembro más de la familia, y lo mimaremos como se merece, no sólo garantizando su <b>higiene y salud</b>, 
@@ -33,7 +33,8 @@
               >
                 <span class="icon-text">
                   <span class="icon has-text-grey-light">
-                    <i :class="`mdi mdi-${link.icon}`"></i>
+                    <!-- <span :class="`mdi mdi-${link.icon}`"></span> -->
+                    <span class="mdi mdi-subdirectory-arrow-right"></span>
                   </span>
                   <span>{{ link.name }}</span>
                 </span>
@@ -46,13 +47,13 @@
             <b>Artículos:</b>
           </p>
           <ul class="menu-list">
-            <li v-for="(post, index) in blog" :key="index">
+            <li class="blog-list-item" v-for="(post, index) in blog" :key="index">
               <NuxtLink
                 :to="post.page"
                 :title="`Ir al post: ${post.name} de ${owner.nickname}`"
               >
-                <span class="icon-text">
-                  <span class="icon has-text-grey-light">
+                <span class="icon-text is-flex">
+                  <span class="icon has-text-grey-light mr-2">
                     <i class="mdi mdi-subdirectory-arrow-right"></i>
                   </span>
                   <small>{{ post.name }}</small>
@@ -75,7 +76,7 @@
               >
                 <span class="icon-text">
                   <span class="icon has-text-grey-light">
-                    <i class="mdi mdi-subdirectory-arrow-right"></i>
+                    <span class="mdi mdi-subdirectory-arrow-right"></span>
                   </span>
                   <small>{{ partner.name }}</small>
                 </span>
@@ -101,7 +102,13 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <small class="has-text-grey-darker">{{ developBy }}:</small> <br v-if="$mq == 'mobile'"/><span>{{ owner.author }}.com</span>
+            <small class="has-text-grey-darker">
+              {{ developBy }}:
+            </small>
+            <br v-if="$mq == 'mobile'"/>
+            <span :class="`${owner.author}`">
+              {{ owner.author }}.com
+            </span>
           </a>
         </div>
         <div class="control level-item">
@@ -116,21 +123,34 @@
               En colaboración con:
             </small>
             <br v-if="$mq == 'mobile'"/>
-            <small>#<b>HazTuNegocioDigital</b></small>
+            <small :class="`${owner.partner}`">
+              #<b>HazTuNegocioDigital</b>
+            </small>
           </a>
         </div>
         <div class="control level-item mt-3 mb-1">
           <small class="has-text-grey-dark">Tecnología utilizada:</small>
         </div>
         <div class="control level-item">
-          <span
-            class="icon is-medium"
-            :title="item"
-            v-for="(item, index) in tech"
-            :key="index"
-          >
-            <i :class="`mdi mdi-24px mdi-${item}`"></i>
-          </span>
+          <ul class="is-flex">
+            <li v-for="(item, index) in tech" :key="index">
+              <figure class="image is-24x24px">
+                <img
+                  :src="require(`~/assets/images/tech/${item}.svg`)"
+                  :title="`Icono de ${item}`"
+                  :alt="`Icono de ${item}`"
+                  width="24"
+                  height="24"
+                >
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="control level-item content is-small mt-4">
+          <span class="ml-2">© Todos los derechos reservados</span>,
+          <b>
+            <small class="ml-1">{{ owner.currentYear }}</small>
+          </b>
         </div>
       </div>
     </div>

@@ -113,7 +113,8 @@
         >
           <span class="icon-text">
             <span class="icon has-text-black">
-              <i :class="`mdi mdi-${item.icon}`"></i>
+              <!-- <i :class="`mdi mdi-${item.icon}`"></i> -->
+            <span class="mdi mdi-subdirectory-arrow-right"></span>
             </span>
             <span class="pl-2">{{ item.name }}</span>
           </span>
