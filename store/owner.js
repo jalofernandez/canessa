@@ -25,16 +25,16 @@ export const state = () => ({
       "https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/",
       "https://www.instagram.com/peluqueriacanessa/"
     ],
-    'logo': 'https://peluqueriacanessa.com/assets/images/logos/canessa-logo.svg',
-    'name': 'Peluquería canina Canessa en Valdemoro, Madrid',
+    'logo': 'https://'+url+'/assets/images/logos/canessa-logo.svg',
+    'name': business+' en Valdemoro, Madrid',
     'description':
-    'Peluquería canina Canessa realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30',
+    business+' realiza sus servicios profesionales con la mejor atención y el mínimo estrés para tu amigo peludo. 91 248 04 30',
     'telephone': '+34 91 248 04 30',
     'email': email,
     'currenciesAccepted': 'EUR',
     'paymentAccepted': 'Efectivo, tarjeta de crédito, Cash, Credit Card',
     'priceRange': 'Desde 10€',
-    'image': 'https://peluqueriacanessa.com/peluqueria-canina-canessa-valdemoro-servicios.jpg',
+    'image': 'https://'+url+'/peluqueria-canina-canessa-valdemoro-servicios.jpg',
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+34 91 248 04 30",
