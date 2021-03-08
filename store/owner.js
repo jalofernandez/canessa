@@ -58,7 +58,7 @@ export const state = () => ({
       "ratingValue": "5",
       "bestRating": "5",
       "worstRating": "5",
-      "ratingCount": "685"
+      "ratingCount": "704"
    },
    "openingHoursSpecification": [
       {
