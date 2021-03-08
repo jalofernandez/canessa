@@ -12,7 +12,7 @@ export const state = () => ({
   phone: 912480430,
   author: 'jalofernandez',
   currentYear: new Date().getFullYear(),
-  version: '2.0.2',
+  version: '2.0.3',
   partner: 'haztunegociodigital',
   schema: {
     '@context': 'http://schema.org',
