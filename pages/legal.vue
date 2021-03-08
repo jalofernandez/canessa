@@ -205,7 +205,7 @@
               </a>
             </p>
             <p class="block">
-              Ademnás, como "usuario" <b>responderás de la autenticidad de los datos que nos facilites</b> y nosotros, como responsables
+              Además, como "usuario" <b>responderás de la autenticidad de los datos que nos facilites</b> y nosotros, como responsables
               de <span class="has-text-primary">{{ owner.copyright }}</span>, nos reservamos el derecho a excluir de los
               servicios prestados en este sitio web a todo "usuario" que haya mentido facilitando datos falsos o suplantaciones indebidas.
             </p>
@@ -1134,7 +1134,44 @@ export default {
         { rel: 'canonical', hid: 'canonical', href: canonical },
         { rel: 'alternate', hid: 'alternate', href: canonical+'/#!' },
         { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
-      ]
+        {
+          rel: "dns-prefetch",
+          href: "//support.google.com/chrome/answer/95647?hl=es&hlrm=en",
+        },
+        {
+          rel: "dns-prefetch",
+          href:
+            "//support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-10",
+        },
+        {
+          rel: "dns-prefetch",
+          href:
+            "//support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&redirectslug=Cookies",
+        },
+        {
+          rel: "dns-prefetch",
+          href: "//support.apple.com/es-es/guide/safari/sfri11471/mac",
+        },
+        {
+          rel: "dns-prefetch",
+          href: "//help.opera.com/en/latest/web-preferences/#cookies",
+        },
+        {
+          rel: "dns-prefetch",
+          href:
+            "//support.google.com/chrome/answer/114662?hl=es&visit_id=637387185293136031-776021146&rd=1",
+        },
+        { rel: "dns-prefetch", href: "//support.apple.com/es-es/HT201265" },
+        {
+          rel: "dns-prefetch",
+          href:
+            "//support.microsoft.com/es-es/help/4036480/windows-phone-8-1-end-of-support-faq",
+        },
+        {
+          rel: "dns-prefetch",
+          href: "//help.opera.com/en/latest/web-preferences/",
+        },
+      ],
     }
   },
   // mounted() {
