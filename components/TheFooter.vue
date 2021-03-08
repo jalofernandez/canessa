@@ -123,7 +123,7 @@
               En colaboración con:
             </small>
             <br v-if="$mq == 'mobile'"/>
-            <small :class="`${owner.partner}`">
+            <small :class="`has-text-success ${owner.partner}`">
               #<b>HazTuNegocioDigital</b>
             </small>
           </a>
