@@ -52,9 +52,9 @@ export default {
         subtitle:
           'Trabajamos con las <span class="has-text-weight-bold">mejores marcas</span> para alimentar a tu mejor amigo',
         img: {
-          src: 'advance-logo.png',
-          width: 200,
-          height: 77
+          src: 'affinity-petcare-logo.png',
+          width: 90,
+          height: 90
         }
       },
       piensos: {
