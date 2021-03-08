@@ -8,9 +8,9 @@ $fucsia: #ff4081 // Canessa brand main color
 $pink-light: #ffd9f0
 $color-main: $fucsia
 $color-secondary: #039be5
-$color-text: rgb(74,74,74)
-$color-dark: rgb(15,18,30)
-$color-dark-opacity: rgba($color-dark,.9)
+$color-text: #2f3754 // dark Navy Blue instead Grey ones as hsl(0, 0%, 33%) or rgb(74,74,74)
+$color-dark: $color-text // rgb(15,18,30)
+$color-dark-opacity: rgba(rgb(15,18,30),.9)
 $backdrop: saturate(180%) blur(3px) // in modern browsers only
 $paper: url(~assets/images/bg/paper.png) center repeat
 $mascotactiva: #f7e100
@@ -29,9 +29,13 @@ $white-ter: hsl(0, 0%, 93%)
 $black-bis: hsl(0, 0%, 7%)
 $turquoise: $color-main
 $yellow: $mascotactiva
+$dark: $color-dark
+$grey-dark: $color-dark
+$grey-darker: $color-dark
 $has-text-primary: $color-main
 $has-text-link: $color-secondary
 $has-text-warning: $yellow
+$has-text-grey-darker: $color-dark
 
 $navbar-background-color: $color-dark-opacity
 $navbar-item-color: $white-ter
@@ -51,6 +55,8 @@ $modal-card-head-background-color: transparent
 $modal-card-body-background-color: transparent
 $modal-card-head-border-bottom: 1px solid transparent
 $modal-card-foot-border-top: 1px solid transparent
+
+$box-color: $color-text
 
 $footer-background-color: transparent
 

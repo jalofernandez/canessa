@@ -11,7 +11,7 @@ html, body
   
 body
   font-family: 'Roboto', sans-serif
-  color: hsl(0, 0%, 40%)
+  color: $color-text
 
 .canessa
   background: $paper
@@ -321,6 +321,10 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 
 .has-text-primary .th-quote .mdi::before
   color: $color-main
+
+.content table thead td,
+.content table thead th
+  color: $color-text
 
 // PAGES custom styles
 .index
