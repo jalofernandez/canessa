@@ -394,25 +394,24 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
     @media screen and (max-width: 600px)
       font-size: 1rem
 
+
+.jalofernandez
+  color: $jalofernandez
+
+.haztunegociodigital
+  color: $haztunegociodigital
+
 .author
   transition: all .15s ease
-  &.jalofernandez,
-  .jalofernandez
+  &.jalofernandez
     color: $jalofernandez
-  &.haztunegociodigital,
-  .haztunegociodigital
+  &.haztunegociodigital
     color: $haztunegociodigital
   @media (hover: hover)
     &:hover, &:focus
-      &.jalofernandez,
-      .jalofernandez
-        color: darken($jalofernandez, 15%)
-      &.haztunegociodigital,
-      .haztunegociodigital
-        color: darken($haztunegociodigital, 8%)
-      span:not(.has-text-grey-darker),
-      small:not(.has-text-grey-darker)
-        text-decoration: underline
+      span, small
+        &:not(.has-text-grey-darker)
+          text-decoration: underline
 
 // IMP! The following code works in DEV (run dev) but not in PRO (run build)
 // common FOOTER last block with project info
