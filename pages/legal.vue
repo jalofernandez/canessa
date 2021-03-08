@@ -581,7 +581,7 @@
         <article id="section-cookies" class="container cookies mb-6">
           <div class="content">
             <TitleItem :title="sections[3].name" />
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-3">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-3">
               Es necesario informar sobre las cookies porque...
             </h5>
             <p class="block">
