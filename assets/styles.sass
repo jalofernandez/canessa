@@ -396,15 +396,19 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 
 .author
   transition: all .15s ease
-  &.jalofernandez, .jalofernandez
+  &.jalofernandez,
+  .jalofernandez
     color: $jalofernandez
-  &.haztunegociodigital, .haztunegociodigital
+  &.haztunegociodigital,
+  .haztunegociodigital
     color: $haztunegociodigital
   @media (hover: hover)
     &:hover, &:focus
-      &.jalofernandez, .jalofernandez
-      color: darken($jalofernandez, 15%)
-      &.haztunegociodigital, .haztunegociodigital
+      &.jalofernandez,
+      .jalofernandez
+        color: darken($jalofernandez, 15%)
+      &.haztunegociodigital,
+      .haztunegociodigital
         color: darken($haztunegociodigital, 8%)
       span:not(.has-text-grey-darker),
       small:not(.has-text-grey-darker)
