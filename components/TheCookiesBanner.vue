@@ -23,7 +23,7 @@
               <span v-if="!scrolling">Sólo usamos <b>cookies</b> de analítica. Puedes gestionarlas </span>
               <span v-else>🍪 &nbsp;Ver <b>cookies</b> </span>
               <NuxtLink
-                class="has-underline"
+                class="has-text-link has-underline"
                 :to="{ path: '/legal', hash:'#section-cookies'}"
                 :title="`Ver y gestionar cookies de ${owner.copyright}`"
               >

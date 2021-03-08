@@ -280,7 +280,7 @@
             </h3>
             <p class="block">
               Como "usuario" puedes ejercer los derechos que se detallan a continuación ante el "prestador" a través de la
-              <NuxtLink to="/contacto" class="has-underline pr-1" :title="`Ir a la página de contacto de #${owner.name}`">
+              <NuxtLink to="/contacto" class="has-text-link has-underline pr-1" :title="`Ir a la página de contacto de #${owner.name}`">
                 <span>página de contacto</span> </NuxtLink>
               o bien a la dirección de correo electrónico:
               <a
@@ -850,7 +850,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Qué cookies usa Google Analytics en el navegador del visitante"
-                class="level-item analytics"
+                class="level-item has-text-link analytics"
               >
                 <span class="icon-text">
                   <span class="icon">
@@ -864,7 +864,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Qué cookies usa Facebook en el navegador del visitante"
-                class="level-item facebook"
+                class="level-item has-text-link facebook"
               >
                 <span class="icon-text">
                   <span class="icon">
@@ -878,7 +878,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Qué cookies usa Fullstory en el navegador del visitante"
-                class="level-item fullstory"
+                class="level-item has-text-link fullstory"
               >
                 <span class="icon-text">
                   <span class="icon">
@@ -892,7 +892,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Qué cookies usa Hubspot en el navegador del visitante"
-                class="level-item hubspot"
+                class="level-item has-text-link hubspot"
               >
                 <span>
                   <span class="icon">
@@ -920,7 +920,7 @@
             <nav class="level">
               <a
                 href="https://support.google.com/chrome/answer/95647?hl=es&hlrm=en"
-                class="level-item chrome"
+                class="level-item has-text-link chrome"
                 title="Como bloquear o eliminar las cookies instaladas por #HazTuNegocioDigital en tu navegador Chrome"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -934,7 +934,7 @@
               </a>
               <a
                 href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-10"
-                class="level-item explorer"
+                class="level-item has-text-link explorer"
                 title="Como bloquear o eliminar las cookies instaladas por #HazTuNegocioDigital en tu navegador Explorer"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -948,7 +948,7 @@
               </a>
               <a
                 href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&redirectslug=Cookies"
-                class="level-item firefox"
+                class="level-item has-text-link firefox"
                 title="Como bloquear o eliminar las cookies instaladas por #HazTuNegocioDigital en tu navegador Firefox"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -962,7 +962,7 @@
               </a>
               <a
                 href="https://support.apple.com/es-es/guide/safari/sfri11471/mac"
-                class="level-item safari"
+                class="level-item has-text-link safari"
                 title="Como bloquear o eliminar las cookies instaladas por #HazTuNegocioDigital en tu navegador Safari"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -976,7 +976,7 @@
               </a>
               <a
                 href="https://help.opera.com/en/latest/web-preferences/#cookies"
-                class="level-item opera"
+                class="level-item has-text-link opera"
                 title="Como bloquear o eliminar las cookies instaladas por #HazTuNegocioDigital en tu navegador Opera"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1004,7 +1004,7 @@
             <nav class="level">
               <a
                 href="https://support.google.com/chrome/answer/114662?hl=es&visit_id=637387185293136031-776021146&rd=1"
-                class="level-item chrome"
+                class="level-item has-text-link chrome"
                 title="Como cambiar los permisos y el almacenamiento de datos en todos los sitios web que has visitado en Chrome Mobile"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1018,7 +1018,7 @@
               </a>
               <a
                 href="https://support.apple.com/es-es/HT201265"
-                class="level-item ios"
+                class="level-item has-text-link ios"
                 title="Como cambiar los permisos y el almacenamiento de datos en todos los sitios web que has visitado en Apple iOS"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1032,7 +1032,7 @@
               </a>
               <a
                 href="https://support.microsoft.com/es-es/help/4036480/windows-phone-8-1-end-of-support-faq"
-                class="level-item windows"
+                class="level-item has-text-link windows"
                 title="Como cambiar los permisos y el almacenamiento de datos en todos los sitios web que has visitado en Windows Phone"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1046,7 +1046,7 @@
               </a>
               <a
                 href="https://help.opera.com/en/latest/web-preferences/"
-                class="level-item opera"
+                class="level-item has-text-link opera"
                 title="Como cambiar los permisos y el almacenamiento de datos en todos los sitios web que has visitado en Opera Mobile"
                 target="_blank"
                 rel="noopener noreferrer"
