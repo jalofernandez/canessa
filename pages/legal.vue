@@ -210,9 +210,9 @@
               servicios prestados en este sitio web a todo "usuario" que haya mentido facilitando datos falsos o suplantaciones indebidas.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Finalidades, tratamiento y conservación
-            </h3>
+            </h5>
             <p class="block">
               Este sitio web, <span class="has-text-primary">{{ owner.copyright }}</span>, no recaba datos de caracter personal a parte de los
               proporcionados directamente por el propio "usuario". Como ya mencianamos anteriormente, cualquier dato de carácter personal 
@@ -267,17 +267,17 @@
               </table>
             </div>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Transferencias internacionales
-            </h3>
+            </h5>
             <p class="block">
               Informarte que, por seguridad, tus datos son tratados en España y las aplicaciones son realizadas por
               proveedores de desarrollo de software certificados, por todos conocidos y con seguridad garantizada.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Derechos de los usuarios
-            </h3>
+            </h5>
             <p class="block">
               Como "usuario" puedes ejercer los derechos que se detallan a continuación ante el "prestador" a través de la
               <NuxtLink to="/contacto" class="has-text-link has-underline pr-1" :title="`Ir a la página de contacto de #${owner.name}`">
@@ -376,9 +376,9 @@
               propios o contratados por el "prestador", de otros usuarios o de cualquier "usuario" de Internet.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Responsabilidad
-            </h3>
+            </h5>
             <p class="block">
               El "prestador" NO será responsable de los comentarios y opiniones vertidas por los "usuarios" o terceras personas ajenas a 
               <span class="has-text-primary">{{ owner.copyright }}</span> a través de redes sociales, blog u otras herramientas de participación.
@@ -428,9 +428,9 @@
               organización que imposibiliten el acceso a este sitio web.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Medidas de seguridad
-            </h3>
+            </h5>
             <p class="block">
               Cualquier dato personal que facilites al "prestador" puede ser almacenado en bases de datos, cuya titularidad
               corresponde en exclusiva al "prestador" pero que se prestan a través de un tercero, siempre un proveedor de servicios
@@ -447,9 +447,9 @@
               evitar la presencia de estos elementos dañinos.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Enlaces de interés a otros sitios Web
-            </h3>
+            </h5>
             <p class="block">
               El "prestador" puede proporcionarle acceso a sitios web de terceros mediante enlaces con la finalidad de
               informar sobre la existencia de otras fuentes de información en Internet en las que podrá ampliar los datos o servicios ofrecidos en el sitio web.
@@ -470,9 +470,9 @@
               <em>política de privacidad</em> propia del otro sitio web que visite pudiendo ser esta muy diferente a la de este sitio web.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Contratación de terceros
-            </h3>
+            </h5>
             <p class="block">
               El "prestador" podrá
               <b>contratar y/o subcontratar con terceras entidades</b> todo lo que estime oportuno en relación con la
@@ -481,9 +481,9 @@
               consecuencia, interrumpir el acceso al mismo para realizar las tareas contratadas.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Propiedad intelectual
-            </h3>
+            </h5>
             <p class="block">
               Este sitio web, <span class="has-text-primary">{{ owner.copyright }}</span>, incluyendo a título enunciativo pero no limitativo su codificación, edición,
               compilación y demás elementos necesarios para su funcionamiento, así como los diseños, logotipos, imagen corporativa, fotografías, vídeos, textos y gráfismos
@@ -520,18 +520,18 @@
               </a>
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Derecho de exclusión
-            </h3>
+            </h5>
             <p class="block">
               El "prestador" se reserva el derecho a impedir o denegar el acceso a <span class="has-text-primary">{{ owner.copyright }}</span>, este sitio web
               y los porductos y servicios ofrecidos en ambos sin necesidad de preaviso, a instancia propia o de un tercero, a aquellos "usuarios"
               que incumplan cualquiera de las condiciones del presente <em>aviso legal</em>.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Jurisdicción
-            </h3>
+            </h5>
             <p class="block">
               Este <em>aviso legal</em> se rige íntegramente por la <b>legislación española</b>.
             </p>
@@ -542,17 +542,17 @@
             </p>
 
             <!-- INFO: incorporar cuando haya productos o servicios por los que cobrar €!!
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Condiciones de Venta
-            </h3>
+            </h5>
             <p class="block">
               En este apartado detallarás los pasos que debe realizar el "usuario" para completar una compra y las condiciones a las que ha de someterse.
             </p>-->
 
             <!-- INFO: incorporar cuando haya programas de afiliación, y/o anuncios patrocinados €!!
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Enlaces de Afiliados y anuncios patrocinados
-            </h3>
+            </h5>
             <p class="block">
               El sitio Web ofrece contenidos patrocinados, anuncios y/o enlaces de afiliados.
             </p>
@@ -560,9 +560,9 @@
               La información que aparece en estos enlaces de afiliados o los anuncios insertados, son facilitados por los propios anunciantes, por lo que "prestador" no se hace responsable de posibles inexactitudes o errores que pudieran contener los anuncios, ni garantiza en modo alguno la experiencia, integridad o responsabilidad de los anunciantes o la calidad de sus productos y/o servicios.
             </p>-->
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Contacto
-            </h3>
+            </h5>
             <p class="block">
               Si quieres realizar cualquier comentario o consulta sobre sobre este sitio web, puedes enviar un mensaje de correo electrónico a:
               <a
@@ -583,7 +583,7 @@
             <TitleItem :title="sections[3].name" />
             <h3 class="subtitle is-size-5 is-size-6-mobile mt-3">
               Es necesario informar sobre las cookies porque...
-            </h3>
+            </h5>
             <p class="block">
               ...El reglamento LSSI-CE,
               <a
@@ -600,9 +600,9 @@
               finalidad</b> de cada una de ellas.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Las cookies son...
-            </h3>
+            </h5>
             <p class="block">
               ...Un pequeño fichero que permite que el sitio web por el que está navegando recuerde información sobre su visita. 
               Estas cookies son instaladas en su navegador por cada web con la única finalidad de facilitar su próxima visita y 
@@ -628,9 +628,9 @@
               (<small><em>artículo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico</em></small>).
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Existen 3 clasificaciones por tipo de cookies:
-            </h3>
+            </h5>
             <p class="is-size-6">
               1. Según <b>quién las gestione</b>:
             </p>
@@ -689,9 +689,9 @@
               </p>
             </blockquote>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Aquí sólo utilizamos cookies...
-            </h3>
+            </h5>
             <p class="block">
               ...Para analizar el tráfico y establecer estadísticas de uso. Además, compartimos información sobre el uso que haga del
               sitio web con nuestros partners de redes sociales y análisis web, todos ellos de más que conocidos (Google,
@@ -903,9 +903,9 @@
               </a> -->
             </nav>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Puedes gestionar las cookies...
-            </h3>
+            </h5>
             <p class="block">
               ...En la configuración del navegador de modo que este te notifique antes de que se descargue cookie
               en tu equipo o también puedes adaptar la configuración de forma que el navegador rechace todas las cookies o
@@ -993,9 +993,9 @@
               Ten en cuenta que si eliges bloquear las cookies esto puede afectar al correcto funcionamiento de este sitio web.
             </p>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Cookies en los dispositivos móviles
-            </h3>
+            </h5>
             <p class="block">
               En <span class="has-text-primary">{{ owner.copyright }}</span> también usamos cookies en dispositivos móviles. En este caso los navegadores de
               los dispositivos móviles permiten configurar las opciones o ajustes de privacidad para desactivar o eliminar las cookies.
@@ -1060,9 +1060,9 @@
               </a>
             </nav>
 
-            <h3 class="subtitle is-size-5 is-size-6-mobile mt-5">
+            <h5 class="subtitle is-size-5 is-size-6-mobile mt-5">
               Aceptación de la política de cookies
-            </h3>
+            </h5>
             <p class="block">
               El "usuario", osea usted, <b class="has-text-primary">acepta expresamente</b>,
               por la utilización de este sitio web, el tratamiento de la información
