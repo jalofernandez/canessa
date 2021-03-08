@@ -414,7 +414,7 @@
                 <span class="has-underline">{{ owner.author }}.com</span>
               </a> en colaboración con 
               <a
-                :class="`author ${owner.partner}`"
+                :class="`author ${owner.partner} has-text-success`"
                 :href="`https://${owner.partner}.com`"
                 :title="`${owner.partner}: únete a la transformación digital y aumenta las ventas con tu negocio en internet`"
                 target="_blank"
