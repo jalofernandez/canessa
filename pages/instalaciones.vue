@@ -2,7 +2,6 @@
   <main :class="$route.name">
     <header class="video-header">
       <video
-        id="bgvid"
         :poster="require(`~/assets/videos/afgano.jpg`)"
         :title="`Instalaciones de ${owner.copyright} en Valdemoro, Madrid`" 
         playsinline autoplay muted loop

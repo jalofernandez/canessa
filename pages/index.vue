@@ -1,33 +1,7 @@
 <template>
   <main :class="$route.name">
-    <!-- <section class="hero is-fullheight is-dark is-bold video">
-      <div class="hero-video">
-        <video
-          id="bgvid"
-          :poster="require(`~/assets/videos/afgano.jpg`)"
-          :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
-          playsinline autoplay muted loop
-        >
-          <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="video-header-title">
-            Tu perro merece:
-            <span>{{ owner.copyright }}</span>
-          </h1>
-        </div>
-      </div>
-      <div class="hero-foot">
-        <div class="has-text-centered">
-          // Scroll down arrow here!!
-        </div>
-      </div>
-    </section> -->
     <header class="video-header">
       <video
-        id="bgvid"
         :poster="require(`~/assets/videos/afgano.jpg`)"
         :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
         playsinline autoplay muted loop

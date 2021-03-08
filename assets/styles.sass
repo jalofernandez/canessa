@@ -412,9 +412,11 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
   opacity: 0
 
 // VIDEO section layout
+$height-coverer: 100vh
+
 @mixin coverer
   width: 100vw
-  height: 100vh
+  height: $height-coverer
   position: absolute
   top: 0
   left: 0
@@ -423,7 +425,7 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
   position: absolute
   text-align: center
   width: 100vw
-  height: 100vh
+  height: $height-coverer
   &, video, .viewport-header
     @include coverer
   @media screen and (min-width: 1024px)
@@ -458,11 +460,11 @@ $authors: ("jalofernandez": $jalofernandez,"haztunegociodigital": $haztunegociod
 
 .is-below-video
   position: relative
-  margin-top: 100vh
+  margin-top: $height-coverer
   &::before
     content: ""
     @include coverer
-    top: -100vh
+    top: -$height-coverer
 
 // "ScrollDownItem" layout component
 .mouse-scroll
