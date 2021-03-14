@@ -227,6 +227,11 @@ export default {
     },
   },
 
+  generate: {
+    // subFolders: false,
+    // dir: 'public' // to deploy in Google Firebase ('dist' by default)
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     postcss: {
