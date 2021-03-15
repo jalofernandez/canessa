@@ -15,7 +15,7 @@ A website template with different pages layout based on Canessa pet saloon websi
 - Ofertas (*Discounts*)
 - Blog con algunos artículos (*Blog* with some Post)
 - Sitemap (*Sitemap*)
-- Error (*404*, *500* & *200*)
+- Error (*404* & *500*)
 
 ## Credits and Dependencies
 
