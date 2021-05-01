@@ -16,9 +16,9 @@ export default {
         subtitle: 
           'Sitemap o <span class="has-text-weight-bold">listado de todos los enlaces</span> internos disponibles en este sitio web.',
         img: {
-          src: 'sitemap-dog.svg',
-          width: 300,
-          height: 168
+          src: 'canessa-slash-gafotas.png',
+          width: 200,
+          height: 257
         }
       }
     }

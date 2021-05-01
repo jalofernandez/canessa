@@ -31,9 +31,9 @@ export default {
         subtitle:
           'Parece que <span class="has-text-weight-bold">la página que buscas no existe</span>. <br />¡Lo sentimos! <span class="is-hidden-mobile">Podría ser por alguna de estas causas como...</span>',
         img: {
-          src: '404-dog.svg',
-          width: 200,
-          height: 176
+          src: '404-dog.png',
+          width: 100,
+          height: 100
         }
       },
       tips: [

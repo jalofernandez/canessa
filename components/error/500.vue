@@ -30,7 +30,11 @@ export default {
         title: '🔥 Internal Server Error 🔥',
         subtitle:
           'Parece que ha sucedido un <span class="has-text-weight-bold">error al intentar acceder al servidor</span>. <br />¡Lo sentimos! <span class="is-hidden-mobile">Prueba alguna de estas formas para solucionar este error...</span>',
-        img: null
+        img: {
+          src: '404-dog.png',
+          width: 100,
+          height: 100
+        }
       },
       tips: [
         { title: '...Recargar la página con F5 o cntrl + R.' },
