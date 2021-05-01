@@ -51,22 +51,13 @@ export default {
           reflected: true
         },
         {
-          title: 'Paseamos y entrenamos a tu mascota',
-          description: 'Servicio exclusivo de: guardería canina, paseos relajantes, entrenamiento físico, adiestramiento y gestión emocional por <b>Rafa Cros</b>, nuestro especialista en </b>psicología y entrenamiento canino</b>.' + closeQuote,
-          link: 'Servicios de Mascotactiva',
-          to: 'mascotactiva',
-          img: this.$route.name + '/paseador-canino-mascotactiva-peluqueria-canina-canessa.jpg',
-          alt: 'Psicología y entrenamiento canino de Mascotactiva en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: false
-        },
-        {
           title: 'Vanessa Vizcaya: Canessa',
           description: 'Tras <b>' + this.yearsOfExperience(2009) + ' años de experiencia</b> y formación continuada, Canessa asume la dirección y gerencia de su propio salón de peluquería canina en la localidad madrileña de Valdemoro para poder seguir desarrollándose en su pasión por la belleza animal...' + closeQuote,
           link: 'Saber más sobre mi',
           to: 'vanessavizcaya',
           img: this.$route.name + '/vanessa-vizcaya-peluqueria-canina-canessa.jpg',
           alt: 'Más sobre ' + this.$store.state.owner.name + ' en' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: true
+          reflected: false
         },
       ]
     }

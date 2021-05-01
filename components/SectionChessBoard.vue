@@ -29,15 +29,15 @@
               <i class="mdi mdi-arrow-right"></i>
             </span>
           </NuxtLink>
-          <!-- (pages) MASCOTACTIVA / VANESSA -->
+          <!-- (pages) VANESSA -->
           <a
             :class="['th-link', { 'is-size-6-mobile': $mq == 'mobile' }]"
             :href="block.href"
             :title="`${block.link} en ${owner.copyright}`"
             rel="noopener noreferrer"
-            v-if="page == 'vanessavizcaya' || page == 'mascotactiva'"
+            v-if="page == 'vanessavizcaya'"
           >
-            {{ block.link }}: <span v-if="page == 'vanessavizcaya'">91 248 04 30</span><span v-if="page == 'mascotactiva'">636 515 206</span>
+            {{ block.link }}: <span>91 248 04 30</span>
             <span class="icon">
               <i class="mdi mdi-arrow-right"></i>
             </span>

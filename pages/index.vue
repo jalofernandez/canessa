@@ -335,20 +335,12 @@ export default {
           reflected: true
         },
         {
-          description: 'Además tenemos servicios de <b>guardería canina</b>, gestión emocional, <b>paseos</b> relajantes o <b>entrenamiento</b> físico de sus <em class=”has-line-through”>mascotas</em> amigos caninos a través de nuestro compañero <em>Rafael Cros</em> y su servicio exclusivo: <b>Mascotactiva</b>.',
-          link: 'Saber más de Mascotactiva',
-          to: 'mascotactiva',
-          img: 'paseador-canino-mascotactiva-peluqueria-canina-canessa.jpg',
-          alt: 'Mascotactiva en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: false
-        },
-        {
           description: 'Disponemos de <b>tienda</b> física dentro de nuestras instalaciones de peluquería canina donde adquirir <b>pienso</b> (trabajamos con <em>Affinity</em>, <em>Libra</em>, <em>Pedigree</em>...), chuches y recompensas, productos de higiene animal, <b>antiparasitarios</b>, arneses, correas, camas, juguetes, trajecitos y abrigos…',
           link: 'Ver alimentación y complementos',
           to: 'piensos',
           img: 'affinity-piensos-peluqueria-canina-canessa.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: true
+          reflected: false
         },
         {
           description: 'Como nuestros fieles amigos caninos no merecen menos, las <b>instalaciones</b> de Peluquería canina Canessa están convenientemente adaptadas para garantizar la <b>mejor calidad</b> de servicio gracias a nuestros <b>productos y equipo de primeras marcas</b>: mesas y bañeras hidráulicas, tijeras de acero suizo, expulsadores de aire de última generación, ionizador de aire para desinfección ambiental...',
@@ -356,7 +348,7 @@ export default {
           to: 'instalaciones',
           img: 'equipo-profesional-peluqueria-canina-canessa.jpg',
           alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: false
+          reflected: true
         },
         {
           description: 'Vanessa tiene algo especial con todos los animales. Un vínculo emocional único con el que transmite paz y relax a todos sus clientes peludos. Gracias a juegos para positivizar <b>consigue que las sesiones de peluquería canina sean divertidas</b> para cualquier <em class=”has-line-through”>mascota</em> animal. Como profesional cuenta con ' + this.yearsOfExperience(2009) + ' años de experiencia en el sector.',
@@ -364,7 +356,7 @@ export default {
           to: 'vanessavizcaya',
           img: 'vanessa-vizcaya-dogs-lover-peluqueria-canina-canessa.jpg',
           alt: 'Secado en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: true
+          reflected: false
         },
       ]
     }

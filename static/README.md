@@ -7,7 +7,6 @@ A website template with different pages layout based on Canessa pet saloon websi
 - Peluquería (*Grooming*)
 - Antiparasitarios (*Antiparasitic*)
 - Piensos (*Feed*)
-- Mascotactiva (*Mascotactiva*)
 - Instalaciones (*Facilities*)
 - Sobre Vanessa (*About Vanessa*)
 - Legal (*Legal*)
