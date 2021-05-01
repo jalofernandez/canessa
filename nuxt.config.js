@@ -143,12 +143,19 @@ export default {
     '@nuxtjs/gtm',
     // https://www.npmjs.com/package/nuxt-purgecss
     "nuxt-purgecss",
+    // https://firebase.nuxtjs.org/guide/getting-started
+    '@nuxtjs/firebase',
     // https://www.npmjs.com/package/@nuxtjs/robots
     '@nuxtjs/robots',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
     // IMP!: always declare the sitemap module at end of array
     '@nuxtjs/sitemap',
   ],
+
+  env: {
+    VUE_APP_FIREBASE_KEY: process.env.VUE_APP_FIREBASE_KEY,
+    // VUE_GTM_ID: process.env.VUE_GTM_ID,
+  },
 
   webfontloader: {
     google: {
@@ -194,8 +201,30 @@ export default {
     },
   },
 
+  firebase: {
+    // See your own config here:
+    // https://console.firebase.google.com/project/<your-project-id>/overview
+    config: {
+      apiKey: process.env.VUE_APP_FIREBASE_KEY,
+      authDomain: 'canessa-722eb.firebaseapp.com',
+      databaseURL: 'https://canessa-722eb.firebaseio.com',
+      projectId: 'canessa-722eb',
+      storageBucket: 'canessa-722eb.appspot.com',
+      messagingSenderId: '662475422899',
+      appId: '1:662475422899:web:5f97f12cb9c9803c1804c6',
+      measurementId: '', // Google Analytics ID  
+    },
+    services: {
+      auth: true, // Just as example. Can be any other service.
+      firebase: true,
+      storage: true,
+      database: true,
+    }
+  },
+
   gtm: {
     id: 'GTM-54RWXDW',
+    // id: process.env.VUE_GTM_ID,
     enabled: true,
     scriptDefer: true,
     pageTracking: true,
