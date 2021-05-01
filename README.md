@@ -53,7 +53,7 @@ $ npm run start
 $ npm run generate
 
 # deploy static project into Firebase
-$ firebase deploy --project <alias_or_project_id>
+$ firebase deploy --project <alias_or_project_id> --message <if-you-want-a-msg>
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
