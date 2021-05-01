@@ -17,6 +17,13 @@
         ]
       }
     ],
+    "redirects": [
+      {
+        "source": "/mascotactiva",
+        "destination": "/servicios",
+        "type": 301
+      }
+    ],
     "cleanUrls": true,
     "trailingSlash": false
   }
