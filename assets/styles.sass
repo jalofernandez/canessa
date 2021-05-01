@@ -173,10 +173,6 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
 
 .th-margin
   margin-bottom: 3rem
-  @media (max-width: 768px) and (min-width: 600px)
-    margin-bottom: 1.5rem
-  @media (max-width: 599px)
-    margin-bottom: 0
 
 .th-link
   display: inline-block
@@ -184,14 +180,10 @@ $brands: ("whatsapp": $whatsapp, "instagram": $instagram, "facebook": $facebook,
   color: #039be5
   position: relative
   pointer-events: auto
-
   white-space: nowrap
   align-self: flex-start
   line-height: 40px
   margin-top: auto
-  // to apply when layout changed from columns to rows
-  @media screen and (max-width: 799px)
-    margin-top: 20px
   
   .mdi
     padding-left: 5px
