@@ -188,7 +188,6 @@ export default {
       short_name: 'canessa',
       description: description,
       // start_url: 'index.html?launcher=true', // value by default ("/?standalone=true")
-      lang: 'es', 
       // display: 'standalone', // value by default
       background_color: '#111111',
       theme_color: '#ff4081',
