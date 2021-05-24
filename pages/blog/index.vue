@@ -38,7 +38,7 @@
                     :src="require(`~/assets/images/blog/${article.img}`)"
                     :title="article.title"
                     :alt="article.title"
-                  >
+                  />
                 </picture>
               </figure>
             </div>
@@ -68,7 +68,7 @@
               </div>
               <div class="content has-text-dark">
                 {{ article.description }}...
-                <br />
+                <br/>
                 <div class="button is-small is-text">
                   <span class="icon">
                     <i class="mdi mdi-plus"></i>

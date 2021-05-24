@@ -12,7 +12,7 @@
               :title="`Aviso de cookies en ${owner.copyright}`"
               width="64"
               height="64"
-            >
+            />
           </picture>
         </p>
       </figure>

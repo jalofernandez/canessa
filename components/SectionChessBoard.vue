@@ -56,7 +56,7 @@
                 :alt="block.alt"
                 width="200"
                 height="200"
-              >
+              />
             </picture>
           </figure>
         </div>

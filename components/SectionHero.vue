@@ -15,7 +15,7 @@
             :alt="`${hero.title} de ${owner.nickname}, Valdemoro, Madrid`"
             :width="hero.img.width"
             :height="hero.img.height"
-          >
+          />
         </picture>
         <!-- (main) TITLE -->
         <h1

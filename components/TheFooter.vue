@@ -17,7 +17,7 @@
             :title="`Creatividad de ${owner.nickname} en Valdemoro, Madrid`"
             width="200"
             height="67"
-          >
+          />
         </picture>
       </div>
       <div class="columns">
@@ -141,7 +141,7 @@
                   :alt="`Icono de ${item}`"
                   width="24"
                   height="24"
-                >
+                />
               </figure>
             </li>
           </ul>

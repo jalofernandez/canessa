@@ -23,7 +23,7 @@
       <div id="section-cta" class="box cta is-radiusless">
         <h2 class="is-size-5 is-size-6-mobile has-text-centered">
           Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. 
-          <br class="is-hidden-touch" />Así lo demuestran las <b class="has-text-primary">{{ reviews.totalReviewCount }}</b> <b>opiniones de nuestros clientes</b>:
+          <br class="is-hidden-touch"/>Así lo demuestran las <b class="has-text-primary">{{ reviews.totalReviewCount }}</b> <b>opiniones de nuestros clientes</b>:
         </h2>
       </div>
 
@@ -41,7 +41,7 @@
                   :alt="`Foto de usuario de Google de: ${review.name}`"
                   width="32"
                   height="32"
-                >
+                />
               </picture>
             </p>
           </figure>
@@ -49,11 +49,11 @@
             <div class="content">
               <p>
                 <b>{{ review.name }}</b>
-                <br>
+                <br/>
                 <span class="icon has-text-warning" v-for="item in review.starRating">
                   <i class="mdi mdi-18px mdi-star"></i>
                 </span>
-                <br>
+                <br/>
                 <small>{{ review.comment }}</small>
               </p>
             </div>
@@ -120,7 +120,7 @@
                 'has-text-centered'
               ]"
             >
-              Nuestros clientes nos avalan por <br class="is-hidden-mobile" />cortes profesionales como estos:
+              Nuestros clientes nos avalan por <br class="is-hidden-mobile"/>cortes profesionales como estos:
             </h3>
             <BoxItem class="is-small-grid" :items="doggies" :page="$route.name" />
           </div>
@@ -173,7 +173,7 @@
                       :alt="block.alt"
                       width="200"
                       height="200"
-                    >
+                    />
                   </picture>
                 </figure>
               </div>

@@ -85,7 +85,7 @@ export default {
         //   reflected: true
         // },
       ],
-      ctaBox: 'Instalaciones y equipo profesional de primera para realizar nuestros servicios de peluquería y estética canina <br class="is-hidden-touch" /> con la <b>mayor eficacia</b>, <b>menor estrés</b> y <b>mejor comodidad</b> para tu amigo peludo'
+      ctaBox: 'Instalaciones y equipo profesional de primera para realizar nuestros servicios de peluquería y estética canina <br class="is-hidden-touch"/> con la <b>mayor eficacia</b>, <b>menor estrés</b> y <b>mejor comodidad</b> para tu amigo peludo'
     }
   },
   head() {

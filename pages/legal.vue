@@ -1089,7 +1089,7 @@ export default {
       hero: {
         title: 'Aviso legal',
         subtitle: 
-          'El siguiente aviso legal informa sobre <span class="has-text-weight-bold">las condiciones de uso del presente sitio web</span>. <br class="is-hidden-touch" />Léelos detenidamente, por favor. Intentaremos ser breves y usar un lenguaje claro.',
+          'El siguiente aviso legal informa sobre <span class="has-text-weight-bold">las condiciones de uso del presente sitio web</span>. <br class="is-hidden-touch"/>Léelos detenidamente, por favor. Intentaremos ser breves y usar un lenguaje claro.',
         img: {
           src: 'canessa-slash-gafotas.png',
           width: 200,

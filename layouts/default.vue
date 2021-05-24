@@ -19,7 +19,7 @@
             :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
             width="132"
             height="40"
-          >
+          />
         </NuxtLink>
       </div>
       <div class="navbar-end">
@@ -46,7 +46,7 @@
             >
               {{ item.name }}
             </NuxtLink>
-            <hr class="navbar-divider">
+            <hr class="navbar-divider"/>
             <a class="navbar-item">
               <small>Version <b>{{ owner.version }}</b></small>
             </a>
@@ -68,7 +68,7 @@
           :title="`Logotipo de ${owner.nickname} en Valdemoro, Madrid`"
           width="99"
           height="30"
-        >
+        />
         <a
           class="aside-rrss facebook"
           href="https://www.facebook.com/Peluqueria-Canina-Canessa-113194982084561/"

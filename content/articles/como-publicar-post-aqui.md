@@ -11,7 +11,7 @@ author:
 
 Si te gusta escribir o tratar temas del mundo animal en general o concretamente del reino canino y felino, <b>puedes remitirnos artículos y reportajes originales</b> que versen sobre ello. Puedes tratar cualquier tema de interés sobre animales: <em>los cuidados que necesitan, sus manías, anécdotas, historias divertidas...</em> Siempre desde la veracidad y el respeto, claro. Nos reservamos el "derecho de admisión" así que si nos mandas contenido inapropiado lo ignoraremos. Así que ya sabes, anímate y <b>mándanos contenido propio y tus datos para la ficha de autor</b> y lo publicaremos en este blog de <span class="has-text-primary">Peluquería canina Canessa</span>. 🙅‍♀️
 
-<br>
+<br/>
 
 ##### Datos que necesitamos que nos remitas:
 
@@ -20,7 +20,7 @@ Si te gusta escribir o tratar temas del mundo animal en general o concretamente 
 - 👤 <b>Nombre</b> completo con el que queréis aparecer. Puede ser pseudónimo, mote o alias, allá cada uno.
 - 🕶 <b>Frase</b> que queréis que aparezca junto a vuestro nombre: <em>título profesional, pseudónimo, coletilla...</em>
 
-<br>
+<br/>
 
 ##### Vías de contacto para enviarnoslo todo:
 
@@ -57,6 +57,6 @@ Si te gusta escribir o tratar temas del mundo animal en general o concretamente 
   </div>
 </nav>
 
-<br>
+<br/>
 
 Gracias a todos de antemano y... <b>¡Animaos!</b>

@@ -12,7 +12,7 @@
             :title="item.title"
             width="222"
             height="222"
-          >
+          />
         </picture>
       </figure>
       <p class="is-size-6 block" v-if="item.title">

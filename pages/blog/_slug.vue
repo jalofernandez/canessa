@@ -41,7 +41,7 @@
                   :title="article.alt"
                   :alt="article.alt"
                   v-if="article.img"
-                >
+                />
               </picture>
             </figure>
           </div>
