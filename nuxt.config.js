@@ -9,7 +9,8 @@ export default {
   target: 'static',
   // Isomorphic app (server-side rendering + client-side navigation) not SPA one
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-mode
-  mode: 'universal',
+  mode: 'universal', // deprecated
+  ssr: 'true', // use it instead "mode"
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     htmlAttrs: {
@@ -119,7 +120,10 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://pwa.nuxtjs.org
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    // https://marquez.co/es/docs/nuxt-optimized-images
+    // All image packages: "imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo webp-loader img-loader"
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -136,9 +140,6 @@ export default {
     'nuxt-mq',
     // https://www.npmjs.com/package/vue-scrollto
     'vue-scrollto/nuxt',
-    // https://marquez.co/es/docs/nuxt-optimized-images
-    // All image packages: "imagemin-mozjpeg imagemin-pngquant imagemin-gifsicle imagemin-svgo webp-loader img-loader"
-    '@aceforth/nuxt-optimized-images',
     // https://www.npmjs.com/package/@nuxtjs/gtm
     '@nuxtjs/gtm',
     // https://www.npmjs.com/package/nuxt-purgecss
