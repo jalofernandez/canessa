@@ -25,11 +25,12 @@ HTTP de la preview. Las URLs canónicas siguen apuntando al dominio definitivo.
 
 ```sh
 node scripts/prepare-preview.mjs
-pnpm exec firebase hosting:channel:deploy react-migration --expires 7d --project canessa-722eb --config firebase.preview.json
+pnpm exec firebase hosting:channel:deploy react-migration --expires 7d --project canessa-722eb --config firebase.preview.json --no-authorized-domains
 ```
 
 Este comando publica únicamente un canal temporal. No publica la release live ni
-modifica DNS. `firebase.preview.json` no contiene credenciales y se ignora en Git.
+modifica DNS. La opción --no-authorized-domains evita sincronizar dominios
+con Firebase Auth. `firebase.preview.json` no contiene credenciales y se ignora en Git.
 La preview no debe enlazarse desde la web pública.
 
 Comprobar allí las 15 URLs, 404, redirect heredado, CSP, `X-Robots-Tag: noindex`,

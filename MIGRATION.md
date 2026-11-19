@@ -430,7 +430,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 12. Revisar una preview completa antes del lanzamiento
 
-**Estado:** Revisión local completada; configuración de preview preparada. Publicación del canal temporal y aceptación del propietario pendientes.
+**Estado:** Preview temporal publicada y verificada. Pendiente aceptación del contenido por el propietario.
 
 **Objetivo:** Evaluar la web real en un entorno publicado sin sustituir producción.
 
@@ -682,7 +682,7 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 - Antes de live: aceptación de diseño y textos (incluido Legal), confirmar catálogo/atribuciones que se quieran anunciar, resolver www y validar con perfil que conserve Vue. Analítica permanecerá apagada mientras no se revise GTM/GA4.
 - Search Console/Perfil de Empresa: quedan pendientes de acceso. Tras publicar, reenviar sitemap y comprobar deindexación del bono tras rastreo. El noindex no retira inmediatamente la URL de Google.
 
-### Publicación pendiente de aprobación
+### Publicación pendiente de aprobación — registro histórico
 
 - El repositorio remoto `jalofernandez/canessa` es público. La revisión automática rechazó el push de `migration/react-static` y `legacy/vue-2026-11-19` por falta de aprobación explícita para publicar ese contenido local en un repositorio público. No se ha reintentado ni buscado otra vía de publicación.
 - Se mantienen locales los commits, la CI y la preparación de preview. No se ha publicado un canal Firebase ni se ha alterado live. La aprobación solicitada abarcará las dos ramas y una preview temporal de siete días, nunca la sustitución automática de producción.
@@ -702,3 +702,13 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 - Se detectó que los aliases heredados .html devolvían 404 al generar directorios con index.html. Se conservan los directorios y se añaden redirects 301 explícitos para las 14 rutas no raíz y sus variantes /index.html y /index, además de /index.html y /index de portada. Las rutas desconocidas siguen devolviendo 404.
 - Las comprobaciones HTTP de esos aliases pasan en móvil y escritorio. El SHA-256 confirma que el HTML de la portada sigue siendo el medido por Lighthouse.
 - El commit local de cierre inicial es 57a2b9e; resultados finales y compatibilidad de aliases validados. Publicación remota y preview temporal continúan pendientes de aprobación.
+
+### Publicación de la preview autorizada
+
+- El propietario autoriza publicar ambas ramas en su repositorio público y crear la preview temporal, conservando producción. La aprobación anterior queda resuelta para esas acciones.
+- Preview publicada: https://canessa-722eb--react-migration-5ai9rl00.web.app/ — canal react-migration, versión dbb24b37346b8752; expira el 26/11/2026 a las 15:56 CET.
+- Se utilizó --no-authorized-domains para evitar cambios de configuración de Firebase Auth. Sin cambios DNS ni publicación live.
+- Comprobadas las 15 URLs publicadas, noindex global, CSP, nosniff, 404 y aliases .html. Chromium valida navegación cliente sin recarga, datos de artículos, diálogo y ausencia de errores/peticiones a terceros. Evidencias en quality/preview-validation.json.
+- Producción idéntica antes y después: release 1646319103546244, versión 9f882c141b399c43 (2022).
+- Referencia Vue subida a GitHub: legacy/vue-2026-11-19. La rama React requiere autorizar el scope workflow de GitHub CLI para publicar la CI nueva; autorización iniciada por flujo de dispositivo, pendiente del propietario.
+- Abierto en Visual Studio Code el worktree React y src/app/routes/home.tsx. No se ha cambiado la confianza del workspace ni la configuración de las extensiones.

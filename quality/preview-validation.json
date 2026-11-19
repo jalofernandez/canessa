@@ -1,0 +1,110 @@
+{
+  "preview": "https://canessa-722eb--react-migration-5ai9rl00.web.app",
+  "channel": "react-migration",
+  "previewVersion": "dbb24b37346b8752",
+  "expiresAt": "2026-11-26T14:56:16.190838317Z",
+  "noindex": true,
+  "firebaseAuthDomainsSync": false,
+  "http": {
+    "url": "https://canessa-722eb--react-migration-5ai9rl00.web.app",
+    "routes": [
+      {
+        "path": "/",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/servicios",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/peluqueria",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/contacto",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/instalaciones",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/vanessavizcaya",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/piensos",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/antiparasitarios",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/blog",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/blog/el-gran-reencuentro",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/blog/como-pixar-capta-la-personalidad-animal",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/blog/como-publicar-post-aqui",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/legal",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/sitemap",
+        "status": 200,
+        "noindex": true
+      },
+      {
+        "path": "/bono-canessa-club",
+        "status": 200,
+        "noindex": true
+      }
+    ],
+    "notFound": 404,
+    "htmlAlias": true
+  },
+  "browser": {
+    "url": "https://canessa-722eb--react-migration-5ai9rl00.web.app",
+    "clientNavigation": true,
+    "articleData": true,
+    "cookieDialog": true,
+    "errors": [],
+    "externalRequests": []
+  },
+  "productionBefore": {
+    "release": "sites/canessa-722eb/releases/1646319103546244",
+    "version": "sites/canessa-722eb/versions/9f882c141b399c43",
+    "releaseTime": "2022-03-03T14:51:43.546244501Z"
+  },
+  "productionAfter": {
+    "release": "sites/canessa-722eb/releases/1646319103546244",
+    "version": "sites/canessa-722eb/versions/9f882c141b399c43",
+    "releaseTime": "2022-03-03T14:51:43.546244501Z"
+  },
+  "productionUnchanged": true,
+  "sourceCommit": "2d5ffc16ca9bc4baf5d104c0b60c295724683ab7"
+}
