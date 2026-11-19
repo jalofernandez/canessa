@@ -712,3 +712,11 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 - Producción idéntica antes y después: release 1646319103546244, versión 9f882c141b399c43 (2022).
 - Referencia Vue subida a GitHub: legacy/vue-2026-11-19. La rama React requiere autorizar el scope workflow de GitHub CLI para publicar la CI nueva; autorización iniciada por flujo de dispositivo, pendiente del propietario.
 - Abierto en Visual Studio Code el worktree React y src/app/routes/home.tsx. No se ha cambiado la confianza del workspace ni la configuración de las extensiones.
+
+### Publicación de código y CI autorizadas
+
+- Autorización de GitHub CLI completada con el scope `workflow`. Publicada la rama `migration/react-static` en https://github.com/jalofernandez/canessa/tree/migration/react-static, incluida la CI. La rama `legacy/vue-2026-11-19` también está disponible en remoto.
+- El primer push encontró un corte HTTP. Se resolvió con ajustes de transporte exclusivos del comando, sin cambiar la configuración global de Git.
+- `master` conserva `61a6a25a6f1b9660e8220356a085dc588fe045ab`. No se ha fusionado React ni desplegado producción. La preview temporal sigue siendo el entorno de revisión.
+- La CI se ejecuta en GitHub Actions para esta rama: https://github.com/jalofernandez/canessa/actions/workflows/quality.yml?query=branch%3Amigration%2Freact-static. El resultado remoto debe comprobarse en esa ejecución; las comprobaciones locales anteriores no lo sustituyen.
+- Las 196 alertas anunciadas por GitHub al subir corresponden a la rama predeterminada Vue. La auditoría de dependencias de ejecución de React dio cero avisos; los cuatro moderados de sus herramientas están documentados en `quality/README.md`.
