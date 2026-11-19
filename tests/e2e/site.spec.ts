@@ -153,8 +153,15 @@ test('retires a legacy worker while preserving unrelated caches', async ({ page 
     await page.evaluate(async () => {
       await caches.open('workbox-runtime-' + location.origin + '/');
       await caches.open('unrelated-app-cache');
-      await navigator.serviceWorker.register('/sw.js', { scope: '/' });
     });
+    const beforeUpdate = await page.evaluate(() => performance.timeOrigin);
+    await Promise.all([
+      page.waitForEvent('domcontentloaded'),
+      page.evaluate(async () => {
+        await navigator.serviceWorker.register('/sw.js', { scope: '/' });
+      }),
+    ]);
+    expect(await page.evaluate(() => performance.timeOrigin)).not.toBe(beforeUpdate);
     await expect
       .poll(() =>
         page.evaluate(async () => (await caches.keys()).filter((key) => key.startsWith('workbox-')))
@@ -166,7 +173,6 @@ test('retires a legacy worker while preserving unrelated caches', async ({ page 
         page.evaluate(async () => Boolean(await navigator.serviceWorker.getRegistration('/')))
       )
       .toBe(false);
-    await page.reload();
     await expect(page.getByRole('heading', { level: 1 })).toContainText('feliz');
   } finally {
     await rm(fixture, { force: true });

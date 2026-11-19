@@ -24,36 +24,30 @@ Si te gusta escribir o tratar temas del mundo animal en general o concretamente 
 
 ## Vías de contacto para enviarnoslo todo:
 
-
-  
-    
       <a
         href="https://wa.me/34912480430"
         title="Enviar por WhatsApp un artículo a Peluquería canina Canessa"
         target="_blank"
         rel="noopener noreferrer"
       >
-        
-          
-        
+
+
+
         <b>WhatsApp</b>
       </a>
-    
-  
-  
-    
+
+
+
+
       <a
         href="mailto:van.vizcaya@gmail.com?subject=Articulo%20para%20blog%20de%20Canessa"
         title="Enviar por Email un artículo a Peluquería canina Canessa"
       >
-        
-          
-        
+
+
+
         <b>van.vizcaya@gmail.com</b>
       </a>
-    
-  
-
 
 <br/>
 

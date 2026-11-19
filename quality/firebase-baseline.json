@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-19T11:32:13.403Z",
+  "project": "canessa-722eb",
+  "domains": [
+    {
+      "name": "projects/662475422899/sites/canessa-722eb/customDomains/peluqueriacanessa.com",
+      "hostState": "HOST_ACTIVE",
+      "ownershipState": "OWNERSHIP_ACTIVE",
+      "cert": {
+        "type": "GROUPED",
+        "state": "CERT_ACTIVE",
+        "createTime": "2026-11-08T23:33:50Z",
+        "expireTime": "2027-02-07T00:31:16Z"
+      }
+    }
+  ],
+  "releases": [
+    {
+      "name": "sites/canessa-722eb/releases/1646319103546244",
+      "type": "DEPLOY",
+      "releaseTime": "2022-03-03T14:51:43.546244501Z",
+      "version": "sites/canessa-722eb/versions/9f882c141b399c43",
+      "status": "FINALIZED"
+    },
+    {
+      "name": "sites/canessa-722eb/releases/1619896394656506",
+      "type": "DEPLOY",
+      "releaseTime": "2021-05-01T19:13:14.656506218Z",
+      "version": "sites/canessa-722eb/versions/02543de708fe77f7",
+      "status": "FINALIZED"
+    },
+    {
+      "name": "sites/canessa-722eb/releases/1615805165827599",
+      "type": "DEPLOY",
+      "releaseTime": "2021-03-15T10:46:05.827599463Z",
+      "version": "sites/canessa-722eb/versions/4e43eb392bf26a1e",
+      "status": "FINALIZED"
+    },
+    {
+      "name": "sites/canessa-722eb/releases/1615717908850130",
+      "type": "DEPLOY",
+      "releaseTime": "2021-03-14T10:31:48.850130324Z",
+      "version": "sites/canessa-722eb/versions/fa7c9dbb1ccb5a3a",
+      "status": "FINALIZED"
+    },
+    {
+      "name": "sites/canessa-722eb/releases/1615227125015933",
+      "type": "DEPLOY",
+      "releaseTime": "2021-03-08T18:12:05.015933330Z",
+      "version": "sites/canessa-722eb/versions/54d8f6d24bfacf1a",
+      "status": "FINALIZED"
+    }
+  ]
+}

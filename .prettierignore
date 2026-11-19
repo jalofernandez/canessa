@@ -3,7 +3,6 @@ build
 .react-router
 pnpm-lock.yaml
 public/media
-assets
-content
+src/assets/photos/
 *.code-workspace
 quality/

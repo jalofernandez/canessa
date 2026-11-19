@@ -8,7 +8,7 @@ export default tseslint.config(
   },
   {
     files: ['public/sw.js'],
-    languageOptions: { globals: { self: 'readonly', caches: 'readonly' } },
+    languageOptions: { globals: { self: 'readonly', caches: 'readonly', URL: 'readonly' } },
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,

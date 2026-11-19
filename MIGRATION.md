@@ -136,7 +136,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 **Objetivo:** Conservar el historial y migrar sin sobrescribir el checkout Vue ni perder cambios locales.
 
-**Dependencias:** Requiere fase 1. No se han creado aún commits, ramas, etiquetas ni worktrees.
+**Dependencias:** Requiere fase 1. La referencia y el worktree ya están creados; se conserva el checkout original.
 
 1. Comparar HEAD, los cambios locales y el contenido servido. Revisar especialmente Inicio y Blog; clasificar por separado los 145 cambios de permisos detectados.
 2. Revisar los cambios antes de incluirlos en un commit de referencia. Conservar también AGENTS.md, canessa-stack y este plan para que el worktree herede la guía. Versionar únicamente archivos pertinentes, sin secretos, node_modules, caches ni artefactos generados.
@@ -161,7 +161,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 3. Confirmar contenido del negocio y la situación en Google
 
-**Estado:** Pendiente.
+**Estado:** Parcial: datos y decisiones editoriales confirmados; dominios y release leídos por API. Google/Legal/DNS pendientes.
 
 **Objetivo:** Migrar información vigente y resolver las dependencias externas sin inventar datos.
 
@@ -190,7 +190,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 4. Crear y probar la base React estática
 
-**Estado:** Pendiente.
+**Estado:** Completado: stack fijado, instalación congelada, build estático e hidratación real verificados.
 
 **Objetivo:** Demostrar pronto que el stack acordado puede generar y servir correctamente las URLs.
 
@@ -220,7 +220,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 5. Construir el diseño base y los componentes accesibles
 
-**Estado:** Pendiente.
+**Estado:** Completado localmente: layout, teclado, móvil/tableta/escritorio y comprobaciones automáticas de accesibilidad.
 
 **Objetivo:** Actualizar la experiencia de Canessa con un sistema de UI pequeño y mantenible.
 
@@ -249,7 +249,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 6. Separar datos, migrar contenido y reconstruir las 15 URLs
 
-**Estado:** Pendiente.
+**Estado:** Implementado: 15 URLs y los tres artículos; pendiente aceptación del contenido en preview.
 
 **Objetivo:** Mantener las páginas válidas y mejorar su claridad sin arrastrar la arquitectura Vue.
 
@@ -279,7 +279,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 7. Aplicar SEO técnico y local coherente
 
-**Estado:** Pendiente.
+**Estado:** Implementado y verificado en HTML: metadatos, NAP, Schema, sitemap y noindex del bono. Search Console pendiente.
 
 **Objetivo:** Conservar la capacidad de rastreo y describir correctamente el negocio y sus páginas.
 
@@ -309,7 +309,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 8. Reducir el peso y eliminar los saltos visuales
 
-**Estado:** Pendiente.
+**Estado:** Parcial: tres mediciones preliminares, mediana 95 y CLS 0. Pendiente repetir el artefacto final y medir la versión publicada.
 
 **Objetivo:** Corregir el principal problema medido y dar a la nueva web un presupuesto de rendimiento.
 
@@ -339,7 +339,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 9. Implementar privacidad, medición y límites de seguridad
 
-**Estado:** Pendiente.
+**Estado:** Implementado: sin terceros durante la visita; analítica desactivada. Consentimiento opcional probado, sujeto a revisión de GTM antes de activarlo.
 
 **Objetivo:** Corregir el consentimiento y cargar solo las integraciones necesarias.
 
@@ -369,7 +369,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 10. Preparar Firebase, dominio, caché y transición del service worker
 
-**Estado:** Pendiente.
+**Estado:** Parcial: Hosting local, caché, CSP y worker probados; release live identificada. www requiere corregir DNS de Squarespace y dar de alta el dominio en Hosting.
 
 **Objetivo:** Servir el artefacto estático correcto y evitar que el navegador siga mostrando la versión anterior.
 
@@ -400,7 +400,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 11. Automatizar las comprobaciones y la publicación de previews
 
-**Estado:** Pendiente.
+**Estado:** Comprobaciones locales completadas; CI preparada. Ejecución remota y preview se registran a continuación.
 
 **Objetivo:** Detectar pérdidas de contenido o fallos de funcionamiento antes de publicar.
 
@@ -430,7 +430,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 12. Revisar una preview completa antes del lanzamiento
 
-**Estado:** Pendiente.
+**Estado:** Revisión local completada; configuración de preview preparada. Publicación del canal temporal y aceptación del propietario pendientes.
 
 **Objetivo:** Evaluar la web real en un entorno publicado sin sustituir producción.
 
@@ -459,7 +459,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 13. Publicar y poder volver atrás sin reconstruir Vue
 
-**Estado:** Pendiente.
+**Estado:** Pendiente: no se ha sustituido producción. Requiere revisión de preview y resolver dependencias de lanzamiento.
 
 **Objetivo:** Sustituir la versión pública con una recuperación rápida y conocida.
 
@@ -489,7 +489,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 14. Comprobar resultados y dejar un mantenimiento sencillo
 
-**Estado:** Pendiente.
+**Estado:** Pendiente del lanzamiento; no se ha programado ninguna automatización.
 
 **Objetivo:** Confirmar que la migración conserva captación y puede mantenerse sin otra gran reconstrucción.
 
@@ -646,11 +646,11 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 
 - [AEPD: elección de cookies](https://www.aepd.es/preguntas-frecuentes/17-internet-y-redes-sociales/FAQ-1707-importancia-de-las-cookies-en-la-proteccion-de-datos)
 
-## Registro de preparación
+## Registro histórico de preparación del plan
 
 - Completado: backup completo e integridad verificada; plan detallado y cobertura de los 18 hallazgos.
 
-- Pendiente: rama/worktree, implementación, validación del stack, accesos a Google y cualquier despliegue.
+- En el momento de redactar el plan aún no había rama/worktree ni implementación. El estado actual se registra en cada fase y en Desarrollo.
 
 - No se han cambiado el código Vue, las dependencias ni la configuración de producción durante la preparación del plan.
 
@@ -666,3 +666,33 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 - Datos confirmados por el propietario: C. Vicente Aleixandre, 5, **28342 Valdemoro, Madrid**; 912 48 04 30 y WhatsApp correctos. Lunes/martes 10:00–13:30 y 16:30–20:00; miércoles/jueves/viernes 10:30–13:30 y 16:30–20:00; sábado/domingo cerrado.
 - Decisión editorial: invitación al blog vigente. Bono Canessa Club deprecado por indicación del propietario: URL conservada con aviso de finalización y `noindex`, fuera de sitemap y navegación. No se anuncia un descuento vigente.
 - Pendientes externos: comprobar titular/datos legales, contenedor GTM/GA4, Search Console/Perfil de Empresa y dominios TLS/release de producción. No bloquean el desarrollo local.
+
+### Resultado técnico implementado
+
+- Commits de base: `098e345` (Vue revisado), merge de origin/master, `5f92204` (prototipo) y `314d5ed` (15 URLs React).
+- Stack comprobado: React 18.3.1, TypeScript 5.9.3, pnpm 10.34.9, Vite 7.3.8, Router 7.18.6, Tailwind 4.3.5, Vitest 4.1.12, ESLint 10.15.0 y Node 22.23.4. No se presentan estas líneas como las últimas mayores de cada producto.
+- Todas las rutas tienen HTML y metadatos propios, con `.data` estáticos donde corresponden. `verify:static` también comprueba que se cierra el flujo de hidratación. La prueba de navegación asegura que no se está confundiendo una recarga HTML con navegación cliente.
+- 83 imágenes con WebP responsive y hashes del contenido optimizado. Vídeo de portada retirado; vídeo de instalaciones bajo demanda. Sin fuentes externas, iconfont ni SDK Firebase en cliente.
+- Pruebas: lint, tipos, 7 unitarias, build/verificador y formato correctos. 41 E2E correctas y 3 omisiones de matriz intencionadas. Menú/dialog por teclado, CSP, rutas, 404, redirect, sin JS y transición de worker simulada verificados.
+- Tres ejecuciones Lighthouse locales: rendimiento 95/95/96 (mediana 95); accesibilidad, buenas prácticas y SEO 100; CLS 0. Condiciones y límites en `quality/performance-summary.json`. No son datos de usuarios ni comparaciones directas con el hardware de PageSpeed anterior.
+- Auditoría npm/pnpm: ejecución 0 avisos; conjunto de herramientas 4 moderados en dependencias de Firebase CLI, 0 altos/críticos. Ver `quality/README.md`, sin ocultar avisos ni forzar cambios transitivos incompatibles.
+- Live confirmado por API: `sites/canessa-722eb/releases/1646319103546244`, versión `9f882c141b399c43`, de 03/03/2022 y FINALIZED. Identificador a refrescar antes del lanzamiento.
+- DNS: apex a 199.36.158.100 y TLS válido. La consulta exacta confirma **CNAME www → ext-sq.squarespace.com**, que resuelve a las cuatro IP de Squarespace. MX de Mailgun preservados. Guía de cambio lista en DNS.md; no se han modificado registros ni dominios de producción.
+- CI sin permisos de escritura ni credenciales de despliegue; actualizaciones de dependencias configuradas. Runbook y comandos de preview/live/rollback en RELEASE.md.
+- Antes de live: aceptación de diseño y textos (incluido Legal), confirmar catálogo/atribuciones que se quieran anunciar, resolver www y validar con perfil que conserve Vue. Analítica permanecerá apagada mientras no se revise GTM/GA4.
+- Search Console/Perfil de Empresa: quedan pendientes de acceso. Tras publicar, reenviar sitemap y comprobar deindexación del bono tras rastreo. El noindex no retira inmediatamente la URL de Google.
+
+### Publicación pendiente de aprobación
+
+- El repositorio remoto `jalofernandez/canessa` es público. La revisión automática rechazó el push de `migration/react-static` y `legacy/vue-2026-11-19` por falta de aprobación explícita para publicar ese contenido local en un repositorio público. No se ha reintentado ni buscado otra vía de publicación.
+- Se mantienen locales los commits, la CI y la preparación de preview. No se ha publicado un canal Firebase ni se ha alterado live. La aprobación solicitada abarcará las dos ramas y una preview temporal de siete días, nunca la sustitución automática de producción.
+- La autorización GitHub existente permite escritura de código, pero no contiene el scope `workflow`. Subir el nuevo archivo de CI requerirá autorización adicional de GitHub CLI (`gh auth refresh -h github.com -s workflow`), a completar por el propietario en el navegador. No se ha solicitado todavía ese permiso.
+- El propietario confirma que el dominio venía de Google Domains. Google Domains fue adquirido por Squarespace; el DNS debe gestionarse en esa cuenta migrada. Falta completar el alta de www en Firebase y aplicar las instrucciones DNS concretas, preservando apex y correo.
+- Se limita el escaneo de Tailwind a los componentes y rutas de src: los cambios en la documentación no deben cambiar el CSS ni el artefacto medido.
+
+### Cierre local y límites pendientes
+
+- Comprobada visualmente la versión React actual: portada y Contacto. El checkout Vue original sigue limpio en legacy/vue-2026-11-19.
+- Última transición del worker: actualización automática de pestañas conocidas, sin borrar cachés ajenas; prueba específica de navegador correcta.
+- La última repetición Lighthouse no llegó a ejecutarse: la revisión automática indicó que se había alcanzado el límite de gasto de la cuenta del workspace. No es una evaluación de inseguridad del comando. El informe de rendimiento queda expresamente marcado como preliminar.
+- Pendiente aprobación explícita para publicar las dos ramas en el repositorio público y crear la preview temporal. Ninguna de estas acciones ha ocurrido, y live permanece sin cambios.

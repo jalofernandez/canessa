@@ -1,4 +1,6 @@
-@import 'tailwindcss';
+@import 'tailwindcss' source(none);
+@source './app';
+@source './components';
 
 @theme {
   --color-brand: #b81760;

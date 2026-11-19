@@ -52,6 +52,12 @@ await writeFile(
     '"></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="/">canessa</a></div></header><main class="container error-page" id="main-content"><h1>Página no encontrada</h1><p>Esta dirección no existe. Te esperamos en Canessa.</p><p><a href="/">Volver al inicio</a></p><p><a href="/contacto">Contacto, dirección y horarios</a></p></main></body></html>'
 );
 await rm(client + '/__spa-fallback.html', { force: true });
+const worker = await readFile('public/sw.js', 'utf8');
+await writeFile(
+  client + '/sw.js',
+  worker.replace('/* CANESSA_PATHS */ []', JSON.stringify(routes))
+);
+
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
