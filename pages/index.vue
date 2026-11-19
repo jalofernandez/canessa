@@ -3,40 +3,66 @@
     <header class="video-header">
       <video
         :poster="require(`~/assets/videos/afgano.jpg`)"
-        :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`" 
-        playsinline autoplay muted loop
+        :title="`Servicios ofrecidos en ${owner.copyright} en Valdemoro, Madrid`"
+        playsinline
+        autoplay
+        muted
+        loop
       >
-        <source src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4" type="video/mp4">
+        <source
+          src="~/assets/videos/canessa_web-promo-video_2018-09-15.mp4"
+          type="video/mp4"
+        />
       </video>
       <div class="viewport-header">
         <!-- <h1 class="video-header-title" :style="`transform: scale(${headerScale}); opacity: ${headerOpacity}`"> -->
         <h1 class="video-header-title">
           Tu perro merece:
           <span>{{ owner.copyright }}</span>
-          <ScrollDownItem v-scroll-to="{ el: '#section-cta', offset: getOffset() }" />
+          <ScrollDownItem
+            v-scroll-to="{ el: '#section-cta', offset: getOffset() }"
+          />
         </h1>
       </div>
     </header>
 
     <div class="is-below-video">
-
       <div id="section-cta" class="box cta is-radiusless">
         <h2 class="is-size-5 is-size-6-mobile has-text-centered">
-          Servicios de peluquería canina <b>profesionales y de confianza</b> para que tu fiel amigo esté tan agusto como en casa. 
-          <br class="is-hidden-touch"/>Así lo demuestran las <b class="has-text-primary">{{ reviews.totalReviewCount }}</b> <b>opiniones de nuestros clientes</b>:
+          Servicios de peluquería canina
+          <b>profesionales y de confianza</b> para que tu fiel amigo esté tan
+          agusto como en casa. <br class="is-hidden-touch" />Así lo demuestran
+          las <b class="has-text-primary">{{ reviews.totalReviewCount }}</b>
+          <b>opiniones de nuestros clientes</b>:
         </h2>
       </div>
 
       <section class="container box-list">
-        <article class="media box" v-for="review in reviews.reviews" :key="review.name">
+        <article
+          class="media box"
+          v-for="review in reviews.reviews"
+          :key="review.name"
+        >
           <figure class="media-left">
             <p class="image is-32x32">
               <picture>
-                <source :srcset="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png?webp`)" type="image/webp" />
-                <source :srcset="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)" type="image/png" />
+                <source
+                  :srcset="
+                    require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png?webp`)
+                  "
+                  type="image/webp"
+                />
+                <source
+                  :srcset="
+                    require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)
+                  "
+                  type="image/png"
+                />
                 <img
                   class="is-rounded"
-                  :src="require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)"
+                  :src="
+                    require(`~/assets/images/reviewers/${review.reviewer.profilePhotoUrl}.png`)
+                  "
                   :title="`Foto de usuario de Google de: ${review.name}`"
                   :alt="`Foto de usuario de Google de: ${review.name}`"
                   width="32"
@@ -49,11 +75,15 @@
             <div class="content">
               <p>
                 <b>{{ review.name }}</b>
-                <br/>
-                <span class="icon has-text-warning" v-for="item in review.starRating">
+                <br />
+                <span
+                  class="icon has-text-warning"
+                  v-for="(item, index) in review.starRating"
+                  :key="index"
+                >
                   <i class="mdi mdi-18px mdi-star"></i>
                 </span>
-                <br/>
+                <br />
                 <small>{{ review.comment }}</small>
               </p>
             </div>
@@ -115,14 +145,21 @@
                 'is-size-3',
                 'is-size-4-mobile',
                 'has-text-primary',
-                $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
+                $mq == 'mobile'
+                  ? 'has-text-weight-bold'
+                  : 'has-text-weight-medium',
                 'is-spaced',
-                'has-text-centered'
+                'has-text-centered',
               ]"
             >
-              Nuestros clientes nos avalan por <br class="is-hidden-mobile"/>cortes profesionales como estos:
+              Nuestros clientes nos avalan por
+              <br class="is-hidden-mobile" />cortes profesionales como estos:
             </h3>
-            <BoxItem class="is-small-grid" :items="doggies" :page="$route.name" />
+            <BoxItem
+              class="is-small-grid"
+              :items="doggies"
+              :page="$route.name"
+            />
           </div>
         </div>
       </section>
@@ -136,17 +173,23 @@
                 'is-size-2',
                 'is-size-4-mobile',
                 'has-text-primary',
-                $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
+                $mq == 'mobile'
+                  ? 'has-text-weight-bold'
+                  : 'has-text-weight-medium',
                 'is-spaced',
                 'has-text-centered',
-                'mb-5'
+                'mb-5',
               ]"
             >
               Nuestro compromiso
             </h3>
           </div>
           <!-- TODO: code refactor asap because can use "SectionChessBoard" comp. -->
-          <div :class="['container', 'th-margin', {'reflected': block.reflected}]" v-for="(block, index) in blocks" :key="index">
+          <div
+            :class="['container', 'th-margin', { reflected: block.reflected }]"
+            v-for="(block, index) in blocks"
+            :key="index"
+          >
             <div class="columns is-vcentered content is-medium">
               <div class="column is-8">
                 <p class="is-size-6-mobile" v-html="block.description"></p>
@@ -164,8 +207,16 @@
               <div class="column">
                 <figure class="image">
                   <picture>
-                    <source :srcset="require(`~/assets/images/index/${block.img}?webp`)" type="image/webp" />
-                    <source :srcset="require(`~/assets/images/index/${block.img}`)" type="image/jpg" />
+                    <source
+                      :srcset="
+                        require(`~/assets/images/index/${block.img}?webp`)
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      :srcset="require(`~/assets/images/index/${block.img}`)"
+                      type="image/jpg"
+                    />
                     <img
                       class="artwork"
                       :src="require(`~/assets/images/index/${block.img}`)"
@@ -305,8 +356,8 @@
 </template>
 
 <script>
-import reviews from '~/data/reviews'
-import doggies from '~/data/doggies'
+import reviews from "~/data/reviews";
+import doggies from "~/data/doggies";
 
 export default {
   data() {
@@ -319,82 +370,125 @@ export default {
       doggies: doggies,
       blocks: [
         {
-          description: 'En Peluquería canina Canessa ponemos todo nuestro empeño y conocimientos en dejar precioso a tu fiel amigo con la mejor atención y el mínimo estrés, <b>dedicándole el tiempo que merece y necesite sin servicios express</b>. Además del baño y el corte de pelo, siempre incluimos el recorte de uñas, el vaciado de plantares y glándulas perianales, la limpieza de oídos y la retirada del exceso de vello en el pabellón auditivo.',
-          link: 'Ir a servicios de peluquería',
-          to: 'peluqueria',
-          img: 'secado-pastor-aleman-feliz-peluqueria-canina-canessa.jpg',
-          alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: false
+          description:
+            "En Peluquería canina Canessa ponemos todo nuestro empeño y conocimientos en dejar precioso a tu fiel amigo con la mejor atención y el mínimo estrés, <b>dedicándole el tiempo que merece y necesite sin servicios express</b>. Además del baño y el corte de pelo, siempre incluimos el recorte de uñas, el vaciado de plantares y glándulas perianales, la limpieza de oídos y la retirada del exceso de vello en el pabellón auditivo.",
+          link: "Ir a servicios de peluquería",
+          to: "peluqueria",
+          img: "secado-pastor-aleman-feliz-peluqueria-canina-canessa.jpg",
+          alt:
+            "Yorkshire terrier en " +
+            this.$store.state.owner.copyright +
+            ", Madrid",
+          reflected: false,
         },
         {
-          description: 'También tenemos servicios de <b>baño</b> y <b>SPA canino</b> los cuales, además de mantener limpios y aseados a nuestros perros, <b>previenen la formación de grandes nudos</b>. Esto es fundamental para evitar la aparición de hongos, urticarias y enfermedades dérmicas, además de ser molestos para nuestros amigos caninos, claro.',
-          link: 'Ver todos nuestros servicios',
-          to: 'servicios',
-          img: 'bano-higiene-westie-peluqueria-canina-canessa.jpg',
-          alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: true
+          description:
+            "También tenemos servicios de <b>baño</b> y <b>SPA canino</b> los cuales, además de mantener limpios y aseados a nuestros perros, <b>previenen la formación de grandes nudos</b>. Esto es fundamental para evitar la aparición de hongos, urticarias y enfermedades dérmicas, además de ser molestos para nuestros amigos caninos, claro.",
+          link: "Ver todos nuestros servicios",
+          to: "servicios",
+          img: "bano-higiene-westie-peluqueria-canina-canessa.jpg",
+          alt:
+            "Yorkshire terrier en " +
+            this.$store.state.owner.copyright +
+            ", Madrid",
+          reflected: true,
         },
         {
-          description: 'Disponemos de <b>tienda</b> física dentro de nuestras instalaciones de peluquería canina donde adquirir <b>pienso</b> (trabajamos con <em>Affinity</em>, <em>Libra</em>, <em>Pedigree</em>...), chuches y recompensas, productos de higiene animal, <b>antiparasitarios</b>, arneses, correas, camas, juguetes, trajecitos y abrigos…',
-          link: 'Ver alimentación y complementos',
-          to: 'piensos',
-          img: 'affinity-piensos-peluqueria-canina-canessa.jpg',
-          alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: false
+          description:
+            "Disponemos de <b>tienda</b> física dentro de nuestras instalaciones de peluquería canina donde adquirir <b>pienso</b> (trabajamos con <em>Affinity</em>, <em>Libra</em>, <em>Pedigree</em>...), chuches y recompensas, productos de higiene animal, <b>antiparasitarios</b>, arneses, correas, camas, juguetes, trajecitos y abrigos…",
+          link: "Ver alimentación y complementos",
+          to: "piensos",
+          img: "affinity-piensos-peluqueria-canina-canessa.jpg",
+          alt:
+            "Yorkshire terrier en " +
+            this.$store.state.owner.copyright +
+            ", Madrid",
+          reflected: false,
         },
         {
-          description: 'Como nuestros fieles amigos caninos no merecen menos, las <b>instalaciones</b> de Peluquería canina Canessa están convenientemente adaptadas para garantizar la <b>mejor calidad</b> de servicio gracias a nuestros <b>productos y equipo de primeras marcas</b>: mesas y bañeras hidráulicas, tijeras de acero suizo, expulsadores de aire de última generación, ionizador de aire para desinfección ambiental...',
-          link: 'Conocer nuestras instalaciones',
-          to: 'instalaciones',
-          img: 'equipo-profesional-peluqueria-canina-canessa.jpg',
-          alt: 'Yorkshire terrier en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: true
+          description:
+            "Como nuestros fieles amigos caninos no merecen menos, las <b>instalaciones</b> de Peluquería canina Canessa están convenientemente adaptadas para garantizar la <b>mejor calidad</b> de servicio gracias a nuestros <b>productos y equipo de primeras marcas</b>: mesas y bañeras hidráulicas, tijeras de acero suizo, expulsadores de aire de última generación, ionizador de aire para desinfección ambiental...",
+          link: "Conocer nuestras instalaciones",
+          to: "instalaciones",
+          img: "equipo-profesional-peluqueria-canina-canessa.jpg",
+          alt:
+            "Yorkshire terrier en " +
+            this.$store.state.owner.copyright +
+            ", Madrid",
+          reflected: true,
         },
         {
-          description: 'Vanessa tiene algo especial con todos los animales. Un vínculo emocional único con el que transmite paz y relax a todos sus clientes peludos. Gracias a juegos para positivizar <b>consigue que las sesiones de peluquería canina sean divertidas</b> para cualquier <em class=”has-line-through”>mascota</em> animal. Como profesional cuenta con ' + this.yearsOfExperience(2009) + ' años de experiencia en el sector.',
-          link: 'Sobre Vanessa Vizacaya',
-          to: 'vanessavizcaya',
-          img: 'vanessa-vizcaya-dogs-lover-peluqueria-canina-canessa.jpg',
-          alt: 'Secado en ' + this.$store.state.owner.copyright + ', Madrid',
-          reflected: false
+          description:
+            "Vanessa tiene algo especial con todos los animales. Un vínculo emocional único con el que transmite paz y relax a todos sus clientes peludos. Gracias a juegos para positivizar <b>consigue que las sesiones de peluquería canina sean divertidas</b> para cualquier <em class=”has-line-through”>mascota</em> animal. Como profesional cuenta con " +
+            this.yearsOfExperience(2009) +
+            " años de experiencia en el sector.",
+          link: "Sobre Vanessa Vizacaya",
+          to: "vanessavizcaya",
+          img: "vanessa-vizcaya-dogs-lover-peluqueria-canina-canessa.jpg",
+          alt: "Secado en " + this.$store.state.owner.copyright + ", Madrid",
+          reflected: false,
         },
-      ]
-    }
+      ],
+    };
   },
   head() {
-    const title = ''
+    const title = "";
     const description =
-      this.owner.copyright + ' realiza sus servicios profesionales con la mayor calidad, mejor atención y el mínimo estrés para tu perro en Madrid. 91 248 04 30'
-    const canonical = 'https://' + this.owner.url
+      this.owner.copyright +
+      " realiza sus servicios profesionales con la mayor calidad, mejor atención y el mínimo estrés para tu perro en Madrid. 91 248 04 30";
+    const canonical = "https://" + this.owner.url;
 
     return {
       title,
       meta: [
-        { hid: 'description', name: 'description', content: description },
-        { hid: 'Classification', name: 'Classification', content: 'Business' },
-        { hid: 'subject', name: 'subject', content: description },
+        { hid: "description", name: "description", content: description },
+        { hid: "Classification", name: "Classification", content: "Business" },
+        { hid: "subject", name: "subject", content: description },
         // Facebook verification domain to allow Business Manager & Marketing platforms
-        { hid: 'facebook-domain-verification', name: 'facebook-domain-verification', content: 'ewx7qptinl041xcf1o9e1b7x6pj26t' },
+        {
+          hid: "facebook-domain-verification",
+          name: "facebook-domain-verification",
+          content: "ewx7qptinl041xcf1o9e1b7x6pj26t",
+        },
         // Open Graph (carefully here: in Index page cannot use "title" constant cause is empty)
-        { hid: 'og:title', property: 'og:title', content: this.owner.copyright },
-        { hid: 'og:description', property: 'og:description', content: description },
-        { hid: 'og:url', property: 'og:url', content: canonical },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: this.owner.copyright,
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: description,
+        },
+        { hid: "og:url", property: "og:url", content: canonical },
         // Twitter Card (carefully here: in Index page cannot use "title" constant cause is empty)
-        { hid: 'twitter:title', name: 'twitter:title', content: this.owner.copyright },
-        { hid: 'twitter:description', name: 'twitter:description', content: description },
-        { hid: 'twitter:url', name: 'twitter:url', content: canonical }
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.owner.copyright,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+        { hid: "twitter:url", name: "twitter:url", content: canonical },
       ],
       // Structured Data (Schema)
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
-        { innerHTML: JSON.stringify(this.owner.schema), type: 'application/ld+json' },
+        {
+          innerHTML: JSON.stringify(this.owner.schema),
+          type: "application/ld+json",
+        },
       ],
       link: [
-        { rel: 'canonical', hid: 'canonical', href: canonical },
-        { rel: 'alternate', hid: 'alternate', href: canonical+'/#!' },
-        { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
-      ]
-    }
+        { rel: "canonical", hid: "canonical", href: canonical },
+        { rel: "alternate", hid: "alternate", href: canonical + "/#!" },
+        { rel: "alternate", hid: "alternate", href: canonical + "#!" },
+      ],
+    };
   },
   // TODO: check the following code cause it have a weird scroll behaviour
   // created() {
@@ -425,16 +519,16 @@ export default {
     //   this.headerScale = scale
     // },
     getOffset() {
-      let mq = this.$mq
-      if (mq === 'mobile' || mq === 'smartphone' || mq === 'tablet') {
-        return 0 // layout without top navbar (small screens)
+      let mq = this.$mq;
+      if (mq === "mobile" || mq === "smartphone" || mq === "tablet") {
+        return 0; // layout without top navbar (small screens)
       }
-      return -53 // layout with top navbar (big screens)
+      return -53; // layout with top navbar (big screens)
     },
     yearsOfExperience(since) {
-      let currentYear = new Date().getFullYear()
-      return currentYear - since
-    }
-  }
-}
+      let currentYear = new Date().getFullYear();
+      return currentYear - since;
+    },
+  },
+};
 </script>

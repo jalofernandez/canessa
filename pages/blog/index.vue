@@ -10,14 +10,21 @@
               'is-size-1',
               'is-size-4-mobile',
               'has-text-primary',
-              $mq == 'mobile' ? 'has-text-weight-bold' : 'has-text-weight-medium',
-              'is-spaced'
+              $mq == 'mobile'
+                ? 'has-text-weight-bold'
+                : 'has-text-weight-medium',
+              'is-spaced',
             ]"
           >
             {{ blog }}
           </h1>
           <h4 class="subtitle is-size-6-mobile">
-            Para noticias ya están las redes sociales pero <br/>para <span class="has-text-weight-bold">artículos verdaderamente interesantes</span> tenemos nuestro propio blog. <span class="has-text-weight-bold">¡A disfrutar!</span>
+            Para noticias ya están las redes sociales pero <br />para
+            <span class="has-text-weight-bold"
+              >artículos verdaderamente interesantes</span
+            >
+            tenemos nuestro propio blog.
+            <span class="has-text-weight-bold">¡A disfrutar!</span>
           </h4>
         </div>
       </div>
@@ -32,8 +39,16 @@
             <div class="card-image">
               <figure class="image is-4by3">
                 <picture>
-                  <source :srcset="require(`~/assets/images/blog/${article.img}?webp`)" type="image/webp" /> 
-                  <source :srcset="require(`~/assets/images/blog/${article.img}`)" type="image/jpg" />
+                  <source
+                    :srcset="
+                      require(`~/assets/images/blog/${article.img}?webp`)
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    :srcset="require(`~/assets/images/blog/${article.img}`)"
+                    type="image/jpg"
+                  />
                   <img
                     :src="require(`~/assets/images/blog/${article.img}`)"
                     :title="article.title"
@@ -47,7 +62,9 @@
                 <div class="media-left">
                   <figure class="image is-48x48">
                     <img
-                      :src="require(`~/assets/images/authors/${article.author.image}`)"
+                      :src="
+                        require(`~/assets/images/authors/${article.author.image}`)
+                      "
                       :title="article.author.name"
                       :alt="article.author.name"
                       width="48"
@@ -57,8 +74,9 @@
                 </div>
                 <div class="media-content has-text-dark">
                   <h3 class="is-size-5 has-text-primary">
-                    <b>{{ article.title }}</b></p>
+                    <b>{{ article.title }}</b>
                   </h3>
+                  <p>
                     <small>
                       <!-- por <span :class="['tag', 'is-light', article.author.name == 'jalofernandez' ? 'is-warning' : 'is-link']">{{ article.author.name }}</span> -->
                       por <b>{{ article.author.name }}</b>
@@ -68,7 +86,7 @@
               </div>
               <div class="content has-text-dark">
                 {{ article.description }}...
-                <br/>
+                <br />
                 <div class="button is-small is-text">
                   <span class="icon">
                     <i class="mdi mdi-plus"></i>
@@ -86,60 +104,82 @@
 </template>
 
 <script>
-  export default {
-    async asyncData({ $content, params }) {
-      const articles = await $content('articles', params.slug)
-        .only(['title', 'description', 'img', 'slug', 'author'])
-        .sortBy('createdAt', 'asc')
-        .fetch()
+export default {
+  async asyncData({ $content, params }) {
+    const articles = await $content("articles", params.slug)
+      .only(["title", "description", "img", "slug", "author"])
+      .sortBy("createdAt", "asc")
+      .fetch();
 
-      return {
-        articles
-      }
-    },
-    data() {
-      return {
-        owner: this.$store.state.owner,
-        blog: 'Blog'
-      }
-    },
-    head() {
-      const title = this.blog + ' de'
-      const description =
-        this.blog + ' de artículos de interés sobre perros, grooming, eventos caninos y el mundo animal de ' + this.owner.copyright + ' en Valdemoro, Madrid. Tlf: 91 248 04 30'
-      const canonical = 'https://' + this.owner.url + this.$route.path
+    return {
+      articles,
+    };
+  },
+  data() {
+    return {
+      owner: this.$store.state.owner,
+      blog: "Blog",
+    };
+  },
+  head() {
+    const title = this.blog + " de";
+    const description =
+      this.blog +
+      " de artículos de interés sobre perros, grooming, eventos caninos y el mundo animal de " +
+      this.owner.copyright +
+      " en Valdemoro, Madrid. Tlf: 91 248 04 30";
+    const canonical = "https://" + this.owner.url + this.$route.path;
 
-      return {
-        title,
-        meta: [
-          { hid: 'description', name: 'description', content: description },
-          { hid: 'Classification', name: 'Classification', content: 'Business' },
-          { hid: 'subject', name: 'subject', content: description },
-          // Open Graph
-          { hid: 'og:title', property: 'og:title', content: title + ' ' + this.owner.copyright },
-          { hid: 'og:description', property: 'og:description', content: description },
-          { hid: 'og:url', property: 'og:url', content: canonical },
-          // Twitter Card
-          { hid: 'twitter:title', name: 'twitter:title', content: title + ' ' + this.owner.copyright },
-          { hid: 'twitter:description', name: 'twitter:description', content: description },
-          { hid: 'twitter:url', name: 'twitter:url', content: canonical }
-        ],
-        // Structured Data (Schema)
-        __dangerouslyDisableSanitizers: ['script'],
-        script: [
-          { innerHTML: JSON.stringify(this.owner.schema), type: 'application/ld+json' },
-        ],
-        link: [
-          { rel: 'canonical', hid: 'canonical', href: canonical },
-          { rel: 'alternate', hid: 'alternate', href: canonical+'/#!' },
-          { rel: 'alternate', hid: 'alternate', href: canonical+'#!' },
-        ]
-      }
-    },
+    return {
+      title,
+      meta: [
+        { hid: "description", name: "description", content: description },
+        { hid: "Classification", name: "Classification", content: "Business" },
+        { hid: "subject", name: "subject", content: description },
+        // Open Graph
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: title + " " + this.owner.copyright,
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: description,
+        },
+        { hid: "og:url", property: "og:url", content: canonical },
+        // Twitter Card
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: title + " " + this.owner.copyright,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+        { hid: "twitter:url", name: "twitter:url", content: canonical },
+      ],
+      // Structured Data (Schema)
+      __dangerouslyDisableSanitizers: ["script"],
+      script: [
+        {
+          innerHTML: JSON.stringify(this.owner.schema),
+          type: "application/ld+json",
+        },
+      ],
+      link: [
+        { rel: "canonical", hid: "canonical", href: canonical },
+        { rel: "alternate", hid: "alternate", href: canonical + "/#!" },
+        { rel: "alternate", hid: "alternate", href: canonical + "#!" },
+      ],
+    };
+  },
   // mounted() {
   //   // to allow scrollToTop behaviour when page loads cause Nuxt bug...
   //   // ...not necessary if U overwrites "router" in "nuxt.config" file
   //   window.scrollTo(0, 0)
   // }
-  }
+};
 </script>
