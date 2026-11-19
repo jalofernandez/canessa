@@ -11,7 +11,7 @@ description: >-
 
 ## Estado y alcance
 
-Esta skill describe el **stack objetivo**, no una migración ya realizada.
+Esta skill describe el stack de la migración en curso en `migration/react-static`; el original Vue sigue en el checkout principal. ESLint se actualiza a 10 porque la línea 9 prevista ya no tiene soporte.
 El repositorio parte de Nuxt 2, Vue, Bulma/Sass y `package-lock.json`.
 Lee `AGENTS.md`, `README.md`, `package.json`, `nuxt.config.js` y, para el
 alojamiento estático, `firebase.json` antes de cambiar su configuración.
@@ -41,7 +41,7 @@ en `package.json` y el lockfile antes de afirmar que el conjunto funciona.
 - **Rutas:** React Router 7 para conservar las páginas y sus URLs.
 - **Pruebas:** Vitest 4, happy-dom, React Testing Library,
   `@testing-library/jest-dom` y `@testing-library/user-event`.
-- **Calidad:** ESLint 9 con configuración flat y Prettier 3.
+- **Calidad:** ESLint 10 con configuración flat y Prettier 3.
 
 Al convertir el proyecto a pnpm, realiza y verifica la conversión del lockfile
 como parte de esa etapa; no borres ahora el lockfile npm del sitio Nuxt.

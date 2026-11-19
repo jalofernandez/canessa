@@ -2,7 +2,7 @@
 
 Fecha: 19 de noviembre de 2026
 
-Estado: Plan preparado. Backup local completado; implementación React y cambios de producción pendientes.
+Estado: Implementación en curso en `migration/react-static`, worktree `.worktrees/canessa-react`. Producción sin cambios.
 
 Continuar en el mismo repositorio, implementar en una rama/worktree dedicados y conservar el estado Vue en una copia independiente verificada. Mantener inicialmente Firebase Hosting y generar HTML estático para todas las rutas.
 
@@ -132,7 +132,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 2. Fijar la referencia y organizar el trabajo en el mismo repo
 
-**Estado:** Pendiente.
+**Estado:** Completado. Referencia local `legacy/vue-2026-11-19` en `098e345`; worktree creado. Los commits adicionales de origin/master solo modificaban package-lock.json y se integraron en la rama React. Los 145 cambios de modo se conservan en disco y backup; core.filemode=false evita mezclarlos con cambios de contenido.
 
 **Objetivo:** Conservar el historial y migrar sin sobrescribir el checkout Vue ni perder cambios locales.
 
@@ -653,3 +653,16 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 - Pendiente: rama/worktree, implementación, validación del stack, accesos a Google y cualquier despliegue.
 
 - No se han cambiado el código Vue, las dependencias ni la configuración de producción durante la preparación del plan.
+
+## Desarrollo — 19/11/2026
+
+- Accesos: Firebase Hosting y GitHub verificados; simulación de push correcta. Sin push real ni despliegue.
+- Referencia: original Vue intacto en `legacy/vue-2026-11-19`; baseline revisada `098e345`. Se preservan Inicio, Blog, ajustes del workspace y guías.
+- Worktree React: `.worktrees/canessa-react`, rama `migration/react-static`.
+- Prototipo: build estático correcto para Inicio, Contacto y `/blog/el-gran-reencuentro`, con datos `.data` del router y descubrimiento `initial`. El build elimina su servidor al finalizar.
+- Se usa una entrada de renderizado propia solo durante build; producción no necesita Node ni SDK de Firebase.
+- Verificación de entorno: CLI Firebase global 13.15.2 falla con Node 22 (`birthtime.getTime` en superstatic). Se incorpora CLI 15.37.0 local para probar Hosting. Puerto local 4178; 5000 ocupado por otro servicio del equipo.
+- Ajuste justificado: ESLint 10 sustituye al 9 previsto, ya sin soporte. Accesibilidad se comprueba con axe y navegador; el plugin jsx-a11y no declara compatibilidad con ESLint 10 y no se fuerza su peer dependency. Testing Library jest-dom 6.9.1 evita la versión 6.10.0 retirada.
+- Datos confirmados por el propietario: C. Vicente Aleixandre, 5, **28342 Valdemoro, Madrid**; 912 48 04 30 y WhatsApp correctos. Lunes/martes 10:00–13:30 y 16:30–20:00; miércoles/jueves/viernes 10:30–13:30 y 16:30–20:00; sábado/domingo cerrado.
+- Decisión editorial: invitación al blog vigente. Bono Canessa Club deprecado por indicación del propietario: URL conservada con aviso de finalización y `noindex`, fuera de sitemap y navegación. No se anuncia un descuento vigente.
+- Pendientes externos: comprobar titular/datos legales, contenedor GTM/GA4, Search Console/Perfil de Empresa y dominios TLS/release de producción. No bloquean el desarrollo local.

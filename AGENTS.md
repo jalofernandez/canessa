@@ -4,10 +4,10 @@
 
 - Project: Canessa, a website for a local pet grooming business.
 - These instructions apply exclusively to the canessa repository.
-- Current stack: Nuxt 2 and Vue.
-- Review `README.md`, `package.json`, and `nuxt.config.js` before making any changes.
+- Current stack in this migration worktree: React 18, TypeScript, pnpm, Vite, React Router prerendering and Tailwind 4. Legacy Vue stays in the original checkout.
+- Review `README.md`, `package.json`, `react-router.config.ts`, `firebase.json` and `MIGRATION.md` before changes.
 - Work exclusively within this repository.
-- Run npm run build; also run npm run generate if deploying a static site.
+- Use Node from `.nvmrc` and pnpm from `packageManager`. Run pnpm lint, compile, test, check-format and build; run browser/Hosting checks for route or UI changes.
 - Report missing checks explicitly; never report them as passed.
 
 ## Workflow

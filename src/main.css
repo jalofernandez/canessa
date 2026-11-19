@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@theme {
+  --color-brand: #b81760;
+  --color-fg: #232125;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--color-fg);
+}
+main {
+  max-width: 70rem;
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: var(--color-brand);
+}

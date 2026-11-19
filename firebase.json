@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "build/client",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -8,7 +8,7 @@
     ],
     "headers": [
       {
-        "source":"/public/sw.js",
+        "source": "/public/sw.js",
         "headers": [
           {
             "key": "Cache-Control",
@@ -26,5 +26,15 @@
     ],
     "cleanUrls": true,
     "trailingSlash": false
+  },
+  "emulators": {
+    "hosting": {
+      "host": "127.0.0.1",
+      "port": 4178
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
   }
 }
