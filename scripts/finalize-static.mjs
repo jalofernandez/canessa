@@ -81,7 +81,18 @@ const config = {
     ignore: ['firebase.json', '**/.*', '**/node_modules/**'],
     cleanUrls: true,
     trailingSlash: false,
-    redirects: [{ source: '/mascotactiva', destination: '/servicios', type: 301 }],
+    redirects: [
+      { source: '/mascotactiva', destination: '/servicios', type: 301 },
+      { source: '/index.html', destination: '/', type: 301 },
+      { source: '/index', destination: '/', type: 301 },
+      ...routes
+        .filter((path) => path !== '/')
+        .flatMap((path) => [
+          { source: path + '.html', destination: path, type: 301 },
+          { source: path + '/index.html', destination: path, type: 301 },
+          { source: path + '/index', destination: path, type: 301 },
+        ]),
+    ],
     headers: [
       {
         source: '**',

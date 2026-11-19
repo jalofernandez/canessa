@@ -73,6 +73,17 @@ test('Hosting redirects, headers, 404 and retired campaign', async ({ request })
   const redirect = await request.get('/mascotactiva', { maxRedirects: 0 });
   expect(redirect.status()).toBe(301);
   expect(redirect.headers().location).toBe('/servicios');
+  for (const path of routes.filter((path) => path !== '/')) {
+    const htmlAlias = await request.get(path + '.html', { maxRedirects: 0 });
+    expect(htmlAlias.status()).toBe(301);
+    expect(htmlAlias.headers().location).toBe(path);
+  }
+  for (const path of ['/contacto/', '/contacto/index.html', '/contacto/index']) {
+    const alias = await request.get(path, { maxRedirects: 0 });
+    expect(alias.status()).toBe(301);
+    expect(alias.headers().location).toBe('/contacto');
+  }
+
   const retired = await request.get('/bono-canessa-club');
   expect(retired.headers()['x-robots-tag']).toContain('noindex');
   expect(await (await request.get('/sitemap.xml')).text()).not.toContain('bono-canessa-club');

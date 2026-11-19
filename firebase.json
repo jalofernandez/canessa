@@ -5,7 +5,93 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "cleanUrls": true,
     "trailingSlash": false,
-    "redirects": [{ "source": "/mascotactiva", "destination": "/servicios", "type": 301 }],
+    "redirects": [
+      { "source": "/mascotactiva", "destination": "/servicios", "type": 301 },
+      { "source": "/index.html", "destination": "/", "type": 301 },
+      { "source": "/index", "destination": "/", "type": 301 },
+      { "source": "/servicios.html", "destination": "/servicios", "type": 301 },
+      { "source": "/servicios/index.html", "destination": "/servicios", "type": 301 },
+      { "source": "/servicios/index", "destination": "/servicios", "type": 301 },
+      { "source": "/peluqueria.html", "destination": "/peluqueria", "type": 301 },
+      { "source": "/peluqueria/index.html", "destination": "/peluqueria", "type": 301 },
+      { "source": "/peluqueria/index", "destination": "/peluqueria", "type": 301 },
+      { "source": "/contacto.html", "destination": "/contacto", "type": 301 },
+      { "source": "/contacto/index.html", "destination": "/contacto", "type": 301 },
+      { "source": "/contacto/index", "destination": "/contacto", "type": 301 },
+      { "source": "/instalaciones.html", "destination": "/instalaciones", "type": 301 },
+      { "source": "/instalaciones/index.html", "destination": "/instalaciones", "type": 301 },
+      { "source": "/instalaciones/index", "destination": "/instalaciones", "type": 301 },
+      { "source": "/vanessavizcaya.html", "destination": "/vanessavizcaya", "type": 301 },
+      { "source": "/vanessavizcaya/index.html", "destination": "/vanessavizcaya", "type": 301 },
+      { "source": "/vanessavizcaya/index", "destination": "/vanessavizcaya", "type": 301 },
+      { "source": "/piensos.html", "destination": "/piensos", "type": 301 },
+      { "source": "/piensos/index.html", "destination": "/piensos", "type": 301 },
+      { "source": "/piensos/index", "destination": "/piensos", "type": 301 },
+      { "source": "/antiparasitarios.html", "destination": "/antiparasitarios", "type": 301 },
+      { "source": "/antiparasitarios/index.html", "destination": "/antiparasitarios", "type": 301 },
+      { "source": "/antiparasitarios/index", "destination": "/antiparasitarios", "type": 301 },
+      { "source": "/blog.html", "destination": "/blog", "type": 301 },
+      { "source": "/blog/index.html", "destination": "/blog", "type": 301 },
+      { "source": "/blog/index", "destination": "/blog", "type": 301 },
+      {
+        "source": "/blog/el-gran-reencuentro.html",
+        "destination": "/blog/el-gran-reencuentro",
+        "type": 301
+      },
+      {
+        "source": "/blog/el-gran-reencuentro/index.html",
+        "destination": "/blog/el-gran-reencuentro",
+        "type": 301
+      },
+      {
+        "source": "/blog/el-gran-reencuentro/index",
+        "destination": "/blog/el-gran-reencuentro",
+        "type": 301
+      },
+      {
+        "source": "/blog/como-pixar-capta-la-personalidad-animal.html",
+        "destination": "/blog/como-pixar-capta-la-personalidad-animal",
+        "type": 301
+      },
+      {
+        "source": "/blog/como-pixar-capta-la-personalidad-animal/index.html",
+        "destination": "/blog/como-pixar-capta-la-personalidad-animal",
+        "type": 301
+      },
+      {
+        "source": "/blog/como-pixar-capta-la-personalidad-animal/index",
+        "destination": "/blog/como-pixar-capta-la-personalidad-animal",
+        "type": 301
+      },
+      {
+        "source": "/blog/como-publicar-post-aqui.html",
+        "destination": "/blog/como-publicar-post-aqui",
+        "type": 301
+      },
+      {
+        "source": "/blog/como-publicar-post-aqui/index.html",
+        "destination": "/blog/como-publicar-post-aqui",
+        "type": 301
+      },
+      {
+        "source": "/blog/como-publicar-post-aqui/index",
+        "destination": "/blog/como-publicar-post-aqui",
+        "type": 301
+      },
+      { "source": "/legal.html", "destination": "/legal", "type": 301 },
+      { "source": "/legal/index.html", "destination": "/legal", "type": 301 },
+      { "source": "/legal/index", "destination": "/legal", "type": 301 },
+      { "source": "/sitemap.html", "destination": "/sitemap", "type": 301 },
+      { "source": "/sitemap/index.html", "destination": "/sitemap", "type": 301 },
+      { "source": "/sitemap/index", "destination": "/sitemap", "type": 301 },
+      { "source": "/bono-canessa-club.html", "destination": "/bono-canessa-club", "type": 301 },
+      {
+        "source": "/bono-canessa-club/index.html",
+        "destination": "/bono-canessa-club",
+        "type": 301
+      },
+      { "source": "/bono-canessa-club/index", "destination": "/bono-canessa-club", "type": 301 }
+    ],
     "headers": [
       {
         "source": "**",

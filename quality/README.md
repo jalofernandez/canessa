@@ -4,9 +4,7 @@ Fecha: 19/11/2026. Estas comprobaciones corresponden a la versión React en la
 rama de migración; no certifican que se haya publicado en producción.
 
 - `performance-summary.json`: tres mediciones consecutivas Lighthouse móvil sobre
-  el mismo artefacto de portada anterior al último ajuste del escaneo Tailwind.
-  La repetición sobre el artefacto final quedó pendiente al bloquearse la revisión
-  automática por límite de gasto. Son resultados preliminares. Mediana: rendimiento 95; accesibilidad, buenas
+  el artefacto final de portada, identificado por SHA-256. Mediana: rendimiento 95; accesibilidad, buenas
   prácticas y SEO 100. CLS 0. Los datos son de laboratorio, sin datos de INP real.
   Los informes completos se conservan localmente como lighthouse-mobile-1/2/3.json,
   ignorados en Git para evitar versionar varios MB de datos repetidos.

@@ -309,7 +309,7 @@ La aplicación se reconstruye en la rama React; Vue permanece disponible como re
 
 ### Paso 8. Reducir el peso y eliminar los saltos visuales
 
-**Estado:** Parcial: tres mediciones preliminares, mediana 95 y CLS 0. Pendiente repetir el artefacto final y medir la versión publicada.
+**Estado:** Completado en laboratorio: tres mediciones finales, mediana 95 y CLS 0. Medición publicada y datos de usuarios pendientes.
 
 **Objetivo:** Corregir el principal problema medido y dar a la nueva web un presupuesto de rendimiento.
 
@@ -694,5 +694,11 @@ El diagnóstico específico de Canessa corresponde a la auditoría del 19/11/202
 
 - Comprobada visualmente la versión React actual: portada y Contacto. El checkout Vue original sigue limpio en legacy/vue-2026-11-19.
 - Última transición del worker: actualización automática de pestañas conocidas, sin borrar cachés ajenas; prueba específica de navegador correcta.
-- La última repetición Lighthouse no llegó a ejecutarse: la revisión automática indicó que se había alcanzado el límite de gasto de la cuenta del workspace. No es una evaluación de inseguridad del comando. El informe de rendimiento queda expresamente marcado como preliminar.
+- La repetición Lighthouse se bloqueó temporalmente por límite de gasto de la revisión automática. Tras reanudarse los permisos, se completaron las tres ejecuciones finales (95/95/96, CLS 0), guardando el SHA-256 exacto de la portada medida. El límite temporal quedó resuelto.
 - Pendiente aprobación explícita para publicar las dos ramas en el repositorio público y crear la preview temporal. Ninguna de estas acciones ha ocurrido, y live permanece sin cambios.
+
+### Validación final de compatibilidad
+
+- Se detectó que los aliases heredados .html devolvían 404 al generar directorios con index.html. Se conservan los directorios y se añaden redirects 301 explícitos para las 14 rutas no raíz y sus variantes /index.html y /index, además de /index.html y /index de portada. Las rutas desconocidas siguen devolviendo 404.
+- Las comprobaciones HTTP de esos aliases pasan en móvil y escritorio. El SHA-256 confirma que el HTML de la portada sigue siendo el medido por Lighthouse.
+- El commit local de cierre inicial es 57a2b9e; resultados finales y compatibilidad de aliases validados. Publicación remota y preview temporal continúan pendientes de aprobación.

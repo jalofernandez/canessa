@@ -70,11 +70,11 @@
         "best-practices": 100,
         "seo": 100
       },
-      "lcpMs": 2932.7943999999998,
+      "lcpMs": 2933.3106,
       "cls": 0,
       "tbtMs": 0,
-      "totalBytes": 587245,
-      "javascriptTransferBytes": 138655,
+      "totalBytes": 587196,
+      "javascriptTransferBytes": 138651,
       "automaticVideoRequests": []
     },
     {
@@ -85,11 +85,11 @@
         "best-practices": 100,
         "seo": 100
       },
-      "lcpMs": 2937.2855,
+      "lcpMs": 2933.4672,
       "cls": 0,
       "tbtMs": 0,
-      "totalBytes": 587245,
-      "javascriptTransferBytes": 138655,
+      "totalBytes": 587196,
+      "javascriptTransferBytes": 138651,
       "automaticVideoRequests": []
     },
     {
@@ -100,11 +100,11 @@
         "best-practices": 100,
         "seo": 100
       },
-      "lcpMs": 2703.5782,
+      "lcpMs": 2702.8496,
       "cls": 0,
       "tbtMs": 0,
-      "totalBytes": 587245,
-      "javascriptTransferBytes": 138655,
+      "totalBytes": 587196,
+      "javascriptTransferBytes": 138651,
       "automaticVideoRequests": []
     }
   ],
@@ -115,20 +115,19 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcpMs": 2932.7943999999998,
+    "lcpMs": 2933.3106,
     "cls": 0,
     "tbtMs": 0,
-    "totalBytes": 587245,
-    "javascriptTransferBytes": 138655
+    "totalBytes": 587196,
+    "javascriptTransferBytes": 138651
   },
-  "homeHtmlSha256": "6d9954414504ba381fcbb548635b81ce6a275fac92a5f57e6b2a57e314fdad61",
+  "homeHtmlSha256": "ec8da53be38a41d9e51dc45eee05a52b68007b973dba853a1a7f2c10811f28f8",
+  "matchesCurrentHomeHtml": true,
+  "measurementStatus": "Final local artifact measured in three consecutive runs.",
   "limitations": [
     "Laboratory measurements, not field Core Web Vitals.",
     "Local emulator and hardware differ from previous PageSpeed Insights production runs.",
     "No INP field measurement is available; TBT is reported separately.",
     "Scores are not a guarantee of search rankings or production performance."
-  ],
-  "currentHomeHtmlSha256": "ec8da53be38a41d9e51dc45eee05a52b68007b973dba853a1a7f2c10811f28f8",
-  "matchesCurrentHomeHtml": false,
-  "measurementStatus": "Preliminary: measured before final Tailwind source scoping; final rerun was prevented by approval-review spend cap."
+  ]
 }
