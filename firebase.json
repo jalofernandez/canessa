@@ -1,40 +1,50 @@
 {
   "hosting": {
+    "site": "canessa-722eb",
     "public": "build/client",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [{ "source": "/mascotactiva", "destination": "/servicios", "type": 301 }],
     "headers": [
       {
-        "source": "/public/sw.js",
+        "source": "**",
         "headers": [
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "X-Frame-Options", "value": "DENY" },
+          { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
           {
-            "key": "Cache-Control",
-            "value": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-          }
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'sha256-+EcAXT6Qq140s2R6fBfJYwTyOzCjC3ysp785fdEpVsc=' 'sha256-13URfbBNJFziBhDkvCKuAMDwEVQsYy5s2W0vSJcMIQg=' 'sha256-2gnMsGilDazDSfQHFhh/nXloh4cBF32pNz60IYm92sA=' 'sha256-48x5zte/1rIjY3S1gtbdqXcBcLy9+N5dJRbaGko+9Vk=' 'sha256-4qvIrw/r2I3bvVUpqfFiEwKeY3zcZ3QBPs+ujIb3bZI=' 'sha256-4xAtuQKy0JbtnKCnpGJOE3AoY041jsaHqJn/lvgUxI4=' 'sha256-7xGtHxvlKJyeG496H0WYJdO5GqVGkCDiCkrUUukssq0=' 'sha256-8sHZgFLQIX3fJhf2/drkHh2Af6e3q7Y95kbFWWARSYc=' 'sha256-AcULXzUDDuAO6BEc9ORlsphPMRl8jiIsm6iDxC6kE40=' 'sha256-D/FcHi7B3eTNFb/ko++qefz8k0+NnGp5ujTLdfkNMvA=' 'sha256-DOhgcLFIHX1wWIrK0NJH5xmIvPyLIyDaON6O4QytEgk=' 'sha256-FAd8TYlIdjU2lsBk5KU38nUPGQTMdN0ErezbxmcsVQ8=' 'sha256-GJ5F0AUMdMRRTfN/6JjeRT0Z5JNRvRCnLda89bKEJak=' 'sha256-IZhVyUJbAfQ2lo5uTmJQ75Xc/ff1u3+7mon9+ub0VA0=' 'sha256-MAmgXdkQeCvAvj3LwFcabZrRRYInpWs4Mukw4T8tb0s=' 'sha256-NNhG/cF+/5rhROL7JX9/quwl6SqabkTOKM186W1UxHg=' 'sha256-PvwD2Psh9JJfsvXLad3eDFQ6WHJuqoJADxhP723UfbA=' 'sha256-Q7Hn2A8QuY5BOIvR1Kosm8XfbhhBFxa3FJWmEoGXjvk=' 'sha256-RBZNiG3Ztb26Xi/69+VRecU4BPhrfxcvspLXMRrrCNE=' 'sha256-UOBr4anC6UAXgVcBv1WR88Y9D23yXTzFPAKr7oNwDEg=' 'sha256-UvQQi1UTwz9jbrH1ZBMPKQt4ySahzy7bobpFsvVBKxc=' 'sha256-W8brE1+PQuxKapVLUdpbwKKI5qf4aVihS5zE2n+XseU=' 'sha256-WImOxq/kAAvwfQMpnC27oGA6r5/16aYbaNhzQ000pKk=' 'sha256-YyfzZDsPQiI6tBRAKZGHy24nzhFKC95maYXxaudkMsA=' 'sha256-cPXM/vdCy7YoG06wONBcMXTC9HYAwSMrLO39RZRf/bc=' 'sha256-dNy0y48tFd3Ueh+izbVssQPVSHSkZce1VpirT2wc1j4=' 'sha256-dpx8ITyOwIOrfghghlbDXHRCL/3a4qlwMFoYp2VWbwc=' 'sha256-duhaxWNI+6QAukUMmlYrkl97X+e0pxobkwS+TpY5/CQ=' 'sha256-eSL4dQQdYjxYKg2vhWSvE+QxG9vH+epbi4a4g7Xz0fE=' 'sha256-fzYgZtSFoFRsseRWPFcdTKjZdcKDAb6ZMLQtro57768=' 'sha256-gsvZuJZMZPEkaNOI5UA+8sLx/iPjA/9qpM041nUOTjM=' 'sha256-kO0TKOEcaGyLEd0yG3JlcWVzo1OBvLa6wx6ttXgaJ50=' 'sha256-mU3SENLnatUexxcUD3xTGDCS+3aQJS783+/7AMu+/T0=' 'sha256-mtIBWbmaA1F8RgfWQMV7VMWriFbw5mxHvMA+kNZFDrs=' 'sha256-rzbhhnLIpxhc4voM2877pBo26ZfZttWW1A2zyhx4lto=' 'sha256-sWZpwrckBwPHhk8Sx61R2t/oFi8u/LuYg5ASx/3rolA=' 'sha256-tcdtdShcG1MCFbiCzu48gBk0dJmif5vYpwsr2tZRe6w=' 'sha256-v/4TFIjhXQk+Fa8fJtt4TaIA3IUbLWlIJJclijCY3Bw=' 'sha256-x7Zv7fmpf+3J9uqWtXShqBXiYyslcIJcZfBwV4iZeg8=' 'sha256-x8E9kwJRFq750moBJTCCzVQxX9iP4dKzCMDgCIZ0t4Y=' 'sha256-xZNAVqwXthjk4LNo9CI3NfK8P90ewpEyy3bmQHMSctc=' 'sha256-zJ0GLone4rvH8oxFYMkc87u5SlOyQK4/dMTxVO6JhIM='; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'none'; upgrade-insecure-requests"
+          },
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
         ]
-      }
-    ],
-    "redirects": [
+      },
       {
-        "source": "/mascotactiva",
-        "destination": "/servicios",
-        "type": 301
+        "source": "/assets/**",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      },
+      {
+        "source": "/media/**",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      },
+      {
+        "source": "/sw.js",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-store, max-age=0" },
+          { "key": "Service-Worker-Allowed", "value": "/" }
+        ]
+      },
+      {
+        "source": "/bono-canessa-club{,/**}",
+        "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
       }
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false
+    ]
   },
   "emulators": {
-    "hosting": {
-      "host": "127.0.0.1",
-      "port": 4178
-    },
-    "ui": {
-      "enabled": false
-    },
+    "hosting": { "host": "127.0.0.1", "port": 4178 },
+    "ui": { "enabled": false },
     "singleProjectMode": true
   }
 }

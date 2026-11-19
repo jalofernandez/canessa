@@ -1,0 +1,1191 @@
+{
+  "antiparasitarios/antiparasitarios-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/ac99c57145eb43bf-720.webp",
+    "variants": [
+      {
+        "src": "/media/dfad39bc2381f3e8-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/ac99c57145eb43bf-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "antiparasitarios/fletcare-collar-antiparasitario-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/5c4670e6a211c6be-720.webp",
+    "variants": [
+      {
+        "src": "/media/75fd84adba963a0a-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/5c4670e6a211c6be-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "antiparasitarios/fletcare-pipetas-antiparasitarias-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/1953087f478ae8fc-720.webp",
+    "variants": [
+      {
+        "src": "/media/5f433e0419e7e8ec-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/1953087f478ae8fc-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "antiparasitarios/francodex-collar-antiparasitario-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/fe953bbd9c7f5a90-720.webp",
+    "variants": [
+      {
+        "src": "/media/3e074e98cbb4be34-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/fe953bbd9c7f5a90-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "antiparasitarios/scalibor-collar-antiparasitario-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/a1ee2728d01a1ddd-720.webp",
+    "variants": [
+      {
+        "src": "/media/4a3f9bac0945821b-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/a1ee2728d01a1ddd-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "authors/doggie-breed-default.png": {
+    "width": 120,
+    "height": 120,
+    "src": "/media/b639f37b8f9449ce-120.webp",
+    "variants": [
+      {
+        "src": "/media/b639f37b8f9449ce-120.webp",
+        "width": 120
+      }
+    ]
+  },
+  "authors/jalofernandez-glitch-profile.gif": {
+    "width": 200,
+    "height": 200,
+    "src": "/media/9d8e8ef56f9ea1b6-200.webp",
+    "variants": [
+      {
+        "src": "/media/9d8e8ef56f9ea1b6-200.webp",
+        "width": 200
+      }
+    ]
+  },
+  "authors/yolanda-lorenzo-fdez-author-avatar.png": {
+    "width": 120,
+    "height": 120,
+    "src": "/media/f02fac21fa0e3224-120.webp",
+    "variants": [
+      {
+        "src": "/media/f02fac21fa0e3224-120.webp",
+        "width": 120
+      }
+    ]
+  },
+  "bg/paper.png": {
+    "width": 331,
+    "height": 213,
+    "src": "/media/f78f947f197bad6e-331.webp",
+    "variants": [
+      {
+        "src": "/media/f78f947f197bad6e-331.webp",
+        "width": 331
+      }
+    ]
+  },
+  "blog/como-pixar-capta-la-personalidad-animal/soul-disney-pixar-mr-mittens.jpg": {
+    "width": 741,
+    "height": 741,
+    "src": "/media/770f0f85b8cbccdd-741.webp",
+    "variants": [
+      {
+        "src": "/media/502c96b2ffbe4ed9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/770f0f85b8cbccdd-741.webp",
+        "width": 741
+      }
+    ]
+  },
+  "blog/como-pixar-capta-la-personalidad-animal/soul-disney-pixar-promo-image.jpg": {
+    "width": 342,
+    "height": 342,
+    "src": "/media/2d2218c6f122d353-342.webp",
+    "variants": [
+      {
+        "src": "/media/2d2218c6f122d353-342.webp",
+        "width": 342
+      }
+    ]
+  },
+  "blog/como-publicar-post-aqui/canessa-blog--slash-redactor-de-contenido.jpg": {
+    "width": 1024,
+    "height": 768,
+    "src": "/media/bfea179ce50f63f7-960.webp",
+    "variants": [
+      {
+        "src": "/media/3be76133ddbcb502-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/bfea179ce50f63f7-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/dedcb4fd846df93a-1024.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "blog/el-gran-reencuentro/canessa-blog--brenda-reencuentro-01.jpg": {
+    "width": 1000,
+    "height": 1000,
+    "src": "/media/4be463de424ccc2a-960.webp",
+    "variants": [
+      {
+        "src": "/media/52df089675297577-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/4be463de424ccc2a-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/e71d15120fdf54ad-1000.webp",
+        "width": 1000
+      }
+    ]
+  },
+  "blog/el-gran-reencuentro/canessa-blog--brenda-reencuentro-02.jpg": {
+    "width": 300,
+    "height": 490,
+    "src": "/media/fa0cd0617e57f7c4-300.webp",
+    "variants": [
+      {
+        "src": "/media/fa0cd0617e57f7c4-300.webp",
+        "width": 300
+      }
+    ]
+  },
+  "blog/el-gran-reencuentro/canessa-blog--brenda-reencuentro-03.jpg": {
+    "width": 1000,
+    "height": 1250,
+    "src": "/media/627b5d83056a5d27-960.webp",
+    "variants": [
+      {
+        "src": "/media/ca6e29fc66d0660d-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/627b5d83056a5d27-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/media/65cf609d38a6d71f-1000.webp",
+        "width": 1000
+      }
+    ]
+  },
+  "error/404-dog.png": {
+    "width": 120,
+    "height": 120,
+    "src": "/media/b639f37b8f9449ce-120.webp",
+    "variants": [
+      {
+        "src": "/media/b639f37b8f9449ce-120.webp",
+        "width": 120
+      }
+    ]
+  },
+  "index/affinity-piensos-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/81599435dd595f1b-720.webp",
+    "variants": [
+      {
+        "src": "/media/3ab9b8631009c4be-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/81599435dd595f1b-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/bano-higiene-westie-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/213c54606fac1d90-720.webp",
+    "variants": [
+      {
+        "src": "/media/07ae8442098f4279-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/213c54606fac1d90-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/bano-higiene-yorkie-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/8f7b40dcfb0bda75-720.webp",
+    "variants": [
+      {
+        "src": "/media/194a114ff341de70-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/8f7b40dcfb0bda75-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/canessa-perro--bichonmaltes-carita.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/5767ff66c84180bf-676.webp",
+    "variants": [
+      {
+        "src": "/media/0f1cff6d15a4b1d7-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/5767ff66c84180bf-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--bichonmaltes-corte-asiatico.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/ff4dcee4792c7169-676.webp",
+    "variants": [
+      {
+        "src": "/media/690bc1f4afceb2d2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/ff4dcee4792c7169-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--bichonmaltes-corte-comercial-01.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/5655f438c810c5f1-676.webp",
+    "variants": [
+      {
+        "src": "/media/9e62fcb50003a93d-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/5655f438c810c5f1-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--bichonmaltes-corte-comercial-02.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/b1aca6f0f9b6d7cf-676.webp",
+    "variants": [
+      {
+        "src": "/media/57e2ecad5acdf3de-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/b1aca6f0f9b6d7cf-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--caniche-corte-asiatico-02.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/fa16155186b42b4f-676.webp",
+    "variants": [
+      {
+        "src": "/media/359f1d383f1e9b26-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/fa16155186b42b4f-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--caniche-corte-asiatico.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/c7d56ee61adb3645-676.webp",
+    "variants": [
+      {
+        "src": "/media/a8a477d8177b862e-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/c7d56ee61adb3645-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--caniche-corte-comercial.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/4523b343f6aed89e-676.webp",
+    "variants": [
+      {
+        "src": "/media/5543c8694501aa25-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/4523b343f6aed89e-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--caniche-corte-dondio.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/886c9662cf35cb6e-676.webp",
+    "variants": [
+      {
+        "src": "/media/8289729e34aa9ec9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/886c9662cf35cb6e-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--caniche.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/466caa6038ab7ea8-676.webp",
+    "variants": [
+      {
+        "src": "/media/a85d81bec0ae8ba2-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/466caa6038ab7ea8-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--pomerania.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/3a9f9b83ff7e9df5-676.webp",
+    "variants": [
+      {
+        "src": "/media/dfc475be13f302d3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/3a9f9b83ff7e9df5-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--westie-corte-comercial.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/4e238b76efc24cff-676.webp",
+    "variants": [
+      {
+        "src": "/media/e5caa3e0b2273257-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/4e238b76efc24cff-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--yorkie-carita.jpg": {
+    "width": 676,
+    "height": 822,
+    "src": "/media/2264abe0af6104d4-676.webp",
+    "variants": [
+      {
+        "src": "/media/537940f1c575a9d9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/2264abe0af6104d4-676.webp",
+        "width": 676
+      }
+    ]
+  },
+  "index/canessa-perro--yorkie-tijeras.jpg": {
+    "width": 400,
+    "height": 400,
+    "src": "/media/f597d4466a796911-400.webp",
+    "variants": [
+      {
+        "src": "/media/f597d4466a796911-400.webp",
+        "width": 400
+      }
+    ]
+  },
+  "index/canessa-vanessa-vizcaya-perro-secado.jpg": {
+    "width": 827,
+    "height": 768,
+    "src": "/media/a4ddb966841dd38e-827.webp",
+    "variants": [
+      {
+        "src": "/media/2cafc6abe335cbdb-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/a4ddb966841dd38e-827.webp",
+        "width": 827
+      }
+    ]
+  },
+  "index/equipo-profesional-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/1ee0617d7a656072-720.webp",
+    "variants": [
+      {
+        "src": "/media/9c83ff96157dd40b-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/1ee0617d7a656072-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/paseador-canino-mascotactiva-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/85c26d4f43d61be5-720.webp",
+    "variants": [
+      {
+        "src": "/media/ed0ff74e1ef2523b-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/85c26d4f43d61be5-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/secado-pastor-aleman-feliz-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/3ea6db91635069f0-720.webp",
+    "variants": [
+      {
+        "src": "/media/bdb03cafb8277570-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/3ea6db91635069f0-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/vanessa-vizcaya-dogs-lover-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/cc7248705a87d215-720.webp",
+    "variants": [
+      {
+        "src": "/media/9ef747b9dfc21b01-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/cc7248705a87d215-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "index/vanessa-vizcaya-positivizando-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/25fe39576f0bb033-720.webp",
+    "variants": [
+      {
+        "src": "/media/892df5cf6ca6fc3b-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/25fe39576f0bb033-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "instalaciones/banera-hidraulica-vivoc-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/741bc9aa7d39ee7f-720.webp",
+    "variants": [
+      {
+        "src": "/media/193e44dbb79e6de9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/741bc9aa7d39ee7f-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "instalaciones/canessa-perro--yorkie-tijeras.jpg": {
+    "width": 400,
+    "height": 400,
+    "src": "/media/f597d4466a796911-400.webp",
+    "variants": [
+      {
+        "src": "/media/f597d4466a796911-400.webp",
+        "width": 400
+      }
+    ]
+  },
+  "instalaciones/instalaciones-de-corte-bano-secado-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 655,
+    "src": "/media/991bab6288d693cc-720.webp",
+    "variants": [
+      {
+        "src": "/media/1bf87879007a9501-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/991bab6288d693cc-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "instalaciones/maquinas-de-corte-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/a6fb484169c2c877-720.webp",
+    "variants": [
+      {
+        "src": "/media/feb2b8fa18bd0795-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/a6fb484169c2c877-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "instalaciones/mesa-hidraulica-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/218a1d7b538a4fdc-720.webp",
+    "variants": [
+      {
+        "src": "/media/e16a3f905670ef2f-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/218a1d7b538a4fdc-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "instalaciones/secador-expulsador-aire-tornado-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/f899cb826c4b66ee-720.webp",
+    "variants": [
+      {
+        "src": "/media/bfd5fc02c4e86a88-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/f899cb826c4b66ee-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "legal/canessa-cookie-bowl.png": {
+    "width": 64,
+    "height": 64,
+    "src": "/media/4781553b0dd97261-64.webp",
+    "variants": [
+      {
+        "src": "/media/4781553b0dd97261-64.webp",
+        "width": 64
+      }
+    ]
+  },
+  "legal/canessa-slash-gafotas.png": {
+    "width": 200,
+    "height": 257,
+    "src": "/media/160afcc60117eeca-200.webp",
+    "variants": [
+      {
+        "src": "/media/160afcc60117eeca-200.webp",
+        "width": 200
+      }
+    ]
+  },
+  "logos/canessa-bone-logo.png": {
+    "width": 300,
+    "height": 201,
+    "src": "/media/c805c5a857fd41ce-300.webp",
+    "variants": [
+      {
+        "src": "/media/c805c5a857fd41ce-300.webp",
+        "width": 300
+      }
+    ]
+  },
+  "peluqueria/banera-hidraulica-vivoc-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/741bc9aa7d39ee7f-720.webp",
+    "variants": [
+      {
+        "src": "/media/193e44dbb79e6de9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/741bc9aa7d39ee7f-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "peluqueria/corte-a-maquina-01-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/fc2960699c5df01e-720.webp",
+    "variants": [
+      {
+        "src": "/media/54e56c9796a20ae8-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/fc2960699c5df01e-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "peluqueria/corte-a-tijera-01-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/46e49e2a6c82638b-720.webp",
+    "variants": [
+      {
+        "src": "/media/1e62f5d7c4fbe882-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/46e49e2a6c82638b-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "peluqueria/corte-a-tijera-yorkshire-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/12d7f5d23485b67a-720.webp",
+    "variants": [
+      {
+        "src": "/media/fa185bf4996ff923-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/12d7f5d23485b67a-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "peluqueria/stripping-retirada-de-muda-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/caaef89794e6ff6c-720.webp",
+    "variants": [
+      {
+        "src": "/media/a1b5d977820009a3-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/caaef89794e6ff6c-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "peluqueria/yorkshire-en-mesa-de-corte.jpg": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/ac96862a5025a5c6-550.webp",
+    "variants": [
+      {
+        "src": "/media/3099ad78d37e8090-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/ac96862a5025a5c6-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-french-bulldog.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/cd507165aed9e122-550.webp",
+    "variants": [
+      {
+        "src": "/media/34e5209b70245b8f-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/cd507165aed9e122-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-medium-7years.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/1e5fbc494139b468-550.webp",
+    "variants": [
+      {
+        "src": "/media/0962cefd0b18e298-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/1e5fbc494139b468-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-medium-adult.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/fd4693468133765d-550.webp",
+    "variants": [
+      {
+        "src": "/media/a180fde3d5efde3f-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/fd4693468133765d-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-medium-light.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/89aa0db8f9a43d19-550.webp",
+    "variants": [
+      {
+        "src": "/media/1ab43249725479e6-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/89aa0db8f9a43d19-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-mini-adult.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/a6a250b9b57b1540-550.webp",
+    "variants": [
+      {
+        "src": "/media/198ad5e9df9bdc09-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/a6a250b9b57b1540-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-mini-light.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/502c0ad3559e9ceb-550.webp",
+    "variants": [
+      {
+        "src": "/media/c57eb17e2174d4a8-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/502c0ad3559e9ceb-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-mini-sensitive-salmon-rice.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/d62ab0cb74a8162c-550.webp",
+    "variants": [
+      {
+        "src": "/media/f9a8764c5d07e7d1-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/d62ab0cb74a8162c-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-puppy-mini.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/719bf439fb1e7e65-550.webp",
+    "variants": [
+      {
+        "src": "/media/780000686b9d5b11-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/719bf439fb1e7e65-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-puppy-sensitive-salmon-rice.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/9d2ae946b6c8af57-550.webp",
+    "variants": [
+      {
+        "src": "/media/7f1300e0fb2b463a-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/9d2ae946b6c8af57-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/advange-yorkshire-terrier.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/ca9062338d1c1cda-550.webp",
+    "variants": [
+      {
+        "src": "/media/3106f2f5db6178b9-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/ca9062338d1c1cda-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/affinity-gama-piensos-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/b448637b9e23f90b-720.webp",
+    "variants": [
+      {
+        "src": "/media/a7717e44a3f377aa-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/b448637b9e23f90b-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "piensos/affinity-libra-adult-chicken.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/24a74f83ae46454a-550.webp",
+    "variants": [
+      {
+        "src": "/media/29952226f3edfd16-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/24a74f83ae46454a-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/affinity-libra-adult-lamb.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/9e069eb3d1b708da-550.webp",
+    "variants": [
+      {
+        "src": "/media/c6db1c2cdc95d45b-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/9e069eb3d1b708da-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/affinity-libra-puppy-pollo-arroz.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/2b4451975b0f1bb1-550.webp",
+    "variants": [
+      {
+        "src": "/media/89afc4155cadce82-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/2b4451975b0f1bb1-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/affinity-libra-puppy-salmon.png": {
+    "width": 550,
+    "height": 550,
+    "src": "/media/3d4d1a9d357332bf-550.webp",
+    "variants": [
+      {
+        "src": "/media/b9525ff898b54619-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/3d4d1a9d357332bf-550.webp",
+        "width": 550
+      }
+    ]
+  },
+  "piensos/affinity-petcare-logo.png": {
+    "width": 150,
+    "height": 150,
+    "src": "/media/381984bffe8b5a2a-150.webp",
+    "variants": [
+      {
+        "src": "/media/381984bffe8b5a2a-150.webp",
+        "width": 150
+      }
+    ]
+  },
+  "piensos/affinity-piensos-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/81599435dd595f1b-720.webp",
+    "variants": [
+      {
+        "src": "/media/3ab9b8631009c4be-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/81599435dd595f1b-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "piensos/pedigree-dentastix-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/48c789c46741b8ef-720.webp",
+    "variants": [
+      {
+        "src": "/media/c6160fd975a38452-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/48c789c46741b8ef-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "reviewers/fasu-manzano.png": {
+    "width": 40,
+    "height": 40,
+    "src": "/media/60a2cc3fff93b58b-40.webp",
+    "variants": [
+      {
+        "src": "/media/60a2cc3fff93b58b-40.webp",
+        "width": 40
+      }
+    ]
+  },
+  "reviewers/lorena-rodriguez.png": {
+    "width": 40,
+    "height": 40,
+    "src": "/media/a3ade5f33005c9e0-40.webp",
+    "variants": [
+      {
+        "src": "/media/a3ade5f33005c9e0-40.webp",
+        "width": 40
+      }
+    ]
+  },
+  "reviewers/roberto-pantaleon.png": {
+    "width": 108,
+    "height": 108,
+    "src": "/media/8d5a17cff4d569b5-108.webp",
+    "variants": [
+      {
+        "src": "/media/8d5a17cff4d569b5-108.webp",
+        "width": 108
+      }
+    ]
+  },
+  "servicios/affinity-gama-piensos-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/b448637b9e23f90b-720.webp",
+    "variants": [
+      {
+        "src": "/media/a7717e44a3f377aa-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/b448637b9e23f90b-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "servicios/bano-higiene-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/4ae991ac2e227d5d-720.webp",
+    "variants": [
+      {
+        "src": "/media/9faa2be7b57f43db-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/4ae991ac2e227d5d-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "servicios/bubbles-champu-perfume-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/cde74a9c2bd89b14-720.webp",
+    "variants": [
+      {
+        "src": "/media/7f0f957bc577d355-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/cde74a9c2bd89b14-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "servicios/corte-a-maquina-02-peluqueria-canina-canessa.jpg": {
+    "width": 720,
+    "height": 720,
+    "src": "/media/37d3f2898cb14ad9-720.webp",
+    "variants": [
+      {
+        "src": "/media/90ee2466cf940a33-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/37d3f2898cb14ad9-720.webp",
+        "width": 720
+      }
+    ]
+  },
+  "servicios/vanessa-vizcaya-peluqueria-canina-canessa.jpg": {
+    "width": 748,
+    "height": 747,
+    "src": "/media/b16d7695d352a9ed-748.webp",
+    "variants": [
+      {
+        "src": "/media/88b2e6c1c54d8262-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/b16d7695d352a9ed-748.webp",
+        "width": 748
+      }
+    ]
+  },
+  "sitemap/canessa-slash-gafotas.png": {
+    "width": 200,
+    "height": 257,
+    "src": "/media/160afcc60117eeca-200.webp",
+    "variants": [
+      {
+        "src": "/media/160afcc60117eeca-200.webp",
+        "width": 200
+      }
+    ]
+  },
+  "vanessavizcaya/vanessa-canessa-peluqueria-canina-canessa.png": {
+    "width": 748,
+    "height": 747,
+    "src": "/media/cae42183fe9ebef9-748.webp",
+    "variants": [
+      {
+        "src": "/media/752b256cea16ea9b-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/cae42183fe9ebef9-748.webp",
+        "width": 748
+      }
+    ]
+  },
+  "vanessavizcaya/vanessa-peluqueria-canina-canessa.png": {
+    "width": 748,
+    "height": 747,
+    "src": "/media/2ff3dd2e3491a76e-748.webp",
+    "variants": [
+      {
+        "src": "/media/e8ee4187305f6a5f-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/2ff3dd2e3491a76e-748.webp",
+        "width": 748
+      }
+    ]
+  },
+  "vanessavizcaya/vanessa-tijeras-peluqueria-canina-canessa.png": {
+    "width": 748,
+    "height": 747,
+    "src": "/media/e9a04a4610ceff94-748.webp",
+    "variants": [
+      {
+        "src": "/media/8a17d613b357bc2a-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/media/e9a04a4610ceff94-748.webp",
+        "width": 748
+      }
+    ]
+  }
+}

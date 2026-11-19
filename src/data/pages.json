@@ -1,0 +1,235 @@
+[
+  {
+    "path": "/servicios",
+    "title": "Servicios para tu mejor amigo",
+    "description": "Peluquería, baños, alimentación y complementos para perros en Valdemoro. Un cuidado cercano, con cita previa.",
+    "blocks": [
+      {
+        "title": "La peluquería canina",
+        "text": "No es solo una cuestión de estética, sino también de higiene, salud, y lo más importante, bienestar del animal porque sabemos lo importante que es para ti tu perro y lo mimaremos como se merece, con los mejores métodos y técnicas no invasivas garantizando un resultado final impecable y sin molestias para él. ¡Se merecen un trato especial!",
+        "image": "servicios/corte-a-maquina-02-peluqueria-canina-canessa.jpg",
+        "alt": "Corte a máquina de mestizo de yorkshire en Peluquería canina Canessa, Madrid",
+        "to": "/peluqueria",
+        "link": "Más sobre peluquería"
+      },
+      {
+        "title": "Baños sin complicaciones",
+        "text": "Nosotros bañamos a tu mascota evitándote las molestias derivadas de este proceso en tu hogar como la limpieza posterior, los pelos en suspensión, los olores... Nosotros, gracias a nuestra bañera hidráulica, toallas gigantes y explusadores (secadores de alta potencia) bañaremos a tu amigo peludo por ti ofreciéndote un perro sano y feliz.",
+        "image": "servicios/bano-higiene-peluqueria-canina-canessa.jpg",
+        "alt": "Baño tras precorte en Peluquería canina Canessa, Madrid",
+        "to": "/peluqueria",
+        "link": "Más sobre baños y servicios"
+      },
+      {
+        "title": "Pienso y alimentos caninos",
+        "text": "Sabemos muy bien que la alimentación de nuestro perro es la base de su bienestar y su comportamiento. Por ello, en la peluquería canina Canessa no hemos dudado a la hora de decidir qué productos vamos a vender y con qué marcas queremos trabajar.",
+        "image": "servicios/affinity-gama-piensos-peluqueria-canina-canessa.jpg",
+        "alt": "Piensos y alimento canino en Peluquería canina Canessa, Madrid",
+        "to": "/piensos",
+        "link": "Todos nuestros piensos"
+      },
+      {
+        "title": "Complementos para los peludos",
+        "text": "Hay razas que requieren un mayor mantenimiento que otras pero todas necesitan baño para estar limpios y aseados además de cepillado para retirar pelo muerto y evitar los nudos. En la peluquería canina Canessa te ofrecemos amplia variedad de productos para estas tareas.",
+        "image": "servicios/bubbles-champu-perfume-peluqueria-canina-canessa.jpg",
+        "alt": "Champú y perfume Bubbles disponibles en Peluquería canina Canessa, Madrid",
+        "to": "/piensos",
+        "link": "Todos nuestros productos"
+      },
+      {
+        "title": "Vanessa Vizcaya: Canessa",
+        "text": "Tras 17 años de experiencia y formación continuada, Canessa asume la dirección y gerencia de su propio salón de peluquería canina en la localidad madrileña de Valdemoro para poder seguir desarrollándose en su pasión por la belleza animal...",
+        "image": "servicios/vanessa-vizcaya-peluqueria-canina-canessa.jpg",
+        "alt": "Más sobre undefined enPeluquería canina Canessa, Madrid",
+        "to": "/vanessavizcaya",
+        "link": "Saber más sobre mi"
+      }
+    ]
+  },
+  {
+    "path": "/peluqueria",
+    "title": "Peluquería con tiempo y cariño",
+    "description": "Corte a tijera, corte a máquina, baño y cuidado del pelo. Conoce cómo trabajamos en Canessa, Valdemoro.",
+    "blocks": [
+      {
+        "title": "En Peluquería canina Canessa",
+        "text": "Ponemos nuestro empeño y conocimientos en cuidar de tu amigo con atención y el mínimo estrés, dedicándole el tiempo que necesita, sin servicios exprés. Pregúntanos qué cuidados son adecuados para él y qué incluye su sesión.",
+        "image": "peluqueria/yorkshire-en-mesa-de-corte.jpg",
+        "alt": "Yorkshire terrier en la mesa de trabajo de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Corte a tijera",
+        "text": "Estamos especializados en la técnica de corte a tijera, y queremos demostrarte que siempre se puede sacar más partido al arreglo de tu perro de un modo más artesanal y personalizado como ofrece el uso de la tijera. Somos conocedores de la morfologia y anatomia del perro y siempre arreglamos cada perro de modo personal buscando sacar el máximo para que tu, su dueño, quedes contento con nuestro servicio.",
+        "image": "peluqueria/corte-a-tijera-yorkshire-peluqueria-canina-canessa.jpg",
+        "alt": "Corte a tijera de mestizo en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Corte a máquina",
+        "text": "Cortar a máquina no implica sólo rapar o realizar un trabajo rápido y malo. Hay veces que hay que mantener a raya ciertas zonas problemáticas expendedoras de nudos y se hace necesario el uso de máquina. Queremos demostrarte que un servicio de corte a máquina es también de calidad y no está reñido con un buen precio.",
+        "image": "peluqueria/corte-a-maquina-01-peluqueria-canina-canessa.jpg",
+        "alt": "Corte a máquina de yorkshire en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Baño completo",
+        "text": "El baño forma parte de la higiene del perro. La frecuencia y los productos se adaptan a su pelo y necesidades. El cepillado ayuda a mantener el manto y a evitar los nudos.",
+        "image": "peluqueria/banera-hidraulica-vivoc-peluqueria-canina-canessa.jpg",
+        "alt": "Baño tras precorte en Peluquería canina Canessa, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Stripping",
+        "text": "Los perros de pelo duro tienen varias capas de pelo y subpelo: una capa joven en maduración y una capa de cobertura o madurada. En su estado salvaje lo irían perdiendo con las ramas o zarzas, pero al no ser así se lo tenemos que renovar nosotros mismos. La técnica más común conocida como trimming o stripping es arrancar la capa vieja o larga para dejar crecer la corta, ya que salen todas de un mismo poro. Esta técnica de arrancado mantiene los colores en su tono natural y la textura de pelo duro.",
+        "image": "peluqueria/stripping-retirada-de-muda-peluqueria-canina-canessa.jpg",
+        "alt": "Stripping a mestizo en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      }
+    ]
+  },
+  {
+    "path": "/antiparasitarios",
+    "title": "Antiparasitarios y cuidado diario",
+    "description": "Consulta en Canessa la disponibilidad de collares y pipetas antiparasitarios para tu perro. Tienda en Valdemoro.",
+    "blocks": [
+      {
+        "title": "¿No me vas a proteger?",
+        "text": "En nuestra tienda puedes consultar la disponibilidad de productos de protección frente a parásitos externos. Elige el producto adecuado con el asesoramiento de tu veterinario y sigue siempre las instrucciones del fabricante.",
+        "image": "antiparasitarios/antiparasitarios-peluqueria-canina-canessa.jpg",
+        "alt": "Productos Antiparasitarios en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": "/contacto",
+        "link": "¿Dónde comprar antiparasitarios?"
+      },
+      {
+        "title": "Collares antiparásitos de Scalibor",
+        "text": "Consulta la disponibilidad de collares Scalibor y las indicaciones de su fabricante.",
+        "image": "antiparasitarios/scalibor-collar-antiparasitario-peluqueria-canina-canessa.jpg",
+        "alt": "Scalibor collares antiparasitarios en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": "/contacto",
+        "link": "¿Dónde comprar collares Scalibor?"
+      },
+      {
+        "title": "Collares antiparásitos de Fletcare",
+        "text": "Consulta en tienda las opciones de collares Fletcare y sus instrucciones de uso.",
+        "image": "antiparasitarios/fletcare-collar-antiparasitario-peluqueria-canina-canessa.jpg",
+        "alt": "Fletcare collares naturales antiparasitarios en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": "/contacto",
+        "link": "¿Dónde comprar collares Fletcare?"
+      },
+      {
+        "title": "Collares antiparásitos de Francodex",
+        "text": "Consulta la disponibilidad de collares Francodex y sus instrucciones de uso.",
+        "image": "antiparasitarios/francodex-collar-antiparasitario-peluqueria-canina-canessa.jpg",
+        "alt": "Francodex collares con repelente natural en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": "/contacto",
+        "link": "¿Dónde comprar collares Francodex?"
+      },
+      {
+        "title": "Pipetas antiparásitos de Fletcare",
+        "text": "Consulta en tienda las opciones de pipetas Fletcare. La elección y el uso deben ajustarse al animal y a las instrucciones del fabricante.",
+        "image": "antiparasitarios/fletcare-pipetas-antiparasitarias-peluqueria-canina-canessa.jpg",
+        "alt": "Fletcare pipetas antiparasitarias en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": "/contacto",
+        "link": "¿Dónde comprar pipetas Fletcare?"
+      }
+    ]
+  },
+  {
+    "path": "/instalaciones",
+    "title": "Un espacio pensado para ellos",
+    "description": "Conoce las instalaciones de Canessa en Valdemoro: zona de baño, mesas hidráulicas y equipo de peluquería canina.",
+    "blocks": [
+      {
+        "title": "Instalaciones",
+        "text": "Nuestro local a pie de calle tiene dos zonas comunicadas: tienda y peluquería canina. Un espacio equipado para el baño, el corte y el secado, en la calle Vicente Aleixandre, 5, de Valdemoro.",
+        "image": "instalaciones/instalaciones-de-corte-bano-secado-peluqueria-canina-canessa.jpg",
+        "alt": "Instalaciones de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Bañeras hidráulicas",
+        "text": "La altura regulable facilita la entrada y salida de los perros y permite adaptar el puesto de trabajo a su tamaño. Las bañeras cuentan con superficie antideslizante.",
+        "image": "instalaciones/banera-hidraulica-vivoc-peluqueria-canina-canessa.jpg",
+        "alt": "Bañera hidráulica de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Expulsadores de aire",
+        "text": "Disponemos de expulsadores de aire para el secado. Adaptamos la sesión a cada perro, dedicándole el tiempo que necesita.",
+        "image": "instalaciones/secador-expulsador-aire-tornado-peluqueria-canina-canessa.jpg",
+        "alt": "Expulsadores de aire de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Mesas hidráulicas",
+        "text": "Eléctricas activadas con pedal, permiten regular la altura inmediatamente facilitando así que nuestros clientes caninos suban y bajen cómodamente y sin riesgo de lesiones para ellos y para nuestros profesionales. No solo se trata de variar la altura en función del tamaño de los perros sino también en función de la parte del perro que se trabaje.",
+        "image": "instalaciones/mesa-hidraulica-peluqueria-canina-canessa.jpg",
+        "alt": "Mesa hidráulica de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Tijeras profesionales",
+        "text": "Rectas de corte y curvas para esculpir todas ellas de aleación de acero suizo siempre de las mejores marcas asegurando la precisión en el corte. Perfectas para todo tipo de corte: higiénicos, comerciales, de exposición, de mantenimiento… Las cuidamos con un afilado recurrente así como una limpieza y desinfección diaria con aceite Oil fresh.",
+        "image": "instalaciones/canessa-perro--yorkie-tijeras.jpg",
+        "alt": "Tijeras de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      },
+      {
+        "title": "Máquinas de corte",
+        "text": "Trabajamos con la marca de mayor prestigio y más valorada mundialmente en máquinas de baterías profesionales: Heiniger. De fabricación Suiza destacan por su máxima calidad, resistencia y potencia para peluquería de perros y gatos. Como con las tijeras, cuidamos las cuchillas de nuestras máquinas con un afilado recurrente así como una limpieza y desinfección diaria con aceite Oil fresh.",
+        "image": "instalaciones/maquinas-de-corte-peluqueria-canina-canessa.jpg",
+        "alt": "Máquinas de Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": null
+      }
+    ]
+  },
+  {
+    "path": "/vanessavizcaya",
+    "title": "Vanessa, el alma de Canessa",
+    "description": "Conoce a Vanessa Vizcaya y su trayectoria desde 2009 en el cuidado y la peluquería canina en Valdemoro.",
+    "blocks": [
+      {
+        "title": "Vanessa Vizcaya",
+        "text": "Es una amante incondicional de los animales desde su infancia. Empática como nadie con los sentimientos y las necesidades animales pronto descubrió que tenía que dedicarse profesionalmente a ellos. Además siempre ha tenido perros y gatos como compañeros de vida asi que sabe entenderlos a la perfección.",
+        "image": "vanessavizcaya/vanessa-peluqueria-canina-canessa.png",
+        "alt": "undefined de Peluquería canina Canessa, Madrid",
+        "to": null,
+        "link": "Prueba nuestros servicios"
+      },
+      {
+        "title": "Una trayectoria que empieza en 2009",
+        "text": "Le avalan profesionalmente. En 2009 empieza a formarse como peluquera canina en la ISED. Tras este decidió completar su formación con Mónica Calderón, toda una institución en el sector de la peluquería canina. Los comienzos fueron servicios a domicilio pero pronto avanzó a centros veterinarios y peluquerías caninas.",
+        "image": "vanessavizcaya/vanessa-tijeras-peluqueria-canina-canessa.png",
+        "alt": "Ilustración tijeras en Peluquería canina Canessa, Valdemoro, Madrid",
+        "to": null,
+        "link": "Pide cita conmigo"
+      },
+      {
+        "title": "Peluquería Canessa",
+        "text": "Comienza a funcionar como reemplazo de la antigua KTC en Marzo de 2017 siendo la principal tarea como peluquera canina cuidar el pelaje de los perros, mejorar su higiene y procurarles un fantástico corte de pelo. Esta es una tarea manual y artesana realizada con el máximo cariño y respeto en la que lo más importante es el bienestar de los animales a los que cuida y que le resulta tan gratificante.",
+        "image": "vanessavizcaya/vanessa-canessa-peluqueria-canina-canessa.png",
+        "alt": "Ilustración Canessa en Peluquería canina Canessa, Madrid",
+        "to": null,
+        "link": "Reserva hora en"
+      }
+    ]
+  },
+  {
+    "path": "/piensos",
+    "title": "Alimentación y pequeños premios",
+    "description": "Piensos Advance y Libra, alimentación y complementos para perros. Consulta variedades, disponibilidad y precios en Canessa, Valdemoro.",
+    "blocks": []
+  }
+]

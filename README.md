@@ -1,59 +1,80 @@
-# Pet saloon website template for pets health and beauty
+# Canessa
 
-A website template with different pages layout based on Canessa pet saloon website ([Peluquería canina Canessa](https://peluqueriacanessa.com)). A [Nuxt.js](https://nuxtjs.org) project with following pages:
+Web de Peluquería canina Canessa en Valdemoro. React 18, TypeScript 5, pnpm 10,
+Vite 7, React Router 7 con prerenderizado y Tailwind CSS 4. El resultado es un
+sitio estático para Firebase Hosting; producción no necesita un servidor Node.
 
-- Inicio (*Home*)
-- Servicios (*Services*)
-- Peluquería (*Grooming*)
-- Antiparasitarios (*Antiparasitics*)
-- Piensos (*Feed*)
-- Instalaciones (*Facilities*)
-- Contacto (*Contact*)
-- Sobre Vanessa (*About Vanessa*)
-- Legal (*Legal*)
-- Ofertas (*Discounts*)
-- Blog con algunos artículos (*Blog* with some Post)
-- Sitemap (*Sitemap*)
-- Error (*404* & *500*)
+Esta versión se desarrolla en `migration/react-static`. La referencia Vue queda
+en `legacy/vue-2026-11-19` y en el checkout original. El backup independiente,
+las decisiones y el estado de cada fase están en [MIGRATION.md](MIGRATION.md).
 
-## Credits and Dependencies
+## Desarrollo
 
-- Images by Vanessa Vizcaya García [@peluqueriacanessa](https://www.instagram.com/peluqueriacanessa), Javier Lorenzo Fernández aka [@jalofernadez](https://jalofernandez.com) and [Freepik](https://www.freepik.es).
-- [Nuxt.js](https://nuxtjs.org), open source JS framework based on:
-  - [Vue.js](https://vuejs.org) by Evan You.
-  - [Node.js](https://nodejs.org) by OpenJS Foundation.
-  - [Webpack](https://webpack.js.org) by Tobias Koppers, Sean Larkin, Johannes Ewald, Juho Vepsäläinen, Kees Kluskens, and Webpack contributors.
-  - [Babel.js](https://babeljs.io) by a lot of contributors.
-- [Bulma](https://bulma.io), open source UI framework by Jeremy Thomas.
-- [SASS](https://sass-lang.com), CSS extension language by numerous contributors.
-- [Firebase](https://firebase.google.com/), to build and run apps by Google.
+Usa Node **22.23.4** (`.nvmrc`) y pnpm **10.34.9** (`packageManager`).
 
-## License
-
-This resource can be used freely if integrated or build upon in personal or commercial projects such as websites, web apps and web templates intended for sale. It is not allowed to take the resource "as-is" and sell it, redistribute, re-publish it, or sell "pluginized" versions of it. Free plugins built using this resource should have a visible mention and link to the original work. Always consider the licenses of all included libraries, scripts and images used.
-
-## Misc 
-
-Follow me (it would be so kind of you :) [Twitter](http://www.twitter.com/jalofernandez), [Instagram](https://www.instagram.com/jalofernandez/), [Facebook](http://www.facebook.com/jalofernandez), [GitHub](https://github.com/jalofernandez), [website](https://jalofernandez.com)
-
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-
-# deploy static project into Firebase
-$ firebase deploy --project <alias_or_project_id> --message <if-you-want-a-msg>
+```sh
+nvm use
+corepack enable
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+`pnpm dev` prepara las fotografías antes de arrancar Vite. El contenido está en
+`src/data/` y `src/content/articles/`; las fotografías originales se conservan en
+`src/assets/photos/`. Los componentes se encuentran en `src/components/`.
+
+## Comprobaciones
+
+```sh
+pnpm lint
+pnpm compile
+pnpm test
+pnpm check-format
+pnpm audit --prod --audit-level=high
+pnpm build
+pnpm exec playwright install chromium
+pnpm test:e2e
+```
+
+El build genera `build/client`, comprueba las 15 URLs y escribe `firebase.json`
+con los hashes CSP del HTML generado. No edites a mano los hashes: modifica
+`scripts/finalize-static.mjs` y vuelve a compilar. No se despliega automáticamente.
+
+`pnpm preview` sirve el artefacto mediante el emulador de Firebase Hosting en
+`http://127.0.0.1:4178`, con el proyecto ficticio `demo-canessa`. Las pruebas E2E
+arrancan ese emulador si hace falta. El puerto 5000 no se utiliza porque puede
+estar ocupado por servicios de macOS.
+
+## Contenido y privacidad
+
+- Dirección, teléfono y horarios se centralizan en `src/data/business.ts`.
+- Los tres artículos Markdown se procesan en build con una lista permitida de
+  etiquetas y protocolos; no se ejecutan como JSX ni se incluye HTML arbitrario.
+- El Bono Canessa Club está finalizado: su URL tiene `noindex` y queda fuera del
+  sitemap. La invitación a colaborar en el blog sigue vigente.
+- La analítica está **desactivada**. No se carga GTM, mapas ni recursos de Google
+  durante la visita. Los enlaces externos se abren solo por decisión del usuario.
+- La implementación opcional de consentimiento está probada, pero **no debe
+  activarse** hasta revisar el contenedor GTM, sus etiquetas, los textos legales
+  y las fuentes CSP. Cambiar un booleano no basta para darla por validada.
+- Los precios antiguos y el contador global de reseñas no se muestran como datos
+  actuales. Verifica catálogo, atribución de testimonios y texto legal antes del
+  lanzamiento.
+
+## Publicación
+
+Firebase Hosting sigue siendo el destino. Proyecto/sitio: `canessa-722eb`.
+Consulta [RELEASE.md](RELEASE.md) para crear una preview sin indexación, publicar
+el artefacto revisado y recuperar la release anterior. La CI comprueba el sitio y
+conserva artefactos; no incluye credenciales ni publica producción.
+
+No hay formulario, tienda en línea ni sistema de reservas dentro de esta web.
+La cita se acuerda directamente con la peluquería por sus canales de contacto.
+
+## Imágenes y licencia
+
+Fotografías y recursos heredados de Vanessa Vizcaya García, Javier Lorenzo
+Fernández y los terceros acreditados en el historial del proyecto. Conservar las
+licencias y atribuciones de los recursos utilizados; no vender ni redistribuir
+el conjunto de recursos original tal cual. Las dependencias conservan sus
+respectivas licencias. Los artículos mantienen sus autores.

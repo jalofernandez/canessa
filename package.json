@@ -15,10 +15,12 @@
     "test:e2e": "playwright test",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "build": "react-router build && node scripts/finalize-static.mjs && node scripts/verify-static.mjs",
-    "preview": "firebase emulators:start --only hosting --project canessa-722eb",
+    "build": "pnpm assets && react-router build && node scripts/finalize-static.mjs && node scripts/verify-static.mjs && node scripts/fingerprint.mjs",
+    "preview": "firebase emulators:start --only hosting --project demo-canessa",
     "verify:static": "node scripts/verify-static.mjs",
-    "test:hosting": "firebase emulators:exec --only hosting --project demo-canessa \"playwright test\""
+    "test:hosting": "firebase emulators:exec --only hosting --project demo-canessa \"playwright test\"",
+    "assets": "node scripts/build-media.mjs",
+    "predev": "pnpm assets"
   },
   "dependencies": {
     "clsx": "2.1.1",

@@ -4,15 +4,11 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: [
-      'node_modules/**',
-      'build/**',
-      '.react-router/**',
-      'assets/**',
-      'content/**',
-      'store/**',
-      'nuxt.config.js',
-    ],
+    ignores: ['node_modules/**', 'build/**', '.react-router/**'],
+  },
+  {
+    files: ['public/sw.js'],
+    languageOptions: { globals: { self: 'readonly', caches: 'readonly' } },
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,

@@ -10,3 +10,9 @@ build/
 playwright-report/
 test-results/
 coverage/
+public/media/
+
+firebase.preview.json
+.history/
+quality/lighthouse-mobile-*.json
+quality/screenshots/

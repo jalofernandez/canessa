@@ -1,0 +1,20 @@
+{
+  "routes": [
+    "/",
+    "/servicios",
+    "/peluqueria",
+    "/contacto",
+    "/instalaciones",
+    "/vanessavizcaya",
+    "/piensos",
+    "/antiparasitarios",
+    "/blog",
+    "/blog/el-gran-reencuentro",
+    "/blog/como-pixar-capta-la-personalidad-animal",
+    "/blog/como-publicar-post-aqui",
+    "/legal",
+    "/sitemap",
+    "/bono-canessa-club"
+  ],
+  "noindex": ["/bono-canessa-club"]
+}
